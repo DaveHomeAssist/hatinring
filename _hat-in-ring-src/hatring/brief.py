@@ -122,9 +122,66 @@ b.up{{color:#1f9d55}}b.dn{{color:#ff6b6b}}b.fl{{color:#8b929c}}a{{color:#6aa3ff}
 </div></body></html>'''
 
 
+def _share_font(size: int, bold: bool = False):
+    from PIL import ImageFont
+    paths = ([
+        "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",   # GitHub Ubuntu runner
+        "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+    ] if bold else [
+        "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+        "/System/Library/Fonts/Supplemental/Arial.ttf",
+    ]) + ["/Library/Fonts/Arial.ttf", "/System/Library/Fonts/Helvetica.ttc"]
+    for p in paths:
+        try:
+            return ImageFont.truetype(p, size)
+        except OSError:
+            continue
+    return ImageFont.load_default()
+
+
+def render_share_png(brief: dict, out_path: Path) -> None:
+    """1200x630 raster share card (Pillow). Social platforms (Facebook, X,
+    LinkedIn, iMessage) don't render SVG previews, so this PNG is the real
+    og:image; the SVG is kept as a lightweight fallback."""
+    from PIL import Image, ImageDraw
+    W, H = 1200, 630
+    img = Image.new("RGB", (W, H), (15, 17, 21))            # #0f1115
+    d = ImageDraw.Draw(img)
+    d.rectangle([0, 0, W, 8], fill=(210, 59, 59))           # red top bar
+    cream, muted, red, green = (244, 239, 231), (139, 146, 156), (210, 59, 59), (31, 157, 85)
+    d.text((80, 64), "Hat-in-Ring Radar", font=_share_font(66, bold=True), fill=cream)
+    d.text((80, 150), "2028 presidential signal tracker · " + str(brief.get("date", "")),
+           font=_share_font(30), fill=muted)
+    d.text((80, 224), "TOP MOVERS THIS WEEK", font=_share_font(30, bold=True), fill=red)
+    rowf = _share_font(44)
+    y, movers = 300, brief.get("movers", [])[:3]
+    if movers:
+        for m in movers:
+            dl = m["delta"]
+            arrow = "▲" if dl > 0 else "▼" if dl < 0 else "–"
+            col = green if dl > 0 else red if dl < 0 else muted
+            txt = f"{arrow} {'+' if dl > 0 else ''}{dl}"
+            d.text((80, y), str(m["name"]), font=rowf, fill=cream)
+            d.text((W - 80 - d.textlength(txt, font=rowf), y), txt, font=rowf, fill=col)
+            y += 80
+    else:
+        d.text((80, 300), "No movement today.", font=rowf, fill=muted)
+    t = brief.get("totals", {})
+    d.text((80, 560),
+           f'{t.get("tracked", 0)} tracked · {t.get("formal", 0)} formal · '
+           f'{t.get("considering", 0)} considering · hatinring.com',
+           font=_share_font(26), fill=muted)
+    img.save(out_path, "PNG")
+
+
 def write_share_assets(brief: dict, out_dir: Path) -> None:
-    # Single stable filenames (no per-date copies) so the committed site repo
-    # doesn't accumulate a share image per day. The OG tag points at latest.svg.
-    (out_dir / "assets" / "share").mkdir(parents=True, exist_ok=True)
+    # Stable filenames (no per-date copies) so the committed repo doesn't grow a
+    # share image per day. og:image points at the PNG (social can't render SVG).
+    share = out_dir / "assets" / "share"
+    share.mkdir(parents=True, exist_ok=True)
     (out_dir / "share.html").write_text(render_share_html(brief))
-    (out_dir / "assets" / "share" / "latest.svg").write_text(render_share_svg(brief))
+    share.joinpath("latest.svg").write_text(render_share_svg(brief))
+    try:
+        render_share_png(brief, share / "latest.png")
+    except Exception as e:                                  # noqa: BLE001 - PNG is best-effort
+        log.warning("share PNG skipped (%s)", e)

@@ -31,7 +31,7 @@ PAGE_DESC = ("Live 2028 presidential signal tracker: status tier × momentum "
              "across 40+ potential candidates, updated daily from FEC filings and "
              "news. Trajectory, early-state activity, head-to-head compare, and "
              "money movement — defensible signals, not a rumor board.")
-OG_IMAGE = CANONICAL_URL + "assets/share/latest.svg"
+OG_IMAGE = CANONICAL_URL + "assets/share/latest.png"   # PNG: social platforms can't render SVG previews
 
 
 def _html_esc(s) -> str:

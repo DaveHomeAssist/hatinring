@@ -2,9 +2,22 @@
 from __future__ import annotations
 from datetime import date
 
+import pytest
+
 from hatring import brief
 
 TODAY = date(2026, 6, 15)
+
+
+def test_share_png_is_1200x630(tmp_path):
+    """The PNG is the real og:image (social can't render SVG); verify size + magic."""
+    pytest.importorskip("PIL")
+    from PIL import Image
+    b = brief.build_briefing([_rec("a", ["donors"], "2026-06-14", delta=4)], 0, TODAY)
+    brief.write_share_assets(b, tmp_path)
+    png = tmp_path / "assets" / "share" / "latest.png"
+    assert png.exists() and png.read_bytes()[:8] == b"\x89PNG\r\n\x1a\n"
+    assert Image.open(png).size == (1200, 630)
 
 
 def _rec(rid, keys, last, delta=0, history=None, name=None):
