@@ -133,5 +133,30 @@
     "note": "denial/downgrade — confirm before applying",
     "rid": "e931587826cc",
     "kind": "denial"
+  },
+  {
+    "name": "Marco Rubio",
+    "headline": "Stephen A Smith rules out White House bid, says he’d back Rubio over some top Democrats - Fox News",
+    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOck15eGhFanVoZnpxOFFKREtzellDbTRQX3dISVk2ZjBoc1FWWmdfb3pUUUo0R3ZXMXBNQTJ6YUtQbGlKM0F5UWRUT0dfenAwUDZlMy0wZmtTSmg3cjJKdDU5TEdicXdkcUNHbE41N3hXa1BWYldmT3lHSzhrLUZiNTU1SlgwZjdXVmFoLVJqUkxZQmV5VUJMRUlwS3VjS3pXUmplenEzdGg2bEZwMnBEVDRaVms4Z9IBuwFBVV95cUxPWEdzYjNxemhldlhKejZNMXFXRFJycmt1NUNjRGhpTWFub1YtR3pSVy1XZ3RXQkdmM2FFclRZLWhoLVI4d3ZTUkVWQ1MySjNmbzA3aHdWN0YtSk43T3UzNEphbEZhTGc2TlpwUmhaRDBHNFV0ZHNTRXE0SmdiQmlRYzFScXQyZnRWQ3VPZV8wZkN0bkdmNWN0RGpHeVhocXlVc084dm9Td2dJa0tIZXc3aGpmVHZKVVhtLUJF?oc=5",
+    "source": "Fox News",
+    "date": "2026-03-09",
+    "keys": [
+      "ruledOut"
+    ],
+    "note": "denial/downgrade — confirm before applying",
+    "rid": "724d79651620",
+    "kind": "denial"
+  },
+  {
+    "name": "State Affairs",
+    "headline": "Kennedy not ruling out 2028 presidential run - State Affairs",
+    "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE84STFnMlJZelFoQUhpbXZva2w0MUNmQlF0U3hUMnZ3S0wybHZoVm9RMFRCczF5bkhJVDVrYnB4SWw1NGVfVDNKa1N3UUxLYjZWSTVUd1hSVUd1ZTMzdXZZUGlrTUdHR2ZBWElPMkZQMXNTQnFfbmFCS21B?oc=5",
+    "source": "State Affairs",
+    "date": "2026-06-15",
+    "keys": [
+      "softConsidering"
+    ],
+    "rid": "9a0fa9b880d1",
+    "kind": "discovery"
   }
 ]

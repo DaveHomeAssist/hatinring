@@ -367,7 +367,13 @@
     "tags": [
       "senate",
       "anti-Vance lane"
-    ]
+    ],
+    "early_states": {
+      "IA": 1
+    },
+    "early_states_last": {
+      "IA": "2026-05-02"
+    }
   },
   {
     "id": "desantis",
@@ -620,9 +626,9 @@
     ],
     "conf": "Medium",
     "delta": 0,
-    "lastSignal": "2026-06-03",
+    "lastSignal": "2026-06-15",
     "pollLead": "GOP poll leader (~35%)",
-    "headline": "Downplays it — \"I'm a VP and I like my job\"",
+    "headline": "‘Communion’: JD Vance’s spiritual memoir released as 2028 race heats up - OSV News",
     "why": "Leads GOP primary polls despite no \"considering\" language; Trump floats a Vance-Rubio ticket.",
     "quote": "I'm not a potential future candidate. I'm a Vice President.",
     "tags": [
