@@ -122,6 +122,7 @@ class Dataset:
         if c.date >= rec.get("lastSignal", "0000-00-00"):
             rec["lastSignal"] = c.date
             rec["headline"] = c.headline
+            rec["sourceUrl"] = c.url          # clickable source trail for the drawer
             if c.quote:
                 rec["quote"] = c.quote
             changed = True

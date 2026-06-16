@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About &amp; Methodology — Hat-in-Ring Radar</title>
+<meta name="description" content="How the 2028 Hat-in-Ring Radar works: a source-linked tracker of presidential campaign signals, scored on two axes — status tier and momentum. Sources, confidence levels, guardrails, and corrections policy.">
+<link rel="canonical" href="https://hatinring.com/about.html">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta name="theme-color" content="#1a1a1a">
+<meta property="og:type" content="article">
+<meta property="og:title" content="About &amp; Methodology — Hat-in-Ring Radar">
+<meta property="og:description" content="How the 2028 presidential signal tracker works: two axes, sources, confidence, guardrails, corrections.">
+<meta property="og:url" content="https://hatinring.com/about.html">
+<meta property="og:image" content="https://hatinring.com/assets/share/latest.svg">
+<style>
+  :root{--bg:#f6f5f1;--panel:#fff;--ink:#1a1a1a;--muted:#6b6b6b;--line:#e3e1da;--dem:#2f6fd1;--rep:#d23b3b}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.55}
+  .wrap{max-width:760px;margin:0 auto;padding:28px 20px 70px}
+  h1,h2,h3{font-family:Georgia,"Times New Roman",serif;letter-spacing:-.01em;line-height:1.15}
+  h1{font-size:34px;margin:0 0 6px}
+  h2{font-size:22px;margin:34px 0 10px;padding-top:14px;border-top:1px solid var(--line)}
+  h3{font-size:17px;margin:18px 0 6px}
+  a{color:var(--dem);text-decoration:none}a:hover{text-decoration:underline}
+  .sub{color:var(--muted);font-size:14px;text-transform:uppercase;letter-spacing:.03em;margin-bottom:18px}
+  .lede{font-size:18px;color:#333}
+  .call{background:#fff;border:1px solid var(--line);border-left:3px solid var(--rep);border-radius:8px;padding:12px 15px;margin:18px 0;font-size:15px}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:14.5px}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:#fbfaf7;font-size:12.5px;text-transform:uppercase;letter-spacing:.03em;color:var(--muted)}
+  ul{padding-left:20px}li{margin:5px 0}
+  code{background:#efece4;padding:1px 5px;border-radius:4px;font-size:13.5px}
+  .back{display:inline-block;margin-bottom:18px;font-weight:600}
+  footer{margin-top:40px;padding-top:16px;border-top:2px solid var(--ink);font-size:13.5px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="/">&larr; Back to the radar</a>
+  <h1>Hat-in-Ring Radar</h1>
+  <div class="sub">About &amp; Methodology</div>
+  <p class="lede">A source-linked tracker of <b>2028 U.S. presidential campaign signals</b>. It grades potential candidates on two independent things and rebuilds every day from public filings and reporting.</p>
+
+  <div class="call"><b>Status is not support.</b> A poll front-runner who keeps saying "no plans" can sit low on status and high on momentum. We track <i>activity</i>, not popularity, and we keep the two separate on purpose.</div>
+
+  <h2 id="how-to">How to read it</h2>
+  <p>Every candidate is scored on two axes that move independently:</p>
+  <h3>Status tier — the furthest verifiable step taken</h3>
+  <table>
+    <tr><th>Tier</th><th>Meaning</th><th>Evidence standard</th></tr>
+    <tr><td><b>Declared</b></td><td>Running</td><td>FEC Statement of Candidacy (Form 2) / launched campaign / explicit "I'm running"</td></tr>
+    <tr><td><b>Exploratory</b></td><td>Testing the waters</td><td>Exploratory committee or testing-the-waters org</td></tr>
+    <tr><td><b>Considering</b></td><td>On-record interest</td><td>Direct, on-record "I'm considering it" quote</td></tr>
+    <tr><td><b>Positioning</b></td><td>Acting like it</td><td>Early-state travel, donors, staffing, or media — no quote yet</td></tr>
+    <tr><td><b>Floated</b></td><td>Soft signal</td><td>"Not ruling it out" / hedged interest</td></tr>
+    <tr><td><b>Inactive</b></td><td>Out or ineligible</td><td>Ruled out, constitutionally barred, or dormant</td></tr>
+  </table>
+  <p>Status takes the <b>single highest</b> verified step — it never stacks.</p>
+  <h3>Momentum (0–100) — how much they're doing right now</h3>
+  <p>A weighted sum of activity that <b>cools over time</b>: declared/exploratory/quotes weigh most, then early-state travel, donors, staffing, and media; recency adds a small boost under 30 days and a penalty past 90. Open any candidate to see the exact math behind their number (e.g. <code>+20 considering quote, +10 donors, −10 stale</code>).</p>
+
+  <h2 id="sources">Sources &amp; how signals are gathered</h2>
+  <ul>
+    <li><b>FEC filings</b> (OpenFEC API) — statements of candidacy and principal-committee registrations. Note: an FEC registration is a legal/financial threshold (a candidate must register after raising or spending more than $5,000), <i>not</i> a public announcement — we don't treat the two as the same.</li>
+    <li><b>News wire</b> (Google News) — interviews, early-state visits, donor/staffing moves, and denials, from outlets including AP, Reuters, Time, the Washington Post, ABC, and C-SPAN.</li>
+  </ul>
+  <p>Each candidate's drawer shows the latest signal, a confidence rating, the date, and — where available — a link to the source. It is a <b>manually-defensible tracker, not a live feed</b>.</p>
+
+  <h2 id="confidence">Confidence levels</h2>
+  <table>
+    <tr><th>Level</th><th>Basis</th></tr>
+    <tr><td><b>Very high</b></td><td>FEC filing, campaign site, or official announcement</td></tr>
+    <tr><td><b>High</b></td><td>Direct quote from the candidate or a spokesperson</td></tr>
+    <tr><td><b>Medium</b></td><td>Credible reporting from named sources</td></tr>
+    <tr><td><b>Low</b></td><td>Ally chatter, unnamed sources, speculation</td></tr>
+    <tr><td><b>Noise</b></td><td>Social rumor, parody, unsourced</td></tr>
+  </table>
+
+  <h2 id="guardrails">What it won't do (guardrails)</h2>
+  <ul>
+    <li>Unknown names and parody never hit the live board — they go to a human review queue.</li>
+    <li><b>Denials are never auto-applied.</b> A "won't run" headline goes to review for confirmation, not straight onto the board.</li>
+    <li>Of the many perennial/nuisance FEC filers, only those with a registered principal committee surface.</li>
+    <li><b>Money is a separate axis</b> — campaign-finance totals are shown on their own, never folded into the momentum score.</li>
+    <li>Curated context is never overwritten by automation.</li>
+  </ul>
+
+  <h2 id="money">Money</h2>
+  <p>Where a candidate has a registered FEC committee, the dashboard shows receipts, disbursements, and cash on hand from FEC reports. Non-filers show <b>"not filed"</b> — never <code>$0</code> — so a registered campaign with no money isn't conflated with someone who hasn't filed at all. This far out (2026), most potential candidates have no committee yet, so this panel is sparse by design.</p>
+
+  <h2 id="data">Data &amp; openness</h2>
+  <p>The full dataset can be exported as JSON from the board (the <b>Export</b> button). The pipeline and source are open at <a href="https://github.com/DaveHomeAssist/hatinring">github.com/DaveHomeAssist/hatinring</a>; see the <a href="https://github.com/DaveHomeAssist/hatinring/blob/main/docs/SPEC.md">technical spec</a>.</p>
+
+  <h2 id="corrections">Corrections &amp; contact</h2>
+  <p>Spot something wrong or out of date? <b>Corrections are welcome.</b> Open an issue at <a href="https://github.com/DaveHomeAssist/hatinring/issues">github.com/DaveHomeAssist/hatinring/issues</a> with the candidate, what's wrong, and a source. Confirmed corrections are applied on the next daily build.</p>
+
+  <footer>
+    Hat-in-Ring Radar · a project of <a href="https://systembydave.com/">System by Dave</a> · data from public reporting (AP, Reuters, Time, WaPo, ABC, C-SPAN, FEC). Not affiliated with any campaign. Status ≠ support.
+  </footer>
+</div>
+</body>
+</html>

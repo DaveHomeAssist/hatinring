@@ -39,6 +39,29 @@ def _html_esc(s) -> str:
             .replace(">", "&gt;").replace('"', "&quot;"))
 
 
+def _attach_source_urls(records: list[dict], data_dir: Path) -> None:
+    """Backfill a clickable `sourceUrl` per record from the news audit log, so the
+    drawer shows a source trail even for records merged before sourceUrl existed.
+    The last news row for a person in signals.jsonl is their most recent URL.
+    Never overwrites a sourceUrl already set by merge."""
+    audit = data_dir / "signals.jsonl"
+    if not audit.exists():
+        return
+    latest: dict[str, str] = {}
+    for line in audit.read_text().splitlines():
+        if not line.strip():
+            continue
+        try:
+            row = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        if row.get("type") == "news" and row.get("person") and row.get("url"):
+            latest[row["person"]] = row["url"]       # later lines win (more recent)
+    for r in records:
+        if not r.get("sourceUrl") and latest.get(r.get("id")):
+            r["sourceUrl"] = latest[r["id"]]
+
+
 def _attach_images(records: list[dict], repo_root: Path) -> None:
     """Set each record's `img` to its lead portrait (a repo-relative path).
 
@@ -109,6 +132,7 @@ def render(candidates_path: Path, template_dir: Path, out_path: Path,
     repo_root = data_dir.parent
     _attach_images(records, repo_root)            # adds `img` where a portrait exists
     geo.backfill_early_states(records)            # make early-state activity demoable now
+    _attach_source_urls(records, data_dir)        # clickable per-candidate source trail
     series.attach(records, built, data_dir / "momentum_snapshots.jsonl")  # series/slope7/slope30
     money.attach(records, data_dir / "financials.json")                   # separate money axis
     # The review queue lives next to candidates.json; inline it so the dashboard's
