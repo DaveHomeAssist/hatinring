@@ -888,6 +888,7 @@ function openDrawer(id){
       </div>
       ${x.tags&&x.tags.length?`<div class="tagrow">${x.tags.map(t=>`<span class="tag">${esc(t)}</span>`).join('')}</div>`:''}
       <div style="margin-top:18px;display:flex;gap:8px;flex-wrap:wrap">
+        ${/^(c\d|rev-)/.test(String(x.id))?'':`<a class="btn" href="/c/${esc(x.id)}/">Full page ↗</a>`}
         <button class="btn" data-cmpadd="${x.id}">${COMPARE.includes(x.id)?'✓ In compare':'＋ Compare'}</button>
         <button class="btn" data-edit="${x.id}">Edit</button>
         <button class="btn" data-del="${x.id}">Delete</button>

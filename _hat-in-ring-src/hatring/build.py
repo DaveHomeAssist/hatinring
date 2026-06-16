@@ -13,7 +13,7 @@ from datetime import date, datetime
 from pathlib import Path
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
-from . import series, money, geo, brief
+from . import series, money, geo, brief, pages
 from .scoring import enrich
 
 log = logging.getLogger("hatring.build")
@@ -21,7 +21,7 @@ log = logging.getLogger("hatring.build")
 # Fields the dashboard never needs (keep the payload lean & avoid leaking
 # internals). `history` is dropped because the compact `series` (attached below)
 # is its public-facing replacement; raw `fec_ids` stay server-side.
-_DROP = {"history", "fec_ids"}
+_DROP = {"history", "fec_ids", "evidence"}
 
 # where pulled candidate portraits live, relative to the repo root
 _ASSET_DIR = Path("assets") / "candidates"
@@ -146,10 +146,13 @@ def render(candidates_path: Path, template_dir: Path, out_path: Path,
     # Static, crawlable top-15 summary so SEO isn't JS-dependent (mission SEO pass).
     enriched = sorted((enrich(r, built) for r in records),
                       key=lambda r: r["score"], reverse=True)
+    # Link every candidate to its static page: gives crawlers real internal links
+    # to all /c/<id>/ pages straight from the (no-JS) homepage.
     crawl_rows = "".join(
-        f"<tr><td>{i+1}</td><td>{_html_esc(r['name'])}</td>"
+        f"<tr><td>{i+1}</td>"
+        f"<td><a href=\"/c/{_html_esc(r['id'])}/\">{_html_esc(r['name'])}</a></td>"
         f"<td>{_html_esc(r['party'])}</td><td>{_html_esc(r['statusLabel'])}</td>"
-        f"<td>{r['score']}</td></tr>" for i, r in enumerate(enriched[:15]))
+        f"<td>{r['score']}</td></tr>" for i, r in enumerate(enriched))
     env = Environment(
         loader=FileSystemLoader(str(template_dir)),
         autoescape=select_autoescape(enabled_extensions=()),  # we inject JS/JSON, not HTML
@@ -173,5 +176,9 @@ def render(candidates_path: Path, template_dir: Path, out_path: Path,
     out_path.write_text(html)
     imgs = _copy_assets(records, repo_root, out_path.parent)  # stage portraits beside index.html
     brief.write_share_assets(briefing, out_path.parent)       # share.html + assets/share/*.svg
-    log.info("build: wrote %s (%d records, %d imgs, %d bytes)", out_path, len(records), imgs, len(html))
+    npages = pages.render_candidate_pages(records, template_dir, out_path.parent,
+                                          built, CANONICAL_URL, OG_IMAGE)  # /c/<id>/
+    pages.build_sitemap(records, out_path.parent, CANONICAL_URL)          # sitemap incl. all pages
+    log.info("build: wrote %s (%d records, %d imgs, %d pages, %d bytes)",
+             out_path, len(records), imgs, npages, len(html))
     return out_path

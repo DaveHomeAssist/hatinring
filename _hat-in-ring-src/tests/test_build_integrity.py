@@ -170,7 +170,7 @@ def test_seed_is_valid_json(tmp_path):
 # ----------------------------------------------------------------------------
 def test_drop_fields_not_leaked(tmp_path):
     # sanity: the build module's contract names exactly these fields
-    assert buildmod._DROP == {"history", "fec_ids"}
+    assert buildmod._DROP == {"history", "fec_ids", "evidence"}
     recs = _dataset(with_drop_fields=True)
     # precondition: the INPUT really does carry both drop fields + sentinels
     assert any("history" in r for r in recs) and any("fec_ids" in r for r in recs)

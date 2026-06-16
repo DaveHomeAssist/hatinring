@@ -118,6 +118,16 @@ class Dataset:
                 es[stt] = es.get(stt, 0) + 1
                 last[stt] = c.date
                 changed = True
+        # Dated, sourced evidence trail for the per-candidate page (bounded). One
+        # entry per applied news signal; idempotent (update() skips seen sids).
+        # Kept OUT of the dashboard SEED via build._DROP.
+        applied_keys = [k for k in c.keys if k not in DOWNGRADES]
+        if applied_keys:
+            rec.setdefault("evidence", []).append(
+                {"date": c.date, "headline": c.headline, "url": c.url,
+                 "keys": applied_keys, "conf": c.confidence})
+            rec["evidence"] = rec["evidence"][-24:]
+            changed = True
         # refresh "latest signal" if this item is newer
         if c.date >= rec.get("lastSignal", "0000-00-00"):
             rec["lastSignal"] = c.date
