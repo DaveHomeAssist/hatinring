@@ -221,12 +221,15 @@ def run(args):
             except Exception as e:                       # noqa: BLE001
                 log.error("money refresh failed: %s", e)
 
-        # Daily briefing artifact (committed; build.py recomputes for the live page).
+        # Daily briefing artifact (committed; build.py recomputes for the live page)
+        # + the RSS feed item (recorded here, in the ingest path, so a plain --build
+        # never mutates data/ — keeps test renders side-effect free).
         try:
             pending = [x for x in _safe_load(DATA / "review_queue.json", [], list)
                        if isinstance(x, dict)]
-            briefmod.write_briefing(
-                briefmod.build_briefing(ds.records, len(pending), today), DATA)
+            b = briefmod.build_briefing(ds.records, len(pending), today)
+            briefmod.write_briefing(b, DATA)
+            briefmod.record_feed_item(b, DATA)
         except Exception as e:                           # noqa: BLE001
             log.error("briefing failed: %s", e)
 
