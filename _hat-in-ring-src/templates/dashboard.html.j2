@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/favicon.svg">
 <title>2028 Hat-in-Ring Radar</title>
 <meta name="description" content="{{ page_desc }}">
 <link rel="canonical" href="{{ canonical_url }}">
@@ -299,7 +301,7 @@ a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible,
 <div class="wrap">
   <header class="top">
     <div class="brand">
-      <h1>🧭 Hat-in-Ring Radar</h1>
+      <h1>Hat-in-Ring Radar</h1>
       <div class="sub">2028 presidential signal tracker</div>
     </div>
     <div class="asof">
@@ -721,7 +723,7 @@ function renderReview(){
       <div class="ri-keys">${(Array.isArray(x.keys)?x.keys:[]).map(k=>`<span class="kchip">${esc(k)}</span>`).join('')}</div>
       <div class="ri-act"><button class="btn primary" data-confirm="${esc(x.rid)}">Confirm</button><button class="btn" data-dismiss="${esc(x.rid)}">Dismiss</button>${url?`<a class="ri-link" href="${esc(url)}" target="_blank" rel="noopener noreferrer">source ↗</a>`:''}</div>
     </div>`;
-  }).join('')||`<div class="reviewEmpty">Nothing in the review queue. 🎉</div>`;
+  }).join('')||`<div class="reviewEmpty">Nothing in the review queue — all clear.</div>`;
 }
 function renderQuick(){
   const all=records();

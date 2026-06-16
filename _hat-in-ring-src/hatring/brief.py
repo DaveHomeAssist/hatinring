@@ -91,7 +91,7 @@ def render_share_svg(brief: dict) -> str:
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Hat-in-Ring Radar daily briefing">
 <rect width="1200" height="630" fill="#0f1115"/>
 <rect width="1200" height="8" fill="#d23b3b"/>
-<text x="80" y="120" font-size="58" fill="#f4efe7" font-family="Georgia,serif">🧭 Hat-in-Ring Radar</text>
+<text x="80" y="120" font-size="58" fill="#f4efe7" font-family="Georgia,serif">Hat-in-Ring Radar</text>
 <text x="80" y="170" font-size="28" fill="#8b929c" font-family="-apple-system,Arial,sans-serif">2028 presidential signal tracker · {_esc(brief.get("date",""))}</text>
 <text x="80" y="245" font-size="30" fill="#d23b3b" font-family="-apple-system,Arial,sans-serif" letter-spacing="2">TOP MOVERS THIS WEEK</text>
 {body}
@@ -109,12 +109,13 @@ def render_share_html(brief: dict) -> str:
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Hat-in-Ring Radar — {_esc(brief.get("date",""))} briefing</title>
 <link rel="canonical" href="https://hatinring.com/">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <style>body{{margin:0;background:#0f1115;color:#f4efe7;font-family:-apple-system,Segoe UI,Arial,sans-serif;display:grid;place-items:center;min-height:100vh}}
 .card{{width:min(640px,92vw);border:1px solid #2a2d33;border-radius:16px;padding:28px;background:#15171c}}
 h1{{font-family:Georgia,serif;margin:0 0 4px;font-size:26px}}.sub{{color:#8b929c;margin-bottom:18px}}
 ul{{list-style:none;padding:0;margin:0}}li{{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid #23262d;font-size:17px}}
 b.up{{color:#1f9d55}}b.dn{{color:#ff6b6b}}b.fl{{color:#8b929c}}a{{color:#6aa3ff}}</style></head>
-<body><div class="card"><h1>🧭 Hat-in-Ring Radar</h1>
+<body><div class="card"><h1>Hat-in-Ring Radar</h1>
 <div class="sub">Top movers · {_esc(brief.get("date",""))}</div>
 <ul>{items}</ul>
 <p class="sub" style="margin-top:18px">Live board → <a href="https://hatinring.com/">hatinring.com</a></p>
