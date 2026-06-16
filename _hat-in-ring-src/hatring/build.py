@@ -179,6 +179,8 @@ def render(candidates_path: Path, template_dir: Path, out_path: Path,
     npages = pages.render_candidate_pages(records, template_dir, out_path.parent,
                                           built, CANONICAL_URL, OG_IMAGE)  # /c/<id>/
     pages.build_sitemap(records, out_path.parent, CANONICAL_URL)          # sitemap incl. all pages
+    brief.record_feed_item(briefing, data_dir)                           # accrue daily "what moved"
+    brief.write_feed(data_dir, out_path.parent)                          # /feed.xml (RSS)
     log.info("build: wrote %s (%d records, %d imgs, %d pages, %d bytes)",
              out_path, len(records), imgs, npages, len(html))
     return out_path

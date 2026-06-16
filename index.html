@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="apple-touch-icon" href="/favicon.svg">
+<link rel="alternate" type="application/rss+xml" title="Hat-in-Ring Radar — daily movement" href="/feed.xml">
 <title>2028 Hat-in-Ring Radar</title>
 <meta name="description" content="Live 2028 presidential signal tracker: status tier × momentum across 40+ potential candidates, updated daily from FEC filings and news. Trajectory, early-state activity, head-to-head compare, and money movement — defensible signals, not a rumor board.">
 <link rel="canonical" href="https://hatinring.com/">
@@ -307,7 +308,7 @@ a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible,
     <div class="asof">
       As of <b id="asof">June 16, 2026</b> <span style="opacity:.65">UTC</span><br>
       <span id="counter"></span><br>
-      <span class="buildstamp" title="Last automated rebuild (UTC)">auto-built Jun 16 2026 00:59 UTC</span>
+      <span class="buildstamp" title="Last automated rebuild (UTC)">auto-built Jun 16 2026 01:21 UTC</span>
     </div>
   </header>
 
@@ -492,6 +493,16 @@ const TIERS = {
   2:{label:'Positioning',   c:'var(--t2)'},
   1:{label:'Floated',       c:'var(--t1)'},
   0:{label:'Inactive',      c:'var(--t0)'}
+};
+// Tier definitions tightened to evidentiary standards (a campaign couldn't fairly
+// contest a badge). Mirrored in /about and on each candidate page.
+const STATUS_DEF = {
+  5:'an FEC Statement of Candidacy (Form 2) or an on-the-record campaign launch',
+  4:'a registered exploratory / testing-the-waters committee',
+  3:'a direct, on-the-record "I’m considering it" statement',
+  2:'campaign-style activity — early-state travel, donors, staffing, or media — with no on-record quote yet',
+  1:'a soft, hedged signal ("not ruling it out")',
+  0:'ruled out, constitutionally ineligible, or dormant'
 };
 const CONF = {'Very high':4,'High':3,'Medium':2,'Low':1,'Noise':0};
 const CONFC = {'Very high':'var(--good)','High':'#3a8f55','Medium':'var(--lib)','Low':'#b08a2a','Noise':'#b0b0b0'};
@@ -702,8 +713,8 @@ function renderFeed(){
 }
 function renderLegend(){
   $('#legend').innerHTML=Object.entries(TIERS).sort((a,b)=>b[0]-a[0]).map(([t,o])=>
-    `<div class="li"><span class="sw"><span class="tier" style="background:${o.c};padding:2px 6px">${t}</span></span><span>${({5:'Declared — FEC Form 2 / launch',4:'Exploratory committee / testing-the-waters org',3:'Direct "considering" quote',2:'Positioning — travel, donors, staff, media',1:'Floated / "not ruling out"',0:'Ruled out / ineligible / inactive'})[t]}</span></div>`
-  ).join('')+`<div class="note">★ = leads primary polling despite lower status tier (status ≠ support).</div>`;
+    `<div class="li"><span class="sw"><span class="tier" style="background:${o.c};padding:2px 6px">${t}</span></span><span><b>${o.label}</b> — ${STATUS_DEF[t]}</span></div>`
+  ).join('')+`<div class="note">★ = leads primary polling despite lower status tier (status ≠ support). <a href="/about.html#how-to">Full methodology →</a></div>`;
 }
 const _KINDS={discovery:['Discovery','disc'],denial:['Denial · confirm','den'],fec:['FEC filer','fec']};
 function kindBadge(k){const [l,c]=_KINDS[k]||['Review','disc'];return `<span class="kind ${c}">${l}</span>`;}
@@ -780,7 +791,7 @@ function renderBriefing(){
   if(nf.length) sec.push('<div class="b-sec">Formal / new filers</div>'+nf.slice(0,5).map(m=>`<div class="b-item" data-id="${m.id}"><span>${esc(m.name)}</span><span class="conf">${esc(m.statusLabel)}</span></div>`).join(''));
   const tr=(b.transitions||[]);
   if(tr.length) sec.push('<div class="b-sec">Status changes (7d)</div>'+tr.slice(0,5).map(t=>`<div class="b-item"><span>${esc(t.name)}</span><span class="conf">${(TIERS[t.from]||{}).label||t.from} → ${(TIERS[t.to]||{}).label||t.to}</span></div>`).join(''));
-  el.innerHTML=(sec.join('')||'<div class="b-empty">No notable movement today.</div>')+`<div class="b-share">${b.review_count?b.review_count+' item'+(b.review_count>1?'s':'')+' awaiting review · ':''}<a href="share.html" target="_blank" rel="noopener">Open share card ↗</a></div>`;
+  el.innerHTML=(sec.join('')||'<div class="b-empty">No notable movement today.</div>')+`<div class="b-share">${b.review_count?b.review_count+' item'+(b.review_count>1?'s':'')+' awaiting review · ':''}<a href="share.html" target="_blank" rel="noopener">Open share card ↗</a> · <a href="/feed.xml">Subscribe (RSS)</a></div>`;
   $('#briefMeta').textContent=b.date||'what moved';
 }
 function renderTrajectory(){
@@ -862,6 +873,7 @@ function openDrawer(id){
       <h2 style="font-size:20px">${esc(x.name)}</h2>
       <div style="color:var(--muted);font-size:12.5px;margin-top:3px">${esc(x.role)} · <span style="color:${partyColor(x.party)};font-weight:600">${esc(x.party)}</span></div>
       <div style="margin-top:9px">${tierBadge(x)} ${confHTML(x.conf)} ${deltaHTML(x.delta)}${x.pollLead?` <span class="pollLead">★ ${esc(x.pollLead)}</span>`:''}</div>
+      <div class="conf" style="margin-top:6px"><b>${TIERS[x.tier].label}</b> requires ${STATUS_DEF[x.tier]}.</div>
     </div>
     <div class="body">
       <div class="kv">
@@ -893,7 +905,7 @@ function openDrawer(id){
         <button class="btn" data-edit="${x.id}">Edit</button>
         <button class="btn" data-del="${x.id}">Delete</button>
       </div>
-      <div class="note" style="margin-top:14px">Momentum = breadth & recency of activity. Status tier = furthest verifiable step taken. They move independently — a downplaying front-runner can sit at "Floated" with mid momentum.</div>
+      <div class="note" style="margin-top:14px">Momentum = breadth & recency of activity. Status tier = furthest verifiable step taken. They move independently — a downplaying front-runner can sit at "Floated" with mid momentum.<br><a href="/c/${esc(x.id)}/">Full page ↗</a> · <a href="https://github.com/DaveHomeAssist/hatinring/issues/new?title=${encodeURIComponent('Correction: '+x.name)}&body=${encodeURIComponent('Candidate: '+x.name+'\nWhat is wrong:\nSource link:')}" target="_blank" rel="noopener">Report an error ↗</a> · <a href="/about.html">Methodology</a></div>
     </div>`;
   showDrawer();
 }
@@ -1045,7 +1057,7 @@ function init(){
   $('#scrim').addEventListener('click',closeDrawer);
   document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDrawer();});
 
-  $('#foot').innerHTML=`<div style="margin-bottom:8px"><a href="/about.html">About &amp; methodology</a> · <a href="/about.html#sources">Sources</a> · <a href="/about.html#confidence">Confidence</a> · <a href="/about.html#corrections">Submit a correction</a> · <a href="https://github.com/DaveHomeAssist/hatinring">Open data &amp; code</a> · <span class="resetlink" id="resetPrefs">Reset view</span></div><b>Status tier</b> = furthest verifiable step taken; <b>momentum</b> = weighted activity + recency, capped 0–100. <b>Status is not support.</b> Manually-maintained from public reporting (AP, Reuters, Time, WaPo, ABC, C-SPAN, FEC) — not a live feed. Your edits save to this browser only.`;
+  $('#foot').innerHTML=`<div style="margin-bottom:8px"><a href="/about.html">About &amp; methodology</a> · <a href="/about.html#sources">Sources</a> · <a href="/about.html#confidence">Confidence</a> · <a href="/about.html#corrections">Submit a correction</a> · <a href="/feed.xml">Subscribe (RSS)</a> · <a href="https://github.com/DaveHomeAssist/hatinring">Open data &amp; code</a> · <span class="resetlink" id="resetPrefs">Reset view</span></div><b>Status tier</b> = furthest verifiable step taken; <b>momentum</b> = weighted activity + recency, capped 0–100. <b>Status is not support.</b> Manually-maintained from public reporting (AP, Reuters, Time, WaPo, ABC, C-SPAN, FEC) — not a live feed. Your edits save to this browser only.`;
   // drawer swipe-to-dismiss (touch): light resistance + snap on release
   (function(){var d=$('#drawer'),x0=null;
     d.addEventListener('touchstart',function(ev){x0=ev.touches[0].clientX;d.style.transition='none';},{passive:true});

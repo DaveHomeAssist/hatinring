@@ -70,6 +70,7 @@
   </div>
 
   <div class="call"><b>Status is not support.</b> Status tier = the furthest verifiable step taken ({{ status_def }}). Momentum = weighted recent activity, not popularity. <a href="/about.html#how-to">How to read this →</a></div>
+  <p class="muted" style="font-size:13.5px">Last reviewed in the <b>{{ as_of }}</b> UTC daily build · latest signal {{ last_signal_human }}{% if days_since != '—' %} ({{ days_since }} days ago){% endif %}.</p>
 
   <h2>Latest signal</h2>
   <p>{{ c.headline }}{% if source_url %} <a href="{{ source_url }}" target="_blank" rel="noopener noreferrer" style="white-space:nowrap">source ↗</a>{% endif %}<br>

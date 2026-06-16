@@ -1,5 +1,6 @@
 """Daily-briefing tests: empty / minimal / normal datasets + share-asset output."""
 from __future__ import annotations
+import json
 from datetime import date
 
 import pytest
@@ -7,6 +8,19 @@ import pytest
 from hatring import brief
 
 TODAY = date(2026, 6, 15)
+
+
+def test_feed_records_idempotent_and_renders(tmp_path):
+    b = brief.build_briefing([_rec("a", ["consideringQuote"], "2026-06-14",
+                                   delta=12, name="Alpha")], 0, TODAY)
+    brief.record_feed_item(b, tmp_path)
+    brief.record_feed_item(b, tmp_path)                 # same date -> no dup
+    items = json.loads((tmp_path / "feed_items.json").read_text())
+    assert len(items) == 1 and items[0]["date"] == TODAY.isoformat()
+    brief.write_feed(tmp_path, tmp_path)
+    feed = (tmp_path / "feed.xml").read_text()
+    assert feed.startswith("<?xml") and 'rss version="2.0"' in feed
+    assert "Alpha" in feed and "What moved" in feed and "<pubDate>" in feed
 
 
 def test_share_png_is_1200x630(tmp_path):

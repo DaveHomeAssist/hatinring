@@ -11,6 +11,7 @@ It grades ~40 potential candidates on two independent axes — **status tier** (
 | [OVERVIEW.md](OVERVIEW.md) | Anyone / press | One-paragraph "what this is and why it's different." |
 | [GUIDE.md](GUIDE.md) | Users | How to read and use the dashboard. |
 | [SPEC.md](SPEC.md) | Maintainers | Architecture, data model, scoring, pipeline, guardrails, CI. |
+| [GOAL.md](GOAL.md) | Maintainers | North-star: the governing test, principles, the "primetime" bar, and roadmap. |
 
 ## At a glance
 - **Static, no live backend.** A Python pipeline bakes a single self-contained `index.html` (inline data) served by GitHub Pages at `hatinring.com` (apex, auto-SSL).

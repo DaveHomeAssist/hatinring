@@ -14,7 +14,7 @@ build adds cairosvg/Pillow, rasterize latest.svg -> latest.png and repoint.
 from __future__ import annotations
 import json
 import logging
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta
 from pathlib import Path
 
 from .scoring import enrich
@@ -185,3 +185,75 @@ def write_share_assets(brief: dict, out_dir: Path) -> None:
         render_share_png(brief, share / "latest.png")
     except Exception as e:                                  # noqa: BLE001 - PNG is best-effort
         log.warning("share PNG skipped (%s)", e)
+
+
+# ---- RSS daily-brief feed -------------------------------------------------
+def _rfc822(date_str: str) -> str:
+    try:
+        return datetime.strptime(date_str, "%Y-%m-%d").strftime("%a, %d %b %Y 12:00:00 +0000")
+    except (ValueError, TypeError):
+        return ""
+
+
+def feed_item(brief: dict) -> dict:
+    """A single 'what moved today' entry distilled from a briefing."""
+    d = brief.get("date", "")
+    parts = []
+    mv = brief.get("movers", [])[:5]
+    if mv:
+        parts.append("Top movers: " + ", ".join(
+            f'{m["name"]} {"+" if m["delta"] > 0 else ""}{m["delta"]}' for m in mv))
+    nf = brief.get("new_filers", [])[:5]
+    if nf:
+        parts.append("Formal/new: " + ", ".join(f["name"] for f in nf))
+    tr = brief.get("transitions", [])[:5]
+    if tr:
+        parts.append("Status changes: " + ", ".join(t["name"] for t in tr))
+    return {"date": d, "guid": f"hatinring-{d}",
+            "title": f"What moved on the 2028 board — {d}",
+            "desc": " · ".join(parts) or "No notable movement."}
+
+
+def record_feed_item(brief: dict, data_dir: Path) -> list[dict]:
+    """Append today's entry to data/feed_items.json (idempotent per date; last 30)."""
+    path = data_dir / "feed_items.json"
+    items = []
+    if path.exists():
+        try:
+            items = json.loads(path.read_text())
+        except (json.JSONDecodeError, OSError):
+            items = []
+    it = feed_item(brief)
+    items = [i for i in items if i.get("date") != it["date"]] + [it]
+    items = sorted(items, key=lambda i: i.get("date", ""))[-30:]
+    path.write_text(json.dumps(items, indent=2, ensure_ascii=False))
+    return items
+
+
+def render_feed(items: list[dict]) -> str:
+    rows = "".join(
+        f"<item><title>{_esc(i['title'])}</title>"
+        f"<link>https://hatinring.com/</link>"
+        f'<guid isPermaLink="false">{_esc(i["guid"])}</guid>'
+        f"<pubDate>{_rfc822(i.get('date', ''))}</pubDate>"
+        f"<description>{_esc(i['desc'])}</description></item>"
+        for i in reversed(items))             # newest first
+    return ('<?xml version="1.0" encoding="UTF-8"?>\n'
+            '<rss version="2.0"><channel>\n'
+            "<title>Hat-in-Ring Radar — daily movement</title>\n"
+            "<link>https://hatinring.com/</link>\n"
+            "<description>What moved on the 2028 presidential signal tracker, rebuilt daily. "
+            "Status is not support.</description>\n"
+            "<language>en-us</language>\n"
+            f"{rows}\n</channel></rss>\n")
+
+
+def write_feed(data_dir: Path, out_dir: Path) -> None:
+    path = data_dir / "feed_items.json"
+    items = []
+    if path.exists():
+        try:
+            items = json.loads(path.read_text())
+        except (json.JSONDecodeError, OSError):
+            items = []
+    (out_dir / "feed.xml").write_text(render_feed(items))
