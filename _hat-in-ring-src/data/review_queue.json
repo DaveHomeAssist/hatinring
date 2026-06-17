@@ -158,5 +158,17 @@
     ],
     "rid": "9a0fa9b880d1",
     "kind": "discovery"
+  },
+  {
+    "name": "South Carolina",
+    "headline": "The Sprint: What’s happening in the political runoff races in South Carolina - Post and Courier",
+    "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPYXo0Y0hBQ3oyemhTWGZNR2h5ZXVJZ0VXLTVGdTJ2WFk0UTdIc2JoV3kxZ01GVGc0R3dPX3BKX2s3RGhYMWx6ZXllZlp5T2NaM184ZkVEaDhjby1Ma2lXTFlMcGFDbjB3LUV4ODJ4NTh4c0E1QW1fNFoxcjZIa0p1VzFOMWVmYWlWSDlWN1lnRDZqalhWVHdDR2ZmaEsxSW90ZTR4T3dlZmx6dFJuVEFWOHppZWF5dENpX1JJNEx2QThCY1JUU3V1aTBhbm8?oc=5",
+    "source": "Post and Courier",
+    "date": "2026-06-17",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "d1f08c6285c4",
+    "kind": "discovery"
   }
 ]
