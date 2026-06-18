@@ -1,28 +1,9 @@
 {
-  "date": "2026-06-17",
-  "movers": [
-    {
-      "id": "aoc",
-      "name": "Alexandria Ocasio-Cortez",
-      "party": "Democrat",
-      "delta": 17,
-      "score": 32,
-      "tier": 2,
-      "statusLabel": "Positioning"
-    },
-    {
-      "id": "khanna",
-      "name": "Ro Khanna",
-      "party": "Democrat",
-      "delta": 15,
-      "score": 35,
-      "tier": 3,
-      "statusLabel": "Actively considering"
-    }
-  ],
+  "date": "2026-06-18",
+  "movers": [],
   "new_filers": [],
   "transitions": [],
-  "review_count": 14,
+  "review_count": 15,
   "totals": {
     "tracked": 40,
     "formal": 3,

@@ -101,7 +101,7 @@
     "conf": "High",
     "delta": 0,
     "lastSignal": "2026-05-10",
-    "headline": "Big donors backed Harris in 2024. For 2028, they’re not so sure - Los Angeles Times",
+    "headline": "Kamala’s cash crisis: Big donors turn their backs on Harris as 2028 bid already hangs by a thread - New York Post",
     "why": "Retains 2024 donor & staff network; leads some rematch polls.",
     "quote": "I have not made a decision… I may or may not.",
     "tags": [
@@ -117,8 +117,27 @@
           "consideringQuote"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-05-10",
+        "headline": "Kamala’s cash crisis: Big donors turn their backs on Harris as 2028 bid already hangs by a thread - New York Post",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOWC1nUFZGeGZwTFkwVnQ4YURoanlwVTZ1QXhsLUctU1pORm9vLVFiT3RGVzYyaVdaRXRPWjBjeVFBQTZvTS0xaUJKc3FwblZ5Wm02UEJ6ek84NUlwTl9fRXk0Wmd3ckVNRlVhUjQ3Y3BvcWp2ME5ZSGV6QWdEaTI3Z3F2XzhaTDNUYVNCT20wVk0xUDhjN1BXSVBCOA?oc=5",
+        "keys": [
+          "donors"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-04-13",
+        "headline": "‘I Am Thinking About It,’ Kamala Harris Says of 2028 Presidential Bid - The San Diego Voice & Viewpoint",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPQ0MySWJYZ2ZMaVh4M2ZtcjNfZnhfNmEzOHQtcldCQ01WQWJ4VTF6Y0lLQjRvVFU1d0VkbUlWYWFSSzB6SGVjOFpVclhndWY0ZHM2NF8tS2huMlpCUWtDVDN6TWNYaHdDXzR6c1hzU0xFTjY0TzBuLWUycTk5bVVPRkIwRmM5a2h0YVBfNlVDT1RpQQ?oc=5",
+        "keys": [
+          "consideringQuote"
+        ],
+        "conf": "Low"
       }
-    ]
+    ],
+    "sourceUrl": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOWC1nUFZGeGZwTFkwVnQ4YURoanlwVTZ1QXhsLUctU1pORm9vLVFiT3RGVzYyaVdaRXRPWjBjeVFBQTZvTS0xaUJKc3FwblZ5Wm02UEJ6ek84NUlwTl9fRXk0Wmd3ckVNRlVhUjQ3Y3BvcWp2ME5ZSGV6QWdEaTI3Z3F2XzhaTDNUYVNCT20wVk0xUDhjN1BXSVBCOA?oc=5"
   },
   {
     "id": "booker",
@@ -195,7 +214,7 @@
       "earlyState"
     ],
     "conf": "High",
-    "delta": 15,
+    "delta": 0,
     "lastSignal": "2026-06-13",
     "headline": "Rep. Ro Khanna (D-CA) Speaks at Nevada Democratic State Convention - C-SPAN",
     "why": "First clear public timeline from the progressive-pragmatist lane.",
@@ -358,8 +377,8 @@
     ],
     "conf": "Medium",
     "delta": 0,
-    "lastSignal": "2026-06-09",
-    "headline": "Not set on running, but \"keeping her name in the mix\"",
+    "lastSignal": "2026-06-17",
+    "headline": "Sen. Elissa Slotkin not ruling out 2028 presidential run - MS NOW",
     "why": "Most recent signal on the board; swing-state freshman senator.",
     "quote": "",
     "tags": [
@@ -374,7 +393,19 @@
         "to": 2,
         "reason": "Elissa Slotkin for president? Michigan’s U.S. senator doesn’t rule it out in visit to Iowa - Michigan Advance"
       }
-    ]
+    ],
+    "evidence": [
+      {
+        "date": "2026-06-17",
+        "headline": "Sen. Elissa Slotkin not ruling out 2028 presidential run - MS NOW",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOSkRuMktZcnpCQlc4d3dVQkxWT2sxRllQbTJPdEY2Ny1RSnJYckRKWDIzLUYwdjhKMktYYlJNcnAzMlU1NEc1Y3ZUODJZMjdYLXBNb295bWptV3dJci1WSGxmVDhnWGkyWTZDM2F6dUllUFBYZko2Y0t2S3JmaDhkMHNkcFRrVmd6UXg1WGJtdTBPalpqZ2RQamxhMDZnQmhxYVJVS0hB?oc=5",
+        "keys": [
+          "softConsidering"
+        ],
+        "conf": "Low"
+      }
+    ],
+    "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOSkRuMktZcnpCQlc4d3dVQkxWT2sxRllQbTJPdEY2Ny1RSnJYckRKWDIzLUYwdjhKMktYYlJNcnAzMlU1NEc1Y3ZUODJZMjdYLXBNb295bWptV3dJci1WSGxmVDhnWGkyWTZDM2F6dUllUFBYZko2Y0t2S3JmaDhkMHNkcFRrVmd6UXg1WGJtdTBPalpqZ2RQamxhMDZnQmhxYVJVS0hB?oc=5"
   },
   {
     "id": "cruz",
@@ -555,7 +586,7 @@
       "softConsidering"
     ],
     "conf": "Medium",
-    "delta": 17,
+    "delta": 0,
     "lastSignal": "2026-06-05",
     "headline": "WATCH: AOC leaves door open to 2028 White House bid: 'Maybe, maybe not' - Fox News",
     "why": "Massive small-dollar base; leads some progressive polls.",
@@ -940,8 +971,8 @@
     ],
     "conf": "Low",
     "delta": 0,
-    "lastSignal": "2026-02-13",
-    "headline": "Stephen A. Smith Tells CBS News He Is Not Ruling Out 2028 Presidential Run: “I’d Love To Be On The Debate Stages Against Some Of These Individuals” - Deadline",
+    "lastSignal": "2026-03-09",
+    "headline": "It’s All About Dead Presidents: Stephen A. Smith Officially Not Running For White House In 2028 - Deadline",
     "why": "Backed away from earlier flirtation.",
     "quote": "",
     "tags": [
@@ -958,6 +989,7 @@
         ],
         "conf": "Low"
       }
-    ]
+    ],
+    "sourceUrl": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQMXl4TDFpZEVBSTloOHI0Vk8yelRMU1lZMzd4alFWZ0NiSGNSbUY4QTVRZ0J5akRaYko0ZzlVVzRWQVd1VzJEYmZ0VmVBSDgzdG9zN25kb2R0RUxoWVIyZUpXa19sUF90WFpJczFyeGRzQzRJazFlWmdIRGRTZ2MyM2tPcDY?oc=5"
   }
 ]

@@ -170,5 +170,18 @@
     ],
     "rid": "d1f08c6285c4",
     "kind": "discovery"
+  },
+  {
+    "name": "Stephen A. Smith",
+    "headline": "It’s All About Dead Presidents: Stephen A. Smith Officially Not Running For White House In 2028 - Deadline",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQMXl4TDFpZEVBSTloOHI0Vk8yelRMU1lZMzd4alFWZ0NiSGNSbUY4QTVRZ0J5akRaYko0ZzlVVzRWQVd1VzJEYmZ0VmVBSDgzdG9zN25kb2R0RUxoWVIyZUpXa19sUF90WFpJczFyeGRzQzRJazFlWmdIRGRTZ2MyM2tPcDY?oc=5",
+    "source": "Deadline",
+    "date": "2026-03-09",
+    "keys": [
+      "ruledOut"
+    ],
+    "note": "denial/downgrade — confirm before applying",
+    "rid": "bf17be485e1f",
+    "kind": "denial"
   }
 ]
