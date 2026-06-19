@@ -168,18 +168,37 @@
     "bucket": "considering",
     "keys": [
       "consideringQuote",
-      "mediaBlitz"
+      "mediaBlitz",
+      "earlyState"
     ],
     "conf": "High",
-    "delta": 0,
-    "lastSignal": "2026-05-08",
-    "headline": "Open \"under the right circumstances\"; decision after DGA term",
+    "delta": 15,
+    "lastSignal": "2026-06-13",
+    "headline": "Kentucky Gov. Andy Beshear and Nevada Gubernatorial Candidate Aaron Ford Speak at Nevada Democratic Convention - C-SPAN",
     "why": "Red-state Dem appeal; timeline tied to Governors Assoc. chairmanship.",
     "quote": "I'd consider it under the right circumstances.",
     "tags": [
       "governor lane",
       "post-DGA"
-    ]
+    ],
+    "early_states": {
+      "NV": 1
+    },
+    "early_states_last": {
+      "NV": "2026-06-13"
+    },
+    "evidence": [
+      {
+        "date": "2026-06-13",
+        "headline": "Kentucky Gov. Andy Beshear and Nevada Gubernatorial Candidate Aaron Ford Speak at Nevada Democratic Convention - C-SPAN",
+        "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOUGtmUmdkOEh2aElvVW9HTjBrQy1xbk5taDRLOFBPeS1sVVZTZDR2UXFLOE1QTmw0RmFJOGN2cXJhWXZFTGdmMXcxaW9UQ2w5dlFER1ktMFVZUDM5c0d3RXhkN3RlRjJRYzRHaUFzeFUtTmdIUXhCMTBfSEVuX1lJdG1ZRlVHd2JrRUxaQWlNaEpyVTNmeWFNNktfaWFDWm05ZVlOQUFHNkY4MTctR3lraW45cl9QUUlpVlRTdWRibXBoMWo1NDhzQVFyczlsRGhKQjg2dUNPY3hKNWVGSE51YzJBazhhZHlUdlo5cVBWTVN1NnM?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
+      }
+    ],
+    "sourceUrl": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOUGtmUmdkOEh2aElvVW9HTjBrQy1xbk5taDRLOFBPeS1sVVZTZDR2UXFLOE1QTmw0RmFJOGN2cXJhWXZFTGdmMXcxaW9UQ2w5dlFER1ktMFVZUDM5c0d3RXhkN3RlRjJRYzRHaUFzeFUtTmdIUXhCMTBfSEVuX1lJdG1ZRlVHd2JrRUxaQWlNaEpyVTNmeWFNNktfaWFDWm05ZVlOQUFHNkY4MTctR3lraW45cl9QUUlpVlRTdWRibXBoMWo1NDhzQVFyczlsRGhKQjg2dUNPY3hKNWVGSE51YzJBazhhZHlUdlo5cVBWTVN1NnM?oc=5"
   },
   {
     "id": "kelly",

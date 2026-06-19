@@ -183,5 +183,29 @@
     "note": "denial/downgrade — confirm before applying",
     "rid": "bf17be485e1f",
     "kind": "denial"
+  },
+  {
+    "name": "Hontiveros ‘seriously considering’ 2028 ",
+    "headline": "Hontiveros ‘seriously considering’ 2028 presidential bid, eyes unified opposition slate - dzrh.com.ph",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOSUdrOVQ5N3FZSFBaY1k4MTFST0lRSlllR3Jabk9KVHp5aHdkSzMzNmhCd3otcVJXUnRxTFZoa2lxdXZnak1nOUI1OU5YSVRybW02MjZWNDZzcDdxbEtwUW1neHlSN1g5TVR3b1pTbWlQOTdFN1Q0VU0xbjBCWTZGMldBbHZXY0RMc2FkdFA2U1A3U282WTlEV204T0hiRDNuVVhNeFZHbkdPYXJFVW42WXhZUQ?oc=5",
+    "source": "dzrh.com.ph",
+    "date": "2026-06-19",
+    "keys": [
+      "consideringQuote"
+    ],
+    "rid": "b43fe21aee3b",
+    "kind": "discovery"
+  },
+  {
+    "name": "State Affairs",
+    "headline": "Kennedy not ruling out 2028 presidential run - State Affairs",
+    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBHeWlGM1ROcEYxNjFsbzRTdmZoZHNEbTBCNEZpODNvc0tBSWYxb2pFWVlMMVY3S2dNdVBXUW9FTXZ3andIY1NNMHNLLXluMDJpQldsWE1UaWJaU1lVVzQzc1BQclpXVnlsdWtLd1pkVGcwR1Nf?oc=5",
+    "source": "State Affairs",
+    "date": "2026-06-15",
+    "keys": [
+      "softConsidering"
+    ],
+    "rid": "2e2ab10a5a66",
+    "kind": "discovery"
   }
 ]
