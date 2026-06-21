@@ -172,7 +172,7 @@
       "earlyState"
     ],
     "conf": "High",
-    "delta": 15,
+    "delta": 0,
     "lastSignal": "2026-06-13",
     "headline": "Kentucky Gov. Andy Beshear and Nevada Gubernatorial Candidate Aaron Ford Speak at Nevada Democratic Convention - C-SPAN",
     "why": "Red-state Dem appeal; timeline tied to Governors Assoc. chairmanship.",
@@ -746,6 +746,32 @@
         "to": 3,
         "reason": "Is Trump’s MAGA ally Steve Bannon eyeing a 2028 Presidential bid? Can he outdo JD Vance - The Economic Times"
       }
+    ],
+    "early_states": {
+      "IA": 2
+    },
+    "early_states_last": {
+      "IA": "2026-05-05"
+    },
+    "evidence": [
+      {
+        "date": "2026-05-01",
+        "headline": "Vance, Cruz, head to Iowa on 2026 missions as 2028 GOP race to succeed Trump heats up - 930 WFMD Free Talk",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPZk5Eb2xOYTNFN2ZOdTUwT3lDaF9DTW1mYzlEbllzZnNJa1Y5aUM1OHA1ejI2RzBxUXU0LXJiZGVQV0Zqck82dGRyMEtJY21BVWhRS29lbEhGcVI0cXdfWUMtekR3c3FoZ3ptWTFCbFpxV2tSZ2QwVlhqN2tFZDM0NzVlYXpCWWdISF9aNWFKSWtDQXRZYUwyTnZPM1lnTWNOWXlra1psT0FGUkxfNVlzbUFOVzBNaTQ?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-05-05",
+        "headline": "Vice President Vance woos Iowa Republican voters ahead of 2028 - WSLS",
+        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOVjVNRDRMV3p6a19lSmViVlBuOTFpeGNCM3hyUWhfVnhtczhuU2JZcEtEUFh1eXZuREppZ1pPNWNpejNVRW1KZVQtM0JNTVNvOEVLYXZyZGpSMV90bWJMMnROX0JxUXhSeERuWVdYWHRGUm5vWmM1TXJkT0RKTzl6YzVlT1p4RURISVVtcDc2VTJMZXBMS1FEVm5fNFl4WVpSd05aNzZZNXh6UFo3cE9wQnI3OE5pdDF2emhTdlV4eHJuaVdSU0o1cmxNVFVfQTZ4ei16cUlR?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
+      }
     ]
   },
   {
@@ -760,14 +786,26 @@
     ],
     "conf": "Low",
     "delta": 0,
-    "lastSignal": "2026-05-28",
-    "headline": "Michigan Gov. Whitmer says she won't run for president in 2028 then backtracks hours later - WSLS",
+    "lastSignal": "2026-05-29",
+    "headline": "Detroit Evening Report: Whitmer says she is not running for president in 2028, but leaves door open - WDET 101.9 FM",
     "why": "Contradictory signals — flagged for source conflict.",
     "quote": "Never say never.",
     "tags": [
       "swing-state",
       "contradictory"
-    ]
+    ],
+    "evidence": [
+      {
+        "date": "2026-05-29",
+        "headline": "Detroit Evening Report: Whitmer says she is not running for president in 2028, but leaves door open - WDET 101.9 FM",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPQ3BnQWJ1SkFvaDZIMXoxZGlwWkxacGhNd3dCSnZVQXJ5Wml3Mm53SlVTaTVSNkJ2Q3BIZHN2VVQxZFNMaWxFTVFvQmw0U1ZaVGNXUTBXaFlwc2U0akNSbk5xV1RSSjEwZlAyMy1YZ2ZSTU43ODN0OVk5YS14bUJ4SjFXRm0wMFFqbElUTVAxZWZ4TTlscE5jZmJxWWRGR3NzZnIwazBHZ1FnRFV6WXdyZjBFbF9vRWk3ZzRsUS1NXzNnRndH?oc=5",
+        "keys": [
+          "softConsidering"
+        ],
+        "conf": "Low"
+      }
+    ],
+    "sourceUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPQ3BnQWJ1SkFvaDZIMXoxZGlwWkxacGhNd3dCSnZVQXJ5Wml3Mm53SlVTaTVSNkJ2Q3BIZHN2VVQxZFNMaWxFTVFvQmw0U1ZaVGNXUTBXaFlwc2U0akNSbk5xV1RSSjEwZlAyMy1YZ2ZSTU43ODN0OVk5YS14bUJ4SjFXRm0wMFFqbElUTVAxZWZ4TTlscE5jZmJxWWRGR3NzZnIwazBHZ1FnRFV6WXdyZjBFbF9vRWk3ZzRsUS1NXzNnRndH?oc=5"
   },
   {
     "id": "bannon",

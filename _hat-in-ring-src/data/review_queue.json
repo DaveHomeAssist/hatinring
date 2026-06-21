@@ -207,5 +207,41 @@
     ],
     "rid": "2e2ab10a5a66",
     "kind": "discovery"
+  },
+  {
+    "name": "South Carolina Daily",
+    "headline": "Democrats point to SC’s early voting records in pitch to stay first in 2028 - South Carolina Daily Gazette",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPQy1PZVZFM29tc3JqX2NZTHpNQ2VKMVF1UWo4YTRISUhKV3hubWFxMEc4eWw4c2FKN0ZHckxDYWxCME9UN0tNZXBOenZ0am1POERKTWFsY19Rd3Bnem1SanFmYVRsZTJWNGZWNG1RcjJWZDNmMzdIbGp1Y29PQUQ1QmFTR1hpX0lRLWFWZVdldVktQmxvNHZWVEE5TjBtY0gwX2xTSVZmeV9rdXBYdXl3MS1Rcw?oc=5",
+    "source": "South Carolina Daily Gazette",
+    "date": "2026-05-30",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "9c4841173e89",
+    "kind": "discovery"
+  },
+  {
+    "name": "SENRI FOR PRESIDENT",
+    "headline": "SENRI FOR PRESIDENT? \"I am seriously considering it (2028 presidency run), preparing for that possibility, \" Senator Risa Hontiveros said in a press conference in Cebu, yesterday, June 19, 2026, considering the possibility of running for presidency on the 2 - facebook.com",
+    "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQM0lmNVhHcGYwX2FTeW9HMFpxNHV3d2VOdU40dWVya2RNWjdkY1FEYk02QmRNd0o1bVFVWUhwSWhnRWRvY0I0bnNzc1dPLVNyS3MtVXFRcXlLNlVjcjVlWlNWMDR1c2hEVjR0MG9aSGJfSHhGYXktRGU0dGdtU0dVVnEwa0ZsLXRuakVYdkJLS3h0U0xPVkd2RGRqUV9RYUtLbWNmXzVmYjhJdDROM3V1UzFxaVFZX0xmNnJPTnhOWUFCdzNVaGI2eS1TcHdvS0JvLUdfRlduNWg1V29NMEs5eQ?oc=5",
+    "source": "facebook.com",
+    "date": "2026-06-20",
+    "keys": [
+      "consideringQuote"
+    ],
+    "rid": "ca306cb108dc",
+    "kind": "discovery"
+  },
+  {
+    "name": "Ex-Border Patrol",
+    "headline": "Ex-Border Patrol official Bovino not ruling out 2028 run if that’s ‘what it takes’ - Washington Examiner",
+    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQd0ZHb0dkb2NrbEZvczllVzBXSWYxLXBYU1QwZXM3VF81Tlg4dVFTVnd6ZGFjMktza1Bsc29PcDBlV3JoSnFrYnc1SzBCdHZZZEJ5M3UtY0wyMWtKT2paSlNTVjV3R2xIemFnWjEyWlJveHZYaHd3eWI3bWRacldVTUJKV1ZOV0pnWXc?oc=5",
+    "source": "Washington Examiner",
+    "date": "2026-06-08",
+    "keys": [
+      "softConsidering"
+    ],
+    "rid": "b8dcb49e7069",
+    "kind": "discovery"
   }
 ]
