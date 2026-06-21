@@ -66,7 +66,12 @@ def test_offline_pipeline_full_run(tmp_path, monkeypatch):
     assert cand_path.exists(), "pipeline must write candidates.json"
     assert (data / "dashboard.html").exists(), "pipeline must render the dashboard"
     html = (data / "dashboard.html").read_text()
-    assert "<html" in html.lower() and "PREFS" in html
+    assert "<html" in html.lower() and "data-dc-script" in html and "SEED =" in html
+    assert (data / "feed.xml").exists(), "pipeline build must write RSS feed"
+    assert (data / "sitemap.xml").exists(), "pipeline build must write sitemap"
+    assert any((data / "c" / r["id"] / "index.html").exists()
+               for r in json.loads((data / "seed.json").read_text())), \
+        "pipeline build must write per-candidate pages"
 
     records = json.loads(cand_path.read_text())
     by_id = {r["id"]: r for r in records}

@@ -9,7 +9,7 @@ import json
 import logging
 import re
 import shutil
-from datetime import date, datetime
+from datetime import date, datetime, timezone
 from pathlib import Path
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
@@ -166,8 +166,9 @@ def render(candidates_path: Path, template_dir: Path, out_path: Path,
         # read in the viewer's local TZ and daysSince() can flip the 30/90-day recency
         # bands at date-line offsets, diverging from the Python scoring engine.
         generated_at=json.dumps(built.isoformat() + "T12:00:00Z"),
-        generated_at_human=datetime.now().strftime("%b %d %Y %H:%M"),
+        generated_at_human=datetime.now(timezone.utc).strftime("%b %d %Y %H:%M"),
         as_of=built.strftime("%B %-d, %Y"),
+        as_of_json=json.dumps(built.strftime("%B %-d, %Y")),
         canonical_url=CANONICAL_URL, page_desc=PAGE_DESC, og_image=OG_IMAGE,
         crawl_rows=crawl_rows, crawl_count=len(records),
     )

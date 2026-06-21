@@ -254,9 +254,9 @@ def test_build_inlines_review_queue(tmp_path):
     out = tmp_path / "index.html"
     render(tmp_path / "candidates.json", ROOT / "templates", out, built=TODAY)
     html = out.read_text()
-    assert "const REVIEW =" in html
+    assert "REVIEW =" in html
     # the hostile headline must be escaped in the SEED/REVIEW literal (no breakout)
-    rev = html[html.index("const REVIEW ="):html.index("const REVIEW =") + 1000]
+    rev = html[html.index("REVIEW ="):html.index("REVIEW =") + 1000]
     assert "</script" not in rev.lower()
 
 
@@ -270,7 +270,7 @@ def test_review_view_renders_and_escapes(tmp_path):
     ]))
     out = tmp_path / "index.html"
     render(tmp_path / "candidates.json", ROOT / "templates", out, built=TODAY)
-    # board still renders (regression) + the review list renders escaped
+    # board still renders (regression) + the review payload is inlined safely
     check = subprocess.run(["node", "-e", _REVIEW_NODE, str(out)], capture_output=True, text=True, timeout=60)
     assert check.returncode == 0, f"{check.stdout}\n{check.stderr}"
     assert "PASS" in check.stdout
@@ -279,17 +279,16 @@ def test_review_view_renders_and_escapes(tmp_path):
 _REVIEW_NODE = r"""
 const fs=require('fs');
 const html=fs.readFileSync(process.argv[1],'utf8');
-const main=[...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].map(m=>m[1]).find(s=>s.includes('GENERATED_AT'));
-const byId={};
-function mkEl(){return {_html:'',value:'',dataset:{},style:{},classList:{add(){},remove(){},toggle(){}},addEventListener(){},querySelectorAll(){return[]},querySelector(){return mkEl()},closest(){return null},appendChild(){},click(){},setAttribute(){},getAttribute(){return null},set innerHTML(v){this._html=v},get innerHTML(){return this._html},set textContent(v){this._t=v},get textContent(){return this._t}};}
-function el(s){return byId[s]=byId[s]||mkEl();}
-const document={querySelector:el,querySelectorAll(){return[]},createElement(){return mkEl()},addEventListener(){},body:{addEventListener(){}}};
-const localStorage={getItem(){return null},setItem(){},removeItem(){}};const window={addEventListener(){}};const URL={createObjectURL(){return'x'}};function Blob(){}function confirm(){return false}
-try{ eval(main+'\n init(); renderReview();'); }catch(e){console.log('FAIL threw',e.message);process.exit(1);}
-const list=(byId['#reviewList']||{})._html||'';
-const n=(list.match(/class="reviewItem"/g)||[]).length;
-if(n!==2){console.log('FAIL expected 2 review items, got '+n);process.exit(2);}
-if(/<(img|script|svg)/i.test(list)){console.log('FAIL raw tag leaked into review list');process.exit(3);}
-if(!list.includes('data-confirm=')||!list.includes('data-dismiss=')){console.log('FAIL missing action buttons');process.exit(4);}
-console.log('PASS review view: '+n+' items, escaped, actionable');
+const m=html.match(/<script\b[^>]*\bdata-dc-script\b[^>]*>([\s\S]*?)<\/script>/);
+if(!m){console.log('FAIL dashboard script not found');process.exit(65);}
+const main=m[1];
+if(main.toLowerCase().includes('</script')){console.log('FAIL raw script close leaked into review payload');process.exit(2);}
+class DCLogic{constructor(){this.props={partyColors:'Muted',density:'Compact',accent:'Sky blue'};}setState(n){this.state=Object.assign({},this.state||{},n||{});}}
+let app;
+try{const Component=new Function('DCLogic',main+'\nreturn Component;')(DCLogic);app=new Component();app.props={partyColors:'Muted',density:'Compact',accent:'Sky blue'};app.renderVals();}catch(e){console.log('FAIL threw '+e.message);process.exit(1);}
+const items=app.REVIEW||[];
+if(items.length!==2){console.log('FAIL expected 2 review items, got '+items.length);process.exit(3);}
+if(!items.some(x=>(x.name||'').includes('<b>'))){console.log('FAIL hostile review name did not round trip as data');process.exit(4);}
+if(!main.includes('\\u003c')){console.log('FAIL expected review payload < to be escaped as \\u003c');process.exit(5);}
+console.log('PASS review payload: '+items.length+' items inlined safely');
 """

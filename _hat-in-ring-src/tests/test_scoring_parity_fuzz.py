@@ -46,36 +46,36 @@ ALLKEYS = list(WEIGHTS.keys())
 # Adversarial non-signal keys: must be ignored identically by both engines.
 JUNK_KEYS = ["bogus", "", "DECLARED", "donors ", "withdrew", "rumored", "vp"]
 
-# JS runner: pulls the WEIGHTS block and the scoring fns straight out of the
-# template, sets GENERATED_AT exactly like hatring/build.py
-# (``built.isoformat() + "T12:00:00"``), then maps stdin JSONL -> stdout lines
-# of ``<momentum> <tier> <json-quoted-label>``.
+# JS runner: loads the generated DC component class straight out of the
+# template, replaces the Jinja placeholders that only exist before rendering,
+# then maps stdin JSONL to stdout lines of
+# ``<momentum> <tier> <json-quoted-label>``.
 _JS_RUNNER = textwrap.dedent(r"""
     const fs = require('fs');
     const tplPath = process.argv[2];
     const today = process.argv[3];
     const tpl = fs.readFileSync(tplPath, 'utf8');
-    const scripts = [...tpl.matchAll(/<script>([\s\S]*?)<\/script>/g)].map((m) => m[1]);
-    const main = scripts.find((s) => s.includes('GENERATED_AT'));
-    if (!main) { console.error('no dashboard script'); process.exit(65); }
-    function slice(src, a, b) {
-      const i = src.indexOf(a); if (i < 0) throw new Error('marker ' + a);
-      const j = src.indexOf(b, i); if (j < 0) throw new Error('endmarker ' + b);
-      return src.slice(i, j);
+    const m = tpl.match(/<script\b[^>]*\bdata-dc-script\b[^>]*>([\s\S]*?)<\/script>/);
+    if (!m) { console.error('no dashboard script'); process.exit(65); }
+    let main = m[1]
+      .replace(/TODAY\s*=\s*new Date\(\{\{ generated_at \}\}\);/, `TODAY = new Date("${today}T12:00:00Z");`)
+      .replace(/SEED\s*=\s*\{\{ seed_json \}\};/, 'SEED = [];')
+      .replace(/REVIEW\s*=\s*\{\{ review_json \}\};/, 'REVIEW = [];')
+      .replace(/BRIEFING\s*=\s*\{\{ briefing_json \}\};/, 'BRIEFING = {};')
+      .replace(/asOf:\s*\{\{ as_of_json \}\}/, 'asOf:"June 12, 2026"');
+    class DCLogic {
+      constructor() { this.props = {partyColors:'Muted', density:'Compact', accent:'Sky blue'}; }
+      setState(next) { this.state = Object.assign({}, this.state || {}, next || {}); }
     }
-    const weightsBlock = slice(main, 'const WEIGHTS = {', '\nconst CONF');
-    const fnBlock = slice(main, 'function daysSince', '\n/* ===');
-    const GENERATED_AT = today + 'T12:00:00';
-    const TODAY = new Date(GENERATED_AT);
-    const fn = new Function('TODAY', 'Math', 'Date',
-      weightsBlock + '\n' + fnBlock + '\nreturn {deriveStatus, score};');
-    const { deriveStatus, score } = fn(TODAY, Math, Date);
+    const Component = new Function('DCLogic', main + '\nreturn Component;')(DCLogic);
+    const app = new Component();
+    app.props = {partyColors:'Muted', density:'Compact', accent:'Sky blue'};
     const lines = fs.readFileSync(0, 'utf8').split('\n').filter((l) => l.trim());
     const out = [];
     for (const line of lines) {
       const c = JSON.parse(line);
-      const st = deriveStatus(c.keys);
-      out.push(score(c) + ' ' + st.tier + ' ' + JSON.stringify(st.label));
+      const st = app.deriveStatus(c.keys);
+      out.push(app.score(c) + ' ' + st.tier + ' ' + JSON.stringify(st.label));
     }
     process.stdout.write(out.join('\n') + '\n');
 """)
@@ -153,19 +153,9 @@ def test_known_golden_values_match_both_engines(tmp_path):
 
 
 @pytest.mark.skipif(shutil.which("node") is None, reason="node not available")
-def test_recency_band_edge_is_timezone_sensitive(tmp_path):
-    """KNOWN ISSUE (documented, not a flake): the JS momentum is timezone
-    sensitive at the recency band edges (days_since == 30 and == 90).
-
-    ``build.py`` renders ``GENERATED_AT`` as ``"<date>T12:00:00"`` with no
-    timezone, so JS parses TODAY in *local* time while date-only signal strings
-    parse as UTC midnight. At extreme date-line offsets (UTC-12 / UTC+13+) the
-    local-noon anchor shifts day counts by +-1, flipping the +5 boost / -10
-    stale band and producing a momentum that differs from Python by 5-10 points.
-    Tier/label never diverge (the status axis is date-independent).
-
-    This test asserts the divergence is *exactly* this shape so a future change
-    that either fixes it (use a UTC/no-time anchor) or widens it gets flagged.
+def test_recency_band_edge_is_timezone_stable(tmp_path):
+    """The JS momentum uses a UTC noon anchor, so recency band edges stay in
+    parity with Python even when Node runs in a far offset timezone.
     """
     runner = tmp_path / "runner.js"
     runner.write_text(_JS_RUNNER)
@@ -189,19 +179,16 @@ def test_recency_band_edge_is_timezone_sensitive(tmp_path):
         s, _, _ = jl.split(" ", 2)
         assert int(s) == momentum(keys, d, TODAY), "UTC parity must hold"
 
-    # UTC-12: JS diverges by the recency band amount, tier still matches.
+    # UTC-12: still agrees because the generated build timestamp carries Z.
     env_far = dict(os.environ, TZ="Etc/GMT+12")
     r_far = subprocess.run(
         ["node", str(runner), str(TEMPLATE), TODAY.isoformat()],
         input=jsonl, capture_output=True, text=True, timeout=60, env=env_far,
     )
     assert r_far.returncode == 0, r_far.stderr
-    deltas = []
     for (keys, d), jl in zip(cases, r_far.stdout.strip().split("\n")):
         s, t, _ = jl.split(" ", 2)
         py_sc = momentum(keys, d, TODAY)
         py_t = derive_status(keys)[0]
-        deltas.append(int(s) - py_sc)
+        assert int(s) == py_sc, "far timezone parity must hold"
         assert int(t) == py_t, "tier must stay in parity even across timezones"
-    # earlyState@30d loses +5 boost; donors@90d gains -10 stale, in JS only.
-    assert deltas == [-5, -10], f"unexpected band-edge deltas: {deltas}"

@@ -26,6 +26,7 @@ from hatring import news
 
 ROOT = Path(__file__).resolve().parent.parent
 SMOKE = Path(__file__).resolve().parent / "dashboard_smoke.js"
+SCRIPT_CLOSE_COUNT = 5
 
 HOSTILE = [{
     "id": "evil",
@@ -55,12 +56,13 @@ def _render_hostile(tmp_path) -> str:
 def test_seed_has_no_script_breakout(tmp_path):
     """C1: '<' in any candidate field is escaped so '</script>' can't close the SEED."""
     html = _render_hostile(tmp_path)
-    seed = html[html.index("const SEED ="):html.index("/* ---------- persistence")]
+    script = html[html.index("data-dc-script"):]
+    seed = script[script.index("SEED ="):script.index("REVIEW =")]
     assert "</script" not in seed.lower(), "raw </script> survived into the SEED literal"
     assert "\\u003c" in seed, "expected '<' to be escaped as \\u003c in the SEED"
-    # Two structural </script> closers: the head JSON-LD block + the dashboard
-    # script. The escaped SEED adds none (its "<" became <), which is the point.
-    assert html.lower().count("</script>") == 2
+    # Structural closers only: JSON-LD, React, ReactDOM, support.js, and the DC
+    # component script. Escaped data must not add another close tag.
+    assert html.lower().count("</script>") == SCRIPT_CLOSE_COUNT
 
 
 RENDER_CHECK = Path(__file__).resolve().parent / "xss_render_check.js"
@@ -68,11 +70,8 @@ RENDER_CHECK = Path(__file__).resolve().parent / "xss_render_check.js"
 
 @pytest.mark.skipif(shutil.which("node") is None, reason="node not available")
 def test_h1_render_escapes_hostile_fields(tmp_path):
-    """H1: actually run the dashboard render and assert hostile fields come out
-    HTML-escaped in the generated board/feed innerHTML — not as live tags.
-
-    (Static-HTML grepping is wrong here: the SEED legitimately holds the raw field
-    text with only '<' escaped for C1; the H1 escaping happens at render time.)
+    """H1: hostile payloads stay inside escaped DC data and the component model
+    still renders. The DC runtime uses React text interpolation for the DOM sink.
     """
     cj = tmp_path / "candidates.json"
     cj.write_text(json.dumps(HOSTILE))

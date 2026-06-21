@@ -36,6 +36,7 @@ from hatring.build import render
 ROOT = Path(__file__).resolve().parent.parent
 TEMPLATES = ROOT / "templates"
 BUILT = date(2026, 6, 13)  # pinned: tests must not depend on today's date
+SCRIPT_CLOSE_COUNT = 5
 
 
 def _dataset(with_drop_fields: bool = True) -> list[dict]:
@@ -84,16 +85,16 @@ def _render(tmp_path, recs=None, built=BUILT, name="index.html") -> str:
 
 
 def _extract_js(html: str) -> str:
-    """Isolate the inline dashboard script (the one block with no src attr)."""
-    scripts = re.findall(r"<script>(.*?)</script>", html, re.S)
-    assert scripts, "no inline <script> block found"
-    main = [s for s in scripts if "GENERATED_AT" in s]
-    assert main, "could not find the dashboard script (no GENERATED_AT)"
-    return "\n".join(main)
+    """Isolate the DC component script that powers the dashboard."""
+    m = re.search(r"<script\b[^>]*\bdata-dc-script\b[^>]*>(.*?)</script>", html, re.S)
+    assert m, "no data-dc-script block found"
+    main = m.group(1)
+    assert "TODAY = new Date" in main, "could not find the dashboard script date anchor"
+    return main
 
 
 def _extract_seed(html: str) -> str:
-    m = re.search(r"const SEED = (.*?);\n", html, re.S)
+    m = re.search(r"\n\s*SEED\s*=\s*(.*?);\n\s*REVIEW\s*=", _extract_js(html), re.S)
     assert m, "SEED constant not found in output"
     return m.group(1)
 
@@ -107,7 +108,8 @@ def test_structural_anchors_present(tmp_path):
     assert "<title>2028 Hat-in-Ring Radar</title>" in html
     # freshness stamp: id="asof" rendered to the human as_of date, plus buildstamp
     assert 'id="asof"' in html
-    assert ">June 13, 2026<" in html, "as_of not rendered from built date"
+    assert "data as of June 13, 2026" in html, "noscript as_of not rendered from built date"
+    assert 'asOf:"June 13, 2026"' in html, "DC asOf not rendered from built date"
     assert 'class="buildstamp"' in html
     assert re.search(r"auto-built [A-Z][a-z]{2} \d{1,2} \d{4} \d{2}:\d{2}", html), \
         "missing 'auto-built <human timestamp>' freshness stamp"
@@ -148,11 +150,11 @@ def test_html_is_well_formed(tmp_path):
     p.close()
     assert not p.stack, f"unclosed tags: {p.stack}"
     assert not p.errors, f"tag errors: {p.errors}"
-    # Two closing </script>: the head JSON-LD block + the one dashboard script.
-    # The dashboard's inline <script> (no attrs) must still be exactly one (no
-    # breakout from injected SEED data); the JSON-LD uses <script type=...>.
-    assert html.count("</script>") == 2, "unexpected </script> count (script-context breakout?)"
-    assert html.count("<script>") == 1
+    # Five closing </script>: JSON-LD, React, ReactDOM, support.js, and the DC
+    # component script. Escaped data must not add another close tag.
+    assert html.count("</script>") == SCRIPT_CLOSE_COUNT, \
+        "unexpected </script> count (script-context breakout?)"
+    assert html.count('data-dc-script') == 1
 
 
 # ----------------------------------------------------------------------------
@@ -262,8 +264,8 @@ def test_script_breakout_is_neutralised(tmp_path):
     recs[0]["headline"] = "</script><img src=x onerror=alert(1)>"
     html = _render(tmp_path, recs=recs)
     # Escaped properly -> the malicious "</script>" in the headline does NOT add a
-    # closing tag, so the count stays at the legitimate two (JSON-LD + dashboard).
-    assert html.count("</script>") == 2
+    # closing tag, so the count stays at the legitimate structural count.
+    assert html.count("</script>") == SCRIPT_CLOSE_COUNT
 
 
 # ----------------------------------------------------------------------------

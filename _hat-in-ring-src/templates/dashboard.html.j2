@@ -25,13 +25,13 @@
 </head>
 <body>
 <noscript>
-<div style="max-width:1100px;margin:0 auto;padding:28px 22px;font-family:system-ui,Arial,sans-serif;color:#13294B">
+<div id="crawl-summary" style="max-width:1100px;margin:0 auto;padding:28px 22px;font-family:system-ui,Arial,sans-serif;color:#13294B">
 <h1>2028 Hat-in-Ring Radar</h1>
 <p>{{ page_desc }}</p>
 <p>Tracking {{ crawl_count }} potential 2028 U.S. presidential candidates on two axes — status tier (the furthest verifiable step taken) and momentum (weighted activity + recency, 0–100) — rebuilt daily from FEC filings and news. The interactive board requires JavaScript; every candidate also has a full static file linked below and in the <a href="/sitemap.xml">sitemap</a>.</p>
 <table border="1" cellpadding="6" cellspacing="0"><thead><tr><th>#</th><th>Candidate</th><th>Party</th><th>Status</th><th>Momentum</th></tr></thead>
 <tbody>{{ crawl_rows }}</tbody></table>
-<p style="opacity:.7;font-size:12px">Auto-built {{ generated_at_human }} UTC · data as of {{ as_of }}.</p>
+<p class="buildstamp" style="opacity:.7;font-size:12px">auto-built {{ generated_at_human }} UTC · data as of {{ as_of }}.</p>
 </div>
 </noscript>
 {% raw %}<x-dc>
@@ -89,7 +89,7 @@
       <div style="margin-left:auto;display:flex;align-items:center;gap:18px;flex:none">
         <div style="text-align:right;line-height:1.25">
           <div style="font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#8A8470;font-weight:600">As of</div>
-          <div style="font-family:'Newsreader',serif;font-size:15px;color:#13294B;font-weight:600">{{ asOf }}</div>
+          <div id="asof" style="font-family:'Newsreader',serif;font-size:15px;color:#13294B;font-weight:600">{{ asOf }}</div>
         </div>
         <div style="width:1px;height:34px;background:#D2C8AE"></div>
         <div style="text-align:right;line-height:1.25">
@@ -550,7 +550,7 @@ class Component extends DCLogic {
     donors:{w:10,label:'Donor meetings / PAC activity'},
     staffing:{w:10,label:'Campaign staffing / consultants'},
     mediaBlitz:{w:5,label:'National media blitz'},
-    endorsedOther:{w:-20,label:'Endorsed another candidate'},
+    endorsedOther:{w:-20,label:'Endorsed another likely candidate'},
     ruledOut:{w:-40,label:'Explicitly ruled out'},
     barred:{w:-100,label:'Constitutionally ineligible'}
   };
@@ -572,19 +572,21 @@ class Component extends DCLogic {
   };
 
   SEED = {{ seed_json }};
+  REVIEW = {{ review_json }};
+  BRIEFING = {{ briefing_json }};
 
   // ---------- engine ----------
   daysSince(d){ return Math.floor((this.TODAY - new Date(d))/86400000); }
   recencyTerm(d){ const n=this.daysSince(d); if(n<=30) return {label:'Recency boost (signal '+n+'d ago)',w:5}; if(n>90) return {label:'Stale (no signal '+n+'d)',w:-10}; return null; }
   deriveStatus(keys){
-    if(keys.includes('barred')) return {tier:0,label:'Ineligible'};
+    if(keys.includes('barred')) return {tier:0,label:'Ineligible (22nd Amdt)'};
     if(keys.includes('ruledOut')) return {tier:0,label:'Ruled out'};
     if(keys.includes('declared')) return {tier:5,label:'Declared'};
     if(keys.includes('exploratory')) return {tier:4,label:'Exploratory'};
-    if(keys.includes('consideringQuote')) return {tier:3,label:'Considering'};
+    if(keys.includes('consideringQuote')) return {tier:3,label:'Actively considering'};
     const behav = keys.some(k=>['earlyState','donors','staffing','mediaBlitz'].includes(k));
     if(behav) return {tier:2,label:'Positioning'};
-    if(keys.includes('softConsidering')) return {tier:1,label:'Floated'};
+    if(keys.includes('softConsidering')) return {tier:1,label:'Floated / not ruling out'};
     return {tier:0,label:'Inactive'};
   }
   breakdown(c){
@@ -720,7 +722,7 @@ class Component extends DCLogic {
     const tabStyle=on=>({appearance:'none',border:'0',cursor:'pointer',font:'inherit',fontSize:'12.5px',fontWeight:600,padding:'8px 13px',background:on?'#13294B':'#FCFAF4',color:on?'#F4EFE2':'#8A8470'});
 
     const base={
-      asOf:'June 14, 2026', trackedCount:all.length,
+      asOf:{{ as_of_json }}, trackedCount:all.length,
       isField:s.view==='field', isDossiers:s.view==='dossiers', isWire:s.view==='wire',
       navTabs, goHome:()=>this.go('field'), goWire:()=>this.go('wire'),
       // field

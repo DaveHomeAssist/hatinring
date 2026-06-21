@@ -51,16 +51,13 @@ def test_dashboard_smoke_catches_a_broken_build(tmp_path):
     out = tmp_path / "index.html"
     render(ROOT / "data" / "seed.json", ROOT / "templates", out, built=date(2026, 6, 13))
     html = out.read_text()
-    # Re-introduce the original bug: PREFS via `DB.prefs || {defaults}` instead of
-    # Object.assign, so an empty saved object skips the defaults on first visit and
-    # PREFS.party is undefined -> filtered() throws. Regex-match so this survives
-    # future additions to the defaults object (e.g. the `quick` key).
+    # Corrupt the generated model in a way the harness must catch.
     broken, n = re.subn(
-        r"let PREFS=Object\.assign\((\{[^}]*\}),DB\.prefs\|\|\{\}\);",
-        r"let PREFS=DB.prefs||\1;",
+        r"filteredField\(\)\{",
+        r"filteredField(){ throw new Error('forced smoke failure');",
         html, count=1,
     )
-    assert n == 1, "expected to find the PREFS Object.assign line to corrupt"
+    assert n == 1, "expected to find filteredField() to corrupt"
     bad = tmp_path / "broken.html"
     bad.write_text(broken)
 
