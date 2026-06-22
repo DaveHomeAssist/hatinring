@@ -115,6 +115,22 @@ def test_structural_anchors_present(tmp_path):
         "missing 'auto-built <human timestamp>' freshness stamp"
 
 
+def test_mobile_layout_contract_present(tmp_path):
+    html = _render(tmp_path)
+    assert "@media (max-width:768px)" in html
+    for token in (
+        "button,input,select{min-height:44px!important}",
+        "button{min-width:44px!important}",
+        "input,select{font-size:16px!important}",
+        "class=\"hir-header-inner\"",
+        "class=\"hir-stats\"",
+        "class=\"hir-field-grid\"",
+        "class=\"hir-dossier-layout\"",
+        "class=\"hir-wire-river\"",
+    ):
+        assert token in html, f"missing mobile layout token: {token}"
+
+
 # ----------------------------------------------------------------------------
 # 2. HTML well-formedness (balanced tags, single closing script)
 # ----------------------------------------------------------------------------

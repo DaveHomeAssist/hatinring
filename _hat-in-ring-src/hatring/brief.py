@@ -256,4 +256,6 @@ def write_feed(data_dir: Path, out_dir: Path) -> None:
             items = json.loads(path.read_text())
         except (json.JSONDecodeError, OSError):
             items = []
-    (out_dir / "feed.xml").write_text(render_feed(items))
+    xml = render_feed(items)
+    (out_dir / "feed.xml").write_text(xml)
+    (out_dir / "rss.xml").write_text(xml)
