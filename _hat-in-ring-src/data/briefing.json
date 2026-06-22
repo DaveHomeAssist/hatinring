@@ -1,9 +1,19 @@
 {
-  "date": "2026-06-21",
-  "movers": [],
+  "date": "2026-06-22",
+  "movers": [
+    {
+      "id": "lemon",
+      "name": "Don Lemon",
+      "party": "Democrat",
+      "delta": 5,
+      "score": 22,
+      "tier": 2,
+      "statusLabel": "Positioning"
+    }
+  ],
   "new_filers": [],
   "transitions": [],
-  "review_count": 20,
+  "review_count": 21,
   "totals": {
     "tracked": 40,
     "formal": 3,

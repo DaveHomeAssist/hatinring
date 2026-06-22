@@ -182,16 +182,27 @@
       "post-DGA"
     ],
     "early_states": {
-      "NV": 1
+      "NV": 1,
+      "SC": 1
     },
     "early_states_last": {
-      "NV": "2026-06-13"
+      "NV": "2026-06-13",
+      "SC": "2026-06-01"
     },
     "evidence": [
       {
         "date": "2026-06-13",
         "headline": "Kentucky Gov. Andy Beshear and Nevada Gubernatorial Candidate Aaron Ford Speak at Nevada Democratic Convention - C-SPAN",
         "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOUGtmUmdkOEh2aElvVW9HTjBrQy1xbk5taDRLOFBPeS1sVVZTZDR2UXFLOE1QTmw0RmFJOGN2cXJhWXZFTGdmMXcxaW9UQ2w5dlFER1ktMFVZUDM5c0d3RXhkN3RlRjJRYzRHaUFzeFUtTmdIUXhCMTBfSEVuX1lJdG1ZRlVHd2JrRUxaQWlNaEpyVTNmeWFNNktfaWFDWm05ZVlOQUFHNkY4MTctR3lraW45cl9QUUlpVlRTdWRibXBoMWo1NDhzQVFyczlsRGhKQjg2dUNPY3hKNWVGSE51YzJBazhhZHlUdlo5cVBWTVN1NnM?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-06-01",
+        "headline": "Beshear favors South Carolina as part of 'early group' of primary states for Dem presidential hopefuls in 2028 - WUKY",
+        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPeHBWUGFYOXJHNW50R2xGMjk0V0x2N08xWGVnS3Rtb2g0NVVNUXFhRDd6aVVFNDZmbkRPUDU0aThnempmVXBqcnNRak1vWFJCTFF2eTFZNlBzWklaVi1XbjlyaVRMSmdZS0FRYTVuVGZfdmhYRzNmTUZnMlZCUzduOWlGcV9Hc0FNNlRHcGFPMlJlbnpROTFkOVliUS1wS050ZnBkNDllYTFCME44cXRSV21pc2xzUWR1bHRvMFdVdFB6YzNLQ3lfeGdrNDZXQVRjWURZcWstN19YU2JFeERiV1oyS2Q?oc=5",
         "keys": [
           "earlyState"
         ],
@@ -321,7 +332,7 @@
     "conf": "Medium",
     "delta": 0,
     "lastSignal": "2026-06-09",
-    "headline": "Rahm Emanuel's uphill climb in New Hampshire tests a 2028 presidential bid - Caledonian Record",
+    "headline": "Rahm Emanuel's uphill climb in New Hampshire tests a 2028 presidential bid - Ottumwa Courier",
     "why": "Aggressive media tour to project vitality and viability.",
     "quote": "",
     "tags": [
@@ -335,7 +346,25 @@
         "to": 3,
         "reason": "Rahm Emanuel says he's mulling a 2028 run for president - WBUR"
       }
-    ]
+    ],
+    "early_states": {
+      "NH": 1
+    },
+    "early_states_last": {
+      "NH": "2026-06-09"
+    },
+    "evidence": [
+      {
+        "date": "2026-06-09",
+        "headline": "Rahm Emanuel's uphill climb in New Hampshire tests a 2028 presidential bid - Ottumwa Courier",
+        "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQY3I3RVpYcl9RMDBqX09ucXRWUmFPMnZIc2E4XzY4NUw1ZWdCS3pPc25fY2Utbkl2bnl1LXBHdGk1UWlBOUxXNTlLd2p0TXdKWHl4SE5MOE9TMXhIdVI2QnQyTDZDVGZWZGRiNHdvQVZJdjJhT3h6ejZfN1o3RWkyV3N6ZEROT2ZCM2pXSUhXSFg0OTVqNTI5ME5NMU5maHQ0cHlDYUx5RjdJOXVGeEwtVnduc3VjdEt1N21ySDVsMWk3N19MM1lkdm4tRFZRbjc5dTIxdThUSDYxV0lsQmNTb3ljR1FxRUZWa3Byem1jVGUwMjlsS1lJUnJuZXJTelJjcVhN?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
+      }
+    ],
+    "sourceUrl": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQY3I3RVpYcl9RMDBqX09ucXRWUmFPMnZIc2E4XzY4NUw1ZWdCS3pPc25fY2Utbkl2bnl1LXBHdGk1UWlBOUxXNTlLd2p0TXdKWHl4SE5MOE9TMXhIdVI2QnQyTDZDVGZWZGRiNHdvQVZJdjJhT3h6ejZfN1o3RWkyV3N6ZEROT2ZCM2pXSUhXSFg0OTVqNTI5ME5NMU5maHQ0cHlDYUx5RjdJOXVGeEwtVnduc3VjdEt1N21ySDVsMWk3N19MM1lkdm4tRFZRbjc5dTIxdThUSDYxV0lsQmNTb3ljR1FxRUZWa3Byem1jVGUwMjlsS1lJUnJuZXJTelJjcVhN?oc=5"
   },
   {
     "id": "green",
@@ -560,15 +589,27 @@
       "mediaBlitz"
     ],
     "conf": "Low",
-    "delta": 0,
-    "lastSignal": "2026-05-22",
-    "headline": "Says he is \"seriously considering\" a run",
+    "delta": 5,
+    "lastSignal": "2026-06-22",
+    "headline": "‘Where careers go to die’: Kamala’s bizarre word salad on Don Lemon’s podcast torched - Sky News Australia",
     "why": "No party structure or office base — celebrity lane.",
     "quote": "I'm seriously considering it.",
     "tags": [
       "celebrity",
       "no structure"
-    ]
+    ],
+    "evidence": [
+      {
+        "date": "2026-06-22",
+        "headline": "‘Where careers go to die’: Kamala’s bizarre word salad on Don Lemon’s podcast torched - Sky News Australia",
+        "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQdVh5eVlyQ2ZuZzFvMXdDNHVFU04ya3Z0NnBjZkhqZ2N6SUc2d0I2RWhlOG5hdTVET3U0c3lodDBoNmdxVDB3eU9zTzA5RWx6QmIyeXNlMXlGaHJocG1iNlNsbmNBNkt2bmZLNFZyU1owLVAtaW50ZEZJU2RTZmRVcjE3NzBuaFNYNzNzc2RpTDdnejlXWldPU1NXMVpaVEpXb2hQeE1NVkJJam8zanpvMVdqVDVFMW1RQzV6eERMX2JoN25SYzZfVk1xWUdfUkMwNjJjMEhSblNlb3J1TU80b1pvQ1JxUk9lWEd2SVBGd9IB7wFBVV95cUxQdVh5eVlyQ2ZuZzFvMXdDNHVFU04ya3Z0NnBjZkhqZ2N6SUc2d0I2RWhlOG5hdTVET3U0c3lodDBoNmdxVDB3eU9zTzA5RWx6QmIyeXNlMXlGaHJocG1iNlNsbmNBNkt2bmZLNFZyU1owLVAtaW50ZEZJU2RTZmRVcjE3NzBuaFNYNzNzc2RpTDdnejlXWldPU1NXMVpaVEpXb2hQeE1NVkJJam8zanpvMVdqVDVFMW1RQzV6eERMX2JoN25SYzZfVk1xWUdfUkMwNjJjMEhSblNlb3J1TU80b1pvQ1JxUk9lWEd2SVBGdw?oc=5",
+        "keys": [
+          "mediaBlitz"
+        ],
+        "conf": "Low"
+      }
+    ],
+    "sourceUrl": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQdVh5eVlyQ2ZuZzFvMXdDNHVFU04ya3Z0NnBjZkhqZ2N6SUc2d0I2RWhlOG5hdTVET3U0c3lodDBoNmdxVDB3eU9zTzA5RWx6QmIyeXNlMXlGaHJocG1iNlNsbmNBNkt2bmZLNFZyU1owLVAtaW50ZEZJU2RTZmRVcjE3NzBuaFNYNzNzc2RpTDdnejlXWldPU1NXMVpaVEpXb2hQeE1NVkJJam8zanpvMVdqVDVFMW1RQzV6eERMX2JoN25SYzZfVk1xWUdfUkMwNjJjMEhSblNlb3J1TU80b1pvQ1JxUk9lWEd2SVBGd9IB7wFBVV95cUxQdVh5eVlyQ2ZuZzFvMXdDNHVFU04ya3Z0NnBjZkhqZ2N6SUc2d0I2RWhlOG5hdTVET3U0c3lodDBoNmdxVDB3eU9zTzA5RWx6QmIyeXNlMXlGaHJocG1iNlNsbmNBNkt2bmZLNFZyU1owLVAtaW50ZEZJU2RTZmRVcjE3NzBuaFNYNzNzc2RpTDdnejlXWldPU1NXMVpaVEpXb2hQeE1NVkJJam8zanpvMVdqVDVFMW1RQzV6eERMX2JoN25SYzZfVk1xWUdfUkMwNjJjMEhSblNlb3J1TU80b1pvQ1JxUk9lWEd2SVBGdw?oc=5"
   },
   {
     "id": "buttigieg",
@@ -902,18 +943,31 @@
     "role": "President",
     "bucket": "out",
     "keys": [
-      "barred"
+      "barred",
+      "declared"
     ],
     "conf": "High",
     "delta": 0,
-    "lastSignal": "2026-05-01",
-    "headline": "Barred by 22nd Amendment; teases third-term scenarios",
+    "lastSignal": "2026-06-02",
+    "headline": "Could Donald Trump Jr. launch a 2028 presidential campaign? - Washington Examiner",
     "why": "Legally ineligible; tracked only because of the chatter he generates.",
     "quote": "",
     "tags": [
       "ineligible",
       "22nd Amdt"
-    ]
+    ],
+    "evidence": [
+      {
+        "date": "2026-06-02",
+        "headline": "Could Donald Trump Jr. launch a 2028 presidential campaign? - Washington Examiner",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNVWhBanlhdWZocENGWTl5Y2o3cnpPaVZObEJGNlFiV1Q5QVFFbDNpaEFDSEZ0NGwxZWxYMHVnNXA1S2dLM0htZThLYjZydGYzVHNpZ0tlS2pkMlBoTi1MV0NENFE1M2cxRmF4S1hSLWhmNGFOSW80WHo0ZmUwNHZuVURKcUs?oc=5",
+        "keys": [
+          "declared"
+        ],
+        "conf": "Low"
+      }
+    ],
+    "sourceUrl": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNVWhBanlhdWZocENGWTl5Y2o3cnpPaVZObEJGNlFiV1Q5QVFFbDNpaEFDSEZ0NGwxZWxYMHVnNXA1S2dLM0htZThLYjZydGYzVHNpZ0tlS2pkMlBoTi1MV0NENFE1M2cxRmF4S1hSLWhmNGFOSW80WHo0ZmUwNHZuVURKcUs?oc=5"
   },
   {
     "id": "rubio",
