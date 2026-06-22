@@ -2,13 +2,13 @@
   "date": "2026-06-22",
   "movers": [
     {
-      "id": "lemon",
-      "name": "Don Lemon",
+      "id": "kelly",
+      "name": "Mark Kelly",
       "party": "Democrat",
-      "delta": 5,
-      "score": 22,
-      "tier": 2,
-      "statusLabel": "Positioning"
+      "delta": 20,
+      "score": 50,
+      "tier": 5,
+      "statusLabel": "Declared"
     }
   ],
   "new_filers": [],
@@ -17,6 +17,6 @@
   "totals": {
     "tracked": 40,
     "formal": 3,
-    "considering": 14
+    "considering": 13
   }
 }
