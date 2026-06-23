@@ -255,5 +255,18 @@
     ],
     "rid": "5b49a75f97b2",
     "kind": "discovery"
+  },
+  {
+    "name": "Gretchen Whitmer",
+    "headline": "Gretchen Whitmer Not Running in 2028: What Democratic Primary Polls Show - Newsweek",
+    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQRHBfem1XOG4wZ1BzeFA0QVRhYWV2Vm14NVRzelFvd2FLaEVTb3ZrYUtIcDZJVkVUMUhma1A0Vzcyeko4UTJBMTRLODR2cUdnTnJCai01MjV6WVcxM0RCMzRWX3RIYU8xWDdTSnBUSF9pU1kwZ1BLR0ZLVG14U0lWU0J0UW5iZjU1elgxWUIzc3F3Mk9aRXZr?oc=5",
+    "source": "Newsweek",
+    "date": "2026-05-28",
+    "keys": [
+      "ruledOut"
+    ],
+    "note": "denial/downgrade — confirm before applying",
+    "rid": "4f60bd0c5713",
+    "kind": "denial"
   }
 ]
