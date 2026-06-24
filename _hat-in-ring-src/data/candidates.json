@@ -173,8 +173,8 @@
     ],
     "conf": "High",
     "delta": 0,
-    "lastSignal": "2026-06-13",
-    "headline": "Kentucky Gov. Andy Beshear and Nevada Gubernatorial Candidate Aaron Ford Speak at Nevada Democratic Convention - C-SPAN",
+    "lastSignal": "2026-06-24",
+    "headline": "Road to 2028: Beshear campaigns for Democrats in Iowa, Nevada, Ohio - Lexington Herald Leader",
     "why": "Red-state Dem appeal; timeline tied to Governors Assoc. chairmanship.",
     "quote": "I'd consider it under the right circumstances.",
     "tags": [
@@ -182,12 +182,14 @@
       "post-DGA"
     ],
     "early_states": {
-      "NV": 1,
-      "SC": 1
+      "NV": 2,
+      "SC": 1,
+      "IA": 2
     },
     "early_states_last": {
-      "NV": "2026-06-13",
-      "SC": "2026-06-01"
+      "NV": "2026-06-24",
+      "SC": "2026-06-01",
+      "IA": "2026-06-08"
     },
     "evidence": [
       {
@@ -207,9 +209,27 @@
           "earlyState"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-06-24",
+        "headline": "Road to 2028: Beshear campaigns for Democrats in Iowa, Nevada, Ohio - Lexington Herald Leader",
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFA5NWJYXzduV2tzMmtfN0pubWNaeW8zSTlZS3lUaXgtRVlCWHA4YWhRaEpHaXRlR0xrRVNfT092TmQ5WFc3dDNwV2ZFeElMYlR3MHNidk9EeWNZQlF6OEFSbm5HNElMMWptQ2lONlR3dkJOdDQ3OC1mX19WVdIBe0FVX3lxTE9JYks2ZlkycUdTelltcHc0ZDdCejRFMzlEbHFsVF9jdzYyWEM1SFN2ZWlzWGtyM1NkcGRYRUlfaGV4c1pDNFhzZHVma1Q3SWJCNmJRSkl6VDMwVTlRMVdFSjBJQkFjQkV3Y1BaYVJzZFZDRWxqWU12MzRGWQ?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-06-08",
+        "headline": "Gov. Andy Beshear heads to Iowa for campaign appearance as 2028 chatter grows - WLKY",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQTlZJRE5INGJlV01ldmNQOEdNV1ljYzZNaVR2U01CTWd1eGZWSjVmaENHRzVJeGZ4enZiVml1NGFHMHk0dTNibERyVjc4NmItdlVqcXdKSGktVGU1dmRUdE9USU9JajE1czRsOHNmdEsyV2F3a055bTV6VFQyMTBoZUFsRGZEdUNOOTJpNHdzcWNMTGdFNTJNdA?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
       }
     ],
-    "sourceUrl": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOUGtmUmdkOEh2aElvVW9HTjBrQy1xbk5taDRLOFBPeS1sVVZTZDR2UXFLOE1QTmw0RmFJOGN2cXJhWXZFTGdmMXcxaW9UQ2w5dlFER1ktMFVZUDM5c0d3RXhkN3RlRjJRYzRHaUFzeFUtTmdIUXhCMTBfSEVuX1lJdG1ZRlVHd2JrRUxaQWlNaEpyVTNmeWFNNktfaWFDWm05ZVlOQUFHNkY4MTctR3lraW45cl9QUUlpVlRTdWRibXBoMWo1NDhzQVFyczlsRGhKQjg2dUNPY3hKNWVGSE51YzJBazhhZHlUdlo5cVBWTVN1NnM?oc=5"
+    "sourceUrl": "https://news.google.com/rss/articles/CBMie0FVX3lxTFA5NWJYXzduV2tzMmtfN0pubWNaeW8zSTlZS3lUaXgtRVlCWHA4YWhRaEpHaXRlR0xrRVNfT092TmQ5WFc3dDNwV2ZFeElMYlR3MHNidk9EeWNZQlF6OEFSbm5HNElMMWptQ2lONlR3dkJOdDQ3OC1mX19WVdIBe0FVX3lxTE9JYks2ZlkycUdTelltcHc0ZDdCejRFMzlEbHFsVF9jdzYyWEM1SFN2ZWlzWGtyM1NkcGRYRUlfaGV4c1pDNFhzZHVma1Q3SWJCNmJRSkl6VDMwVTlRMVdFSjBJQkFjQkV3Y1BaYVJzZFZDRWxqWU12MzRGWQ?oc=5"
   },
   {
     "id": "kelly",

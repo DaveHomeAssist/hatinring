@@ -268,5 +268,29 @@
     "note": "denial/downgrade — confirm before applying",
     "rid": "4f60bd0c5713",
     "kind": "denial"
+  },
+  {
+    "name": "Democrats and Republicans think control ",
+    "headline": "Democrats and Republicans think control of Congress runs through Iowa - NPR",
+    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOSnRTQVU1MFNDM0dyci1TVm43MGlIeEl1bllnR0Z0R01IQm5GUjRTRHFxUnRRVk1wSE1ZUVF3bW5RY05IZ2tVTTJ4TElUZFRMYmc2VE1vN3pFbFI0WGRrQk9HellqbnFOZnBkQ3FJMU90dlJ4MlM0RDl1ajlXbnFQS0lCb1JqV2NQY2lEQlhPRm9NTE0?oc=5",
+    "source": "NPR",
+    "date": "2026-05-31",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "fdef95f75134",
+    "kind": "discovery"
+  },
+  {
+    "name": "Libertarian 2020 candidate appears on po",
+    "headline": "Libertarian 2020 candidate appears on podcast tied to ‘boogaloo’ movement - The Guardian",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPSm9iQzlWWXhsRFY3aF90NXRjM1I4MjNoWkY1RW96VmNRQ3NmOE9hVjVpbkxFbnBuQ3A1QVM1eTJsV0N6eE5QaWNJbWNVekFtT1dKamZ3Ri1IQ1JKa1FtZ0J5bHVSWnRnOWhabl9SWjU3VUQ4dWg3djUwdW4zWGZUNzB1VFJZNHpwTG1hU3RzYzN3THM4dUd1R25aTV85T1VsOWlKbHdvOWxsUEdEQ0x4X1hWbw?oc=5",
+    "source": "The Guardian",
+    "date": "2020-07-06",
+    "keys": [
+      "mediaBlitz"
+    ],
+    "rid": "b38c8aec912e",
+    "kind": "discovery"
   }
 ]
