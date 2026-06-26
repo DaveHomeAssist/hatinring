@@ -389,16 +389,25 @@
       }
     ],
     "early_states": {
-      "NH": 1
+      "NH": 2
     },
     "early_states_last": {
-      "NH": "2026-06-09"
+      "NH": "2026-06-08"
     },
     "evidence": [
       {
         "date": "2026-06-09",
         "headline": "Rahm Emanuel's uphill climb in New Hampshire tests a 2028 presidential bid - Ottumwa Courier",
         "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQY3I3RVpYcl9RMDBqX09ucXRWUmFPMnZIc2E4XzY4NUw1ZWdCS3pPc25fY2Utbkl2bnl1LXBHdGk1UWlBOUxXNTlLd2p0TXdKWHl4SE5MOE9TMXhIdVI2QnQyTDZDVGZWZGRiNHdvQVZJdjJhT3h6ejZfN1o3RWkyV3N6ZEROT2ZCM2pXSUhXSFg0OTVqNTI5ME5NMU5maHQ0cHlDYUx5RjdJOXVGeEwtVnduc3VjdEt1N21ySDVsMWk3N19MM1lkdm4tRFZRbjc5dTIxdThUSDYxV0lsQmNTb3ljR1FxRUZWa3Byem1jVGUwMjlsS1lJUnJuZXJTelJjcVhN?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-06-08",
+        "headline": "Former Chicago mayor, possible presidential hopeful Rahm Emanuel finishes bike tour of New Hampshire - CBS News",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPY0JYQVQtSzAzUzBGYTdWN2cycWFiXzBEUHhPaVl4V2REZ01mZkpzLWhudlBXX0M2NzIxWkNZSGc0YTR3dldfOWF5Y24wSDA1RVZUb2lCMlBkel9YcVdWRWR5eDhFcWs5MW5MX3JleDh4MlJ4dFhLa2dRdXN3UmlITXB0NE1pYlNvb3k5VTRxOEd1TmNWRGliMzFQNkVVcjdKTHlCX3NGQVBURTA2Q1RzRTZab1pjU0U?oc=5",
         "keys": [
           "earlyState"
         ],
@@ -812,9 +821,9 @@
     ],
     "conf": "Medium",
     "delta": 0,
-    "lastSignal": "2026-06-15",
+    "lastSignal": "2026-06-25",
     "pollLead": "GOP poll leader (~35%)",
-    "headline": "‘Communion’: JD Vance’s spiritual memoir released as 2028 race heats up - OSV News",
+    "headline": "Tucker Carlson rules out 2028 presidential run while praising JD Vance: 'Look, I’ll support the best person' - Attack of the Fanboy",
     "why": "Leads GOP primary polls despite no \"considering\" language; Trump floats a Vance-Rubio ticket.",
     "quote": "I'm not a potential future candidate. I'm a Vice President.",
     "tags": [
@@ -854,7 +863,8 @@
         ],
         "conf": "Low"
       }
-    ]
+    ],
+    "sourceUrl": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNa0pxU2JYMXlURGVLZUJTb3NCV215ZVR2QjVkbmZ4SFphN1VEdzFyUlJLLXlXS2ZNRU4tNWI0RnhmZ3J0OEd2VGd2M0JCLTZNZExzNHhrUU1NYzJrZTZsWGc1RjlGZHpwZ1FmWlJrMzJnSDZVTFVuUWJCSVgzN3BHMDRyNEFyWEY0dU1WX1d3RlpJUHJNQ2wyZkdMY3dPWXdOempDakRSM0YwX2VvN2N6TEZWd1dieEViNTBrLS1tMkl2VFRlb01fUV8yd1JJbXJtRzgxYUlDeVJqQkE?oc=5"
   },
   {
     "id": "whitmer",
