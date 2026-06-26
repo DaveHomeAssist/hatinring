@@ -3,4 +3,4 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 [ -f .env ] && set -a && . ./.env && set +a
-python3 -m hatring.pipeline --all "$@"
+python3 -m hatring.pipeline --all --sync-ios "$@"

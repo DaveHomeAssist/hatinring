@@ -65,6 +65,7 @@ cp .env.example .env          # then paste your free FEC key
 ./run.sh                              # full pipeline: FEC + news + rebuild
 python -m hatring.pipeline --news --build      # news only
 python -m hatring.pipeline --build             # just rebuild the HTML
+python -m hatring.pipeline --build --sync-ios  # refresh the native iOS bundle data
 python -m hatring.pipeline --offline --build   # no network, uses fixtures
 python -m hatring.pipeline --build --out public/index.html   # Pages-style entrypoint
 python -m hatring.pipeline --all --today 2026-06-12   # pin "today" for recency
@@ -79,6 +80,7 @@ Outputs land in `data/`:
 | `dashboard.html` | hostable |
 | `signals.jsonl` | audit trail |
 | `review_queue.json` | unmatched names a human should triage |
+| `freshness.json` | latest pipeline run date consumed by the iOS app |
 
 ---
 
