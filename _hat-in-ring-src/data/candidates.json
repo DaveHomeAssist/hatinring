@@ -75,14 +75,15 @@
     ],
     "conf": "High",
     "delta": 0,
-    "lastSignal": "2026-06-12",
+    "lastSignal": "2026-06-26",
     "pollLead": "Dem poll leader",
-    "headline": "Sky News Australia. . Sky News Digital Presenter Gabriella Power reacts to Hunter Biden speaking about his political future on Gavin Newsom's podcast. The son of former US President Joe Biden teased a potential vice-presidential run in 2028. - facebook.com",
-    "why": "Catapulted to front-runner in Emerson national polling.",
+    "headline": "Newsom calls for a national billionaires tax: 'It's time for an economic reset'",
+    "why": "Polling frontrunner actively staking out a 2028 lane; a national billionaires-tax pitch and a Biden embrace are already drawing intra-party fire (Khanna).",
     "quote": "I'd be lying if I said I wasn't seriously thinking about it.",
     "tags": [
       "governor lane",
-      "frontrunner"
+      "frontrunner",
+      "CNBC"
     ]
   },
   {
@@ -100,13 +101,14 @@
     ],
     "conf": "High",
     "delta": 0,
-    "lastSignal": "2026-05-10",
-    "headline": "Kamala’s cash crisis: Big donors turn their backs on Harris as 2028 bid already hangs by a thread - New York Post",
-    "why": "Retains 2024 donor & staff network; leads some rematch polls.",
+    "lastSignal": "2026-06-26",
+    "headline": "Vance and Harris lead the 2028 presidential race: poll",
+    "why": "The 2024 nominee tops early Democratic primary polling; a rematch frontrunner in a crowded, unsettled field.",
     "quote": "I have not made a decision… I may or may not.",
     "tags": [
       "rematch",
-      "establishment"
+      "establishment",
+      "USA Today"
     ],
     "evidence": [
       {
@@ -173,13 +175,14 @@
     ],
     "conf": "High",
     "delta": 0,
-    "lastSignal": "2026-06-24",
-    "headline": "Road to 2028: Beshear campaigns for Democrats in Iowa, Nevada, Ohio - Lexington Herald Leader",
-    "why": "Red-state Dem appeal; timeline tied to Governors Assoc. chairmanship.",
+    "lastSignal": "2026-06-27",
+    "headline": "Riding into 2028: on the midterms trail, Beshear eyes a bigger prize",
+    "why": "Red-state Democratic governor; cross-country and early-state travel (Iowa, Nevada, Ohio) is fueling open 2028 speculation.",
     "quote": "I'd consider it under the right circumstances.",
     "tags": [
       "governor lane",
-      "post-DGA"
+      "post-DGA",
+      "The New York Times"
     ],
     "early_states": {
       "NV": 2,
@@ -357,13 +360,14 @@
     ],
     "conf": "High",
     "delta": 0,
-    "lastSignal": "2026-05-01",
-    "headline": "\"Can't rule anything out\" for 2028",
-    "why": "Self-funding capacity removes the money constraint entirely.",
+    "lastSignal": "2026-06-26",
+    "headline": "Pritzker builds out-of-state party coalitions that may prove helpful in 2028",
+    "why": "Self-funding Illinois governor laying groundwork; vows to be 'very involved' in 2028 and is exploring national fundraising.",
     "quote": "I can't rule anything out.",
     "tags": [
       "governor lane",
-      "self-fund"
+      "self-fund",
+      "Chicago Sun-Times"
     ]
   },
   {
@@ -693,13 +697,14 @@
     ],
     "conf": "Medium",
     "delta": 0,
-    "lastSignal": "2026-06-11",
-    "headline": "Pete Buttigieg to give keynote speech at Iowa Democratic event, fueling presidential speculation - LGBTQ Nation",
-    "why": "Top-3 in Dem polls on name ID; no explicit \"considering\" yet.",
+    "lastSignal": "2026-06-25",
+    "headline": "Buttigieg is on the road again, 'aiming to be useful' as he weighs a 2028 bid",
+    "why": "Back on the trail and openly weighing a run; consistently near the top of Democratic primary polls.",
     "quote": "",
     "tags": [
       "establishment",
-      "polls-high"
+      "polls-high",
+      "NBC News"
     ]
   },
   {
@@ -747,13 +752,14 @@
     ],
     "conf": "Medium",
     "delta": 0,
-    "lastSignal": "2026-05-05",
-    "headline": "Cautious, but wants to be \"part of the national debate\"",
-    "why": "Marquee swing-state governor; deliberately low-key.",
+    "lastSignal": "2026-06-25",
+    "headline": "Shapiro says he has 'profound' differences with a Mamdani-backed candidate",
+    "why": "Swing-state governor drawing moderate contrasts; ranks among the top tier of 2028 Democrats in recent polling.",
     "quote": "",
     "tags": [
       "governor lane",
-      "swing-state"
+      "swing-state",
+      "CNN"
     ]
   },
   {
@@ -839,14 +845,15 @@
     ],
     "conf": "Medium",
     "delta": 0,
-    "lastSignal": "2026-06-25",
+    "lastSignal": "2026-06-28",
     "pollLead": "GOP poll leader (~35%)",
-    "headline": "Tucker Carlson rules out 2028 presidential run while praising JD Vance: 'Look, I’ll support the best person' - Attack of the Fanboy",
-    "why": "Leads GOP primary polls despite no \"considering\" language; Trump floats a Vance-Rubio ticket.",
+    "headline": "JD Vance for president in 2028? It starts with MAGA voters — and Trump",
+    "why": "Presumptive GOP frontrunner; succession speculation around the sitting VP is building as a 2028 strategy takes shape.",
     "quote": "I'm not a potential future candidate. I'm a Vice President.",
     "tags": [
       "heir-apparent",
-      "downplaying"
+      "downplaying",
+      "USA Today"
     ],
     "history": [
       {
