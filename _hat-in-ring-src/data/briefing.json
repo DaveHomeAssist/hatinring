@@ -1,11 +1,11 @@
 {
-  "date": "2026-06-30",
+  "date": "2026-06-29",
   "movers": [],
   "new_filers": [],
   "transitions": [],
-  "review_count": 26,
+  "review_count": 0,
   "totals": {
-    "tracked": 40,
+    "tracked": 41,
     "formal": 3,
     "considering": 13
   }

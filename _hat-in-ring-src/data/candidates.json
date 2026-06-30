@@ -1198,5 +1198,32 @@
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPQ1hRTlBXVURNZjBBOGl5MEY1RDNtN21rNGpOLVRjZUpOcUZEZlgwdEhXdUpEN1l6enYtejlmN2lrZHFCVG1xOHE5aER6WHJDR3NZTTdJQU5CSlRCNWUyV3Q1RmZRUlRrUV9TeVNPZEhORWY4cS1ob25rdlVLbTdkbjhfQi1acklIQ3BpWWNYc1RmVzQ4SEJfd1llSFUwZGZKTDJJTVNDakYtS3R6Tzl1UTIxcFNNOGRqLW9ENklNVEZSWUVmSkxOM1d0QnRlYXRqbGpLQWtyR1NYVTBNUXI5VGQ4cmtCMFd2WGI2V3Q1SlU?oc=5"
+  },
+  {
+    "id": "rev-5786aeda9cd1",
+    "name": "John Kennedy",
+    "party": "Republican",
+    "role": "U.S. Senator (LA)",
+    "bucket": "soft",
+    "keys": [
+      "softConsidering"
+    ],
+    "conf": "Low",
+    "delta": 0,
+    "lastSignal": "2026-06-17",
+    "headline": "Sen. John Kennedy not ruling out White House bid - The Hill",
+    "why": "Confirmed from the review queue.",
+    "quote": "",
+    "tags": [
+      "The Hill"
+    ],
+    "history": [
+      {
+        "date": "2026-06-17",
+        "from": 0,
+        "to": 1,
+        "reason": "confirmed from review: Sen. John Kennedy not ruling out White House bid - The Hill"
+      }
+    ]
   }
 ]
