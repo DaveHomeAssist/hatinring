@@ -385,8 +385,8 @@
     ],
     "conf": "Medium",
     "delta": 0,
-    "lastSignal": "2026-06-09",
-    "headline": "Rahm Emanuel's uphill climb in New Hampshire tests a 2028 presidential bid - McAlester News-Capital",
+    "lastSignal": "2026-06-11",
+    "headline": "Rahm Emanuel is considering a 2028 run for president. Here's what he's weighing - WBUR",
     "why": "Aggressive media tour to project vitality and viability.",
     "quote": "",
     "tags": [
@@ -402,10 +402,10 @@
       }
     ],
     "early_states": {
-      "NH": 3
+      "NH": 4
     },
     "early_states_last": {
-      "NH": "2026-06-09"
+      "NH": "2026-03-29"
     },
     "evidence": [
       {
@@ -434,9 +434,27 @@
           "earlyState"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-06-11",
+        "headline": "Rahm Emanuel is considering a 2028 run for president. Here's what he's weighing - WBUR",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBIZUNhRGlYcXlNU05qYVhBa056VnJwdkxuNkRjSEZBZy1PWEhGMXFXMm8zM1FjeGVoTHBFSllIWkwwZi1YOGZ0ODF2RnFXSjFKUnpZd3FqZk9lMlBHREEzS2k2QTdoMzJ4OWs3MWNsM1Q3QXdta2lUVnh0NDhraFk?oc=5",
+        "keys": [
+          "consideringQuote"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-03-29",
+        "headline": "Rahm Emanuel Meets with New Hampshire Voters - C-SPAN",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxONFBGeklaRjRFZUpNQ2pVWS04eWtUczRGUUxja0N0TGRwcGl3UHJQVDNpVzh2WnluTW53YnExdm9sWFRZUGdRZV9aanRDR0RGODZBVGV4eE96SmZITGl4YVlRbldYdjNYUUswSXpDdDY4LXJfS09mejk5UDFyWXhkQTZzU295TkZjcDlfY1B5eTJVMVZ1UFhzZlp0SzQ?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
       }
     ],
-    "sourceUrl": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNMEpqM0Joc2VnQXNibmYzcnUyazBDelI0Nkw4X1ZoejE4S09mQlpRZDFrelo4RUdUYkI2LXRnUkVaZ01TQ2RablZmbE1EMm1Fc0VUXzFvSTdvX2xZVGxNWmVrbGNoWjU5Z01TOFZLZXBPb3NxQW1HemhET0VENGNZbzV2RlcyWkZXaUxYampyVUNvU1kxeG5wbFE4NXgzQzZjNXVWbEswUUJrTjlnNnI3SFgtRGtQTmVKbnltM29DU21nUk1SUEItUnF6SXkxb2pwM09kS2JxeUNfblN4OEp6UkN2R2oyTjZHVm1mRHFxNmZrQQ?oc=5"
+    "sourceUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBIZUNhRGlYcXlNU05qYVhBa056VnJwdkxuNkRjSEZBZy1PWEhGMXFXMm8zM1FjeGVoTHBFSllIWkwwZi1YOGZ0ODF2RnFXSjFKUnpZd3FqZk9lMlBHREEzS2k2QTdoMzJ4OWs3MWNsM1Q3QXdta2lUVnh0NDhraFk?oc=5"
   },
   {
     "id": "green",
@@ -1231,6 +1249,18 @@
         "to": 1,
         "reason": "confirmed from review: Sen. John Kennedy not ruling out White House bid - The Hill"
       }
-    ]
+    ],
+    "evidence": [
+      {
+        "date": "2026-06-17",
+        "headline": "Sen. John Kennedy not ruling out White House bid - The Hill",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxORkJyQ3lfcTBRbW1POWtaWkFtOWpvRWpXMHRCalQ3bzN4VEx6TVdmRUZjR19hdUdvYU5wUzhDem1kaTY0QkFZSExWRHRnajNJME44ZGdidXQ5R0JPRm8tV1loQmdQVHBKVlVGUEpxMnhxSkhvM2V6T1FycUVSUEJKdlRUcExSUTDSAYwBQVVfeXFMTXM3QmxpS09ESWJid0FKYzhYd3hrSUttT1JvM2k4Z09XRnJ3TnJKNnA4LWd6djFXa1NKb09yNFo3eDR2ZU5xR0ZFVnkydldfbG5LR0o2YTdXWVJCRWlLdXNtSDZGMUJwSTZpQVNFTms3ckM5WTdRTFVQdHhLYi1UbVBqc1VmVUhLWWc0NGc?oc=5",
+        "keys": [
+          "softConsidering"
+        ],
+        "conf": "Medium"
+      }
+    ],
+    "sourceUrl": "https://news.google.com/rss/articles/CBMihwFBVV95cUxORkJyQ3lfcTBRbW1POWtaWkFtOWpvRWpXMHRCalQ3bzN4VEx6TVdmRUZjR19hdUdvYU5wUzhDem1kaTY0QkFZSExWRHRnajNJME44ZGdidXQ5R0JPRm8tV1loQmdQVHBKVlVGUEpxMnhxSkhvM2V6T1FycUVSUEJKdlRUcExSUTDSAYwBQVVfeXFMTXM3QmxpS09ESWJid0FKYzhYd3hrSUttT1JvM2k4Z09XRnJ3TnJKNnA4LWd6djFXa1NKb09yNFo3eDR2ZU5xR0ZFVnkydldfbG5LR0o2YTdXWVJCRWlLdXNtSDZGMUJwSTZpQVNFTms3ckM5WTdRTFVQdHhLYi1UbVBqc1VmVUhLWWc0NGc?oc=5"
   }
 ]
