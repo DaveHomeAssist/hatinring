@@ -287,7 +287,7 @@
     "conf": "High",
     "delta": 0,
     "lastSignal": "2026-06-13",
-    "headline": "Rep. Ro Khanna (D-CA) Speaks at Nevada Democratic State Convention - C-SPAN",
+    "headline": "Rep. Ro Khanna Speaks at Nevada Democratic State Convention - C-SPAN",
     "why": "First clear public timeline from the progressive-pragmatist lane.",
     "quote": "We'll look at that after the midterms.",
     "tags": [
@@ -295,7 +295,7 @@
       "progressive"
     ],
     "early_states": {
-      "NV": 1
+      "NV": 2
     },
     "early_states_last": {
       "NV": "2026-06-13"
@@ -309,9 +309,18 @@
           "earlyState"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-06-13",
+        "headline": "Rep. Ro Khanna Speaks at Nevada Democratic State Convention - C-SPAN",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOZ0VEa0ZfNXAxVkhXRGVWT3N5Njl5cXAxLTVUQVp4QUVoMi1yaTdDeVdHUGdBNWJzalJtMDBvRmMzVWZYc0hTSnRqZk9QUGdzRl9RbEllU0YyNnRYa05GeXVtbFlrSU1fLVNFdDdVdkJkaG0yZnY2LXRicnpzZ1EtMXUtazdDamZTOGJRZjIzWGhTNXFiX0dVVEtIRWxUTjRsbnh5VmJTeFJVcGdWY3BF?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
       }
     ],
-    "sourceUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOSUJYNG9lVzB1YU91NUtycVVXX2dSWWItS1V1SUpUa2JYVVFlYjhyRk9fa0RrNXlZQV8zUUV6RExKOUZ2TVpJVWZuNGtJMi1GNzRkRzJJTHdWdWJRVE1abVg2dXdMbmY4T0NvVXBXYTVKMm5EdTFqWk55akwzM2NwbHBUU0dIUl80cGVKSnJaaFkyeV9tM0Nrak8xTlhWVVB4UDRCQmVuTTJjN3U3d3dodldBMl9lQQ?oc=5"
+    "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOZ0VEa0ZfNXAxVkhXRGVWT3N5Njl5cXAxLTVUQVp4QUVoMi1yaTdDeVdHUGdBNWJzalJtMDBvRmMzVWZYc0hTSnRqZk9QUGdzRl9RbEllU0YyNnRYa05GeXVtbFlrSU1fLVNFdDdVdkJkaG0yZnY2LXRicnpzZ1EtMXUtazdDamZTOGJRZjIzWGhTNXFiX0dVVEtIRWxUTjRsbnh5VmJTeFJVcGdWY3BF?oc=5"
   },
   {
     "id": "gallego",
@@ -1025,9 +1034,18 @@
           "declared"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-06-02",
+        "headline": "Could Donald Trump Jr. launch a 2028 presidential campaign? - Washington Examiner",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOTHBiRlF0dmo1ckY3SGVQTzRzSGZGdWUzNWoyRzd5c1MySG9xWVR4WXBhVGFKUkpLRFV0aDZDdDhxNFNCNWdGdFBiX2ZBTnpQelkxbnZod3ExVC1EWUtQTGVZdGVsU2dGT1VXS2NoUXpuN3p1UDdjTm5FU0xZWUtacjhMRWpXeUVOV0FzV3B6SG5tSG80OWFZVVZ1OGtkLVNSdUtv?oc=5",
+        "keys": [
+          "declared"
+        ],
+        "conf": "Low"
       }
     ],
-    "sourceUrl": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNVWhBanlhdWZocENGWTl5Y2o3cnpPaVZObEJGNlFiV1Q5QVFFbDNpaEFDSEZ0NGwxZWxYMHVnNXA1S2dLM0htZThLYjZydGYzVHNpZ0tlS2pkMlBoTi1MV0NENFE1M2cxRmF4S1hSLWhmNGFOSW80WHo0ZmUwNHZuVURKcUs?oc=5"
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOTHBiRlF0dmo1ckY3SGVQTzRzSGZGdWUzNWoyRzd5c1MySG9xWVR4WXBhVGFKUkpLRFV0aDZDdDhxNFNCNWdGdFBiX2ZBTnpQelkxbnZod3ExVC1EWUtQTGVZdGVsU2dGT1VXS2NoUXpuN3p1UDdjTm5FU0xZWUtacjhMRWpXeUVOV0FzV3B6SG5tSG80OWFZVVZ1OGtkLVNSdUtv?oc=5"
   },
   {
     "id": "rubio",

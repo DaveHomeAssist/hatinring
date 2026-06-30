@@ -305,5 +305,17 @@
     "note": "denial/downgrade — confirm before applying",
     "rid": "a9148fd5eb60",
     "kind": "denial"
+  },
+  {
+    "name": "John Kennedy",
+    "headline": "Sen. John Kennedy not ruling out White House bid - The Hill",
+    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxORkJyQ3lfcTBRbW1POWtaWkFtOWpvRWpXMHRCalQ3bzN4VEx6TVdmRUZjR19hdUdvYU5wUzhDem1kaTY0QkFZSExWRHRnajNJME44ZGdidXQ5R0JPRm8tV1loQmdQVHBKVlVGUEpxMnhxSkhvM2V6T1FycUVSUEJKdlRUcExSUTDSAYwBQVVfeXFMTXM3QmxpS09ESWJid0FKYzhYd3hrSUttT1JvM2k4Z09XRnJ3TnJKNnA4LWd6djFXa1NKb09yNFo3eDR2ZU5xR0ZFVnkydldfbG5LR0o2YTdXWVJCRWlLdXNtSDZGMUJwSTZpQVNFTms3ckM5WTdRTFVQdHhLYi1UbVBqc1VmVUhLWWc0NGc?oc=5",
+    "source": "The Hill",
+    "date": "2026-06-17",
+    "keys": [
+      "softConsidering"
+    ],
+    "rid": "5786aeda9cd1",
+    "kind": "discovery"
   }
 ]
