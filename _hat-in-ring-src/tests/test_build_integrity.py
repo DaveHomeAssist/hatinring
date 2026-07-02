@@ -105,7 +105,7 @@ def _extract_seed(html: str) -> str:
 def test_structural_anchors_present(tmp_path):
     html = _render(tmp_path)
     assert html.lstrip().startswith("<!DOCTYPE html>"), "missing doctype"
-    assert "<title>2028 Hat-in-Ring Radar</title>" in html
+    assert "<title>Who's Running for President in 2028? Candidate Tracker — Hat-in-Ring Radar</title>" in html
     # freshness stamp: id="asof" rendered to the human as_of date, plus buildstamp
     assert 'id="asof"' in html
     assert "data as of June 13, 2026" in html, "noscript as_of not rendered from built date"

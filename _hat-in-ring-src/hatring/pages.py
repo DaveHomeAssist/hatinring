@@ -68,14 +68,50 @@ def _to_date(s):
         return None
 
 
+def _meta_desc(name: str, status_label: str, headline: str, limit: int = 158) -> str:
+    """Search-snippet description: lead with the candidate's name + the query
+    people actually type, cap at ~158 chars (Google's display width) without
+    cutting mid-word."""
+    text = f"Is {name} running for president in 2028? Current status: {status_label}."
+    if headline:
+        text = f"{text} {headline}"
+    if len(text) <= limit:
+        return text
+    cut = text[: limit - 1]
+    if " " in cut:
+        cut = cut[: cut.rfind(" ")]
+    return cut.rstrip(" ,;:·.-") + "…"
+
+
+def _days_ago_human(days) -> str:
+    """'1 day ago' / 'n days ago' / 'today' — pre-pluralized for the template."""
+    if days is None:
+        return ""
+    if days == 0:
+        return "today"
+    return f"{days} day{'s' if days != 1 else ''} ago"
+
+
+def _related(e: dict, enriched: list[dict], k: int = 4) -> list[dict]:
+    """3-5 internal links per page: same party first, then nearest momentum
+    score, excluding self. Deterministic (name tiebreak) so rebuilds are stable."""
+    pool = sorted(
+        (o for o in enriched if o["id"] != e["id"]),
+        key=lambda o: (0 if o.get("party") == e.get("party") else 1,
+                       abs(o["score"] - e["score"]), o["name"]))
+    return [{"id": o["id"], "name": o["name"], "statusLabel": o["statusLabel"]}
+            for o in pool[:k]]
+
+
 def render_candidate_pages(records: list[dict], template_dir: Path, out_dir: Path,
                            built: date, canonical_base: str, og_default: str) -> int:
     env = Environment(loader=FileSystemLoader(str(template_dir)), autoescape=True)
     tmpl = env.get_template("candidate.html.j2")
     as_of = built.strftime("%B %-d, %Y")
     n = 0
-    for r in records:
-        e = enrich(r, built)                              # tier, statusLabel, score
+    enriched_pairs = [(r, enrich(r, built)) for r in records]   # tier, statusLabel, score
+    all_enriched = [e for _, e in enriched_pairs]
+    for r, e in enriched_pairs:
         cid = e["id"]
         canonical = f"{canonical_base}c/{cid}/"
         bd = [{"label": lbl, "w": w} for lbl, w in _breakdown(r.get("keys", []), r["lastSignal"], built)]
@@ -88,7 +124,9 @@ def render_candidate_pages(records: list[dict], template_dir: Path, out_dir: Pat
             ({"name": geo.STATE_NAME.get(s, s), "n": early[s]} for s in early),
             key=lambda x: x["n"], reverse=True)
         headline = (r.get("headline") or "").strip()
-        meta = f"{e['statusLabel']} · momentum {e['score']}/100. {headline}"[:300]
+        meta = _meta_desc(r["name"], e["statusLabel"], headline)
+        # Person entity stays factual (name/url/image/jobTitle) — the scored,
+        # editorial status/momentum line does NOT belong in structured data.
         person = {
             "@context": "https://schema.org", "@type": "Person",
             "name": r["name"], "url": canonical,
@@ -97,8 +135,19 @@ def render_candidate_pages(records: list[dict], template_dir: Path, out_dir: Pat
             person["jobTitle"] = r["role"]
         if r.get("img"):
             person["image"] = canonical_base + r["img"]
-        person["description"] = meta
         person_jsonld = json.dumps(person, ensure_ascii=False).replace("<", "\\u003c")
+        breadcrumbs = {
+            "@context": "https://schema.org", "@type": "BreadcrumbList",
+            "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Home",
+                 "item": canonical_base},
+                {"@type": "ListItem", "position": 2, "name": "Candidates",
+                 "item": canonical_base},
+                {"@type": "ListItem", "position": 3, "name": r["name"],
+                 "item": canonical},
+            ],
+        }
+        breadcrumbs_jsonld = json.dumps(breadcrumbs, ensure_ascii=False).replace("<", "\\u003c")
         corrections_url = (REPO_ISSUES + "?" + urllib.parse.urlencode({
             "title": f"Correction: {r['name']}",
             "body": f"Page: {canonical}\nWhat's wrong:\nSource link:\n",
@@ -109,10 +158,11 @@ def render_candidate_pages(records: list[dict], template_dir: Path, out_dir: Pat
             status_def=STATUS_DEF.get(e["tier"], ""),
             source_url=_safe_url(r.get("sourceUrl")),
             last_signal_human=(ls.strftime("%B %-d, %Y") if ls else (r.get("lastSignal") or "")),
-            days_since=days if days is not None else "—",
+            days_ago=_days_ago_human(days),
             meta_desc=meta, canonical=canonical,
             og_image=(canonical_base + r["img"]) if r.get("img") else og_default,
-            person_jsonld=person_jsonld,
+            person_jsonld=person_jsonld, breadcrumbs_jsonld=breadcrumbs_jsonld,
+            related=_related(e, all_enriched),
             evidence=r.get("evidence") or [],
             early_list=early_list, money_fmt=money_fmt,
             corrections_url=corrections_url, as_of=as_of,
@@ -124,13 +174,21 @@ def render_candidate_pages(records: list[dict], template_dir: Path, out_dir: Pat
     return n
 
 
-def build_sitemap(records: list[dict], out_dir: Path, canonical_base: str) -> None:
-    rows = [(canonical_base, "daily", "1.0"),
-            (canonical_base + "about.html", "monthly", "0.7")]
-    rows += [(f"{canonical_base}c/{r['id']}/", "weekly", "0.8") for r in records]
+def build_sitemap(records: list[dict], out_dir: Path, canonical_base: str,
+                  built: date | None = None) -> None:
+    # <lastmod> in W3C date form: build date for the daily-rebuilt home/about,
+    # each record's lastSignal (fallback: build date) for its /c/<id>/ page.
+    build_day = (built or date.today()).isoformat()
+    rows = [(canonical_base, "daily", "1.0", build_day),
+            (canonical_base + "about.html", "monthly", "0.7", build_day)]
+    for r in records:
+        ls = _to_date(r.get("lastSignal"))
+        rows.append((f"{canonical_base}c/{r['id']}/", "weekly", "0.8",
+                     ls.isoformat() if ls else build_day))
     body = "\n".join(
-        f'  <url><loc>{loc}</loc><changefreq>{cf}</changefreq><priority>{pr}</priority></url>'
-        for loc, cf, pr in rows)
+        f'  <url><loc>{loc}</loc><lastmod>{lm}</lastmod>'
+        f'<changefreq>{cf}</changefreq><priority>{pr}</priority></url>'
+        for loc, cf, pr, lm in rows)
     (out_dir / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'

@@ -1,24 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>2028 Hat-in-Ring Radar</title>
+<title>Who's Running for President in 2028? Candidate Tracker — Hat-in-Ring Radar</title>
 <meta name="description" content="{{ page_desc }}">
 <link rel="canonical" href="{{ canonical_url }}">
 <meta name="robots" content="index,follow">
 <meta property="og:type" content="website">
-<meta property="og:title" content="2028 Hat-in-Ring Radar">
+<meta property="og:title" content="Who's Running for President in 2028? Candidate Tracker — Hat-in-Ring Radar">
 <meta property="og:description" content="{{ page_desc }}">
 <meta property="og:url" content="{{ canonical_url }}">
 <meta property="og:image" content="{{ og_image }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Hat-in-Ring Radar — snapshot of the tracked 2028 presidential field">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="2028 Hat-in-Ring Radar">
+<meta name="twitter:title" content="Who's Running for President in 2028? Candidate Tracker — Hat-in-Ring Radar">
 <meta name="twitter:description" content="{{ page_desc }}">
 <meta name="twitter:image" content="{{ og_image }}">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="alternate" type="application/rss+xml" title="Hat-in-Ring Radar — daily movement" href="/feed.xml">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"2028 Hat-in-Ring Radar","url":"{{ canonical_url }}","description":"{{ page_desc }}","publisher":{"@type":"Organization","name":"System by Dave","url":"https://systembydave.com/"}}</script>
+<script type="application/ld+json">{{ itemlist_json }}</script>
 <script src="/vendor/react.production.min.js"></script>
 <script src="/vendor/react-dom.production.min.js"></script>
 <script src="/support.js"></script>
@@ -42,9 +46,12 @@
   html,body{margin:0;padding:0}
   body{background:#E7E1D2;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
   ::selection{background:#13294B;color:#F4EFE2}
-  @keyframes hir-sweep{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
-  @keyframes hir-pulse{0%,100%{opacity:.55}50%{opacity:1}}
+  @media (prefers-reduced-motion: no-preference){
+    @keyframes hir-sweep{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+    @keyframes hir-pulse{0%,100%{opacity:.55}50%{opacity:1}}
+  }
   @keyframes hir-fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+  :focus-visible{outline:2px solid #3F6FB5;outline-offset:2px}
   .hir-scroll::-webkit-scrollbar{width:9px;height:9px}
   .hir-scroll::-webkit-scrollbar-thumb{background:#CFC6B0;border-radius:6px;border:2px solid #F6F2E8}
   .hir-scroll::-webkit-scrollbar-track{background:transparent}
@@ -96,7 +103,7 @@
 
   <header class="hir-header" style="position:sticky;top:0;z-index:30;background:#F4EFE2;border-bottom:2px solid #13294B;box-shadow:0 1px 0 #C9BE9E,0 6px 18px -14px rgba(19,41,75,.5)">
     <div class="hir-header-inner" style="max-width:1280px;margin:0 auto;padding:0 22px;display:flex;align-items:center;gap:22px;height:72px">
-      <div class="hir-brand" onClick="{{ goHome }}" style="display:flex;align-items:center;gap:13px;cursor:pointer;flex:none">
+      <div class="hir-brand" onClick="{{ goHome }}" onKeyDown="{{ goHomeKey }}" role="button" tabIndex="0" aria-label="Hat-in-Ring Radar — go to The Field" style="display:flex;align-items:center;gap:13px;cursor:pointer;flex:none">
         <span style="position:relative;width:42px;height:42px;flex:none;display:block">
           <svg viewBox="0 0 100 100" width="42" height="42" style="display:block;position:absolute;inset:0">
             <circle cx="50" cy="50" r="46" fill="#0E2342" stroke="#13294B" stroke-width="1"></circle>
@@ -125,17 +132,18 @@
             <span style="{{ tab.underline }}"></span>
           </button>
         </sc-for>
+        <a href="/about.html" style="display:flex;align-items:center;font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:600;letter-spacing:.02em;padding:0 4px;color:#6A6450;text-decoration:none" style-hover="color:#13294B">About</a>
       </nav>
 
       <div class="hir-header-meta" style="margin-left:auto;display:flex;align-items:center;gap:18px;flex:none">
         <div style="text-align:right;line-height:1.25">
-          <div style="font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#8A8470;font-weight:600">As of</div>
+          <div style="font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#6A6450;font-weight:600">As of</div>
           <div id="asof" style="font-family:'Newsreader',serif;font-size:15px;color:#13294B;font-weight:600">{{ asOf }}</div>
         </div>
         <div style="width:1px;height:34px;background:#D2C8AE"></div>
         <div style="text-align:right;line-height:1.25">
           <div style="font-family:'Space Mono',monospace;font-size:17px;font-weight:700;color:#9E3B34">{{ trackedCount }}</div>
-          <div style="font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:#8A8470;font-weight:600">names tracked</div>
+          <div style="font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:#6A6450;font-weight:600">names tracked</div>
         </div>
       </div>
     </div>
@@ -150,7 +158,7 @@
         <h1 style="font-family:'Newsreader',serif;font-weight:600;font-size:30px;letter-spacing:-.01em;margin:0;color:#13294B">The Field</h1>
         <p style="margin:4px 0 0;color:#6A6450;font-size:13.5px;max-width:540px">A non-partisan reading of who is moving toward a 2028 run — ranked by verifiable steps taken and recent activity, not by who you'd vote for.</p>
       </div>
-      <div style="font-size:12px;color:#8A8470;font-family:'Space Mono',monospace;text-align:right">{{ counterText }}</div>
+      <div style="font-size:12px;color:#6A6450;font-family:'Space Mono',monospace;text-align:right">{{ counterText }}</div>
     </div>
 
     <!-- stats -->
@@ -168,14 +176,14 @@
     <div class="hir-toolbar" style="display:flex;flex-wrap:wrap;gap:9px;align-items:center;margin-bottom:6px">
       <div class="hir-search" style="position:relative;flex:1 1 220px;min-width:180px">
         <span style="position:absolute;left:11px;top:50%;transform:translateY(-50%);color:#A39A82;font-size:13px">⌕</span>
-        <input value="{{ q }}" onInput="{{ onSearch }}" placeholder="Search name or office…" style="width:100%;font:inherit;font-size:13px;padding:9px 11px 9px 28px;border:1px solid #D5CBB3;border-radius:3px;background:#FCFAF4;color:#13294B;outline:none">
+        <input value="{{ q }}" onInput="{{ onSearch }}" aria-label="Search candidates" placeholder="Search name or office…" style="width:100%;font:inherit;font-size:13px;padding:9px 11px 9px 28px;border:1px solid #D5CBB3;border-radius:3px;background:#FCFAF4;color:#13294B">
       </div>
       <div class="hir-party-chips" style="display:flex;gap:5px">
         <sc-for list="{{ partyChips }}" as="c" hint-placeholder-count="4">
-          <button onClick="{{ c.toggle }}" title="{{ c.name }}" style="{{ c.style }}">{{ c.label }}</button>
+          <button onClick="{{ c.toggle }}" title="{{ c.name }}" aria-pressed="{{ c.on }}" style="{{ c.style }}">{{ c.label }}</button>
         </sc-for>
       </div>
-      <select value="{{ bucket }}" onChange="{{ onBucket }}" style="font:inherit;font-size:12.5px;padding:8px 9px;border:1px solid #D5CBB3;border-radius:3px;background:#FCFAF4;color:#13294B;outline:none">
+      <select value="{{ bucket }}" onChange="{{ onBucket }}" aria-label="Filter by posture" style="font:inherit;font-size:12.5px;padding:8px 9px;border:1px solid #D5CBB3;border-radius:3px;background:#FCFAF4;color:#13294B">
         <option value="">All postures</option>
         <option value="formal">Formal — declared / exploratory</option>
         <option value="considering">Actively considering</option>
@@ -184,16 +192,16 @@
         <option value="out">Ruled out / ineligible</option>
       </select>
       <div class="hir-view-tabs" style="display:flex;border:1px solid #D5CBB3;border-radius:3px;overflow:hidden;margin-left:auto">
-        <button onClick="{{ setBoard }}" style="{{ boardTabStyle }}">Leaderboard</button>
-        <button onClick="{{ setSheet }}" style="{{ sheetTabStyle }}">Sheet</button>
-        <button onClick="{{ setCards }}" style="{{ cardsTabStyle }}">Cards</button>
+        <button onClick="{{ setBoard }}" aria-pressed="{{ isBoard }}" style="{{ boardTabStyle }}">Leaderboard</button>
+        <button onClick="{{ setSheet }}" aria-pressed="{{ isSheet }}" style="{{ sheetTabStyle }}">Sheet</button>
+        <button onClick="{{ setCards }}" aria-pressed="{{ isCards }}" style="{{ cardsTabStyle }}">Cards</button>
       </div>
     </div>
 
     <!-- quick filters -->
     <div class="hir-quick-filters" style="display:flex;gap:7px;flex-wrap:wrap;margin:10px 0 16px">
       <sc-for list="{{ quickChips }}" as="c" hint-placeholder-count="3">
-        <button onClick="{{ c.toggle }}" style="{{ c.style }}">{{ c.label }}<span style="opacity:.6;margin-left:6px;font-variant-numeric:tabular-nums">{{ c.n }}</span></button>
+        <button onClick="{{ c.toggle }}" aria-pressed="{{ c.on }}" style="{{ c.style }}">{{ c.label }}<span style="opacity:.6;margin-left:6px;font-variant-numeric:tabular-nums">{{ c.n }}</span></button>
       </sc-for>
       <sc-if value="{{ anyFilter }}" hint-placeholder-val="{{ false }}">
         <button onClick="{{ clearFilters }}" style="appearance:none;border:0;background:none;cursor:pointer;color:#9E3B34;font:inherit;font-size:12px;text-decoration:underline;text-underline-offset:3px;margin-left:2px">Clear filters</button>
@@ -205,18 +213,18 @@
     <div class="hir-table-panel" style="background:#FBF8F0;border:1px solid #DED5BD;border-radius:4px;overflow:hidden;margin-bottom:18px">
       <div style="display:flex;align-items:baseline;justify-content:space-between;padding:10px 14px;border-bottom:1px solid #E4DBC6">
         <h2 style="font-family:'Newsreader',serif;font-weight:600;font-size:15px;margin:0">Field sheet</h2>
-        <span style="font-size:11px;color:#8A8470;font-family:'Space Mono',monospace">{{ shownText }} · click a row for the dossier</span>
+        <span style="font-size:11px;color:#6A6450;font-family:'Space Mono',monospace">{{ shownText }} · click a row for the dossier</span>
       </div>
       <div class="hir-scroll" style="overflow:auto;max-height:76vh">
         <table style="width:100%;border-collapse:collapse;min-width:720px;font-variant-numeric:tabular-nums">
           <thead><tr>
             <sc-for list="{{ sheetCols }}" as="col" hint-placeholder-count="8">
-              <th onClick="{{ col.sort }}" style="{{ col.style }}">{{ col.label }}{{ col.arrow }}</th>
+              <th onClick="{{ col.sort }}" onKeyDown="{{ col.sortKey }}" tabIndex="{{ col.tab }}" aria-sort="{{ col.ariaSort }}" style="{{ col.style }}">{{ col.label }}{{ col.arrow }}</th>
             </sc-for>
           </tr></thead>
           <tbody>
             <sc-for list="{{ rows }}" as="r" hint-placeholder-count="16">
-              <tr onClick="{{ r.open }}" style="cursor:pointer" style-hover="background:#F2E9D4">
+              <tr onClick="{{ r.open }}" onKeyDown="{{ r.openKey }}" tabIndex="0" style="cursor:pointer" style-hover="background:#F2E9D4">
                 <td style="padding:4px 9px;border-bottom:1px solid #EEE6D2;border-right:1px solid #F0E8D5;font-family:'Space Mono',monospace;font-size:11px;color:#A39A82;text-align:right">{{ r.rank }}</td>
                 <td style="padding:4px 9px;border-bottom:1px solid #EEE6D2;border-right:1px solid #F0E8D5;font-size:12.5px;font-weight:600;color:#13294B;white-space:nowrap">{{ r.name }}<span style="{{ r.freshDot }}"></span><span style="{{ r.starStyle }}">★</span></td>
                 <td style="padding:4px 9px;border-bottom:1px solid #EEE6D2;border-right:1px solid #F0E8D5;white-space:nowrap"><span style="{{ r.laneSm }}">{{ r.letter }}</span></td>
@@ -241,18 +249,18 @@
         <div style="background:#FBF8F0;border:1px solid #DED5BD;border-radius:4px;overflow:hidden">
           <div style="display:flex;align-items:baseline;justify-content:space-between;padding:13px 16px;border-bottom:1px solid #E4DBC6">
             <h2 style="font-family:'Newsreader',serif;font-weight:600;font-size:16px;margin:0">Seriousness leaderboard</h2>
-            <span style="font-size:11.5px;color:#8A8470;font-family:'Space Mono',monospace">{{ shownText }}</span>
+            <span style="font-size:11.5px;color:#6A6450;font-family:'Space Mono',monospace">{{ shownText }}</span>
           </div>
           <div style="overflow-x:auto" class="hir-scroll">
           <table style="width:100%;border-collapse:collapse;min-width:660px">
             <thead><tr>
               <sc-for list="{{ cols }}" as="col" hint-placeholder-count="7">
-                <th onClick="{{ col.sort }}" style="{{ col.style }}">{{ col.label }}{{ col.arrow }}</th>
+                <th onClick="{{ col.sort }}" onKeyDown="{{ col.sortKey }}" tabIndex="{{ col.tab }}" aria-sort="{{ col.ariaSort }}" style="{{ col.style }}">{{ col.label }}{{ col.arrow }}</th>
               </sc-for>
             </tr></thead>
             <tbody>
               <sc-for list="{{ rows }}" as="r" hint-placeholder-count="10">
-                <tr onClick="{{ r.open }}" style="cursor:pointer;border-bottom:1px solid #ECE4D2" style-hover="background:#F5EFDF">
+                <tr onClick="{{ r.open }}" onKeyDown="{{ r.openKey }}" tabIndex="0" style="cursor:pointer;border-bottom:1px solid #ECE4D2" style-hover="background:#F5EFDF">
                   <td style="{{ r.tdRank }}">{{ r.rank }}</td>
                   <td style="{{ r.td }}">
                     <span style="display:flex;align-items:center;gap:10px">
@@ -260,7 +268,7 @@
                       <img src="{{ r.avatar }}" alt="" loading="lazy" style="width:30px;height:30px;border-radius:3px;object-fit:cover;object-position:center top;flex:none;background:#E7E0CF;border:1px solid #DDD3BB">
                       <span style="min-width:0">
                         <span style="display:flex;align-items:center;gap:6px"><span style="font-weight:600;color:#13294B;white-space:nowrap">{{ r.name }}</span><span style="{{ r.freshDot }}"></span><span style="{{ r.starStyle }}">★</span></span>
-                        <span style="display:block;color:#857E69;font-size:11.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ r.role }}</span>
+                        <span style="display:block;color:#6A6450;font-size:11.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ r.role }}</span>
                       </span>
                     </span>
                   </td>
@@ -286,13 +294,13 @@
         <sc-if value="{{ isCards }}" hint-placeholder-val="{{ false }}">
         <div class="hir-card-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:12px">
           <sc-for list="{{ rows }}" as="r" hint-placeholder-count="9">
-            <div onClick="{{ r.open }}" style="position:relative;background:#FBF8F0;border:1px solid #DED5BD;border-radius:4px;padding:14px;cursor:pointer;overflow:hidden" style-hover="border-color:#13294B">
+            <div onClick="{{ r.open }}" onKeyDown="{{ r.openKey }}" role="button" tabIndex="0" style="position:relative;background:#FBF8F0;border:1px solid #DED5BD;border-radius:4px;padding:14px;cursor:pointer;overflow:hidden" style-hover="border-color:#13294B">
               <span style="position:absolute;left:0;top:0;bottom:0;width:4px;{{ r.barStyle }}"></span>
               <div style="display:flex;gap:11px;align-items:flex-start;margin-left:5px">
                 <img src="{{ r.avatar }}" alt="" loading="lazy" style="width:48px;height:48px;border-radius:4px;object-fit:cover;object-position:center top;flex:none;background:#E7E0CF;border:1px solid #DDD3BB">
                 <div style="flex:1;min-width:0">
                   <div style="display:flex;align-items:center;gap:6px"><span style="font-family:'Newsreader',serif;font-weight:600;font-size:16px;color:#13294B;line-height:1.1">{{ r.name }}</span><span style="{{ r.freshDot }}"></span></div>
-                  <div style="color:#857E69;font-size:11.5px;margin-top:2px">{{ r.role }}</div>
+                  <div style="color:#6A6450;font-size:11.5px;margin-top:2px">{{ r.role }}</div>
                 </div>
               </div>
               <div style="margin:11px 0 0 5px"><span style="{{ r.tierBadge }}">{{ r.statusLabel }}</span><span style="{{ r.starStyle }}">★</span></div>
@@ -307,7 +315,7 @@
         </sc-if>
 
         <sc-if value="{{ noResults }}" hint-placeholder-val="{{ false }}">
-          <div style="text-align:center;padding:46px 0;color:#8A8470;font-size:13.5px">No candidates match these filters. <span onClick="{{ clearFilters }}" style="color:#9E3B34;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Clear filters</span></div>
+          <div style="text-align:center;padding:46px 0;color:#6A6450;font-size:13.5px">No candidates match these filters. <span onClick="{{ clearFilters }}" onKeyDown="{{ clearFiltersKey }}" role="button" tabIndex="0" style="color:#9E3B34;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Clear filters</span></div>
         </sc-if>
       </div>
 
@@ -320,8 +328,8 @@
           </div>
           <div>
             <sc-for list="{{ feed }}" as="f" hint-placeholder-count="7">
-              <div onClick="{{ f.open }}" style="padding:10px 15px;border-bottom:1px solid #ECE4D2;cursor:pointer" style-hover="background:#F5EFDF">
-                <div style="display:flex;align-items:center;gap:7px;font-size:10px;text-transform:uppercase;letter-spacing:.05em;color:#9A917A;font-weight:600"><span style="{{ f.dotStyle }}"></span>{{ f.date }} · {{ f.party }}</div>
+              <div onClick="{{ f.open }}" onKeyDown="{{ f.openKey }}" role="button" tabIndex="0" style="padding:10px 15px;border-bottom:1px solid #ECE4D2;cursor:pointer" style-hover="background:#F5EFDF">
+                <div style="display:flex;align-items:center;gap:7px;font-size:10px;text-transform:uppercase;letter-spacing:.05em;color:#6A6450;font-weight:600"><span style="{{ f.dotStyle }}"></span>{{ f.date }} · {{ f.party }}</div>
                 <div style="font-size:12.5px;margin-top:3px;line-height:1.4"><span style="font-weight:600;color:#13294B">{{ f.name }}</span><span style="color:#5A5443"> — {{ f.headline }}</span></div>
               </div>
             </sc-for>
@@ -337,7 +345,7 @@
                 <span><span style="font-weight:600;color:#13294B;font-size:12.5px">{{ t.label }}</span><span style="display:block;color:#7A7460;font-size:11.5px;line-height:1.35">{{ t.desc }}</span></span>
               </div>
             </sc-for>
-            <div style="margin-top:11px;padding-top:11px;border-top:1px solid #ECE4D2;font-size:11px;color:#857E69;line-height:1.5"><span style="color:#9E3B34">★</span> leads primary polling despite a lower step taken — <em>status is not support.</em></div>
+            <div style="margin-top:11px;padding-top:11px;border-top:1px solid #ECE4D2;font-size:11px;color:#6A6450;line-height:1.5"><span style="color:#9E3B34">★</span> leads primary polling despite a lower step taken — <em>status is not support.</em></div>
           </div>
         </div>
       </aside>
@@ -359,14 +367,14 @@
         <div style="padding:11px 12px;border-bottom:1px solid #E4DBC6">
           <div style="position:relative">
             <span style="position:absolute;left:10px;top:50%;transform:translateY(-50%);color:#A39A82;font-size:12px">⌕</span>
-            <input value="{{ dq }}" onInput="{{ onDq }}" placeholder="Find a name…" style="width:100%;font:inherit;font-size:12.5px;padding:8px 10px 8px 26px;border:1px solid #D5CBB3;border-radius:3px;background:#FCFAF4;color:#13294B;outline:none">
+            <input value="{{ dq }}" onInput="{{ onDq }}" aria-label="Find a candidate" placeholder="Find a name…" style="width:100%;font:inherit;font-size:12.5px;padding:8px 10px 8px 26px;border:1px solid #D5CBB3;border-radius:3px;background:#FCFAF4;color:#13294B">
           </div>
         </div>
         <div class="hir-scroll" style="max-height:72vh;overflow-y:auto">
           <sc-for list="{{ dirList }}" as="d" hint-placeholder-count="12">
-            <div onClick="{{ d.open }}" style="{{ d.rowStyle }}" style-hover="background:#F5EFDF">
+            <div onClick="{{ d.open }}" onKeyDown="{{ d.openKey }}" role="button" tabIndex="0" style="{{ d.rowStyle }}" style-hover="background:#F5EFDF">
               <img src="{{ d.avatar }}" alt="" loading="lazy" style="width:30px;height:30px;border-radius:3px;object-fit:cover;object-position:center top;flex:none;background:#E7E0CF;border:1px solid #DDD3BB">
-              <span style="min-width:0;flex:1"><span style="{{ d.nameStyle }}">{{ d.name }}</span><span style="display:block;color:#857E69;font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ d.role }}</span></span>
+              <span style="min-width:0;flex:1"><span style="{{ d.nameStyle }}">{{ d.name }}</span><span style="display:block;color:#6A6450;font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ d.role }}</span></span>
               <span style="{{ d.tierDot }}"></span>
               <span style="{{ d.scoreStyle }}">{{ d.score }}</span>
             </div>
@@ -389,6 +397,7 @@
               </div>
               <h2 class="hir-dossier-title" style="font-family:'Newsreader',serif;font-weight:600;font-size:32px;line-height:1.05;color:#F4EFE2;margin:9px 0 3px">{{ dossier.name }}</h2>
               <div style="color:#9DB0CE;font-size:13.5px">{{ dossier.role }}</div>
+              <a href="{{ dossier.permalink }}" style="display:inline-block;margin-top:7px;color:#BACAEF;font-size:12px;font-weight:600;letter-spacing:.02em;text-decoration:underline;text-underline-offset:3px" style-hover="color:#F4EFE2">Permalink →</a>
               <div style="display:flex;align-items:center;gap:18px;margin-top:15px;flex-wrap:wrap">
                 <div>
                   <div style="font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#7E92B2;font-weight:600;margin-bottom:3px">Momentum</div>
@@ -428,7 +437,7 @@
             <section style="background:#FBF8F0;border:1px solid #DED5BD;border-radius:4px;overflow:hidden">
               <div style="display:flex;align-items:baseline;justify-content:space-between;padding:14px 20px;border-bottom:1px solid #E4DBC6">
                 <h3 style="font-family:'Newsreader',serif;font-weight:600;font-size:16px;margin:0">Momentum ledger</h3>
-                <span style="font-size:11px;color:#8A8470">how the score is built</span>
+                <span style="font-size:11px;color:#6A6450">how the score is built</span>
               </div>
               <div style="padding:8px 20px 16px">
                 <sc-for list="{{ dossier.breakdown }}" as="b" hint-placeholder-count="4">
@@ -441,7 +450,7 @@
                   <span style="font-weight:700;font-size:13.5px;color:#13294B">Momentum (capped 0–100)</span>
                   <span style="font-family:'Space Mono',monospace;font-weight:700;font-size:18px;{{ dossier.scoreColor }}">{{ dossier.score }}</span>
                 </div>
-                <p style="margin:13px 0 0;font-size:11.5px;color:#857E69;line-height:1.5;background:#F3ECDA;border:1px solid #E4DBC6;border-radius:4px;padding:10px 12px">Momentum measures breadth &amp; recency of activity. <strong style="color:#5A5443">Status tier</strong> reflects the single furthest verifiable step taken — the two move independently.</p>
+                <p style="margin:13px 0 0;font-size:11.5px;color:#6A6450;line-height:1.5;background:#F3ECDA;border:1px solid #E4DBC6;border-radius:4px;padding:10px 12px">Momentum measures breadth &amp; recency of activity. <strong style="color:#5A5443">Status tier</strong> reflects the single furthest verifiable step taken — the two move independently.</p>
               </div>
             </section>
 
@@ -451,7 +460,7 @@
                 <span style="font-family:'Space Mono',monospace;font-size:11px;color:#9E3B34;font-weight:700;white-space:nowrap;padding-top:3px">{{ dossier.recency }}</span>
                 <div style="min-width:0">
                   <p style="margin:0;font-family:'Newsreader',serif;font-size:17px;line-height:1.4;color:#1B2942">{{ dossier.headlineTitle }}</p>
-                  <div style="margin-top:6px;font-size:11.5px;color:#857E69">{{ dossier.lastSignalLong }} · <span style="font-weight:600;color:#5A5443">{{ dossier.source }}</span></div>
+                  <div style="margin-top:6px;font-size:11.5px;color:#6A6450">{{ dossier.lastSignalLong }} · <span style="font-weight:600;color:#5A5443">{{ dossier.source }}</span></div>
                 </div>
               </div>
               <button onClick="{{ dossier.openWire }}" style="margin-top:15px;appearance:none;border:1px solid #13294B;background:#13294B;color:#F4EFE2;cursor:pointer;font:inherit;font-size:12px;font-weight:600;padding:8px 14px;border-radius:3px" style-hover="background:#1B375C">See all dispatches on The Wire →</button>
@@ -465,7 +474,7 @@
               <div style="padding:6px 16px 14px">
                 <sc-for list="{{ dossier.facts }}" as="f" hint-placeholder-count="6">
                   <div style="padding:9px 0;border-bottom:1px solid #ECE4D2">
-                    <div style="font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:#9A917A;font-weight:600;margin-bottom:2px">{{ f.k }}</div>
+                    <div style="font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:#6A6450;font-weight:600;margin-bottom:2px">{{ f.k }}</div>
                     <div style="font-size:13px;color:#2C3A4F;font-weight:500">{{ f.v }}</div>
                   </div>
                 </sc-for>
@@ -473,7 +482,7 @@
             </section>
             <sc-if value="{{ dossier.hasTags }}" hint-placeholder-val="{{ false }}">
             <section style="background:#FBF8F0;border:1px solid #DED5BD;border-radius:4px;padding:14px 16px">
-              <h3 style="font-family:'Space Grotesk',sans-serif;font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:#9A917A;font-weight:700;margin:0 0 10px">Tags</h3>
+              <h3 style="font-family:'Space Grotesk',sans-serif;font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:#6A6450;font-weight:700;margin:0 0 10px">Tags</h3>
               <div style="display:flex;flex-wrap:wrap;gap:6px">
                 <sc-for list="{{ dossier.tags }}" as="t" hint-placeholder-count="3">
                   <span style="font-size:11.5px;background:#EFE8D6;border:1px solid #E0D7C1;border-radius:4px;padding:3px 9px;color:#5A5443">{{ t.t }}</span>
@@ -495,7 +504,7 @@
         <h1 style="font-family:'Newsreader',serif;font-weight:700;font-size:34px;letter-spacing:-.015em;margin:0;color:#13294B">The Wire</h1>
         <span style="display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#9E3B34"><span style="width:7px;height:7px;border-radius:50%;background:#CE2029;box-shadow:0 0 6px #CE2029;animation:hir-pulse 2s ease-in-out infinite"></span>Live signal feed</span>
       </div>
-      <span style="font-size:12px;color:#8A8470;font-family:'Space Mono',monospace">{{ wireCount }} dispatches · newest first</span>
+      <span style="font-size:12px;color:#6A6450;font-family:'Space Mono',monospace">{{ wireCount }} dispatches · newest first</span>
     </div>
     <p style="margin:10px 0 16px;color:#6A6450;font-size:13.5px;max-width:620px">Every reported signal across the field, aggregated and tagged to a candidate. Click any item to open that figure's dossier.</p>
 
@@ -503,16 +512,16 @@
     <div class="hir-toolbar" style="display:flex;flex-wrap:wrap;gap:9px;align-items:center;margin-bottom:20px">
       <div class="hir-search" style="position:relative;flex:1 1 220px;min-width:180px">
         <span style="position:absolute;left:11px;top:50%;transform:translateY(-50%);color:#A39A82;font-size:13px">⌕</span>
-        <input value="{{ wireQ }}" onInput="{{ onWireQ }}" placeholder="Search dispatches…" style="width:100%;font:inherit;font-size:13px;padding:9px 11px 9px 28px;border:1px solid #D5CBB3;border-radius:3px;background:#FCFAF4;color:#13294B;outline:none">
+        <input value="{{ wireQ }}" onInput="{{ onWireQ }}" aria-label="Search dispatches" placeholder="Search dispatches…" style="width:100%;font:inherit;font-size:13px;padding:9px 11px 9px 28px;border:1px solid #D5CBB3;border-radius:3px;background:#FCFAF4;color:#13294B">
       </div>
-      <select value="{{ wireParty }}" onChange="{{ onWireParty }}" style="font:inherit;font-size:12.5px;padding:8px 9px;border:1px solid #D5CBB3;border-radius:3px;background:#FCFAF4;color:#13294B;outline:none">
+      <select value="{{ wireParty }}" onChange="{{ onWireParty }}" aria-label="Filter by lane" style="font:inherit;font-size:12.5px;padding:8px 9px;border:1px solid #D5CBB3;border-radius:3px;background:#FCFAF4;color:#13294B">
         <option value="">All lanes</option>
         <option value="Democrat">Democrat</option>
         <option value="Republican">Republican</option>
         <option value="Libertarian">Libertarian</option>
         <option value="Independent">Independent</option>
       </select>
-      <select value="{{ wireType }}" onChange="{{ onWireType }}" style="font:inherit;font-size:12.5px;padding:8px 9px;border:1px solid #D5CBB3;border-radius:3px;background:#FCFAF4;color:#13294B;outline:none">
+      <select value="{{ wireType }}" onChange="{{ onWireType }}" aria-label="Filter by signal type" style="font:inherit;font-size:12.5px;padding:8px 9px;border:1px solid #D5CBB3;border-radius:3px;background:#FCFAF4;color:#13294B">
         <sc-for list="{{ wireTypeOpts }}" as="o" hint-placeholder-count="5">
           <option value="{{ o.value }}">{{ o.label }}</option>
         </sc-for>
@@ -524,7 +533,7 @@
 
     <!-- lead siren -->
     <sc-if value="{{ wireHasLead }}" hint-placeholder-val="{{ false }}">
-    <div class="hir-wire-lead" onClick="{{ wireLead.open }}" style="background:#FBF8F0;border:1px solid #DED5BD;border-top:4px solid #CE2029;border-radius:4px;padding:22px 24px;margin-bottom:22px;cursor:pointer;display:flex;gap:22px;align-items:center" style-hover="background:#F7F1E2">
+    <div class="hir-wire-lead" onClick="{{ wireLead.open }}" onKeyDown="{{ wireLead.openKey }}" role="button" tabIndex="0" style="background:#FBF8F0;border:1px solid #DED5BD;border-top:4px solid #CE2029;border-radius:4px;padding:22px 24px;margin-bottom:22px;cursor:pointer;display:flex;gap:22px;align-items:center" style-hover="background:#F7F1E2">
       <div style="{{ wireLead.avatarBg }}"></div>
       <div class="hir-wire-lead-body" style="min-width:0">
         <div class="hir-wire-lead-meta" style="display:flex;align-items:center;gap:10px;margin-bottom:7px">
@@ -546,7 +555,7 @@
     <!-- river -->
     <div class="hir-wire-river" style="columns:2;column-gap:22px">
       <sc-for list="{{ wireItems }}" as="i" hint-placeholder-count="12">
-        <div class="hir-wire-card" onClick="{{ i.open }}" style="break-inside:avoid;-webkit-column-break-inside:avoid;background:#FBF8F0;border:1px solid #E0D7C1;border-radius:4px;padding:13px 15px;margin-bottom:14px;cursor:pointer" style-hover="border-color:#13294B;background:#F7F1E2">
+        <div class="hir-wire-card" onClick="{{ i.open }}" onKeyDown="{{ i.openKey }}" role="button" tabIndex="0" style="break-inside:avoid;-webkit-column-break-inside:avoid;background:#FBF8F0;border:1px solid #E0D7C1;border-radius:4px;padding:13px 15px;margin-bottom:14px;cursor:pointer" style-hover="border-color:#13294B;background:#F7F1E2">
           <div class="hir-wire-card-meta" style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
             <span style="{{ i.dateStyle }}">{{ i.date }}</span>
             <span style="{{ i.laneChip }}">{{ i.letter }}</span>
@@ -554,7 +563,7 @@
           </div>
           <p style="margin:0;font-family:'Newsreader',serif;font-size:15.5px;line-height:1.35;color:#1B2942"><span style="{{ i.moverFlag }}">▲</span>{{ i.title }}</p>
           <div class="hir-wire-card-tags" style="display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin-top:9px">
-            <span style="font-size:11px;color:#857E69;font-weight:600">{{ i.source }}</span>
+            <span style="font-size:11px;color:#6A6450;font-weight:600">{{ i.source }}</span>
             <sc-for list="{{ i.tagKeys }}" as="t" hint-placeholder-count="1">
               <span style="font-size:10px;background:#EFE8D6;border:1px solid #E0D7C1;border-radius:3px;padding:1px 7px;color:#6A6450;font-weight:600">{{ t.label }}</span>
             </sc-for>
@@ -564,21 +573,45 @@
     </div>
 
     <sc-if value="{{ wireNoResults }}" hint-placeholder-val="{{ false }}">
-      <div style="text-align:center;padding:46px 0;color:#8A8470;font-size:13.5px">No dispatches match. <span onClick="{{ clearWire }}" style="color:#9E3B34;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Clear filters</span></div>
+      <div style="text-align:center;padding:46px 0;color:#6A6450;font-size:13.5px">No dispatches match. <span onClick="{{ clearWire }}" onKeyDown="{{ clearWireKey }}" role="button" tabIndex="0" style="color:#9E3B34;cursor:pointer;text-decoration:underline;text-underline-offset:3px">Clear filters</span></div>
     </sc-if>
   </main>
   </sc-if>
 
   <footer style="border-top:1px solid #D2C8AE;background:#EDE7D8">
-    <div class="hir-footer-inner" style="max-width:1280px;margin:0 auto;padding:18px 22px;font-size:11.5px;color:#857E69;line-height:1.6">
+    <div class="hir-footer-inner" style="max-width:1280px;margin:0 auto;padding:18px 22px;font-size:11.5px;color:#6A6450;line-height:1.6">
       <strong style="color:#5A5443">Hat-in-Ring Radar</strong> — a non-partisan tracker of 2028 presidential signals, compiled from public reporting (AP, Reuters, Time, WaPo, ABC, C-SPAN, FEC). <strong style="color:#5A5443">Status tier</strong> = the furthest verifiable step a figure has taken; <strong style="color:#5A5443">momentum</strong> = weighted breadth &amp; recency of activity, capped 0–100. The two move independently — a coy front-runner can sit low on status with high momentum. Tracking a name is not an endorsement.
+      <div style="margin-top:9px;padding-top:9px;border-top:1px solid #DCD2B8">
+        <a href="/about.html" style="color:#5A5443;font-weight:600;text-decoration:underline;text-underline-offset:3px">About &amp; methodology</a>
+        <span style="color:#C9BE9E;margin:0 7px">·</span>
+        <a href="https://github.com/DaveHomeAssist/hatinring" style="color:#5A5443;font-weight:600;text-decoration:underline;text-underline-offset:3px">GitHub</a>
+      </div>
     </div>
   </footer>
 </div>
 </x-dc>{% endraw %}
+<script>
+/* Resilience watchdog: if the dc-runtime hasn't booted (support.js or the React
+   vendor scripts failed), surface the static no-JS summary instead of a blank page. */
+setTimeout(function(){
+  if(document.getElementById('dc-root')) return;
+  var x=document.querySelector('x-dc'); if(x) x.style.display='none';
+  var ns=document.querySelector('noscript');
+  var d=document.createElement('div');
+  d.innerHTML='<div style="max-width:1100px;margin:0 auto;padding:26px 22px 0;font-family:system-ui,Arial,sans-serif;color:#13294B"><p><strong>The interactive dashboard failed to load.</strong> Here is the latest static snapshot — or try reloading the page. <a href="/about.html">About this tracker</a></p></div>'+(ns?ns.textContent:'');
+  document.body.insertBefore(d,document.body.firstChild);
+},5000);
+</script>
 <script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:&quot;100%&quot;,&quot;height&quot;:&quot;100%&quot;},&quot;partyColors&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Muted&quot;,&quot;Vivid&quot;,&quot;Neutral&quot;],&quot;default&quot;:&quot;Muted&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;density&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Comfortable&quot;,&quot;Compact&quot;],&quot;default&quot;:&quot;Compact&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;accent&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Flag red&quot;,&quot;Sky blue&quot;,&quot;Navy&quot;],&quot;default&quot;:&quot;Sky blue&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
 class Component extends DCLogic {
   state = { view:'field', selectedId:'newsom', q:'', party:[], bucket:'', quick:'', sort:'score', dir:'desc', mode:'board', dq:'', wireParty:'', wireType:'', wireQ:'' };
+
+  constructor(props){
+    super(props);
+    // URL state: adopt #/field, #/wire or #/dossiers/<id> on first paint.
+    const st=this.parseHash();
+    if(st) Object.assign(this.state, st);
+  }
 
   TODAY = new Date({{ generated_at }});
 
@@ -598,16 +631,16 @@ class Component extends DCLogic {
   TIERS = {
     5:{label:'Declared',c:'#9E3B34',desc:'Filed FEC Form 2 / formal launch'},
     4:{label:'Exploratory',c:'#B26A1C',desc:'Exploratory committee / testing the waters'},
-    3:{label:'Considering',c:'#A8842C',desc:'Direct "considering" quote on record'},
+    3:{label:'Considering',c:'#8F7025',desc:'Direct "considering" quote on record'},
     2:{label:'Positioning',c:'#3F5C86',desc:'Travel, donors, staff, media activity'},
-    1:{label:'Floated',c:'#7C8794',desc:'Floated / "not ruling out"'},
+    1:{label:'Floated',c:'#69737E',desc:'Floated / "not ruling out"'},
     0:{label:'Inactive',c:'#A7ABA6',desc:'Ruled out, ineligible, or dormant'}
   };
   CONF = {'Very high':4,'High':3,'Medium':2,'Low':1,'Noise':0};
-  CONFC = {'Very high':'#2E7D4F','High':'#3A8F55','Medium':'#A8842C','Low':'#B08A2A','Noise':'#B0AEA4'};
+  CONFC = {'Very high':'#2E7D4F','High':'#3A8F55','Medium':'#8F7025','Low':'#B08A2A','Noise':'#B0AEA4'};
 
   PARTY_PALETTES = {
-    Muted:{Democrat:'#3F5C86',Republican:'#9E3B34',Libertarian:'#A8842C',Independent:'#3E7E72'},
+    Muted:{Democrat:'#3F5C86',Republican:'#9E3B34',Libertarian:'#8F7025',Independent:'#3E7E72'},
     Vivid:{Democrat:'#1F4FB0',Republican:'#CE2029',Libertarian:'#C79A18',Independent:'#2F8F7C'},
     Neutral:{Democrat:'#3A4453',Republican:'#3A4453',Libertarian:'#3A4453',Independent:'#3A4453'}
   };
@@ -655,9 +688,35 @@ class Component extends DCLogic {
   parseSource(h){ const i=h.lastIndexOf(' - '); if(i>0 && h.length-i<46 && h.length-i>4) return {title:h.slice(0,i),source:h.slice(i+3)}; return {title:h,source:'Tracker note'}; }
   recencyLabel(days){ if(days<=0) return 'today'; if(days===1) return '1d ago'; if(days<=45) return days+'d ago'; return Math.round(days/30)+'mo ago'; }
 
+  // ---------- hash routing (#/field, #/wire, #/dossiers/<id>) ----------
+  parseHash(){
+    if(typeof location==='undefined') return null;
+    const m=(location.hash||'').match(/^#\/(field|dossiers|wire)(?:\/([A-Za-z0-9_-]+))?/);
+    if(!m) return null;
+    const st={view:m[1]};
+    if(m[1]==='dossiers'&&m[2]&&this.SEED.some(c=>c.id===m[2])) st.selectedId=m[2];
+    return st;
+  }
+  syncHash(){
+    if(typeof location==='undefined') return;
+    const s=this.state;
+    const h=s.view==='dossiers'?'#/dossiers/'+s.selectedId:'#/'+s.view;
+    if(location.hash!==h){ try{ location.hash=h; }catch(e){} }
+  }
+  componentDidMount(){
+    if(typeof window==='undefined') return;
+    // Back/forward support: mirror the hash into state (no-op when already in sync).
+    this._onHash=()=>{ const st=this.parseHash()||{view:'field'}; const cur=this.state;
+      if(st.view!==cur.view||(st.selectedId&&st.selectedId!==cur.selectedId)) this.setState(st); };
+    window.addEventListener('hashchange',this._onHash);
+  }
+  componentWillUnmount(){ if(this._onHash&&typeof window!=='undefined') window.removeEventListener('hashchange',this._onHash); }
+
   // ---------- nav helpers ----------
-  go(view){ this.setState({view}); if(typeof window!=='undefined'){ try{ window.scrollTo(0,0); }catch(e){} } }
-  select(id){ this.setState({view:'dossiers',selectedId:id}); try{ window.scrollTo(0,0); }catch(e){} }
+  // kb(fn): Enter/Space keyboard mirror for click-only affordances.
+  kb(fn){ return (e)=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); fn(e); } }; }
+  go(view){ this.setState({view}); this.syncHash(); if(typeof window!=='undefined'){ try{ window.scrollTo(0,0); }catch(e){} } }
+  select(id){ this.setState({view:'dossiers',selectedId:id}); this.syncHash(); try{ window.scrollTo(0,0); }catch(e){} }
   toggleParty(v){ const p=this.state.party.slice(); const i=p.indexOf(v); if(i>=0)p.splice(i,1); else p.push(v); this.setState({party:p}); }
   setQuick(k){ this.setState({quick:this.state.quick===k?'':k}); }
   sortBy(col){ if(this.state.sort===col) this.setState({dir:this.state.dir==='asc'?'desc':'asc'}); else this.setState({sort:col,dir:(col==='name'||col==='party')?'asc':(col==='days'?'asc':'desc')}); }
@@ -685,7 +744,7 @@ class Component extends DCLogic {
     const navTabs=[['field','The Field'],['dossiers','Dossiers'],['wire','The Wire']].map(([k,label])=>{
       const on=s.view===k;
       return { label, go:()=>this.go(k),
-        labelStyle:{color:on?'#13294B':'#8A8470',transition:'color .12s'},
+        labelStyle:{color:on?'#13294B':'#6A6450',transition:'color .12s'},
         underline:{position:'absolute',left:4,right:4,bottom:0,height:'3px',background:on?acc:'transparent',borderRadius:'2px 2px 0 0'} };
     });
 
@@ -693,9 +752,9 @@ class Component extends DCLogic {
     const cnt=t=>all.filter(x=>x.tier===t).length;
     const stats=[
       {n:all.filter(x=>x.bucket==='formal').length,label:'Formal',c:'#9E3B34'},
-      {n:cnt(3),label:'Considering',c:'#A8842C'},
+      {n:cnt(3),label:'Considering',c:'#8F7025'},
       {n:cnt(2),label:'Positioning',c:'#3F5C86'},
-      {n:cnt(1),label:'Floated',c:'#7C8794'},
+      {n:cnt(1),label:'Floated',c:'#69737E'},
       {n:all.filter(x=>x.bucket==='out').length,label:'Ruled out',c:'#A7ABA6'},
       {n:all.length,label:'Tracked',c:'#13294B'}
     ].map(x=>({n:x.n,label:x.label,barStyle:{background:x.c}}));
@@ -703,27 +762,33 @@ class Component extends DCLogic {
     // party chips
     const partyChips=['Democrat','Republican','Libertarian','Independent'].map(p=>{
       const on=s.party.includes(p); const col=this.partyColor(p);
-      return { name:p, label:p.slice(0,3), toggle:()=>this.toggleParty(p),
+      return { name:p, label:p.slice(0,3), on, toggle:()=>this.toggleParty(p),
         style:{appearance:'none',cursor:'pointer',font:'inherit',fontSize:'12px',fontWeight:600,padding:'7px 11px',borderRadius:'3px',border:'1px solid '+(on?col:'#D5CBB3'),background:on?col:'#FCFAF4',color:on?'#fff':'#6A6450'} };
     });
 
     const quickDefs=[['movers','Movers',x=>this.isMover(x)],['declared','In the ring',x=>x.tier>=4],['front','Poll leaders',x=>x.pollLead]];
     const quickChips=quickDefs.map(([k,label,f])=>{ const on=s.quick===k;
-      return { label, n:all.filter(f).length, toggle:()=>this.setQuick(k),
+      return { label, n:all.filter(f).length, on, toggle:()=>this.setQuick(k),
         style:{appearance:'none',cursor:'pointer',font:'inherit',fontSize:'12px',fontWeight:600,padding:'6px 12px',borderRadius:'999px',border:'1px solid '+(on?'#13294B':'#D5CBB3'),background:on?'#13294B':'#FCFAF4',color:on?'#F4EFE2':'#6A6450'} };
     });
 
     const colDefs=[['rank','#'],['name','Candidate'],['party','Lane'],['tierRank','Status'],['score','Momentum'],['days','Last signal'],['confRank','Confidence']];
-    const cols=colDefs.map(([key,label])=>{ const sorted=s.sort===key||(key==='rank'&&false); const isSorted=s.sort===key;
+    const cols=colDefs.map(([key,label])=>{ const isSorted=s.sort===key;
       return { label, sort:()=> key==='rank'?null:this.sortBy(key),
+        sortKey:this.kb(()=>{ if(key!=='rank') this.sortBy(key); }),
+        tab:key==='rank'?undefined:0,
+        ariaSort:isSorted?(s.dir==='asc'?'ascending':'descending'):undefined,
         arrow:isSorted?(s.dir==='asc'?' ▴':' ▾'):'',
-        style:{textAlign:'left',padding:'10px 14px',fontSize:'10.5px',textTransform:'uppercase',letterSpacing:'.05em',color:isSorted?'#13294B':'#8A8470',fontWeight:700,cursor:key==='rank'?'default':'pointer',whiteSpace:'nowrap',background:'#F3ECDA',borderBottom:'1px solid #E0D7C1',userSelect:'none'} };
+        style:{textAlign:'left',padding:'10px 14px',fontSize:'10.5px',textTransform:'uppercase',letterSpacing:'.05em',color:isSorted?'#13294B':'#6A6450',fontWeight:700,cursor:key==='rank'?'default':'pointer',whiteSpace:'nowrap',background:'#F3ECDA',borderBottom:'1px solid #E0D7C1',userSelect:'none'} };
     });
 
     const sheetColDefs=[['rank','#'],['name','Candidate'],['party','Lane'],['tierRank','Status'],['bucket','Posture'],['score','Mom'],['days','Signal'],['confRank','Conf']];
     const sheetCols=sheetColDefs.map(([key,label])=>{ const isSorted=s.sort===key;
       return { label, sort:()=> key==='rank'?null:this.sortBy(key), arrow:isSorted?(s.dir==='asc'?' ▴':' ▾'):'',
-        style:{textAlign:'left',padding:'6px 9px',fontSize:'10px',textTransform:'uppercase',letterSpacing:'.04em',color:isSorted?'#13294B':'#8A8470',fontWeight:700,cursor:key==='rank'?'default':'pointer',whiteSpace:'nowrap',background:'#EFE7D4',borderBottom:'1px solid #D8CFB8',borderRight:'1px solid #E4DBC6',position:'sticky',top:'0',zIndex:'1'} };
+        sortKey:this.kb(()=>{ if(key!=='rank') this.sortBy(key); }),
+        tab:key==='rank'?undefined:0,
+        ariaSort:isSorted?(s.dir==='asc'?'ascending':'descending'):undefined,
+        style:{textAlign:'left',padding:'6px 9px',fontSize:'10px',textTransform:'uppercase',letterSpacing:'.04em',color:isSorted?'#13294B':'#6A6450',fontWeight:700,cursor:key==='rank'?'default':'pointer',whiteSpace:'nowrap',background:'#EFE7D4',borderBottom:'1px solid #D8CFB8',borderRight:'1px solid #E4DBC6',position:'sticky',top:'0',zIndex:'1'} };
     });
 
     const fr=this.filteredField();
@@ -738,6 +803,7 @@ class Component extends DCLogic {
         momStyle:{fontFamily:"'Space Mono',monospace",fontWeight:700,color:tier.c,fontVariantNumeric:'tabular-nums'},
         laneSm:{display:'inline-flex',alignItems:'center',justifyContent:'center',width:'17px',height:'17px',borderRadius:'3px',background:col,color:'#fff',fontSize:'10px',fontWeight:700,flex:'none'},
         open:()=>this.select(x.id),
+        openKey:this.kb(()=>this.select(x.id)),
         td:{padding:tdPad,verticalAlign:'middle',fontSize:'13px',color:'#13294B'},
         tdRank:{padding:tdPad,verticalAlign:'middle',color:'#A39A82',fontFamily:"'Space Mono',monospace",fontSize:'12px',width:'30px'},
         barStyle:{background:col},
@@ -754,25 +820,27 @@ class Component extends DCLogic {
     const feed=all.filter(x=>x.bucket!=='out').sort((a,b)=>new Date(b.lastSignal)-new Date(a.lastSignal)).slice(0,7).map(x=>({
       name:x.name, party:x.party, headline:this.parseSource(x.headline).title, date:this.fmt(x.lastSignal,{month:'short',day:'numeric'}),
       open:()=>this.select(x.id),
+      openKey:this.kb(()=>this.select(x.id)),
       dotStyle:{display:'inline-block',width:'6px',height:'6px',borderRadius:'50%',flex:'none',background:this.isFresh(x)?acc:'#C7BDA3'}
     }));
 
     const tiers=[5,4,3,2,1,0].map(t=>({ rank:t, label:this.TIERS[t].label, desc:this.TIERS[t].desc,
       badge:{display:'inline-flex',alignItems:'center',justifyContent:'center',width:'20px',height:'20px',borderRadius:'3px',background:this.TIERS[t].c,color:'#fff',fontSize:'11px',fontWeight:700,flex:'none',fontFamily:"'Space Mono',monospace"} }));
 
-    const tabStyle=on=>({appearance:'none',border:'0',cursor:'pointer',font:'inherit',fontSize:'12.5px',fontWeight:600,padding:'8px 13px',background:on?'#13294B':'#FCFAF4',color:on?'#F4EFE2':'#8A8470'});
+    const tabStyle=on=>({appearance:'none',border:'0',cursor:'pointer',font:'inherit',fontSize:'12.5px',fontWeight:600,padding:'8px 13px',background:on?'#13294B':'#FCFAF4',color:on?'#F4EFE2':'#6A6450'});
 
+    const clearF=()=>this.setState({q:'',party:[],bucket:'',quick:''});
     const base={
       asOf:{{ as_of_json }}, trackedCount:all.length,
       isField:s.view==='field', isDossiers:s.view==='dossiers', isWire:s.view==='wire',
-      navTabs, goHome:()=>this.go('field'), goWire:()=>this.go('wire'),
+      navTabs, goHome:()=>this.go('field'), goHomeKey:this.kb(()=>this.go('field')), goWire:()=>this.go('wire'),
       // field
       stats, q:s.q, bucket:s.bucket,
       onSearch:(e)=>this.setState({q:e.target.value}),
       onBucket:(e)=>this.setState({bucket:e.target.value}),
       partyChips, quickChips,
       anyFilter:!!(s.q||s.party.length||s.bucket||s.quick),
-      clearFilters:()=>this.setState({q:'',party:[],bucket:'',quick:''}),
+      clearFilters:clearF, clearFiltersKey:this.kb(clearF),
       isBoard:s.mode==='board', isSheet:s.mode==='sheet', isCards:s.mode==='cards', notSheet:s.mode!=='sheet',
       setBoard:()=>this.setState({mode:'board'}), setSheet:()=>this.setState({mode:'sheet'}), setCards:()=>this.setState({mode:'cards'}),
       boardTabStyle:tabStyle(s.mode==='board'), sheetTabStyle:tabStyle(s.mode==='sheet'), cardsTabStyle:tabStyle(s.mode==='cards'),
@@ -795,8 +863,9 @@ class Component extends DCLogic {
 
     const dir=this.all().sort((a,b)=>b.score-a.score).filter(r=>{ if(!s.dq) return true; const q=s.dq.toLowerCase(); return (r.name+' '+r.role).toLowerCase().includes(q); }).map(r=>{
       const on=r.id===s.selectedId; const rc=this.partyColor(r.party);
+      const openD=()=>{ this.setState({selectedId:r.id}); this.syncHash(); };
       return { id:r.id, name:r.name, role:r.role, avatar:r.img, score:r.score,
-        open:()=>this.setState({selectedId:r.id}),
+        open:openD, openKey:this.kb(openD),
         rowStyle:{display:'flex',alignItems:'center',gap:'10px',padding:'9px 12px',cursor:'pointer',borderLeft:'3px solid '+(on?rc:'transparent'),background:on?'#F1E9D5':'transparent',borderBottom:'1px solid #ECE4D2'},
         nameStyle:{fontWeight:on?700:600,color:'#13294B',fontSize:'13px',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis'},
         tierDot:{display:'inline-block',width:'8px',height:'8px',borderRadius:'50%',flex:'none',background:this.TIERS[r.tier].c},
@@ -805,6 +874,7 @@ class Component extends DCLogic {
 
     const dossier={
       name:x.name, role:x.role, party:x.party, letter:this.partyLetter(x.party),
+      permalink:'/c/'+x.id+'/',
       portraitBg:{width:'104px',height:'128px',borderRadius:'4px',backgroundColor:'#1a3358',backgroundImage:'url("'+x.img+'")',backgroundSize:'cover',backgroundPosition:'center top',flex:'none',border:'1px solid #2C476B',boxShadow:'0 6px 20px -8px rgba(0,0,0,.6)'},
       statusLabel:x.statusLabel, score:x.score, conf:x.conf, why:x.why,
       quote:x.quote, hasQuote:!!x.quote, headlineTitle:ps.title, source:ps.source,
@@ -817,7 +887,7 @@ class Component extends DCLogic {
       scoreColor:{color:tier.c},
       starShow:x.pollLead?{color:'#9E3B34'}:{display:'none'},
       confDot:{display:'inline-block',width:'8px',height:'8px',borderRadius:'50%',background:this.CONFC[x.conf],flex:'none'},
-      openWire:()=>this.setState({view:'wire',wireQ:x.name,wireParty:'',wireType:''})
+      openWire:()=>{ this.setState({view:'wire',wireQ:x.name,wireParty:'',wireType:''}); this.syncHash(); }
     };
     return { dossier, dirList:dir, dossierCount:dir.length, dq:s.dq, onDq:(e)=>this.setState({dq:e.target.value}) };
   }
@@ -840,8 +910,9 @@ class Component extends DCLogic {
       avatarBg:{width:'78px',height:'94px',borderRadius:'4px',backgroundColor:'#E7E0CF',backgroundImage:'url("'+i.avatar+'")',backgroundSize:'cover',backgroundPosition:'center top',flex:'none',border:'1px solid #DDD3BB'},
       tagKeys:i.tagKeys, tierLabel:i.tierLabel,
       open:()=>this.select(i.candId),
+      openKey:this.kb(()=>this.select(i.candId)),
       laneChip:{display:'inline-flex',alignItems:'center',justifyContent:'center',width:'18px',height:'18px',borderRadius:'3px',background:i.partyColor,color:'#fff',fontSize:'10.5px',fontWeight:700,flex:'none'},
-      dateStyle:{fontFamily:"'Space Mono',monospace",fontSize:'11px',fontWeight:700,color:i.fresh?acc:'#9A917A',whiteSpace:'nowrap'},
+      dateStyle:{fontFamily:"'Space Mono',monospace",fontSize:'11px',fontWeight:700,color:i.fresh?acc:'#6A6450',whiteSpace:'nowrap'},
       moverFlag:i.fresh?{display:'inline',color:acc,fontWeight:700,marginRight:'5px'}:{display:'none'},
       tierStyle:{display:'inline-block',fontSize:'9.5px',fontWeight:700,textTransform:'uppercase',letterSpacing:'.04em',padding:'1px 6px',borderRadius:'3px',color:'#fff',background:i.tierColor} });
 
@@ -849,6 +920,7 @@ class Component extends DCLogic {
     const river=f.slice(1).map(mk);
 
     const typeOpts=[{value:'',label:'All signal types'}].concat(Object.keys(typeLabels).map(k=>({value:k,label:typeLabels[k]})));
+    const clearW=()=>this.setState({wireQ:'',wireParty:'',wireType:''});
 
     return {
       wireHasLead:!!lead, wireLead:lead||{}, wireItems:river, wireCount:f.length, wireNoResults:f.length===0,
@@ -856,7 +928,7 @@ class Component extends DCLogic {
       wireParty:s.wireParty, onWireParty:(e)=>this.setState({wireParty:e.target.value}),
       wireType:s.wireType, onWireType:(e)=>this.setState({wireType:e.target.value}), wireTypeOpts:typeOpts,
       wireAnyFilter:!!(s.wireQ||s.wireParty||s.wireType),
-      clearWire:()=>this.setState({wireQ:'',wireParty:'',wireType:''})
+      clearWire:clearW, clearWireKey:this.kb(clearW)
     };
   }
 }

@@ -210,9 +210,12 @@ def test_slug_colliding_names_get_unique_ids(data_dir):
         [{"rid": a["rid"], "action": "confirm"}, {"rid": b["rid"], "action": "confirm"}]))
     ds2 = Dataset([_rec()], today=TODAY)
     pl.reconcile_review(ds2, TODAY)
-    created = [r for r in ds2.records if r["id"].startswith("rev-")]
+    created = [r for r in ds2.records if r["name"] in ("Bob Smith", "Bob.Smith")]
     ids = [r["id"] for r in created]
     assert len(ids) == 2 and len(set(ids)) == 2, f"duplicate ids: {ids}"
+    # Promoted records mint a human-readable slug (it's the /c/<id>/ URL); the
+    # collider is disambiguated with the rid, not given a junk hash id.
+    assert all(i.startswith("bob-smith") for i in ids), ids
     assert len(ds2.by_id) == len(ds2.records)          # index consistent
 
 

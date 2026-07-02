@@ -8,8 +8,9 @@
 <link rel="canonical" href="https://hatinring.com/about.html">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="alternate" type="application/rss+xml" title="Hat-in-Ring Radar — daily movement" href="/feed.xml">
-<meta name="theme-color" content="#1a1a1a">
+<meta name="theme-color" content="#f6f5f1">
 <meta property="og:type" content="article">
+<meta name="twitter:card" content="summary">
 <meta property="og:title" content="About &amp; Methodology — Hat-in-Ring Radar">
 <meta property="og:description" content="How the 2028 presidential signal tracker works: two axes, sources, confidence, guardrails, corrections.">
 <meta property="og:url" content="https://hatinring.com/about.html">
@@ -66,7 +67,7 @@
     <li><b>FEC filings</b> (OpenFEC API) — statements of candidacy and principal-committee registrations. Note: an FEC registration is a legal/financial threshold (a candidate must register after raising or spending more than $5,000), <i>not</i> a public announcement — we don't treat the two as the same.</li>
     <li><b>News wire</b> (Google News) — interviews, early-state visits, donor/staffing moves, and denials, from outlets including AP, Reuters, Time, the Washington Post, ABC, and C-SPAN.</li>
   </ul>
-  <p>Each candidate's drawer shows the latest signal, a confidence rating, the date, and — where available — a link to the source. It is a <b>manually-defensible tracker, not a live feed</b>.</p>
+  <p>Open any candidate in the <b>Dossiers view</b> to see the latest signal, a confidence rating, the date, and — where available — a link to the source. It is a <b>manually-defensible tracker, not a live feed</b>.</p>
 
   <h2 id="confidence">Confidence levels</h2>
   <table>
@@ -94,7 +95,7 @@
   <p>Follow what moves each day without checking the board: subscribe to the <a href="/feed.xml"><b>daily-brief RSS feed</b></a> (top movers, new filers, and status changes, rebuilt every day).</p>
 
   <h2 id="data">Data &amp; openness</h2>
-  <p>The full dataset can be exported as JSON from the board (the <b>Export</b> button). The pipeline and source are open at <a href="https://github.com/DaveHomeAssist/hatinring">github.com/DaveHomeAssist/hatinring</a>; see the <a href="https://github.com/DaveHomeAssist/hatinring/blob/main/docs/SPEC.md">technical spec</a>.</p>
+  <p>The full dataset is open: every candidate page embeds its data as JSON, and the complete dataset lives in the public repo. The pipeline and source are open at <a href="https://github.com/DaveHomeAssist/hatinring">github.com/DaveHomeAssist/hatinring</a>; see the <a href="https://github.com/DaveHomeAssist/hatinring/blob/main/docs/SPEC.md">technical spec</a>.</p>
 
   <h2 id="corrections">Corrections &amp; contact</h2>
   <p>Spot something wrong or out of date? <b>Corrections are welcome.</b> Open an issue at <a href="https://github.com/DaveHomeAssist/hatinring/issues">github.com/DaveHomeAssist/hatinring/issues</a> with the candidate, what's wrong, and a source. Confirmed corrections are applied on the next daily build.</p>

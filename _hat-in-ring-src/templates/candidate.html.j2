@@ -7,18 +7,22 @@
 <meta name="description" content="{{ meta_desc }}">
 <link rel="canonical" href="{{ canonical }}">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<meta name="theme-color" content="#1a1a1a">
+<link rel="alternate" type="application/rss+xml" title="Hat-in-Ring Radar — daily movement" href="https://hatinring.com/feed.xml">
+<meta name="theme-color" content="#f6f5f1">
 <meta name="robots" content="index,follow">
 <meta property="og:type" content="profile">
+<meta property="og:site_name" content="Hat-in-Ring Radar">
 <meta property="og:title" content="{{ c.name }} — 2028 status &amp; signals">
 <meta property="og:description" content="{{ meta_desc }}">
 <meta property="og:url" content="{{ canonical }}">
 <meta property="og:image" content="{{ og_image }}">
+<meta property="og:image:alt" content="{{ c.name }} portrait">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="{{ c.name }} — Hat-in-Ring Radar">
 <meta name="twitter:description" content="{{ meta_desc }}">
 <meta name="twitter:image" content="{{ og_image }}">
 <script type="application/ld+json">{{ person_jsonld|safe }}</script>
+<script type="application/ld+json">{{ breadcrumbs_jsonld|safe }}</script>
 <style>
   :root{--bg:#f6f5f1;--panel:#fff;--ink:#1a1a1a;--muted:#6b6b6b;--line:#e3e1da;--dem:#2f6fd1;--rep:#d23b3b;--lib:#c79a18;--ind:#3b9c8a;--good:#1f9d55;--bad:#c0392b;
     --t5:#c0392b;--t4:#e07a1f;--t3:#d4a017;--t2:#2f6fd1;--t1:#7d8794;--t0:#aab0b6}
@@ -80,11 +84,11 @@
   </div>
 
   <div class="call"><b>Status is not support.</b> Status tier = the furthest verifiable step taken ({{ status_def }}). Momentum = weighted recent activity, not popularity. <a href="/about.html#how-to">How to read this →</a></div>
-  <p class="muted" style="font-size:13.5px">Last reviewed in the <b>{{ as_of }}</b> UTC daily build · latest signal {{ last_signal_human }}{% if days_since != '—' %} ({{ days_since }} days ago){% endif %}.</p>
+  <p class="muted" style="font-size:13.5px">Last reviewed in the <b>{{ as_of }}</b> UTC daily build · latest signal {{ last_signal_human }}{% if days_ago %} ({{ days_ago }}){% endif %}.</p>
 
   <h2>Latest signal</h2>
   <p>{{ c.headline }}{% if source_url %} <a href="{{ source_url }}" target="_blank" rel="noopener noreferrer" style="white-space:nowrap">source ↗</a>{% endif %}<br>
-  <span class="muted">{{ last_signal_human }} · {{ days_since }} days ago · {{ c.conf }} confidence</span></p>
+  <span class="muted">{{ last_signal_human }}{% if days_ago %} · {{ days_ago }}{% endif %} · {{ c.conf }} confidence</span></p>
   {% if c.quote %}<blockquote style="border-left:3px solid var(--line);margin:10px 0;padding:4px 0 4px 13px;font-style:italic;color:#333">“{{ c.quote }}”</blockquote>{% endif %}
   {% if c.why %}<p>{{ c.why }}</p>{% endif %}
 
@@ -122,6 +126,13 @@
 
   <h2>Something wrong?</h2>
   <div class="corr"><b>Corrections welcome.</b> If a status, source, or date here is wrong or stale, <a href="{{ corrections_url }}" target="_blank" rel="noopener">flag it in 30 seconds →</a> with what's wrong and a link. Confirmed corrections apply on the next daily build.</div>
+
+  {% if related %}
+  <nav aria-label="Related candidates">
+    <h2>Compare with</h2>
+    <p>{% for o in related %}<a href="/c/{{ o.id }}/">{{ o.name }}</a> <span class="muted">({{ o.statusLabel }})</span>{% if not loop.last %} · {% endif %}{% endfor %}</p>
+  </nav>
+  {% endif %}
 
   <footer>
     Data from public reporting (AP, Reuters, Time, WaPo, ABC, C-SPAN, FEC). Rebuilt daily · as of {{ as_of }} UTC.

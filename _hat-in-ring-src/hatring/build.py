@@ -27,10 +27,9 @@ _DROP = {"history", "fec_ids", "evidence"}
 _ASSET_DIR = Path("assets") / "candidates"
 
 CANONICAL_URL = "https://hatinring.com/"
-PAGE_DESC = ("Live 2028 presidential signal tracker: status tier × momentum "
-             "across 40+ potential candidates, updated daily from FEC filings and "
-             "news. Trajectory, early-state activity, head-to-head compare, and "
-             "money movement — defensible signals, not a rumor board.")
+PAGE_DESC = ("Who's running for president in 2028? Daily-updated tracker of 40+ "
+             "potential candidates — declared, exploratory, and considering — "
+             "from FEC filings and news.")
 OG_IMAGE = CANONICAL_URL + "assets/share/latest.png"   # PNG: social platforms can't render SVG previews
 
 
@@ -153,6 +152,19 @@ def render(candidates_path: Path, template_dir: Path, out_path: Path,
         f"<td><a href=\"/c/{_html_esc(r['id'])}/\">{_html_esc(r['name'])}</a></td>"
         f"<td>{_html_esc(r['party'])}</td><td>{_html_esc(r['statusLabel'])}</td>"
         f"<td>{r['score']}</td></tr>" for i, r in enumerate(enriched))
+    # ItemList JSON-LD mirroring the crawl table: a positioned link to every
+    # candidate page for structured-data consumers (SEO audit fix). Rendered
+    # through _js_literal so "<" can never break out of the inline script.
+    itemlist_json = _js_literal({
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "2028 U.S. presidential candidate tracker",
+        "numberOfItems": len(enriched),
+        "itemListElement": [
+            {"@type": "ListItem", "position": i + 1, "name": r["name"],
+             "url": f"{CANONICAL_URL}c/{r['id']}/"}
+            for i, r in enumerate(enriched)],
+    })
     env = Environment(
         loader=FileSystemLoader(str(template_dir)),
         autoescape=select_autoescape(enabled_extensions=()),  # we inject JS/JSON, not HTML
@@ -169,7 +181,11 @@ def render(candidates_path: Path, template_dir: Path, out_path: Path,
         generated_at_human=datetime.now(timezone.utc).strftime("%b %d %Y %H:%M"),
         as_of=built.strftime("%B %-d, %Y"),
         as_of_json=json.dumps(built.strftime("%B %-d, %Y")),
-        canonical_url=CANONICAL_URL, page_desc=PAGE_DESC, og_image=OG_IMAGE,
+        # Date-stamped og:image so social scrapers re-fetch the daily card
+        # instead of serving a stale cached preview.
+        canonical_url=CANONICAL_URL, page_desc=PAGE_DESC,
+        og_image=f"{OG_IMAGE}?d={built.isoformat()}",
+        itemlist_json=itemlist_json,
         crawl_rows=crawl_rows, crawl_count=len(records),
     )
     out_path = Path(out_path)

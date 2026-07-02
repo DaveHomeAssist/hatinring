@@ -68,7 +68,13 @@ def test_offline_pipeline_full_run(tmp_path, monkeypatch):
     html = (data / "dashboard.html").read_text()
     assert "<html" in html.lower() and "data-dc-script" in html and "SEED =" in html
     assert (data / "feed.xml").exists(), "pipeline build must write RSS feed"
-    assert (data / "rss.xml").read_text() == (data / "feed.xml").read_text()
+    # Both feed files are written (CI commits rss.xml by literal path); they are
+    # identical except each carries its own <atom:link rel="self"> href.
+    feed_xml = (data / "feed.xml").read_text()
+    rss_xml = (data / "rss.xml").read_text()
+    assert 'rel="self"' in feed_xml and "feed.xml" in feed_xml
+    assert 'rel="self"' in rss_xml and "rss.xml" in rss_xml
+    assert rss_xml.replace("hatinring.com/rss.xml", "hatinring.com/feed.xml") == feed_xml
     assert (data / "sitemap.xml").exists(), "pipeline build must write sitemap"
     assert any((data / "c" / r["id"] / "index.html").exists()
                for r in json.loads((data / "seed.json").read_text())), \

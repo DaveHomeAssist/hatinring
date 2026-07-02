@@ -252,10 +252,16 @@ class Dataset:
             return False
         rec = next((r for r in self.records if r["name"].lower() == name.lower()), None)
         if rec is None:
-            # Derive the id from the collision-resistant rid, not a name slug
-            # (distinct names can slug-collide -> duplicate ids); guard uniqueness.
-            base = "rev-" + (item.get("rid") or _slug(name))
-            new_id, n = base, 2
+            # The id is the public /c/<id>/ URL, so prefer a human-readable name
+            # slug. Distinct names can slug-collide -> on collision disambiguate
+            # with the collision-resistant rid (then a numeric guard); the rid
+            # itself stays an internal review-queue field.
+            base = _slug(name)
+            new_id = base
+            if new_id in self.by_id:
+                rid = (item.get("rid") or "").strip()
+                new_id = f"{base}-{rid}" if rid else base
+            n = 2
             while new_id in self.by_id:
                 new_id, n = f"{base}-{n}", n + 1
             rec = {

@@ -108,7 +108,7 @@ def render_share_html(brief: dict) -> str:
     return f'''<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Hat-in-Ring Radar — {_esc(brief.get("date",""))} briefing</title>
-<link rel="canonical" href="https://hatinring.com/">
+<meta name="robots" content="noindex">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <style>body{{margin:0;background:#0f1115;color:#f4efe7;font-family:-apple-system,Segoe UI,Arial,sans-serif;display:grid;place-items:center;min-height:100vh}}
 .card{{width:min(640px,92vw);border:1px solid #2a2d33;border-radius:16px;padding:28px;background:#15171c}}
@@ -209,7 +209,11 @@ def feed_item(brief: dict) -> dict:
     tr = brief.get("transitions", [])[:5]
     if tr:
         parts.append("Status changes: " + ", ".join(t["name"] for t in tr))
-    return {"date": d, "guid": f"hatinring-{d}",
+    # Deep-link the item to the top mover's own page so clicking a "what moved"
+    # entry lands on the thing that moved; homepage when nothing moved.
+    link = (f"https://hatinring.com/c/{mv[0]['id']}/"
+            if mv and mv[0].get("id") else "https://hatinring.com/")
+    return {"date": d, "guid": f"hatinring-{d}", "link": link,
             "title": f"What moved on the 2028 board — {d}",
             "desc": " · ".join(parts) or "No notable movement."}
 
@@ -230,18 +234,20 @@ def record_feed_item(brief: dict, data_dir: Path) -> list[dict]:
     return items
 
 
-def render_feed(items: list[dict]) -> str:
+def render_feed(items: list[dict],
+                self_url: str = "https://hatinring.com/feed.xml") -> str:
     rows = "".join(
         f"<item><title>{_esc(i['title'])}</title>"
-        f"<link>https://hatinring.com/</link>"
+        f"<link>{_esc(i.get('link') or 'https://hatinring.com/')}</link>"
         f'<guid isPermaLink="false">{_esc(i["guid"])}</guid>'
         f"<pubDate>{_rfc822(i.get('date', ''))}</pubDate>"
         f"<description>{_esc(i['desc'])}</description></item>"
         for i in reversed(items))             # newest first
     return ('<?xml version="1.0" encoding="UTF-8"?>\n'
-            '<rss version="2.0"><channel>\n'
+            '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>\n'
             "<title>Hat-in-Ring Radar — daily movement</title>\n"
             "<link>https://hatinring.com/</link>\n"
+            f'<atom:link href="{_esc(self_url)}" rel="self" type="application/rss+xml"/>\n'
             "<description>What moved on the 2028 presidential signal tracker, rebuilt daily. "
             "Status is not support.</description>\n"
             "<language>en-us</language>\n"
@@ -249,6 +255,9 @@ def render_feed(items: list[dict]) -> str:
 
 
 def write_feed(data_dir: Path, out_dir: Path) -> None:
+    # Both filenames are kept on purpose: the daily CI workflow commits rss.xml
+    # by literal path, and feed.xml is the advertised URL. Each carries its own
+    # correct <atom:link rel="self">.
     path = data_dir / "feed_items.json"
     items = []
     if path.exists():
@@ -256,6 +265,7 @@ def write_feed(data_dir: Path, out_dir: Path) -> None:
             items = json.loads(path.read_text())
         except (json.JSONDecodeError, OSError):
             items = []
-    xml = render_feed(items)
-    (out_dir / "feed.xml").write_text(xml)
-    (out_dir / "rss.xml").write_text(xml)
+    (out_dir / "feed.xml").write_text(
+        render_feed(items, "https://hatinring.com/feed.xml"))
+    (out_dir / "rss.xml").write_text(
+        render_feed(items, "https://hatinring.com/rss.xml"))

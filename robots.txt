@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /_hat-in-ring-src/
 
 Sitemap: https://hatinring.com/sitemap.xml
