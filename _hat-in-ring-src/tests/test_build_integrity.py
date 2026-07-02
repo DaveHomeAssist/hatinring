@@ -36,7 +36,7 @@ from hatring.build import render
 ROOT = Path(__file__).resolve().parent.parent
 TEMPLATES = ROOT / "templates"
 BUILT = date(2026, 6, 13)  # pinned: tests must not depend on today's date
-SCRIPT_CLOSE_COUNT = 5
+SCRIPT_CLOSE_COUNT = 7
 
 
 def _dataset(with_drop_fields: bool = True) -> list[dict]:
@@ -166,7 +166,8 @@ def test_html_is_well_formed(tmp_path):
     p.close()
     assert not p.stack, f"unclosed tags: {p.stack}"
     assert not p.errors, f"tag errors: {p.errors}"
-    # Five closing </script>: JSON-LD, React, ReactDOM, support.js, and the DC
+    # Seven closing </script>: WebSite JSON-LD, ItemList JSON-LD, React,
+    # ReactDOM, support.js, the resilience watchdog, and the DC
     # component script. Escaped data must not add another close tag.
     assert html.count("</script>") == SCRIPT_CLOSE_COUNT, \
         "unexpected </script> count (script-context breakout?)"

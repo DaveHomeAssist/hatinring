@@ -26,7 +26,7 @@ from hatring import news
 
 ROOT = Path(__file__).resolve().parent.parent
 SMOKE = Path(__file__).resolve().parent / "dashboard_smoke.js"
-SCRIPT_CLOSE_COUNT = 5
+SCRIPT_CLOSE_COUNT = 7
 
 HOSTILE = [{
     "id": "evil",
