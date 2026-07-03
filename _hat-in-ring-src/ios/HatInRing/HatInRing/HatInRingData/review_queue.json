@@ -22,5 +22,17 @@
     ],
     "rid": "d779b37a00f7",
     "kind": "discovery"
+  },
+  {
+    "name": "New Hampshire",
+    "headline": "Poll shows new potential presidential candidates surging in New Hampshire - WMUR",
+    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSldweXczam04RWU3M2NnNUx6TGdUSFV0ZHBtaGIzak80ZFRCd2s0V1lDMzdTTGdMbWNKdkNUWnFiamZHbzFodkVRZGhJMDB4M3pZT1Y3cUJSY3ZYdUpYLVFENC1FTkluQ3hLeGpYcHdSMUNMTVVZdVAwVXNMZ2ZUc2k0TWlXb1lVLXh5cXJrVQ?oc=5",
+    "source": "WMUR",
+    "date": "2026-06-30",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "450c49eea461",
+    "kind": "discovery"
   }
 ]
