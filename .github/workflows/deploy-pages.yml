@@ -1,0 +1,53 @@
+name: deploy-pages
+
+# Deploys the site to GitHub Pages as an Actions artifact, excluding the
+# pipeline source (_hat-in-ring-src/). Fires on:
+#  - workflow_run: after the daily hat-in-ring job (its bot push uses
+#    GITHUB_TOKEN, which never triggers `push` workflows)
+#  - push: direct human commits to main
+#  - workflow_dispatch: manual redeploy
+on:
+  push:
+    branches: [main]
+  workflow_run:
+    workflows: [hat-in-ring]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # workflow_run's github.sha is the commit that *started* the daily
+          # job, i.e. before its build commit — always deploy latest main.
+          ref: main
+      - name: Stage site (exclude pipeline source)
+        run: |
+          mkdir _site
+          rsync -a \
+            --exclude '_site' \
+            --exclude '.git' \
+            --exclude '.github' \
+            --exclude '_hat-in-ring-src' \
+            ./ _site/
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4

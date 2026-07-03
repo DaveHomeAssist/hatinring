@@ -117,9 +117,12 @@ activation, focus-visible, reduced-motion, sparkline text equivalents. A canvas
 
 ## CI/CD & testing
 - **Daily Action** (`cron 0 11 * * *` + `workflow_dispatch`): ingest → **180-test
-  gate** → build into `index.html` → race-safe commit/push → classic Pages
-  redeploy. `FEC_API_KEY` is a **per-repo secret** with `DEMO_KEY` fallback.
-  The commit step rebases + retries (this repo can be pushed to by a human too).
+  gate** → build into `index.html` → race-safe commit/push → Pages deploy via
+  `deploy-pages.yml` (Actions artifact, `workflow_run`-chained; excludes
+  `_hat-in-ring-src/` so the pipeline source is not publicly served; also fires
+  on direct human pushes to main). `FEC_API_KEY` is a **per-repo secret** with
+  `DEMO_KEY` fallback. The commit step rebases + retries (this repo can be
+  pushed to by a human too).
 - **Tests (180 + 3 xfail):** scoring parity & fuzz; build integrity (incl.
   `node --check`, drop-field leak, SEO); headless render smoke; anticipatory-UX
   check; XSS render/security; schema validation; classify battery; merge
