@@ -15,10 +15,10 @@ def test_feed_records_idempotent_and_renders(tmp_path):
                                    delta=12, name="Alpha")], 0, TODAY)
     brief.record_feed_item(b, tmp_path)
     brief.record_feed_item(b, tmp_path)                 # same date -> no dup
-    items = json.loads((tmp_path / "feed_items.json").read_text())
+    items = json.loads((tmp_path / "feed_items.json").read_text(encoding="utf-8"))
     assert len(items) == 1 and items[0]["date"] == TODAY.isoformat()
     brief.write_feed(tmp_path, tmp_path)
-    feed = (tmp_path / "feed.xml").read_text()
+    feed = (tmp_path / "feed.xml").read_text(encoding="utf-8")
     assert feed.startswith("<?xml") and 'rss version="2.0"' in feed
     assert "Alpha" in feed and "What moved" in feed and "<pubDate>" in feed
 
@@ -72,7 +72,7 @@ def test_share_assets_written(tmp_path):
     b = brief.build_briefing([_rec("a", ["donors"], "2026-06-14", delta=4)], 0, TODAY)
     brief.write_share_assets(b, tmp_path)
     assert (tmp_path / "share.html").exists()
-    svg = (tmp_path / "assets" / "share" / "latest.svg").read_text()
+    svg = (tmp_path / "assets" / "share" / "latest.svg").read_text(encoding="utf-8")
     assert svg.lstrip().startswith("<svg") and "1200" in svg and "630" in svg
 
 

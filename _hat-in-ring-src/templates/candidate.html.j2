@@ -55,6 +55,12 @@
   .tag{display:inline-block;font-size:12px;background:#f1efe9;border-radius:5px;padding:2px 8px;margin:2px 4px 2px 0;color:#555}
   footer{margin-top:36px;padding-top:14px;border-top:2px solid var(--ink);font-size:13px;color:var(--muted)}
   .corr{background:#eef5ff;border:1px solid #d4e3fb;border-radius:8px;padding:12px 14px;margin-top:8px;font-size:14px}
+  .spark{border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin:12px 0 4px;max-width:360px}
+  .spark .sl{font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+  .spark .sv{font-family:Georgia,serif;font-size:30px;font-weight:600;line-height:1.15}
+  .spark .sd{font-size:13px;color:var(--muted)}
+  .spark svg{display:block;width:100%;max-width:320px;height:auto;margin-top:8px}
+  .vh{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
   @media (max-width:768px){
     .wrap{max-width:none;padding:18px 14px 56px}
     .back{min-height:44px;display:inline-flex;align-items:center}
@@ -93,6 +99,24 @@
   {% if c.why %}<p>{{ c.why }}</p>{% endif %}
 
   <h2>Why this momentum score</h2>
+  <figure class="spark">
+    <div class="sl">Momentum · last 30 days</div>
+    <div class="sv">{{ c.score }}</div>
+    {% if spark %}
+    <div class="sd">{{ spark.delta }}</div>
+    <svg viewBox="0 0 240 48" width="240" height="48" role="img" aria-label="{{ spark.aria }}">
+      <title>{{ spark.aria }}</title>
+      <line x1="{{ spark.base.x1 }}" y1="{{ spark.base.y }}" x2="{{ spark.base.x2 }}" y2="{{ spark.base.y }}" style="stroke:var(--line)" stroke-width="1"/>
+      <polygon points="{{ spark.area }}" style="fill:{{ party_color }}" fill-opacity=".1"/>
+      <polyline points="{{ spark.points }}" fill="none" style="stroke:{{ party_color }}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="{{ spark.end.x }}" cy="{{ spark.end.y }}" r="4" style="fill:{{ party_color }};stroke:var(--bg)" stroke-width="2"/>
+      <text x="{{ spark.label.x }}" y="{{ spark.label.y }}" font-size="11" font-weight="600" style="fill:var(--ink)">{{ spark.label.text }}</text>
+    </svg>
+    <figcaption class="vh">{{ spark.aria }}</figcaption>
+    {% else %}
+    <div class="sd">Trend line appears as daily snapshots accumulate.</div>
+    {% endif %}
+  </figure>
   <table>
     {% for b in breakdown %}<tr><td>{{ b.label }}</td><td class="v {{ 'pos' if b.w >= 0 else 'neg' }}">{{ '+' if b.w >= 0 else '' }}{{ b.w }}</td></tr>{% endfor %}
     <tr><td><b>Momentum (capped 0–100)</b></td><td class="v"><b>{{ c.score }}</b></td></tr>

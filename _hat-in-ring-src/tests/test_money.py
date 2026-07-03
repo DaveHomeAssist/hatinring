@@ -23,19 +23,19 @@ def test_refresh_only_filers_and_stamps(tmp_path):
     fin = money.refresh(recs, out, client=fc, today=date(2026, 6, 15))
     assert "a" in fin and "b" not in fin                  # non-filer absent, not zero
     assert fin["a"]["receipts"] == 1000 and fin["a"]["fetched"] == "2026-06-15"
-    assert json.loads(out.read_text())["a"]["receipts"] == 1000
+    assert json.loads(out.read_text(encoding="utf-8"))["a"]["receipts"] == 1000
 
 
 def test_refresh_preserves_prior_on_fetch_miss(tmp_path):
     out = tmp_path / "financials.json"
-    out.write_text(json.dumps({"a": {"receipts": 999}}))
+    out.write_text(json.dumps({"a": {"receipts": 999}}), encoding="utf-8")
     fin = money.refresh([{"id": "a", "fec_ids": ["P1"]}], out, client=_FakeClient({}))
     assert fin["a"]["receipts"] == 999                    # transient miss keeps prior
 
 
 def test_attach_sets_money_only_for_known(tmp_path):
     fin = tmp_path / "financials.json"
-    fin.write_text(json.dumps({"a": {"receipts": 5}}))
+    fin.write_text(json.dumps({"a": {"receipts": 5}}), encoding="utf-8")
     recs = [{"id": "a"}, {"id": "b"}]
     assert money.attach(recs, fin) == 1
     assert recs[0]["money"] == {"receipts": 5} and "money" not in recs[1]

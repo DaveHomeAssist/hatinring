@@ -17,7 +17,10 @@
     "tags": [
       "FEC",
       "declared"
-    ]
+    ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Dan_Greaney"
+    }
   },
   {
     "id": "bovino",
@@ -37,7 +40,10 @@
     "quote": "",
     "tags": [
       "exploratory"
-    ]
+    ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Gregory_Bovino"
+    }
   },
   {
     "id": "jorgensen",
@@ -58,7 +64,10 @@
     "tags": [
       "exploratory",
       "Libertarian"
-    ]
+    ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Jo_Jorgensen"
+    }
   },
   {
     "id": "newsom",
@@ -84,7 +93,10 @@
       "governor lane",
       "frontrunner",
       "CNBC"
-    ]
+    ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Gavin_Newsom"
+    }
   },
   {
     "id": "harris",
@@ -139,7 +151,10 @@
         "conf": "Low"
       }
     ],
-    "sourceUrl": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOWC1nUFZGeGZwTFkwVnQ4YURoanlwVTZ1QXhsLUctU1pORm9vLVFiT3RGVzYyaVdaRXRPWjBjeVFBQTZvTS0xaUJKc3FwblZ5Wm02UEJ6ek84NUlwTl9fRXk0Wmd3ckVNRlVhUjQ3Y3BvcWp2ME5ZSGV6QWdEaTI3Z3F2XzhaTDNUYVNCT20wVk0xUDhjN1BXSVBCOA?oc=5"
+    "sourceUrl": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOWC1nUFZGeGZwTFkwVnQ4YURoanlwVTZ1QXhsLUctU1pORm9vLVFiT3RGVzYyaVdaRXRPWjBjeVFBQTZvTS0xaUJKc3FwblZ5Wm02UEJ6ek84NUlwTl9fRXk0Wmd3ckVNRlVhUjQ3Y3BvcWp2ME5ZSGV6QWdEaTI3Z3F2XzhaTDNUYVNCT20wVk0xUDhjN1BXSVBCOA?oc=5",
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Kamala_Harris"
+    }
   },
   {
     "id": "booker",
@@ -160,7 +175,10 @@
     "quote": "Of course I'm thinking about it.",
     "tags": [
       "senate"
-    ]
+    ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Cory_Booker"
+    }
   },
   {
     "id": "beshear",
@@ -232,7 +250,10 @@
         "conf": "Low"
       }
     ],
-    "sourceUrl": "https://news.google.com/rss/articles/CBMie0FVX3lxTFA5NWJYXzduV2tzMmtfN0pubWNaeW8zSTlZS3lUaXgtRVlCWHA4YWhRaEpHaXRlR0xrRVNfT092TmQ5WFc3dDNwV2ZFeElMYlR3MHNidk9EeWNZQlF6OEFSbm5HNElMMWptQ2lONlR3dkJOdDQ3OC1mX19WVdIBe0FVX3lxTE9JYks2ZlkycUdTelltcHc0ZDdCejRFMzlEbHFsVF9jdzYyWEM1SFN2ZWlzWGtyM1NkcGRYRUlfaGV4c1pDNFhzZHVma1Q3SWJCNmJRSkl6VDMwVTlRMVdFSjBJQkFjQkV3Y1BaYVJzZFZDRWxqWU12MzRGWQ?oc=5"
+    "sourceUrl": "https://news.google.com/rss/articles/CBMie0FVX3lxTFA5NWJYXzduV2tzMmtfN0pubWNaeW8zSTlZS3lUaXgtRVlCWHA4YWhRaEpHaXRlR0xrRVNfT092TmQ5WFc3dDNwV2ZFeElMYlR3MHNidk9EeWNZQlF6OEFSbm5HNElMMWptQ2lONlR3dkJOdDQ3OC1mX19WVdIBe0FVX3lxTE9JYks2ZlkycUdTelltcHc0ZDdCejRFMzlEbHFsVF9jdzYyWEM1SFN2ZWlzWGtyM1NkcGRYRUlfaGV4c1pDNFhzZHVma1Q3SWJCNmJRSkl6VDMwVTlRMVdFSjBJQkFjQkV3Y1BaYVJzZFZDRWxqWU12MzRGWQ?oc=5",
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Andy_Beshear"
+    }
   },
   {
     "id": "kelly",
@@ -275,7 +296,10 @@
         "to": 5,
         "reason": "Trump’s call for Mark Kelly’s execution may have launched his campaign for president - Arizona Mirror"
       }
-    ]
+    ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Mark_Kelly"
+    }
   },
   {
     "id": "khanna",
@@ -323,7 +347,10 @@
         "conf": "Low"
       }
     ],
-    "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOZ0VEa0ZfNXAxVkhXRGVWT3N5Njl5cXAxLTVUQVp4QUVoMi1yaTdDeVdHUGdBNWJzalJtMDBvRmMzVWZYc0hTSnRqZk9QUGdzRl9RbEllU0YyNnRYa05GeXVtbFlrSU1fLVNFdDdVdkJkaG0yZnY2LXRicnpzZ1EtMXUtazdDamZTOGJRZjIzWGhTNXFiX0dVVEtIRWxUTjRsbnh5VmJTeFJVcGdWY3BF?oc=5"
+    "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOZ0VEa0ZfNXAxVkhXRGVWT3N5Njl5cXAxLTVUQVp4QUVoMi1yaTdDeVdHUGdBNWJzalJtMDBvRmMzVWZYc0hTSnRqZk9QUGdzRl9RbEllU0YyNnRYa05GeXVtbFlrSU1fLVNFdDdVdkJkaG0yZnY2LXRicnpzZ1EtMXUtazdDamZTOGJRZjIzWGhTNXFiX0dVVEtIRWxUTjRsbnh5VmJTeFJVcGdWY3BF?oc=5",
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Ro_Khanna"
+    }
   },
   {
     "id": "gallego",
@@ -345,7 +372,10 @@
     "tags": [
       "senate",
       "upgrade"
-    ]
+    ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Ruben_Gallego"
+    }
   },
   {
     "id": "pritzker",
@@ -368,7 +398,10 @@
       "governor lane",
       "self-fund",
       "Chicago Sun-Times"
-    ]
+    ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/JB_Pritzker"
+    }
   },
   {
     "id": "emanuel",
@@ -454,7 +487,10 @@
         "conf": "Low"
       }
     ],
-    "sourceUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBIZUNhRGlYcXlNU05qYVhBa056VnJwdkxuNkRjSEZBZy1PWEhGMXFXMm8zM1FjeGVoTHBFSllIWkwwZi1YOGZ0ODF2RnFXSjFKUnpZd3FqZk9lMlBHREEzS2k2QTdoMzJ4OWs3MWNsM1Q3QXdta2lUVnh0NDhraFk?oc=5"
+    "sourceUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBIZUNhRGlYcXlNU05qYVhBa056VnJwdkxuNkRjSEZBZy1PWEhGMXFXMm8zM1FjeGVoTHBFSllIWkwwZi1YOGZ0ODF2RnFXSjFKUnpZd3FqZk9lMlBHREEzS2k2QTdoMzJ4OWs3MWNsM1Q3QXdta2lUVnh0NDhraFk?oc=5",
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Rahm_Emanuel"
+    }
   },
   {
     "id": "green",
@@ -473,7 +509,10 @@
     "quote": "",
     "tags": [
       "governor lane"
-    ]
+    ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Josh_Green_(politician)"
+    }
   },
   {
     "id": "landrieu",
@@ -501,7 +540,10 @@
         "to": 5,
         "reason": "Mitch Landrieu launches surprise 2028 presidential bid in New Orleans - mezha.net"
       }
-    ]
+    ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Mitch_Landrieu"
+    }
   },
   {
     "id": "slotkin",
@@ -552,7 +594,10 @@
         "conf": "Low"
       }
     ],
-    "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOSkRuMktZcnpCQlc4d3dVQkxWT2sxRllQbTJPdEY2Ny1RSnJYckRKWDIzLUYwdjhKMktYYlJNcnAzMlU1NEc1Y3ZUODJZMjdYLXBNb295bWptV3dJci1WSGxmVDhnWGkyWTZDM2F6dUllUFBYZko2Y0t2S3JmaDhkMHNkcFRrVmd6UXg1WGJtdTBPalpqZ2RQamxhMDZnQmhxYVJVS0hB?oc=5"
+    "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOSkRuMktZcnpCQlc4d3dVQkxWT2sxRllQbTJPdEY2Ny1RSnJYckRKWDIzLUYwdjhKMktYYlJNcnAzMlU1NEc1Y3ZUODJZMjdYLXBNb295bWptV3dJci1WSGxmVDhnWGkyWTZDM2F6dUllUFBYZko2Y0t2S3JmaDhkMHNkcFRrVmd6UXg1WGJtdTBPalpqZ2RQamxhMDZnQmhxYVJVS0hB?oc=5",
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Elissa_Slotkin"
+    }
   },
   {
     "id": "cruz",
@@ -581,6 +626,9 @@
     },
     "early_states_last": {
       "IA": "2026-05-02"
+    },
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Ted_Cruz"
     }
   },
   {
@@ -604,7 +652,10 @@
     "tags": [
       "governor lane",
       "retread"
-    ]
+    ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Ron_DeSantis"
+    }
   },
   {
     "id": "paul",
@@ -635,7 +686,10 @@
         ],
         "conf": "Low"
       }
-    ]
+    ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Rand_Paul"
+    }
   },
   {
     "id": "gabbard",
@@ -656,7 +710,10 @@
     "tags": [
       "admin",
       "MAGA"
-    ]
+    ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Tulsi_Gabbard"
+    }
   },
   {
     "id": "bacon",
@@ -675,7 +732,10 @@
     "quote": "I wouldn't rule it out.",
     "tags": [
       "centrist"
-    ]
+    ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Don_Bacon"
+    }
   },
   {
     "id": "lemon",
@@ -708,7 +768,10 @@
         "conf": "Low"
       }
     ],
-    "sourceUrl": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQdVh5eVlyQ2ZuZzFvMXdDNHVFU04ya3Z0NnBjZkhqZ2N6SUc2d0I2RWhlOG5hdTVET3U0c3lodDBoNmdxVDB3eU9zTzA5RWx6QmIyeXNlMXlGaHJocG1iNlNsbmNBNkt2bmZLNFZyU1owLVAtaW50ZEZJU2RTZmRVcjE3NzBuaFNYNzNzc2RpTDdnejlXWldPU1NXMVpaVEpXb2hQeE1NVkJJam8zanpvMVdqVDVFMW1RQzV6eERMX2JoN25SYzZfVk1xWUdfUkMwNjJjMEhSblNlb3J1TU80b1pvQ1JxUk9lWEd2SVBGd9IB7wFBVV95cUxQdVh5eVlyQ2ZuZzFvMXdDNHVFU04ya3Z0NnBjZkhqZ2N6SUc2d0I2RWhlOG5hdTVET3U0c3lodDBoNmdxVDB3eU9zTzA5RWx6QmIyeXNlMXlGaHJocG1iNlNsbmNBNkt2bmZLNFZyU1owLVAtaW50ZEZJU2RTZmRVcjE3NzBuaFNYNzNzc2RpTDdnejlXWldPU1NXMVpaVEpXb2hQeE1NVkJJam8zanpvMVdqVDVFMW1RQzV6eERMX2JoN25SYzZfVk1xWUdfUkMwNjJjMEhSblNlb3J1TU80b1pvQ1JxUk9lWEd2SVBGdw?oc=5"
+    "sourceUrl": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQdVh5eVlyQ2ZuZzFvMXdDNHVFU04ya3Z0NnBjZkhqZ2N6SUc2d0I2RWhlOG5hdTVET3U0c3lodDBoNmdxVDB3eU9zTzA5RWx6QmIyeXNlMXlGaHJocG1iNlNsbmNBNkt2bmZLNFZyU1owLVAtaW50ZEZJU2RTZmRVcjE3NzBuaFNYNzNzc2RpTDdnejlXWldPU1NXMVpaVEpXb2hQeE1NVkJJam8zanpvMVdqVDVFMW1RQzV6eERMX2JoN25SYzZfVk1xWUdfUkMwNjJjMEhSblNlb3J1TU80b1pvQ1JxUk9lWEd2SVBGd9IB7wFBVV95cUxQdVh5eVlyQ2ZuZzFvMXdDNHVFU04ya3Z0NnBjZkhqZ2N6SUc2d0I2RWhlOG5hdTVET3U0c3lodDBoNmdxVDB3eU9zTzA5RWx6QmIyeXNlMXlGaHJocG1iNlNsbmNBNkt2bmZLNFZyU1owLVAtaW50ZEZJU2RTZmRVcjE3NzBuaFNYNzNzc2RpTDdnejlXWldPU1NXMVpaVEpXb2hQeE1NVkJJam8zanpvMVdqVDVFMW1RQzV6eERMX2JoN25SYzZfVk1xWUdfUkMwNjJjMEhSblNlb3J1TU80b1pvQ1JxUk9lWEd2SVBGdw?oc=5",
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Don_Lemon"
+    }
   },
   {
     "id": "buttigieg",
@@ -732,7 +795,10 @@
       "establishment",
       "polls-high",
       "NBC News"
-    ]
+    ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Pete_Buttigieg"
+    }
   },
   {
     "id": "aoc",
@@ -766,7 +832,10 @@
         "conf": "Low"
       }
     ],
-    "sourceUrl": "https://news.google.com/rss/articles/CBMilwFBVV95cUxORC1xTjUya3dieWxVWVl0UEVLNDJhTWIta3g4eWtDQ1BoRzV4cWxLN09UakZuckxYcVR6T1YtOTgwN3pDbFV5OG9uM0lkM21Eb0l4Z1VqWXlGZlZqSUdJMnJVWUltQWpqWXVDa21PeG1oRlVmVFpKcHZlOGQtSDVHXzNtMUxLNFlBREdmMWl1VUxhTno2c0I40gGcAUFVX3lxTE90MU84ZmNuRllEMWdFZV9wd3B4UXhDUnN5aXBLS240YnFTeTZBSGYzc3A0SG95RE83a0IzQ29mRGQ4RkE4ZE82WERHNmlWaFVrUWNQdTdFd3g4ZlMwa1R3TEZCMGZMNG1HNlNmdzlVS3N4T2t6VFdXbWJpZmZFUWdydDB3WUFlVFZsTGNmVXdGTHRhblZWaTJya0hrbQ?oc=5"
+    "sourceUrl": "https://news.google.com/rss/articles/CBMilwFBVV95cUxORC1xTjUya3dieWxVWVl0UEVLNDJhTWIta3g4eWtDQ1BoRzV4cWxLN09UakZuckxYcVR6T1YtOTgwN3pDbFV5OG9uM0lkM21Eb0l4Z1VqWXlGZlZqSUdJMnJVWUltQWpqWXVDa21PeG1oRlVmVFpKcHZlOGQtSDVHXzNtMUxLNFlBREdmMWl1VUxhTno2c0I40gGcAUFVX3lxTE90MU84ZmNuRllEMWdFZV9wd3B4UXhDUnN5aXBLS240YnFTeTZBSGYzc3A0SG95RE83a0IzQ29mRGQ4RkE4ZE82WERHNmlWaFVrUWNQdTdFd3g4ZlMwa1R3TEZCMGZMNG1HNlNmdzlVS3N4T2t6VFdXbWJpZmZFUWdydDB3WUFlVFZsTGNmVXdGTHRhblZWaTJya0hrbQ?oc=5",
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Alexandria_Ocasio-Cortez"
+    }
   },
   {
     "id": "shapiro",
@@ -787,7 +856,10 @@
       "governor lane",
       "swing-state",
       "CNN"
-    ]
+    ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Josh_Shapiro"
+    }
   },
   {
     "id": "murphy",
@@ -806,7 +878,10 @@
     "quote": "",
     "tags": [
       "long-shot"
-    ]
+    ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Phil_Murphy"
+    }
   },
   {
     "id": "yang",
@@ -835,7 +910,10 @@
         "to": 5,
         "reason": "Andrew Yang launches mobile network to combat phone addiction, talks shutdown and 2028 Democratic primary - ABC7 Bay Area"
       }
-    ]
+    ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Andrew_Yang"
+    }
   },
   {
     "id": "afroman",
@@ -855,7 +933,10 @@
     "tags": [
       "celebrity",
       "Libertarian"
-    ]
+    ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Afroman"
+    }
   },
   {
     "id": "vance",
@@ -916,7 +997,10 @@
         "conf": "Low"
       }
     ],
-    "sourceUrl": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNa0pxU2JYMXlURGVLZUJTb3NCV215ZVR2QjVkbmZ4SFphN1VEdzFyUlJLLXlXS2ZNRU4tNWI0RnhmZ3J0OEd2VGd2M0JCLTZNZExzNHhrUU1NYzJrZTZsWGc1RjlGZHpwZ1FmWlJrMzJnSDZVTFVuUWJCSVgzN3BHMDRyNEFyWEY0dU1WX1d3RlpJUHJNQ2wyZkdMY3dPWXdOempDakRSM0YwX2VvN2N6TEZWd1dieEViNTBrLS1tMkl2VFRlb01fUV8yd1JJbXJtRzgxYUlDeVJqQkE?oc=5"
+    "sourceUrl": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNa0pxU2JYMXlURGVLZUJTb3NCV215ZVR2QjVkbmZ4SFphN1VEdzFyUlJLLXlXS2ZNRU4tNWI0RnhmZ3J0OEd2VGd2M0JCLTZNZExzNHhrUU1NYzJrZTZsWGc1RjlGZHpwZ1FmWlJrMzJnSDZVTFVuUWJCSVgzN3BHMDRyNEFyWEY0dU1WX1d3RlpJUHJNQ2wyZkdMY3dPWXdOempDakRSM0YwX2VvN2N6TEZWd1dieEViNTBrLS1tMkl2VFRlb01fUV8yd1JJbXJtRzgxYUlDeVJqQkE?oc=5",
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/JD_Vance"
+    }
   },
   {
     "id": "whitmer",
@@ -958,7 +1042,10 @@
         "conf": "Low"
       }
     ],
-    "sourceUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPQ3BnQWJ1SkFvaDZIMXoxZGlwWkxacGhNd3dCSnZVQXJ5Wml3Mm53SlVTaTVSNkJ2Q3BIZHN2VVQxZFNMaWxFTVFvQmw0U1ZaVGNXUTBXaFlwc2U0akNSbk5xV1RSSjEwZlAyMy1YZ2ZSTU43ODN0OVk5YS14bUJ4SjFXRm0wMFFqbElUTVAxZWZ4TTlscE5jZmJxWWRGR3NzZnIwazBHZ1FnRFV6WXdyZjBFbF9vRWk3ZzRsUS1NXzNnRndH?oc=5"
+    "sourceUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPQ3BnQWJ1SkFvaDZIMXoxZGlwWkxacGhNd3dCSnZVQXJ5Wml3Mm53SlVTaTVSNkJ2Q3BIZHN2VVQxZFNMaWxFTVFvQmw0U1ZaVGNXUTBXaFlwc2U0akNSbk5xV1RSSjEwZlAyMy1YZ2ZSTU43ODN0OVk5YS14bUJ4SjFXRm0wMFFqbElUTVAxZWZ4TTlscE5jZmJxWWRGR3NzZnIwazBHZ1FnRFV6WXdyZjBFbF9vRWk3ZzRsUS1NXzNnRndH?oc=5",
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Gretchen_Whitmer"
+    }
   },
   {
     "id": "bannon",
@@ -978,7 +1065,10 @@
     "tags": [
       "media",
       "conditional"
-    ]
+    ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Steve_Bannon"
+    }
   },
   {
     "id": "flynn",
@@ -997,7 +1087,10 @@
     "quote": "",
     "tags": [
       "conditional"
-    ]
+    ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Michael_Flynn"
+    }
   },
   {
     "id": "carlson",
@@ -1026,7 +1119,10 @@
         "to": 3,
         "reason": "Is Tucker Carlson eyeing a 2028 presidential run? | Arwa Mahdawi - The Guardian"
       }
-    ]
+    ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Tucker_Carlson"
+    }
   },
   {
     "id": "hunter",
@@ -1046,7 +1142,10 @@
     "tags": [
       "noise",
       "troll"
-    ]
+    ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Hunter_Biden"
+    }
   },
   {
     "id": "trump",
@@ -1088,7 +1187,10 @@
         "conf": "Low"
       }
     ],
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOTHBiRlF0dmo1ckY3SGVQTzRzSGZGdWUzNWoyRzd5c1MySG9xWVR4WXBhVGFKUkpLRFV0aDZDdDhxNFNCNWdGdFBiX2ZBTnpQelkxbnZod3ExVC1EWUtQTGVZdGVsU2dGT1VXS2NoUXpuN3p1UDdjTm5FU0xZWUtacjhMRWpXeUVOV0FzV3B6SG5tSG80OWFZVVZ1OGtkLVNSdUtv?oc=5"
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOTHBiRlF0dmo1ckY3SGVQTzRzSGZGdWUzNWoyRzd5c1MySG9xWVR4WXBhVGFKUkpLRFV0aDZDdDhxNFNCNWdGdFBiX2ZBTnpQelkxbnZod3ExVC1EWUtQTGVZdGVsU2dGT1VXS2NoUXpuN3p1UDdjTm5FU0xZWUtacjhMRWpXeUVOV0FzV3B6SG5tSG80OWFZVVZ1OGtkLVNSdUtv?oc=5",
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Donald_Trump"
+    }
   },
   {
     "id": "rubio",
@@ -1110,7 +1212,10 @@
     "tags": [
       "VP talk",
       "deferring"
-    ]
+    ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Marco_Rubio"
+    }
   },
   {
     "id": "moore",
@@ -1130,7 +1235,10 @@
     "quote": "I am not running.",
     "tags": [
       "denied"
-    ]
+    ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Wes_Moore"
+    }
   },
   {
     "id": "raimondo",
@@ -1149,7 +1257,10 @@
     "quote": "",
     "tags": [
       "cooled"
-    ]
+    ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Gina_Raimondo"
+    }
   },
   {
     "id": "walz",
@@ -1168,7 +1279,10 @@
     "quote": "",
     "tags": [
       "cooled"
-    ]
+    ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Tim_Walz"
+    }
   },
   {
     "id": "mtg",
@@ -1188,7 +1302,10 @@
     "tags": [
       "denied",
       "conflict"
-    ]
+    ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Marjorie_Taylor_Greene"
+    }
   },
   {
     "id": "smith",
@@ -1240,7 +1357,10 @@
         "conf": "Low"
       }
     ],
-    "sourceUrl": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPQ1hRTlBXVURNZjBBOGl5MEY1RDNtN21rNGpOLVRjZUpOcUZEZlgwdEhXdUpEN1l6enYtejlmN2lrZHFCVG1xOHE5aER6WHJDR3NZTTdJQU5CSlRCNWUyV3Q1RmZRUlRrUV9TeVNPZEhORWY4cS1ob25rdlVLbTdkbjhfQi1acklIQ3BpWWNYc1RmVzQ4SEJfd1llSFUwZGZKTDJJTVNDakYtS3R6Tzl1UTIxcFNNOGRqLW9ENklNVEZSWUVmSkxOM1d0QnRlYXRqbGpLQWtyR1NYVTBNUXI5VGQ4cmtCMFd2WGI2V3Q1SlU?oc=5"
+    "sourceUrl": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPQ1hRTlBXVURNZjBBOGl5MEY1RDNtN21rNGpOLVRjZUpOcUZEZlgwdEhXdUpEN1l6enYtejlmN2lrZHFCVG1xOHE5aER6WHJDR3NZTTdJQU5CSlRCNWUyV3Q1RmZRUlRrUV9TeVNPZEhORWY4cS1ob25rdlVLbTdkbjhfQi1acklIQ3BpWWNYc1RmVzQ4SEJfd1llSFUwZGZKTDJJTVNDakYtS3R6Tzl1UTIxcFNNOGRqLW9ENklNVEZSWUVmSkxOM1d0QnRlYXRqbGpLQWtyR1NYVTBNUXI5VGQ4cmtCMFd2WGI2V3Q1SlU?oc=5",
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Stephen_A._Smith"
+    }
   },
   {
     "id": "kennedy",
@@ -1297,6 +1417,9 @@
         "conf": "Low"
       }
     ],
-    "sourceUrl": "https://news.google.com/rss/articles/CBMihwFBVV95cUxORkJyQ3lfcTBRbW1POWtaWkFtOWpvRWpXMHRCalQ3bzN4VEx6TVdmRUZjR19hdUdvYU5wUzhDem1kaTY0QkFZSExWRHRnajNJME44ZGdidXQ5R0JPRm8tV1loQmdQVHBKVlVGUEpxMnhxSkhvM2V6T1FycUVSUEJKdlRUcExSUTDSAYwBQVVfeXFMTXM3QmxpS09ESWJid0FKYzhYd3hrSUttT1JvM2k4Z09XRnJ3TnJKNnA4LWd6djFXa1NKb09yNFo3eDR2ZU5xR0ZFVnkydldfbG5LR0o2YTdXWVJCRWlLdXNtSDZGMUJwSTZpQVNFTms3ckM5WTdRTFVQdHhLYi1UbVBqc1VmVUhLWWc0NGc?oc=5"
+    "sourceUrl": "https://news.google.com/rss/articles/CBMihwFBVV95cUxORkJyQ3lfcTBRbW1POWtaWkFtOWpvRWpXMHRCalQ3bzN4VEx6TVdmRUZjR19hdUdvYU5wUzhDem1kaTY0QkFZSExWRHRnajNJME44ZGdidXQ5R0JPRm8tV1loQmdQVHBKVlVGUEpxMnhxSkhvM2V6T1FycUVSUEJKdlRUcExSUTDSAYwBQVVfeXFMTXM3QmxpS09ESWJid0FKYzhYd3hrSUttT1JvM2k4Z09XRnJ3TnJKNnA4LWd6djFXa1NKb09yNFo3eDR2ZU5xR0ZFVnkydldfbG5LR0o2YTdXWVJCRWlLdXNtSDZGMUJwSTZpQVNFTms3ckM5WTdRTFVQdHhLYi1UbVBqc1VmVUhLWWc0NGc?oc=5",
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/John_Kennedy_(Louisiana_politician)"
+    }
   }
 ]

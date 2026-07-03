@@ -95,7 +95,7 @@ def _gen_inputs():
 @pytest.mark.skipif(shutil.which("node") is None, reason="node not available")
 def test_python_js_scoring_parity_fuzz(tmp_path):
     runner = tmp_path / "runner.js"
-    runner.write_text(_JS_RUNNER)
+    runner.write_text(_JS_RUNNER, encoding="utf-8")
 
     inputs = _gen_inputs()
     jsonl = "\n".join(json.dumps(c) for c in inputs)
@@ -131,7 +131,7 @@ def test_python_js_scoring_parity_fuzz(tmp_path):
 def test_known_golden_values_match_both_engines(tmp_path):
     """The four captured golden candidates render identically in PY and JS."""
     runner = tmp_path / "runner.js"
-    runner.write_text(_JS_RUNNER)
+    runner.write_text(_JS_RUNNER, encoding="utf-8")
     cases = [
         (["consideringQuote", "earlyState", "donors", "staffing", "mediaBlitz"], "2026-05-28", 60, 3),
         (["donors", "staffing", "mediaBlitz"], "2026-06-03", 30, 2),
@@ -158,7 +158,7 @@ def test_recency_band_edge_is_timezone_stable(tmp_path):
     parity with Python even when Node runs in a far offset timezone.
     """
     runner = tmp_path / "runner.js"
-    runner.write_text(_JS_RUNNER)
+    runner.write_text(_JS_RUNNER, encoding="utf-8")
     # In Etc/GMT+12 the local-noon TODAY pushes JS day-counts +1 vs Python:
     #   2026-05-13: py days_since 30 (boost) -> js 31 (no boost): JS loses +5
     #   2026-03-14: py days_since 90 (ok)    -> js 91 (stale):    JS adds -10

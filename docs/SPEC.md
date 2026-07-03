@@ -26,15 +26,18 @@ and news. Thesis: a *defensible, sourced* signal board, not a rumor list.
 ```
 /                         built site (GitHub Pages root)
   index.html              the dashboard (generated)
+  c/<id>/                  per-candidate pages, momentum sparkline + JSON-LD (generated)
+  vs/<a>-vs-<b>/           head-to-head compare pages, fixed marquee pairs (generated)
   assets/candidates/...    candidate lead portraits (generated copy)
   assets/share/latest.svg  daily share image (generated)
   share.html               static share card (generated)
-  favicon.svg  CNAME  .nojekyll
+  favicon.svg  CNAME  .nojekyll  404.html  robots.txt  sitemap.xml
   docs/                    this documentation
-  _hat-in-ring-src/        the pipeline (source of truth)
+  _hat-in-ring-src/        the pipeline (source of truth; excluded from the
+                           deployed Pages artifact)
     hatring/               fec, news, classify, merge, scoring, series,
-                           money, geo, brief, build, pipeline
-    templates/dashboard.html.j2
+                           money, geo, brief, build, pages, versus, pipeline
+    templates/dashboard.html.j2  candidate.html.j2  vs.html.j2
     data/                  seed.json, candidates.json, signals.jsonl,
                            review_*.json, momentum_snapshots.jsonl,
                            financials.json, briefing.json

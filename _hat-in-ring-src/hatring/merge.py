@@ -58,7 +58,7 @@ def _sig_id(person_id: str, key: str, url: str) -> str:
 def _load_jsonl(path: Path) -> set[str]:
     if not path.exists():
         return set()
-    return {json.loads(l)["sid"] for l in path.read_text().splitlines() if l.strip()}
+    return {json.loads(l)["sid"] for l in path.read_text(encoding="utf-8").splitlines() if l.strip()}
 
 
 def _append_jsonl(path: Path, rows: list[dict]) -> None:

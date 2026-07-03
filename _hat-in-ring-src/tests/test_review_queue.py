@@ -47,7 +47,7 @@ def data_dir(tmp_path, monkeypatch):
 
 
 def _q(d):
-    return json.loads((d / "review_queue.json").read_text())
+    return json.loads((d / "review_queue.json").read_text(encoding="utf-8"))
 
 
 # ---- persistence (the core M3 fix) -------------------------------------
@@ -92,7 +92,7 @@ def test_confirm_applies_to_existing_person(data_dir):
     ds.review = [item]
     pl.reconcile_review(ds, TODAY)                     # run 1: queue it
 
-    (data_dir / "review_decisions.json").write_text(json.dumps([{"rid": item["rid"], "action": "confirm"}]))
+    (data_dir / "review_decisions.json").write_text(json.dumps([{"rid": item["rid"], "action": "confirm"}]), encoding="utf-8")
     ds2 = Dataset([_rec(name="Existing Person", keys=["consideringQuote"])], today=TODAY)
     mutated = pl.reconcile_review(ds2, TODAY)          # run 2: confirm
     assert mutated is True
@@ -106,7 +106,7 @@ def test_confirm_creates_new_candidate(data_dir):
     item = _item("Brand New", "http://c", ["consideringQuote"])
     ds.review = [item]
     pl.reconcile_review(ds, TODAY)
-    (data_dir / "review_decisions.json").write_text(json.dumps([{"rid": item["rid"], "action": "confirm"}]))
+    (data_dir / "review_decisions.json").write_text(json.dumps([{"rid": item["rid"], "action": "confirm"}]), encoding="utf-8")
     ds2 = Dataset([_rec()], today=TODAY)
     assert pl.reconcile_review(ds2, TODAY) is True
     assert any(r["name"] == "Brand New" for r in ds2.records)
@@ -117,7 +117,7 @@ def test_dismiss_removes_without_touching_dataset(data_dir):
     item = _item("Noise Name", "http://d", ["consideringQuote"])
     ds.review = [item]
     pl.reconcile_review(ds, TODAY)
-    (data_dir / "review_decisions.json").write_text(json.dumps([{"rid": item["rid"], "action": "dismiss"}]))
+    (data_dir / "review_decisions.json").write_text(json.dumps([{"rid": item["rid"], "action": "dismiss"}]), encoding="utf-8")
     ds2 = Dataset([_rec()], today=TODAY)
     mutated = pl.reconcile_review(ds2, TODAY)
     assert mutated is False
@@ -130,7 +130,7 @@ def test_resolved_item_never_resurfaces(data_dir):
     item = _item("Gone For Good", "http://e", ["consideringQuote"])
     ds.review = [item]
     pl.reconcile_review(ds, TODAY)
-    (data_dir / "review_decisions.json").write_text(json.dumps([{"rid": item["rid"], "action": "dismiss"}]))
+    (data_dir / "review_decisions.json").write_text(json.dumps([{"rid": item["rid"], "action": "dismiss"}]), encoding="utf-8")
     pl.reconcile_review(Dataset([_rec()], today=TODAY), TODAY)
     # re-produced by a later run -> must stay gone (resolved set)
     ds3 = Dataset([_rec()], today=TODAY)
@@ -144,7 +144,7 @@ def test_decisions_are_idempotent(data_dir):
     item = _item("Re Applied", "http://f", ["donors"])
     ds.review = [item]
     pl.reconcile_review(ds, TODAY)
-    (data_dir / "review_decisions.json").write_text(json.dumps([{"rid": item["rid"], "action": "confirm"}]))
+    (data_dir / "review_decisions.json").write_text(json.dumps([{"rid": item["rid"], "action": "confirm"}]), encoding="utf-8")
     pl.reconcile_review(Dataset([_rec(name="Re Applied", keys=["consideringQuote"])], today=TODAY), TODAY)
     # run the same decisions file again — must not double-apply or error
     ds3 = Dataset([_rec(name="Re Applied", keys=["consideringQuote"])], today=TODAY)
@@ -162,7 +162,7 @@ def test_malformed_decisions_does_not_crash_run(data_dir):
     ds = Dataset([_rec()], today=TODAY)
     ds.review = [_item("Q", "http://q", ["consideringQuote"])]
     pl.reconcile_review(ds, TODAY)
-    (data_dir / "review_decisions.json").write_text("{ this is not json ")
+    (data_dir / "review_decisions.json").write_text("{ this is not json ", encoding="utf-8")
     # must not raise
     pl.reconcile_review(Dataset([_rec()], today=TODAY), TODAY)
     assert len(_q(data_dir)) == 1                       # queue intact
@@ -173,13 +173,13 @@ def test_wrong_type_decisions_does_not_crash(data_dir):
     ds = Dataset([_rec()], today=TODAY)
     ds.review = [_item("Q", "http://q", ["consideringQuote"])]
     pl.reconcile_review(ds, TODAY)
-    (data_dir / "review_decisions.json").write_text(json.dumps({"rid": "confirm"}))
+    (data_dir / "review_decisions.json").write_text(json.dumps({"rid": "confirm"}), encoding="utf-8")
     pl.reconcile_review(Dataset([_rec()], today=TODAY), TODAY)   # no raise
 
 
 def test_malformed_queue_does_not_crash(data_dir):
     """H1: a corrupt review_queue.json must fail safe to empty, not crash."""
-    (data_dir / "review_queue.json").write_text("]]not json[[")
+    (data_dir / "review_queue.json").write_text("]]not json[[", encoding="utf-8")
     pl.reconcile_review(Dataset([_rec()], today=TODAY), TODAY)   # no raise
     assert _q(data_dir) == []
 
@@ -193,10 +193,10 @@ def test_confirm_without_keys_is_not_dropped(data_dir):
     ds.review = [bad]
     pl.reconcile_review(ds, TODAY)
     assert len(_q(data_dir)) == 1
-    (data_dir / "review_decisions.json").write_text(json.dumps([{"rid": bad["rid"], "action": "confirm"}]))
+    (data_dir / "review_decisions.json").write_text(json.dumps([{"rid": bad["rid"], "action": "confirm"}]), encoding="utf-8")
     pl.reconcile_review(Dataset([_rec()], today=TODAY), TODAY)
     assert len(_q(data_dir)) == 1, "unapplyable confirm must stay queued (H2)"
-    assert json.loads((data_dir / "review_resolved.json").read_text()) == []
+    assert json.loads((data_dir / "review_resolved.json").read_text(encoding="utf-8")) == []
 
 
 def test_slug_colliding_names_get_unique_ids(data_dir):
@@ -207,7 +207,7 @@ def test_slug_colliding_names_get_unique_ids(data_dir):
     ds.review = [a, b]
     pl.reconcile_review(ds, TODAY)
     (data_dir / "review_decisions.json").write_text(json.dumps(
-        [{"rid": a["rid"], "action": "confirm"}, {"rid": b["rid"], "action": "confirm"}]))
+        [{"rid": a["rid"], "action": "confirm"}, {"rid": b["rid"], "action": "confirm"}]), encoding="utf-8")
     ds2 = Dataset([_rec()], today=TODAY)
     pl.reconcile_review(ds2, TODAY)
     created = [r for r in ds2.records if r["name"] in ("Bob Smith", "Bob.Smith")]
@@ -226,7 +226,7 @@ def test_confirmed_downgrade_updates_bucket(data_dir):
     item = _item("Wavering Gov", "http://w", ["ruledOut"], note="confirm", kind="denial")
     ds.review = [item]
     pl.reconcile_review(ds, TODAY)
-    (data_dir / "review_decisions.json").write_text(json.dumps([{"rid": item["rid"], "action": "confirm"}]))
+    (data_dir / "review_decisions.json").write_text(json.dumps([{"rid": item["rid"], "action": "confirm"}]), encoding="utf-8")
     ds2 = Dataset([_rec(name="Wavering Gov", keys=["consideringQuote"])], today=TODAY)
     pl.reconcile_review(ds2, TODAY)
     rec = next(r for r in ds2.records if r["name"] == "Wavering Gov")
@@ -241,22 +241,22 @@ def test_decisions_inbox_emptied_after_consume(data_dir):
     item = _item("P", "http://p", ["donors"])
     ds.review = [item]
     pl.reconcile_review(ds, TODAY)
-    (data_dir / "review_decisions.json").write_text(json.dumps([{"rid": item["rid"], "action": "confirm"}]))
+    (data_dir / "review_decisions.json").write_text(json.dumps([{"rid": item["rid"], "action": "confirm"}]), encoding="utf-8")
     pl.reconcile_review(Dataset([_rec(name="P", keys=["consideringQuote"])], today=TODAY), TODAY)
-    assert json.loads((data_dir / "review_decisions.json").read_text()) == []
+    assert json.loads((data_dir / "review_decisions.json").read_text(encoding="utf-8")) == []
 
 
 # ---- build inlines the queue + UI renders safely -----------------------
 
 def test_build_inlines_review_queue(tmp_path):
     from hatring.build import render
-    (tmp_path / "candidates.json").write_text((ROOT / "data" / "seed.json").read_text())
+    (tmp_path / "candidates.json").write_text((ROOT / "data" / "seed.json").read_text(encoding="utf-8"), encoding="utf-8")
     (tmp_path / "review_queue.json").write_text(json.dumps([
         _item("Hostile <script>", "http://x", ["consideringQuote"], headline="</script><img src=x onerror=alert(1)>"),
-    ]))
+    ]), encoding="utf-8")
     out = tmp_path / "index.html"
     render(tmp_path / "candidates.json", ROOT / "templates", out, built=TODAY)
-    html = out.read_text()
+    html = out.read_text(encoding="utf-8")
     assert "REVIEW =" in html
     # the hostile headline must be escaped in the SEED/REVIEW literal (no breakout)
     rev = html[html.index("REVIEW ="):html.index("REVIEW =") + 1000]
@@ -266,11 +266,11 @@ def test_build_inlines_review_queue(tmp_path):
 @pytest.mark.skipif(shutil.which("node") is None, reason="node not available")
 def test_review_view_renders_and_escapes(tmp_path):
     from hatring.build import render
-    (tmp_path / "candidates.json").write_text((ROOT / "data" / "seed.json").read_text())
+    (tmp_path / "candidates.json").write_text((ROOT / "data" / "seed.json").read_text(encoding="utf-8"), encoding="utf-8")
     (tmp_path / "review_queue.json").write_text(json.dumps([
         _item("Evil <b>", "http://x", ["consideringQuote"], headline="<img src=x onerror=alert(1)>", kind="discovery"),
         _item("Denial Person", "http://y", ["ruledOut"], note="confirm", kind="denial"),
-    ]))
+    ]), encoding="utf-8")
     out = tmp_path / "index.html"
     render(tmp_path / "candidates.json", ROOT / "templates", out, built=TODAY)
     # board still renders (regression) + the review payload is inlined safely

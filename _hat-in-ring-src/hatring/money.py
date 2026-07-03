@@ -33,7 +33,7 @@ def refresh(records: list[dict], out_path: Path, cycle: int = 2028,
     fin: dict[str, dict] = {}
     if out_path.exists():
         try:
-            fin = json.loads(out_path.read_text())
+            fin = json.loads(out_path.read_text(encoding="utf-8"))
         except (json.JSONDecodeError, OSError):
             fin = {}
     fetched = 0
@@ -45,7 +45,7 @@ def refresh(records: list[dict], out_path: Path, cycle: int = 2028,
                 fin[r["id"]] = tot
                 fetched += 1
                 break
-    out_path.write_text(json.dumps(fin, indent=2))
+    out_path.write_text(json.dumps(fin, indent=2), encoding="utf-8")
     log.info("money: %d/%d filer records have financials", fetched,
              sum(1 for r in records if r.get("fec_ids")))
     return fin
@@ -57,7 +57,7 @@ def attach(records: list[dict], fin_path: Path) -> int:
     if not fin_path.exists():
         return 0
     try:
-        fin = json.loads(fin_path.read_text())
+        fin = json.loads(fin_path.read_text(encoding="utf-8"))
     except (json.JSONDecodeError, OSError):
         return 0
     n = 0

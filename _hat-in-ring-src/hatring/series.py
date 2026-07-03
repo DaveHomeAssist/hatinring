@@ -33,7 +33,7 @@ def load_snapshots(path: Path) -> dict[str, list[dict]]:
     out: dict[str, list[dict]] = {}
     if not path.exists():
         return out
-    for line in path.read_text().splitlines():
+    for line in path.read_text(encoding="utf-8").splitlines():
         if not line.strip():
             continue
         try:
@@ -58,7 +58,7 @@ def record_snapshot(records: list[dict], today: date, path: Path) -> int:
     cutoff = (today - timedelta(days=RETAIN_DAYS)).isoformat()
     kept: list[dict] = []
     if path.exists():
-        for line in path.read_text().splitlines():
+        for line in path.read_text(encoding="utf-8").splitlines():
             if not line.strip():
                 continue
             try:
@@ -68,7 +68,7 @@ def record_snapshot(records: list[dict], today: date, path: Path) -> int:
             if row.get("d", "") >= cutoff:
                 kept.append(row)
     kept.extend(new_rows)
-    path.write_text("".join(json.dumps(r) + "\n" for r in kept))
+    path.write_text("".join(json.dumps(r) + "\n" for r in kept), encoding="utf-8")
     return len(new_rows)
 
 

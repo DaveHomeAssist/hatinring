@@ -66,7 +66,7 @@ def build_briefing(records: list[dict], review_count: int, today: date) -> dict:
 
 def write_briefing(brief: dict, data_dir: Path) -> Path:
     p = data_dir / "briefing.json"
-    p.write_text(json.dumps(brief, indent=2, ensure_ascii=False))
+    p.write_text(json.dumps(brief, indent=2, ensure_ascii=False), encoding="utf-8")
     return p
 
 
@@ -193,8 +193,8 @@ def write_share_assets(brief: dict, out_dir: Path) -> None:
     # share image per day. og:image points at the PNG (social can't render SVG).
     share = out_dir / "assets" / "share"
     share.mkdir(parents=True, exist_ok=True)
-    (out_dir / "share.html").write_text(render_share_html(brief))
-    share.joinpath("latest.svg").write_text(render_share_svg(brief))
+    (out_dir / "share.html").write_text(render_share_html(brief), encoding="utf-8")
+    share.joinpath("latest.svg").write_text(render_share_svg(brief), encoding="utf-8")
     try:
         render_share_png(brief, share / "latest.png")
     except Exception as e:                                  # noqa: BLE001 - PNG is best-effort
@@ -238,13 +238,13 @@ def record_feed_item(brief: dict, data_dir: Path) -> list[dict]:
     items = []
     if path.exists():
         try:
-            items = json.loads(path.read_text())
+            items = json.loads(path.read_text(encoding="utf-8"))
         except (json.JSONDecodeError, OSError):
             items = []
     it = feed_item(brief)
     items = [i for i in items if i.get("date") != it["date"]] + [it]
     items = sorted(items, key=lambda i: i.get("date", ""))[-30:]
-    path.write_text(json.dumps(items, indent=2, ensure_ascii=False))
+    path.write_text(json.dumps(items, indent=2, ensure_ascii=False), encoding="utf-8")
     return items
 
 
@@ -276,10 +276,10 @@ def write_feed(data_dir: Path, out_dir: Path) -> None:
     items = []
     if path.exists():
         try:
-            items = json.loads(path.read_text())
+            items = json.loads(path.read_text(encoding="utf-8"))
         except (json.JSONDecodeError, OSError):
             items = []
     (out_dir / "feed.xml").write_text(
-        render_feed(items, "https://hatinring.com/feed.xml"))
+        render_feed(items, "https://hatinring.com/feed.xml"), encoding="utf-8")
     (out_dir / "rss.xml").write_text(
-        render_feed(items, "https://hatinring.com/rss.xml"))
+        render_feed(items, "https://hatinring.com/rss.xml"), encoding="utf-8")

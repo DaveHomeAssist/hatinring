@@ -65,29 +65,29 @@ def test_offline_pipeline_full_run(tmp_path, monkeypatch):
     cand_path = data / "candidates.json"
     assert cand_path.exists(), "pipeline must write candidates.json"
     assert (data / "dashboard.html").exists(), "pipeline must render the dashboard"
-    html = (data / "dashboard.html").read_text()
+    html = (data / "dashboard.html").read_text(encoding="utf-8")
     assert "<html" in html.lower() and "data-dc-script" in html and "SEED =" in html
     assert (data / "feed.xml").exists(), "pipeline build must write RSS feed"
     # Both feed files are written (CI commits rss.xml by literal path); they are
     # identical except each carries its own <atom:link rel="self"> href.
-    feed_xml = (data / "feed.xml").read_text()
-    rss_xml = (data / "rss.xml").read_text()
+    feed_xml = (data / "feed.xml").read_text(encoding="utf-8")
+    rss_xml = (data / "rss.xml").read_text(encoding="utf-8")
     assert 'rel="self"' in feed_xml and "feed.xml" in feed_xml
     assert 'rel="self"' in rss_xml and "rss.xml" in rss_xml
     assert rss_xml.replace("hatinring.com/rss.xml", "hatinring.com/feed.xml") == feed_xml
     assert (data / "sitemap.xml").exists(), "pipeline build must write sitemap"
     assert any((data / "c" / r["id"] / "index.html").exists()
-               for r in json.loads((data / "seed.json").read_text())), \
+               for r in json.loads((data / "seed.json").read_text(encoding="utf-8"))), \
         "pipeline build must write per-candidate pages"
 
-    records = json.loads(cand_path.read_text())
+    records = json.loads(cand_path.read_text(encoding="utf-8"))
     by_id = {r["id"]: r for r in records}
 
     # The FEC fixture (TESTCANDIDATE, ALEX) is an unknown filer with a committee:
     # with fec_autocreate False (config default) it must NOT be auto-added to the
     # board but must land in the review queue.
     assert not any("testcandidate" in r["id"].lower() for r in records)
-    review = json.loads((data / "review_queue.json").read_text())
+    review = json.loads((data / "review_queue.json").read_text(encoding="utf-8"))
     assert any(r.get("source") == "FEC" for r in review), "FEC filer should be in review"
 
     # An off-watchlist name in the news fixture (John Kennedy) is a discovery item
@@ -98,7 +98,7 @@ def test_offline_pipeline_full_run(tmp_path, monkeypatch):
 def test_offline_pipeline_advances_a_tracked_person(tmp_path, monkeypatch):
     data = _isolated_env(tmp_path, monkeypatch)
     pipeline.main(_argv(data))
-    records = json.loads((data / "candidates.json").read_text())
+    records = json.loads((data / "candidates.json").read_text(encoding="utf-8"))
     by_id = {r["id"]: r for r in records}
 
     # Gallego's seed status is soft; the "seriously considering" AP fixture should
@@ -127,13 +127,13 @@ def _durable_state(records):
 def test_offline_pipeline_is_idempotent(tmp_path, monkeypatch):
     data = _isolated_env(tmp_path, monkeypatch)
     pipeline.main(_argv(data))
-    first = json.loads((data / "candidates.json").read_text())
-    audit_first = (data / "signals.jsonl").read_text().splitlines()
+    first = json.loads((data / "candidates.json").read_text(encoding="utf-8"))
+    audit_first = (data / "signals.jsonl").read_text(encoding="utf-8").splitlines()
 
     # Second identical run shares the audit log -> nothing new applies.
     pipeline.main(_argv(data))
-    second = json.loads((data / "candidates.json").read_text())
-    audit_second = (data / "signals.jsonl").read_text().splitlines()
+    second = json.loads((data / "candidates.json").read_text(encoding="utf-8"))
+    audit_second = (data / "signals.jsonl").read_text(encoding="utf-8").splitlines()
 
     # Durable record state must be byte-for-byte stable.
     assert _durable_state(first) == _durable_state(second), \

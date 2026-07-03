@@ -124,7 +124,7 @@ def test_one_dead_source_other_survives(data_sandbox, monkeypatch, caplog):
     monkeypatch.setattr(fecmod, "FecClient", _BoomFecClient)
 
     fx = P.ROOT / "tests" / "fixtures" / "news_items.json"
-    raw = json.loads(fx.read_text())
+    raw = json.loads(fx.read_text(encoding="utf-8"))
     monkeypatch.setattr(newsmod, "fetch_all",
                         lambda *a, **k: [newsmod.NewsItem(**r) for r in raw])
 
@@ -159,7 +159,7 @@ def test_offline_build_is_deterministic_recency(data_sandbox):
     out2 = data_sandbox / "d2.html"
     P.main(["--offline", "--build", "--out", str(out1), "--today", PINNED_TODAY])
     P.main(["--offline", "--build", "--out", str(out2), "--today", PINNED_TODAY])
-    h1, h2 = out1.read_text(), out2.read_text()
+    h1, h2 = out1.read_text(encoding="utf-8"), out2.read_text(encoding="utf-8")
     # The pinned recency anchor must appear identically in both renders.
     assert "2099-01-01T12:00:00" in h1
     assert "2099-01-01T12:00:00" in h2

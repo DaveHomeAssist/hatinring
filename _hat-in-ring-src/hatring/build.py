@@ -47,7 +47,7 @@ def _attach_source_urls(records: list[dict], data_dir: Path) -> None:
     if not audit.exists():
         return
     latest: dict[str, str] = {}
-    for line in audit.read_text().splitlines():
+    for line in audit.read_text(encoding="utf-8").splitlines():
         if not line.strip():
             continue
         try:
@@ -72,7 +72,7 @@ def _attach_images(records: list[dict], repo_root: Path) -> None:
     if not index_path.exists():
         return
     leads = {row["id"]: row["files"][0]
-             for row in json.loads(index_path.read_text())
+             for row in json.loads(index_path.read_text(encoding="utf-8"))
              if row.get("files")}
     for r in records:
         rel = leads.get(r.get("id"))
@@ -125,7 +125,7 @@ def render(candidates_path: Path, template_dir: Path, out_path: Path,
            built: date | None = None) -> Path:
     built = built or date.today()
     candidates_path = Path(candidates_path)
-    records = json.loads(candidates_path.read_text())
+    records = json.loads(candidates_path.read_text(encoding="utf-8"))
     # candidates.json lives in data/, so the repo root is its parent's parent.
     data_dir = candidates_path.parent
     repo_root = data_dir.parent
@@ -137,7 +137,7 @@ def render(candidates_path: Path, template_dir: Path, out_path: Path,
     # The review queue lives next to candidates.json; inline it so the dashboard's
     # review screen has data with no external fetch. Absent file -> empty queue.
     review_path = data_dir / "review_queue.json"
-    review = json.loads(review_path.read_text()) if review_path.exists() else []
+    review = json.loads(review_path.read_text(encoding="utf-8")) if review_path.exists() else []
     pending = [x for x in review if isinstance(x, dict)]
     # Briefing is recomputed at build so the page is always current (pipeline.run
     # also writes the committed data/briefing.json artifact).
@@ -179,8 +179,9 @@ def render(candidates_path: Path, template_dir: Path, out_path: Path,
         # bands at date-line offsets, diverging from the Python scoring engine.
         generated_at=json.dumps(built.isoformat() + "T12:00:00Z"),
         generated_at_human=datetime.now(timezone.utc).strftime("%b %d %Y %H:%M"),
-        as_of=built.strftime("%B %-d, %Y"),
-        as_of_json=json.dumps(built.strftime("%B %-d, %Y")),
+        # f-string day: strftime("%-d") is glibc-only and crashes on Windows
+        as_of=f"{built:%B} {built.day}, {built.year}",
+        as_of_json=json.dumps(f"{built:%B} {built.day}, {built.year}"),
         # Date-stamped og:image so social scrapers re-fetch the daily card
         # instead of serving a stale cached preview.
         canonical_url=CANONICAL_URL, page_desc=PAGE_DESC,
@@ -190,7 +191,7 @@ def render(candidates_path: Path, template_dir: Path, out_path: Path,
     )
     out_path = Path(out_path)
     out_path.parent.mkdir(parents=True, exist_ok=True)  # e.g. public/ for the Pages artifact
-    out_path.write_text(html)
+    out_path.write_text(html, encoding="utf-8")
     imgs = _copy_assets(records, repo_root, out_path.parent)  # stage portraits beside index.html
     brief.write_share_assets(briefing, out_path.parent)       # share.html + assets/share/*.svg
     npages = pages.render_candidate_pages(records, template_dir, out_path.parent,

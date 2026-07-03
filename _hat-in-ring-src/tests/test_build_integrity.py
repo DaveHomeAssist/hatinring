@@ -73,7 +73,7 @@ def _dataset(with_drop_fields: bool = True) -> list[dict]:
 
 def _write_dataset(tmp_path, recs) -> Path:
     p = tmp_path / "candidates.json"
-    p.write_text(json.dumps(recs, ensure_ascii=False))
+    p.write_text(json.dumps(recs, ensure_ascii=False), encoding="utf-8")
     return p
 
 
@@ -81,7 +81,7 @@ def _render(tmp_path, recs=None, built=BUILT, name="index.html") -> str:
     recs = _dataset() if recs is None else recs
     out = tmp_path / name
     render(_write_dataset(tmp_path, recs), TEMPLATES, out, built=built)
-    return out.read_text()
+    return out.read_text(encoding="utf-8")
 
 
 def _extract_js(html: str) -> str:
@@ -211,7 +211,7 @@ def test_embedded_js_syntax_valid(tmp_path):
     html = _render(tmp_path)
     js = _extract_js(html)
     js_file = tmp_path / "embedded.js"
-    js_file.write_text(js)
+    js_file.write_text(js, encoding="utf-8")
     res = subprocess.run(
         [shutil.which("node"), "--check", str(js_file)],
         capture_output=True, text=True, timeout=60,
@@ -239,7 +239,7 @@ def _render_with_now(tmp_path, fixed_now, name):
     with mock.patch.object(buildmod, "datetime", fdt):
         out = tmp_path / name
         render(_write_dataset(tmp_path, _dataset()), TEMPLATES, out, built=BUILT)
-        return out.read_text()
+        return out.read_text(encoding="utf-8")
 
 
 def test_rebuild_byte_stable_except_human_timestamp(tmp_path):

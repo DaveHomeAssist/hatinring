@@ -50,7 +50,7 @@ def test_dashboard_smoke_catches_a_broken_build(tmp_path):
     """
     out = tmp_path / "index.html"
     render(ROOT / "data" / "seed.json", ROOT / "templates", out, built=date(2026, 6, 13))
-    html = out.read_text()
+    html = out.read_text(encoding="utf-8")
     # Corrupt the generated model in a way the harness must catch.
     broken, n = re.subn(
         r"filteredField\(\)\{",
@@ -59,7 +59,7 @@ def test_dashboard_smoke_catches_a_broken_build(tmp_path):
     )
     assert n == 1, "expected to find filteredField() to corrupt"
     bad = tmp_path / "broken.html"
-    bad.write_text(broken)
+    bad.write_text(broken, encoding="utf-8")
 
     res = subprocess.run(
         ["node", str(SMOKE), str(bad)],

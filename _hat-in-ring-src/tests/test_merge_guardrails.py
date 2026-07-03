@@ -89,7 +89,7 @@ def test_idempotent_audit_log_no_duplicate_sids(audit):
     sids_after_2 = _load_jsonl(audit)
     # the set of sids is unchanged; no duplicate key written
     assert sids_after_1 == sids_after_2
-    lines = [l for l in audit.read_text().splitlines() if l.strip()]
+    lines = [l for l in audit.read_text(encoding="utf-8").splitlines() if l.strip()]
     assert len(lines) == len(sids_after_2), "duplicate sid rows appended on rerun"
 
 

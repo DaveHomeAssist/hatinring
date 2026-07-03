@@ -62,7 +62,7 @@ def _load(name):
     p = DATA / name
     if not p.exists():
         pytest.skip(f"{name} not present")
-    return json.loads(p.read_text()), p
+    return json.loads(p.read_text(encoding="utf-8")), p
 
 
 def _records(name):
@@ -178,7 +178,7 @@ def test_signals_jsonl_shape():
     if not p.exists():
         pytest.skip("signals.jsonl not present")
     sids = []
-    for i, line in enumerate(p.read_text().splitlines(), 1):
+    for i, line in enumerate(p.read_text(encoding="utf-8").splitlines(), 1):
         if not line.strip():
             continue
         r = json.loads(line)  # each line must parse

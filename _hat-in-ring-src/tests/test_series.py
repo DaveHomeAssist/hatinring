@@ -22,7 +22,7 @@ def test_record_snapshot_idempotent_per_date(tmp_path):
     recs = [_rec("a", ["consideringQuote"], "2026-06-10")]
     assert series.record_snapshot(recs, TODAY, p) == 1
     assert series.record_snapshot(recs, TODAY, p) == 0      # same date -> no dup
-    rows = [json.loads(l) for l in p.read_text().splitlines() if l.strip()]
+    rows = [json.loads(l) for l in p.read_text(encoding="utf-8").splitlines() if l.strip()]
     assert len(rows) == 1 and rows[0]["id"] == "a" and rows[0]["d"] == TODAY.isoformat()
     assert isinstance(rows[0]["s"], int) and isinstance(rows[0]["t"], int)
 
@@ -48,7 +48,7 @@ def test_slope_zero_without_history(tmp_path):
 
 def test_slope_positive_when_momentum_rose(tmp_path):
     p = tmp_path / "snap.jsonl"
-    p.write_text(json.dumps({"d": "2026-06-01", "id": "a", "s": 10, "t": 2}) + "\n")
+    p.write_text(json.dumps({"d": "2026-06-01", "id": "a", "s": 10, "t": 2}) + "\n", encoding="utf-8")
     recs = [_rec("a", ["consideringQuote", "earlyState", "donors", "staffing", "mediaBlitz"],
                  "2026-06-14")]
     series.attach(recs, TODAY, p)     # today's point ~60 vs the seeded 10
@@ -59,7 +59,7 @@ def test_no_payload_blowup_downsamples(tmp_path):
     p = tmp_path / "snap.jsonl"
     rows = [json.dumps({"d": (date(2026, 1, 1) + timedelta(days=i)).isoformat(),
                         "id": "a", "s": i % 100, "t": 2}) for i in range(120)]
-    p.write_text("\n".join(rows) + "\n")
+    p.write_text("\n".join(rows) + "\n", encoding="utf-8")
     recs = [_rec("a", ["donors"], "2026-06-14")]
     series.attach(recs, TODAY, p)
     assert len(recs[0]["series"]) <= series.MAX_POINTS    # bounded regardless of input size
@@ -67,9 +67,9 @@ def test_no_payload_blowup_downsamples(tmp_path):
 
 def test_record_snapshot_prunes_old_rows(tmp_path):
     p = tmp_path / "snap.jsonl"
-    p.write_text(json.dumps({"d": "2025-01-01", "id": "a", "s": 5, "t": 1}) + "\n")
+    p.write_text(json.dumps({"d": "2025-01-01", "id": "a", "s": 5, "t": 1}) + "\n", encoding="utf-8")
     recs = [_rec("a", ["donors"], "2026-06-14")]
     series.record_snapshot(recs, TODAY, p)
     cutoff = (TODAY - timedelta(days=series.RETAIN_DAYS)).isoformat()
-    rows = [json.loads(l) for l in p.read_text().splitlines() if l.strip()]
+    rows = [json.loads(l) for l in p.read_text(encoding="utf-8").splitlines() if l.strip()]
     assert rows and all(r["d"] >= cutoff for r in rows)   # ancient row dropped

@@ -50,6 +50,10 @@
     @keyframes hir-sweep{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
     @keyframes hir-pulse{0%,100%{opacity:.55}50%{opacity:1}}
   }
+  /* reduced motion: a non-rotating sweep is just a frozen gradient cone — hide it; pulse dots simply stop */
+  @media (prefers-reduced-motion: reduce){
+    [style*="hir-sweep"]{display:none}
+  }
   @keyframes hir-fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
   :focus-visible{outline:2px solid #3F6FB5;outline-offset:2px}
   .hir-scroll::-webkit-scrollbar{width:9px;height:9px}

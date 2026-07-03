@@ -42,14 +42,14 @@ log = logging.getLogger("hatring")
 
 
 def _load_config() -> dict:
-    return yaml.safe_load((ROOT / "config.yaml").read_text())
+    return yaml.safe_load((ROOT / "config.yaml").read_text(encoding="utf-8"))
 
 
 def _load_dataset(cfg) -> list[dict]:
     cand = DATA / "candidates.json"
     seed = DATA / "seed.json"
     src = cand if cand.exists() else seed
-    return json.loads(src.read_text())
+    return json.loads(src.read_text(encoding="utf-8"))
 
 
 def _attach_watchlist_fec_ids(records, cfg):
@@ -70,7 +70,7 @@ def _safe_load(path, default, want_type):
     if not path.exists():
         return default
     try:
-        val = json.loads(path.read_text())
+        val = json.loads(path.read_text(encoding="utf-8"))
     except (json.JSONDecodeError, OSError) as e:
         log.warning("review: %s is unreadable (%s); treating as empty", path.name, e)
         return default
@@ -92,7 +92,7 @@ def _freshness_payload(today: date) -> dict:
 def write_freshness(today: date) -> Path:
     DATA.mkdir(exist_ok=True)
     out = DATA / "freshness.json"
-    out.write_text(json.dumps(_freshness_payload(today), indent=2) + "\n")
+    out.write_text(json.dumps(_freshness_payload(today), indent=2) + "\n", encoding="utf-8")
     return out
 
 
@@ -102,7 +102,7 @@ def _attach_ios_images(records: list[dict]) -> None:
         log.warning("ios: candidate image index missing; synced data will not include portraits")
         return
     try:
-        index = json.loads(ASSET_INDEX.read_text())
+        index = json.loads(ASSET_INDEX.read_text(encoding="utf-8"))
     except (json.JSONDecodeError, OSError) as e:
         log.warning("ios: candidate image index unreadable (%s); synced data will not include portraits", e)
         return
@@ -144,9 +144,9 @@ def sync_ios_bundle(today: date, ios_data_dir: Path | None = None, include_asset
         raise FileNotFoundError(f"cannot sync iOS bundle; missing data files: {', '.join(missing)}")
 
     freshness = write_freshness(today)
-    candidates = json.loads((DATA / "candidates.json").read_text())
+    candidates = json.loads((DATA / "candidates.json").read_text(encoding="utf-8"))
     _attach_ios_images(candidates)
-    (target / "candidates.json").write_text(json.dumps(candidates, indent=2, ensure_ascii=False))
+    (target / "candidates.json").write_text(json.dumps(candidates, indent=2, ensure_ascii=False), encoding="utf-8")
     _copy_ios_referenced_images(candidates, target)
     shutil.copy2(DATA / "review_queue.json", target / "review_queue.json")
     shutil.copy2(freshness, target / "freshness.json")
@@ -220,12 +220,12 @@ def reconcile_review(ds, today) -> bool:
         union.pop(rid, None)
 
     DATA.mkdir(exist_ok=True)
-    qpath.write_text(json.dumps(list(union.values()), indent=2, ensure_ascii=False))
-    rpath.write_text(json.dumps(sorted(resolved), indent=2))
+    qpath.write_text(json.dumps(list(union.values()), indent=2, ensure_ascii=False), encoding="utf-8")
+    rpath.write_text(json.dumps(sorted(resolved), indent=2), encoding="utf-8")
     # M4: decisions are single-use — empty the inbox once consumed so a stale committed
     # "confirm" can't silently re-fire on a future item that reuses the same content rid.
     if consumed:
-        dpath.write_text("[]\n")
+        dpath.write_text("[]\n", encoding="utf-8")
     log.info("review: %d queued, %d resolved (total)", len(union), len(resolved))
     return mutated
 
@@ -249,10 +249,10 @@ def run(args):
     if args.offline:
         fx = Path(args.fixtures)
         if (args.fec or args.all) and (fx / "fec_signals.json").exists():
-            raw = json.loads((fx / "fec_signals.json").read_text())
+            raw = json.loads((fx / "fec_signals.json").read_text(encoding="utf-8"))
             fec_signals = [fecmod.FecSignal(**r) for r in raw]
         if (args.news or args.all) and (fx / "news_items.json").exists():
-            raw = json.loads((fx / "news_items.json").read_text())
+            raw = json.loads((fx / "news_items.json").read_text(encoding="utf-8"))
             news_items = [newsmod.NewsItem(**r) for r in raw]
     else:
         if args.fec or args.all:
@@ -284,7 +284,7 @@ def run(args):
             dataset_dirty = True
         DATA.mkdir(exist_ok=True)
         if dataset_dirty or not (DATA / "candidates.json").exists():
-            (DATA / "candidates.json").write_text(json.dumps(ds.records, indent=2, ensure_ascii=False))
+            (DATA / "candidates.json").write_text(json.dumps(ds.records, indent=2, ensure_ascii=False), encoding="utf-8")
             log.info("dataset: %d records written", len(ds.records))
         else:
             log.info("dataset unchanged")

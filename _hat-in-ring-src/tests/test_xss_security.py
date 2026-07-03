@@ -47,10 +47,10 @@ HOSTILE = [{
 
 def _render_hostile(tmp_path) -> str:
     cj = tmp_path / "candidates.json"
-    cj.write_text(json.dumps(HOSTILE))
+    cj.write_text(json.dumps(HOSTILE), encoding="utf-8")
     out = tmp_path / "index.html"
     render(cj, ROOT / "templates", out, built=date(2026, 6, 13))
-    return out.read_text()
+    return out.read_text(encoding="utf-8")
 
 
 def test_seed_has_no_script_breakout(tmp_path):
@@ -74,7 +74,7 @@ def test_h1_render_escapes_hostile_fields(tmp_path):
     still renders. The DC runtime uses React text interpolation for the DOM sink.
     """
     cj = tmp_path / "candidates.json"
-    cj.write_text(json.dumps(HOSTILE))
+    cj.write_text(json.dumps(HOSTILE), encoding="utf-8")
     out = tmp_path / "index.html"
     render(cj, ROOT / "templates", out, built=date(2026, 6, 13))
     res = subprocess.run(["node", str(RENDER_CHECK), str(out)], capture_output=True, text=True, timeout=60)
@@ -86,7 +86,7 @@ def test_h1_render_escapes_hostile_fields(tmp_path):
 def test_hostile_dashboard_still_parses_and_renders(tmp_path):
     """The escaped build must remain valid JS and render the (single) record."""
     cj = tmp_path / "candidates.json"
-    cj.write_text(json.dumps(HOSTILE))
+    cj.write_text(json.dumps(HOSTILE), encoding="utf-8")
     out = tmp_path / "index.html"
     render(cj, ROOT / "templates", out, built=date(2026, 6, 13))
     res = subprocess.run(["node", str(SMOKE), str(out)], capture_output=True, text=True, timeout=60)
