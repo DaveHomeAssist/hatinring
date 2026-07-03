@@ -60,8 +60,10 @@ and news. Thesis: a *defensible, sourced* signal board, not a rumor list.
 
 **Record:** `id, name, party, role, bucket, keys[], conf, delta, lastSignal,
 headline, why, quote, tags[]` (+ optional `pollLead, fec_ids, history,
-early_states, img`). **Derived at build, not persisted:** `series, slope7,
-slope30, money`. `history` and `fec_ids` are dropped from the public payload.
+early_states, img, links` — `links.wikipedia` is a verified same-entity URL,
+surfaced as Person `sameAs` JSON-LD and a visible link on candidate pages).
+**Derived at build, not persisted:** `series, slope7, slope30, money`.
+`history` and `fec_ids` are dropped from the public payload.
 
 ## Scoring model (two axes — `scoring.py` ⇄ mirrored in template JS)
 - **Status tier** (categorical, highest declarative signal wins, *no stacking*):
