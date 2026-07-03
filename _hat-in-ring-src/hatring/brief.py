@@ -100,6 +100,8 @@ def render_share_svg(brief: dict) -> str:
 
 
 def render_share_html(brief: dict) -> str:
+    desc = "Daily Hat-in-Ring Radar briefing for 2028 presidential campaign signal movement."
+    title = f'Hat-in-Ring Radar — {_esc(brief.get("date",""))} briefing'
     items = "".join(
         f'<li><span>{_esc(m["name"])}</span>'
         f'<b class="{"up" if m["delta"]>0 else "dn" if m["delta"]<0 else "fl"}">'
@@ -107,8 +109,20 @@ def render_share_html(brief: dict) -> str:
         for m in brief.get("movers", [])[:6]) or "<li>No movement today.</li>"
     return f'''<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Hat-in-Ring Radar — {_esc(brief.get("date",""))} briefing</title>
+<title>{title}</title>
+<meta name="description" content="{desc}">
+<link rel="canonical" href="https://hatinring.com/share.html">
 <meta name="robots" content="noindex">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Hat-in-Ring Radar">
+<meta property="og:title" content="{title}">
+<meta property="og:description" content="{desc}">
+<meta property="og:url" content="https://hatinring.com/share.html">
+<meta property="og:image" content="https://hatinring.com/assets/share/latest.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{title}">
+<meta name="twitter:description" content="{desc}">
+<meta name="twitter:image" content="https://hatinring.com/assets/share/latest.png">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <style>body{{margin:0;background:#0f1115;color:#f4efe7;font-family:-apple-system,Segoe UI,Arial,sans-serif;display:grid;place-items:center;min-height:100vh}}
 .card{{width:min(640px,92vw);border:1px solid #2a2d33;border-radius:16px;padding:28px;background:#15171c}}
