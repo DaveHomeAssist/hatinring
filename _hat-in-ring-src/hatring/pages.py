@@ -182,7 +182,10 @@ def _related(e: dict, enriched: list[dict], k: int = 4) -> list[dict]:
 
 
 def render_candidate_pages(records: list[dict], template_dir: Path, out_dir: Path,
-                           built: date, canonical_base: str, og_default: str) -> int:
+                           built: date, canonical_base: str, og_default: str,
+                           vs_links: dict[str, list[dict]] | None = None) -> int:
+    """`vs_links` (optional): id -> [{slug, other_name}] from versus.render_vs_pages;
+    when a candidate has entries, the page grows a "Head-to-head" nav to /vs/<slug>/."""
     env = Environment(loader=FileSystemLoader(str(template_dir)), autoescape=True)
     tmpl = env.get_template("candidate.html.j2")
     as_of = f"{built:%B} {built.day}, {built.year}"  # %-d is glibc-only
@@ -244,6 +247,8 @@ def render_candidate_pages(records: list[dict], template_dir: Path, out_dir: Pat
             og_image=(canonical_base + r["img"]) if r.get("img") else og_default,
             person_jsonld=person_jsonld, breadcrumbs_jsonld=breadcrumbs_jsonld,
             related=_related(e, all_enriched),
+            vs_nav=(vs_links or {}).get(cid) or [],
+            wiki=_safe_url(wiki),   # visible "Wikipedia ↗" link (scheme-checked)
             spark=_sparkline(r.get("series"), built),
             evidence=r.get("evidence") or [],
             early_list=early_list, money_fmt=money_fmt,
@@ -257,9 +262,12 @@ def render_candidate_pages(records: list[dict], template_dir: Path, out_dir: Pat
 
 
 def build_sitemap(records: list[dict], out_dir: Path, canonical_base: str,
-                  built: date | None = None) -> None:
+                  built: date | None = None,
+                  extra_urls: list[tuple[str, str]] | None = None) -> None:
     # <lastmod> in W3C date form: build date for the daily-rebuilt home/about,
     # each record's lastSignal (fallback: build date) for its /c/<id>/ page.
+    # extra_urls: pre-built (loc, lastmod) rows (e.g. /vs/ pages) appended after
+    # the candidate pages; existing callers are untouched.
     build_day = (built or date.today()).isoformat()
     rows = [(canonical_base, "daily", "1.0", build_day),
             (canonical_base + "about.html", "monthly", "0.7", build_day)]
@@ -267,6 +275,8 @@ def build_sitemap(records: list[dict], out_dir: Path, canonical_base: str,
         ls = _to_date(r.get("lastSignal"))
         rows.append((f"{canonical_base}c/{r['id']}/", "weekly", "0.8",
                      ls.isoformat() if ls else build_day))
+    for loc, lastmod in (extra_urls or []):
+        rows.append((loc, "weekly", "0.6", lastmod))
     body = "\n".join(
         f'  <url><loc>{loc}</loc><lastmod>{lm}</lastmod>'
         f'<changefreq>{cf}</changefreq><priority>{pr}</priority></url>'

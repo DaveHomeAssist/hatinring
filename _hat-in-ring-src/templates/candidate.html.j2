@@ -80,7 +80,7 @@
     {% if c.img %}<img src="/{{ c.img }}" alt="{{ c.name }}">{% endif %}
     <div>
       <h1>{{ c.name }}</h1>
-      <div class="role">{{ c.role }} · <span style="color:{{ party_color }};font-weight:600">{{ c.party }}</span>{% if c.pollLead %} · <span class="muted">★ {{ c.pollLead }}</span>{% endif %}</div>
+      <div class="role">{{ c.role }} · <span style="color:{{ party_color }};font-weight:600">{{ c.party }}</span>{% if c.pollLead %} · <span class="muted">★ {{ c.pollLead }}</span>{% endif %}{% if wiki %} · <a href="{{ wiki }}" target="_blank" rel="noopener" style="white-space:nowrap">Wikipedia ↗</a>{% endif %}</div>
       <div class="axisrow">
         <div class="axis"><div class="l">Status tier</div><span class="tier" style="background:{{ tier_color }}">{{ c.statusLabel }}</span></div>
         <div class="axis"><div class="l">Momentum (0–100)</div><span class="score" style="color:{{ tier_color }}">{{ c.score }}</span></div>
@@ -155,6 +155,13 @@
   <nav aria-label="Related candidates">
     <h2>Compare with</h2>
     <p>{% for o in related %}<a href="/c/{{ o.id }}/">{{ o.name }}</a> <span class="muted">({{ o.statusLabel }})</span>{% if not loop.last %} · {% endif %}{% endfor %}</p>
+  </nav>
+  {% endif %}
+
+  {% if vs_nav %}
+  <nav aria-label="Head-to-head comparisons">
+    <h2>Head-to-head</h2>
+    <p>{% for v in vs_nav %}<a href="/vs/{{ v.slug }}/">vs {{ v.other_name }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</p>
   </nav>
   {% endif %}
 

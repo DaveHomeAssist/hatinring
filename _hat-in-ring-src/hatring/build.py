@@ -13,7 +13,7 @@ from datetime import date, datetime, timezone
 from pathlib import Path
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
-from . import series, money, geo, brief, pages
+from . import series, money, geo, brief, pages, versus
 from .scoring import enrich
 
 log = logging.getLogger("hatring.build")
@@ -194,10 +194,20 @@ def render(candidates_path: Path, template_dir: Path, out_path: Path,
     out_path.write_text(html, encoding="utf-8")
     imgs = _copy_assets(records, repo_root, out_path.parent)  # stage portraits beside index.html
     brief.write_share_assets(briefing, out_path.parent)       # share.html + assets/share/*.svg
+    # /vs/<a>-vs-<b>/ head-to-head pages; rendered first because the candidate
+    # pages' "Head-to-head" nav is computed from the returned pair list.
+    vs_pages = versus.render_vs_pages(records, template_dir, out_path.parent,
+                                      built, CANONICAL_URL, OG_IMAGE)
+    vs_links: dict[str, list[dict]] = {}
+    for p in vs_pages:
+        vs_links.setdefault(p["a_id"], []).append({"slug": p["slug"], "other_name": p["b_name"]})
+        vs_links.setdefault(p["b_id"], []).append({"slug": p["slug"], "other_name": p["a_name"]})
     npages = pages.render_candidate_pages(records, template_dir, out_path.parent,
-                                          built, CANONICAL_URL, OG_IMAGE)  # /c/<id>/
-    pages.build_sitemap(records, out_path.parent, CANONICAL_URL)          # sitemap incl. all pages
+                                          built, CANONICAL_URL, OG_IMAGE,
+                                          vs_links=vs_links)  # /c/<id>/
+    pages.build_sitemap(records, out_path.parent, CANONICAL_URL,          # sitemap incl. all pages
+                        extra_urls=[(p["url"], p["lastmod"]) for p in vs_pages])
     brief.write_feed(data_dir, out_path.parent)   # /feed.xml from data/feed_items.json (read-only)
-    log.info("build: wrote %s (%d records, %d imgs, %d pages, %d bytes)",
-             out_path, len(records), imgs, npages, len(html))
+    log.info("build: wrote %s (%d records, %d imgs, %d pages, %d vs pages, %d bytes)",
+             out_path, len(records), imgs, npages, len(vs_pages), len(html))
     return out_path
