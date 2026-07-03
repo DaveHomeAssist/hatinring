@@ -18,6 +18,9 @@
       "FEC",
       "declared"
     ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Dan_Greaney"
+    },
     "img": "assets/candidates/greaney/01_dan_greaney_campaign_jpg.jpg"
   },
   {
@@ -39,6 +42,9 @@
     "tags": [
       "exploratory"
     ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Gregory_Bovino"
+    },
     "img": "assets/candidates/bovino/01_2026_border_patrol_chief_greg_bovino_in_minneapoli.jpg"
   },
   {
@@ -61,6 +67,9 @@
       "exploratory",
       "Libertarian"
     ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Jo_Jorgensen"
+    },
     "img": "assets/candidates/jorgensen/01_jo_jorgensen_portrait_3_jpg.jpg"
   },
   {
@@ -88,6 +97,9 @@
       "frontrunner",
       "CNBC"
     ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Gavin_Newsom"
+    },
     "img": "assets/candidates/newsom/01_governor_of_california_gavin_newsom_cropped_3x4_jp.jpg"
   },
   {
@@ -144,6 +156,9 @@
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOWC1nUFZGeGZwTFkwVnQ4YURoanlwVTZ1QXhsLUctU1pORm9vLVFiT3RGVzYyaVdaRXRPWjBjeVFBQTZvTS0xaUJKc3FwblZ5Wm02UEJ6ek84NUlwTl9fRXk0Wmd3ckVNRlVhUjQ3Y3BvcWp2ME5ZSGV6QWdEaTI3Z3F2XzhaTDNUYVNCT20wVk0xUDhjN1BXSVBCOA?oc=5",
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Kamala_Harris"
+    },
     "img": "assets/candidates/harris/01_kamala_harris_vice_presidential_portrait_jpg.jpg"
   },
   {
@@ -166,6 +181,9 @@
     "tags": [
       "senate"
     ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Cory_Booker"
+    },
     "img": "assets/candidates/booker/01_cory_booker_official_portrait_119th_congress_jpg.jpg"
   },
   {
@@ -239,6 +257,9 @@
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMie0FVX3lxTFA5NWJYXzduV2tzMmtfN0pubWNaeW8zSTlZS3lUaXgtRVlCWHA4YWhRaEpHaXRlR0xrRVNfT092TmQ5WFc3dDNwV2ZFeElMYlR3MHNidk9EeWNZQlF6OEFSbm5HNElMMWptQ2lONlR3dkJOdDQ3OC1mX19WVdIBe0FVX3lxTE9JYks2ZlkycUdTelltcHc0ZDdCejRFMzlEbHFsVF9jdzYyWEM1SFN2ZWlzWGtyM1NkcGRYRUlfaGV4c1pDNFhzZHVma1Q3SWJCNmJRSkl6VDMwVTlRMVdFSjBJQkFjQkV3Y1BaYVJzZFZDRWxqWU12MzRGWQ?oc=5",
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Andy_Beshear"
+    },
     "img": "assets/candidates/beshear/01_andy_beshear_in_april_2026_cropped_jpg.jpg"
   },
   {
@@ -283,6 +304,9 @@
         "reason": "Trump’s call for Mark Kelly’s execution may have launched his campaign for president - Arizona Mirror"
       }
     ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Mark_Kelly"
+    },
     "img": "assets/candidates/kelly/01_sen_mark_kelly_d_az_official_portrait_119th_congre.jpg"
   },
   {
@@ -332,6 +356,9 @@
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOZ0VEa0ZfNXAxVkhXRGVWT3N5Njl5cXAxLTVUQVp4QUVoMi1yaTdDeVdHUGdBNWJzalJtMDBvRmMzVWZYc0hTSnRqZk9QUGdzRl9RbEllU0YyNnRYa05GeXVtbFlrSU1fLVNFdDdVdkJkaG0yZnY2LXRicnpzZ1EtMXUtazdDamZTOGJRZjIzWGhTNXFiX0dVVEtIRWxUTjRsbnh5VmJTeFJVcGdWY3BF?oc=5",
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Ro_Khanna"
+    },
     "img": "assets/candidates/khanna/01_ro_khanna_official_portrait_115th_congress_3x4_jpg.jpg"
   },
   {
@@ -355,6 +382,9 @@
       "senate",
       "upgrade"
     ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Ruben_Gallego"
+    },
     "img": "assets/candidates/gallego/01_senator_ruben_gallego_official_portrait_jpg.jpg"
   },
   {
@@ -379,6 +409,9 @@
       "self-fund",
       "Chicago Sun-Times"
     ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/JB_Pritzker"
+    },
     "img": "assets/candidates/pritzker/01_governor_jb_pritzker_official_portrait_2019_crop_j.jpg"
   },
   {
@@ -466,6 +499,9 @@
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBIZUNhRGlYcXlNU05qYVhBa056VnJwdkxuNkRjSEZBZy1PWEhGMXFXMm8zM1FjeGVoTHBFSllIWkwwZi1YOGZ0ODF2RnFXSjFKUnpZd3FqZk9lMlBHREEzS2k2QTdoMzJ4OWs3MWNsM1Q3QXdta2lUVnh0NDhraFk?oc=5",
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Rahm_Emanuel"
+    },
     "img": "assets/candidates/emanuel/01_ambassador_emanuel_portrait_jpg.jpg"
   },
   {
@@ -486,6 +522,9 @@
     "tags": [
       "governor lane"
     ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Josh_Green_(politician)"
+    },
     "img": "assets/candidates/green/01_lieutenant_governor_of_hawaii_josh_green_jpg.jpg"
   },
   {
@@ -515,6 +554,9 @@
         "reason": "Mitch Landrieu launches surprise 2028 presidential bid in New Orleans - mezha.net"
       }
     ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Mitch_Landrieu"
+    },
     "img": "assets/candidates/landrieu/01_mitch_landrieu_52801339981_cropped_jpg.jpg"
   },
   {
@@ -567,6 +609,9 @@
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOSkRuMktZcnpCQlc4d3dVQkxWT2sxRllQbTJPdEY2Ny1RSnJYckRKWDIzLUYwdjhKMktYYlJNcnAzMlU1NEc1Y3ZUODJZMjdYLXBNb295bWptV3dJci1WSGxmVDhnWGkyWTZDM2F6dUllUFBYZko2Y0t2S3JmaDhkMHNkcFRrVmd6UXg1WGJtdTBPalpqZ2RQamxhMDZnQmhxYVJVS0hB?oc=5",
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Elissa_Slotkin"
+    },
     "img": "assets/candidates/slotkin/01_elissa_slotkin_2026_official_portrait_cropped_jpg.jpg"
   },
   {
@@ -597,6 +642,9 @@
     "early_states_last": {
       "IA": "2026-05-02"
     },
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Ted_Cruz"
+    },
     "img": "assets/candidates/cruz/01_ted_cruz_official_116th_portrait_3x4_cropped_jpg.jpg"
   },
   {
@@ -621,6 +669,9 @@
       "governor lane",
       "retread"
     ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Ron_DeSantis"
+    },
     "img": "assets/candidates/desantis/01_ron_desantis_official_photo_jpg.jpg"
   },
   {
@@ -653,6 +704,9 @@
         "conf": "Low"
       }
     ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Rand_Paul"
+    },
     "img": "assets/candidates/paul/01_rand_paul_portrait_jpg.jpg"
   },
   {
@@ -675,6 +729,9 @@
       "admin",
       "MAGA"
     ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Tulsi_Gabbard"
+    },
     "img": "assets/candidates/gabbard/01_director_tulsi_gabbard_official_portrait_jpg.jpg"
   },
   {
@@ -695,6 +752,9 @@
     "tags": [
       "centrist"
     ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Don_Bacon"
+    },
     "img": "assets/candidates/bacon/01_bacon_don_119th_congress_3x4_cropped_b_jpg.jpg"
   },
   {
@@ -729,6 +789,9 @@
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQdVh5eVlyQ2ZuZzFvMXdDNHVFU04ya3Z0NnBjZkhqZ2N6SUc2d0I2RWhlOG5hdTVET3U0c3lodDBoNmdxVDB3eU9zTzA5RWx6QmIyeXNlMXlGaHJocG1iNlNsbmNBNkt2bmZLNFZyU1owLVAtaW50ZEZJU2RTZmRVcjE3NzBuaFNYNzNzc2RpTDdnejlXWldPU1NXMVpaVEpXb2hQeE1NVkJJam8zanpvMVdqVDVFMW1RQzV6eERMX2JoN25SYzZfVk1xWUdfUkMwNjJjMEhSblNlb3J1TU80b1pvQ1JxUk9lWEd2SVBGd9IB7wFBVV95cUxQdVh5eVlyQ2ZuZzFvMXdDNHVFU04ya3Z0NnBjZkhqZ2N6SUc2d0I2RWhlOG5hdTVET3U0c3lodDBoNmdxVDB3eU9zTzA5RWx6QmIyeXNlMXlGaHJocG1iNlNsbmNBNkt2bmZLNFZyU1owLVAtaW50ZEZJU2RTZmRVcjE3NzBuaFNYNzNzc2RpTDdnejlXWldPU1NXMVpaVEpXb2hQeE1NVkJJam8zanpvMVdqVDVFMW1RQzV6eERMX2JoN25SYzZfVk1xWUdfUkMwNjJjMEhSblNlb3J1TU80b1pvQ1JxUk9lWEd2SVBGdw?oc=5",
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Don_Lemon"
+    },
     "img": "assets/candidates/lemon/01_don_lemon_at_the_2018_pulitzer_prizes_jpg.jpg"
   },
   {
@@ -754,6 +817,9 @@
       "polls-high",
       "NBC News"
     ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Pete_Buttigieg"
+    },
     "img": "assets/candidates/buttigieg/01_pete_buttigieg_secretary_of_transportation_jpg.jpg"
   },
   {
@@ -789,6 +855,9 @@
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMilwFBVV95cUxORC1xTjUya3dieWxVWVl0UEVLNDJhTWIta3g4eWtDQ1BoRzV4cWxLN09UakZuckxYcVR6T1YtOTgwN3pDbFV5OG9uM0lkM21Eb0l4Z1VqWXlGZlZqSUdJMnJVWUltQWpqWXVDa21PeG1oRlVmVFpKcHZlOGQtSDVHXzNtMUxLNFlBREdmMWl1VUxhTno2c0I40gGcAUFVX3lxTE90MU84ZmNuRllEMWdFZV9wd3B4UXhDUnN5aXBLS240YnFTeTZBSGYzc3A0SG95RE83a0IzQ29mRGQ4RkE4ZE82WERHNmlWaFVrUWNQdTdFd3g4ZlMwa1R3TEZCMGZMNG1HNlNmdzlVS3N4T2t6VFdXbWJpZmZFUWdydDB3WUFlVFZsTGNmVXdGTHRhblZWaTJya0hrbQ?oc=5",
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Alexandria_Ocasio-Cortez"
+    },
     "img": "assets/candidates/aoc/01_alexandria_ocasio_cortez_official_portrait_jpg.jpg"
   },
   {
@@ -811,6 +880,9 @@
       "swing-state",
       "CNN"
     ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Josh_Shapiro"
+    },
     "img": "assets/candidates/shapiro/01_josh_shapiro_december_2025_jpg.jpg"
   },
   {
@@ -831,6 +903,9 @@
     "tags": [
       "long-shot"
     ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Phil_Murphy"
+    },
     "img": "assets/candidates/murphy/01_gov_phil_murphy_jpg.jpg"
   },
   {
@@ -861,6 +936,9 @@
         "reason": "Andrew Yang launches mobile network to combat phone addiction, talks shutdown and 2028 Democratic primary - ABC7 Bay Area"
       }
     ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Andrew_Yang"
+    },
     "img": "assets/candidates/yang/01_andrew_yang_november_2023_jpg.jpg"
   },
   {
@@ -882,6 +960,9 @@
       "celebrity",
       "Libertarian"
     ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Afroman"
+    },
     "img": "assets/candidates/afroman/01_afroman_2026_cropped_jpg.jpg"
   },
   {
@@ -944,6 +1025,9 @@
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNa0pxU2JYMXlURGVLZUJTb3NCV215ZVR2QjVkbmZ4SFphN1VEdzFyUlJLLXlXS2ZNRU4tNWI0RnhmZ3J0OEd2VGd2M0JCLTZNZExzNHhrUU1NYzJrZTZsWGc1RjlGZHpwZ1FmWlJrMzJnSDZVTFVuUWJCSVgzN3BHMDRyNEFyWEY0dU1WX1d3RlpJUHJNQ2wyZkdMY3dPWXdOempDakRSM0YwX2VvN2N6TEZWd1dieEViNTBrLS1tMkl2VFRlb01fUV8yd1JJbXJtRzgxYUlDeVJqQkE?oc=5",
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/JD_Vance"
+    },
     "img": "assets/candidates/vance/01_march_2026_official_vice_presidential_portrait_of_.jpg"
   },
   {
@@ -987,6 +1071,9 @@
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPQ3BnQWJ1SkFvaDZIMXoxZGlwWkxacGhNd3dCSnZVQXJ5Wml3Mm53SlVTaTVSNkJ2Q3BIZHN2VVQxZFNMaWxFTVFvQmw0U1ZaVGNXUTBXaFlwc2U0akNSbk5xV1RSSjEwZlAyMy1YZ2ZSTU43ODN0OVk5YS14bUJ4SjFXRm0wMFFqbElUTVAxZWZ4TTlscE5jZmJxWWRGR3NzZnIwazBHZ1FnRFV6WXdyZjBFbF9vRWk3ZzRsUS1NXzNnRndH?oc=5",
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Gretchen_Whitmer"
+    },
     "img": "assets/candidates/whitmer/01_2025_gretchen_whitmer_cropped_jpg.jpg"
   },
   {
@@ -1008,6 +1095,9 @@
       "media",
       "conditional"
     ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Steve_Bannon"
+    },
     "img": "assets/candidates/bannon/01_steve_bannon_in_2025_3x4_cropped_jpg.jpg"
   },
   {
@@ -1028,6 +1118,9 @@
     "tags": [
       "conditional"
     ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Michael_Flynn"
+    },
     "img": "assets/candidates/flynn/01_michael_t_flynn_jpg.jpg"
   },
   {
@@ -1058,6 +1151,9 @@
         "reason": "Is Tucker Carlson eyeing a 2028 presidential run? | Arwa Mahdawi - The Guardian"
       }
     ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Tucker_Carlson"
+    },
     "img": "assets/candidates/carlson/01_tucker_carlson_54670577849_cropped_2_jpg.jpg"
   },
   {
@@ -1079,6 +1175,9 @@
       "noise",
       "troll"
     ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Hunter_Biden"
+    },
     "img": "assets/candidates/hunter/01_hunter_biden_september_30_2014_jpg.jpg"
   },
   {
@@ -1122,6 +1221,9 @@
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOTHBiRlF0dmo1ckY3SGVQTzRzSGZGdWUzNWoyRzd5c1MySG9xWVR4WXBhVGFKUkpLRFV0aDZDdDhxNFNCNWdGdFBiX2ZBTnpQelkxbnZod3ExVC1EWUtQTGVZdGVsU2dGT1VXS2NoUXpuN3p1UDdjTm5FU0xZWUtacjhMRWpXeUVOV0FzV3B6SG5tSG80OWFZVVZ1OGtkLVNSdUtv?oc=5",
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Donald_Trump"
+    },
     "img": "assets/candidates/trump/01_official_presidential_portrait_of_president_donald.jpg"
   },
   {
@@ -1145,6 +1247,9 @@
       "VP talk",
       "deferring"
     ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Marco_Rubio"
+    },
     "img": "assets/candidates/rubio/01_official_portrait_of_secretary_marco_rubio_cropped.jpg"
   },
   {
@@ -1166,6 +1271,9 @@
     "tags": [
       "denied"
     ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Wes_Moore"
+    },
     "img": "assets/candidates/moore/01_wes_moore_official_governor_portrait_jpg.jpg"
   },
   {
@@ -1186,6 +1294,9 @@
     "tags": [
       "cooled"
     ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Gina_Raimondo"
+    },
     "img": "assets/candidates/raimondo/01_gina_raimondo_jpg.jpg"
   },
   {
@@ -1206,6 +1317,9 @@
     "tags": [
       "cooled"
     ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Tim_Walz"
+    },
     "img": "assets/candidates/walz/01_governor_tim_walz_2026_jpg.jpg"
   },
   {
@@ -1227,6 +1341,9 @@
       "denied",
       "conflict"
     ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Marjorie_Taylor_Greene"
+    },
     "img": "assets/candidates/mtg/01_marjorie_taylor_greene_cropped_jpg.jpg"
   },
   {
@@ -1280,6 +1397,9 @@
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPQ1hRTlBXVURNZjBBOGl5MEY1RDNtN21rNGpOLVRjZUpOcUZEZlgwdEhXdUpEN1l6enYtejlmN2lrZHFCVG1xOHE5aER6WHJDR3NZTTdJQU5CSlRCNWUyV3Q1RmZRUlRrUV9TeVNPZEhORWY4cS1ob25rdlVLbTdkbjhfQi1acklIQ3BpWWNYc1RmVzQ4SEJfd1llSFUwZGZKTDJJTVNDakYtS3R6Tzl1UTIxcFNNOGRqLW9ENklNVEZSWUVmSkxOM1d0QnRlYXRqbGpLQWtyR1NYVTBNUXI5VGQ4cmtCMFd2WGI2V3Q1SlU?oc=5",
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Stephen_A._Smith"
+    },
     "img": "assets/candidates/smith/01_stephen_a_smith_in_january_2023_3x4_cropped_c_jpg.jpg"
   },
   {
@@ -1337,6 +1457,9 @@
         "conf": "Low"
       }
     ],
-    "sourceUrl": "https://news.google.com/rss/articles/CBMihwFBVV95cUxORkJyQ3lfcTBRbW1POWtaWkFtOWpvRWpXMHRCalQ3bzN4VEx6TVdmRUZjR19hdUdvYU5wUzhDem1kaTY0QkFZSExWRHRnajNJME44ZGdidXQ5R0JPRm8tV1loQmdQVHBKVlVGUEpxMnhxSkhvM2V6T1FycUVSUEJKdlRUcExSUTDSAYwBQVVfeXFMTXM3QmxpS09ESWJid0FKYzhYd3hrSUttT1JvM2k4Z09XRnJ3TnJKNnA4LWd6djFXa1NKb09yNFo3eDR2ZU5xR0ZFVnkydldfbG5LR0o2YTdXWVJCRWlLdXNtSDZGMUJwSTZpQVNFTms3ckM5WTdRTFVQdHhLYi1UbVBqc1VmVUhLWWc0NGc?oc=5"
+    "sourceUrl": "https://news.google.com/rss/articles/CBMihwFBVV95cUxORkJyQ3lfcTBRbW1POWtaWkFtOWpvRWpXMHRCalQ3bzN4VEx6TVdmRUZjR19hdUdvYU5wUzhDem1kaTY0QkFZSExWRHRnajNJME44ZGdidXQ5R0JPRm8tV1loQmdQVHBKVlVGUEpxMnhxSkhvM2V6T1FycUVSUEJKdlRUcExSUTDSAYwBQVVfeXFMTXM3QmxpS09ESWJid0FKYzhYd3hrSUttT1JvM2k4Z09XRnJ3TnJKNnA4LWd6djFXa1NKb09yNFo3eDR2ZU5xR0ZFVnkydldfbG5LR0o2YTdXWVJCRWlLdXNtSDZGMUJwSTZpQVNFTms3ckM5WTdRTFVQdHhLYi1UbVBqc1VmVUhLWWc0NGc?oc=5",
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/John_Kennedy_(Louisiana_politician)"
+    }
   }
 ]
