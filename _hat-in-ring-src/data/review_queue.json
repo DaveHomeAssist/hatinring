@@ -46,5 +46,18 @@
     ],
     "rid": "9c6d6f92585b",
     "kind": "discovery"
+  },
+  {
+    "name": "Gretchen Whitmer",
+    "headline": "Gov. Whitmer says she won't run for president in 2028, then wavers - The Detroit News",
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOMUJwcFc3dXFqLVBxWlFyTGExcjZ3WnRDVXJXdkp5Q2hLVElXdnlkazNEMHd0MjF6SHI5QVNqWXZSNXY4TzliN2pndGtvUXUwWVdROTM4ckp0SHZZc2hJQm8zQTBCdmxlanJ2bXI3RXl0YTF2NTg2Y3FkM0JPRWNfR09GVGxmYmhQWGZBdjVxUUFINDBUSnZmSU82NzdjMjJzc3dFZGJJUEdmYUhKQXVVdjdjN0JrZHlBRTE0eklB?oc=5",
+    "source": "The Detroit News",
+    "date": "2026-05-28",
+    "keys": [
+      "ruledOut"
+    ],
+    "note": "denial/downgrade — confirm before applying",
+    "rid": "2ad0d8b4066b",
+    "kind": "denial"
   }
 ]
