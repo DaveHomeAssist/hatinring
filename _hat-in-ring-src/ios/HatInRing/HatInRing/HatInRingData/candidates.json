@@ -383,8 +383,8 @@
     ],
     "conf": "Medium",
     "delta": 0,
-    "lastSignal": "2026-06-12",
-    "headline": "Sen. Ruben Gallego Attends Iowa State Fair Amid 2028 Presidential Bid Speculation Gracie Abrams (9SsQDihp8W) - Mshale",
+    "lastSignal": "2026-06-19",
+    "headline": "Sen. Ruben Gallego Meets with South Carolina Democrats - C-SPAN",
     "why": "Notable upgrade — went from denial to open in weeks.",
     "quote": "We have to look at it.",
     "tags": [
@@ -394,6 +394,24 @@
     "links": {
       "wikipedia": "https://en.wikipedia.org/wiki/Ruben_Gallego"
     },
+    "early_states": {
+      "SC": 1
+    },
+    "early_states_last": {
+      "SC": "2026-06-19"
+    },
+    "evidence": [
+      {
+        "date": "2026-06-19",
+        "headline": "Sen. Ruben Gallego Meets with South Carolina Democrats - C-SPAN",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOeEFxaUUtaXgyNk1wS0FhQWswM3RVeFFlWGc0NFh6RDJmYTBrX3pZcWtCZ2lHa2tydUJzd203MmFJRmgyWnhNREgtb2hmU2ZsbnQyVFJkS0cwWkoyX19fbmdPQUZMbzMyenRSNFNJRXY3VVUyM1lQVGpxTjdkckZtWW9VU3htbzJxcUlUcDgxbXZreTBHOE1handyN0NMWTFXX00tbGxyU0k?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
+      }
+    ],
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOeEFxaUUtaXgyNk1wS0FhQWswM3RVeFFlWGc0NFh6RDJmYTBrX3pZcWtCZ2lHa2tydUJzd203MmFJRmgyWnhNREgtb2hmU2ZsbnQyVFJkS0cwWkoyX19fbmdPQUZMbzMyenRSNFNJRXY3VVUyM1lQVGpxTjdkckZtWW9VU3htbzJxcUlUcDgxbXZreTBHOE1handyN0NMWTFXX00tbGxyU0k?oc=5",
     "img": "assets/candidates/gallego/01_senator_ruben_gallego_official_portrait_jpg.jpg"
   },
   {
