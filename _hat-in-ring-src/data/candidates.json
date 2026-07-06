@@ -580,10 +580,11 @@
     "bucket": "considering",
     "keys": [
       "softConsidering",
-      "earlyState"
+      "earlyState",
+      "donors"
     ],
     "conf": "Medium",
-    "delta": 0,
+    "delta": 10,
     "lastSignal": "2026-06-17",
     "headline": "Sen. Elissa Slotkin not ruling out 2028 presidential run - MS NOW",
     "why": "Most recent signal on the board; swing-state freshman senator.",
@@ -619,11 +620,27 @@
           "softConsidering"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-04-07",
+        "headline": "Sen. Elissa Slotkin Speaks at Iowa Democratic Fundraiser - C-SPAN",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxON2FBUUFTVllhYTJ5SUFLbW1MVHNFbzR5YW9vZXdnR3dmcVhxSF9JSTNrVUd6dE9rU2hTSDhfbWhhdl8xNUd3czNia1VnQXJTWTZyeDJ2UXd1bURDenUtLXdfS0VDUVFreWRRLTdwWDlidlB6enRjZXczYzlScHVwMjkxclF6VEQ0cDdYck03cVJCMzNfcm5DQTVJX3Npdko1S0szbjZCc2ZZWFE?oc=5",
+        "keys": [
+          "donors",
+          "earlyState"
+        ],
+        "conf": "Low"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOSkRuMktZcnpCQlc4d3dVQkxWT2sxRllQbTJPdEY2Ny1RSnJYckRKWDIzLUYwdjhKMktYYlJNcnAzMlU1NEc1Y3ZUODJZMjdYLXBNb295bWptV3dJci1WSGxmVDhnWGkyWTZDM2F6dUllUFBYZko2Y0t2S3JmaDhkMHNkcFRrVmd6UXg1WGJtdTBPalpqZ2RQamxhMDZnQmhxYVJVS0hB?oc=5",
     "links": {
       "wikipedia": "https://en.wikipedia.org/wiki/Elissa_Slotkin"
+    },
+    "early_states": {
+      "IA": 1
+    },
+    "early_states_last": {
+      "IA": "2026-04-07"
     }
   },
   {
