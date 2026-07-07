@@ -1,16 +1,6 @@
 {
-  "date": "2026-07-06",
-  "movers": [
-    {
-      "id": "slotkin",
-      "name": "Elissa Slotkin",
-      "party": "Democrat",
-      "delta": 10,
-      "score": 37,
-      "tier": 2,
-      "statusLabel": "Positioning"
-    }
-  ],
+  "date": "2026-07-07",
+  "movers": [],
   "new_filers": [],
   "transitions": [],
   "review_count": 5,
