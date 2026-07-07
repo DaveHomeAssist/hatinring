@@ -111,8 +111,8 @@ FEC + News ─▶ classify ─▶ merge ─▶ (series / money / geo / brief) �
 
 ## Frontend
 Current frontend ships as a single-file Jinja template with browser-loaded JS.
-That shape is not a rule against framework code or package-managed architecture
-if the product needs it. `SEED` + `REVIEW`
+Framework code or package-managed architecture can be used when the product calls
+for it. `SEED` + `REVIEW`
 + `BRIEFING` injected as JS literals (`<` escaped to `<` to prevent a
 `</script>` breakout; every data field HTML-escaped). State in `localStorage`,
 version-keyed: a new pipeline build refreshes the seed but preserves manual adds
