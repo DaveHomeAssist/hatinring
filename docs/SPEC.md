@@ -110,7 +110,9 @@ FEC + News ─▶ classify ─▶ merge ─▶ (series / money / geo / brief) �
    manual edits survive rebuilds.
 
 ## Frontend
-Single-file Jinja template, **vanilla JS**, no framework/npm. `SEED` + `REVIEW`
+Current frontend ships as a single-file Jinja template with browser-loaded JS.
+That shape is not a rule against framework code or package-managed architecture
+if the product needs it. `SEED` + `REVIEW`
 + `BRIEFING` injected as JS literals (`<` escaped to `<` to prevent a
 `</script>` breakout; every data field HTML-escaped). State in `localStorage`,
 version-keyed: a new pipeline build refreshes the seed but preserves manual adds
