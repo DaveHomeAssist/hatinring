@@ -736,12 +736,13 @@
       "consideringQuote",
       "donors",
       "staffing",
-      "earlyState"
+      "earlyState",
+      "softConsidering"
     ],
     "conf": "Medium",
-    "delta": 0,
-    "lastSignal": "2026-03-24",
-    "headline": "Didn't rule it out: \"We'll see… you never know\"",
+    "delta": 10,
+    "lastSignal": "2026-05-04",
+    "headline": "DeSantis Refuses to Rule Out 2028 Run After ‘Begging’ Trump for New Job - The Daily Beast",
     "why": "2024 national org still partly intact; term-limited in 2026.",
     "quote": "We'll see. You never know.",
     "tags": [
@@ -751,6 +752,18 @@
     "links": {
       "wikipedia": "https://en.wikipedia.org/wiki/Ron_DeSantis"
     },
+    "evidence": [
+      {
+        "date": "2026-05-04",
+        "headline": "DeSantis Refuses to Rule Out 2028 Run After ‘Begging’ Trump for New Job - The Daily Beast",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQdC1YZ0Ywd0JkZ05HdHlxY0xOZjFIekdybmlNeG9HSW5QNjF5YkptYk5zTVlyUDZmTXloNTRseTB5Qmk4MlBTYUR3NFJMY3M2TVhselR3bFg0dm5zdzdTVG40LTdkbGtjNnF2TmtRQldCTFJMZE9WYkE5bHZTWGhra3VRS2tCZlBjN0VmYmVoRTR4YmFPdWF3bnFqR1RhSjljTklCcVlNb2l5LU5WOTZhOWN4SUpTaHBGS0tpbkpkNHJ2MmM?oc=5",
+        "keys": [
+          "softConsidering"
+        ],
+        "conf": "Low"
+      }
+    ],
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQdC1YZ0Ywd0JkZ05HdHlxY0xOZjFIekdybmlNeG9HSW5QNjF5YkptYk5zTVlyUDZmTXloNTRseTB5Qmk4MlBTYUR3NFJMY3M2TVhselR3bFg0dm5zdzdTVG40LTdkbGtjNnF2TmtRQldCTFJMZE9WYkE5bHZTWGhra3VRS2tCZlBjN0VmYmVoRTR4YmFPdWF3bnFqR1RhSjljTklCcVlNb2l5LU5WOTZhOWN4SUpTaHBGS0tpbkpkNHJ2MmM?oc=5",
     "img": "assets/candidates/desantis/01_ron_desantis_official_photo_jpg.jpg"
   },
   {
@@ -1059,9 +1072,9 @@
     ],
     "conf": "Medium",
     "delta": 0,
-    "lastSignal": "2026-06-28",
+    "lastSignal": "2026-07-08",
     "pollLead": "GOP poll leader (~35%)",
-    "headline": "JD Vance for president in 2028? It starts with MAGA voters — and Trump",
+    "headline": "Marco Rubio rules out 2028 run if JD Vance seeks Republican nomination - AOL.com",
     "why": "Presumptive GOP frontrunner; succession speculation around the sitting VP is building as a 2028 strategy takes shape.",
     "quote": "I'm not a potential future candidate. I'm a Vice President.",
     "tags": [
@@ -1103,7 +1116,7 @@
         "conf": "Low"
       }
     ],
-    "sourceUrl": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNa0pxU2JYMXlURGVLZUJTb3NCV215ZVR2QjVkbmZ4SFphN1VEdzFyUlJLLXlXS2ZNRU4tNWI0RnhmZ3J0OEd2VGd2M0JCLTZNZExzNHhrUU1NYzJrZTZsWGc1RjlGZHpwZ1FmWlJrMzJnSDZVTFVuUWJCSVgzN3BHMDRyNEFyWEY0dU1WX1d3RlpJUHJNQ2wyZkdMY3dPWXdOempDakRSM0YwX2VvN2N6TEZWd1dieEViNTBrLS1tMkl2VFRlb01fUV8yd1JJbXJtRzgxYUlDeVJqQkE?oc=5",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1nQmpRY1N4ZWQ0dVJDZzFraWpHS2FGRG1xR0pxUWFkUm1YRTFmdk5EMmZPUmFsbHhwelNyUzBjQkRLeHhJclpQTnBYWUVSVFVlcWNpVHZSQTZQejdYQ2pRZzE4ZWlYOXd3cGFqN1dnc2c2WkhS?oc=5",
     "links": {
       "wikipedia": "https://en.wikipedia.org/wiki/JD_Vance"
     },

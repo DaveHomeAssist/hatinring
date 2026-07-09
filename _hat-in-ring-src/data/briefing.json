@@ -1,9 +1,19 @@
 {
-  "date": "2026-07-08",
-  "movers": [],
+  "date": "2026-07-09",
+  "movers": [
+    {
+      "id": "desantis",
+      "name": "Ron DeSantis",
+      "party": "Republican",
+      "delta": 10,
+      "score": 50,
+      "tier": 3,
+      "statusLabel": "Actively considering"
+    }
+  ],
   "new_filers": [],
   "transitions": [],
-  "review_count": 5,
+  "review_count": 6,
   "totals": {
     "tracked": 41,
     "formal": 3,
