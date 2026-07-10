@@ -740,7 +740,7 @@
       "softConsidering"
     ],
     "conf": "Medium",
-    "delta": 10,
+    "delta": 0,
     "lastSignal": "2026-05-04",
     "headline": "DeSantis Refuses to Rule Out 2028 Run After ‘Begging’ Trump for New Job - The Daily Beast",
     "why": "2024 national org still partly intact; term-limited in 2026.",
@@ -1486,6 +1486,15 @@
           "softConsidering"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-02-16",
+        "headline": "Stephen A. Smith not ruling out presidential bid - CBS News",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPNTFNaU5MSEFVNVBmNW1YMEhYLTlhTzBFQzNQeE11NjNZT2dBOHliaGhhSEJaWUVreHlLTE5sZDhoVkRYUkcwLWY3T2JHZ0dCTk1nQ0h2Z0diS2o5V3dHUkM3bW9hOHRYcktNSVp4YThGaWpKSDVKSFYyajIxRS1scGVrQzk?oc=5",
+        "keys": [
+          "softConsidering"
+        ],
+        "conf": "Medium"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPQ1hRTlBXVURNZjBBOGl5MEY1RDNtN21rNGpOLVRjZUpOcUZEZlgwdEhXdUpEN1l6enYtejlmN2lrZHFCVG1xOHE5aER6WHJDR3NZTTdJQU5CSlRCNWUyV3Q1RmZRUlRrUV9TeVNPZEhORWY4cS1ob25rdlVLbTdkbjhfQi1acklIQ3BpWWNYc1RmVzQ4SEJfd1llSFUwZGZKTDJJTVNDakYtS3R6Tzl1UTIxcFNNOGRqLW9ENklNVEZSWUVmSkxOM1d0QnRlYXRqbGpLQWtyR1NYVTBNUXI5VGQ4cmtCMFd2WGI2V3Q1SlU?oc=5",
