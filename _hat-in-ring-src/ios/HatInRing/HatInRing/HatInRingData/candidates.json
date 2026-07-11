@@ -87,9 +87,9 @@
     ],
     "conf": "High",
     "delta": 0,
-    "lastSignal": "2026-06-26",
+    "lastSignal": "2026-07-08",
     "pollLead": "Dem poll leader",
-    "headline": "Newsom calls for a national billionaires tax: 'It's time for an economic reset'",
+    "headline": "Newsom heads to Nevada, kicks off midterm campaign swing with eye on 2028 - Politico",
     "why": "Polling frontrunner actively staking out a 2028 lane; a national billionaires-tax pitch and a Biden embrace are already drawing intra-party fire (Khanna).",
     "quote": "I'd be lying if I said I wasn't seriously thinking about it.",
     "tags": [
@@ -101,10 +101,12 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Gavin_Newsom"
     },
     "early_states": {
-      "NH": 1
+      "NH": 1,
+      "NV": 1
     },
     "early_states_last": {
-      "NH": "2025-09-05"
+      "NH": "2025-09-05",
+      "NV": "2026-07-08"
     },
     "evidence": [
       {
@@ -115,8 +117,18 @@
           "earlyState"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-07-08",
+        "headline": "Newsom heads to Nevada, kicks off midterm campaign swing with eye on 2028 - Politico",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQemlQRHEybE9jbzJYbElwRE0xZk52bkpPWmJMVmE1aWtSRTNveUJhUDQzcVY5bkdlNk9JTDZJVC1sQzNkTnpsc0tlU05oQUp2WTFyR2U1aVpwS2plZHJLSEVwakxZRW9WQnhvT1B6VjNwektiVjRteHNBRDFLVGZoU2E3RmR3ckVpQTlxcnYwaG04WVhjUTV5Zk9jNTQ3bW9ZUUlKNWItS0xpWUVDeVZ0RDJIc3RZaE1LOVpUTlM5OA?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
       }
     ],
+    "sourceUrl": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQemlQRHEybE9jbzJYbElwRE0xZk52bkpPWmJMVmE1aWtSRTNveUJhUDQzcVY5bkdlNk9JTDZJVC1sQzNkTnpsc0tlU05oQUp2WTFyR2U1aVpwS2plZHJLSEVwakxZRW9WQnhvT1B6VjNwektiVjRteHNBRDFLVGZoU2E3RmR3ckVpQTlxcnYwaG04WVhjUTV5Zk9jNTQ3bW9ZUUlKNWItS0xpWUVDeVZ0RDJIc3RZaE1LOVpUTlM5OA?oc=5",
     "img": "assets/candidates/newsom/01_governor_of_california_gavin_newsom_cropped_3x4_jp.jpg"
   },
   {
