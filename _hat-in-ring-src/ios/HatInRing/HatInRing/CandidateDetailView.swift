@@ -64,7 +64,7 @@ struct CandidateDetailView: View {
             } label: {
                 HStack(spacing: 5) {
                     Image(systemName: state.isWatching(candidate.id) ? "star.fill" : "star")
-                    Text(state.isWatching(candidate.id) ? "Following" : "Follow")
+                    Text(state.isWatching(candidate.id) ? "Tracking" : "Track")
                 }
                 .font(HIRTheme.body(13, weight: .semibold))
                 .foregroundStyle(state.isWatching(candidate.id) ? .white : Color(hex: 0x5A5443))
@@ -78,7 +78,7 @@ struct CandidateDetailView: View {
                 }
             }
             .buttonStyle(.plain)
-            .accessibilityLabel(state.isWatching(candidate.id) ? "Unfollow \(candidate.name)" : "Follow \(candidate.name)")
+            .accessibilityLabel(state.isWatching(candidate.id) ? "Stop tracking \(candidate.name)" : "Track \(candidate.name)")
         }
         .padding(.top, 52)
         .padding(.horizontal, 12)
@@ -266,6 +266,13 @@ struct CandidateDetailView: View {
                             Text("\(RadarScoring.longDate(candidate.lastSignal)) - \(latestDispatch.source)")
                                 .font(HIRTheme.body(11))
                                 .foregroundStyle(HIRTheme.softText)
+                            if let sourceURL = latestDispatch.sourceURL {
+                                Link(destination: sourceURL) {
+                                    Label("Open source", systemImage: "arrow.up.right.square")
+                                        .font(HIRTheme.body(11.5, weight: .semibold))
+                                }
+                                .accessibilityIdentifier("candidate-source-\(candidate.id)")
+                            }
                         }
                     }
 

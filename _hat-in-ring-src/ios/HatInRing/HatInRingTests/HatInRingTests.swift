@@ -34,7 +34,7 @@ final class HatInRingTests: XCTestCase {
         XCTAssertEqual(Set(store.fieldCandidates(filter: .movers).map(\.id)), ["mover"])
     }
 
-    func testWatchlistPersistsToUserDefaults() {
+    func testWatchlistPersistsAfterTrackingTerminologyChange() {
         let suiteName = "HatInRingTests.\(UUID().uuidString)"
         let defaults = UserDefaults(suiteName: suiteName)!
         defer { defaults.removePersistentDomain(forName: suiteName) }
@@ -50,10 +50,19 @@ final class HatInRingTests: XCTestCase {
         XCTAssertFalse(second.isWatching("harris"))
     }
 
-    func testFreshnessCopyComesFromPipelineUpdate() {
-        let freshness = DataFreshness.bundled
+    func testCurrentAndStalePipelineFreshnessCopyRetainsAsOfDate() {
+        let freshness = DataFreshness(
+            mode: .pipeline,
+            asOf: "2026-07-06",
+            sourceLabel: "Hat-in-Ring ingest pipeline",
+            buildLabel: "Test"
+        )
+        let current = RadarScoring.dateFromISO("2026-07-09")!
+        let stale = RadarScoring.dateFromISO("2026-07-10")!
 
-        XCTAssertEqual(freshness.statusLabel, "UPDATED")
+        XCTAssertEqual(freshness.statusLabel(relativeTo: current), "UPDATED")
+        XCTAssertEqual(freshness.statusLabel(relativeTo: stale), "STALE")
+        XCTAssertTrue(freshness.summary.contains("July 6, 2026"))
         XCTAssertEqual(freshness.movementSubtitle(moverCount: 9), "9 moved in the latest pipeline run")
         XCTAssertEqual(freshness.wireSubtitle(dispatchCount: 40), "40 updated dispatches")
         XCTAssertEqual(freshness.recencyLabel(days: 1), "1d before update")
@@ -72,7 +81,7 @@ final class HatInRingTests: XCTestCase {
 
         let store = CandidateStore.load(candidatesData: candidateData, freshnessData: metadata)
 
-        XCTAssertEqual(store.freshness.statusLabel, "UPDATED")
+        XCTAssertEqual(store.freshness.statusLabel(relativeTo: RadarScoring.dateFromISO("2026-06-28")!), "UPDATED")
         XCTAssertEqual(store.freshness.snapshotDateText, "June 25, 2026")
         XCTAssertEqual(RadarScoring.asOfText, "June 25, 2026")
     }
@@ -97,12 +106,26 @@ final class HatInRingTests: XCTestCase {
         XCTAssertEqual(second.exportableReviewDecisions(), [ReviewDecision(rid: "rid-a", action: .confirm)])
     }
 
-    func testReviewQueueLoadsFromBundleWhenAvailable() {
+    func testBundledCandidatesJSONDecodesSuccessfully() {
         let store = CandidateStore.load()
 
         XCTAssertFalse(store.candidates.isEmpty)
+        XCTAssertNil(store.criticalIssue)
         XCTAssertFalse(store.reviewItems.isEmpty)
-        XCTAssertNotNil(store.reviewItems.first { $0.rid == "5d0e43385abd" })
+    }
+
+    func testCandidateMissingImageUsesEmptyPlaceholderPath() throws {
+        let data = candidateJSON(extra: "")
+        let candidate = try JSONDecoder().decode(Candidate.self, from: data)
+
+        XCTAssertEqual(candidate.imagePath, "")
+    }
+
+    func testCandidateSourceURLDecodesAndValidates() throws {
+        let data = candidateJSON(extra: ", \"sourceUrl\": \"https://example.com/report\"")
+        let candidate = try JSONDecoder().decode(Candidate.self, from: data)
+
+        XCTAssertEqual(candidate.sourceURL?.absoluteString, "https://example.com/report")
     }
 
     func testMissingCandidateDataCreatesCriticalIssue() {
@@ -142,5 +165,17 @@ final class HatInRingTests: XCTestCase {
             imagePath: "assets/candidates/newsom/01_governor_of_california_gavin_newsom_cropped_3x4_jp.jpg",
             pollLead: nil
         )
+    }
+
+    private func candidateJSON(extra: String) -> Data {
+        Data("""
+        {
+          "id": "fixture", "name": "Fixture Person", "party": "Independent",
+          "role": "Governor", "bucket": "considering", "keys": ["softConsidering"],
+          "conf": "High", "delta": 1, "lastSignal": "2026-07-06",
+          "headline": "Fixture headline - Source", "why": "Fixture reason",
+          "quote": "", "tags": []\(extra)
+        }
+        """.utf8)
     }
 }

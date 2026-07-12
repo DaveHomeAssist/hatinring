@@ -160,6 +160,7 @@ enum DataFreshnessMode: String, Codable {
 }
 
 struct DataFreshness: Codable, Hashable {
+    static let staleAfterDays = 3
     let mode: DataFreshnessMode
     let asOf: String
     let sourceLabel: String
@@ -207,17 +208,28 @@ struct DataFreshness: Codable, Hashable {
         RadarScoring.dateFromISO(asOf) ?? RadarScoring.defaultReferenceDate
     }
 
-    var statusLabel: String {
+    func isStale(relativeTo currentDate: Date = Date()) -> Bool {
+        guard mode == .pipeline,
+              let pipelineDate = RadarScoring.dateFromISO(asOf) else { return false }
+        let calendar = Calendar(identifier: .gregorian)
+        let start = calendar.startOfDay(for: pipelineDate)
+        let end = calendar.startOfDay(for: currentDate)
+        return (calendar.dateComponents([.day], from: start, to: end).day ?? 0) > Self.staleAfterDays
+    }
+
+    func statusLabel(relativeTo currentDate: Date = Date()) -> String {
         switch mode {
-        case .pipeline: return "UPDATED"
+        case .pipeline: return isStale(relativeTo: currentDate) ? "STALE" : "UPDATED"
         case .snapshot: return "ARCHIVE"
         case .live: return "LIVE"
         }
     }
 
+    var statusLabel: String { statusLabel() }
+
     var summary: String {
         switch mode {
-        case .pipeline: return "Updated \(snapshotDateText)"
+        case .pipeline: return "\(statusLabel == "STALE" ? "Stale" : "Updated") as of \(snapshotDateText)"
         case .snapshot: return "Archived \(snapshotDateText)"
         case .live: return "Live data"
         }
@@ -225,7 +237,7 @@ struct DataFreshness: Codable, Hashable {
 
     var detail: String {
         switch mode {
-        case .pipeline: return "\(sourceLabel). Scores use the latest pipeline run."
+        case .pipeline: return "\(sourceLabel). Scores remain anchored to the \(snapshotDateText) pipeline run."
         case .snapshot: return "\(sourceLabel). Scores use the archived date."
         case .live: return "\(sourceLabel). Scores use current data."
         }
@@ -290,6 +302,7 @@ struct Dispatch: Identifiable, Hashable {
     let date: Date
     let days: Int
     let tags: [String]
+    let sourceURL: URL?
 }
 
 enum ReviewDecisionAction: String, Codable, CaseIterable, Hashable {
@@ -330,6 +343,8 @@ struct ReviewItem: Codable, Identifiable, Hashable {
 
     var id: String { rid }
 
+    var sourceURL: URL? { ValidatedSourceURL.url(from: url) }
+
     var signalLabel: String {
         keys.map(\.label).joined(separator: ", ")
     }
@@ -359,6 +374,7 @@ struct Candidate: Codable, Identifiable, Hashable {
     let tags: [String]
     let imagePath: String
     let pollLead: String?
+    let sourceUrl: String?
 
     enum CodingKeys: String, CodingKey {
         case id
@@ -376,7 +392,54 @@ struct Candidate: Codable, Identifiable, Hashable {
         case tags
         case imagePath = "img"
         case pollLead
+        case sourceUrl
     }
+
+    init(
+        id: String, name: String, party: String, role: String, bucket: String,
+        keys: [SignalKey], confidence: String, delta: Int, lastSignal: String,
+        headline: String, why: String, quote: String, tags: [String],
+        imagePath: String, pollLead: String?, sourceUrl: String? = nil
+    ) {
+        self.id = id
+        self.name = name
+        self.party = party
+        self.role = role
+        self.bucket = bucket
+        self.keys = keys
+        self.confidence = confidence
+        self.delta = delta
+        self.lastSignal = lastSignal
+        self.headline = headline
+        self.why = why
+        self.quote = quote
+        self.tags = tags
+        self.imagePath = imagePath
+        self.pollLead = pollLead
+        self.sourceUrl = sourceUrl
+    }
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        id = try container.decode(String.self, forKey: .id)
+        name = try container.decode(String.self, forKey: .name)
+        party = try container.decode(String.self, forKey: .party)
+        role = try container.decode(String.self, forKey: .role)
+        bucket = try container.decode(String.self, forKey: .bucket)
+        keys = try container.decode([SignalKey].self, forKey: .keys)
+        confidence = try container.decode(String.self, forKey: .confidence)
+        delta = try container.decode(Int.self, forKey: .delta)
+        lastSignal = try container.decode(String.self, forKey: .lastSignal)
+        headline = try container.decode(String.self, forKey: .headline)
+        why = try container.decode(String.self, forKey: .why)
+        quote = try container.decode(String.self, forKey: .quote)
+        tags = try container.decode([String].self, forKey: .tags)
+        imagePath = try container.decodeIfPresent(String.self, forKey: .imagePath) ?? ""
+        pollLead = try container.decodeIfPresent(String.self, forKey: .pollLead)
+        sourceUrl = try container.decodeIfPresent(String.self, forKey: .sourceUrl)
+    }
+
+    var sourceURL: URL? { ValidatedSourceURL.url(from: sourceUrl) }
 
     var partyLetter: String {
         switch party {
@@ -397,6 +460,16 @@ struct Candidate: Codable, Identifiable, Hashable {
         case "out": return "Ruled out or inactive"
         default: return bucket.capitalized
         }
+    }
+}
+
+enum ValidatedSourceURL {
+    static func url(from value: String?) -> URL? {
+        guard let value,
+              let url = URL(string: value),
+              ["http", "https"].contains(url.scheme?.lowercased() ?? ""),
+              url.host != nil else { return nil }
+        return url
     }
 }
 

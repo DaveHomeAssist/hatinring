@@ -128,7 +128,8 @@ struct CandidateStore {
                 source: sourceParts.source,
                 date: date,
                 days: RadarScoring.daysSince(candidate.lastSignal),
-                tags: tags
+                tags: tags,
+                sourceURL: candidate.sourceURL
             )
         }
         .sorted { $0.date > $1.date }
@@ -171,11 +172,27 @@ struct CandidateStore {
     }
 
     private static func resourceURL(bundle: Bundle, filename: String, extension ext: String) -> URL? {
-        if let url = bundle.resourceURL?.appendingPathComponent("HatInRingData/\(filename).\(ext)"),
-           FileManager.default.fileExists(atPath: url.path) {
-            return url
+        let fileName = "\(filename).\(ext)"
+        let bundles = [bundle, Bundle.main] + Bundle.allBundles + Bundle.allFrameworks
+        var searchedRoots = Set<URL>()
+
+        for candidateBundle in bundles {
+            guard var root = candidateBundle.resourceURL else { continue }
+            for _ in 0..<5 {
+                if searchedRoots.insert(root).inserted {
+                    let nestedURL = root.appendingPathComponent("HatInRingData").appendingPathComponent(fileName)
+                    if FileManager.default.fileExists(atPath: nestedURL.path) {
+                        return nestedURL
+                    }
+                    let flatURL = root.appendingPathComponent(fileName)
+                    if FileManager.default.fileExists(atPath: flatURL.path) {
+                        return flatURL
+                    }
+                }
+                root.deleteLastPathComponent()
+            }
         }
-        return bundle.url(forResource: filename, withExtension: ext)
+        return nil
     }
 
     private static func loadReviewItems(data: Data?, decoder: JSONDecoder) -> [ReviewItem] {

@@ -34,10 +34,10 @@ final class HatInRingUITests: XCTestCase {
         XCTAssertTrue(app.staticTexts["WHY IT'S ON THE RADAR"].waitForExistence(timeout: 3))
         XCTAssertTrue(app.staticTexts["Momentum ledger"].exists)
 
-        let followButton = app.buttons["Follow Gavin Newsom"]
-        XCTAssertTrue(followButton.waitForExistence(timeout: 3))
-        followButton.tap()
-        XCTAssertTrue(app.buttons["Unfollow Gavin Newsom"].waitForExistence(timeout: 3))
+        let trackButton = app.buttons["Track Gavin Newsom"]
+        XCTAssertTrue(trackButton.waitForExistence(timeout: 3))
+        trackButton.tap()
+        XCTAssertTrue(app.buttons["Stop tracking Gavin Newsom"].waitForExistence(timeout: 3))
 
         app.terminate()
         app.launchArguments = ["-ui-testing-skip-intro"]

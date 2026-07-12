@@ -43,8 +43,15 @@ struct DirectTestRunner {
         expect(second.isWatching("vance"), "watchlist persisted vance")
         expect(!second.isWatching("harris"), "watchlist excludes unpicked candidate")
 
-        let freshness = DataFreshness.bundled
-        expect(freshness.statusLabel == "UPDATED", "updated status label")
+        let freshness = DataFreshness(
+            mode: .pipeline,
+            asOf: "2026-07-06",
+            sourceLabel: "Hat-in-Ring ingest pipeline",
+            buildLabel: "Direct test"
+        )
+        expect(freshness.statusLabel(relativeTo: RadarScoring.dateFromISO("2026-07-09")!) == "UPDATED", "current status label")
+        expect(freshness.statusLabel(relativeTo: RadarScoring.dateFromISO("2026-07-10")!) == "STALE", "stale status label")
+        expect(freshness.summary.contains("July 6, 2026"), "freshness retains exact as-of date")
         expect(freshness.movementSubtitle(moverCount: 9) == "9 moved in the latest pipeline run", "updated movement copy")
         expect(freshness.recencyLabel(days: 1) == "1d before update", "updated recency copy")
 
@@ -57,6 +64,31 @@ struct DirectTestRunner {
         expect(restored.selectedTab == .search, "selected tab restored")
         expect(restored.recentCandidateID == "newsom", "recent candidate restored")
         expect(restored.exportableReviewDecisions() == [ReviewDecision(rid: "rid-a", action: .confirm)], "review export filters later")
+
+        let candidateJSON = Data("""
+        {
+          "id": "fixture", "name": "Fixture Person", "party": "Independent",
+          "role": "Governor", "bucket": "considering", "keys": ["softConsidering"],
+          "conf": "High", "delta": 1, "lastSignal": "2026-07-06",
+          "headline": "Fixture headline - Source", "why": "Fixture reason",
+          "quote": "", "tags": [], "sourceUrl": "https://example.com/report"
+        }
+        """.utf8)
+        if let decoded = try? JSONDecoder().decode(Candidate.self, from: candidateJSON) {
+            expect(decoded.imagePath.isEmpty, "missing image decodes to placeholder path")
+            expect(decoded.sourceURL?.absoluteString == "https://example.com/report", "source URL decodes")
+        } else {
+            failures.append("candidate without image decodes")
+        }
+
+        let bundleCandidatesURL = URL(fileURLWithPath: FileManager.default.currentDirectoryPath)
+            .appendingPathComponent("HatInRing/HatInRingData/candidates.json")
+        if let data = try? Data(contentsOf: bundleCandidatesURL),
+           let decoded = try? JSONDecoder().decode([Candidate].self, from: data) {
+            expect(!decoded.isEmpty, "bundled candidates JSON decodes")
+        } else {
+            failures.append("bundled candidates JSON decodes")
+        }
 
         if failures.isEmpty {
             print("HatInRing core behavior tests passed.")

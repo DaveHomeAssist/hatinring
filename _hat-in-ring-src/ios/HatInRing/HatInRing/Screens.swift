@@ -316,7 +316,7 @@ struct PicksView: View {
                     EmptyState(
                         symbol: "star",
                         title: "No picks yet",
-                        message: "Open any dossier and tap the star to follow a candidate. Their movement shows up here.",
+                        message: "Open any dossier and tap the star to track a candidate. Their movement shows up here.",
                         actionTitle: "Browse the field"
                     ) {
                         state.selectTab(.field)
@@ -343,7 +343,7 @@ struct PicksView: View {
                                             .frame(width: 44, height: 44)
                                     }
                                     .buttonStyle(.plain)
-                                    .accessibilityLabel("Unfollow \(candidate.name)")
+                                    .accessibilityLabel("Stop tracking \(candidate.name)")
                                     .padding(.trailing, 6)
                                 }
 
@@ -366,7 +366,7 @@ struct PicksView: View {
         guard !rows.isEmpty else { return "Nobody on your list yet" }
         let fresh = rows.filter(RadarScoring.isFresh).count
         let noun = rows.count == 1 ? "candidate" : "candidates"
-        return "Following \(rows.count) \(noun), \(fresh) with updated signals"
+        return "Tracking \(rows.count) \(noun), \(fresh) with updated signals"
     }
 }
 
@@ -432,7 +432,7 @@ struct SettingsView: View {
                         } label: {
                             SettingsActionRow(
                                 title: "Clear all picks",
-                                subtitle: state.watchedCandidateIDs.isEmpty ? "Your pick list is already empty." : "Remove \(state.watchedCandidateIDs.count) followed candidates."
+                                subtitle: state.watchedCandidateIDs.isEmpty ? "Your pick list is already empty." : "Remove \(state.watchedCandidateIDs.count) tracked candidates."
                             ) {
                                 Image(systemName: "trash")
                             } trailing: {
@@ -447,7 +447,7 @@ struct SettingsView: View {
                         ShareLink(item: state.exportPicksJSON(from: store.candidates)) {
                             SettingsActionRow(
                                 title: "Export picks JSON",
-                                subtitle: "Share a portable list of followed candidates."
+                                subtitle: "Share a portable list of tracked candidates."
                             ) {
                                 Image(systemName: "square.and.arrow.up")
                             } trailing: {
@@ -771,6 +771,15 @@ private struct ReviewItemCard: View {
                         .font(HIRTheme.body(11.5))
                         .foregroundStyle(HIRTheme.softText)
                         .lineSpacing(2)
+                }
+
+                if let sourceURL = item.sourceURL {
+                    Link(destination: sourceURL) {
+                        Label("Open review source", systemImage: "arrow.up.right.square")
+                            .font(HIRTheme.body(11.5, weight: .semibold))
+                            .foregroundStyle(HIRTheme.navy)
+                    }
+                    .accessibilityIdentifier("review-source-\(item.rid)")
                 }
 
                 HStack(spacing: 8) {

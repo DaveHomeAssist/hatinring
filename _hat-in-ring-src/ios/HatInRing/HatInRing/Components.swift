@@ -488,6 +488,14 @@ struct DispatchCard: View {
                             SignalTag(text: tag)
                         }
                     }
+
+                    if let sourceURL = dispatch.sourceURL {
+                        Link(destination: sourceURL) {
+                            Label("Source", systemImage: "arrow.up.right.square")
+                                .font(HIRTheme.body(10.5, weight: .semibold))
+                        }
+                        .accessibilityIdentifier("dispatch-source-\(candidate.id)")
+                    }
                 }
             }
             .padding(isLead ? 14 : 12)
