@@ -1,8 +1,8 @@
 # Hat In Ring iOS Current Status Roadmap
 
 Date: 2026-06-25
-Last verified: 2026-06-25 ET
-Target: `/Users/daverobertson/Desktop/Code/10-projects/active/hat-in-ring`
+Last verified: 2026-07-11 ET
+Target: `/Users/daverobertson/Code/hatinring`
 iOS surface: `ios/HatInRing`
 
 ## Goal
@@ -36,22 +36,18 @@ Commit scope now belongs in the root repo. Do not commit `ios/HatInRing` as a su
 
 | Surface | Status | Evidence |
 | --- | --- | --- |
-| Pipeline ingest | Green | Live FEC and news ingest produced refreshed data on 2026-06-25 |
-| Pipeline to iOS sync | Green | `python -m hatring.pipeline --sync-ios` writes iOS data and referenced portraits |
-| Native iOS app | Green | Built, installed, and launched on David's iPad |
-| iOS tests | Green | Unit and UI tests passed in the latest implementation pass |
-| Roadmap source | Green | This file replaces the stale preimplementation phase plan |
-| Branch state | Yellow | Local branch is ahead 2 and behind 1 from `origin/main` |
+| Pipeline ingest | Green | Remote `main` carries daily ingest data and native freshness through 2026-07-11 |
+| Pipeline to iOS sync | Red | Sync copied a 41st candidate without `img`; the strict Swift `Candidate` decoder rejects the complete bundle |
+| Native iOS app | Red | Simulator compile succeeds, but the current bundle routes launch to `Candidate data could not load` before the main UI |
+| iOS tests | Red | Direct core behavior tests pass, but the current Xcode UI run failed 0 of 2 because bundled candidate decoding failed |
+| Roadmap source | Green | This file now records both the historical 2026-06-25 green pass and the current 2026-07-11 regression |
+| Branch state | Green | `main` matches `origin/main` at `f69ac63` with no local changes before this roadmap correction |
 
-Branch note:
+Historical note: the 2026-06-25 pass built, installed, launched, and tested the app successfully on David's iPad. That evidence remains a valid historical milestone, but it does not prove later pipeline bundles are runtime-compatible.
 
-| Side | Commit | Meaning |
-| --- | --- | --- |
-| Local only | `f4cd2b0` | Dashboard trust and usability polish |
-| Local only | `4e178e1` | Dashboard template integration |
-| Remote only | `79881d4` | Redirect old GitHub Pages path to System by Dave |
+## Current Recovery Blocker
 
-The remote side touches redirect, dashboard template, and dashboard test paths. The current pipeline and iOS commit can be made locally, but push should rebase or merge the remote redirect first.
+The July 11 bundle contains 41 candidates. John Kennedy is the only record without `img`. `Candidate.imagePath` is currently a required `String`, so one missing optional portrait field causes the complete candidate array to fail decoding. Recovery requires tolerant decoding with an initials or placeholder portrait, a bundled-resource regression test, and a successful rerun of both UI tests.
 
 ## Implemented Features
 
@@ -83,24 +79,24 @@ The remote side touches redirect, dashboard template, and dashboard test paths. 
 | Candidate detail | Green | Rationale, score ledger, file facts, tags, follow action |
 | First run intro | Green | Dismissible intro with Field and Search entry actions |
 | Resume state | Green | Last tab and recent candidate id persist safely |
-| Data freshness | Green | App shows `UPDATED` with pipeline as of date |
+| Data freshness | Yellow | App carries the exact pipeline as-of date, but needs an explicit stale-age state and a schema-compatible bundle |
 | Review inbox | Green | Confirm, dismiss, save, and export local decisions |
 | Critical data errors | Green | Missing or malformed candidate data shows a blocking issue |
-| iPad install | Green | Built and launched on David's iPad |
+| iPad install | Historical green | Built and launched on David's iPad on 2026-06-25; current bundle has not passed a new device runtime check |
 
 ## Phase Roadmap
 
 | Phase | Name | Status | Current definition of done | Remaining work |
 | --- | --- | --- | --- | --- |
-| 0 | Work surface and ownership | Green | Root repo owns iOS source and nested repo metadata is archived | Commit root changes |
-| 1 | Freshness honesty | Green | Pipeline metadata drives iOS copy and scoring date | None for bundled pipeline mode |
+| 0 | Work surface and ownership | Green | Root repo owns iOS source and nested repo metadata is archived | None |
+| 1 | Freshness honesty | Red | Pipeline metadata drives iOS copy and scoring date | Make candidate decoding tolerant, add stale-age copy, refresh the bundle, and prove bundled-resource decoding |
 | 2 | Exit and return | Green | Last tab and recent candidate persist and recover | Add deeper detail restore only if product wants it |
 | 3 | First run orientation | Green | Intro is shown once and can be replayed | Add screenshot proof in release pass |
 | 4 | Settings and recovery | Green | Clear picks, export picks, intro replay, restore toggle, data status | Import picks is deferred |
 | 5 | Review loop | Green | Bundled queue, local decisions, and pipeline compatible export | Remote submit and import apply are deferred |
 | 6 | Core radar loop upgrades | Yellow | Basic filters, sort, search, dispatches, and detail are built | See Phase 6 remaining work |
-| 7 | Accessibility and resilience | Yellow | Critical candidate data errors are visible | See Phase 7 remaining work |
-| 8 | Release hygiene | Yellow | App builds and launches on device | Commit, rebase before push, add screenshot pack |
+| 7 | Accessibility and resilience | Red | Critical candidate data errors are visible, but one optional-field mismatch blocks the whole product | Fix schema tolerance, then complete the remaining resilience work below |
+| 8 | Release hygiene | Yellow | The project compiles and historical device launch evidence exists | Restore runtime green, rerun UI tests, then add the current screenshot pack |
 
 ## Phase 6 Remaining Work
 
@@ -147,20 +143,17 @@ These are not part of the current local commit, but remain real product gaps.
 | Early state travel feed | Not built | Dedicated event or travel source adds `earlyState` without relying only on headlines |
 | Cowork sidebar update path | Manual | Cowork handoff can be refreshed from generated output without copy paste drift |
 
-## Commit Readiness
+## Recovery Commit Scope
 
-Stage these root owned changes:
+The next recovery commit should stay bounded to:
 
 | Path | Reason |
 | --- | --- |
-| `README.md` | Documents iOS sync and freshness output |
-| `run.sh` | Runs pipeline plus iOS sync |
-| `hatring/pipeline.py` | Freshness generation and iOS bundle sync |
-| `data/candidates.json` | Refreshed pipeline dataset |
-| `data/review_queue.json` | Refreshed review queue |
-| `data/signals.jsonl` | Refreshed audit trail |
-| `data/freshness.json` | Pipeline run metadata consumed by iOS |
-| `ios/HatInRing/` | Native iOS app source, tests, docs, and bundle resources |
+| `ios/HatInRing/HatInRing/Models.swift` | Decode missing optional portrait/source fields without rejecting the bundle |
+| `ios/HatInRing/HatInRing/Components.swift` | Preserve initials or placeholder portrait fallback |
+| `ios/HatInRing/HatInRingTests/HatInRingTests.swift` | Load the real bundled resources and cover a candidate without `img` |
+| `ios/HatInRing/HatInRingUITests/HatInRingUITests.swift` | Retain the primary launch and navigation proof |
+| `ios/HatInRing/docs/hat-in-ring-ios-implementation-plan-2026-06-25.md` | Keep the current runtime status honest |
 
 Do not stage these unrelated artifacts:
 
