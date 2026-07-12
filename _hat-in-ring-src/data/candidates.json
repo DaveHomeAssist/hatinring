@@ -84,9 +84,9 @@
     ],
     "conf": "High",
     "delta": 0,
-    "lastSignal": "2026-06-26",
+    "lastSignal": "2026-07-08",
     "pollLead": "Dem poll leader",
-    "headline": "Newsom calls for a national billionaires tax: 'It's time for an economic reset'",
+    "headline": "Newsom heads to Nevada, kicks off midterm campaign swing with eye on 2028 - Politico",
     "why": "Polling frontrunner actively staking out a 2028 lane; a national billionaires-tax pitch and a Biden embrace are already drawing intra-party fire (Khanna).",
     "quote": "I'd be lying if I said I wasn't seriously thinking about it.",
     "tags": [
@@ -96,7 +96,36 @@
     ],
     "links": {
       "wikipedia": "https://en.wikipedia.org/wiki/Gavin_Newsom"
-    }
+    },
+    "early_states": {
+      "NH": 1,
+      "NV": 1
+    },
+    "early_states_last": {
+      "NH": "2025-09-05",
+      "NV": "2026-07-08"
+    },
+    "evidence": [
+      {
+        "date": "2025-09-05",
+        "headline": "Buttigieg, Newsom and Vance top way-too-early 2028 New Hampshire poll - Politico",
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5hQnFSUktFcUJueEdUVElmVVMxelVrVlhYZ0hrUlV4Vm9CZHFKTWlKcHcya1ZvTk4tUkZuNXZTZXBwdHAwM1A3VDRod0NxNmwtLVhQX0FrVEU1ZzFQajZhdGYyOG9hRTc1UU1vYk9GS2cxa1ZNb1JnUUZfYnh2UQ?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-07-08",
+        "headline": "Newsom heads to Nevada, kicks off midterm campaign swing with eye on 2028 - Politico",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQemlQRHEybE9jbzJYbElwRE0xZk52bkpPWmJMVmE1aWtSRTNveUJhUDQzcVY5bkdlNk9JTDZJVC1sQzNkTnpsc0tlU05oQUp2WTFyR2U1aVpwS2plZHJLSEVwakxZRW9WQnhvT1B6VjNwektiVjRteHNBRDFLVGZoU2E3RmR3ckVpQTlxcnYwaG04WVhjUTV5Zk9jNTQ3bW9ZUUlKNWItS0xpWUVDeVZ0RDJIc3RZaE1LOVpUTlM5OA?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
+      }
+    ],
+    "sourceUrl": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQemlQRHEybE9jbzJYbElwRE0xZk52bkpPWmJMVmE1aWtSRTNveUJhUDQzcVY5bkdlNk9JTDZJVC1sQzNkTnpsc0tlU05oQUp2WTFyR2U1aVpwS2plZHJLSEVwakxZRW9WQnhvT1B6VjNwektiVjRteHNBRDFLVGZoU2E3RmR3ckVpQTlxcnYwaG04WVhjUTV5Zk9jNTQ3bW9ZUUlKNWItS0xpWUVDeVZ0RDJIc3RZaE1LOVpUTlM5OA?oc=5"
   },
   {
     "id": "harris",
@@ -154,6 +183,24 @@
         "date": "2026-04-10",
         "headline": "Kamala Harris shows interest in 2028 presidential run ‘I am thinking about it’ - The Independent",
         "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOUmRTSGRRekZwYU9qOG1VeUE2eFJyME8zOFZUTzlKVzJrVm5KLVByWWx3b0dxVTlUV0tCaURqUlNUZnJFR2lJQTJIUmF0X01fdWFtZWZIVXpkVDFxRU5rR3B5NUhaZUxCUVNpanpYNHVxTm1FODFiRk5iMGUzQmJ4SkhSUVRSUlVpRU9KSTNvMFRwMDBvVjd3REpDNHhoQmVBNWQxTUJEakxfYjd3Q1E?oc=5",
+        "keys": [
+          "consideringQuote"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-04-10",
+        "headline": "‘I am thinking about it,’ Kamala Harris says of 2028 presidential bid - AP News",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNSk53ZjhETFdieWhkU3p6azVCTzBRbnJ5NElxNzRjRGlxUVFjcWttdWhUS0NzaXg2V1U4cWF3eENVNUpKV2M5eWR4SjVVallXVFpwOUY0SlE1LW40QWNCbTAycjZ4Y3R3NlRMVnZ1aWc1RDBqTWlNckI3Qi1FOGZHck1VcktQMnhoVHh3bGRPTUo2RXJyNG45SzlmSF9XN1NGRk1UQV91OVYxZw?oc=5",
+        "keys": [
+          "consideringQuote"
+        ],
+        "conf": "High"
+      },
+      {
+        "date": "2026-04-10",
+        "headline": "‘I am thinking about it,’ Kamala Harris says of 2028 presidential bid - Northwest Asian Weekly",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOcHM2TnNuUVpCcjJfZkZtRlo2RTNWOEZ1em9NTVFnQkZDVEgyWi1TcGNCYnNFZ2NLQ29SR2ZjWlBtbEt4OW9GbzItUGhSNU5UU1BWTFY1MDAwZS1GOG1pZVVoQk16X0ltcW5iVDhGanVZbU41V2tXbDhfVlBIOHNKZkUyN2Y1LThILUhzSFRUWlhBWjMwc0I1eVVEYkt4MlZEOU9z?oc=5",
         "keys": [
           "consideringQuote"
         ],
@@ -584,7 +631,7 @@
       "donors"
     ],
     "conf": "Medium",
-    "delta": 10,
+    "delta": 0,
     "lastSignal": "2026-06-17",
     "headline": "Sen. Elissa Slotkin not ruling out 2028 presidential run - MS NOW",
     "why": "Most recent signal on the board; swing-state freshman senator.",
@@ -685,12 +732,13 @@
       "consideringQuote",
       "donors",
       "staffing",
-      "earlyState"
+      "earlyState",
+      "softConsidering"
     ],
     "conf": "Medium",
     "delta": 0,
-    "lastSignal": "2026-03-24",
-    "headline": "Didn't rule it out: \"We'll see… you never know\"",
+    "lastSignal": "2026-05-04",
+    "headline": "DeSantis Refuses to Rule Out 2028 Run After ‘Begging’ Trump for New Job - The Daily Beast",
     "why": "2024 national org still partly intact; term-limited in 2026.",
     "quote": "We'll see. You never know.",
     "tags": [
@@ -699,7 +747,19 @@
     ],
     "links": {
       "wikipedia": "https://en.wikipedia.org/wiki/Ron_DeSantis"
-    }
+    },
+    "evidence": [
+      {
+        "date": "2026-05-04",
+        "headline": "DeSantis Refuses to Rule Out 2028 Run After ‘Begging’ Trump for New Job - The Daily Beast",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQdC1YZ0Ywd0JkZ05HdHlxY0xOZjFIekdybmlNeG9HSW5QNjF5YkptYk5zTVlyUDZmTXloNTRseTB5Qmk4MlBTYUR3NFJMY3M2TVhselR3bFg0dm5zdzdTVG40LTdkbGtjNnF2TmtRQldCTFJMZE9WYkE5bHZTWGhra3VRS2tCZlBjN0VmYmVoRTR4YmFPdWF3bnFqR1RhSjljTklCcVlNb2l5LU5WOTZhOWN4SUpTaHBGS0tpbkpkNHJ2MmM?oc=5",
+        "keys": [
+          "softConsidering"
+        ],
+        "conf": "Low"
+      }
+    ],
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQdC1YZ0Ywd0JkZ05HdHlxY0xOZjFIekdybmlNeG9HSW5QNjF5YkptYk5zTVlyUDZmTXloNTRseTB5Qmk4MlBTYUR3NFJMY3M2TVhselR3bFg0dm5zdzdTVG40LTdkbGtjNnF2TmtRQldCTFJMZE9WYkE5bHZTWGhra3VRS2tCZlBjN0VmYmVoRTR4YmFPdWF3bnFqR1RhSjljTklCcVlNb2l5LU5WOTZhOWN4SUpTaHBGS0tpbkpkNHJ2MmM?oc=5"
   },
   {
     "id": "paul",
@@ -997,9 +1057,9 @@
     ],
     "conf": "Medium",
     "delta": 0,
-    "lastSignal": "2026-06-28",
+    "lastSignal": "2026-07-08",
     "pollLead": "GOP poll leader (~35%)",
-    "headline": "JD Vance for president in 2028? It starts with MAGA voters — and Trump",
+    "headline": "Marco Rubio rules out 2028 run if JD Vance seeks Republican nomination - AOL.com",
     "why": "Presumptive GOP frontrunner; succession speculation around the sitting VP is building as a 2028 strategy takes shape.",
     "quote": "I'm not a potential future candidate. I'm a Vice President.",
     "tags": [
@@ -1041,7 +1101,7 @@
         "conf": "Low"
       }
     ],
-    "sourceUrl": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNa0pxU2JYMXlURGVLZUJTb3NCV215ZVR2QjVkbmZ4SFphN1VEdzFyUlJLLXlXS2ZNRU4tNWI0RnhmZ3J0OEd2VGd2M0JCLTZNZExzNHhrUU1NYzJrZTZsWGc1RjlGZHpwZ1FmWlJrMzJnSDZVTFVuUWJCSVgzN3BHMDRyNEFyWEY0dU1WX1d3RlpJUHJNQ2wyZkdMY3dPWXdOempDakRSM0YwX2VvN2N6TEZWd1dieEViNTBrLS1tMkl2VFRlb01fUV8yd1JJbXJtRzgxYUlDeVJqQkE?oc=5",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1nQmpRY1N4ZWQ0dVJDZzFraWpHS2FGRG1xR0pxUWFkUm1YRTFmdk5EMmZPUmFsbHhwelNyUzBjQkRLeHhJclpQTnBYWUVSVFVlcWNpVHZSQTZQejdYQ2pRZzE4ZWlYOXd3cGFqN1dnc2c2WkhS?oc=5",
     "links": {
       "wikipedia": "https://en.wikipedia.org/wiki/JD_Vance"
     }
@@ -1399,6 +1459,15 @@
           "softConsidering"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-02-16",
+        "headline": "Stephen A. Smith not ruling out presidential bid - CBS News",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPNTFNaU5MSEFVNVBmNW1YMEhYLTlhTzBFQzNQeE11NjNZT2dBOHliaGhhSEJaWUVreHlLTE5sZDhoVkRYUkcwLWY3T2JHZ0dCTk1nQ0h2Z0diS2o5V3dHUkM3bW9hOHRYcktNSVp4YThGaWpKSDVKSFYyajIxRS1scGVrQzk?oc=5",
+        "keys": [
+          "softConsidering"
+        ],
+        "conf": "Medium"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPQ1hRTlBXVURNZjBBOGl5MEY1RDNtN21rNGpOLVRjZUpOcUZEZlgwdEhXdUpEN1l6enYtejlmN2lrZHFCVG1xOHE5aER6WHJDR3NZTTdJQU5CSlRCNWUyV3Q1RmZRUlRrUV9TeVNPZEhORWY4cS1ob25rdlVLbTdkbjhfQi1acklIQ3BpWWNYc1RmVzQ4SEJfd1llSFUwZGZKTDJJTVNDakYtS3R6Tzl1UTIxcFNNOGRqLW9ENklNVEZSWUVmSkxOM1d0QnRlYXRqbGpLQWtyR1NYVTBNUXI5VGQ4cmtCMFd2WGI2V3Q1SlU?oc=5",

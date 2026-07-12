@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://hatinring.com/</loc><lastmod>2026-07-06</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
-  <url><loc>https://hatinring.com/about.html</loc><lastmod>2026-07-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://hatinring.com/</loc><lastmod>2026-07-11</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://hatinring.com/about.html</loc><lastmod>2026-07-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://hatinring.com/c/greaney/</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://hatinring.com/c/bovino/</loc><lastmod>2026-04-10</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://hatinring.com/c/jorgensen/</loc><lastmod>2026-05-28</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://hatinring.com/c/newsom/</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://hatinring.com/c/newsom/</loc><lastmod>2026-07-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://hatinring.com/c/harris/</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://hatinring.com/c/booker/</loc><lastmod>2026-05-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://hatinring.com/c/beshear/</loc><lastmod>2026-06-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -18,7 +18,7 @@
   <url><loc>https://hatinring.com/c/landrieu/</loc><lastmod>2026-04-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://hatinring.com/c/slotkin/</loc><lastmod>2026-06-17</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://hatinring.com/c/cruz/</loc><lastmod>2026-05-04</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://hatinring.com/c/desantis/</loc><lastmod>2026-03-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://hatinring.com/c/desantis/</loc><lastmod>2026-05-04</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://hatinring.com/c/paul/</loc><lastmod>2026-04-02</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://hatinring.com/c/gabbard/</loc><lastmod>2026-03-30</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://hatinring.com/c/bacon/</loc><lastmod>2026-03-10</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -29,7 +29,7 @@
   <url><loc>https://hatinring.com/c/murphy/</loc><lastmod>2026-04-15</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://hatinring.com/c/yang/</loc><lastmod>2026-03-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://hatinring.com/c/afroman/</loc><lastmod>2026-04-20</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://hatinring.com/c/vance/</loc><lastmod>2026-06-28</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://hatinring.com/c/vance/</loc><lastmod>2026-07-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://hatinring.com/c/whitmer/</loc><lastmod>2026-05-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://hatinring.com/c/bannon/</loc><lastmod>2026-03-12</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://hatinring.com/c/flynn/</loc><lastmod>2026-02-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -43,43 +43,43 @@
   <url><loc>https://hatinring.com/c/mtg/</loc><lastmod>2026-02-25</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://hatinring.com/c/smith/</loc><lastmod>2026-06-10</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://hatinring.com/c/kennedy/</loc><lastmod>2026-06-17</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://hatinring.com/vs/newsom-vs-vance/</loc><lastmod>2026-06-28</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://hatinring.com/vs/desantis-vs-newsom/</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://hatinring.com/vs/newsom-vs-rubio/</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://hatinring.com/vs/cruz-vs-newsom/</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://hatinring.com/vs/newsom-vs-trump/</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://hatinring.com/vs/harris-vs-vance/</loc><lastmod>2026-06-28</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hatinring.com/vs/newsom-vs-vance/</loc><lastmod>2026-07-08</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hatinring.com/vs/desantis-vs-newsom/</loc><lastmod>2026-07-08</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hatinring.com/vs/newsom-vs-rubio/</loc><lastmod>2026-07-08</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hatinring.com/vs/cruz-vs-newsom/</loc><lastmod>2026-07-08</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hatinring.com/vs/newsom-vs-trump/</loc><lastmod>2026-07-08</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hatinring.com/vs/harris-vs-vance/</loc><lastmod>2026-07-08</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://hatinring.com/vs/desantis-vs-harris/</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://hatinring.com/vs/harris-vs-rubio/</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://hatinring.com/vs/cruz-vs-harris/</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://hatinring.com/vs/harris-vs-trump/</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://hatinring.com/vs/buttigieg-vs-vance/</loc><lastmod>2026-06-28</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hatinring.com/vs/buttigieg-vs-vance/</loc><lastmod>2026-07-08</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://hatinring.com/vs/buttigieg-vs-desantis/</loc><lastmod>2026-06-25</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://hatinring.com/vs/buttigieg-vs-rubio/</loc><lastmod>2026-06-25</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://hatinring.com/vs/buttigieg-vs-cruz/</loc><lastmod>2026-06-25</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://hatinring.com/vs/buttigieg-vs-trump/</loc><lastmod>2026-06-25</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://hatinring.com/vs/shapiro-vs-vance/</loc><lastmod>2026-06-28</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hatinring.com/vs/shapiro-vs-vance/</loc><lastmod>2026-07-08</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://hatinring.com/vs/desantis-vs-shapiro/</loc><lastmod>2026-06-25</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://hatinring.com/vs/rubio-vs-shapiro/</loc><lastmod>2026-06-25</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://hatinring.com/vs/cruz-vs-shapiro/</loc><lastmod>2026-06-25</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://hatinring.com/vs/shapiro-vs-trump/</loc><lastmod>2026-06-25</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://hatinring.com/vs/pritzker-vs-vance/</loc><lastmod>2026-06-28</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hatinring.com/vs/pritzker-vs-vance/</loc><lastmod>2026-07-08</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://hatinring.com/vs/desantis-vs-pritzker/</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://hatinring.com/vs/pritzker-vs-rubio/</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://hatinring.com/vs/cruz-vs-pritzker/</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://hatinring.com/vs/pritzker-vs-trump/</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://hatinring.com/vs/vance-vs-whitmer/</loc><lastmod>2026-06-28</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hatinring.com/vs/vance-vs-whitmer/</loc><lastmod>2026-07-08</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://hatinring.com/vs/desantis-vs-whitmer/</loc><lastmod>2026-05-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://hatinring.com/vs/rubio-vs-whitmer/</loc><lastmod>2026-06-03</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://hatinring.com/vs/cruz-vs-whitmer/</loc><lastmod>2026-05-29</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://hatinring.com/vs/trump-vs-whitmer/</loc><lastmod>2026-06-02</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://hatinring.com/vs/harris-vs-newsom/</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://hatinring.com/vs/buttigieg-vs-newsom/</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hatinring.com/vs/harris-vs-newsom/</loc><lastmod>2026-07-08</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hatinring.com/vs/buttigieg-vs-newsom/</loc><lastmod>2026-07-08</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://hatinring.com/vs/buttigieg-vs-harris/</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://hatinring.com/vs/pritzker-vs-shapiro/</loc><lastmod>2026-06-26</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://hatinring.com/vs/desantis-vs-vance/</loc><lastmod>2026-06-28</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://hatinring.com/vs/rubio-vs-vance/</loc><lastmod>2026-06-28</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hatinring.com/vs/desantis-vs-vance/</loc><lastmod>2026-07-08</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hatinring.com/vs/rubio-vs-vance/</loc><lastmod>2026-07-08</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://hatinring.com/vs/cruz-vs-desantis/</loc><lastmod>2026-05-04</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://hatinring.com/vs/trump-vs-vance/</loc><lastmod>2026-06-28</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://hatinring.com/vs/trump-vs-vance/</loc><lastmod>2026-07-08</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://hatinring.com/vs/desantis-vs-trump/</loc><lastmod>2026-06-02</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
 </urlset>
