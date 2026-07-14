@@ -205,6 +205,15 @@
           "consideringQuote"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-04-10",
+        "headline": "'I am thinking about it,' Kamala Harris says of 2028 presidential bid - National Newswatch",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQdnlORlQ0b195b0NSU1ZjcU5hNmJWSlBuUDNpbkNzdTF5Z3JZbnZTWF83bmdFYXVERGxMb0lzUHVJWVMwc2NMX0RIcjJNTTFvb0NkbGw2b3I0aUxvY0draDNBWkxzMFRuUXZFekExTHZOWWRuUk5pdG9IZmhobDVUVUhZUzM2YU9jVG9CLTBKZVVKSnNRNFdLa0ZzWXVkYWlpelFvb3RPVWktTlE?oc=5",
+        "keys": [
+          "consideringQuote"
+        ],
+        "conf": "Low"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOWC1nUFZGeGZwTFkwVnQ4YURoanlwVTZ1QXhsLUctU1pORm9vLVFiT3RGVzYyaVdaRXRPWjBjeVFBQTZvTS0xaUJKc3FwblZ5Wm02UEJ6ek84NUlwTl9fRXk0Wmd3ckVNRlVhUjQ3Y3BvcWp2ME5ZSGV6QWdEaTI3Z3F2XzhaTDNUYVNCT20wVk0xUDhjN1BXSVBCOA?oc=5",
@@ -887,12 +896,13 @@
       "donors",
       "staffing",
       "mediaBlitz",
-      "earlyState"
+      "earlyState",
+      "softConsidering"
     ],
     "conf": "Medium",
-    "delta": 0,
-    "lastSignal": "2026-06-25",
-    "headline": "Buttigieg is on the road again, 'aiming to be useful' as he weighs a 2028 bid",
+    "delta": 12,
+    "lastSignal": "2026-07-14",
+    "headline": "Buttigieg won't rule out 2028 presidential bid as he campaigns in Iowa - The Des Moines Register",
     "why": "Back on the trail and openly weighing a run; consistently near the top of Democratic primary polls.",
     "quote": "",
     "tags": [
@@ -902,7 +912,26 @@
     ],
     "links": {
       "wikipedia": "https://en.wikipedia.org/wiki/Pete_Buttigieg"
-    }
+    },
+    "early_states": {
+      "IA": 1
+    },
+    "early_states_last": {
+      "IA": "2026-07-14"
+    },
+    "evidence": [
+      {
+        "date": "2026-07-14",
+        "headline": "Buttigieg won't rule out 2028 presidential bid as he campaigns in Iowa - The Des Moines Register",
+        "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPbXYzZ2Z4ZV9qN3VtUjE4T2xMUUxVUDU2WjZONG9XZ0w1Yzl2eWZlUjhWT2FEeEpGajNkdmZuTnRfZWhSVFctR3VJcGFzTWpSbUpFbGJJNUUyVVNqa3VrelVTVWVPLTR5MDl3WkZ6b2lmOF9KUTFZTlpyYTczVlFQWWdRUm00SDFsWU41WUJ2VDgyT2FHRmVKTTlVMjZUeUMzR28xam9ic05QTm1KNGZzMkR3Y1d2dHpPdGk3LTlySDNUbWw3dGNacFpnc3ZIa1NJUkVfSTE4M1BjcEt6VGxQNzdzNGNkWVl5STBFSzBB?oc=5",
+        "keys": [
+          "softConsidering",
+          "earlyState"
+        ],
+        "conf": "Low"
+      }
+    ],
+    "sourceUrl": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPbXYzZ2Z4ZV9qN3VtUjE4T2xMUUxVUDU2WjZONG9XZ0w1Yzl2eWZlUjhWT2FEeEpGajNkdmZuTnRfZWhSVFctR3VJcGFzTWpSbUpFbGJJNUUyVVNqa3VrelVTVWVPLTR5MDl3WkZ6b2lmOF9KUTFZTlpyYTczVlFQWWdRUm00SDFsWU41WUJ2VDgyT2FHRmVKTTlVMjZUeUMzR28xam9ic05QTm1KNGZzMkR3Y1d2dHpPdGk3LTlySDNUbWw3dGNacFpnc3ZIa1NJUkVfSTE4M1BjcEt6VGxQNzdzNGNkWVl5STBFSzBB?oc=5"
   },
   {
     "id": "aoc",

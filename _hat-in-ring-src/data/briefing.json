@@ -1,9 +1,19 @@
 {
-  "date": "2026-07-13",
-  "movers": [],
+  "date": "2026-07-14",
+  "movers": [
+    {
+      "id": "buttigieg",
+      "name": "Pete Buttigieg",
+      "party": "Democrat",
+      "delta": 12,
+      "score": 52,
+      "tier": 2,
+      "statusLabel": "Positioning"
+    }
+  ],
   "new_filers": [],
   "transitions": [],
-  "review_count": 7,
+  "review_count": 9,
   "totals": {
     "tracked": 41,
     "formal": 3,
