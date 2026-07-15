@@ -430,8 +430,8 @@
     ],
     "conf": "Medium",
     "delta": 0,
-    "lastSignal": "2026-06-19",
-    "headline": "Sen. Ruben Gallego Meets with South Carolina Democrats - C-SPAN",
+    "lastSignal": "2026-07-14",
+    "headline": "Sen. Ruben Gallego To Visit Iowa State Fair Amid 2028 Presidential Bid Speculation Sebastian Aho (TaWGnCR1YI) - Mshale",
     "why": "Notable upgrade — went from denial to open in weeks.",
     "quote": "We have to look at it.",
     "tags": [
@@ -442,10 +442,12 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Ruben_Gallego"
     },
     "early_states": {
-      "SC": 1
+      "SC": 1,
+      "IA": 1
     },
     "early_states_last": {
-      "SC": "2026-06-19"
+      "SC": "2026-06-19",
+      "IA": "2026-07-14"
     },
     "evidence": [
       {
@@ -456,9 +458,18 @@
           "earlyState"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-07-14",
+        "headline": "Sen. Ruben Gallego To Visit Iowa State Fair Amid 2028 Presidential Bid Speculation Sebastian Aho (TaWGnCR1YI) - Mshale",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9yT2YyT1RjU2NKclUxMjI5Z3RTVFpYNDFNRkJvVUNqOHYyV0ZsazZUYUN6R1hVSmxUUWk4RzVYR0V0WWdfTjQ1XzduNlZCaEdnWlFjQjhuWVdlU0w5eDhXMQ?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
       }
     ],
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOeEFxaUUtaXgyNk1wS0FhQWswM3RVeFFlWGc0NFh6RDJmYTBrX3pZcWtCZ2lHa2tydUJzd203MmFJRmgyWnhNREgtb2hmU2ZsbnQyVFJkS0cwWkoyX19fbmdPQUZMbzMyenRSNFNJRXY3VVUyM1lQVGpxTjdkckZtWW9VU3htbzJxcUlUcDgxbXZreTBHOE1handyN0NMWTFXX00tbGxyU0k?oc=5"
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9yT2YyT1RjU2NKclUxMjI5Z3RTVFpYNDFNRkJvVUNqOHYyV0ZsazZUYUN6R1hVSmxUUWk4RzVYR0V0WWdfTjQ1XzduNlZCaEdnWlFjQjhuWVdlU0w5eDhXMQ?oc=5"
   },
   {
     "id": "pritzker",
@@ -686,6 +697,15 @@
           "earlyState"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-04-08",
+        "headline": "At Iowa event, Slotkin says she would consider presidential run - MLive.com",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOSjJZM2stYk42U2RSTEZWVGdIV1FIUTd0NG1RZGRlaWhyUWwzdTlwTkFDXzJBbldiLW83Z09SZ2NmSVR6a1cwbmpGb1NQMDdlUHBBV1g0ZXZwT2dJV0FTMk1aTWhhQmpRVENpaU5LcXhwQVgzbEgzZ09HWXFfNW5XVHlybFA1eEhnRmREUndrRWlDNWo2Q0NtRmppaDdiRTEwU2xfN9IBuAFBVV95cUxNMFNldmlkZkhkVTNJdDUxY1p6OGttRFVmTTIxelUtMHRrWU1hUFltelVialdGR0lISHktNFZHQk5qWExVaDJWNGFhUFV5V3p5a2o0V3ppTlcwNHhmcUpTNjFuNTRBR0h2V3ppV1hnUk0xWGd1TWFBQTIyNFZYMmpKTGxobjBfQzkyYXZoVEhHU3VxRkwtWHNCTHhkVTdNYkEtRXo2SkdpR25FRXRyQm1VZGhGemN3am5h?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOSkRuMktZcnpCQlc4d3dVQkxWT2sxRllQbTJPdEY2Ny1RSnJYckRKWDIzLUYwdjhKMktYYlJNcnAzMlU1NEc1Y3ZUODJZMjdYLXBNb295bWptV3dJci1WSGxmVDhnWGkyWTZDM2F6dUllUFBYZko2Y0t2S3JmaDhkMHNkcFRrVmd6UXg1WGJtdTBPalpqZ2RQamxhMDZnQmhxYVJVS0hB?oc=5",
@@ -693,10 +713,10 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Elissa_Slotkin"
     },
     "early_states": {
-      "IA": 1
+      "IA": 2
     },
     "early_states_last": {
-      "IA": "2026-04-07"
+      "IA": "2026-04-08"
     }
   },
   {
@@ -900,9 +920,9 @@
       "softConsidering"
     ],
     "conf": "Medium",
-    "delta": 12,
+    "delta": 0,
     "lastSignal": "2026-07-14",
-    "headline": "Buttigieg won't rule out 2028 presidential bid as he campaigns in Iowa - The Des Moines Register",
+    "headline": "Buttigieg won't rule out 2028 presidential bid as he rallies in Iowa - AOL.com",
     "why": "Back on the trail and openly weighing a run; consistently near the top of Democratic primary polls.",
     "quote": "",
     "tags": [
@@ -914,7 +934,7 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Pete_Buttigieg"
     },
     "early_states": {
-      "IA": 1
+      "IA": 2
     },
     "early_states_last": {
       "IA": "2026-07-14"
@@ -929,9 +949,19 @@
           "earlyState"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-07-14",
+        "headline": "Buttigieg won't rule out 2028 presidential bid as he rallies in Iowa - AOL.com",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPM0xob2JtcXY3WXdPbEVzRERmR0I1cDVOQlpWVjhhLWI3RS04cFB1MFZZMWwzS2VpOXM4TUhlUVZpdnlLY2thVUhHWmQ3SzZ0Y0dIYlRGWlpYODFNLWNESlFVWUhvMk44Q2RKZjJTUjJxZnJQMEs0cWFVOTUtMkdqdFJ4NDdHcUhG?oc=5",
+        "keys": [
+          "softConsidering",
+          "earlyState"
+        ],
+        "conf": "Low"
       }
     ],
-    "sourceUrl": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPbXYzZ2Z4ZV9qN3VtUjE4T2xMUUxVUDU2WjZONG9XZ0w1Yzl2eWZlUjhWT2FEeEpGajNkdmZuTnRfZWhSVFctR3VJcGFzTWpSbUpFbGJJNUUyVVNqa3VrelVTVWVPLTR5MDl3WkZ6b2lmOF9KUTFZTlpyYTczVlFQWWdRUm00SDFsWU41WUJ2VDgyT2FHRmVKTTlVMjZUeUMzR28xam9ic05QTm1KNGZzMkR3Y1d2dHpPdGk3LTlySDNUbWw3dGNacFpnc3ZIa1NJUkVfSTE4M1BjcEt6VGxQNzdzNGNkWVl5STBFSzBB?oc=5"
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPM0xob2JtcXY3WXdPbEVzRERmR0I1cDVOQlpWVjhhLWI3RS04cFB1MFZZMWwzS2VpOXM4TUhlUVZpdnlLY2thVUhHWmQ3SzZ0Y0dIYlRGWlpYODFNLWNESlFVWUhvMk44Q2RKZjJTUjJxZnJQMEs0cWFVOTUtMkdqdFJ4NDdHcUhG?oc=5"
   },
   {
     "id": "aoc",
