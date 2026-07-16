@@ -218,6 +218,15 @@
           "consideringQuote"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-06-20",
+        "headline": "Kamala Harris says 'hope should be a verb' as viral podcast clip draws 'word salad' mockery - AOL.com",
+        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9XWkM4Ul9KWTU3UUs2d01NbjlFZ1NzWTYyQkdObzI1OEF0ZjdVeGZyWlRrdXdQOHdKajJYcExVSW5iREZlaEdGZVgxQzZkSExjQXdLTklHaUpNdHI1dkgzcHQ1UXVZS29XMEFlRUlEeWgxZXQzek5BSF9zNms?oc=5",
+        "keys": [
+          "mediaBlitz"
+        ],
+        "conf": "Low"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOWC1nUFZGeGZwTFkwVnQ4YURoanlwVTZ1QXhsLUctU1pORm9vLVFiT3RGVzYyaVdaRXRPWjBjeVFBQTZvTS0xaUJKc3FwblZ5Wm02UEJ6ek84NUlwTl9fRXk0Wmd3ckVNRlVhUjQ3Y3BvcWp2ME5ZSGV6QWdEaTI3Z3F2XzhaTDNUYVNCT20wVk0xUDhjN1BXSVBCOA?oc=5",
@@ -942,8 +951,8 @@
     ],
     "conf": "Medium",
     "delta": 0,
-    "lastSignal": "2026-07-14",
-    "headline": "Buttigieg won't rule out 2028 presidential bid as he rallies in Iowa - AOL.com",
+    "lastSignal": "2026-07-15",
+    "headline": "\"Nope!\" Pete Buttigieg refuses to rule out 2028 presidential bid - LGBTQ Nation",
     "why": "Back on the trail and openly weighing a run; consistently near the top of Democratic primary polls.",
     "quote": "",
     "tags": [
@@ -955,10 +964,10 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Pete_Buttigieg"
     },
     "early_states": {
-      "IA": 2
+      "IA": 3
     },
     "early_states_last": {
-      "IA": "2026-07-14"
+      "IA": "2026-07-13"
     },
     "evidence": [
       {
@@ -980,9 +989,27 @@
           "earlyState"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-07-13",
+        "headline": "‘Reach across the aisle’: Pete Buttigieg campaigns with Sarah Trone Garriott - Iowa Capital Dispatch",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPeDk1bTJjOGh6ano1dWlwaXlwVEpETjdrOHVqVnBNQzdMdHZPLWZLTld3UHdVRThQMjl0YlJtWmlUWG9CQlRYZk16WjRQVU5DR191b0U5MVRoRGY0QTJFM29pYWpLTlVKb3VNM280SkNjOFhFYzdHdEk0c1JMd0MxcGRLWWhZenNsWWRXYUNtbXBNS3FiT0RkdkdibkFWajM4U2hmNlV6WFoxVnNGWHR0RTVzaG1vT3R3?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-07-15",
+        "headline": "\"Nope!\" Pete Buttigieg refuses to rule out 2028 presidential bid - LGBTQ Nation",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOZWVuSENWUE5UNG4yRWtfQlRHR29VMGJpOWwyeHpzd0FxMHF6eGVsTmdfUXBYMXZELUw2UUNVak5CVWprU0tFeklZUzRLV2M3ZFNPc3VXVWxjcTZUY1RsWVZCQTdVVnpvRUo3T1FwalVqVW92dVZBRUx6QWxwWFV1VHVfd3Rud2VuM3hDZjFmeUNGd2xINjA2aHdLT3QtYjQ?oc=5",
+        "keys": [
+          "softConsidering"
+        ],
+        "conf": "Low"
       }
     ],
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPM0xob2JtcXY3WXdPbEVzRERmR0I1cDVOQlpWVjhhLWI3RS04cFB1MFZZMWwzS2VpOXM4TUhlUVZpdnlLY2thVUhHWmQ3SzZ0Y0dIYlRGWlpYODFNLWNESlFVWUhvMk44Q2RKZjJTUjJxZnJQMEs0cWFVOTUtMkdqdFJ4NDdHcUhG?oc=5",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOZWVuSENWUE5UNG4yRWtfQlRHR29VMGJpOWwyeHpzd0FxMHF6eGVsTmdfUXBYMXZELUw2UUNVak5CVWprU0tFeklZUzRLV2M3ZFNPc3VXVWxjcTZUY1RsWVZCQTdVVnpvRUo3T1FwalVqVW92dVZBRUx6QWxwWFV1VHVfd3Rud2VuM3hDZjFmeUNGd2xINjA2aHdLT3QtYjQ?oc=5",
     "img": "assets/candidates/buttigieg/01_pete_buttigieg_secretary_of_transportation_jpg.jpg"
   },
   {
@@ -1143,9 +1170,9 @@
     ],
     "conf": "Medium",
     "delta": 0,
-    "lastSignal": "2026-07-08",
+    "lastSignal": "2026-07-13",
     "pollLead": "GOP poll leader (~35%)",
-    "headline": "Marco Rubio rules out 2028 run if JD Vance seeks Republican nomination - AOL.com",
+    "headline": "Vance’s tough talk on Israel is alienating some Jewish GOP donors - Politico",
     "why": "Presumptive GOP frontrunner; succession speculation around the sitting VP is building as a 2028 strategy takes shape.",
     "quote": "I'm not a potential future candidate. I'm a Vice President.",
     "tags": [
@@ -1185,9 +1212,18 @@
           "earlyState"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-07-13",
+        "headline": "Vance’s tough talk on Israel is alienating some Jewish GOP donors - Politico",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNaFJwalhmb2xWemNqR1hON2h2OEJ3X3d1Q1BiT2NoUGJPTHlpSHNTM0dIUWV0N2JvNXF6M3hLUU9mWjctczkyd0hzWURrNXpNZm4zZHJicmIxbVJjWER4R1ZjRjB1Y3pZX1BNa1RzVmdPaFNKbi03djhaNmt2Um9pOGJDa3BzN05KVEJVYWprWktJbFVvUUE?oc=5",
+        "keys": [
+          "donors"
+        ],
+        "conf": "Low"
       }
     ],
-    "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1nQmpRY1N4ZWQ0dVJDZzFraWpHS2FGRG1xR0pxUWFkUm1YRTFmdk5EMmZPUmFsbHhwelNyUzBjQkRLeHhJclpQTnBYWUVSVFVlcWNpVHZSQTZQejdYQ2pRZzE4ZWlYOXd3cGFqN1dnc2c2WkhS?oc=5",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNaFJwalhmb2xWemNqR1hON2h2OEJ3X3d1Q1BiT2NoUGJPTHlpSHNTM0dIUWV0N2JvNXF6M3hLUU9mWjctczkyd0hzWURrNXpNZm4zZHJicmIxbVJjWER4R1ZjRjB1Y3pZX1BNa1RzVmdPaFNKbi03djhaNmt2Um9pOGJDa3BzN05KVEJVYWprWktJbFVvUUE?oc=5",
     "links": {
       "wikipedia": "https://en.wikipedia.org/wiki/JD_Vance"
     },
