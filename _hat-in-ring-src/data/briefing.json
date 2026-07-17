@@ -1,12 +1,29 @@
 {
-  "date": "2026-07-16",
-  "movers": [],
+  "date": "2026-07-17",
+  "movers": [
+    {
+      "id": "lemon",
+      "name": "Don Lemon",
+      "party": "Democrat",
+      "delta": 8,
+      "score": 30,
+      "tier": 3,
+      "statusLabel": "Actively considering"
+    }
+  ],
   "new_filers": [],
-  "transitions": [],
-  "review_count": 11,
+  "transitions": [
+    {
+      "name": "Don Lemon",
+      "from": 2,
+      "to": 3,
+      "date": "2026-07-17"
+    }
+  ],
+  "review_count": 12,
   "totals": {
     "tracked": 41,
     "formal": 3,
-    "considering": 13
+    "considering": 14
   }
 }

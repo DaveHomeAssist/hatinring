@@ -132,5 +132,18 @@
     ],
     "rid": "a2e2cc79e2bc",
     "kind": "discovery"
+  },
+  {
+    "name": "Marco Rubio",
+    "headline": "Stephen A Smith rules out White House bid, says he’d back Rubio over some top Democrats - Fox News",
+    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOck15eGhFanVoZnpxOFFKREtzellDbTRQX3dISVk2ZjBoc1FWWmdfb3pUUUo0R3ZXMXBNQTJ6YUtQbGlKM0F5UWRUT0dfenAwUDZlMy0wZmtTSmg3cjJKdDU5TEdicXdkcUNHbE41N3hXa1BWYldmT3lHSzhrLUZiNTU1SlgwZjdXVmFoLVJqUkxZQmV5VUJMRUlwS3VjS3pXUmplenEzdGg2bEZwMnBEVDRaVms4Zw?oc=5",
+    "source": "Fox News",
+    "date": "2026-03-09",
+    "keys": [
+      "ruledOut"
+    ],
+    "note": "denial/downgrade — confirm before applying",
+    "rid": "4c3dbffccc31",
+    "kind": "denial"
   }
 ]
