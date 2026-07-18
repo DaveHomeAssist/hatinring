@@ -1,16 +1,6 @@
 {
-  "date": "2026-07-17",
-  "movers": [
-    {
-      "id": "lemon",
-      "name": "Don Lemon",
-      "party": "Democrat",
-      "delta": 8,
-      "score": 30,
-      "tier": 3,
-      "statusLabel": "Actively considering"
-    }
-  ],
+  "date": "2026-07-18",
+  "movers": [],
   "new_filers": [],
   "transitions": [
     {
