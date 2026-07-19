@@ -1,11 +1,5 @@
 [
   {
-    "date": "2026-06-18",
-    "guid": "hatinring-2026-06-18",
-    "title": "What moved on the 2028 board — 2026-06-18",
-    "desc": "No notable movement."
-  },
-  {
     "date": "2026-06-19",
     "guid": "hatinring-2026-06-19",
     "title": "What moved on the 2028 board — 2026-06-19",
@@ -194,6 +188,13 @@
     "guid": "hatinring-2026-07-18",
     "link": "https://hatinring.com/",
     "title": "What moved on the 2028 board — 2026-07-18",
+    "desc": "Status changes: Don Lemon"
+  },
+  {
+    "date": "2026-07-19",
+    "guid": "hatinring-2026-07-19",
+    "link": "https://hatinring.com/",
+    "title": "What moved on the 2028 board — 2026-07-19",
     "desc": "Status changes: Don Lemon"
   }
 ]
