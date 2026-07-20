@@ -1,7 +1,24 @@
 {
-  "date": "2026-07-19",
-  "movers": [],
-  "new_filers": [],
+  "date": "2026-07-20",
+  "movers": [
+    {
+      "id": "kelly",
+      "name": "Mark Kelly",
+      "party": "Democrat",
+      "delta": 25,
+      "score": 75,
+      "tier": 5,
+      "statusLabel": "Declared"
+    }
+  ],
+  "new_filers": [
+    {
+      "id": "kelly",
+      "name": "Mark Kelly",
+      "tier": 5,
+      "statusLabel": "Declared"
+    }
+  ],
   "transitions": [
     {
       "name": "Don Lemon",

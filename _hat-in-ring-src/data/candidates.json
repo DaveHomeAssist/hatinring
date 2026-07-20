@@ -339,12 +339,13 @@
       "consideringQuote",
       "staffing",
       "donors",
-      "declared"
+      "declared",
+      "earlyState"
     ],
     "conf": "Medium",
-    "delta": 0,
-    "lastSignal": "2026-02-19",
-    "headline": "Trump’s call for Mark Kelly’s execution may have launched his campaign for president - Arizona Mirror",
+    "delta": 25,
+    "lastSignal": "2026-07-20",
+    "headline": "Sen. Mark Kelly, potential 2028 candidate, to headline Iowa Wing Ding - The Des Moines Register",
     "why": "Swing-state, astronaut/veteran profile draws operative interest.",
     "quote": "",
     "tags": [
@@ -360,9 +361,18 @@
           "declared"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-07-20",
+        "headline": "Sen. Mark Kelly, potential 2028 candidate, to headline Iowa Wing Ding - The Des Moines Register",
+        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPZWdSZXRiVEMzZ1FwbGstMU9tQmJuSE5XVEpqOTRhX0pLTkFPTVBkWDREYkV4YXZjeWFkMmt0ZThkZ0hZckNHUjlwTENyZGQ1UFcyOG9DSnI4ekhvLTlKUDVRVWFaNnpuaFBtRDZ3aDRHQnB3bzk5LThWbk5rWEExck1RSW9keG9ONTg1aTVmZGxqalRudDE2SGxUbFpxQjNjei1zakxrRlFWN0I0M0F4RjE5M3Ffd0RnRlJiXzVISlVTcEJkaklDZnFOVUFHSmlXX3dLUUd5R3dLRVozRzQ3Tmg4ZDA?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
       }
     ],
-    "sourceUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOZno1VElOWkxpYnpWUnZQbU9iQTFRMTFHcEl5WXZ0UWExcWhob1MtM05vbjI3RW96T0ttZG5qRnBOQzY1MkdZY1BjNXN5ZlR2blFQdld2RDdBeGY0VEZIcDJmdjVsQnZKLTNKZ2V5aExJTFdxTFdIODE1X21TS2NZenVJbzF2b3lzSTRIOGxXSHFvS3RTQWtEa2lXYkEzaGdQekJBWkhzVUducHFIdk44WW95dzRvdw?oc=5",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPZWdSZXRiVEMzZ1FwbGstMU9tQmJuSE5XVEpqOTRhX0pLTkFPTVBkWDREYkV4YXZjeWFkMmt0ZThkZ0hZckNHUjlwTENyZGQ1UFcyOG9DSnI4ekhvLTlKUDVRVWFaNnpuaFBtRDZ3aDRHQnB3bzk5LThWbk5rWEExck1RSW9keG9ONTg1aTVmZGxqalRudDE2SGxUbFpxQjNjei1zakxrRlFWN0I0M0F4RjE5M3Ffd0RnRlJiXzVISlVTcEJkaklDZnFOVUFHSmlXX3dLUUd5R3dLRVozRzQ3Tmg4ZDA?oc=5",
     "history": [
       {
         "date": "2026-02-19",
@@ -373,6 +383,12 @@
     ],
     "links": {
       "wikipedia": "https://en.wikipedia.org/wiki/Mark_Kelly"
+    },
+    "early_states": {
+      "IA": 1
+    },
+    "early_states_last": {
+      "IA": "2026-07-20"
     }
   },
   {
@@ -966,8 +982,8 @@
     ],
     "conf": "Medium",
     "delta": 0,
-    "lastSignal": "2026-07-15",
-    "headline": "\"Nope!\" Pete Buttigieg refuses to rule out 2028 presidential bid - LGBTQ Nation",
+    "lastSignal": "2026-07-19",
+    "headline": "At a Florida fundraiser, Pete Buttigieg stresses the need to ‘restore democracy’ - NBC News",
     "why": "Back on the trail and openly weighing a run; consistently near the top of Democratic primary polls.",
     "quote": "",
     "tags": [
@@ -1022,9 +1038,18 @@
           "softConsidering"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-07-19",
+        "headline": "At a Florida fundraiser, Pete Buttigieg stresses the need to ‘restore democracy’ - NBC News",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOSzhPeXp3ZU40YkFVWFI2YkJ3VUplYkppVXJLRnVmWlVpYnZNNkVDaFFzM2Iwc2EzY1JkM2F2RWhaRm1xb24xNldudmhjVWRtb2JjNWE4VV83Vk92cF9nOFh4SlhtYmdoQkVFT0JqNXlnb0pPTFlBcW9kNG0wN1RjejNFWS1GT2syODJRZDJaOEZJWEhOX1VsOWxQVGFjMmFiTm9sWHBzR1N2Q213NVE?oc=5",
+        "keys": [
+          "donors"
+        ],
+        "conf": "Low"
       }
     ],
-    "sourceUrl": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOZWVuSENWUE5UNG4yRWtfQlRHR29VMGJpOWwyeHpzd0FxMHF6eGVsTmdfUXBYMXZELUw2UUNVak5CVWprU0tFeklZUzRLV2M3ZFNPc3VXVWxjcTZUY1RsWVZCQTdVVnpvRUo3T1FwalVqVW92dVZBRUx6QWxwWFV1VHVfd3Rud2VuM3hDZjFmeUNGd2xINjA2aHdLT3QtYjQ?oc=5"
+    "sourceUrl": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOSzhPeXp3ZU40YkFVWFI2YkJ3VUplYkppVXJLRnVmWlVpYnZNNkVDaFFzM2Iwc2EzY1JkM2F2RWhaRm1xb24xNldudmhjVWRtb2JjNWE4VV83Vk92cF9nOFh4SlhtYmdoQkVFT0JqNXlnb0pPTFlBcW9kNG0wN1RjejNFWS1GT2syODJRZDJaOEZJWEhOX1VsOWxQVGFjMmFiTm9sWHBzR1N2Q213NVE?oc=5"
   },
   {
     "id": "aoc",
