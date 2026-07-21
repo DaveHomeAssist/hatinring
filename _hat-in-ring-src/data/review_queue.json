@@ -145,5 +145,18 @@
     "note": "denial/downgrade — confirm before applying",
     "rid": "4c3dbffccc31",
     "kind": "denial"
+  },
+  {
+    "name": "Alexandria Ocasio-Cortez",
+    "headline": "AOC says she ‘hasn’t ruled out a 2028 run’ as she faces criticism: ‘I’m working class not a militant leftist’ - The Independent",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQM0lKZ2dEVzBQVmF5RFU5U0lIYVJqSjFZSlBDTzFyam9EQjJZUlpad1JyZHJJSTFCUnM5eFQyY0Mza25sUm4tQmY2YXVEeDNkVkN3MzZZYmt3ckVZTG1OY2FfbTc5aUwwSUc2SzdLRVJyYmxWNEY1ejE3c1I5U2t3Z1hQMHdxdFNucTJwTjVxQWJaRTV0QVhiUndGaWI3WWk1YWdFMUprLWpsRjBkQjV0Yg?oc=5",
+    "source": "The Independent",
+    "date": "2026-07-20",
+    "keys": [
+      "ruledOut"
+    ],
+    "note": "denial/downgrade — confirm before applying",
+    "rid": "a9eacc4db735",
+    "kind": "denial"
   }
 ]

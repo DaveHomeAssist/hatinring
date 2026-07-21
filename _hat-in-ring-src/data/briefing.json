@@ -1,14 +1,14 @@
 {
-  "date": "2026-07-20",
+  "date": "2026-07-21",
   "movers": [
     {
-      "id": "kelly",
-      "name": "Mark Kelly",
+      "id": "aoc",
+      "name": "Alexandria Ocasio-Cortez",
       "party": "Democrat",
-      "delta": 25,
-      "score": 75,
-      "tier": 5,
-      "statusLabel": "Declared"
+      "delta": 5,
+      "score": 32,
+      "tier": 2,
+      "statusLabel": "Positioning"
     }
   ],
   "new_filers": [
@@ -27,7 +27,7 @@
       "date": "2026-07-17"
     }
   ],
-  "review_count": 12,
+  "review_count": 13,
   "totals": {
     "tracked": 41,
     "formal": 3,
