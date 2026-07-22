@@ -1,16 +1,6 @@
 {
-  "date": "2026-07-21",
-  "movers": [
-    {
-      "id": "aoc",
-      "name": "Alexandria Ocasio-Cortez",
-      "party": "Democrat",
-      "delta": 5,
-      "score": 32,
-      "tier": 2,
-      "statusLabel": "Positioning"
-    }
-  ],
+  "date": "2026-07-22",
+  "movers": [],
   "new_filers": [
     {
       "id": "kelly",
@@ -27,7 +17,7 @@
       "date": "2026-07-17"
     }
   ],
-  "review_count": 13,
+  "review_count": 14,
   "totals": {
     "tracked": 41,
     "formal": 3,

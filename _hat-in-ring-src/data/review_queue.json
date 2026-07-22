@@ -158,5 +158,17 @@
     "note": "denial/downgrade — confirm before applying",
     "rid": "a9eacc4db735",
     "kind": "denial"
+  },
+  {
+    "name": "Trump does not rule out seeking third te",
+    "headline": "Trump does not rule out seeking third term - but says he will not use VP loophole - BBC",
+    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBKbFFUMk1OWk5tNDNMc1lHek0wdXk2YUpTalRWLWpSai1QakVCNXN0VXFuS2NXQ2M1YUxVTWhqZk0yT2tnRXdrVkRrOHRzZUdUX0NmajFZM0xOdw?oc=5",
+    "source": "BBC",
+    "date": "2025-10-27",
+    "keys": [
+      "ruledOut"
+    ],
+    "rid": "ad6bcece7919",
+    "kind": "denial"
   }
 ]
