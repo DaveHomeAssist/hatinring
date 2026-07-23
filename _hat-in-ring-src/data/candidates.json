@@ -1060,12 +1060,13 @@
     "keys": [
       "donors",
       "mediaBlitz",
-      "softConsidering"
+      "softConsidering",
+      "earlyState"
     ],
     "conf": "Medium",
-    "delta": 0,
-    "lastSignal": "2026-07-20",
-    "headline": "AOC says she ‘hasn’t ruled out a 2028 run’ as she faces criticism: ‘I’m working class not a militant leftist’ - The Independent",
+    "delta": 10,
+    "lastSignal": "2026-07-22",
+    "headline": "AOC picks up steam while Vance loses ground to Rubio: New Hampshire poll - Washington Examiner",
     "why": "Massive small-dollar base; leads some progressive polls.",
     "quote": "",
     "tags": [
@@ -1081,11 +1082,35 @@
           "softConsidering"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-07-22",
+        "headline": "An Early New Hampshire Poll Finds Democratic 2028 Frontrunner . . . AOC - National Review",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPeHhoNTFIX0VXaUFxOEtONzRuVWlmRVlRUFcyZVNjS3FHMDZwNnpxOEtqakxMZTJqSmd1Vi1DdVlYY0hscTh1TTB1cE9zb09rcEpmMXIwNXAyTVh0Yjd5SmVDeEFlOV9McjZhYW5kazBiY3ZsYjlzcnl4RDV1Z3h1ZF9qcWVpM0tERlJRT3dIVmRjTUVWTHp2bzJOb3BiNEgtMC1nZmZCZ9IBrAFBVV95cUxPSHl3TG1BVG03aHRlUUhtWmpMdFhYeXNRc2QzYjFNSGcyM2sxbnRnV2N0NVgyNWJxWVZ5SXdGd05FUDFqMExpUGFrYzNGcHU4Vzk2Y0NNeFdLQURTMDBSZmw5Q1dWcXpXRHZ0alltWUlqOXU0QjlKWUphZjJsS0s2TUpsYnBMbU8wSDdGcEhHcjI2Yzl1b1dXUGdaUFBFV1pTeGJDYmZkdE5RSktN?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-07-22",
+        "headline": "AOC picks up steam while Vance loses ground to Rubio: New Hampshire poll - Washington Examiner",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQWEMtQmxHRFRwYWhUTXE1aUJ5SGx0cTU4eDVMNE5STXZteWlPNnlDQWtmUVd0WHRPaXpFaDkzOUU2aWdCVjF3LXdvZ2FaRW43TTVZeTY2NWpCUFNGZWEzeE90Y05uXzdFdW12ZWg4aEFSczZEbnhydnBrWU9qbE5ZOG9Kd0JnMk1VUmJFSW9DWjhNYm1xYTRFSG5CU3FKcXprbVNWa1pqc2h2U0ZpdGpNN0ZBZ0xhaUp2TDBXNUFUbUkyNzA?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
       }
     ],
-    "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQM0lKZ2dEVzBQVmF5RFU5U0lIYVJqSjFZSlBDTzFyam9EQjJZUlpad1JyZHJJSTFCUnM5eFQyY0Mza25sUm4tQmY2YXVEeDNkVkN3MzZZYmt3ckVZTG1OY2FfbTc5aUwwSUc2SzdLRVJyYmxWNEY1ejE3c1I5U2t3Z1hQMHdxdFNucTJwTjVxQWJaRTV0QVhiUndGaWI3WWk1YWdFMUprLWpsRjBkQjV0Yg?oc=5",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQWEMtQmxHRFRwYWhUTXE1aUJ5SGx0cTU4eDVMNE5STXZteWlPNnlDQWtmUVd0WHRPaXpFaDkzOUU2aWdCVjF3LXdvZ2FaRW43TTVZeTY2NWpCUFNGZWEzeE90Y05uXzdFdW12ZWg4aEFSczZEbnhydnBrWU9qbE5ZOG9Kd0JnMk1VUmJFSW9DWjhNYm1xYTRFSG5CU3FKcXprbVNWa1pqc2h2U0ZpdGpNN0ZBZ0xhaUp2TDBXNUFUbUkyNzA?oc=5",
     "links": {
       "wikipedia": "https://en.wikipedia.org/wiki/Alexandria_Ocasio-Cortez"
+    },
+    "early_states": {
+      "NH": 2
+    },
+    "early_states_last": {
+      "NH": "2026-07-22"
     }
   },
   {
