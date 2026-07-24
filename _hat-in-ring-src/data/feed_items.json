@@ -1,11 +1,5 @@
 [
   {
-    "date": "2026-06-24",
-    "guid": "hatinring-2026-06-24",
-    "title": "What moved on the 2028 board — 2026-06-24",
-    "desc": "No notable movement."
-  },
-  {
     "date": "2026-06-25",
     "guid": "hatinring-2026-06-25",
     "title": "What moved on the 2028 board — 2026-06-25",
@@ -200,5 +194,12 @@
     "link": "https://hatinring.com/c/aoc/",
     "title": "What moved on the 2028 board — 2026-07-23",
     "desc": "Top movers: Alexandria Ocasio-Cortez +10 · Formal/new: Mark Kelly · Status changes: Don Lemon"
+  },
+  {
+    "date": "2026-07-24",
+    "guid": "hatinring-2026-07-24",
+    "link": "https://hatinring.com/",
+    "title": "What moved on the 2028 board — 2026-07-24",
+    "desc": "Formal/new: Mark Kelly · Status changes: Don Lemon"
   }
 ]

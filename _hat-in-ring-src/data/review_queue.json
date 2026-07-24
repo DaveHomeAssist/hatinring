@@ -183,5 +183,54 @@
     "note": "denial/downgrade — confirm before applying",
     "rid": "2c9c6d58cb24",
     "kind": "denial"
+  },
+  {
+    "name": "New Hampshire",
+    "headline": "New Hampshire poll gives 2 Democrats early edge in 2028 race - MS NOW",
+    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNQVlGaDlZMmtNdGY1U1VWMmhaZEM0QktoWHRLVlZPU2NaRUlYaHhTU2p3YnZUbkpmN0R4Y1hfWS1LM0NfN1A2aVAxNnlFWnNNQy1oR01LWnI2VWh6Z0FnenpYZkg2RTVyTWZkVDRwUEstQ2xSM0pxRHMzT1VDTUZ1MGIzOGpLR2F3cWtZSmRMd3YwTzNaTlE?oc=5",
+    "source": "MS NOW",
+    "date": "2026-07-23",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "433140d0a864",
+    "kind": "discovery"
+  },
+  {
+    "name": "USA Today",
+    "headline": "Ossoff again says he won't run in 2028. His name is considered anyway - USA Today",
+    "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQT1pyVlZsZ3VGODc5ZVIzRXFDaE9feFNiT0FIakxZeWEtWXppdThzaWdFUkJJbzRCOV9qVUQ2LXNwVnBNdGl4aUpNUDN6R3hQYnd0UlBBQmdOSkNxcDRBUDlTR21hbHlCWjZrZVRna1QtWVNvNGMxNms4eGJacDBDRnlJdG0yZURuUUdaX1RJVExCZXRDT01JcXZTTW1ic0FOMFljODlMWTJXTmI2emJPdjZQeWFRdk5sT3B0dkNCS0NNaWhORjZhbkVNSzdoUzZtcDl6ZDliMDMzTTky?oc=5",
+    "source": "USA Today",
+    "date": "2026-07-23",
+    "keys": [
+      "ruledOut"
+    ],
+    "rid": "6c527107102d",
+    "kind": "denial"
+  },
+  {
+    "name": "Gretchen Whitmer",
+    "headline": "Michigan Gov. Gretchen Whitmer says she’s not running for president in 2028 - Scripps News",
+    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOSWdzcHplTjFUeVJGd2lzWU9kOHZXSVRiRWxNX1VfUjJNLVpIamN6SWpHaFRoMXZmWnQ1U3ZmaGdZV255blRsNV9YZzRReTdXWlpWUlUyS3lNTURWMWl1Ql9kN25JQzRkWS1Ba1VwSkVPOXUwX3p3Y1VuQVU0emJvTFZfdUZsa1ZIN0dQT1hma1ZQaDJTMFI4NlNjU1ZacWdZRnR6Y0k1UkQ1LUFGU3RR?oc=5",
+    "source": "Scripps News",
+    "date": "2026-05-28",
+    "keys": [
+      "ruledOut"
+    ],
+    "note": "denial/downgrade — confirm before applying",
+    "rid": "4ed4ce319134",
+    "kind": "denial"
+  },
+  {
+    "name": "Insider reveals surprising celebrity con",
+    "headline": "Insider reveals surprising celebrity considering a 2028 presidential run - Extra.ie",
+    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNZ0w0T3FqdmcxSGJhWUpIcXoyTFF0ZjlGX2VFNTdfWV9fMGdXU21BS2o2eHJnRllYb2JTbl9JMG1HaVc3WUktb0twbEZ3eUk1Y2ZfUV9NeW8zaWZrTmhKQXJwY1Vfd1h1NW5lNUZwbDlxSlpXWkZZX2hRMC1adGFQSDdaWThYenhPdXNKVE5iMFREN2ttYUg3VzJScmpTbWVH?oc=5",
+    "source": "Extra.ie",
+    "date": "2026-07-23",
+    "keys": [
+      "consideringQuote"
+    ],
+    "rid": "d770873e67d9",
+    "kind": "discovery"
   }
 ]
