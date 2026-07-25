@@ -146,8 +146,8 @@
     ],
     "conf": "High",
     "delta": 0,
-    "lastSignal": "2026-06-26",
-    "headline": "Vance and Harris lead the 2028 presidential race: poll",
+    "lastSignal": "2026-07-24",
+    "headline": "South Carolina picked for first 2028 Democratic primary, in possible Kamala Harris boost - New York Post",
     "why": "The 2024 nominee tops early Democratic primary polling; a rematch frontrunner in a crowded, unsettled field.",
     "quote": "I have not made a decision… I may or may not.",
     "tags": [
@@ -227,11 +227,26 @@
           "mediaBlitz"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-07-24",
+        "headline": "South Carolina picked for first 2028 Democratic primary, in possible Kamala Harris boost - New York Post",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNV1BzWkNZc19aWWh3R2luZFZxWUVJT2oyZFo1LXFzQ0c2aHk1MExoNENNZk5nMkFtaS1lRWZlRXpZanVpUEhRV20tVWtIOF95MGJ4amJ0Mlpqc3lseEtxZ3A0VlVockFVdFN2Wm10eGNJWDVJUUtSd3hIb0FnRDN2VENUUkNMRnh6WGIyc0pTdnZrSmNmclJ4QWY3TDlTdEdKWjVmZkoyeDRBdzhrSWVyUnh5OHh1MDhwUEtLN1VjdDBTOEZn?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
       }
     ],
-    "sourceUrl": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOWC1nUFZGeGZwTFkwVnQ4YURoanlwVTZ1QXhsLUctU1pORm9vLVFiT3RGVzYyaVdaRXRPWjBjeVFBQTZvTS0xaUJKc3FwblZ5Wm02UEJ6ek84NUlwTl9fRXk0Wmd3ckVNRlVhUjQ3Y3BvcWp2ME5ZSGV6QWdEaTI3Z3F2XzhaTDNUYVNCT20wVk0xUDhjN1BXSVBCOA?oc=5",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNV1BzWkNZc19aWWh3R2luZFZxWUVJT2oyZFo1LXFzQ0c2aHk1MExoNENNZk5nMkFtaS1lRWZlRXpZanVpUEhRV20tVWtIOF95MGJ4amJ0Mlpqc3lseEtxZ3A0VlVockFVdFN2Wm10eGNJWDVJUUtSd3hIb0FnRDN2VENUUkNMRnh6WGIyc0pTdnZrSmNmclJ4QWY3TDlTdEdKWjVmZkoyeDRBdzhrSWVyUnh5OHh1MDhwUEtLN1VjdDBTOEZn?oc=5",
     "links": {
       "wikipedia": "https://en.wikipedia.org/wiki/Kamala_Harris"
+    },
+    "early_states": {
+      "SC": 1
+    },
+    "early_states_last": {
+      "SC": "2026-07-24"
     },
     "img": "assets/candidates/harris/01_kamala_harris_vice_presidential_portrait_jpg.jpg"
   },

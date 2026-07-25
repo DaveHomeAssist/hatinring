@@ -1,5 +1,5 @@
 {
-  "date": "2026-07-24",
+  "date": "2026-07-25",
   "movers": [],
   "new_filers": [
     {
@@ -9,15 +9,8 @@
       "statusLabel": "Declared"
     }
   ],
-  "transitions": [
-    {
-      "name": "Don Lemon",
-      "from": 2,
-      "to": 3,
-      "date": "2026-07-17"
-    }
-  ],
-  "review_count": 19,
+  "transitions": [],
+  "review_count": 25,
   "totals": {
     "tracked": 41,
     "formal": 3,
