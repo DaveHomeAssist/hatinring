@@ -1,11 +1,5 @@
 [
   {
-    "date": "2026-06-26",
-    "guid": "hatinring-2026-06-26",
-    "title": "What moved on the 2028 board — 2026-06-26",
-    "desc": "No notable movement."
-  },
-  {
     "date": "2026-06-27",
     "guid": "hatinring-2026-06-27",
     "title": "What moved on the 2028 board — 2026-06-27",
@@ -201,6 +195,13 @@
     "guid": "hatinring-2026-07-25",
     "link": "https://hatinring.com/",
     "title": "What moved on the 2028 board — 2026-07-25",
+    "desc": "Formal/new: Mark Kelly"
+  },
+  {
+    "date": "2026-07-26",
+    "guid": "hatinring-2026-07-26",
+    "link": "https://hatinring.com/",
+    "title": "What moved on the 2028 board — 2026-07-26",
     "desc": "Formal/new: Mark Kelly"
   }
 ]

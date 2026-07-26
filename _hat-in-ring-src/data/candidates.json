@@ -1118,8 +1118,8 @@
     ],
     "conf": "Medium",
     "delta": 0,
-    "lastSignal": "2026-07-23",
-    "headline": "WATCH: AOC won't rule out White House bid after poll names her Democrats' top 2028 pick - Fox News",
+    "lastSignal": "2026-07-26",
+    "headline": "Alexandria Ocasio-Cortez leads 2028 Democratic Primary Poll in New Hampshire, 'humbled' by growing support - Sinar Daily",
     "why": "Massive small-dollar base; leads some progressive polls.",
     "quote": "",
     "tags": [
@@ -1171,17 +1171,26 @@
           "softConsidering"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-07-26",
+        "headline": "Alexandria Ocasio-Cortez leads 2028 Democratic Primary Poll in New Hampshire, 'humbled' by growing support - Sinar Daily",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxObVUtYnQzeW9EQ24tcGlvQ1paaGVMU2NMYjVtb05uSENubndTdERmMGpoNGpGWXRVZWFsM2xXTHhCdno0RnRLX2owQm9BdDdnUnVoaGRTbHgyUFA1QjdCdmFLRFpveTBodTZaSUVtQ0lUUldnNmVXa0NuaFZiSUFHcnN3ZDNhSWVGWFgtODU5YklBM0RmN0J6Vkx3RzVBR2pSSlhyQzNWZGdIT0xIa0lKcUFWbW9wblVFTVM1VFhlU2Q1M2kxb0VzMg?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
       }
     ],
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOTWNPQ0Z5MHdHS3lpS19tZFI2ZXBKNE1IakppNnJySlNBMmljMFNnOXg0TVRobUFwaEQ0MzlpX05UdFM4Q2JjQnlNWXd2Z2dYWi14WkpyTUlMMWltMUJVMW5SUXJ4dU45ZzByMHFBUmFJaWtpM2M4a2xpUnJxa2FBRnVHUG1QVjVORnlBY3o5d2Uzamw2Xy1aUXZGWFQ5WkVYQi0ybmlhb3dhVk9GeVlSaHlpUG9YWFRY0gG-AUFVX3lxTE5ScjdIc1phN3lYUzdISXBhd3JtMGRyWWxVYVF3blFRSnZPQjF6UlYtdG1VdEUyRFVyVWlNTWNJRmtXSGdqZnZnWUd1VmU3V2VDXzRvYjNHWDlWaWk0dXlyT0JsTlRPNGNjVzUyeHRwRUNwNE5RZ0dDZ0RHR0ZWZ1AyYjkteWlKc25Xdkc4YWZhbnVzS01BUm1aOUtjY3VqRVZzZ2g2MVQ2UXc4TGFWdXdpLWRwakhYU2ltRlFzZUE?oc=5",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxObVUtYnQzeW9EQ24tcGlvQ1paaGVMU2NMYjVtb05uSENubndTdERmMGpoNGpGWXRVZWFsM2xXTHhCdno0RnRLX2owQm9BdDdnUnVoaGRTbHgyUFA1QjdCdmFLRFpveTBodTZaSUVtQ0lUUldnNmVXa0NuaFZiSUFHcnN3ZDNhSWVGWFgtODU5YklBM0RmN0J6Vkx3RzVBR2pSSlhyQzNWZGdIT0xIa0lKcUFWbW9wblVFTVM1VFhlU2Q1M2kxb0VzMg?oc=5",
     "links": {
       "wikipedia": "https://en.wikipedia.org/wiki/Alexandria_Ocasio-Cortez"
     },
     "early_states": {
-      "NH": 3
+      "NH": 4
     },
     "early_states_last": {
-      "NH": "2026-07-23"
+      "NH": "2026-07-26"
     }
   },
   {
