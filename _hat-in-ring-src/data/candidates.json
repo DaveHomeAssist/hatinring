@@ -1701,7 +1701,8 @@
     "role": "U.S. Rep (GA)",
     "bucket": "out",
     "keys": [
-      "ruledOut"
+      "ruledOut",
+      "mediaBlitz"
     ],
     "conf": "Low",
     "delta": 0,
@@ -1715,7 +1716,18 @@
     ],
     "links": {
       "wikipedia": "https://en.wikipedia.org/wiki/Marjorie_Taylor_Greene"
-    }
+    },
+    "evidence": [
+      {
+        "date": "2025-10-13",
+        "headline": "Marjorie Taylor Greene Dodges Questions About 2028 Presidential Run After Podcast Comments - Dallas Express",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNS2EzNnpUa0dLYjhMRFBTVHFvQ1VjeUIwMFlnZ0ZHWDBLUlFoVkhFVnpMNDdoMEs5eWVaOGhzQzE3WGR1RnZETlZybklYYnZaSnFieVg1ajVRS2g5NUpFY245Z2V5SlBtZTB2eVhyTldkbVFoWGxVcDRZLWxVY052QV81Y2owX2ZTR29ES2YyVGdXT0hYcUN6VE9MRkdRdERJUVpnR2xqeWx0Uzh1RHJVU1h3S3VlRjF0cEUxV1NqQzVJcEFB?oc=5",
+        "keys": [
+          "mediaBlitz"
+        ],
+        "conf": "Low"
+      }
+    ]
   },
   {
     "id": "smith",
