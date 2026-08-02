@@ -364,5 +364,18 @@
     ],
     "rid": "ccbf8ff278e2",
     "kind": "discovery"
+  },
+  {
+    "name": "Hunter Biden",
+    "headline": "Hunter Biden reveals he's 'definitely not running' for office despite media tour - Fox News",
+    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPWjJwVXJsN2hzcUR0VWJJWlZfaEJ2dHQ4d2RxOTJVVUlEVzlISTdIUUhnLXphU3Z1UFdrLXVoMWlrTkxDbEpqb0xMUnppRmUxSWN6RVhEYWV1aGFILUtYUk10VFFzVnM1MVlyWF9WZWs1NTBtOXFCelRnQlpRQkYxV01ub2FwUXJKdXl1c08tcndrdTZOZnp6REVWa0ZrZDBOVnlrVTln0gGrAUFVX3lxTE1QU0Rka3VuaUpNaTY5MDFUTW4tQngwMExTbUlWemtEYTJ4TnBGZjZGUkJEWXNicG45Y0VNV21hLWN5OXVlLVJfd0dVNlBFU0ljeFh6c3l3U2RCOVZYX2lDVXh5U09YWnZxQmh3MlIzMFlWRVg0cHZjNTlHTjRvd29La3lHMzg4V1RWZnRwNnJzQkpqbHI4MFpmaklfZVlpVFEyRFlHbWxORDBOOA?oc=5",
+    "source": "Fox News",
+    "date": "2026-07-30",
+    "keys": [
+      "ruledOut"
+    ],
+    "note": "denial/downgrade — confirm before applying",
+    "rid": "1d88fc1d459d",
+    "kind": "denial"
   }
 ]

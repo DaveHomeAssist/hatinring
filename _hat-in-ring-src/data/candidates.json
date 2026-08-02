@@ -1541,12 +1541,13 @@
     "role": "—",
     "bucket": "edge",
     "keys": [
-      "softConsidering"
+      "softConsidering",
+      "mediaBlitz"
     ],
     "conf": "Noise",
-    "delta": 0,
-    "lastSignal": "2026-06-05",
-    "headline": "Flirts publicly: \"Let's take another crack with a Biden\"",
+    "delta": 10,
+    "lastSignal": "2026-07-30",
+    "headline": "Hunter Biden reveals he's 'definitely not running' for office despite media tour - Fox News",
     "why": "Joke/troll posting, incl. VP talk with Newsom — not a real candidacy.",
     "quote": "Let's take another crack with a Biden.",
     "tags": [
@@ -1555,7 +1556,27 @@
     ],
     "links": {
       "wikipedia": "https://en.wikipedia.org/wiki/Hunter_Biden"
-    }
+    },
+    "evidence": [
+      {
+        "date": "2026-07-30",
+        "headline": "Hunter Biden reveals he's 'definitely not running' for office despite media tour - Fox News",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPWjJwVXJsN2hzcUR0VWJJWlZfaEJ2dHQ4d2RxOTJVVUlEVzlISTdIUUhnLXphU3Z1UFdrLXVoMWlrTkxDbEpqb0xMUnppRmUxSWN6RVhEYWV1aGFILUtYUk10VFFzVnM1MVlyWF9WZWs1NTBtOXFCelRnQlpRQkYxV01ub2FwUXJKdXl1c08tcndrdTZOZnp6REVWa0ZrZDBOVnlrVTln0gGrAUFVX3lxTE1QU0Rka3VuaUpNaTY5MDFUTW4tQngwMExTbUlWemtEYTJ4TnBGZjZGUkJEWXNicG45Y0VNV21hLWN5OXVlLVJfd0dVNlBFU0ljeFh6c3l3U2RCOVZYX2lDVXh5U09YWnZxQmh3MlIzMFlWRVg0cHZjNTlHTjRvd29La3lHMzg4V1RWZnRwNnJzQkpqbHI4MFpmaklfZVlpVFEyRFlHbWxORDBOOA?oc=5",
+        "keys": [
+          "mediaBlitz"
+        ],
+        "conf": "Low"
+      }
+    ],
+    "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPWjJwVXJsN2hzcUR0VWJJWlZfaEJ2dHQ4d2RxOTJVVUlEVzlISTdIUUhnLXphU3Z1UFdrLXVoMWlrTkxDbEpqb0xMUnppRmUxSWN6RVhEYWV1aGFILUtYUk10VFFzVnM1MVlyWF9WZWs1NTBtOXFCelRnQlpRQkYxV01ub2FwUXJKdXl1c08tcndrdTZOZnp6REVWa0ZrZDBOVnlrVTln0gGrAUFVX3lxTE1QU0Rka3VuaUpNaTY5MDFUTW4tQngwMExTbUlWemtEYTJ4TnBGZjZGUkJEWXNicG45Y0VNV21hLWN5OXVlLVJfd0dVNlBFU0ljeFh6c3l3U2RCOVZYX2lDVXh5U09YWnZxQmh3MlIzMFlWRVg0cHZjNTlHTjRvd29La3lHMzg4V1RWZnRwNnJzQkpqbHI4MFpmaklfZVlpVFEyRFlHbWxORDBOOA?oc=5",
+    "history": [
+      {
+        "date": "2026-07-30",
+        "from": 1,
+        "to": 2,
+        "reason": "Hunter Biden reveals he's 'definitely not running' for office despite media tour - Fox News"
+      }
+    ]
   },
   {
     "id": "trump",
