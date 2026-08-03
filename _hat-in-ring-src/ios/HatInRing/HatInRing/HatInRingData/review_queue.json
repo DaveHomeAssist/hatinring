@@ -377,5 +377,29 @@
     "note": "denial/downgrade — confirm before applying",
     "rid": "1d88fc1d459d",
     "kind": "denial"
+  },
+  {
+    "name": "Democratic governors, including potentia",
+    "headline": "Democratic governors, including potential presidential candidates, attend major L.A. fundraiser - latimes.com",
+    "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNcXRmZ0EzSlBPdWh1V1JacVFicVVrUm5lSjZCT05VOWhIcVdDMkw5LW1saDRDcFNoSzIwemlfc1RYbkduUnZjOXpqbGRrcGg3SW5QY19wSnNFLTNBcF9KUnJEa0tKcnE2WDJWNnhvdEd0dEVwelFhWTk3eGRFcTBWdWp4ZjhIeGYtOFJ5elVsY3k3OGpBNGU5ZmQ4WHREXzlYa2lNa05nb1J0OWxuUnRWZU1OR3g0b2RDVE1zcmw3MFRoRm5LT25jMVA4eGxxSTlTT2ltbm5CNUlia2RRV0pLRE1sQUF4MC0tT05YYnhyNWxKNTZqMFZOUDFJempYMVFLU2c?oc=5",
+    "source": "latimes.com",
+    "date": "2026-04-24",
+    "keys": [
+      "donors"
+    ],
+    "rid": "65384cba026d",
+    "kind": "discovery"
+  },
+  {
+    "name": "NBC News",
+    "headline": "Massie says he’ll ‘stay engaged’ after primary loss, won’t rule out 2028 run - NBC News",
+    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNZFFRQkY1VXBGY1RDQ1VkSDVXekR2eHdLVF9kY3pLT3ZuS2QxMmxScU80LUhFUEFKazBISWFqRXR4V2NTSzdDUTViUm9xZFNNQkExTTdpeUVrRG03U3NYVzZyQlFmMTNWVmtPZGhDa3ItLVdnNDVlLW1LTnRBaDI3Ym1SakZXN0U3QmExMk53YVlkVFNvQ0RneVMwc2JMdVd1ZHZZb0VRbUhXSVZseWR2SmtJVHY3dGVaUDhoZkw5YVZvSG84a3g4Y0p2Zw?oc=5",
+    "source": "NBC News",
+    "date": "2026-05-24",
+    "keys": [
+      "ruledOut"
+    ],
+    "rid": "8527baf27e4e",
+    "kind": "denial"
   }
 ]

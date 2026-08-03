@@ -1,16 +1,6 @@
 {
-  "date": "2026-08-02",
-  "movers": [
-    {
-      "id": "hunter",
-      "name": "Hunter Biden",
-      "party": "Democrat",
-      "delta": 10,
-      "score": 22,
-      "tier": 2,
-      "statusLabel": "Positioning"
-    }
-  ],
+  "date": "2026-08-03",
+  "movers": [],
   "new_filers": [
     {
       "id": "kelly",
@@ -27,7 +17,7 @@
       "date": "2026-07-30"
     }
   ],
-  "review_count": 31,
+  "review_count": 33,
   "totals": {
     "tracked": 41,
     "formal": 3,

@@ -1076,11 +1076,11 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Pete_Buttigieg"
     },
     "early_states": {
-      "IA": 3,
+      "IA": 4,
       "NH": 3
     },
     "early_states_last": {
-      "IA": "2026-07-13",
+      "IA": "2026-02-11",
       "NH": "2026-07-23"
     },
     "evidence": [
@@ -1153,6 +1153,15 @@
         "date": "2026-07-23",
         "headline": "New Hampshire poll puts Ocasio-Cortez ahead of Buttigieg among 2028 Democrats - KXLH News Helena",
         "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQd1IwaThNSGdNZmpFX1pLUjhFTUYxcldEd2tiX1IzNTBEZU9Xei1kMDF3TUNaRHl3cGVoV3dpMTQyb2ZPeXcxWVN1Z0hKakU5cThReTNhSExaa2dzQVFhZ2xfblpTWlRRbGFnbnVuMWFPQ3c5R2x4QnhYODNPbHdBVFdFcDhBdUR5cFFXUEdlZVVoaEU3OEdubXlqS1dTZTZJR21NOXEyT2Fib1BmdDI2cExFRWczRlR0ODdfd3dR?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-02-11",
+        "headline": "Buttigieg to headline Iowa town hall amid 2028 speculation - ABC News - Breaking News, Latest News and Videos",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOWFA5YTdkREUyblMtZG9xM3VaVzh1cWxPWHNib1dJd0RDdFNHelk4Q1RmeWlJbzEwSUVtSGZDaVNJbk5hdmlTZ2tsYnNVZW9EVWQzM0pnYWpsZjh1YW9CT1NkT1hlWUxzNmRFajl3MnJZVndJd25NZl9wSUtHcWY5RmN6eDFjN2dLTVh2WU5FSjFocVpLYXJNYjRNanVSWmdLTDVCVlZR0gGrAUFVX3lxTE1oTk9naVVmVHQ5WDZHdVZ5djhkV2prNmZMclJOaDVIWnlkeVFQMVdJSG01V0ZmSXdEOHFqQk5MNkVRMXNqQWhBbkZ1U3J5X3dhVHA2V0VkSEVqYVo0ZEIteWNTXzFXWTcyM0xrX3pKTm1pSWhiMjJFQmVtTHp5NUdXbWp6ZjlfSzNrTDNQOUtVWjM2UVlUZ1BDNjJxUG9JUkg4UWdrdGhWbllwdw?oc=5",
         "keys": [
           "earlyState"
         ],
@@ -1577,7 +1586,7 @@
       "mediaBlitz"
     ],
     "conf": "Noise",
-    "delta": 10,
+    "delta": 0,
     "lastSignal": "2026-07-30",
     "headline": "Hunter Biden reveals he's 'definitely not running' for office despite media tour - Fox News",
     "why": "Joke/troll posting, incl. VP talk with Newsom — not a real candidacy.",
