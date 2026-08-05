@@ -254,12 +254,13 @@
     "keys": [
       "consideringQuote",
       "mediaBlitz",
-      "softConsidering"
+      "softConsidering",
+      "earlyState"
     ],
     "conf": "High",
-    "delta": 0,
-    "lastSignal": "2026-05-30",
-    "headline": "\"Of course I'm thinking about it\" — not ruled out",
+    "delta": 15,
+    "lastSignal": "2026-08-04",
+    "headline": "South Carolina could give Booker a head start in 2028 - New Jersey Globe",
     "why": "Most explicit yes among Senate Democrats; record-floor-speech visibility.",
     "quote": "Of course I'm thinking about it.",
     "tags": [
@@ -267,7 +268,25 @@
     ],
     "links": {
       "wikipedia": "https://en.wikipedia.org/wiki/Cory_Booker"
-    }
+    },
+    "early_states": {
+      "SC": 1
+    },
+    "early_states_last": {
+      "SC": "2026-08-04"
+    },
+    "evidence": [
+      {
+        "date": "2026-08-04",
+        "headline": "South Carolina could give Booker a head start in 2028 - New Jersey Globe",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPNGltZFRUcWFKS2dvLUxaVTl4TW5sVFhxbTBCRndWQ3FoUURlMFNaeUJCd05BNkVJWTc1a1R2RXN0YWZFTlZSaG5EcERuOFl5SW55TWJ4ZnhicHNKYTBxbms3cVdxNFVXN0VPclN2YUlDZXBDRndtaDRyREhNbHNQbnVrY2x4UkwwcFlwUExhcXY4aVBIZXAzMm9vbThSZHA5ZVJQcG53?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
+      }
+    ],
+    "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPNGltZFRUcWFKS2dvLUxaVTl4TW5sVFhxbTBCRndWQ3FoUURlMFNaeUJCd05BNkVJWTc1a1R2RXN0YWZFTlZSaG5EcERuOFl5SW55TWJ4ZnhicHNKYTBxbms3cVdxNFVXN0VPclN2YUlDZXBDRndtaDRyREhNbHNQbnVrY2x4UkwwcFlwUExhcXY4aVBIZXAzMm9vbThSZHA5ZVJQcG53?oc=5"
   },
   {
     "id": "beshear",
@@ -426,9 +445,9 @@
       "earlyState"
     ],
     "conf": "High",
-    "delta": 0,
-    "lastSignal": "2026-06-13",
-    "headline": "Rep. Ro Khanna Speaks at Nevada Democratic State Convention - C-SPAN",
+    "delta": 5,
+    "lastSignal": "2026-07-20",
+    "headline": "Khanna finishes another New Hampshire visit as he considers White House run - WMUR",
     "why": "First clear public timeline from the progressive-pragmatist lane.",
     "quote": "We'll look at that after the midterms.",
     "tags": [
@@ -436,10 +455,12 @@
       "progressive"
     ],
     "early_states": {
-      "NV": 2
+      "NV": 2,
+      "NH": 1
     },
     "early_states_last": {
-      "NV": "2026-06-13"
+      "NV": "2026-06-13",
+      "NH": "2026-07-20"
     },
     "evidence": [
       {
@@ -459,9 +480,18 @@
           "earlyState"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-07-20",
+        "headline": "Khanna finishes another New Hampshire visit as he considers White House run - WMUR",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOR3FxVTcyc3RiR2xzaXBwNUJ3TDdKTHV1MzJYQS1NLWZSWTcxbDZZdkN3YTFDWmhfRE1VR18zWUt6UDlKdEFySk9kX1pTNHk1ckwzMG1MOU5JUXpadTZrRmJ4dE1OVE4zeXltLUhSNHdNNUp4bUVycUVSQ1ZKYU5xZXhlYk5hMU1mYkE?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
       }
     ],
-    "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOZ0VEa0ZfNXAxVkhXRGVWT3N5Njl5cXAxLTVUQVp4QUVoMi1yaTdDeVdHUGdBNWJzalJtMDBvRmMzVWZYc0hTSnRqZk9QUGdzRl9RbEllU0YyNnRYa05GeXVtbFlrSU1fLVNFdDdVdkJkaG0yZnY2LXRicnpzZ1EtMXUtazdDamZTOGJRZjIzWGhTNXFiX0dVVEtIRWxUTjRsbnh5VmJTeFJVcGdWY3BF?oc=5",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOR3FxVTcyc3RiR2xzaXBwNUJ3TDdKTHV1MzJYQS1NLWZSWTcxbDZZdkN3YTFDWmhfRE1VR18zWUt6UDlKdEFySk9kX1pTNHk1ckwzMG1MOU5JUXpadTZrRmJ4dE1OVE4zeXltLUhSNHdNNUp4bUVycUVSQ1ZKYU5xZXhlYk5hMU1mYkE?oc=5",
     "links": {
       "wikipedia": "https://en.wikipedia.org/wiki/Ro_Khanna"
     }

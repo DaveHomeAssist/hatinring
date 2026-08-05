@@ -413,5 +413,17 @@
     ],
     "rid": "6ae49cf2e5ee",
     "kind": "discovery"
+  },
+  {
+    "name": "South Carolina",
+    "headline": "Democrats select South Carolina for their first presidential nominating contest in 2028 election - KETV",
+    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZU5QRXFpR0JENjhqZUd6c1IyT0ZxRmxfcHFrUnZQRloxWmNRS3Y4N3d5SG1NTk9YLUpaYnJmQzJEckpXa1RnUHRqMllGdmhlbW9UUFpkMEl2OXF0ekEzMWdwR1ZnV1pRWjVxV2dCeFdJSTlZWkl1UVNXQlptd2V3YWFCVEFaOGQxb25QZDdNX3EwMnBwanQ5RjV3?oc=5",
+    "source": "KETV",
+    "date": "2026-07-24",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "b4169945a5a5",
+    "kind": "discovery"
   }
 ]
