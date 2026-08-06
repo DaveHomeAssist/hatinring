@@ -1,25 +1,6 @@
 {
-  "date": "2026-08-05",
-  "movers": [
-    {
-      "id": "booker",
-      "name": "Cory Booker",
-      "party": "Democrat",
-      "delta": 15,
-      "score": 40,
-      "tier": 3,
-      "statusLabel": "Actively considering"
-    },
-    {
-      "id": "khanna",
-      "name": "Ro Khanna",
-      "party": "Democrat",
-      "delta": 5,
-      "score": 35,
-      "tier": 3,
-      "statusLabel": "Actively considering"
-    }
-  ],
+  "date": "2026-08-06",
+  "movers": [],
   "new_filers": [
     {
       "id": "kelly",
@@ -36,7 +17,7 @@
       "date": "2026-07-30"
     }
   ],
-  "review_count": 35,
+  "review_count": 37,
   "totals": {
     "tracked": 41,
     "formal": 3,

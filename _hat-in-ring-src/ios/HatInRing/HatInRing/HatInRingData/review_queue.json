@@ -425,5 +425,29 @@
     ],
     "rid": "b4169945a5a5",
     "kind": "discovery"
+  },
+  {
+    "name": "Washington Post",
+    "headline": "Trump tells donors, ‘We need to elect JD,’ as vice president weighs his future - The Washington Post",
+    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOblBNbkM4azBhT01wcFZDWHlYZXNfUUdzcXRHbld0akEySzRFN0tyTkZseW5vLUs5ZG9CS0h1djhfRnJETEJSZWdyajE1MUxJY1JXbTBHMTk1NE5WMUVjc0gxYjkzUVBwYkdjVVdrSldtX25PN3Y3MUxwZ2NKV013X2NHYk5mQmNLdnowS3M0M3lhdFdIUjRnRmxFQl9fQkU5VHZTTlBYQmszcjBB?oc=5",
+    "source": "The Washington Post",
+    "date": "2026-08-06",
+    "keys": [
+      "donors"
+    ],
+    "rid": "bdd614ded66a",
+    "kind": "discovery"
+  },
+  {
+    "name": "Anadolu Ajans",
+    "headline": "Trump tells donors, ‘We need to elect JD,’ in 2028 presidential election: Report - Anadolu Ajansı",
+    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOTGJGR3FCNUV2c2JlbnZvRWNLd1daZlFfc2NtakZSOFF3TGJoU0txVWh2Y2VPd0lNS3BhSHEtWXlaVzhZT2dmeUVxMGh1eUg2UFZBdm9iUXA5ZVlMNjd6QnZiRFVBLXpUMHN4SE9RRmVER0pnR1BPYWVaaWRELVVlU0hFenp2dXlSLTZVcTlSaTNzU2gydDZIY194WU9tbWpUMXJaeUV2RGs2THB4NUZWd1cyQ1FJQURE?oc=5",
+    "source": "Anadolu Ajansı",
+    "date": "2026-08-06",
+    "keys": [
+      "donors"
+    ],
+    "rid": "4d76d117f1f2",
+    "kind": "discovery"
   }
 ]
