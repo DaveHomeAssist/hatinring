@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-06",
+  "date": "2026-08-07",
   "movers": [],
   "new_filers": [
     {
@@ -9,15 +9,8 @@
       "statusLabel": "Declared"
     }
   ],
-  "transitions": [
-    {
-      "name": "Hunter Biden",
-      "from": 1,
-      "to": 2,
-      "date": "2026-07-30"
-    }
-  ],
-  "review_count": 37,
+  "transitions": [],
+  "review_count": 38,
   "totals": {
     "tracked": 41,
     "formal": 3,
