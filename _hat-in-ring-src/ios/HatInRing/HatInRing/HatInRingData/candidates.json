@@ -87,7 +87,7 @@
       "declared"
     ],
     "conf": "High",
-    "delta": 25,
+    "delta": 0,
     "lastSignal": "2026-08-04",
     "pollLead": "Dem poll leader",
     "headline": "Opinion | Which version of Gavin Newsom will voters see if he launches a presidential campaign? - calmatters.org",
@@ -1251,8 +1251,8 @@
     ],
     "conf": "Medium",
     "delta": 0,
-    "lastSignal": "2026-07-26",
-    "headline": "Alexandria Ocasio-Cortez leads 2028 Democratic Primary Poll in New Hampshire, 'humbled' by growing support - Sinar Daily",
+    "lastSignal": "2026-08-10",
+    "headline": "Alexandria Ocasio-Cortez won't rule out running for senator or president in 2028 - NBC New York",
     "why": "Massive small-dollar base; leads some progressive polls.",
     "quote": "",
     "tags": [
@@ -1313,9 +1313,81 @@
           "earlyState"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-08-09",
+        "headline": "Ocasio-Cortez says she hasn't ruled out running for president in 2028 - Statesman Journal",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPVGRjZE5TS2tJYXhacTJuaU1LR3NvbV83MnpWN19wNi0tNC1vWVQwTzU2YWxtVzZURnNkRUxkb0hXN2hQc3U4eC1RR0N1YTNhT3hUekN1Y2hTQ0NWdzFkcUh2UTlleWY1LTdHNXhBVW0tVWVFdF9CeEdTR3JrQ0ZHWTJ5LWRQUmRLVmotLVVtMVRDc3YxWGpjZ3pRTG1rOVZqd1h5OVRzM0xuZ2FIYWdoNkU4eXp1Zw?oc=5",
+        "keys": [
+          "softConsidering"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-08-09",
+        "headline": "Ocasio-Cortez says she hasn't ruled out running for president in 2028 - Pocono Record",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOVXk3UVA4bHhqMmVIazZ4dTFVU0Z1bUpnbkk0aUl3LTBMOU9lUWh6SE5rUG1sWVpTQ0tFV0ktUGdzMS1vODNVN0w2QmNocUU4SlR5V1dRNnhLbWR2Zkk5RGxfZVZTMWRZSGtRSzdkS1Q2YzlmU0V4TkNIYko0LXFLYXFYWU1uOTFFY1RtdmZlazBGZm52YXR4Zk1PUFJaeGppUXNvU25kM0kya05wTDFNVA?oc=5",
+        "keys": [
+          "softConsidering"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-08-09",
+        "headline": "Ocasio-Cortez says she hasn't ruled out running for president in 2028 - Shelby Star",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNWVdOc3RBSGw2eXpOQjRUV0M4SmNmRkRsSV93NTFERWx4SXJ2WjlfTHUwQUlCVll0bmllUVIxZHhBb2VsdHpZTkZON2UtYzJ3dFRVaTBNQTY2Yloxc25XZkxjWEVkODlKaU9LbHBtd295WVVBR1J5RW9OdUYtSS1hRWFSTUhLSDNwRjJZWnlHRE5GMHlEdklHZzlaYkdGNTJjcC10S3Nfekw3Mm1TaUE?oc=5",
+        "keys": [
+          "softConsidering"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-08-09",
+        "headline": "Ocasio-Cortez says she hasn't ruled out running for president in 2028 - Cincinnati Enquirer",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNS2RodmZ4QWdEaTJNOC1xZ2RQQXhOY1pTeHJyaUF2OUptZXh4bXpJWHA0cFdsdVFNWjVGdUR5YnZrdk9LREt3X3lvTzBCN2duaGVJWnAzaHh1c2hWYXI4UWhiN19QUzZhc29JdlNhcFo0Q0hybi1NblBUaTFVcTN3dnRLd2tzZXVkbTl2YUk0N1Rvblh0Wm51OWlBRmdSZDJUZFJZRUpEcG1qSHFTMlE?oc=5",
+        "keys": [
+          "softConsidering"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-08-09",
+        "headline": "Ocasio-Cortez says she hasn't ruled out running for president in 2028 - Wilmington Star-News",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPT3lsRnNVTG1GV3YzMFVpLXEzZlpkSzdtMWdGNnhFaUVJVFlXSnFrRVNLRWVPX0t4dXV3NmxWN05QSXJLb1diWVNhSlVURU1saXpDRTF1Ym5ENUd4cmxtRVd6OGQycnhhdHBSM3Q1NjMtYkR5SXQzeHVZb25UdlJVZlpjd3Q1Y0lzQTc4MFBneVpiMDZ6Y3pPLWlkSnJwYnQ0MXdaUVdRVWxqN01DdmlfdWNaMA?oc=5",
+        "keys": [
+          "softConsidering"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-08-09",
+        "headline": "Ocasio-Cortez says she hasn't ruled out running for president in 2028 - The Tuscaloosa News",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNcUtoRmF3UnhPUWZ4UjBaNkxwQWx6bV8xTW94UENyLXdHUHhZX1lWNDVtcm5HeTZLV05NbG1QMHRLYlpDYmVJR1VYclE2VXRsZVVKMHhYVnlYcXVVVzZVX2Uzb0RVa3UtU25MdV9EZUZSblBUek1La1Z3c0t5RE5PWWthSGFhTGI3MDVoOWVzbkZwamxxUWNUUGNobHN2YS1pcEc1Ulh6YmdKWERlWEtjTi1Xaw?oc=5",
+        "keys": [
+          "softConsidering"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-08-10",
+        "headline": "Alexandria Ocasio-Cortez won't rule out running for senator or president in 2028 - NBC New York",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOWFNvVDNlemVmbHIyRnRXSk04R2xsWlB0Z2N6aDhCTEl5UUJkR1hRSTJIUThUUlgzdFdQWTVqZUp5TlotRmJKbnktX05QTy1vNXpRdUlpNHB6SEpmNkItbVlDUm9ubTd6VEhVWEJHQ2FYUktTQXZJa3hVU2xtZjROREVXdWNpdk1ZVUtxdGVobWNUSkd2VVdHd0I1VmJINUxwaTFHN20xMGx3NFRDWXJrVU84SUg4YTZHbmNjRGN5WTRRand2b3fSAc4BQVVfeXFMTUx6MHNBal9aR2I3LW9PQUdYdldvMWg3YTZmYXppakZrNEtrVmhwTmJuQ0YtR2JTblUwcVpnd2pyVFo1RFVSMXoxUl9jSU00ZHl5Z1dOSFFHMnFaV0lHVjBsMDRrVExlcU5zX2w0eHpUQmM4Zmp4VTJwNmRmZFZNdHU2Ul9UN0ZxVFRIYnhKckpiZWdGNTM5dVV2VVU0TDNObGd0eG5palpySDBYWUtISmplTDB1aHc3UXFONVNMZGFSc2FST0Y2V25DeGR2NGc?oc=5",
+        "keys": [
+          "softConsidering"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-08-09",
+        "headline": "Ocasio-Cortez says she hasn't ruled out running for president in 2028 - jacksonsun.com",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQeDcxalItdnNxMmdsSFg0dVV6Y1JWRG9xQTg2TEpoWVhGNFE2d2h5ek5xcnJsamhvWExhT0p0XzNYQlJZSXlVR2RlNnhZRnFxbk5oV1lLTC1WYlhSVmtGTnNQZzBZbk96VHBQMXFYYkVJaXRRM2lsUURIemJqNGpqMl9pWS1LSnVQczRLM2pjQm9CZ3dQbFVjUEFOTmlMazdfd21uc1FUVTVBS0JfQ0E?oc=5",
+        "keys": [
+          "softConsidering"
+        ],
+        "conf": "Low"
       }
     ],
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxObVUtYnQzeW9EQ24tcGlvQ1paaGVMU2NMYjVtb05uSENubndTdERmMGpoNGpGWXRVZWFsM2xXTHhCdno0RnRLX2owQm9BdDdnUnVoaGRTbHgyUFA1QjdCdmFLRFpveTBodTZaSUVtQ0lUUldnNmVXa0NuaFZiSUFHcnN3ZDNhSWVGWFgtODU5YklBM0RmN0J6Vkx3RzVBR2pSSlhyQzNWZGdIT0xIa0lKcUFWbW9wblVFTVM1VFhlU2Q1M2kxb0VzMg?oc=5",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOWFNvVDNlemVmbHIyRnRXSk04R2xsWlB0Z2N6aDhCTEl5UUJkR1hRSTJIUThUUlgzdFdQWTVqZUp5TlotRmJKbnktX05QTy1vNXpRdUlpNHB6SEpmNkItbVlDUm9ubTd6VEhVWEJHQ2FYUktTQXZJa3hVU2xtZjROREVXdWNpdk1ZVUtxdGVobWNUSkd2VVdHd0I1VmJINUxwaTFHN20xMGx3NFRDWXJrVU84SUg4YTZHbmNjRGN5WTRRand2b3fSAc4BQVVfeXFMTUx6MHNBal9aR2I3LW9PQUdYdldvMWg3YTZmYXppakZrNEtrVmhwTmJuQ0YtR2JTblUwcVpnd2pyVFo1RFVSMXoxUl9jSU00ZHl5Z1dOSFFHMnFaV0lHVjBsMDRrVExlcU5zX2w0eHpUQmM4Zmp4VTJwNmRmZFZNdHU2Ul9UN0ZxVFRIYnhKckpiZWdGNTM5dVV2VVU0TDNObGd0eG5palpySDBYWUtISmplTDB1aHc3UXFONVNMZGFSc2FST0Y2V25DeGR2NGc?oc=5",
     "links": {
       "wikipedia": "https://en.wikipedia.org/wiki/Alexandria_Ocasio-Cortez"
     },

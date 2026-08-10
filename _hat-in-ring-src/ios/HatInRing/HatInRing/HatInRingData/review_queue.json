@@ -461,5 +461,55 @@
     ],
     "rid": "42056fe2afc8",
     "kind": "discovery"
+  },
+  {
+    "name": "Alexandria Ocasio-Cortez",
+    "headline": "Ocasio-Cortez hasn't 'ruled out' running for president or Senate in 2028 - CNBC",
+    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVEpzMUdFUUJma3ZkRlFkSl9QZ2RsT1A4U0hUc0EzTkZLVFBBLWhpM1BXQ3JMRnJtSVd6Qm8wbGxyLWh0cklIUzM4MGVRTUI1TjBNdzZIamc4QjBELVRSTFZvcDU2Y0ExTUlYeE50NVhXWVJvTjE0X25tX1J2Z2ZMdFNrLXFWUUhqNDltbENfbzNGZEIwQmxXQWNMS1lkT2QtWVlvZDN4czMyd9IBrwFBVV95cUxQWWN6NXlSN1BKWnFNMDc2dWJQa25FXzJ4ODVDM1RGUDlCZko0aENuemhFMUo5bnRhcXBULWNSS2Vza2FmbFBsV0FucUNIYzFTMDlWMTJwZ05ybmV4RlEtMkVuQnZDZUw2SEliamQxbjllZ0U0b2xERzdPUFF2UEhPQ04tdHpJMDAyaDQ1R3hQNVk0dFdsYXRMajBibUhUdDR5ZW9ybllxR0Nwd0Q4ZjBr?oc=5",
+    "source": "CNBC",
+    "date": "2026-08-09",
+    "keys": [
+      "ruledOut"
+    ],
+    "note": "denial/downgrade — confirm before applying",
+    "rid": "018a4a99f106",
+    "kind": "denial"
+  },
+  {
+    "name": "Alexandria Ocasio-Cortez",
+    "headline": "Alexandria Ocasio-Cortez says she hasn’t ruled out a potential run for president or Senate in 2028 - NBC News",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNVnRrM2FqOS1OZHpDdVRMQjhOV0FkcHRGdVU3c1FGaktMakE2Tk90ZFA2YS00WVdnX3AySG40UTY3VVhVLTNWUjVmTDVXSUtGQkRZSk0zbFhNdGMyNk1pRlVBT2NBUjFkMVNCZFdoa0U4RDY0UG1udGJ4bENrMEI1Wkw2VHU4X182RzZ1UmV4NWRkT3BnRnRsTTNPeUJYa2tCWWNYb21PaFRJVXpQWHprTjBGWQ?oc=5",
+    "source": "NBC News",
+    "date": "2026-08-09",
+    "keys": [
+      "ruledOut"
+    ],
+    "note": "denial/downgrade — confirm before applying",
+    "rid": "76144a110cf2",
+    "kind": "denial"
+  },
+  {
+    "name": "Trump told donors ‘We need to elect JD’ ",
+    "headline": "Trump told donors ‘We need to elect JD’ for president in 2028: Report - san.com",
+    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNOWtHdnV0WkxXc3oyRjduVXB3bTJ3U0hjckx6SFlPMTdfd2lueDVnWkVYbGFrNExSVk50V2dQb081U1p3SW1OWnpGajF4UUJXanQxaVZTMzlQaVVnSVVZQ3dsQi1LclVmZm04RUVoMENLVXBnTmdFZmU3UE5uTGRsM3AwNFNQZklWdS13a2FvX3VXU1FTQXcyUHFR?oc=5",
+    "source": "san.com",
+    "date": "2026-08-06",
+    "keys": [
+      "donors"
+    ],
+    "rid": "ecc82b712c33",
+    "kind": "discovery"
+  },
+  {
+    "name": "What Our Reporter",
+    "headline": "What Our Reporter Saw in Iowa During Vance’s Splashy, 2028-Coded Trip - The New York Times",
+    "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBIMllnUkRjWmdnMlcxdXZXN01ZX09DUktYWFBlSkVCdjhfQV9HZVBrc2hyUUdCQW81VTRmakxiNW1LR3F5MzJlUzg0S0k5R19fQ2ZzR2VaWldQTkE5cjdNeHJsaVRGdDRBRmpyWDdTTVpwb2Q5SnNmdDd3?oc=5",
+    "source": "The New York Times",
+    "date": "2026-05-08",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "1c9b098047dd",
+    "kind": "discovery"
   }
 ]
