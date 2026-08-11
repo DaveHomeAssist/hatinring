@@ -133,6 +133,8 @@ def test_mobile_layout_contract_present(tmp_path):
     ):
         assert token in html, f"missing mobile layout token: {token}"
 
+    assert "color:#7A7460;font-size:11.5px" not in html
+
 
 def test_portrait_copy_is_resized_and_metadata_free(tmp_path):
     repo_root = tmp_path / "source"
