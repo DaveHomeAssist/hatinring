@@ -1,6 +1,6 @@
-requests>=2.31
-feedparser>=6.0
-PyYAML>=6.0
-Jinja2>=3.0
-Pillow>=10.0         # raster (PNG) share card — social can't render SVG og:image
-pytest>=7.0          # tests only
+requests==2.34.2
+feedparser==6.0.14
+PyYAML==6.0.3
+Jinja2==3.1.6
+Pillow==12.3.0       # raster share cards and optimized candidate portraits
+pytest==9.1.1        # tests only

@@ -3,16 +3,17 @@
 Responsibilities:
   * dedupe incoming signals against an append-only audit log (signals.jsonl)
     keyed by (person, signal_key, url) so re-running is idempotent;
-  * apply new signal keys to the matching record, advancing lastSignal,
-    headline and quote when the incoming signal is stronger/newer;
+  * apply new signal keys to the matching record and advance lastSignal while
+    preserving human-authored headline, quote, and narrative fields;
   * record a status-history entry whenever the tier changes;
   * recompute the 7-day delta from momentum snapshots;
   * auto-create records for new FEC filers not yet tracked;
   * route unmatched news (discovery) to a review queue instead of polluting
     the live dataset.
 
-Human-curated fields (why, role, bucket overrides) are never overwritten by
-automation — automation only *adds* keys and refreshes the latest signal.
+Human-curated fields (why, role, bucket overrides, headline, quote) are never
+overwritten by automation. New source material remains available in the dated
+evidence trail while automation adds keys and refreshes the signal date.
 """
 from __future__ import annotations
 import hashlib
@@ -128,12 +129,16 @@ class Dataset:
                  "keys": applied_keys, "conf": c.confidence})
             rec["evidence"] = rec["evidence"][-24:]
             changed = True
-        # refresh "latest signal" if this item is newer
+        # Refresh the signal date, but never overwrite human-authored display
+        # copy. The incoming headline/quote/source remain in `evidence`, which
+        # gives reviewers an attributable trail without silently republishing
+        # machine-selected copy as curated editorial text.
         if c.date >= rec.get("lastSignal", "0000-00-00"):
             rec["lastSignal"] = c.date
-            rec["headline"] = c.headline
-            rec["sourceUrl"] = c.url          # clickable source trail for the drawer
-            if c.quote:
+            if not rec.get("headline"):
+                rec["headline"] = c.headline
+                rec["sourceUrl"] = c.url
+            if c.quote and not rec.get("quote"):
                 rec["quote"] = c.quote
             changed = True
         after_tier = _status(rec.get("keys", []))[0]
@@ -180,6 +185,20 @@ class Dataset:
             self.by_id[rec["id"]] = rec
             log.info("FEC: new filer %s (%s)", rec["name"], sig.fec_id)
             return True
+        # FEC is authoritative for filings, but an unexpected denial or
+        # eligibility downgrade must still use the same human-confirmation
+        # path as news. This protects the board if upstream classification or
+        # a fixture ever emits a downgrade key on the FEC channel.
+        if sig.key in _DOWNGRADE_KEYS:
+            self.review.append({
+                "name": rec["name"], "headline": sig.headline,
+                "url": f"https://www.fec.gov/data/candidate/{sig.fec_id}/",
+                "source": "FEC", "date": fdate, "keys": [sig.key],
+                "fec_id": sig.fec_id,
+                "note": "FEC downgrade — confirm before applying",
+            })
+            return False
+
         # known person: ensure FEC id + declarative key recorded
         rec.setdefault("fec_ids", [])
         if sig.fec_id and sig.fec_id not in rec["fec_ids"]:
@@ -208,9 +227,15 @@ class Dataset:
             sid = _sig_id(sig.fec_id, sig.key, "fec")
             if sid in seen:
                 continue
-            if self.apply_fec(sig, autocreate=fec_autocreate):
+            reviews_before = len(self.review)
+            did_apply = self.apply_fec(sig, autocreate=fec_autocreate)
+            # Audit both applied changes and items routed to human review. An
+            # unactionable unknown filer is intentionally left unlogged so a
+            # later qualifying committee record can still be reconsidered.
+            if did_apply or len(self.review) > reviews_before:
                 fresh_rows.append({"sid": sid, "type": "fec",
-                                   "fec_id": sig.fec_id, "key": sig.key})
+                                   "fec_id": sig.fec_id, "key": sig.key,
+                                   "applied": did_apply})
 
         applied = 0
         for c in classified:
@@ -223,10 +248,14 @@ class Dataset:
                                "applied": ok})
             applied += int(ok)
 
-        # recompute deltas from momentum movement
+        # Record actual momentum movement, but preserve the last known delta on
+        # a no-op rerun. Otherwise an identical second run changes the dataset
+        # solely by resetting every delta to zero.
         after = self._snapshot()
         for r in self.records:
-            r["delta"] = after.get(r["id"], 0) - before.get(r["id"], 0)
+            movement = after.get(r["id"], 0) - before.get(r["id"], 0)
+            if movement:
+                r["delta"] = movement
 
         _append_jsonl(audit, fresh_rows)
         # Stamp every review item with a stable id + kind so the queue can be

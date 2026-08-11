@@ -29,6 +29,7 @@ from pathlib import Path
 from unittest import mock
 
 import pytest
+from PIL import Image
 
 from hatring import build as buildmod
 from hatring.build import render
@@ -124,11 +125,32 @@ def test_mobile_layout_contract_present(tmp_path):
         "input,select{font-size:16px!important}",
         "class=\"hir-header-inner\"",
         "class=\"hir-stats\"",
+        "display:flex!important",
+        "scroll-snap-type:x proximity",
         "class=\"hir-field-grid\"",
         "class=\"hir-dossier-layout\"",
         "class=\"hir-wire-river\"",
     ):
         assert token in html, f"missing mobile layout token: {token}"
+
+
+def test_portrait_copy_is_resized_and_metadata_free(tmp_path):
+    repo_root = tmp_path / "source"
+    out_dir = tmp_path / "public"
+    rel = Path("assets/candidates/alpha/lead.jpg")
+    src = repo_root / rel
+    src.parent.mkdir(parents=True)
+    Image.new("RGB", (1600, 2200), "#6a6450").save(src, quality=95)
+
+    copied = buildmod._copy_assets([{"img": str(rel)}], repo_root, out_dir)
+    dst = out_dir / rel
+
+    assert copied == 1 and dst.exists()
+    with Image.open(dst) as optimized:
+        assert optimized.size[0] <= 640
+        assert optimized.size[1] <= 800
+        assert optimized.format == "JPEG"
+        assert not optimized.getexif()
 
 
 # ----------------------------------------------------------------------------
@@ -300,7 +322,8 @@ def test_trajectory_series_attached_and_bounded(tmp_path):
 def test_seo_and_share_metadata_present(tmp_path):
     html = _render(tmp_path)
     for needle in ('rel="canonical"', 'property="og:image"', 'name="twitter:card"',
-                   'application/ld+json', 'hatinring.com'):
+                   'application/ld+json', 'hatinring.com', 'Content-Security-Policy',
+                   "object-src 'none'", 'name="twitter:image:alt"'):
         assert needle in html, f"missing SEO/share tag: {needle}"
     # static crawl summary present so SEO isn't JS-dependent
     assert 'id="crawl-summary"' in html and "<noscript>" in html

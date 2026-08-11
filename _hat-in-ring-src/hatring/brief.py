@@ -109,6 +109,9 @@ def render_share_html(brief: dict) -> str:
         for m in brief.get("movers", [])[:6]) or "<li>No movement today.</li>"
     return f'''<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#0f1115">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; script-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
 <title>{title}</title>
 <meta name="description" content="{desc}">
 <link rel="canonical" href="https://hatinring.com/share.html">
@@ -123,6 +126,7 @@ def render_share_html(brief: dict) -> str:
 <meta name="twitter:title" content="{title}">
 <meta name="twitter:description" content="{desc}">
 <meta name="twitter:image" content="https://hatinring.com/assets/share/latest.png">
+<meta name="twitter:image:alt" content="Hat-in-Ring Radar daily briefing card">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <style>body{{margin:0;background:#0f1115;color:#f4efe7;font-family:-apple-system,Segoe UI,Arial,sans-serif;display:grid;place-items:center;min-height:100vh}}
 .card{{width:min(640px,92vw);border:1px solid #2a2d33;border-radius:16px;padding:28px;background:#15171c}}

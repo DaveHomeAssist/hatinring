@@ -41,7 +41,13 @@ STATUS_DEF = {
 
 
 def _safe_url(u) -> str:
-    return u if isinstance(u, str) and re.match(r"^https?://", u) else ""
+    if not isinstance(u, str):
+        return ""
+    try:
+        parsed = urllib.parse.urlsplit(u.strip())
+    except ValueError:
+        return ""
+    return u.strip() if parsed.scheme.lower() in {"http", "https"} and parsed.netloc else ""
 
 
 def _money(v) -> str:
@@ -198,7 +204,8 @@ def render_candidate_pages(records: list[dict], template_dir: Path, out_dir: Pat
         bd = [{"label": lbl, "w": w} for lbl, w in _breakdown(r.get("keys", []), r["lastSignal"], built)]
         ls = _to_date(r.get("lastSignal"))
         days = (built - ls).days if ls else None
-        money = r.get("money") or {}
+        money = dict(r.get("money") or {})
+        money["source"] = _safe_url(money.get("source"))
         money_fmt = {k: _money(money.get(k)) for k in ("receipts", "disbursements", "cash_on_hand", "debts")}
         early = r.get("early_states") or {}
         early_list = sorted(
@@ -216,7 +223,7 @@ def render_candidate_pages(records: list[dict], template_dir: Path, out_dir: Pat
             person["jobTitle"] = r["role"]
         if r.get("img"):
             person["image"] = canonical_base + r["img"]
-        wiki = (r.get("links") or {}).get("wikipedia")
+        wiki = _safe_url((r.get("links") or {}).get("wikipedia"))
         if wiki:
             person["sameAs"] = [wiki]   # entity disambiguation (two-Kennedys problem)
         person_jsonld = json.dumps(person, ensure_ascii=False).replace("<", "\\u003c")
@@ -248,10 +255,12 @@ def render_candidate_pages(records: list[dict], template_dir: Path, out_dir: Pat
             person_jsonld=person_jsonld, breadcrumbs_jsonld=breadcrumbs_jsonld,
             related=_related(e, all_enriched),
             vs_nav=(vs_links or {}).get(cid) or [],
-            wiki=_safe_url(wiki),   # visible "Wikipedia ↗" link (scheme-checked)
+            wiki=wiki,   # visible "Wikipedia ↗" link (scheme-checked)
             spark=_sparkline(r.get("series"), built),
-            evidence=r.get("evidence") or [],
+            evidence=[{**row, "url": _safe_url(row.get("url"))}
+                      for row in (r.get("evidence") or []) if isinstance(row, dict)],
             early_list=early_list, money_fmt=money_fmt,
+            has_money=bool(r.get("money")), money_data=money,
             corrections_url=corrections_url, as_of=as_of,
         )
         page_dir = out_dir / "c" / cid

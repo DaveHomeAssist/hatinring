@@ -12,6 +12,7 @@ import shutil
 from datetime import date, datetime, timezone
 from pathlib import Path
 from jinja2 import Environment, FileSystemLoader, select_autoescape
+from PIL import Image, ImageOps
 
 from . import series, money, geo, brief, pages, versus
 from .scoring import enrich
@@ -25,6 +26,7 @@ _DROP = {"history", "fec_ids", "evidence"}
 
 # where pulled candidate portraits live, relative to the repo root
 _ASSET_DIR = Path("assets") / "candidates"
+_PORTRAIT_MAX_SIZE = (640, 800)
 
 CANONICAL_URL = "https://hatinring.com/"
 PAGE_DESC = ("Who's running for president in 2028? Daily-updated tracker of 40+ "
@@ -94,7 +96,20 @@ def _copy_assets(records: list[dict], repo_root: Path, out_dir: Path) -> int:
         src, dst = repo_root / rel, out_dir / rel
         if src.exists() and src.resolve() != dst.resolve():
             dst.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copy2(src, dst)
+            suffix = src.suffix.lower()
+            if suffix in {".jpg", ".jpeg", ".png"}:
+                with Image.open(src) as opened:
+                    image = ImageOps.exif_transpose(opened)
+                    image.thumbnail(_PORTRAIT_MAX_SIZE, Image.Resampling.LANCZOS)
+                    if suffix in {".jpg", ".jpeg"}:
+                        image.convert("RGB").save(
+                            dst, format="JPEG", quality=80, optimize=True,
+                            progressive=True,
+                        )
+                    else:
+                        image.save(dst, format="PNG", optimize=True, compress_level=9)
+            else:
+                shutil.copy2(src, dst)
             copied += 1
     return copied
 

@@ -3,6 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#F4EFE2">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
 <title>Who's Running for President in 2028? Candidate Tracker — Hat-in-Ring Radar</title>
 <meta name="description" content="{{ page_desc }}">
 <link rel="canonical" href="{{ canonical_url }}">
@@ -19,6 +22,7 @@
 <meta name="twitter:title" content="Who's Running for President in 2028? Candidate Tracker — Hat-in-Ring Radar">
 <meta name="twitter:description" content="{{ page_desc }}">
 <meta name="twitter:image" content="{{ og_image }}">
+<meta name="twitter:image:alt" content="Hat-in-Ring Radar — snapshot of the tracked 2028 presidential field">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="alternate" type="application/rss+xml" title="Hat-in-Ring Radar — daily movement" href="/feed.xml">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"2028 Hat-in-Ring Radar","url":"{{ canonical_url }}","description":"{{ page_desc }}","publisher":{"@type":"Organization","name":"System by Dave","url":"https://systembydave.com/"}}</script>
@@ -53,13 +57,14 @@
   /* reduced motion: a non-rotating sweep is just a frozen gradient cone — hide it; pulse dots simply stop */
   @media (prefers-reduced-motion: reduce){
     [style*="hir-sweep"]{display:none}
+    *{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
   }
   @keyframes hir-fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
   :focus-visible{outline:2px solid #3F6FB5;outline-offset:2px}
   .hir-scroll::-webkit-scrollbar{width:9px;height:9px}
   .hir-scroll::-webkit-scrollbar-thumb{background:#CFC6B0;border-radius:6px;border:2px solid #F6F2E8}
   .hir-scroll::-webkit-scrollbar-track{background:transparent}
-  input::placeholder{color:#9aa0a8}
+  input::placeholder{color:#6A6450}
   @media (max-width:768px){
     html,body{width:100%;max-width:100%;overflow-x:hidden}
     img,svg{max-width:100%}
@@ -77,8 +82,8 @@
     .hir-page-heading{align-items:flex-start!important}
     .hir-page-heading h1{font-size:26px!important}
     .hir-page-heading p{text-wrap:balance}
-    .hir-stats{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important;margin-bottom:16px!important}
-    .hir-stat-card{padding:10px 11px!important;min-height:76px}
+    .hir-stats{display:flex!important;gap:8px!important;margin-bottom:16px!important;overflow-x:auto;padding-bottom:4px;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch}
+    .hir-stat-card{flex:0 0 142px!important;padding:10px 11px!important;min-height:76px;scroll-snap-align:start}
     .hir-toolbar{display:grid!important;grid-template-columns:1fr!important;gap:8px!important}
     .hir-search{min-width:0!important;width:100%!important}
     .hir-toolbar select{width:100%!important}
@@ -171,7 +176,7 @@
         <div class="hir-stat-card" style="background:#FBF8F0;border:1px solid #DED5BD;border-radius:3px;padding:12px 13px;position:relative;overflow:hidden">
           <div style="position:absolute;left:0;top:0;bottom:0;width:3px;{{ s.barStyle }}"></div>
           <div style="font-family:'Newsreader',serif;font-size:27px;font-weight:600;line-height:1;color:#13294B">{{ s.n }}</div>
-          <div style="font-size:10px;text-transform:uppercase;letter-spacing:.07em;color:#7A7460;margin-top:6px;font-weight:600">{{ s.label }}</div>
+          <div style="font-size:10px;text-transform:uppercase;letter-spacing:.07em;color:#6A6450;margin-top:6px;font-weight:600">{{ s.label }}</div>
         </div>
       </sc-for>
     </div>
@@ -179,7 +184,7 @@
     <!-- toolbar -->
     <div class="hir-toolbar" style="display:flex;flex-wrap:wrap;gap:9px;align-items:center;margin-bottom:6px">
       <div class="hir-search" style="position:relative;flex:1 1 220px;min-width:180px">
-        <span style="position:absolute;left:11px;top:50%;transform:translateY(-50%);color:#A39A82;font-size:13px">⌕</span>
+        <span style="position:absolute;left:11px;top:50%;transform:translateY(-50%);color:#6A6450;font-size:13px">⌕</span>
         <input value="{{ q }}" onInput="{{ onSearch }}" aria-label="Search candidates" placeholder="Search name or office…" style="width:100%;font:inherit;font-size:13px;padding:9px 11px 9px 28px;border:1px solid #D5CBB3;border-radius:3px;background:#FCFAF4;color:#13294B">
       </div>
       <div class="hir-party-chips" style="display:flex;gap:5px">
@@ -229,7 +234,7 @@
           <tbody>
             <sc-for list="{{ rows }}" as="r" hint-placeholder-count="16">
               <tr onClick="{{ r.open }}" onKeyDown="{{ r.openKey }}" tabIndex="0" style="cursor:pointer" style-hover="background:#F2E9D4">
-                <td style="padding:4px 9px;border-bottom:1px solid #EEE6D2;border-right:1px solid #F0E8D5;font-family:'Space Mono',monospace;font-size:11px;color:#A39A82;text-align:right">{{ r.rank }}</td>
+                <td style="padding:4px 9px;border-bottom:1px solid #EEE6D2;border-right:1px solid #F0E8D5;font-family:'Space Mono',monospace;font-size:11px;color:#6A6450;text-align:right">{{ r.rank }}</td>
                 <td style="padding:4px 9px;border-bottom:1px solid #EEE6D2;border-right:1px solid #F0E8D5;font-size:12.5px;font-weight:600;color:#13294B;white-space:nowrap">{{ r.name }}<span style="{{ r.freshDot }}"></span><span style="{{ r.starStyle }}">★</span></td>
                 <td style="padding:4px 9px;border-bottom:1px solid #EEE6D2;border-right:1px solid #F0E8D5;white-space:nowrap"><span style="{{ r.laneSm }}">{{ r.letter }}</span></td>
                 <td style="padding:4px 9px;border-bottom:1px solid #EEE6D2;border-right:1px solid #F0E8D5;font-size:12px"><span style="{{ r.tierText }}">{{ r.statusLabel }}</span></td>
@@ -370,7 +375,7 @@
       <aside class="hir-dossier-rail" style="background:#FBF8F0;border:1px solid #DED5BD;border-radius:4px;overflow:hidden;position:sticky;top:88px">
         <div style="padding:11px 12px;border-bottom:1px solid #E4DBC6">
           <div style="position:relative">
-            <span style="position:absolute;left:10px;top:50%;transform:translateY(-50%);color:#A39A82;font-size:12px">⌕</span>
+            <span style="position:absolute;left:10px;top:50%;transform:translateY(-50%);color:#6A6450;font-size:12px">⌕</span>
             <input value="{{ dq }}" onInput="{{ onDq }}" aria-label="Find a candidate" placeholder="Find a name…" style="width:100%;font:inherit;font-size:12.5px;padding:8px 10px 8px 26px;border:1px solid #D5CBB3;border-radius:3px;background:#FCFAF4;color:#13294B">
           </div>
         </div>
@@ -515,7 +520,7 @@
     <!-- filters -->
     <div class="hir-toolbar" style="display:flex;flex-wrap:wrap;gap:9px;align-items:center;margin-bottom:20px">
       <div class="hir-search" style="position:relative;flex:1 1 220px;min-width:180px">
-        <span style="position:absolute;left:11px;top:50%;transform:translateY(-50%);color:#A39A82;font-size:13px">⌕</span>
+        <span style="position:absolute;left:11px;top:50%;transform:translateY(-50%);color:#6A6450;font-size:13px">⌕</span>
         <input value="{{ wireQ }}" onInput="{{ onWireQ }}" aria-label="Search dispatches" placeholder="Search dispatches…" style="width:100%;font:inherit;font-size:13px;padding:9px 11px 9px 28px;border:1px solid #D5CBB3;border-radius:3px;background:#FCFAF4;color:#13294B">
       </div>
       <select value="{{ wireParty }}" onChange="{{ onWireParty }}" aria-label="Filter by lane" style="font:inherit;font-size:12.5px;padding:8px 9px;border:1px solid #D5CBB3;border-radius:3px;background:#FCFAF4;color:#13294B">
@@ -638,10 +643,10 @@ class Component extends DCLogic {
     3:{label:'Considering',c:'#8F7025',desc:'Direct "considering" quote on record'},
     2:{label:'Positioning',c:'#3F5C86',desc:'Travel, donors, staff, media activity'},
     1:{label:'Floated',c:'#69737E',desc:'Floated / "not ruling out"'},
-    0:{label:'Inactive',c:'#A7ABA6',desc:'Ruled out, ineligible, or dormant'}
+    0:{label:'Inactive',c:'#626B73',desc:'Ruled out, ineligible, or dormant'}
   };
   CONF = {'Very high':4,'High':3,'Medium':2,'Low':1,'Noise':0};
-  CONFC = {'Very high':'#2E7D4F','High':'#3A8F55','Medium':'#8F7025','Low':'#B08A2A','Noise':'#B0AEA4'};
+  CONFC = {'Very high':'#2E7D4F','High':'#3A8F55','Medium':'#8F7025','Low':'#8F7025','Noise':'#626B73'};
 
   PARTY_PALETTES = {
     Muted:{Democrat:'#3F5C86',Republican:'#9E3B34',Libertarian:'#8F7025',Independent:'#3E7E72'},
@@ -759,7 +764,7 @@ class Component extends DCLogic {
       {n:cnt(3),label:'Considering',c:'#8F7025'},
       {n:cnt(2),label:'Positioning',c:'#3F5C86'},
       {n:cnt(1),label:'Floated',c:'#69737E'},
-      {n:all.filter(x=>x.bucket==='out').length,label:'Ruled out',c:'#A7ABA6'},
+      {n:all.filter(x=>x.bucket==='out').length,label:'Ruled out',c:'#626B73'},
       {n:all.length,label:'Tracked',c:'#13294B'}
     ].map(x=>({n:x.n,label:x.label,barStyle:{background:x.c}}));
 
@@ -809,7 +814,7 @@ class Component extends DCLogic {
         open:()=>this.select(x.id),
         openKey:this.kb(()=>this.select(x.id)),
         td:{padding:tdPad,verticalAlign:'middle',fontSize:'13px',color:'#13294B'},
-        tdRank:{padding:tdPad,verticalAlign:'middle',color:'#A39A82',fontFamily:"'Space Mono',monospace",fontSize:'12px',width:'30px'},
+        tdRank:{padding:tdPad,verticalAlign:'middle',color:'#6A6450',fontFamily:"'Space Mono',monospace",fontSize:'12px',width:'30px'},
         barStyle:{background:col},
         laneStyle:{display:'inline-flex',alignItems:'center',justifyContent:'center',width:'19px',height:'19px',borderRadius:'3px',background:col,color:'#fff',fontSize:'11px',fontWeight:700,flex:'none'},
         tierBadge:{display:'inline-block',fontSize:'11px',fontWeight:600,padding:'2px 9px',borderRadius:'3px',color:'#fff',whiteSpace:'nowrap',background:tier.c},

@@ -11,9 +11,8 @@ These cover the human-in-the-loop guarantees the pipeline claims:
 Tests are fully offline/deterministic (fixed `today`, in-tmp audit logs, no
 network, no dependence on the wall clock).
 
-Confirmed defects are encoded as ``xfail(strict=True)``: they pass today by
-*documenting* the broken behaviour and will fail loudly (XPASS) the moment the
-guardrail is fixed, forcing the assertion to be tightened.
+Every trust guarantee is a required passing assertion. Regressions therefore
+fail the suite directly rather than being recorded as expected failures.
 """
 import json
 import tempfile
@@ -93,11 +92,6 @@ def test_idempotent_audit_log_no_duplicate_sids(audit):
     assert len(lines) == len(sids_after_2), "duplicate sid rows appended on rerun"
 
 
-@pytest.mark.xfail(strict=True, reason=(
-    "BUG: delta is recomputed as after-before each run. On the second (no-op) "
-    "run nothing applies, so before==after and delta resets to 0 even though "
-    "run 1 set it to a non-zero momentum jump. The dataset is therefore NOT "
-    "stable on the 2nd run for any record that moved on run 1."))
 def test_idempotent_dataset_stable_on_second_run(audit):
     # a stale record that a fresh signal makes recent (momentum jumps)
     rec = record(keys=["softConsidering"], lastSignal="2026-01-01")
@@ -143,17 +137,13 @@ def test_curated_quote_not_clobbered_by_empty_incoming(audit):
     assert ds.by_id["person"]["quote"] == "HUMAN-QUOTE"
 
 
-@pytest.mark.xfail(strict=True, reason=(
-    "BUG/TRUST-GAP: a hand-written `quote` is overwritten whenever a newer "
-    "(>= lastSignal) news item carries its own quote. The task's trust model "
-    "lists `quote` as a curated, protected field; merge.py only protects "
-    "why/role/bucket. The same applies to `headline`."))
-def test_curated_quote_survives_newer_news(audit):
+def test_curated_headline_and_quote_survive_newer_news(audit):
     ds = Dataset([record(quote="HUMAN-QUOTE", headline="HUMAN-HEADLINE",
                          lastSignal="2026-04-01")], today=TODAY)
     ds.update([news("person", ["earlyState"], "auto RSS headline",
                     quote="auto RSS quote", date_="2026-06-10")], [], audit)
     assert ds.by_id["person"]["quote"] == "HUMAN-QUOTE"
+    assert ds.by_id["person"]["headline"] == "HUMAN-HEADLINE"
 
 
 # --------------------------------------------------------------------------- #
@@ -181,12 +171,6 @@ def test_news_barred_does_not_flip_tier_and_goes_to_review(audit):
     assert any("barred" in r.get("keys", []) for r in ds.review)
 
 
-@pytest.mark.xfail(strict=True, reason=(
-    "BUG: apply_fec applies the signal `key` directly with NO downgrade gate, "
-    "unlike apply_news. A 'barred'/'ruledOut' key arriving on the FEC channel "
-    "(crafted fixture, future fec.py change, or bad upstream data) silently "
-    "flips a Declared record to Inactive with no review-queue entry. "
-    "Reproduced end-to-end via a crafted fec_signals.json fixture."))
 def test_fec_downgrade_is_gated_to_review(audit):
     rec = record(name="Jane Doe", keys=["declared"], lastSignal="2026-05-01")
     ds = Dataset([rec], today=TODAY)
@@ -194,8 +178,9 @@ def test_fec_downgrade_is_gated_to_review(audit):
     ds.update([], [fec("P0DOE", "barred", name="DOE, JANE", party="Democrat")],
               audit)
     after = derive_status(ds.by_id["person"]["keys"])[0]
-    # desired guardrail: FEC downgrade does not silently flip the tier
     assert before == after, "FEC downgrade flipped tier with no human review"
+    assert any(r.get("fec_id") == "P0DOE" and "barred" in r.get("keys", [])
+               for r in ds.review)
 
 
 # --------------------------------------------------------------------------- #

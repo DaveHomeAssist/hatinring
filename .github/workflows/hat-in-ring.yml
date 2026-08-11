@@ -19,8 +19,8 @@ jobs:
       run:
         working-directory: _hat-in-ring-src
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
         with:
           python-version: "3.11"
           cache: pip
@@ -46,8 +46,8 @@ jobs:
           if git diff --cached --quiet; then echo "no changes"; exit 0; fi
           git commit -m "chore: hat-in-ring daily ingest $(date -u +%F)"
           for i in 1 2 3 4 5; do
-            git fetch -q origin main || true
-            git rebase -X theirs origin/main && git push && { echo "pushed on try $i"; exit 0; }
+            git fetch -q origin main
+            git rebase origin/main && git push && { echo "pushed on try $i"; exit 0; }
             git rebase --abort 2>/dev/null || true
             echo "push race; retry $i"; sleep $((i * 4))
           done

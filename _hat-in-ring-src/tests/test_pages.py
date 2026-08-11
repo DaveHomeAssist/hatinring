@@ -30,6 +30,8 @@ def test_pages_generated_per_record(tmp_path):
         h = (tmp_path / "c" / cid / "index.html").read_text(encoding="utf-8")
         assert 'class="tier"' in h and "Why this momentum score" in h
         assert f'canonical" href="{BASE}c/{cid}/"' in h
+        assert "Content-Security-Policy" in h and "object-src 'none'" in h
+        assert 'name="twitter:image:alt"' in h
         ld = json.loads(re.search(r'application/ld\+json">(.*?)</script>', h, re.S).group(1))
         assert ld["@type"] == "Person" and ld["url"] == f"{BASE}c/{cid}/"
 
@@ -40,6 +42,22 @@ def test_page_escapes_hostile_name(tmp_path):
     h = (tmp_path / "c" / "evil" / "index.html").read_text(encoding="utf-8")
     assert "<img src=x onerror" not in h            # autoescaped, not a live tag
     assert "&lt;img src=x onerror" in h
+
+
+def test_page_drops_non_web_source_links(tmp_path):
+    rec = _rec(
+        "safe",
+        sourceUrl="javascript:alert(1)",
+        links={"wikipedia": "data:text/html,x"},
+        evidence=[{"date": "2026-01-01", "headline": "Unsafe", "url": "javascript:alert(2)", "keys": []}],
+        money={"source": "data:text/html,money"},
+    )
+    pages.render_candidate_pages([rec], TEMPLATES, tmp_path, BUILT, BASE, BASE + "og.png")
+    h = (tmp_path / "c" / "safe" / "index.html").read_text(encoding="utf-8")
+    assert "javascript:" not in h
+    assert "data:text/html" not in h
+    assert pages._safe_url("https://") == ""
+    assert pages._safe_url("https://example.com/path") == "https://example.com/path"
 
 
 def test_page_renders_dated_sourced_evidence(tmp_path):
