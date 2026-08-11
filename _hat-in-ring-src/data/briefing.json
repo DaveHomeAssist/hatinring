@@ -1,21 +1,31 @@
 {
-  "date": "2026-08-10",
-  "movers": [],
+  "date": "2026-08-11",
+  "movers": [
+    {
+      "id": "aoc",
+      "name": "Alexandria Ocasio-Cortez",
+      "party": "Democrat",
+      "delta": 8,
+      "score": 50,
+      "tier": 3,
+      "statusLabel": "Actively considering"
+    }
+  ],
   "new_filers": [
     {
       "id": "newsom",
       "name": "Gavin Newsom",
       "tier": 5,
       "statusLabel": "Declared"
-    },
-    {
-      "id": "kelly",
-      "name": "Mark Kelly",
-      "tier": 5,
-      "statusLabel": "Declared"
     }
   ],
   "transitions": [
+    {
+      "name": "Alexandria Ocasio-Cortez",
+      "from": 2,
+      "to": 3,
+      "date": "2026-08-10"
+    },
     {
       "name": "Gavin Newsom",
       "from": 3,
@@ -27,6 +37,6 @@
   "totals": {
     "tracked": 41,
     "formal": 3,
-    "considering": 13
+    "considering": 14
   }
 }

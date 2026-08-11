@@ -1108,7 +1108,7 @@
     ],
     "conf": "Medium",
     "delta": 0,
-    "lastSignal": "2026-07-24",
+    "lastSignal": "2026-08-10",
     "headline": "New Hampshire presidential poll puts Ocasio-Cortez ahead of Buttigieg among 2028 hopefuls - Scripps News",
     "why": "Back on the trail and openly weighing a run; consistently near the top of Democratic primary polls.",
     "quote": "",
@@ -1122,11 +1122,13 @@
     },
     "early_states": {
       "IA": 4,
-      "NH": 3
+      "NH": 3,
+      "SC": 1
     },
     "early_states_last": {
       "IA": "2026-02-11",
-      "NH": "2026-07-23"
+      "NH": "2026-07-23",
+      "SC": "2026-08-10"
     },
     "evidence": [
       {
@@ -1211,6 +1213,15 @@
           "earlyState"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-08-10",
+        "headline": "Pete Buttigieg to headline major South Carolina Democrats conference - washingtonexaminer.com",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPc1d0dkthR1dXdmRBc2t3VHM1V1FkVXY5bjRZNGN0bWlEM05kQkdmN25velpPWHp0cXZpakpvcHZoTjR0LXZLMWZMM3ctS09SS0FsbnZnTDVhSXQwemxMV0gza1poU2VwU1dxaWcyci1WWWRkQ1BCMGhjZ0pSVEo4eGZYczkwUHJMTWxYMkpsQ1RIdFVCSzlLXzRhNFc4YzlISzFPS01tV1lJWW1VX3pzMF81NjY1R0Y4ZHBfdw?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZnJILVYzcldkMEQ4QVdrdGU5N21TSFdoS1E3a2JCYjVHaWJpZXR1M2FjS0FQNXhjWkxualdmS01aWlh1TFZMSXBNSGhMQldFS0ozdTBjUlRiRUxrV191eTlyOTBsbE5LNndxdFNHazd3Y1ZwYjlUMFVOYUJaazlvdzJXTlZpRlI4MUZKa3hhUDdWLVBRTXRaeFV4Z0taY2JRVkNoeUprV2p1d29mZlN1ZlZXYU9KU3dydVM0SUZLclRfMVlONHJF?oc=5"
@@ -1225,10 +1236,11 @@
       "donors",
       "mediaBlitz",
       "softConsidering",
-      "earlyState"
+      "earlyState",
+      "consideringQuote"
     ],
     "conf": "Medium",
-    "delta": 0,
+    "delta": 8,
     "lastSignal": "2026-08-10",
     "headline": "Alexandria Ocasio-Cortez won't rule out running for senator or president in 2028 - NBC New York",
     "why": "Massive small-dollar base; leads some progressive polls.",
@@ -1363,6 +1375,24 @@
           "softConsidering"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-08-10",
+        "headline": "AOC says she's freezing eggs, hasn't ruled out 2028 presidential bid - USA Today",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOMXd6SE1fajc5Sllna3RKbDFScE5IOGw2dEZZSjBrUV81R3Btano0WE1FSFdQS0VlZkJlY3dMVnVfSFVFZlVxNVUtZ2FhRTlGYU1KdThldkdpTUZnN09JcUtwWkxoRldLOFVxQU8yX0ZsazRZQ2hoSXhiY2VBMHM5TVhlZmpnLTNyRnRtZ2piaFBwZEJMZm1mSks2UUllNkIzQmNFV0o2cWl0MGM?oc=5",
+        "keys": [
+          "softConsidering"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-08-10",
+        "headline": "Alexandria Ocasio-Cortez has given another hint that she is considering a 2028 presidential run - The Journal",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPVUlZYmhnQ0o4ZWtMblNDTHZQdUlkRXp2RnBFNUhqM0l5MDl3Vk4zU0JSYjBpSm5kajBNZmRRV0g0RjF2TFFTNHFQU3dPNl9YZ2pIR0xnMlhncVlzUWpTcWJDT0tRV3BoYVJkZDBmME9zRGhJTUVZR0pKa1ZZcGlRUHFSV2V5NUY5MGcxenlfQkdzbWE4?oc=5",
+        "keys": [
+          "consideringQuote"
+        ],
+        "conf": "Low"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOWFNvVDNlemVmbHIyRnRXSk04R2xsWlB0Z2N6aDhCTEl5UUJkR1hRSTJIUThUUlgzdFdQWTVqZUp5TlotRmJKbnktX05QTy1vNXpRdUlpNHB6SEpmNkItbVlDUm9ubTd6VEhVWEJHQ2FYUktTQXZJa3hVU2xtZjROREVXdWNpdk1ZVUtxdGVobWNUSkd2VVdHd0I1VmJINUxwaTFHN20xMGx3NFRDWXJrVU84SUg4YTZHbmNjRGN5WTRRand2b3fSAc4BQVVfeXFMTUx6MHNBal9aR2I3LW9PQUdYdldvMWg3YTZmYXppakZrNEtrVmhwTmJuQ0YtR2JTblUwcVpnd2pyVFo1RFVSMXoxUl9jSU00ZHl5Z1dOSFFHMnFaV0lHVjBsMDRrVExlcU5zX2w0eHpUQmM4Zmp4VTJwNmRmZFZNdHU2Ul9UN0ZxVFRIYnhKckpiZWdGNTM5dVV2VVU0TDNObGd0eG5palpySDBYWUtISmplTDB1aHc3UXFONVNMZGFSc2FST0Y2V25DeGR2NGc?oc=5",
@@ -1374,7 +1404,15 @@
     },
     "early_states_last": {
       "NH": "2026-07-26"
-    }
+    },
+    "history": [
+      {
+        "date": "2026-08-10",
+        "from": 2,
+        "to": 3,
+        "reason": "Alexandria Ocasio-Cortez has given another hint that she is considering a 2028 presidential run - The Journal"
+      }
+    ]
   },
   {
     "id": "shapiro",
@@ -2114,6 +2152,15 @@
           "softConsidering"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-06-17",
+        "headline": "Sen. John Kennedy not ruling out White House bid - The Hill",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxORkJyQ3lfcTBRbW1POWtaWkFtOWpvRWpXMHRCalQ3bzN4VEx6TVdmRUZjR19hdUdvYU5wUzhDem1kaTY0QkFZSExWRHRnajNJME44ZGdidXQ5R0JPRm8tV1loQmdQVHBKVlVGUEpxMnhxSkhvM2V6T1FycUVSUEJKdlRUcExSUTA?oc=5",
+        "keys": [
+          "softConsidering"
+        ],
+        "conf": "Medium"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMihwFBVV95cUxORkJyQ3lfcTBRbW1POWtaWkFtOWpvRWpXMHRCalQ3bzN4VEx6TVdmRUZjR19hdUdvYU5wUzhDem1kaTY0QkFZSExWRHRnajNJME44ZGdidXQ5R0JPRm8tV1loQmdQVHBKVlVGUEpxMnhxSkhvM2V6T1FycUVSUEJKdlRUcExSUTDSAYwBQVVfeXFMTXM3QmxpS09ESWJid0FKYzhYd3hrSUttT1JvM2k4Z09XRnJ3TnJKNnA4LWd6djFXa1NKb09yNFo3eDR2ZU5xR0ZFVnkydldfbG5LR0o2YTdXWVJCRWlLdXNtSDZGMUJwSTZpQVNFTms3ckM5WTdRTFVQdHhLYi1UbVBqc1VmVUhLWWc0NGc?oc=5",
