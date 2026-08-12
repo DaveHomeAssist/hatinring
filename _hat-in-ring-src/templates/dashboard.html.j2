@@ -112,7 +112,7 @@
 
   <header class="hir-header" style="position:sticky;top:0;z-index:30;background:#F4EFE2;border-bottom:2px solid #13294B;box-shadow:0 1px 0 #C9BE9E,0 6px 18px -14px rgba(19,41,75,.5)">
     <div class="hir-header-inner" style="max-width:1280px;margin:0 auto;padding:0 22px;display:flex;align-items:center;gap:22px;height:72px">
-      <div class="hir-brand" onClick="{{ goHome }}" onKeyDown="{{ goHomeKey }}" role="button" tabIndex="0" aria-label="Hat-in-Ring Radar — go to The Field" style="display:flex;align-items:center;gap:13px;cursor:pointer;flex:none">
+      <div class="hir-brand" onClick="{{ goHome }}" onKeyDown="{{ goHomeKey }}" role="button" tabIndex="0" aria-label="Hat-in-Ring Radar — go to The Field" style="display:flex;align-items:center;gap:13px;cursor:pointer;flex:none;min-height:44px">
         <span style="position:relative;width:42px;height:42px;flex:none;display:block">
           <svg viewBox="0 0 100 100" width="42" height="42" style="display:block;position:absolute;inset:0">
             <circle cx="50" cy="50" r="46" fill="#0E2342" stroke="#13294B" stroke-width="1"></circle>
@@ -274,7 +274,7 @@
                   <td style="{{ r.td }}">
                     <span style="display:flex;align-items:center;gap:10px">
                       <span style="width:3px;height:30px;border-radius:2px;flex:none;{{ r.barStyle }}"></span>
-                      <img src="{{ r.avatar }}" alt="" loading="lazy" style="width:30px;height:30px;border-radius:3px;object-fit:cover;object-position:center top;flex:none;background:#E7E0CF;border:1px solid #DDD3BB">
+                      <img src="{{ r.avatar }}" srcset="{{ r.avatarSet }}" sizes="30px" alt="" loading="lazy" decoding="async" width="30" height="30" style="width:30px;height:30px;border-radius:3px;object-fit:cover;object-position:center top;flex:none;background:#E7E0CF;border:1px solid #DDD3BB">
                       <span style="min-width:0">
                         <span style="display:flex;align-items:center;gap:6px"><span style="font-weight:600;color:#13294B;white-space:nowrap">{{ r.name }}</span><span style="{{ r.freshDot }}"></span><span style="{{ r.starStyle }}">★</span></span>
                         <span style="display:block;color:#6A6450;font-size:11.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ r.role }}</span>
@@ -306,7 +306,7 @@
             <div onClick="{{ r.open }}" onKeyDown="{{ r.openKey }}" role="button" tabIndex="0" style="position:relative;background:#FBF8F0;border:1px solid #DED5BD;border-radius:4px;padding:14px;cursor:pointer;overflow:hidden" style-hover="border-color:#13294B">
               <span style="position:absolute;left:0;top:0;bottom:0;width:4px;{{ r.barStyle }}"></span>
               <div style="display:flex;gap:11px;align-items:flex-start;margin-left:5px">
-                <img src="{{ r.avatar }}" alt="" loading="lazy" style="width:48px;height:48px;border-radius:4px;object-fit:cover;object-position:center top;flex:none;background:#E7E0CF;border:1px solid #DDD3BB">
+                <img src="{{ r.avatar }}" srcset="{{ r.avatarSet }}" sizes="48px" alt="" loading="lazy" decoding="async" width="48" height="48" style="width:48px;height:48px;border-radius:4px;object-fit:cover;object-position:center top;flex:none;background:#E7E0CF;border:1px solid #DDD3BB">
                 <div style="flex:1;min-width:0">
                   <div style="display:flex;align-items:center;gap:6px"><span style="font-family:'Newsreader',serif;font-weight:600;font-size:16px;color:#13294B;line-height:1.1">{{ r.name }}</span><span style="{{ r.freshDot }}"></span></div>
                   <div style="color:#6A6450;font-size:11.5px;margin-top:2px">{{ r.role }}</div>
@@ -382,7 +382,7 @@
         <div class="hir-scroll" style="max-height:72vh;overflow-y:auto">
           <sc-for list="{{ dirList }}" as="d" hint-placeholder-count="12">
             <div onClick="{{ d.open }}" onKeyDown="{{ d.openKey }}" role="button" tabIndex="0" style="{{ d.rowStyle }}" style-hover="background:#F5EFDF">
-              <img src="{{ d.avatar }}" alt="" loading="lazy" style="width:30px;height:30px;border-radius:3px;object-fit:cover;object-position:center top;flex:none;background:#E7E0CF;border:1px solid #DDD3BB">
+              <img src="{{ d.avatar }}" srcset="{{ d.avatarSet }}" sizes="30px" alt="" loading="lazy" decoding="async" width="30" height="30" style="width:30px;height:30px;border-radius:3px;object-fit:cover;object-position:center top;flex:none;background:#E7E0CF;border:1px solid #DDD3BB">
               <span style="min-width:0;flex:1"><span style="{{ d.nameStyle }}">{{ d.name }}</span><span style="display:block;color:#6A6450;font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ d.role }}</span></span>
               <span style="{{ d.tierDot }}"></span>
               <span style="{{ d.scoreStyle }}">{{ d.score }}</span>
@@ -805,7 +805,7 @@ class Component extends DCLogic {
       const col=this.partyColor(x.party); const tier=this.TIERS[x.tier];
       return {
         id:x.id, rank:i+1, name:x.name, role:x.role, party:x.party, letter:this.partyLetter(x.party),
-        avatar:x.img, score:x.score, statusLabel:x.statusLabel, conf:x.conf, headline:x.headline,
+        avatar:x.thumb||x.img, avatarSet:(x.thumb||x.img)+' 96w, '+(x.thumb2x||x.thumb||x.img)+' 192w', score:x.score, statusLabel:x.statusLabel, conf:x.conf, headline:x.headline,
         recency:this.recencyLabel(x.days),
         bucketLabel:({formal:'Formal',considering:'Considering',soft:'Soft',edge:'Edge',out:'Ruled out'})[x.bucket],
         tierText:{color:tier.c,fontWeight:600,whiteSpace:'nowrap'},
@@ -873,7 +873,7 @@ class Component extends DCLogic {
     const dir=this.all().sort((a,b)=>b.score-a.score).filter(r=>{ if(!s.dq) return true; const q=s.dq.toLowerCase(); return (r.name+' '+r.role).toLowerCase().includes(q); }).map(r=>{
       const on=r.id===s.selectedId; const rc=this.partyColor(r.party);
       const openD=()=>{ this.setState({selectedId:r.id}); this.syncHash(); };
-      return { id:r.id, name:r.name, role:r.role, avatar:r.img, score:r.score,
+      return { id:r.id, name:r.name, role:r.role, avatar:r.thumb||r.img, avatarSet:(r.thumb||r.img)+' 96w, '+(r.thumb2x||r.thumb||r.img)+' 192w', score:r.score,
         open:openD, openKey:this.kb(openD),
         rowStyle:{display:'flex',alignItems:'center',gap:'10px',padding:'9px 12px',cursor:'pointer',borderLeft:'3px solid '+(on?rc:'transparent'),background:on?'#F1E9D5':'transparent',borderBottom:'1px solid #ECE4D2'},
         nameStyle:{fontWeight:on?700:600,color:'#13294B',fontSize:'13px',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis'},
@@ -907,7 +907,7 @@ class Component extends DCLogic {
       const tagKeys=(x.keys||[]).filter(k=>typeLabels[k]).slice(0,2).map(k=>({label:typeLabels[k]}));
       return { candId:x.id, name:x.name, party:x.party, letter:this.partyLetter(x.party), role:x.role, partyColor:this.partyColor(x.party),
         title:ps.title, source:ps.source, dateRaw:x.lastSignal, date:this.fmt(x.lastSignal,{month:'short',day:'numeric'}),
-        keys:x.keys, tier:x.tier, tierLabel:this.TIERS[x.tier].label, tierColor:this.TIERS[x.tier].c, score:x.score, fresh:this.isFresh(x), mover:this.isMover(x), days:x.days, tagKeys, avatar:x.img };
+        keys:x.keys, tier:x.tier, tierLabel:this.TIERS[x.tier].label, tierColor:this.TIERS[x.tier].c, score:x.score, fresh:this.isFresh(x), mover:this.isMover(x), days:x.days, tagKeys, avatar:x.thumb2x||x.thumb||x.img };
     });
     items.sort((a,b)=>new Date(b.dateRaw)-new Date(a.dateRaw));
     let f=items.slice();

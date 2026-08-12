@@ -27,6 +27,7 @@ _DROP = {"history", "fec_ids", "evidence"}
 # where pulled candidate portraits live, relative to the repo root
 _ASSET_DIR = Path("assets") / "candidates"
 _PORTRAIT_MAX_SIZE = (640, 800)
+_THUMBNAIL_SIZES = {"thumb": (96, 120), "thumb2x": (192, 240)}
 
 CANONICAL_URL = "https://hatinring.com/"
 PAGE_DESC = ("Who's running for president in 2028? Daily-updated tracker of 40+ "
@@ -80,6 +81,9 @@ def _attach_images(records: list[dict], repo_root: Path) -> None:
         rel = leads.get(r.get("id"))
         if rel and (repo_root / rel).exists():
             r["img"] = rel
+            source = Path(rel)
+            r["thumb"] = str(source.with_name(f"{source.stem}-thumb-96.webp"))
+            r["thumb2x"] = str(source.with_name(f"{source.stem}-thumb-192.webp"))
 
 
 def _copy_assets(records: list[dict], repo_root: Path, out_dir: Path) -> int:
@@ -94,12 +98,26 @@ def _copy_assets(records: list[dict], repo_root: Path, out_dir: Path) -> int:
         if not rel:
             continue
         src, dst = repo_root / rel, out_dir / rel
-        if src.exists() and src.resolve() != dst.resolve():
+        if src.exists():
             dst.parent.mkdir(parents=True, exist_ok=True)
             suffix = src.suffix.lower()
             if suffix in {".jpg", ".jpeg", ".png"}:
                 with Image.open(src) as opened:
                     image = ImageOps.exif_transpose(opened)
+                    for key, size in _THUMBNAIL_SIZES.items():
+                        thumb_rel = r.get(key)
+                        if not thumb_rel:
+                            continue
+                        thumb = image.copy()
+                        thumb.thumbnail(size, Image.Resampling.LANCZOS)
+                        thumb_dst = out_dir / thumb_rel
+                        thumb_dst.parent.mkdir(parents=True, exist_ok=True)
+                        thumb.convert("RGB").save(
+                            thumb_dst, format="WEBP", quality=74, method=6,
+                        )
+                    if src.resolve() == dst.resolve():
+                        copied += 1
+                        continue
                     image.thumbnail(_PORTRAIT_MAX_SIZE, Image.Resampling.LANCZOS)
                     if suffix in {".jpg", ".jpeg"}:
                         image.convert("RGB").save(
@@ -109,7 +127,8 @@ def _copy_assets(records: list[dict], repo_root: Path, out_dir: Path) -> int:
                     else:
                         image.save(dst, format="PNG", optimize=True, compress_level=9)
             else:
-                shutil.copy2(src, dst)
+                if src.resolve() != dst.resolve():
+                    shutil.copy2(src, dst)
             copied += 1
     return copied
 

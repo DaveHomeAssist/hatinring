@@ -144,7 +144,11 @@ def test_portrait_copy_is_resized_and_metadata_free(tmp_path):
     src.parent.mkdir(parents=True)
     Image.new("RGB", (1600, 2200), "#6a6450").save(src, quality=95)
 
-    copied = buildmod._copy_assets([{"img": str(rel)}], repo_root, out_dir)
+    thumb = Path("assets/candidates/alpha/lead-thumb-96.webp")
+    thumb2x = Path("assets/candidates/alpha/lead-thumb-192.webp")
+    copied = buildmod._copy_assets([
+        {"img": str(rel), "thumb": str(thumb), "thumb2x": str(thumb2x)}
+    ], repo_root, out_dir)
     dst = out_dir / rel
 
     assert copied == 1 and dst.exists()
@@ -153,6 +157,12 @@ def test_portrait_copy_is_resized_and_metadata_free(tmp_path):
         assert optimized.size[1] <= 800
         assert optimized.format == "JPEG"
         assert not optimized.getexif()
+    with Image.open(out_dir / thumb) as one_x:
+        assert one_x.width <= 96 and one_x.height <= 120
+        assert one_x.format == "WEBP"
+    with Image.open(out_dir / thumb2x) as two_x:
+        assert two_x.width <= 192 and two_x.height <= 240
+        assert two_x.format == "WEBP"
 
 
 # ----------------------------------------------------------------------------
