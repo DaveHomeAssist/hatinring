@@ -511,5 +511,17 @@
     ],
     "rid": "1c9b098047dd",
     "kind": "discovery"
+  },
+  {
+    "name": "White House",
+    "headline": "Trump won’t rule out seeking a third term in the White House, tells NBC News ‘there are methods’ for doing so - NBC News",
+    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPeHpzUXhwR0xRNVFTSGhGSmFIcFB0SGJuWlo5YVFmQ0V6SDN6VmJUVHVWdndpb2dHUFZ3MmRGREQ5X3VkdjhuS04ySjBsNVo2UndwLWRVRjdZYXc4VHdRSVN3SGhtZWNpZmJTcDZ5TzMyU3M1anp2OFpkUndoeUlFbmM5dXozaURUTjMzVmJzSmlNeFF3ZXNPQQ?oc=5",
+    "source": "NBC News",
+    "date": "2025-03-30",
+    "keys": [
+      "ruledOut"
+    ],
+    "rid": "b4c469551757",
+    "kind": "denial"
   }
 ]

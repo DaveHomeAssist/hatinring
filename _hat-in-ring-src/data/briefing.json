@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-11",
+  "date": "2026-08-12",
   "movers": [
     {
       "id": "aoc",
@@ -25,15 +25,9 @@
       "from": 2,
       "to": 3,
       "date": "2026-08-10"
-    },
-    {
-      "name": "Gavin Newsom",
-      "from": 3,
-      "to": 5,
-      "date": "2026-08-04"
     }
   ],
-  "review_count": 42,
+  "review_count": 43,
   "totals": {
     "tracked": 41,
     "formal": 3,
