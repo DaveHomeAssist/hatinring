@@ -2,6 +2,15 @@
 
 All material Hat in Ring product, evidence, and engineering changes are recorded here, newest first.
 
+## 2026-08-13
+
+### Accessibility
+
+- Raised the Exploratory status color to WCAG AA contrast against white text.
+- Replaced focusable table headers and rows with native sort and dossier buttons while retaining `aria-sort` on header cells.
+- Standardized desktop and mobile interactive targets at 44px minimum with visible focus treatment.
+- Removed the candidate-card headline clamp so WCAG text spacing and narrow-screen reflow no longer clip summaries.
+
 ## 2026-08-12
 
 ### Performance

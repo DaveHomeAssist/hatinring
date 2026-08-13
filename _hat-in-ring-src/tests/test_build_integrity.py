@@ -136,6 +136,38 @@ def test_mobile_layout_contract_present(tmp_path):
     assert "color:#7A7460;font-size:11.5px" not in html
 
 
+def test_accessibility_regression_contract(tmp_path):
+    html = _render(tmp_path)
+
+    assert ".hir-app button,.hir-app input,.hir-app select{min-height:44px}" in html
+    assert ".hir-app button{min-width:44px}" in html
+
+    # Exploratory badges use white text. Keep their contrast above WCAG AA.
+    def channel(v: int) -> float:
+        srgb = v / 255
+        return srgb / 12.92 if srgb <= 0.04045 else ((srgb + 0.055) / 1.055) ** 2.4
+
+    rgb = (0xA8, 0x5E, 0x16)
+    luminance = 0.2126 * channel(rgb[0]) + 0.7152 * channel(rgb[1]) + 0.0722 * channel(rgb[2])
+    white_contrast = 1.05 / (luminance + 0.05)
+    assert white_contrast >= 4.5
+    assert "c:'#A85E16'" in html
+    assert "#B26A1C" not in html
+
+    # Sort controls and dossier actions must be native controls, not focusable
+    # table headers or entire rows.
+    assert '<th onClick="{{ col.sort }}"' not in html
+    assert '<tr onClick="{{ r.open }}"' not in html
+    assert '<th aria-sort="{{ col.ariaSort }}"' in html
+    assert '<button type="button" onClick="{{ col.sort }}"' in html
+    assert 'aria-label="{{ r.openLabel }}"' in html
+    assert "openLabel:'Open '+x.name+' dossier'" in html
+
+    # Candidate summaries must remain readable with WCAG text spacing and reflow.
+    assert 'class="hir-card-summary"' in html
+    assert "-webkit-line-clamp" not in html
+
+
 def test_portrait_copy_is_resized_and_metadata_free(tmp_path):
     repo_root = tmp_path / "source"
     out_dir = tmp_path / "public"
