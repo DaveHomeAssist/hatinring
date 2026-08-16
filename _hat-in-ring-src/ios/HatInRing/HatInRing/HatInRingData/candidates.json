@@ -88,7 +88,7 @@
     ],
     "conf": "High",
     "delta": 0,
-    "lastSignal": "2026-08-04",
+    "lastSignal": "2026-08-14",
     "pollLead": "Dem poll leader",
     "headline": "Opinion | Which version of Gavin Newsom will voters see if he launches a presidential campaign? - calmatters.org",
     "why": "Polling frontrunner actively staking out a 2028 lane; a national billionaires-tax pitch and a Biden embrace are already drawing intra-party fire (Khanna).",
@@ -103,11 +103,11 @@
     },
     "early_states": {
       "NH": 1,
-      "NV": 1
+      "NV": 2
     },
     "early_states_last": {
       "NH": "2025-09-05",
-      "NV": "2026-07-08"
+      "NV": "2026-08-14"
     },
     "evidence": [
       {
@@ -134,6 +134,15 @@
         "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOVnJSYVZFWkJ2OTRXVDJRZWdjaG42UkkzZ0RmSGV2TUxUaUFrd3d4MDhoZGx4SlI0eV96dDRnRWhKcVVLc0d0bU56dGpsNDVyaUZiY3pRY1U1ZWxqaWJHWnFZSmxIdndybnBnQUlYY3Z2NXZHak8ybWFhOFg3T08weDg5X0hZX2M0bEhvMF9B?oc=5",
         "keys": [
           "declared"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-08-14",
+        "headline": "Can Gavin Newsom appeal to Nevada voters? Early test for 2028 presidential run - Sacramento Bee",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPNDNwbTR3OGZ4Z0lTdTgzQlVYSUxNdmY3cXFacDdOQ2RLQVplVl8yNE54ZXpIcGx3cWxsNGtneUlZRmlCOGR1aFRKMFZIQUtQZEpBaEZHeC1iYnZFQTBKc2R5YzJrblBxSVZEVm83T25TdHcwcmlMMGZ3bHpWVjhMZjdGU0x3M2MyS3ZB0gGLAUFVX3lxTE14UG9DWTJIcGZPSmlac0tHOGk2NzZWTXE4NW13VXIwMXBBdVJDOUtiaTA2M0dmdTlBRmJOUmtBYmlRTDFCRV9XSTJKV2daZjVWeF9DN3EwdEJlcFRMTGZHNlZsMXo4STlESURWc0pIbVNyNU9RamdwZ3I2eGtCdm1vcEVjOVJTX3RWMlE?oc=5",
+        "keys": [
+          "earlyState"
         ],
         "conf": "Low"
       }

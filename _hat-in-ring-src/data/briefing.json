@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-15",
+  "date": "2026-08-16",
   "movers": [
     {
       "id": "aoc",
@@ -27,7 +27,7 @@
       "date": "2026-08-10"
     }
   ],
-  "review_count": 44,
+  "review_count": 45,
   "totals": {
     "tracked": 41,
     "formal": 3,

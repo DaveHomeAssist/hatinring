@@ -536,5 +536,17 @@
     "note": "denial/downgrade — confirm before applying",
     "rid": "5bf6ab06b75e",
     "kind": "denial"
+  },
+  {
+    "name": "South Carolina",
+    "headline": "DNC approves 2028 primary schedule, gives South Carolina the first spot - Washington Examiner",
+    "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNbjhHQXVrM0xmRXJXWjFXamVPT1R5WndhUlI2LTl5eFNiWmxqdWsxZFZJQkgzX2h3bnFIYzFrZ045VjFWX3o5bVFVYU4tc1pXTzZtbFcwbndhUlIxc0c4ak13SEptbVBJY0d3bmk0amVXVDJBRXptRDBQZlhwN3BvT2xyNDhzSUVhT0MwSjZya0RzcnU4bldkeS1oT2xFcUJmbHVaWWx6THZmVzF4VUFweVBjR2NiSXBaLVl5cW9TODJlT200aWxYemVyeC16MW50R1RPSWdTVjJZa1pGUDhQVk93?oc=5",
+    "source": "Washington Examiner",
+    "date": "2026-08-15",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "65706a1b2c07",
+    "kind": "discovery"
   }
 ]
