@@ -560,5 +560,65 @@
     ],
     "rid": "727ad0936515",
     "kind": "discovery"
+  },
+  {
+    "name": "Democrats Reshape",
+    "headline": "Democrats Reshape 2028 Presidential Primary Calendar, and Put South Carolina First - The New York Times",
+    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNeXdhWkUzMGlyQnJ2VzAybWozY2NMcTNnWUQtZjdyUXlJMkI4Vmo5bG5QQ2dzQ0R5QjVldzU2emRlR0dWalUzOERFYkJxMnVxNG1PQm5pM0d3YmRSc21TXzVTRFBzWDByOHdQb3I1LVBPZ0VpcTBmVklwelhkVXBKdEE2ay1wYkUwN0h1TzBob1B6V0RMMUdaOHZTTQ?oc=5",
+    "source": "The New York Times",
+    "date": "2026-08-18",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "741b7fd6cde4",
+    "kind": "discovery"
+  },
+  {
+    "name": "Iowa Public Radio",
+    "headline": "DNC approves 2028 presidential nominating cycle, leaving Iowa out - Iowa Public Radio",
+    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPQ1NIVTgwMXk0QnlxZ083ZEs4VjNnS0hOcDloWXpfWUFrTWFDUUFxZUtzLVBnV0NSUzIzMy1WVUx6Q0Q0ZFU2NDBlNWRXT2t3dE9JZE9RLW1oQkVzN0hzVDBQa2hxNHJiMHd2c1lOZFc1dHhGcUJoUGZHZS1wMTdiOTFqUDZMX2lTYmdja1J4NDlpODhrNzJXTGNJRU16cmFsOEJMSXJCUFhIaFVuUktRWkRNcjRiazhPMnZfbGplYw?oc=5",
+    "source": "Iowa Public Radio",
+    "date": "2026-08-17",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "91edac3d1dff",
+    "kind": "discovery"
+  },
+  {
+    "name": "South Carolina",
+    "headline": "South Carolina to Vote First in Democrats’ Revamped 2028 Presidential Primary Calendar - Democracy Now!",
+    "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOMlBwZ0tic0wtVVpRMUk2bVpMVDh2ZTFNZm13NnRNMHRXVHZheWlXVDFldllkY19XbHRDOTlfalNZUVhSTXg1U1RMLWlaSEp0S0RYY0dEdERTVWpNcjFRMjJaZW1KaGFaVkxrWHVKZnJnbnNXTjlsSFpqYl9Ka2dyb0ZNV19RV0ZocjRNMTBsNEJvOGRnYm5GUG1hTmxnR0FkZFp3cHBpVjlMQi1HS0dfdlNYLWZYWEo0S2F2cWo0amU0UGUxVzM4alZ5bU1WTm8?oc=5",
+    "source": "Democracy Now!",
+    "date": "2026-08-17",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "a24617a03053",
+    "kind": "discovery"
+  },
+  {
+    "name": "Could Hegseth",
+    "headline": "Could Hegseth run for president in 2028? Iowa trip puts Trump’s Defence Secretary in spotlight - Firstpost",
+    "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPOFZYXzRGbkQ0M3g4YXJjeVpYZ0ZvVFprdVBlaERhcGp5VUJTbEd1ZlV5RVVBa2lsMDVMOERPZGFCamNvYUF1eUx2dGhZZ25qMTZzUWRJVkZLaDhJRWNzTFhrTHRGN25iblE5T3NaNldiclg3c0ZIbjN3R2J4R09QQ1JHU2RWaHhkaWNDSlllcDhqOU9KNXhZRkFhakxkQXdpMlFQc3lEOWZUTjI4aU5MM1Vhc0lzcnFQMFdhd0JtaHlYLW9yLUZMNF9aekhPbWpzajBvMtIB2gFBVV95cUxQaVYyRTBsQ2UzM2ZFT3NiR3pTN2ZEbzUwaC16aWZzUExRalFxa3k3MlRSeVRid2tmYlpvbkhSSXBJWVN2MkJuejZsdU56a3lSc1ZIZXJUeFdHTlNJWmdLVUZPTTVPR2luZHhjOV84LWlORHMxdWQ3UlY1VHhjQzU1eTJ3OV8yQTVDb3RKQV9nOUxOYi1jSi1OZzFUZnBjY0tFbENKTTdocTFCSWxubEttVzBZb3lmaGZ3QW1kTjYtMEk4X0w3enNLdFFzTi13ai1mRzdha0RmQU1GQQ?oc=5",
+    "source": "Firstpost",
+    "date": "2026-08-18",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "c7cad2af1229",
+    "kind": "discovery"
+  },
+  {
+    "name": "Washington Post",
+    "headline": "Hegseth travels to Iowa in his ‘personal capacity’ amid 2028 speculation - The Washington Post",
+    "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQMWhQbFhxWnlmMHh3RjZER1BORUJLZHBfRGJwaTBFR09KZ0NOcVA1anduTGFZTDkyOWluaGJYT2xhSGFQVndxMWcxcHRMYWZYcDFES0pRYnJVY19qb2hka0pVWFRaanJhaUN2WFdhV0hndGxsUE9OLWlSeHRPTlR6cjZVa3cxYkY3UF9ZZTZqSnVpeVp2TXhqMmk1ZzhBMk5lcmtQbi1BNkplbTIwLV81WFpGQjhRLXM?oc=5",
+    "source": "The Washington Post",
+    "date": "2026-08-18",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "4c6555e36a78",
+    "kind": "discovery"
   }
 ]

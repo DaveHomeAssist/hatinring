@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-17",
+  "date": "2026-08-18",
   "movers": [
     {
       "id": "aoc",
@@ -17,17 +17,16 @@
       "name": "Gavin Newsom",
       "tier": 5,
       "statusLabel": "Declared"
-    }
-  ],
-  "transitions": [
+    },
     {
-      "name": "Alexandria Ocasio-Cortez",
-      "from": 2,
-      "to": 3,
-      "date": "2026-08-10"
+      "id": "kelly",
+      "name": "Mark Kelly",
+      "tier": 5,
+      "statusLabel": "Declared"
     }
   ],
-  "review_count": 46,
+  "transitions": [],
+  "review_count": 51,
   "totals": {
     "tracked": 41,
     "formal": 3,
