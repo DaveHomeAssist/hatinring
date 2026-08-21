@@ -76,5 +76,49 @@ try {
   fail('dashboard logic threw -> ' + (e && e.message), 1);
 }
 
-console.log('PASS ux: quick filters, clearing, and sort model OK');
+// ---------------------------------------------------------------------------
+// Staleness banner (Phase 1). The build stamp baked into this page is
+// 2026-06-13, so we drive staleness() with explicit "now" values rather than
+// the wall clock — the check must not start passing/failing as time passes.
+// ---------------------------------------------------------------------------
+try {
+  const at = (iso) => app.staleness(new Date(iso + 'T00:00:00Z'));
+
+  if (app.STALE_AFTER_DAYS !== 2) fail('expected a 48h (2 whole day) staleness threshold, got ' + app.STALE_AFTER_DAYS);
+
+  // Fresh: same day, next day, and exactly 2 days out are all NOT stale.
+  if (at('2026-06-13') !== null) fail('banner shown on the build date itself');
+  if (at('2026-06-14') !== null) fail('banner shown 1 day after the build date');
+  if (at('2026-06-15') !== null) fail('banner shown at exactly the 2-day threshold');
+
+  // Stale: 3+ days out.
+  const stale = at('2026-06-16');
+  if (stale === null) fail('banner NOT shown 3 days after the build date');
+  if (stale.days !== 3) fail('expected days=3, got ' + stale.days);
+  if (!/June 13, 2026/.test(stale.message)) fail('banner message omits the as-of date: ' + stale.message);
+  if (!/\d+ days ago/.test(stale.message)) fail('banner message omits the age: ' + stale.message);
+
+  const older = at('2026-07-13');
+  if (older === null || older.days !== 30) fail('expected days=30 a month out, got ' + (older && older.days));
+
+  // A clock skewed BEHIND the build date must never show the banner.
+  if (at('2026-06-01') !== null) fail('banner shown for a client clock behind the build date');
+
+  // The model flags the markup binds to must track staleness() for the REAL
+  // clock. Asserted as a relationship, not a fixed value: this page's build
+  // stamp is pinned in the past, so whether it is stale right now depends on
+  // when the suite runs.
+  const vals = app.renderVals();
+  const live = app.staleness();
+  if (vals.isStale !== (live !== null)) fail('renderVals().isStale disagrees with staleness()');
+  if (live === null) {
+    if (vals.staleMessage !== '') fail('staleMessage should be empty when fresh');
+  } else if (vals.staleMessage !== live.message) {
+    fail('staleMessage does not carry the staleness() message');
+  }
+} catch (e) {
+  fail('staleness check threw -> ' + (e && e.message), 1);
+}
+
+console.log('PASS ux: quick filters, clearing, sort model, and staleness banner OK');
 process.exit(0);

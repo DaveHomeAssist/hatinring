@@ -62,7 +62,17 @@ _JS_RUNNER = textwrap.dedent(r"""
       .replace(/SEED\s*=\s*\{\{ seed_json \}\};/, 'SEED = [];')
       .replace(/REVIEW\s*=\s*\{\{ review_json \}\};/, 'REVIEW = [];')
       .replace(/BRIEFING\s*=\s*\{\{ briefing_json \}\};/, 'BRIEFING = {};')
-      .replace(/asOf:\s*\{\{ as_of_json \}\}/, 'asOf:"June 12, 2026"');
+      .replace(/asOf:\s*\{\{ as_of_json \}\}/, 'asOf:"June 12, 2026"')
+      .replace(/AS_OF\s*=\s*\{\{ as_of_json \}\};/, 'AS_OF = "June 12, 2026";');
+    // Any Jinja placeholder left in the script is one this harness does not know
+    // how to stub. Fail with a readable message instead of a bare SyntaxError
+    // from new Function(), so the next person to add one knows what to do.
+    const leftover = main.match(/\{\{[^}]*\}\}/);
+    if (leftover) {
+      console.error('unstubbed Jinja placeholder in dashboard script: ' + leftover[0] +
+        ' -- add a .replace() for it in _JS_RUNNER');
+      process.exit(66);
+    }
     class DCLogic {
       constructor() { this.props = {partyColors:'Muted', density:'Compact', accent:'Sky blue'}; }
       setState(next) { this.state = Object.assign({}, this.state || {}, next || {}); }

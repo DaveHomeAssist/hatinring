@@ -67,3 +67,60 @@ def test_dashboard_smoke_catches_a_broken_build(tmp_path):
     )
     assert res.returncode != 0, "smoke harness should FAIL on the known-broken build but passed"
     assert "FAIL" in res.stdout
+
+
+# ---------------------------------------------------------------------------
+# Staleness banner (Phase 1: operational hardening)
+#
+# A stalled pipeline cannot rebuild the page, so the served HTML must detect its
+# own age client-side. These assert the markup + threshold constant survive a
+# render; ux_check.js drives the actual date logic.
+# ---------------------------------------------------------------------------
+def _render_html(tmp_path, built=date(2026, 6, 13)):
+    out = tmp_path / "index.html"
+    render(ROOT / "data" / "seed.json", ROOT / "templates", out, built=built)
+    return out.read_text(encoding="utf-8")
+
+
+def test_staleness_banner_markup_present(tmp_path):
+    html = _render_html(tmp_path)
+    assert 'class="hir-stale"' in html, "staleness banner markup missing"
+    # Announced to assistive tech without stealing focus.
+    assert 'role="status"' in html, "staleness banner must be a live region"
+    # Gated on the model flag, so a fresh build renders nothing.
+    assert 'value="{{ isStale }}"' in html
+    assert "{{ staleMessage }}" in html
+
+
+def test_staleness_threshold_constant_is_48h(tmp_path):
+    html = _render_html(tmp_path)
+    assert "STALE_AFTER_DAYS = 2;" in html, "48-hour staleness threshold changed"
+    # Whole-UTC-day differencing is what makes the banner immune to client clock
+    # skew; a timestamp subtraction here would reintroduce false positives.
+    assert "Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate())" in html
+
+
+def test_staleness_banner_meets_wcag_aa_contrast(tmp_path):
+    """Banner text (#13294B) on its amber ground (#F6E7C3) must clear AA 4.5:1."""
+    html = _render_html(tmp_path)
+    assert "background:#F6E7C3" in html and "color:#13294B" in html
+
+    def channel(v: int) -> float:
+        srgb = v / 255
+        return srgb / 12.92 if srgb <= 0.04045 else ((srgb + 0.055) / 1.055) ** 2.4
+
+    def lum(rgb) -> float:
+        return 0.2126 * channel(rgb[0]) + 0.7152 * channel(rgb[1]) + 0.0722 * channel(rgb[2])
+
+    fg, bg = lum((0x13, 0x29, 0x4B)), lum((0xF6, 0xE7, 0xC3))
+    contrast = (max(fg, bg) + 0.05) / (min(fg, bg) + 0.05)
+    assert contrast >= 4.5, f"staleness banner contrast {contrast:.2f} below WCAG AA"
+
+
+def test_staleness_banner_sits_above_the_sticky_header(tmp_path):
+    """In-flow above the sticky header — a position:fixed bar would overlap it."""
+    html = _render_html(tmp_path)
+    assert html.index('class="hir-stale"') < html.index('class="hir-header"')
+    banner = html[html.index('class="hir-stale"'):]
+    banner = banner[:banner.index("</div>")]
+    assert "position:fixed" not in banner

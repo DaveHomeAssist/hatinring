@@ -112,6 +112,10 @@
 </helmet>
 <div class="hir-app" style="min-height:100vh;background:#E7E1D2;color:#13294B;font-family:'Space Grotesk',sans-serif;font-size:14px;line-height:1.5">
 
+  <sc-if value="{{ isStale }}" hint-placeholder-val="{{ false }}">
+  <div class="hir-stale" role="status" style="background:#F6E7C3;border-bottom:2px solid #8F7025;color:#13294B;font-size:13.5px;font-weight:600;padding:11px 22px;text-align:center;line-height:1.45">{{ staleMessage }}</div>
+  </sc-if>
+
   <header class="hir-header" style="position:sticky;top:0;z-index:30;background:#F4EFE2;border-bottom:2px solid #13294B;box-shadow:0 1px 0 #C9BE9E,0 6px 18px -14px rgba(19,41,75,.5)">
     <div class="hir-header-inner" style="max-width:1280px;margin:0 auto;padding:0 22px;display:flex;align-items:center;gap:22px;height:72px">
       <div class="hir-brand" onClick="{{ goHome }}" onKeyDown="{{ goHomeKey }}" role="button" tabIndex="0" aria-label="Hat-in-Ring Radar — go to The Field" style="display:flex;align-items:center;gap:13px;cursor:pointer;flex:none;min-height:44px">
@@ -629,6 +633,24 @@ class Component extends DCLogic {
   }
 
   TODAY = new Date({{ generated_at }});
+  // Human-readable twin of TODAY (same build stamp), used by the staleness copy.
+  AS_OF = {{ as_of_json }};
+
+  // ---------- data staleness ----------
+  // A dead daily pipeline cannot rebuild this page, so the SERVED HTML has to
+  // detect its own age: TODAY is the baked freshness.as_of stamp, compared here
+  // against the reader's clock. Whole UTC CALENDAR DAYS are differenced (not
+  // timestamps) so a skewed client clock or a timezone offset can't manufacture
+  // a false warning; > 2 whole days is the generous read of "older than 48h".
+  STALE_AFTER_DAYS = 2;
+  staleness(now){
+    const ref = now || new Date();
+    const asUTC = d => Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate());
+    const days = Math.round((asUTC(ref) - asUTC(this.TODAY)) / 86400000);
+    if(!(days > this.STALE_AFTER_DAYS)) return null;
+    return { days, message:'Data last updated '+this.AS_OF+' — '+days+
+      ' days ago. The daily update may be delayed; figures below are not current.' };
+  }
 
   WEIGHTS = {
     declared:{w:40,label:'Formal FEC candidacy / launch'},
@@ -845,8 +867,10 @@ class Component extends DCLogic {
     const tabStyle=on=>({appearance:'none',border:'0',cursor:'pointer',font:'inherit',fontSize:'12.5px',fontWeight:600,padding:'8px 13px',background:on?'#13294B':'#FCFAF4',color:on?'#F4EFE2':'#6A6450'});
 
     const clearF=()=>this.setState({q:'',party:[],bucket:'',quick:''});
+    const stale=this.staleness();
     const base={
       asOf:{{ as_of_json }}, trackedCount:all.length,
+      isStale:!!stale, staleMessage:stale?stale.message:'',
       isField:s.view==='field', isDossiers:s.view==='dossiers', isWire:s.view==='wire',
       navTabs, goHome:()=>this.go('field'), goHomeKey:this.kb(()=>this.go('field')), goWire:()=>this.go('wire'),
       // field
