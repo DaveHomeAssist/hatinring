@@ -199,3 +199,36 @@ def test_money_is_published_as_its_own_block_not_folded_into_candidates(tmp_path
            [c["score"] for c in payload["candidates"]], \
         "momentum changed when financials.json was present — money leaked into scoring"
     assert bare["financials"] == {}
+
+
+# ---- timeline block (Phase 6, additive under hatinring.v1) ----------------
+def test_timeline_block_is_published(tmp_path):
+    recs = _dataset()
+    # NB: _dataset() already gives every record a sentinel `history` (it exists
+    # to prove history never leaks into candidate records), so that sentinel
+    # legitimately produces events too — assert on the one we control by id.
+    recs[0]["history"] = [{"date": "2026-03-01", "from": 1, "to": 3,
+                           "reason": "Alpha says he is considering it"}]
+    payload = json.loads(_build(tmp_path, recs=recs, name="tl").read_text(encoding="utf-8"))
+    assert payload["timeline"], "timeline block missing from the feed"
+    alpha = next(e for e in payload["timeline"] if e["id"] == "alpha")
+    assert alpha["direction"] == "up" and alpha["to"] == 3
+    assert alpha["reason"] == "Alpha says he is considering it"
+    assert alpha["reconstructed"] is False
+    # oldest first
+    dates = [e["date"] for e in payload["timeline"]]
+    assert dates == sorted(dates)
+
+
+def test_timeline_is_additive_and_does_not_move_momentum(tmp_path):
+    """Guardrail check: history drives the timeline but never the score."""
+    plain = [{k: v for k, v in r.items() if k != "history"} for r in _dataset()]
+    a = json.loads(_build(tmp_path, recs=plain, name="tl-a").read_text(encoding="utf-8"))
+    assert a["timeline"] == [], "no history should mean no events"
+
+    withhist = [dict(r) for r in plain]
+    withhist[0]["history"] = [{"date": "2026-03-01", "from": 1, "to": 3, "reason": "r"}]
+    b = json.loads(_build(tmp_path, recs=withhist, name="tl-b").read_text(encoding="utf-8"))
+    assert len(b["timeline"]) == 1
+    assert [c["score"] for c in a["candidates"]] == [c["score"] for c in b["candidates"]], \
+        "momentum changed when status history was added — history leaked into scoring"

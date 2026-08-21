@@ -63,7 +63,8 @@ _JS_RUNNER = textwrap.dedent(r"""
       .replace(/REVIEW\s*=\s*\{\{ review_json \}\};/, 'REVIEW = [];')
       .replace(/BRIEFING\s*=\s*\{\{ briefing_json \}\};/, 'BRIEFING = {};')
       .replace(/asOf:\s*\{\{ as_of_json \}\}/, 'asOf:"June 12, 2026"')
-      .replace(/AS_OF\s*=\s*\{\{ as_of_json \}\};/, 'AS_OF = "June 12, 2026";');
+      .replace(/AS_OF\s*=\s*\{\{ as_of_json \}\};/, 'AS_OF = "June 12, 2026";')
+      .replace(/TIMELINE\s*=\s*\{\{ timeline_json \}\};/, 'TIMELINE = [];');
     // Any Jinja placeholder left in the script is one this harness does not know
     // how to stub. Fail with a readable message instead of a bare SyntaxError
     // from new Function(), so the next person to add one knows what to do.

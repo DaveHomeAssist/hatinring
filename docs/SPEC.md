@@ -104,7 +104,15 @@ FEC + News ─▶ classify ─▶ merge ─▶ (series / money / geo / brief) �
   routed to review (never auto-applied)**; unknown FEC filers gated on a
   registered principal committee; early-state tallies.
 - **`scoring.py` / `series.py`** — momentum + daily snapshots → `series`,
-  `slope7`, `slope30`.
+  `slope7`, `slope30`. Pruning at `RETAIN_DAYS` (180) **moves** rows to
+  `data/archive/momentum_<year>.jsonl.gz` rather than deleting them, so the
+  cycle ends with a complete trail; the archive is idempotent on `(date, id)`
+  and gzipped with `mtime=0` so unchanged content makes no commit.
+- **`timeline.py`** — `data/timeline.json`: every status-tier change, oldest
+  first. Recorded `history` entries are authoritative and carry their headline;
+  moves visible only in the snapshot tier trail are emitted with
+  `reconstructed: true` and no reason, so the UI never implies evidence that
+  does not exist.
 - **`money.py`** — financials artifact; a **separate axis, never scored**.
 - **`geo.py`** — early-state codes + headline backfill.
 - **`brief.py`** — `briefing.json` + SVG/HTML share card.
@@ -123,7 +131,7 @@ scraping `index.html`.
 - **Emitted by:** `build.emit_latest_json()`, staged next to `index.html` (the
   Pages artifact excludes `_hat-in-ring-src/`, so the pipeline's own `data/`
   copy is not the served one).
-- **Envelope:** `{schema, as_of, candidates[], briefing{}, financials{}}`.
+- **Envelope:** `{schema, as_of, candidates[], briefing{}, financials{}, timeline[]}`.
   `candidates` is ranked by momentum, descending. `financials` is keyed by
   candidate id — an absent id means *has not filed*, which is not zero, and it
   is never folded into momentum (guardrail 4).
@@ -155,7 +163,9 @@ Current frontend ships as a single-file Jinja template with browser-loaded JS.
 Framework code or package-managed architecture can be used when the product calls
 for it. `SEED` + `REVIEW`
 + `BRIEFING` injected as JS literals (`<` escaped to `<` to prevent a
-`</script>` breakout; every data field HTML-escaped). State in `localStorage`,
+`</script>` breakout; every data field HTML-escaped). Four views — The Field, Dossiers, The Wire, and **Timeline**
+(`#/timeline`), the last rendering every recorded tier change on a horizontal
+track plus a keyboard-operable list of `<button>` rows. State in `localStorage`,
 version-keyed: a new pipeline build refreshes the seed but preserves manual adds
 + view prefs. SVG sparklines / favicon / share. SEO: canonical = `hatinring.com`,
 OG/Twitter/JSON-LD, `<noscript>` top-15 table. A11y: ARIA tablist/roles, keyboard

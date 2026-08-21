@@ -14,7 +14,7 @@ from pathlib import Path
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 from PIL import Image, ImageOps
 
-from . import series, money, geo, brief, pages, versus
+from . import series, money, geo, brief, pages, versus, timeline
 from .scoring import enrich
 
 log = logging.getLogger("hatring.build")
@@ -182,7 +182,8 @@ def _js_literal(obj) -> str:
 
 
 
-def _latest_payload(enriched: list[dict], briefing: dict, built: date) -> dict:
+def _latest_payload(enriched: list[dict], briefing: dict, events: list[dict],
+                    built: date) -> dict:
     """Build the public payload. Pure + deterministic: every value derives from
     the arguments, so two builds from identical inputs are byte-identical."""
     candidates = [
@@ -199,11 +200,13 @@ def _latest_payload(enriched: list[dict], briefing: dict, built: date) -> dict:
         "candidates": candidates,
         "briefing": briefing,
         "financials": financials,
+        # Additive under hatinring.v1 (consumers ignore unknown fields).
+        "timeline": events,
     }
 
 
-def emit_latest_json(enriched: list[dict], briefing: dict, built: date,
-                     out_dir: Path) -> Path:
+def emit_latest_json(enriched: list[dict], briefing: dict, events: list[dict],
+                     built: date, out_dir: Path) -> Path:
     """Write the public feed to <site root>/data/latest.json.
 
     Staged next to index.html (not into the pipeline's own data/ dir) because
@@ -212,12 +215,13 @@ def emit_latest_json(enriched: list[dict], briefing: dict, built: date,
     """
     out = Path(out_dir) / LATEST_PATH
     out.parent.mkdir(parents=True, exist_ok=True)
-    payload = _latest_payload(enriched, briefing, built)
+    payload = _latest_payload(enriched, briefing, events, built)
     # sort_keys + a fixed indent: byte-stable across runs and readable in diffs.
     out.write_text(json.dumps(payload, indent=2, ensure_ascii=False,
                               sort_keys=True) + "\n", encoding="utf-8")
-    log.info("build: wrote %s (%d candidates, %d financials)", out,
-             len(payload["candidates"]), len(payload["financials"]))
+    log.info("build: wrote %s (%d candidates, %d financials, %d timeline events)",
+             out, len(payload["candidates"]), len(payload["financials"]),
+             len(payload["timeline"]))
     return out
 
 
@@ -242,6 +246,9 @@ def render(candidates_path: Path, template_dir: Path, out_path: Path,
     # Briefing is recomputed at build so the page is always current (pipeline.run
     # also writes the committed data/briefing.json artifact).
     briefing = brief.build_briefing(records, len(pending), built)
+    # Race timeline: recomputed at build so the page is current (pipeline.run
+    # also writes the committed data/timeline.json artifact).
+    events = timeline.build_timeline(records, data_dir / "momentum_snapshots.jsonl")
     # Static, crawlable top-15 summary so SEO isn't JS-dependent (mission SEO pass).
     enriched = sorted((enrich(r, built) for r in records),
                       key=lambda r: r["score"], reverse=True)
@@ -274,6 +281,7 @@ def render(candidates_path: Path, template_dir: Path, out_path: Path,
         seed_json=_js_literal(_public(records)),
         review_json=_js_literal(review),
         briefing_json=_js_literal(briefing),
+        timeline_json=_js_literal(events),
         # Anchor with Z so the browser parses the build stamp as UTC; otherwise it is
         # read in the viewer's local TZ and daysSince() can flip the 30/90-day recency
         # bands at date-line offsets, diverging from the Python scoring engine.
@@ -308,7 +316,7 @@ def render(candidates_path: Path, template_dir: Path, out_path: Path,
     pages.build_sitemap(records, out_path.parent, CANONICAL_URL,          # sitemap incl. all pages
                         extra_urls=[(p["url"], p["lastmod"]) for p in vs_pages])
     brief.write_feed(data_dir, out_path.parent)   # /feed.xml from data/feed_items.json (read-only)
-    emit_latest_json(enriched, briefing, built, out_path.parent)  # /data/latest.json
+    emit_latest_json(enriched, briefing, events, built, out_path.parent)  # /data/latest.json
     log.info("build: wrote %s (%d records, %d imgs, %d pages, %d vs pages, %d bytes)",
              out_path, len(records), imgs, npages, len(vs_pages), len(html))
     return out_path

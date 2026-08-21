@@ -120,5 +120,69 @@ try {
   fail('staleness check threw -> ' + (e && e.message), 1);
 }
 
-console.log('PASS ux: quick filters, clearing, sort model, and staleness banner OK');
+// ---------------------------------------------------------------------------
+// Timeline view (Phase 6). Drives the model directly — the track markers and the
+// list are both derived from timelineEvents(), so this covers what renders.
+// ---------------------------------------------------------------------------
+try {
+  const nav = app.renderVals().navTabs.map((t) => t.label);
+  if (!nav.includes('Timeline')) fail('Timeline tab missing from nav: ' + nav.join(','));
+
+  app.go('timeline');
+  if (app.state.view !== 'timeline') fail('go(timeline) did not switch the view');
+  const tv = app.renderVals();
+  if (tv.isTimeline !== true) fail('isTimeline not set on the timeline view');
+  if (tv.isField !== false) fail('field view still active alongside timeline');
+  // sc-if has no negation, so the inverse flag must actually be the inverse.
+  if (tv.hasTimeline === tv.isTimelineEmpty) fail('hasTimeline is not the inverse of isTimelineEmpty');
+
+  if (!Array.isArray(app.TIMELINE)) fail('TIMELINE was not injected as an array');
+  // With no filter applied every event must be present — this keeps the
+  // per-row assertions below honest rather than vacuously true on an empty set.
+  if (tv.tlRows.length !== app.TIMELINE.length) {
+    fail('tlRows(' + tv.tlRows.length + ') != TIMELINE(' + app.TIMELINE.length + ') with filter=all');
+  }
+
+  // Newest first.
+  const dates = tv.tlRows.map((r) => r.date);
+  for (let i = 1; i < dates.length; i++) {
+    if (dates[i] > dates[i - 1]) fail('timeline rows are not newest-first at index ' + i);
+  }
+
+  // Filters partition the set: all == up + down.
+  const total = app.timelineEvents().length;
+  app.setState({ tlFilter: 'up' });
+  const up = app.timelineEvents().length;
+  app.setState({ tlFilter: 'down' });
+  const down = app.timelineEvents().length;
+  if (up + down !== total) fail('up(' + up + ') + down(' + down + ') != all(' + total + ')');
+  app.setState({ tlFilter: 'all' });
+  if (app.timelineEvents().length !== total) fail('clearing the filter did not restore all moves');
+  if (app.renderVals().tlFilters.length !== 3) fail('expected 3 timeline filter chips');
+
+  // Every row is labelled for assistive tech and openable.
+  for (const r of tv.tlRows) {
+    if (!r.label || !/\d{4}-\d{2}-\d{2}/.test(r.label)) fail('timeline row has no dated aria-label: ' + r.label);
+    if (typeof r.open !== 'function') fail('timeline row is not openable');
+    if (!r.why) fail('timeline row has no explanation text');
+    if (r.reconstructed && /Reconstructed/.test(r.why) === false) {
+      fail('a reconstructed row does not say so: ' + r.why);
+    }
+  }
+
+  // tlPos must stay in range and never divide by zero on a single-day span.
+  if (app.tlPos('2026-06-13', '2026-06-13', '2026-06-13') !== 1) fail('tlPos did not handle a zero-width span');
+  const mid = app.tlPos('2026-06-15', '2026-06-10', '2026-06-20');
+  if (Math.abs(mid - 0.5) > 1e-9) fail('tlPos midpoint wrong: ' + mid);
+  if (app.tlPos('2020-01-01', '2026-06-10', '2026-06-20') !== 0) fail('tlPos did not clamp below 0');
+  if (app.tlPos('2030-01-01', '2026-06-10', '2026-06-20') !== 1) fail('tlPos did not clamp above 1');
+
+  // Hash routing must round-trip the new view.
+  app.go('field');
+  if (app.state.view !== 'field') fail('could not navigate back to the field');
+} catch (e) {
+  fail('timeline check threw -> ' + (e && e.message), 1);
+}
+
+console.log('PASS ux: quick filters, clearing, sort model, staleness banner, and timeline OK');
 process.exit(0);
