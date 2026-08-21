@@ -360,11 +360,12 @@
     "keys": [
       "consideringQuote",
       "mediaBlitz",
-      "earlyState"
+      "earlyState",
+      "donors"
     ],
     "conf": "High",
-    "delta": 0,
-    "lastSignal": "2026-06-27",
+    "delta": 15,
+    "lastSignal": "2026-08-11",
     "headline": "Riding into 2028: on the midterms trail, Beshear eyes a bigger prize",
     "why": "Red-state Democratic governor; cross-country and early-state travel (Iowa, Nevada, Ohio) is fueling open 2028 speculation.",
     "quote": "I'd consider it under the right circumstances.",
@@ -417,6 +418,15 @@
         "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQTlZJRE5INGJlV01ldmNQOEdNV1ljYzZNaVR2U01CTWd1eGZWSjVmaENHRzVJeGZ4enZiVml1NGFHMHk0dTNibERyVjc4NmItdlVqcXdKSGktVGU1dmRUdE9USU9JajE1czRsOHNmdEsyV2F3a055bTV6VFQyMTBoZUFsRGZEdUNOOTJpNHdzcWNMTGdFNTJNdA?oc=5",
         "keys": [
           "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-08-11",
+        "headline": "The top donor to Kentucky Gov. Andy Beshear’s PAC remains a man of mystery - Louisville Public Media",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPbkx2QUxfd2EyLXJ5MndnRDdNci1zb0xDeC11UHRMOUd3YW9ZeWNJMC04ekdzcnVaZEEtZjhlVmJIZjVNWlVOTTRyN0E0QnM4dmdHYjZwT1J3MFRyTnpid3d1a0FCYUtubWp0cFNvTjJQWGJtMTRqRHV2MGZTeTBrSThQbFhzUkdNakRTYThHdmREeGxkOWFIN0dKRXFGbUpVRUJzNnZsOEFGTms5?oc=5",
+        "keys": [
+          "donors"
         ],
         "conf": "Low"
       }

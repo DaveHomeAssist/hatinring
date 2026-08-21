@@ -1,6 +1,15 @@
 {
-  "date": "2026-08-20",
+  "date": "2026-08-21",
   "movers": [
+    {
+      "id": "beshear",
+      "name": "Andy Beshear",
+      "party": "Democrat",
+      "delta": 15,
+      "score": 50,
+      "tier": 3,
+      "statusLabel": "Actively considering"
+    },
     {
       "id": "aoc",
       "name": "Alexandria Ocasio-Cortez",
@@ -26,7 +35,7 @@
     }
   ],
   "transitions": [],
-  "review_count": 51,
+  "review_count": 53,
   "totals": {
     "tracked": 41,
     "formal": 3,

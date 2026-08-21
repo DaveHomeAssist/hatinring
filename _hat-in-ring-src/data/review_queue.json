@@ -620,5 +620,29 @@
     ],
     "rid": "4c6555e36a78",
     "kind": "discovery"
+  },
+  {
+    "name": "Democratic National Convention",
+    "headline": "Boston, with its rich base of party donors, named one of three finalists to host 2028 Democratic National Convention - The Boston Globe",
+    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQLXhwOVN5b25EbUhmLVU3Wnp5eS12aVZrc2p5Ung3UUNTV2JybnBSWG55QnhTU0FCdkM3ZXBUek01TTdUN0Jad0x4STh3MUJFWEM1bXZRUkhLdlY4c2MtX1B4TjhES1VVNHNDWHlCTjhOb0NfUkl4MF9UdFdaV0Nta2VHUzR5YjI1NC00MU1qdVlFQUF1RGcwNWFzSkNGQQ?oc=5",
+    "source": "The Boston Globe",
+    "date": "2026-08-20",
+    "keys": [
+      "donors"
+    ],
+    "rid": "1ec571010970",
+    "kind": "discovery"
+  },
+  {
+    "name": "USA Today",
+    "headline": "Ossoff says he won't run in 2028. Poll shows he could win if he did - USA Today",
+    "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOY29LZUZMV2JuMzQ0TFViaG1IWV8yQkpiRXlOS3R5OVZydmgweTBrUV90WTR2bGRaS0tObkRneG5HVlVoUlhncVc2aHFIeFFwdUdrempkUDJaWlg0SVdlX3JZeTFUY3JwME9seEtrQXFEc1RKY1pqNzJkcVdnOHBtcE5BY05va1FfaE1zOWYtNm1ySlVCd3lTc25Va2Y0aG81bHNnZjN4b3l2LVlSRXdEa3FmMnVrckw1TXZJdXZta2JKOVVEZXBDUk9LZE51YUUxc0Fvc3FuQmRVTmM?oc=5",
+    "source": "USA Today",
+    "date": "2026-08-20",
+    "keys": [
+      "ruledOut"
+    ],
+    "rid": "a30eeb7f1079",
+    "kind": "denial"
   }
 ]
