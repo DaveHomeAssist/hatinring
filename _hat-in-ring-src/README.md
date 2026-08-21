@@ -159,6 +159,21 @@ applies them:
 | `data/review_decisions.json` | human inbox: `[{rid, action}]` — consumed + emptied each run |
 | `data/review_resolved.json` | resolved rids, so a confirmed/dismissed item never resurfaces |
 
+#### Local review page (no hand-editing)
+
+```bash
+cd _hat-in-ring-src && python -m http.server   # then open http://localhost:8000/review.html
+```
+
+`review.html` loads `data/review_queue.json`, renders each queued item as a card
+(name, kind, headline, signal keys, source link), and exports a
+`review_decisions.json` you save into `data/` and commit. It validates the export
+before enabling the download, so a malformed decisions file cannot be produced
+by it — and it refuses a queue whose schema it does not recognise rather than
+mis-rendering it. It lives inside `_hat-in-ring-src/`, which the Pages deploy
+excludes, so it is never published. You can also open the file directly and use
+the file picker if you would rather not run a server.
+
 `reconcile_review` (in `pipeline.py`) persists the queue across daily runs — a
 flagged item no longer vanishes before a human acts — applies committed decisions
 idempotently, and fails safe (a corrupt `review_decisions.json` is ignored, not a
@@ -196,7 +211,8 @@ a minimal record if new); curated fields are still never overwritten by automati
 | Path | What |
 |---|---|
 | `config.yaml` | watchlist, aliases, FEC ids, discovery queries |
-| `hatring/` | fec · news · classify · scoring · merge · build · pipeline |
+| `hatring/` | fec · news · classify · scoring · merge · timeline · build · pipeline |
+| `review.html` | local review-queue admin page (never deployed) |
 | `templates/dashboard.html.j2` | the dashboard (data injected at build) |
 | `data/seed.json` | canonical 40-record starting dataset |
 | `tests/` | scoring parity · classifier · merge (pytest) |

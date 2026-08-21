@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Review queue — Hat-in-Ring Radar (local admin)</title>
+<style>
+  :root{
+    --bg:#E7E1D2; --panel:#FBF8F0; --ink:#13294B; --muted:#6A6450;
+    --line:#DED5BD; --rule:#C9BE9E; --ok:#2E7D4F; --no:#9E3B34; --warn:#8F7025;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:14px/1.5 "Space Grotesk",system-ui,-apple-system,Segoe UI,Arial,sans-serif}
+  header{position:sticky;top:0;z-index:5;background:#F4EFE2;border-bottom:2px solid var(--ink);
+         box-shadow:0 6px 18px -14px rgba(19,41,75,.5)}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+  .hrow{display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:14px 0}
+  h1{font-size:19px;margin:0;letter-spacing:-.01em}
+  .tag{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+       color:var(--no);border:1px solid var(--no);border-radius:3px;padding:2px 7px}
+  main{padding:22px 0 80px}
+  .note{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--warn);
+        border-radius:4px;padding:13px 16px;margin-bottom:18px;color:var(--muted);font-size:13px}
+  .note code{background:#EFE9D9;padding:1px 5px;border-radius:3px;color:var(--ink)}
+  button{font:inherit;min-height:38px;padding:8px 14px;border-radius:3px;cursor:pointer;
+         border:1px solid var(--rule);background:#FCFAF4;color:var(--ink)}
+  button:disabled{opacity:.45;cursor:not-allowed}
+  button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid #3F6FB5;outline-offset:2px}
+  .primary{background:var(--ink);color:#F4EFE2;border-color:var(--ink);font-weight:600}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:4px;
+        padding:16px 18px;margin-bottom:12px}
+  .card.done{opacity:.55}
+  .card h2{font-size:16px;margin:0 0 6px;font-weight:600}
+  .meta{display:flex;gap:10px;flex-wrap:wrap;align-items:center;
+        color:var(--muted);font-size:12px;margin-bottom:9px}
+  .kind{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+        padding:2px 7px;border-radius:3px;border:1px solid currentColor}
+  .kind.discovery{color:#3F5C86} .kind.denial{color:var(--no)} .kind.fec{color:var(--warn)}
+  .head{margin:0 0 9px;font-family:Georgia,"Times New Roman",serif;font-size:15px}
+  .keys{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:11px}
+  .key{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;
+       background:#EFE9D9;border:1px solid var(--rule);border-radius:3px;padding:2px 7px}
+  .acts{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+  .confirm[aria-pressed="true"]{background:var(--ok);border-color:var(--ok);color:#fff;font-weight:600}
+  .dismiss[aria-pressed="true"]{background:var(--no);border-color:var(--no);color:#fff;font-weight:600}
+  .err{background:#FBEAE8;border:1px solid var(--no);border-left:4px solid var(--no);
+       border-radius:4px;padding:14px 16px;margin-bottom:16px;color:#6B211C}
+  .err h2{margin:0 0 6px;font-size:15px}
+  .err ul{margin:6px 0 0 18px;padding:0}
+  .empty{text-align:center;padding:60px 0;color:var(--muted)}
+  .bar{position:sticky;bottom:0;background:#F4EFE2;border-top:2px solid var(--ink);
+       padding:12px 0;margin-top:20px}
+  .count{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;color:var(--muted)}
+  a{color:#3F5C86}
+  .vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap hrow">
+    <h1>Review queue</h1>
+    <span class="tag">local admin — not published</span>
+    <span class="count" id="count" role="status"></span>
+    <span style="margin-left:auto;display:flex;gap:8px;flex-wrap:wrap">
+      <label class="vh" for="file">Load review_queue.json</label>
+      <input type="file" id="file" accept="application/json,.json">
+      <button id="reload" type="button">Reload from ./data/</button>
+    </span>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="note">
+    Serve this directory (<code>cd _hat-in-ring-src &amp;&amp; python -m http.server</code>)
+    and open <code>/review.html</code>, or pick <code>data/review_queue.json</code> with the
+    file input. Mark each item <strong>Confirm</strong> or <strong>Dismiss</strong>, export
+    <code>review_decisions.json</code>, save it into <code>data/</code>, and commit — the next
+    pipeline run applies it and empties the inbox. Confirming a denial or a discovery is the
+    <em>only</em> way it reaches the live board.
+  </div>
+
+  <div id="errors" hidden></div>
+  <div id="list"></div>
+
+  <div class="bar">
+    <div class="wrap" style="padding:0;display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+      <button id="export" class="primary" type="button" disabled>Export review_decisions.json</button>
+      <button id="clear" type="button">Clear decisions</button>
+      <span class="count" id="status" role="status"></span>
+    </div>
+  </div>
+</main>
+
+<script>
+(function () {
+  "use strict";
+
+  // The exact shape reconcile_review() consumes, and the exact fields
+  // merge.py stamps onto a queue item. An item carrying anything else means the
+  // queue schema moved and this page is out of date: we FAIL VISIBLY rather than
+  // guess, because a silently mis-rendered queue leads to a wrong decision.
+  var REQUIRED = ["name", "headline", "url", "source", "date", "keys"];
+  var OPTIONAL = ["note", "fec_id", "rid", "kind"];
+  var KINDS = ["discovery", "denial", "fec"];
+  var ACTIONS = ["confirm", "dismiss"];
+
+  var items = [];
+  var decisions = Object.create(null);   // rid -> "confirm" | "dismiss"
+
+  var $ = function (id) { return document.getElementById(id); };
+  var el = function (tag, attrs, text) {
+    var n = document.createElement(tag);
+    if (attrs) Object.keys(attrs).forEach(function (k) { n.setAttribute(k, attrs[k]); });
+    if (text != null) n.textContent = text;   // textContent everywhere: never innerHTML
+    return n;
+  };
+
+  function showErrors(title, lines) {
+    var box = $("errors");
+    box.textContent = "";
+    var d = el("div", { "class": "err" });
+    d.appendChild(el("h2", null, title));
+    var ul = el("ul");
+    lines.slice(0, 40).forEach(function (l) { ul.appendChild(el("li", null, l)); });
+    d.appendChild(ul);
+    if (lines.length > 40) d.appendChild(el("p", null, "…and " + (lines.length - 40) + " more."));
+    box.appendChild(d);
+    box.hidden = false;
+  }
+  function clearErrors() { $("errors").hidden = true; $("errors").textContent = ""; }
+
+  // ---- validation -------------------------------------------------------
+  function validateQueue(data) {
+    var errs = [];
+    if (!Array.isArray(data)) return ["review_queue.json must be a JSON array."];
+    data.forEach(function (it, i) {
+      var tag = "item[" + i + "]";
+      if (it === null || typeof it !== "object" || Array.isArray(it)) {
+        errs.push(tag + ": not an object"); return;
+      }
+      REQUIRED.forEach(function (f) {
+        if (!(f in it)) errs.push(tag + ": missing required field '" + f + "'");
+      });
+      Object.keys(it).forEach(function (f) {
+        if (REQUIRED.indexOf(f) < 0 && OPTIONAL.indexOf(f) < 0) {
+          errs.push(tag + ": unknown field '" + f + "' — this page is out of date with the queue schema");
+        }
+      });
+      if ("keys" in it && !Array.isArray(it.keys)) errs.push(tag + ": 'keys' must be an array");
+      if ("kind" in it && KINDS.indexOf(it.kind) < 0) errs.push(tag + ": unknown kind '" + it.kind + "'");
+      if ("rid" in it && !/^[0-9a-f]{12}$/.test(it.rid)) errs.push(tag + ": malformed rid '" + it.rid + "'");
+      if (!it.rid) errs.push(tag + ": no rid — cannot be decided (run the pipeline once to stamp ids)");
+    });
+    return errs;
+  }
+
+  // The export must be valid BY CONSTRUCTION: this runs before the download is
+  // enabled, so a malformed decisions file cannot be produced by this page.
+  function validateDecisions(out) {
+    var errs = [], seen = Object.create(null);
+    if (!Array.isArray(out)) return ["decisions payload is not an array"];
+    out.forEach(function (d, i) {
+      var tag = "decision[" + i + "]";
+      if (!d || typeof d !== "object") { errs.push(tag + ": not an object"); return; }
+      if (Object.keys(d).sort().join(",") !== "action,rid") {
+        errs.push(tag + ": must have exactly {rid, action}");
+      }
+      if (!/^[0-9a-f]{12}$/.test(d.rid)) errs.push(tag + ": malformed rid");
+      if (ACTIONS.indexOf(d.action) < 0) errs.push(tag + ": action must be confirm or dismiss");
+      if (seen[d.rid]) errs.push(tag + ": duplicate rid " + d.rid);
+      seen[d.rid] = 1;
+    });
+    return errs;
+  }
+
+  // ---- rendering --------------------------------------------------------
+  function render() {
+    var list = $("list");
+    list.textContent = "";
+    if (!items.length) {
+      list.appendChild(el("div", { "class": "empty" }, "Queue is empty — nothing to review."));
+    }
+    items.forEach(function (it) {
+      var decided = decisions[it.rid];
+      var card = el("div", { "class": "card" + (decided ? " done" : ""), "data-rid": it.rid });
+
+      card.appendChild(el("h2", null, it.name || "(unnamed)"));
+
+      var meta = el("div", { "class": "meta" });
+      var kind = it.kind || "discovery";
+      meta.appendChild(el("span", { "class": "kind " + kind }, kind));
+      meta.appendChild(el("span", null, it.date || "(no date)"));
+      meta.appendChild(el("span", null, it.source || "(no source)"));
+      if (it.fec_id) meta.appendChild(el("span", null, "FEC " + it.fec_id));
+      card.appendChild(meta);
+
+      card.appendChild(el("p", { "class": "head" }, it.headline || ""));
+
+      if (it.note) card.appendChild(el("p", { "class": "meta" }, it.note));
+
+      var keys = el("div", { "class": "keys" });
+      (it.keys || []).forEach(function (k) { keys.appendChild(el("span", { "class": "key" }, k)); });
+      card.appendChild(keys);
+
+      if (it.url) {
+        var a = el("a", { href: it.url, target: "_blank", rel: "noopener noreferrer" }, "Open source ↗");
+        card.appendChild(el("div", { "class": "meta" })).appendChild(a);
+      }
+
+      var acts = el("div", { "class": "acts" });
+      ACTIONS.forEach(function (action) {
+        var b = el("button", {
+          type: "button",
+          "class": action,
+          "aria-pressed": String(decided === action),
+          "aria-label": (action === "confirm" ? "Confirm" : "Dismiss") + ": " + (it.name || it.rid)
+        }, action === "confirm" ? "Confirm" : "Dismiss");
+        b.addEventListener("click", function () {
+          // Clicking the active choice clears it, so a misclick is recoverable.
+          if (decisions[it.rid] === action) delete decisions[it.rid];
+          else decisions[it.rid] = action;
+          render();
+        });
+        acts.appendChild(b);
+      });
+      if (decided) acts.appendChild(el("span", { "class": "count" }, "marked " + decided));
+      card.appendChild(acts);
+
+      list.appendChild(card);
+    });
+    refresh();
+  }
+
+  function buildDecisions() {
+    return Object.keys(decisions).sort().map(function (rid) {
+      return { rid: rid, action: decisions[rid] };
+    });
+  }
+
+  function refresh() {
+    var n = Object.keys(decisions).length;
+    $("count").textContent = items.length + " queued";
+    var out = buildDecisions();
+    var errs = validateDecisions(out);
+    $("export").disabled = n === 0 || errs.length > 0;
+    $("status").textContent = errs.length
+      ? (errs.length + " validation error(s) — export blocked")
+      : (n + " of " + items.length + " decided");
+    if (errs.length) showErrors("Decisions failed validation — export blocked", errs);
+  }
+
+  // ---- loading ----------------------------------------------------------
+  function load(data, origin) {
+    var errs = validateQueue(data);
+    if (errs.length) {
+      items = [];
+      render();
+      showErrors("Queue from " + origin + " did not validate — nothing loaded", errs);
+      return;
+    }
+    clearErrors();
+    items = data;
+    decisions = Object.create(null);
+    render();
+  }
+
+  $("file").addEventListener("change", function (e) {
+    var f = e.target.files && e.target.files[0];
+    if (!f) return;
+    var r = new FileReader();
+    r.onload = function () {
+      try { load(JSON.parse(r.result), f.name); }
+      catch (err) { showErrors("Could not parse " + f.name, [String(err)]); }
+    };
+    r.readAsText(f);
+  });
+
+  function fetchQueue() {
+    fetch("./data/review_queue.json", { cache: "no-store" })
+      .then(function (r) {
+        if (!r.ok) throw new Error("HTTP " + r.status);
+        return r.json();
+      })
+      .then(function (d) { load(d, "./data/review_queue.json"); })
+      .catch(function (err) {
+        showErrors("Could not load ./data/review_queue.json", [
+          String(err),
+          "Serve this directory (python -m http.server) or use the file picker above."
+        ]);
+      });
+  }
+  $("reload").addEventListener("click", fetchQueue);
+
+  $("clear").addEventListener("click", function () {
+    decisions = Object.create(null);
+    clearErrors();
+    render();
+  });
+
+  $("export").addEventListener("click", function () {
+    var out = buildDecisions();
+    var errs = validateDecisions(out);
+    if (errs.length) { showErrors("Export blocked", errs); return; }
+    var blob = new Blob([JSON.stringify(out, null, 2) + "\n"], { type: "application/json" });
+    var url = URL.createObjectURL(blob);
+    var a = el("a", { href: url, download: "review_decisions.json" });
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+  });
+
+  render();
+  if (location.protocol === "http:" || location.protocol === "https:") fetchQueue();
+
+  // Test seam: tests/review_check.js drives these directly so the validation
+  // rules that gate the export are covered without a browser. Not used by the
+  // page itself.
+  if (typeof globalThis !== "undefined") {
+    globalThis.__reviewInternals = {
+      validateQueue: validateQueue,
+      validateDecisions: validateDecisions,
+      buildDecisions: buildDecisions,
+      load: load,
+      decide: function (rid, action) { decisions[rid] = action; render(); },
+      state: function () {
+        return { items: items, decisions: decisions,
+                 exportDisabled: $("export").disabled,
+                 errorsShown: !$("errors").hidden };
+      }
+    };
+  }
+})();
+</script>
+</body>
+</html>

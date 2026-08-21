@@ -52,8 +52,11 @@ try {
     console.log('FAIL: renderVals rows do not match the record count');
     process.exit(4);
   }
-  if (vals.navTabs.length !== 3 || vals.stats.length !== 6 || vals.tiers.length !== 6) {
-    console.log('FAIL: expected nav, stat, and tier models were not produced');
+  // 4 nav tabs: The Field, Dossiers, The Wire, Timeline.
+  if (vals.navTabs.length !== 4 || vals.stats.length !== 6 || vals.tiers.length !== 6) {
+    console.log('FAIL: expected nav, stat, and tier models were not produced' +
+      ' (navTabs=' + vals.navTabs.length + '/4, stats=' + vals.stats.length +
+      '/6, tiers=' + vals.tiers.length + '/6)');
     process.exit(5);
   }
   if (!vals.asOf || vals.asOf === 'June 14, 2026') {

@@ -20,6 +20,7 @@ import hashlib
 import json
 import logging
 import re
+import unicodedata
 from datetime import date, timedelta
 from pathlib import Path
 
@@ -56,10 +57,96 @@ def _sig_id(person_id: str, key: str, url: str) -> str:
     return f"{person_id}|{key}|{url}"
 
 
+# How far apart two identical headlines may sit and still count as the same
+# story. Syndication lands within hours; a genuinely new story that happens to
+# reuse a headline (an anniversary, a recurring event) is far enough away to be
+# treated as new.
+CROSS_SOURCE_WINDOW_DAYS = 3          # 72h
+
+
+_TITLE_TRAIL = re.compile(r"\s+[-|–—]\s+[^-|–—]{2,40}$")
+# Apostrophes are DELETED rather than turned into a space, so "won't" folds to
+# "wont" and matches a straight-quoted copy of the same headline. Everything
+# else becomes a separator.
+_TITLE_APOS = re.compile(r"['\u2018\u2019\u02bc\u0060\u00b4]")
+_TITLE_NOISE = re.compile(r"[^a-z0-9 ]+")
+
+
+def normalize_title(title: str) -> str:
+    """Fold a headline to a comparable form for cross-source dedupe.
+
+    Strips the trailing " - Outlet" attribution, unicode-normalizes (so a smart
+    apostrophe and a straight one agree), lowercases, drops punctuation, and
+    collapses whitespace. Deliberately conservative: it does NOT stem or reorder
+    words, so two genuinely different stories cannot collide.
+    """
+    t = _TITLE_TRAIL.sub("", title or "")
+    t = unicodedata.normalize("NFKD", t)
+    t = _TITLE_APOS.sub("", t)
+    t = _TITLE_NOISE.sub(" ", t.lower())
+    return re.sub(r"\s+", " ", t).strip()
+
+
+def _title_sid(person_id: str, key: str, title: str) -> str:
+    """Secondary dedupe key: same person + same signal keys + same headline.
+
+    The primary key is URL-based, which double-counts one story syndicated to
+    three outlets at three URLs — and inflating raw signal counts inflates
+    momentum, which is the product's core metric. Empty titles yield no key.
+    """
+    norm = normalize_title(title)
+    if not norm:
+        return ""
+    digest = hashlib.sha1(norm.encode("utf-8")).hexdigest()[:12]
+    return f"{person_id}|{key}|t:{digest}"
+
+
 def _load_jsonl(path: Path) -> set[str]:
     if not path.exists():
         return set()
     return {json.loads(l)["sid"] for l in path.read_text(encoding="utf-8").splitlines() if l.strip()}
+
+
+def _load_audit(path: Path) -> tuple[set[str], dict[str, list[str]]]:
+    """Return (seen sids, {title-sid: [dates seen]}).
+
+    Rows written before cross-source dedupe existed carry no `tsid`; they simply
+    contribute nothing to the title index, so the upgrade is backwards
+    compatible and needs no migration of signals.jsonl.
+    """
+    seen: set[str] = set()
+    titles: dict[str, list[str]] = {}
+    if not path.exists():
+        return seen, titles
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if not line.strip():
+            continue
+        try:
+            row = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        if "sid" in row:
+            seen.add(row["sid"])
+        tsid, d = row.get("tsid"), row.get("d")
+        if tsid and d:
+            titles.setdefault(tsid, []).append(d)
+    return seen, titles
+
+
+def _within_window(dates: list[str], when: str, days: int = CROSS_SOURCE_WINDOW_DAYS) -> bool:
+    """True if any recorded date is within `days` of `when` (both YYYY-MM-DD)."""
+    try:
+        ref = date.fromisoformat(when[:10])
+    except (TypeError, ValueError):
+        return False
+    for d in dates:
+        try:
+            other = date.fromisoformat(d[:10])
+        except (TypeError, ValueError):
+            continue
+        if abs((ref - other).days) <= days:
+            return True
+    return False
 
 
 def _append_jsonl(path: Path, rows: list[dict]) -> None:
@@ -220,7 +307,7 @@ class Dataset:
     def update(self, classified: list, fec_signals: list, audit: Path,
                fec_autocreate: bool = False):
         before = self._snapshot()
-        seen = _load_jsonl(audit)
+        seen, title_dates = _load_audit(audit)
         fresh_rows: list[dict] = []
 
         for sig in fec_signals:
@@ -238,14 +325,37 @@ class Dataset:
                                    "applied": did_apply})
 
         applied = 0
+        cross_dupes = 0
         for c in classified:
-            sid = _sig_id(c.person_id or c.name_guess, ",".join(c.keys), c.url)
+            who = c.person_id or c.name_guess
+            keyjoin = ",".join(c.keys)
+            sid = _sig_id(who, keyjoin, c.url)
             if sid in seen:
                 continue
+            # Cross-source dedupe: the SAME story syndicated to several outlets
+            # arrives at several URLs, so the URL key alone lets one event be
+            # counted three times. A matching normalized headline for the same
+            # person + keys inside the 72h window is the same story.
+            tsid = _title_sid(who, keyjoin, c.headline)
+            if tsid and _within_window(title_dates.get(tsid, []), c.date):
+                cross_dupes += 1
+                # Recorded (not applied) so re-runs stay idempotent and the
+                # suppression is auditable rather than invisible.
+                fresh_rows.append({"sid": sid, "type": "news", "url": c.url,
+                                   "person": c.person_id, "keys": c.keys,
+                                   "applied": False, "tsid": tsid, "d": c.date,
+                                   "dupe_of": "cross-source"})
+                seen.add(sid)
+                continue
             ok = self.apply_news(c)
-            fresh_rows.append({"sid": sid, "type": "news", "url": c.url,
-                               "person": c.person_id, "keys": c.keys,
-                               "applied": ok})
+            row = {"sid": sid, "type": "news", "url": c.url,
+                   "person": c.person_id, "keys": c.keys, "applied": ok}
+            if tsid:
+                row["tsid"] = tsid
+                row["d"] = c.date
+                title_dates.setdefault(tsid, []).append(c.date)
+            fresh_rows.append(row)
+            seen.add(sid)
             applied += int(ok)
 
         # Record actual momentum movement, but preserve the last known delta on
@@ -264,8 +374,9 @@ class Dataset:
             item.setdefault("rid", review_rid(item.get("name", ""),
                                               item.get("url", ""), item.get("keys")))
             item.setdefault("kind", _review_kind(item))
-        log.info("merge: %d news applied, %d new audit rows, %d review-queue",
-                 applied, len(fresh_rows), len(self.review))
+        log.info("merge: %d news applied, %d new audit rows, %d review-queue, "
+                 "%d cross-source duplicates suppressed",
+                 applied, len(fresh_rows), len(self.review), cross_dupes)
         return self
 
     # ---- applying a human-confirmed review item ------------------------

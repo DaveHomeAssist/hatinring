@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  issues: write        # the failure alert below files/updates a pipeline-failure issue
 
 concurrency:
   group: hat-in-ring
@@ -42,7 +43,7 @@ jobs:
         run: |
           git config user.name  "hat-in-ring-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add _hat-in-ring-src/data index.html share.html assets sitemap.xml c vs feed.xml rss.xml _hat-in-ring-src/ios/HatInRing/HatInRing/HatInRingData
+          git add _hat-in-ring-src/data data index.html share.html assets sitemap.xml c vs feed.xml rss.xml _hat-in-ring-src/ios/HatInRing/HatInRing/HatInRingData
           if git diff --cached --quiet; then echo "no changes"; exit 0; fi
           git commit -m "chore: hat-in-ring daily ingest $(date -u +%F)"
           for i in 1 2 3 4 5; do
@@ -52,3 +53,43 @@ jobs:
             echo "push race; retry $i"; sleep $((i * 4))
           done
           echo "commit/push failed after 5 retries"; exit 1
+
+      # Operational alerting: a silently-dead daily pipeline is the failure mode
+      # this repo is least able to notice (the site keeps serving yesterday's
+      # build). On ANY failed step above, file one tracking issue — or comment on
+      # the already-open one, so a multi-day outage is a single thread, not spam.
+      - name: Report pipeline failure
+        if: failure()
+        working-directory: ${{ github.workspace }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          today="$(date -u +%F)"
+          # The label may not exist yet on a fresh clone of this workflow; creating
+          # it is idempotent and must never itself fail the alert.
+          gh label create pipeline-failure \
+            --color B60205 \
+            --description "Daily hat-in-ring ingest/build run failed" >/dev/null 2>&1 || true
+          open_issue="$(gh issue list --label pipeline-failure --state open \
+            --limit 1 --json number --jq '.[0].number // empty' 2>/dev/null || true)"
+          if [ -n "$open_issue" ]; then
+            gh issue comment "$open_issue" \
+              --body "Daily run failed again on ${today}. Run: ${RUN_URL}"
+            echo "commented on existing pipeline-failure issue #${open_issue}"
+            exit 0
+          fi
+          gh issue create \
+            --label pipeline-failure \
+            --title "hat-in-ring daily run failed ${today}" \
+            --body "$(printf '%s\n' \
+              "The scheduled \`hat-in-ring\` workflow failed." \
+              "" \
+              "- Date (UTC): ${today}" \
+              "- Run: ${RUN_URL}" \
+              "" \
+              "The published site keeps serving the last good build until this is fixed;" \
+              "the dashboard shows a staleness banner once \`freshness.as_of\` is more than" \
+              "48 hours old. This issue stays open and collects a comment per subsequent" \
+              "failure — close it once a daily run goes green.")"
+          echo "filed a new pipeline-failure issue"

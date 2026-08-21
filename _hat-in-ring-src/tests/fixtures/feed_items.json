@@ -1,0 +1,25 @@
+[
+  {"title": "Gov. Alpha Candidate to headline Iowa Democratic Party fundraiser",
+   "summary": "The governor will travel to Des Moines next month, aides said.",
+   "url": "https://iowacapitaldispatch.com/fixture/alpha-iowa",
+   "source": "Iowa Capital Dispatch", "published": "2026-06-10",
+   "query": "feed:iowacapital", "source_id": "iowacapital", "scoped": false},
+
+  {"title": "Charleston peninsula housing complex wins historic designation",
+   "summary": "The city council approved the measure after a long hearing about the PAC-funded campaign for preservation.",
+   "url": "https://www.postandcourier.com/fixture/housing",
+   "source": "The Post and Courier", "published": "2026-06-10",
+   "query": "feed:postandcourier", "source_id": "postandcourier", "scoped": false},
+
+  {"title": "New Hampshire braces for another first-in-the-nation primary fight",
+   "summary": "State officials say the 2028 calendar is already a live argument.",
+   "url": "https://newhampshirebulletin.com/fixture/fitn",
+   "source": "New Hampshire Bulletin", "published": "2026-06-11",
+   "query": "feed:nhbulletin", "source_id": "nhbulletin", "scoped": false},
+
+  {"title": "Clark County commission approves new water rates",
+   "summary": "Residents packed the meeting to object to the increase.",
+   "url": "https://nevadacurrent.com/fixture/water",
+   "source": "Nevada Current", "published": "2026-06-11",
+   "query": "feed:nevadacurrent", "source_id": "nevadacurrent", "scoped": false}
+]

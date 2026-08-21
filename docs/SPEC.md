@@ -82,24 +82,81 @@ FEC + News ─▶ classify ─▶ merge ─▶ (series / money / geo / brief) �
 ```
 - **`fec.py`** — OpenFEC: F2 / principal committee → `declared`, registered →
   `exploratory`; 429 back-off; `candidate_totals()` for money.
-- **`news.py`** — Google News RSS; per-person + broad discovery queries.
+- **`news.py`** — two source kinds. Google News RSS (per-person + broad
+  discovery queries, `scoped=True`), plus the `config.yaml` **`feeds:` registry**
+  of direct outlet feeds — The Hill, Politico, and the IA/NH/SC/NV state outlets
+  (`scoped=False`). Outlets with no usable public RSS (AP, Reuters, C-SPAN, Des
+  Moines Register) are covered by `kind: gnews_site` site-scoped queries. Every
+  item is stamped with its `source_id`; each feed is bounded by a timeout and
+  swallows its own failures, so one dead outlet degrades the ingest instead of
+  failing the run. Availability audit: `docs/decisions/2026-08-ingest-feeds.md`.
 - **`classify.py`** — deterministic regex → signal keys; person-match with a
   surname-collision guard; confidence gated by source × signal strength;
   satire → Noise/review; hedged "considering" demoted to soft; **early-state
-  IA/NH/SC/NV tagging**.
-- **`merge.py`** — idempotent apply (dedup via `signals.jsonl`); status-history
+  IA/NH/SC/NV tagging**; **cycle-relevance gate** (`RACE_RX`) — an unscoped item
+  from an outlet's full river must name a tracked person or visibly concern the
+  presidential race before it can reach the review queue.
+- **`merge.py`** — idempotent apply (dedup via `signals.jsonl`, keyed
+  `person|keys|url`, plus a **cross-source key** `person|keys|normalized-title`
+  inside a 72h window so one syndicated story is counted once — more raw signals
+  would otherwise mean more momentum); status-history
   on tier change; 7-day delta from momentum snapshots; **denials/downgrades
   routed to review (never auto-applied)**; unknown FEC filers gated on a
   registered principal committee; early-state tallies.
 - **`scoring.py` / `series.py`** — momentum + daily snapshots → `series`,
-  `slope7`, `slope30`.
+  `slope7`, `slope30`. Pruning at `RETAIN_DAYS` (180) **moves** rows to
+  `data/archive/momentum_<year>.jsonl.gz` rather than deleting them, so the
+  cycle ends with a complete trail; the archive is idempotent on `(date, id)`
+  and gzipped with `mtime=0` so unchanged content makes no commit.
+- **`timeline.py`** — `data/timeline.json`: every status-tier change, oldest
+  first. Recorded `history` entries are authoritative and carry their headline;
+  moves visible only in the snapshot tier trail are emitted with
+  `reconstructed: true` and no reason, so the UI never implies evidence that
+  does not exist.
 - **`money.py`** — financials artifact; a **separate axis, never scored**.
 - **`geo.py`** — early-state codes + headline backfill.
 - **`brief.py`** — `briefing.json` + SVG/HTML share card.
 - **`build.py`** — Jinja render; inject `SEED`/`REVIEW`/`BRIEFING`; attach
-  images/series/money; SEO/OG/JSON-LD; static crawl summary; share assets.
+  images/series/money; SEO/OG/JSON-LD; static crawl summary; share assets;
+  `emit_latest_json()` writes the public `data/latest.json` contract.
 - **`pipeline.py`** — orchestrator; `reconcile_review` persists the queue and
   applies human decisions.
+- **`review.html`** — local review-queue admin page (vanilla, single file, no
+  build). Served from `_hat-in-ring-src/` via `python -m http.server`, it turns
+  the queue into cards and exports a schema-valid `review_decisions.json`,
+  replacing the hand edit that `_safe_load`'s fail-safe exists to survive. The
+  export is validated before the download is enabled, and a queue carrying an
+  unrecognised field is REFUSED rather than mis-rendered. `_hat-in-ring-src/` is
+  excluded from the Pages artifact, so the page is never published — asserted in
+  `tests/test_review_admin.py` against the deploy workflow itself.
+
+## Public data contract (`/data/latest.json`)
+Published on every daily build so consumers — the iOS app, embeds, and estate
+tooling (command-center, graph-explorer) — read a stable artifact instead of
+scraping `index.html`.
+
+- **URL:** `https://hatinring.com/data/latest.json` · **schema:** `hatinring.v1`
+- **Emitted by:** `build.emit_latest_json()`, staged next to `index.html` (the
+  Pages artifact excludes `_hat-in-ring-src/`, so the pipeline's own `data/`
+  copy is not the served one).
+- **Envelope:** `{schema, as_of, candidates[], briefing{}, financials{}, timeline[]}`.
+  `candidates` is ranked by momentum, descending. `financials` is keyed by
+  candidate id — an absent id means *has not filed*, which is not zero, and it
+  is never folded into momentum (guardrail 4).
+- **Field allowlist:** `build._LATEST_CANDIDATE_FIELDS`. An allowlist, not a
+  denylist: a curated / internal / review-queue field added to a record later is
+  excluded by default rather than silently published.
+- **Deterministic:** sorted keys, no timestamps — identical inputs produce
+  byte-identical bytes, so a no-change day produces no commit.
+- **Caching:** GitHub Pages may serve a stale copy; consumers must honour
+  `as_of` rather than trusting freshness of the response.
+- **Change policy:** additive only. New optional fields may be added to
+  `hatinring.v1` at any time; consumers must ignore unknown fields. A breaking
+  change (removing or retyping a field) ships as `hatinring.v2` at a new path,
+  with `v1` maintained for at least 60 days.
+- **Schema + tests:** `_hat-in-ring-src/schemas/latest.v1.schema.json`, enforced
+  by `tests/test_latest_json_contract.py` (schema validity, determinism,
+  allowlist closure against the schema, and internal-field leak sentinels).
 
 ## Guardrails (canonical — do not regress)
 1. Unknown names → `review_queue.json`, never the live board.
@@ -114,7 +171,9 @@ Current frontend ships as a single-file Jinja template with browser-loaded JS.
 Framework code or package-managed architecture can be used when the product calls
 for it. `SEED` + `REVIEW`
 + `BRIEFING` injected as JS literals (`<` escaped to `<` to prevent a
-`</script>` breakout; every data field HTML-escaped). State in `localStorage`,
+`</script>` breakout; every data field HTML-escaped). Four views — The Field, Dossiers, The Wire, and **Timeline**
+(`#/timeline`), the last rendering every recorded tier change on a horizontal
+track plus a keyboard-operable list of `<button>` rows. State in `localStorage`,
 version-keyed: a new pipeline build refreshes the seed but preserves manual adds
 + view prefs. SVG sparklines / favicon / share. SEO: canonical = `hatinring.com`,
 OG/Twitter/JSON-LD, `<noscript>` top-15 table. A11y: ARIA tablist/roles, keyboard

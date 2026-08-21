@@ -73,3 +73,73 @@ def test_record_snapshot_prunes_old_rows(tmp_path):
     cutoff = (TODAY - timedelta(days=series.RETAIN_DAYS)).isoformat()
     rows = [json.loads(l) for l in p.read_text(encoding="utf-8").splitlines() if l.strip()]
     assert rows and all(r["d"] >= cutoff for r in rows)   # ancient row dropped
+
+
+# ---------------------------------------------------------------------------
+# Full-cycle archive (Phase 6)
+#
+# Pruning at RETAIN_DAYS used to DELETE rows, discarding the only record of how
+# the field moved. It must now MOVE them. The property that matters is zero
+# data loss: everything pruned must be recoverable.
+# ---------------------------------------------------------------------------
+def _old_rows(n, start=date(2025, 1, 1), cid="a"):
+    return [{"d": (start + timedelta(days=i)).isoformat(), "id": cid,
+             "s": i % 100, "t": i % 6} for i in range(n)]
+
+
+def test_prune_archives_before_dropping_with_zero_data_loss(tmp_path):
+    p = tmp_path / "snap.jsonl"
+    old = _old_rows(40)                      # all far older than RETAIN_DAYS
+    p.write_text("".join(json.dumps(r) + "\n" for r in old), encoding="utf-8")
+
+    recs = [_rec("a", ["donors"], "2026-06-14")]
+    series.record_snapshot(recs, TODAY, p)
+
+    # live file is bounded...
+    cutoff = (TODAY - timedelta(days=series.RETAIN_DAYS)).isoformat()
+    live = [json.loads(l) for l in p.read_text(encoding="utf-8").splitlines() if l.strip()]
+    assert all(r["d"] >= cutoff for r in live), "prune did not bound the live file"
+
+    # ...and every pruned row round-trips out of the archive unchanged.
+    archived = series.load_archived(tmp_path)
+    assert {(r["d"], r["id"]) for r in archived} == {(r["d"], r["id"]) for r in old}
+    by_key = {(r["d"], r["id"]): r for r in archived}
+    for r in old:
+        assert by_key[(r["d"], r["id"])] == r, "archived row differs from the pruned row"
+
+
+def test_archive_is_idempotent_on_date_and_id(tmp_path):
+    rows = _old_rows(5)
+    assert series.archive_rows(rows, tmp_path) == 5
+    assert series.archive_rows(rows, tmp_path) == 0, "re-archiving duplicated history"
+    assert len(series.load_archived(tmp_path)) == 5
+
+
+def test_archive_is_split_per_year(tmp_path):
+    series.archive_rows(_old_rows(3, date(2025, 12, 30)), tmp_path)
+    assert series.archive_path(tmp_path, "2025").exists()
+    assert series.archive_path(tmp_path, "2026").exists()
+    assert len(series.load_archived(tmp_path)) == 3
+
+
+def test_archive_bytes_are_stable_so_an_unchanged_archive_makes_no_commit(tmp_path):
+    a, b = tmp_path / "a", tmp_path / "b"
+    rows = _old_rows(6)
+    series.archive_rows(rows, a)
+    series.archive_rows(list(reversed(rows)), b)   # same rows, different order
+    assert series.archive_path(a, "2025").read_bytes() == \
+           series.archive_path(b, "2025").read_bytes(), \
+        "gzip output is not byte-stable (mtime header or unsorted rows?)"
+
+
+def test_nothing_is_archived_when_nothing_is_pruned(tmp_path):
+    p = tmp_path / "snap.jsonl"
+    p.write_text(json.dumps({"d": TODAY.isoformat(), "id": "a", "s": 5, "t": 2}) + "\n",
+                 encoding="utf-8")
+    series.record_snapshot([_rec("a", ["donors"], "2026-06-14")], TODAY, p)
+    assert series.load_archived(tmp_path) == []
+    assert not (tmp_path / series.ARCHIVE_DIRNAME).exists()
+
+
+def test_archive_skips_malformed_rows(tmp_path):
+    assert series.archive_rows([{"d": "2025-01-01"}, {"id": "a"}, {}], tmp_path) == 0

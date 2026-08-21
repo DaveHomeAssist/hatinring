@@ -112,6 +112,10 @@
 </helmet>
 <div class="hir-app" style="min-height:100vh;background:#E7E1D2;color:#13294B;font-family:'Space Grotesk',sans-serif;font-size:14px;line-height:1.5">
 
+  <sc-if value="{{ isStale }}" hint-placeholder-val="{{ false }}">
+  <div class="hir-stale" role="status" style="background:#F6E7C3;border-bottom:2px solid #8F7025;color:#13294B;font-size:13.5px;font-weight:600;padding:11px 22px;text-align:center;line-height:1.45">{{ staleMessage }}</div>
+  </sc-if>
+
   <header class="hir-header" style="position:sticky;top:0;z-index:30;background:#F4EFE2;border-bottom:2px solid #13294B;box-shadow:0 1px 0 #C9BE9E,0 6px 18px -14px rgba(19,41,75,.5)">
     <div class="hir-header-inner" style="max-width:1280px;margin:0 auto;padding:0 22px;display:flex;align-items:center;gap:22px;height:72px">
       <div class="hir-brand" onClick="{{ goHome }}" onKeyDown="{{ goHomeKey }}" role="button" tabIndex="0" aria-label="Hat-in-Ring Radar — go to The Field" style="display:flex;align-items:center;gap:13px;cursor:pointer;flex:none;min-height:44px">
@@ -593,6 +597,60 @@
   </main>
   </sc-if>
 
+  <!-- ============ TIMELINE ============ -->
+  <sc-if value="{{ isTimeline }}" hint-placeholder-val="{{ false }}">
+  <main class="hir-main" style="max-width:1280px;margin:0 auto;padding:26px 22px 70px">
+
+    <div class="hir-page-heading" style="display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:18px;flex-wrap:wrap">
+      <div>
+        <h1 style="font-family:'Newsreader',serif;font-weight:600;font-size:30px;letter-spacing:-.01em;margin:0;color:#13294B">Timeline</h1>
+        <p style="margin:4px 0 0;color:#6A6450;font-size:13.5px;max-width:540px">Every recorded change of status tier, oldest at the left of the track and newest first in the list. A hollow marker was reconstructed from the daily snapshot trail and has no headline attached.</p>
+      </div>
+      <div style="font-size:12px;color:#6A6450;font-family:'Space Mono',monospace;text-align:right">{{ tlCount }}</div>
+    </div>
+
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px">
+      <sc-for list="{{ tlFilters }}" as="f" hint-placeholder-count="3">
+        <button type="button" onClick="{{ f.go }}" aria-pressed="{{ f.on }}" style="{{ f.style }}">{{ f.label }}</button>
+      </sc-for>
+    </div>
+
+    <sc-if value="{{ isTimelineEmpty }}" hint-placeholder-val="{{ false }}">
+      <div style="text-align:center;padding:46px 0;color:#6A6450;font-size:13.5px">No status changes recorded yet. Tier moves appear here as the field develops.</div>
+    </sc-if>
+
+    <sc-if value="{{ hasTimeline }}" hint-placeholder-val="{{ true }}">
+    <div class="hir-timeline" style="background:#FBF8F0;border:1px solid #DED5BD;border-radius:4px;padding:20px 24px 8px">
+
+      <!-- the track: markers positioned by date across the recorded span -->
+      <div class="hir-tl-track" style="{{ tlTrackStyle }}" role="img" aria-label="Status changes across the recorded period">
+        <sc-for list="{{ tlRows }}" as="e" hint-placeholder-count="6">
+          <span style="{{ e.markerStyle }}" title="{{ e.label }}"></span>
+        </sc-for>
+      </div>
+      <div style="display:flex;justify-content:space-between;font-family:'Space Mono',monospace;font-size:10.5px;color:#6A6450;padding-bottom:12px">
+        <span>{{ tlFirst }}</span><span>{{ tlLast }}</span>
+      </div>
+
+      <!-- the list: the accessible, keyboard-navigable equivalent of the track -->
+      <sc-for list="{{ tlRows }}" as="e" hint-placeholder-count="6">
+        <button type="button" onClick="{{ e.open }}" aria-label="{{ e.label }}" style="{{ e.rowStyle }}" style-hover="background:#F7F1E2">
+          <span style="{{ e.dotStyle }}" aria-hidden="true">{{ e.arrow }}</span>
+          <span style="min-width:0;flex:1">
+            <span style="display:flex;align-items:baseline;gap:9px;flex-wrap:wrap">
+              <span style="font-family:'Newsreader',serif;font-size:16px;font-weight:600;color:#13294B">{{ e.name }}</span>
+              <span style="font-family:'Space Mono',monospace;font-size:11px;color:#6A6450">{{ e.date }}</span>
+              <span style="font-size:12px;font-weight:600;color:#3F5C86">{{ e.move }}</span>
+            </span>
+            <span style="display:block;margin-top:4px;color:#6A6450;font-size:12.5px;overflow-wrap:anywhere">{{ e.why }}</span>
+          </span>
+        </button>
+      </sc-for>
+    </div>
+    </sc-if>
+  </main>
+  </sc-if>
+
   <footer style="border-top:1px solid #D2C8AE;background:#EDE7D8">
     <div class="hir-footer-inner" style="max-width:1280px;margin:0 auto;padding:18px 22px;font-size:11.5px;color:#6A6450;line-height:1.6">
       <strong style="color:#5A5443">Hat-in-Ring Radar</strong> — a non-partisan tracker of 2028 presidential signals, compiled from public reporting (AP, Reuters, Time, WaPo, ABC, C-SPAN, FEC). <strong style="color:#5A5443">Status tier</strong> = the furthest verifiable step a figure has taken; <strong style="color:#5A5443">momentum</strong> = weighted breadth &amp; recency of activity, capped 0–100. The two move independently — a coy front-runner can sit low on status with high momentum. Tracking a name is not an endorsement.
@@ -619,7 +677,7 @@ setTimeout(function(){
 </script>
 <script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:&quot;100%&quot;,&quot;height&quot;:&quot;100%&quot;},&quot;partyColors&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Muted&quot;,&quot;Vivid&quot;,&quot;Neutral&quot;],&quot;default&quot;:&quot;Muted&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;density&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Comfortable&quot;,&quot;Compact&quot;],&quot;default&quot;:&quot;Compact&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;accent&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Flag red&quot;,&quot;Sky blue&quot;,&quot;Navy&quot;],&quot;default&quot;:&quot;Sky blue&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
 class Component extends DCLogic {
-  state = { view:'field', selectedId:'newsom', q:'', party:[], bucket:'', quick:'', sort:'score', dir:'desc', mode:'board', dq:'', wireParty:'', wireType:'', wireQ:'' };
+  state = { view:'field', selectedId:'newsom', q:'', party:[], bucket:'', quick:'', sort:'score', dir:'desc', mode:'board', dq:'', wireParty:'', wireType:'', wireQ:'', tlFilter:'all' };
 
   constructor(props){
     super(props);
@@ -629,6 +687,24 @@ class Component extends DCLogic {
   }
 
   TODAY = new Date({{ generated_at }});
+  // Human-readable twin of TODAY (same build stamp), used by the staleness copy.
+  AS_OF = {{ as_of_json }};
+
+  // ---------- data staleness ----------
+  // A dead daily pipeline cannot rebuild this page, so the SERVED HTML has to
+  // detect its own age: TODAY is the baked freshness.as_of stamp, compared here
+  // against the reader's clock. Whole UTC CALENDAR DAYS are differenced (not
+  // timestamps) so a skewed client clock or a timezone offset can't manufacture
+  // a false warning; > 2 whole days is the generous read of "older than 48h".
+  STALE_AFTER_DAYS = 2;
+  staleness(now){
+    const ref = now || new Date();
+    const asUTC = d => Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate());
+    const days = Math.round((asUTC(ref) - asUTC(this.TODAY)) / 86400000);
+    if(!(days > this.STALE_AFTER_DAYS)) return null;
+    return { days, message:'Data last updated '+this.AS_OF+' — '+days+
+      ' days ago. The daily update may be delayed; figures below are not current.' };
+  }
 
   WEIGHTS = {
     declared:{w:40,label:'Formal FEC candidacy / launch'},
@@ -663,6 +739,7 @@ class Component extends DCLogic {
   SEED = {{ seed_json }};
   REVIEW = {{ review_json }};
   BRIEFING = {{ briefing_json }};
+  TIMELINE = {{ timeline_json }};
 
   // ---------- engine ----------
   daysSince(d){ return Math.floor((this.TODAY - new Date(d))/86400000); }
@@ -706,7 +783,7 @@ class Component extends DCLogic {
   // ---------- hash routing (#/field, #/wire, #/dossiers/<id>) ----------
   parseHash(){
     if(typeof location==='undefined') return null;
-    const m=(location.hash||'').match(/^#\/(field|dossiers|wire)(?:\/([A-Za-z0-9_-]+))?/);
+    const m=(location.hash||'').match(/^#\/(field|dossiers|wire|timeline)(?:\/([A-Za-z0-9_-]+))?/);
     if(!m) return null;
     const st={view:m[1]};
     if(m[1]==='dossiers'&&m[2]&&this.SEED.some(c=>c.id===m[2])) st.selectedId=m[2];
@@ -756,7 +833,7 @@ class Component extends DCLogic {
     const s=this.state; const acc=this.accentColor(); const all=this.all(); const compact=this.compact();
     const tdPad = compact ? '7px 12px' : '11px 14px';
 
-    const navTabs=[['field','The Field'],['dossiers','Dossiers'],['wire','The Wire']].map(([k,label])=>{
+    const navTabs=[['field','The Field'],['dossiers','Dossiers'],['wire','The Wire'],['timeline','Timeline']].map(([k,label])=>{
       const on=s.view===k;
       return { label, go:()=>this.go(k),
         labelStyle:{color:on?'#13294B':'#6A6450',transition:'color .12s'},
@@ -845,9 +922,12 @@ class Component extends DCLogic {
     const tabStyle=on=>({appearance:'none',border:'0',cursor:'pointer',font:'inherit',fontSize:'12.5px',fontWeight:600,padding:'8px 13px',background:on?'#13294B':'#FCFAF4',color:on?'#F4EFE2':'#6A6450'});
 
     const clearF=()=>this.setState({q:'',party:[],bucket:'',quick:''});
+    const stale=this.staleness();
     const base={
       asOf:{{ as_of_json }}, trackedCount:all.length,
+      isStale:!!stale, staleMessage:stale?stale.message:'',
       isField:s.view==='field', isDossiers:s.view==='dossiers', isWire:s.view==='wire',
+      isTimeline:s.view==='timeline',
       navTabs, goHome:()=>this.go('field'), goHomeKey:this.kb(()=>this.go('field')), goWire:()=>this.go('wire'),
       // field
       stats, q:s.q, bucket:s.bucket,
@@ -863,7 +943,94 @@ class Component extends DCLogic {
       counterText:all.filter(x=>x.days<=14).length+' moved in 14 days',
       shownText:fr.length+' shown', noResults:fr.length===0
     };
-    return Object.assign(base, this.dossierVals(), this.wireVals());
+    return Object.assign(base, this.dossierVals(), this.wireVals(), this.timelineVals());
+  }
+
+  // ---------- timeline ----------
+  // Every recorded tier change, laid out on one horizontal track. Markers are
+  // positioned divs rather than SVG nodes: they are discrete points that need
+  // native focus, hover and tooltips, and SVG earns its place for continuous
+  // paths (sparklines), not for these.
+  TL_FILTERS = [['all','All moves'],['up','Promotions'],['down','Demotions']];
+
+  timelineEvents(){
+    const f = this.state.tlFilter || 'all';
+    const rows = (this.TIMELINE||[]).filter(e => f === 'all' || e.direction === f);
+    // Newest first: the interesting end of a race timeline is the recent end.
+    return rows.slice().sort((a,b) => a.date < b.date ? 1 : a.date > b.date ? -1 : 0);
+  }
+
+  // Fraction (0..1) of a date along the full recorded span. A single-event or
+  // single-day timeline collapses to one position rather than dividing by zero.
+  tlPos(iso, first, last){
+    const a = Date.parse(first + 'T12:00:00Z'), b = Date.parse(last + 'T12:00:00Z');
+    if (!(b > a)) return 1;
+    return Math.min(1, Math.max(0, (Date.parse(iso + 'T12:00:00Z') - a) / (b - a)));
+  }
+
+  timelineVals(){
+    const acc = this.accentColor();
+    const evs = this.timelineEvents();
+    const all = (this.TIMELINE||[]).map(e => e.date).sort();
+    const first = all[0] || this.AS_OF, last = all[all.length-1] || this.AS_OF;
+
+    const tlFilters = this.TL_FILTERS.map(([k,label]) => {
+      const on = (this.state.tlFilter||'all') === k;
+      return { label, on, key:k,
+        go:()=>this.setState({tlFilter:k}), goKey:this.kb(()=>this.setState({tlFilter:k})),
+        style:{appearance:'none',cursor:'pointer',font:'inherit',fontSize:'12px',fontWeight:600,
+               padding:'6px 12px',borderRadius:'999px',
+               border:'1px solid '+(on?'#13294B':'#D5CBB3'),
+               background:on?'#13294B':'#FCFAF4',color:on?'#F4EFE2':'#6A6450'} };
+    });
+
+    const tlRows = evs.map(e => {
+      const up = e.direction === 'up';
+      const col = up ? '#2E7D4F' : '#9E3B34';
+      const pct = (this.tlPos(e.date, first, last) * 100).toFixed(2) + '%';
+      const arrow = up ? '▲' : '▼';
+      // Reconstructed events came from the snapshot tier trail and carry no
+      // headline, so they are marked instead of implying evidence we lack.
+      const why = e.reconstructed
+        ? 'Reconstructed from the daily snapshot trail — no headline recorded.'
+        : (e.reason || 'No headline recorded.');
+      return {
+        id:e.id, name:e.name, date:e.date, why,
+        fromLabel:e.fromLabel, toLabel:e.toLabel,
+        move: e.fromLabel + ' → ' + e.toLabel,
+        arrow, reconstructed:!!e.reconstructed,
+        label: e.name + ': ' + e.fromLabel + ' to ' + e.toLabel + ' on ' + e.date +
+               (e.reconstructed ? ' (reconstructed)' : ''),
+        open:()=>this.select(e.id), openKey:this.kb(()=>this.select(e.id)),
+        markerStyle:{position:'absolute',left:pct,top:'50%',width:'11px',height:'11px',
+                     marginLeft:'-5.5px',marginTop:'-5.5px',borderRadius:'50%',
+                     background:e.reconstructed?'#FCFAF4':col,
+                     border:'2px solid '+col,boxSizing:'border-box'},
+        dotStyle:{display:'inline-flex',alignItems:'center',justifyContent:'center',
+                  width:'20px',height:'20px',borderRadius:'3px',flex:'none',
+                  background:e.reconstructed?'#FCFAF4':col,
+                  color:e.reconstructed?col:'#fff',
+                  border:'1px solid '+col,
+                  fontSize:'10px',fontWeight:700,fontFamily:"'Space Mono',monospace"},
+        rowStyle:{display:'flex',gap:'13px',alignItems:'flex-start',padding:'12px 0',
+                  borderBottom:'1px solid #E2D9C4',textAlign:'left',width:'100%',
+                  appearance:'none',border:'0',borderBottom:'1px solid #E2D9C4',
+                  background:'none',cursor:'pointer',font:'inherit'}
+      };
+    });
+
+    return {
+      // sc-if is truthiness-only (no negation), so the inverse is an explicit
+      // model value, matching the existing isSheet/notSheet idiom.
+      isTimelineEmpty: tlRows.length === 0,
+      hasTimeline: tlRows.length > 0,
+      tlFilters, tlRows,
+      tlCount: tlRows.length + (tlRows.length === 1 ? ' recorded move' : ' recorded moves'),
+      tlFirst: first, tlLast: last,
+      tlTrackStyle:{position:'relative',height:'34px',margin:'10px 0 4px',
+                    borderTop:'2px solid #C9BE9E'},
+      tlAccent:{background:acc}
+    };
   }
 
   dossierVals(){

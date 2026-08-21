@@ -29,6 +29,7 @@ from . import classify as clf
 from . import series as seriesmod
 from . import money as moneymod
 from . import brief as briefmod
+from . import timeline as timelinemod
 from .merge import Dataset, review_rid, _review_kind
 from .build import render
 
@@ -264,7 +265,10 @@ def run(args):
             try:
                 news_items = newsmod.fetch_all(
                     watchlist, cfg.get("broad_queries", []),
-                    throttle=cfg.get("news_throttle", 1.0))
+                    throttle=cfg.get("news_throttle", 1.0),
+                    feeds=cfg.get("feeds", []),
+                    feed_limit=cfg.get("feed_limit", 40),
+                    feed_timeout=cfg.get("feed_timeout", 20))
             except Exception as e:
                 log.error("news fetch failed: %s", e)
 
@@ -313,6 +317,16 @@ def run(args):
             briefmod.record_feed_item(b, DATA)
         except Exception as e:                           # noqa: BLE001
             log.error("briefing failed: %s", e)
+
+        # Race timeline artifact (committed; build.py recomputes for the live
+        # page, same pattern as the briefing).
+        try:
+            timelinemod.write_timeline(
+                timelinemod.build_timeline(ds.records,
+                                           DATA / "momentum_snapshots.jsonl"),
+                DATA)
+        except Exception as e:                           # noqa: BLE001
+            log.error("timeline failed: %s", e)
         write_freshness(today)
 
     if args.build or args.all:
