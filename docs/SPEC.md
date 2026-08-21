@@ -121,6 +121,14 @@ FEC + News ─▶ classify ─▶ merge ─▶ (series / money / geo / brief) �
   `emit_latest_json()` writes the public `data/latest.json` contract.
 - **`pipeline.py`** — orchestrator; `reconcile_review` persists the queue and
   applies human decisions.
+- **`review.html`** — local review-queue admin page (vanilla, single file, no
+  build). Served from `_hat-in-ring-src/` via `python -m http.server`, it turns
+  the queue into cards and exports a schema-valid `review_decisions.json`,
+  replacing the hand edit that `_safe_load`'s fail-safe exists to survive. The
+  export is validated before the download is enabled, and a queue carrying an
+  unrecognised field is REFUSED rather than mis-rendered. `_hat-in-ring-src/` is
+  excluded from the Pages artifact, so the page is never published — asserted in
+  `tests/test_review_admin.py` against the deploy workflow itself.
 
 ## Public data contract (`/data/latest.json`)
 Published on every daily build so consumers — the iOS app, embeds, and estate
