@@ -97,9 +97,38 @@ FEC + News ─▶ classify ─▶ merge ─▶ (series / money / geo / brief) �
 - **`geo.py`** — early-state codes + headline backfill.
 - **`brief.py`** — `briefing.json` + SVG/HTML share card.
 - **`build.py`** — Jinja render; inject `SEED`/`REVIEW`/`BRIEFING`; attach
-  images/series/money; SEO/OG/JSON-LD; static crawl summary; share assets.
+  images/series/money; SEO/OG/JSON-LD; static crawl summary; share assets;
+  `emit_latest_json()` writes the public `data/latest.json` contract.
 - **`pipeline.py`** — orchestrator; `reconcile_review` persists the queue and
   applies human decisions.
+
+## Public data contract (`/data/latest.json`)
+Published on every daily build so consumers — the iOS app, embeds, and estate
+tooling (command-center, graph-explorer) — read a stable artifact instead of
+scraping `index.html`.
+
+- **URL:** `https://hatinring.com/data/latest.json` · **schema:** `hatinring.v1`
+- **Emitted by:** `build.emit_latest_json()`, staged next to `index.html` (the
+  Pages artifact excludes `_hat-in-ring-src/`, so the pipeline's own `data/`
+  copy is not the served one).
+- **Envelope:** `{schema, as_of, candidates[], briefing{}, financials{}}`.
+  `candidates` is ranked by momentum, descending. `financials` is keyed by
+  candidate id — an absent id means *has not filed*, which is not zero, and it
+  is never folded into momentum (guardrail 4).
+- **Field allowlist:** `build._LATEST_CANDIDATE_FIELDS`. An allowlist, not a
+  denylist: a curated / internal / review-queue field added to a record later is
+  excluded by default rather than silently published.
+- **Deterministic:** sorted keys, no timestamps — identical inputs produce
+  byte-identical bytes, so a no-change day produces no commit.
+- **Caching:** GitHub Pages may serve a stale copy; consumers must honour
+  `as_of` rather than trusting freshness of the response.
+- **Change policy:** additive only. New optional fields may be added to
+  `hatinring.v1` at any time; consumers must ignore unknown fields. A breaking
+  change (removing or retyping a field) ships as `hatinring.v2` at a new path,
+  with `v1` maintained for at least 60 days.
+- **Schema + tests:** `_hat-in-ring-src/schemas/latest.v1.schema.json`, enforced
+  by `tests/test_latest_json_contract.py` (schema validity, determinism,
+  allowlist closure against the schema, and internal-field leak sentinels).
 
 ## Guardrails (canonical — do not regress)
 1. Unknown names → `review_queue.json`, never the live board.

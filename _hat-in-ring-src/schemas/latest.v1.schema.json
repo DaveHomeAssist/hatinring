@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hatinring.com/schemas/latest.v1.schema.json",
+  "title": "Hat-in-Ring Radar public feed (hatinring.v1)",
+  "description": "Contract for /data/latest.json. Additive changes only; a breaking change becomes hatinring.v2 at a new path with v1 maintained for at least 60 days.",
+  "type": "object",
+  "required": ["schema", "as_of", "candidates", "briefing", "financials"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": { "const": "hatinring.v1" },
+    "as_of": {
+      "description": "Build date of this payload (UTC). Consumers must honour this rather than trusting HTTP caching.",
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "candidates": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/candidate" }
+    },
+    "briefing": { "$ref": "#/$defs/briefing" },
+    "financials": {
+      "description": "Money axis, keyed by candidate id. NEVER folded into momentum. An absent id means 'has not filed', which is not the same as zero.",
+      "type": "object",
+      "additionalProperties": { "type": "object" }
+    }
+  },
+  "$defs": {
+    "tier": { "type": "integer", "minimum": 0, "maximum": 5 },
+    "date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "candidate": {
+      "type": "object",
+      "required": ["id", "name", "party", "role", "bucket", "keys", "conf",
+                   "delta", "lastSignal", "score", "tier", "statusLabel"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "name": { "type": "string", "minLength": 1 },
+        "party": { "enum": ["Democrat", "Republican", "Libertarian", "Independent"] },
+        "role": { "type": "string" },
+        "bucket": { "enum": ["formal", "considering", "soft", "edge", "out"] },
+        "conf": { "enum": ["Very high", "High", "Medium", "Low", "Noise"] },
+        "why": { "type": "string" },
+        "quote": { "type": "string" },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "headline": { "type": "string" },
+        "sourceUrl": { "type": "string" },
+        "pollLead": { "type": "string" },
+        "keys": { "type": "array", "items": { "type": "string" } },
+        "score": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "tier": { "$ref": "#/$defs/tier" },
+        "statusLabel": { "type": "string", "minLength": 1 },
+        "delta": { "type": "integer", "minimum": -100, "maximum": 100 },
+        "lastSignal": { "$ref": "#/$defs/date" },
+        "series": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["d"],
+            "properties": {
+              "d": { "$ref": "#/$defs/date" },
+              "s": { "type": ["integer", "null"] },
+              "t": { "type": ["integer", "null"] }
+            }
+          }
+        },
+        "slope7": { "type": "integer" },
+        "slope30": { "type": "integer" },
+        "early_states": {
+          "type": "object",
+          "propertyNames": { "enum": ["IA", "NH", "SC", "NV"] },
+          "additionalProperties": { "type": "integer", "minimum": 0 }
+        },
+        "early_states_last": {
+          "type": "object",
+          "propertyNames": { "enum": ["IA", "NH", "SC", "NV"] },
+          "additionalProperties": { "type": "string" }
+        },
+        "img": { "type": "string" },
+        "thumb": { "type": "string" },
+        "thumb2x": { "type": "string" }
+      }
+    },
+    "briefing": {
+      "type": "object",
+      "required": ["date", "movers", "new_filers", "transitions", "review_count", "totals"],
+      "properties": {
+        "date": { "$ref": "#/$defs/date" },
+        "movers": { "type": "array", "items": { "type": "object" } },
+        "new_filers": { "type": "array", "items": { "type": "object" } },
+        "transitions": { "type": "array", "items": { "type": "object" } },
+        "review_count": { "type": "integer", "minimum": 0 },
+        "totals": { "type": "object" }
+      }
+    }
+  }
+}
