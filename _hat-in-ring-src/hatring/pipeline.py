@@ -264,7 +264,10 @@ def run(args):
             try:
                 news_items = newsmod.fetch_all(
                     watchlist, cfg.get("broad_queries", []),
-                    throttle=cfg.get("news_throttle", 1.0))
+                    throttle=cfg.get("news_throttle", 1.0),
+                    feeds=cfg.get("feeds", []),
+                    feed_limit=cfg.get("feed_limit", 40),
+                    feed_timeout=cfg.get("feed_timeout", 20))
             except Exception as e:
                 log.error("news fetch failed: %s", e)
 

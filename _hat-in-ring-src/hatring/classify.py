@@ -54,6 +54,25 @@ BEHAVIOUR: list[tuple[str, re.Pattern]] = [
 STRENGTH = {"declared": 5, "exploratory": 4, "consideringQuote": 3,
             "ruledOut": 3, "softConsidering": 2}
 
+# Cycle-relevance gate for UNSCOPED items (an outlet's whole news river, as
+# opposed to a Google News query that already constrained the topic).
+#
+# A state outlet publishes hundreds of items a day about zoning and school
+# budgets. Most carry no political signal and are dropped by the rules below
+# anyway, but a "PAC" or "fundraiser" mention in a county-commission story would
+# otherwise manufacture a discovery item with a garbage name and flood the human
+# review queue. So an unscoped item must either name someone we already track,
+# or visibly be about the presidential race, before it is allowed through.
+RACE_RX = re.compile(
+    r"\b(2028"
+    r"|presidential (race|campaign|bid|run|primary|candidate|field|contest|hopeful)"
+    r"|white house (run|bid|ambitions?)"
+    r"|runs? for president|running for president|run for the white house"
+    r"|first[- ]in[- ]the[- ]nation"
+    r"|(presidential |republican |democratic )?(caucus(es)?|primary) (calendar|campaign|voters?)"
+    r"|next presidential"
+    r")\b", re.I)
+
 
 def _min_conf(a: str, b: str) -> str:
     order = ["Noise", "Low", "Medium", "High", "Very high"]
@@ -111,8 +130,20 @@ def _match_person(text: str, watchlist: list[dict]):
     return None, None
 
 
+def is_cycle_relevant(text: str, watchlist: list[dict]) -> bool:
+    """Gate for unscoped items: names a tracked person, or is visibly about the
+    presidential race. See RACE_RX."""
+    if RACE_RX.search(text):
+        return True
+    return _match_person(text, watchlist)[0] is not None
+
+
 def classify_item(item, watchlist: list[dict]) -> Classified | None:
     text = f"{item.title}. {item.summary}"
+    # Items from an outlet's full river (scoped=False) must clear the relevance
+    # gate first; Google News items arrive pre-constrained by their query.
+    if not getattr(item, "scoped", True) and not is_cycle_relevant(text, watchlist):
+        return None
     keys: list[str] = []
     for key, rx in RULES:
         if rx.search(text):
@@ -167,8 +198,10 @@ def classify_item(item, watchlist: list[dict]) -> Classified | None:
 
 def classify_batch(items, watchlist) -> list[Classified]:
     out = [c for c in (classify_item(i, watchlist) for i in items) if c]
-    log.info("classify: %d/%d items carried a signal (%d unmatched/discovery)",
-             len(out), len(items), sum(1 for c in out if c.discovery))
+    unscoped = sum(1 for i in items if not getattr(i, "scoped", True))
+    log.info("classify: %d/%d items carried a signal (%d unmatched/discovery, "
+             "%d from unscoped feeds)", len(out), len(items),
+             sum(1 for c in out if c.discovery), unscoped)
     return out
 
 

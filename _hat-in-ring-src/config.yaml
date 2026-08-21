@@ -11,6 +11,46 @@ broad_queries:
   - 'Democrat 2028 president "would consider" OR "weighing a run"'
   - 'Republican 2028 president "considering" OR "exploring"'
 
+# Direct outlet feeds — ingest diversification (Phase 3).
+#
+# Google News RSS is a single upstream and a single point of failure; these are
+# read directly from the outlets. Verified 2026-08-21, see
+# docs/decisions/2026-08-ingest-feeds.md for the availability audit and for the
+# outlets that have NO usable public RSS (AP, Reuters, C-SPAN, Des Moines
+# Register) and are covered by `kind: gnews_site` fallbacks instead.
+#
+#   id       : stable source identifier, stamped onto every ingested item
+#   name     : display name; must match a classify.RELIABILITY key to be graded
+#              above the default Low confidence ceiling
+#   url      : direct RSS/Atom URL (kind: direct)
+#   query    : Google News query (kind: gnews_site) for outlets without RSS
+#   kind     : direct | gnews_site
+#   state    : early-state code this outlet primarily covers (IA/NH/SC/NV), or
+#              omitted for national outlets. Documentation only — the actual
+#              state attribution comes from geo.tag_states on the headline.
+feed_limit: 40              # max entries taken per direct feed per run
+feed_timeout: 20            # seconds before a slow feed is abandoned
+feeds:
+  # -- national -------------------------------------------------------------
+  - {id: thehill,             name: The Hill,                kind: direct, url: "https://thehill.com/homenews/campaign/feed/"}
+  - {id: politico,            name: Politico,                kind: direct, url: "https://rss.politico.com/politics-news.xml"}
+  # -- Iowa -----------------------------------------------------------------
+  - {id: iowacapital,         name: Iowa Capital Dispatch,   kind: direct, url: "https://iowacapitaldispatch.com/feed/",      state: IA}
+  - {id: desmoinesregister,   name: Des Moines Register,     kind: gnews_site, query: 'site:desmoinesregister.com 2028 president OR caucuses', state: IA}
+  # -- New Hampshire --------------------------------------------------------
+  - {id: nhbulletin,          name: New Hampshire Bulletin,  kind: direct, url: "https://newhampshirebulletin.com/feed/",     state: NH}
+  - {id: nhpr,                name: NHPR,                    kind: direct, url: "https://www.nhpr.org/rss.xml",               state: NH}
+  # -- South Carolina -------------------------------------------------------
+  - {id: scdailygazette,      name: SC Daily Gazette,        kind: direct, url: "https://scdailygazette.com/feed/",           state: SC}
+  - {id: postandcourier,      name: The Post and Courier,    kind: direct, url: "https://www.postandcourier.com/search/?f=rss&t=article&c=news&l=50&s=start_time&sd=desc", state: SC}
+  # -- Nevada ---------------------------------------------------------------
+  - {id: nevadacurrent,       name: Nevada Current,          kind: direct, url: "https://nevadacurrent.com/feed/",            state: NV}
+  - {id: nevadaindependent,   name: The Nevada Independent,  kind: direct, url: "https://thenevadaindependent.com/feed",      state: NV}
+  # -- wire services / C-SPAN: no usable public RSS, via Google News --------
+  - {id: apnews,              name: AP News,                 kind: gnews_site, query: 'site:apnews.com 2028 president'}
+  - {id: reuters,             name: Reuters,                 kind: gnews_site, query: 'site:reuters.com 2028 president'}
+  - {id: cspan,               name: C-SPAN,                  kind: gnews_site, query: 'site:c-span.org 2028 president'}
+
 # Watchlist drives per-person news queries and FEC matching.
 #   id       : must match the dataset record id (data/seed.json)
 #   aliases  : strings to look for in headlines (first is the query term)

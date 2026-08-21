@@ -82,12 +82,24 @@ FEC + News ─▶ classify ─▶ merge ─▶ (series / money / geo / brief) �
 ```
 - **`fec.py`** — OpenFEC: F2 / principal committee → `declared`, registered →
   `exploratory`; 429 back-off; `candidate_totals()` for money.
-- **`news.py`** — Google News RSS; per-person + broad discovery queries.
+- **`news.py`** — two source kinds. Google News RSS (per-person + broad
+  discovery queries, `scoped=True`), plus the `config.yaml` **`feeds:` registry**
+  of direct outlet feeds — The Hill, Politico, and the IA/NH/SC/NV state outlets
+  (`scoped=False`). Outlets with no usable public RSS (AP, Reuters, C-SPAN, Des
+  Moines Register) are covered by `kind: gnews_site` site-scoped queries. Every
+  item is stamped with its `source_id`; each feed is bounded by a timeout and
+  swallows its own failures, so one dead outlet degrades the ingest instead of
+  failing the run. Availability audit: `docs/decisions/2026-08-ingest-feeds.md`.
 - **`classify.py`** — deterministic regex → signal keys; person-match with a
   surname-collision guard; confidence gated by source × signal strength;
   satire → Noise/review; hedged "considering" demoted to soft; **early-state
-  IA/NH/SC/NV tagging**.
-- **`merge.py`** — idempotent apply (dedup via `signals.jsonl`); status-history
+  IA/NH/SC/NV tagging**; **cycle-relevance gate** (`RACE_RX`) — an unscoped item
+  from an outlet's full river must name a tracked person or visibly concern the
+  presidential race before it can reach the review queue.
+- **`merge.py`** — idempotent apply (dedup via `signals.jsonl`, keyed
+  `person|keys|url`, plus a **cross-source key** `person|keys|normalized-title`
+  inside a 72h window so one syndicated story is counted once — more raw signals
+  would otherwise mean more momentum); status-history
   on tier change; 7-day delta from momentum snapshots; **denials/downgrades
   routed to review (never auto-applied)**; unknown FEC filers gated on a
   registered principal committee; early-state tallies.
