@@ -206,5 +206,18 @@
     "direction": "up",
     "reason": "",
     "reconstructed": true
+  },
+  {
+    "id": "hunter",
+    "name": "Hunter Biden",
+    "party": "Democrat",
+    "date": "2026-08-22",
+    "from": 2,
+    "to": 5,
+    "fromLabel": "Positioning",
+    "toLabel": "Declared",
+    "direction": "up",
+    "reason": "‘Real Time’: Hunter Biden Shoots Down Presidential Bid, Jokes “Check If I Relapsed” If He Ever Announces Run - Deadline",
+    "reconstructed": false
   }
 ]

@@ -1,12 +1,5 @@
 [
   {
-    "date": "2026-07-23",
-    "guid": "hatinring-2026-07-23",
-    "link": "https://hatinring.com/c/aoc/",
-    "title": "What moved on the 2028 board — 2026-07-23",
-    "desc": "Top movers: Alexandria Ocasio-Cortez +10 · Formal/new: Mark Kelly · Status changes: Don Lemon"
-  },
-  {
     "date": "2026-07-24",
     "guid": "hatinring-2026-07-24",
     "link": "https://hatinring.com/",
@@ -208,5 +201,12 @@
     "link": "https://hatinring.com/c/beshear/",
     "title": "What moved on the 2028 board — 2026-08-21",
     "desc": "Top movers: Andy Beshear +15, Alexandria Ocasio-Cortez +8 · Formal/new: Gavin Newsom, Mark Kelly"
+  },
+  {
+    "date": "2026-08-22",
+    "guid": "hatinring-2026-08-22",
+    "link": "https://hatinring.com/c/hunter/",
+    "title": "What moved on the 2028 board — 2026-08-22",
+    "desc": "Top movers: Hunter Biden +28, Andy Beshear +15, Alexandria Ocasio-Cortez +8 · Formal/new: Gavin Newsom, Mark Kelly, Hunter Biden · Status changes: Hunter Biden"
   }
 ]

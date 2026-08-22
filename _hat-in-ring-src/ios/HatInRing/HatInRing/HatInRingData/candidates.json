@@ -187,7 +187,8 @@
       "donors",
       "staffing",
       "mediaBlitz",
-      "earlyState"
+      "earlyState",
+      "softConsidering"
     ],
     "conf": "High",
     "delta": 0,
@@ -290,6 +291,15 @@
           "earlyState"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2025-10-26",
+        "headline": "Kamala Harris leaves door open for 2028 presidential run - AP News",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQTDVvNC1MTFpPS0NkemxJWGppSDNTOUhvMDlxSkpfY1FrN21nX0dzMjVKcHBWNlA0eW1RS3lxR2hlenQ5TXEtVnB6VXRFQ0gwSTNidWNxOTA1RGZfMGxQMGk1aDU5b2ZEVXlHOWNHWm5hWkJ5a1ZKV1E0UEFQNXV5bWlsNFFYOVVZSFVSNjRONnp6M0h0eGNVZ2pUN1BvS2gyVDU4?oc=5",
+        "keys": [
+          "softConsidering"
+        ],
+        "conf": "Medium"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNV1BzWkNZc19aWWh3R2luZFZxWUVJT2oyZFo1LXFzQ0c2aHk1MExoNENNZk5nMkFtaS1lRWZlRXpZanVpUEhRV20tVWtIOF95MGJ4amJ0Mlpqc3lseEtxZ3A0VlVockFVdFN2Wm10eGNJWDVJUUtSd3hIb0FnRDN2VENUUkNMRnh6WGIyc0pTdnZrSmNmclJ4QWY3TDlTdEdKWjVmZkoyeDRBdzhrSWVyUnh5OHh1MDhwUEtLN1VjdDBTOEZn?oc=5",
@@ -383,12 +393,12 @@
     "early_states": {
       "NV": 2,
       "SC": 1,
-      "IA": 2
+      "IA": 3
     },
     "early_states_last": {
       "NV": "2026-06-24",
       "SC": "2026-06-01",
-      "IA": "2026-06-08"
+      "IA": "2026-05-26"
     },
     "evidence": [
       {
@@ -435,6 +445,15 @@
           "donors"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-05-26",
+        "headline": "Andy Beshear to rally with Rob Sand days after Iowa primary election - The Des Moines Register",
+        "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPdG9telp3OWJkLWRqZm40bnNDekM3SDNtdjByNlRiYk93S3NNbHFobDVHMktMUV96SUUweG1YYV9JOGQtOVh2dW1mb2k5MWtiMmVPdXA0WC1YcDlnTnRuaTZ5Z0M3Z1ltLW1FT3ZUT2tEOWFYVDdvUUVXMlRzV1NFTzRqaldBZTJPWEppNVB5aVllMVhkMUYzaEhZRE5MX2E5ajFOcmhQVS1HRDZZQjEyY1hxWjlteGczazJYY0xmMXhRR1JfcXVVc1lXb093bHZ4VjdBaHFNLWpjTEpPNXBhcHBIZ01VdEE?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMie0FVX3lxTFA5NWJYXzduV2tzMmtfN0pubWNaeW8zSTlZS3lUaXgtRVlCWHA4YWhRaEpHaXRlR0xrRVNfT092TmQ5WFc3dDNwV2ZFeElMYlR3MHNidk9EeWNZQlF6OEFSbm5HNElMMWptQ2lONlR3dkJOdDQ3OC1mX19WVdIBe0FVX3lxTE9JYks2ZlkycUdTelltcHc0ZDdCejRFMzlEbHFsVF9jdzYyWEM1SFN2ZWlzWGtyM1NkcGRYRUlfaGV4c1pDNFhzZHVma1Q3SWJCNmJRSkl6VDMwVTlRMVdFSjBJQkFjQkV3Y1BaYVJzZFZDRWxqWU12MzRGWQ?oc=5",
@@ -458,7 +477,7 @@
     ],
     "conf": "Medium",
     "delta": 0,
-    "lastSignal": "2026-08-14",
+    "lastSignal": "2026-08-20",
     "headline": "Arizona Sen. Mark Kelly to headline Iowa Democratic Wing Ding - thegazette.com",
     "why": "Swing-state, astronaut/veteran profile draws operative interest.",
     "quote": "",
@@ -502,6 +521,24 @@
           "earlyState"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-08-20",
+        "headline": "Sen. Mark Kelly says he is thinking about running for president in 2028 - KTAR.com",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOUF9kblhOZTdReGpvRkJ0Nm1EdnN0Y1RqUWxMSDI3R19vQTJWbWpSempYb2pPOTlCek5NSWF1NGVlUXBTSGFnVkpjM19UWWJSbmppTmhWS3N0WDI2aFlGR2UtNC0yXzRzb09obzJSVk13a0Q3SjFra2FZVUltZU1xNjRlVUtUaUNWUm1LZ2Y3NEp1NW1mSnNGLUFzLWdNcXZrOTFUTWtOaEZBUWNIRHNhbnAySUw0bHA0N042bUFJRnhvN2d5OTFWT3NB?oc=5",
+        "keys": [
+          "consideringQuote"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-08-14",
+        "headline": "Mark Kelly tells Iowa Democrats Trump 'failing' to improve their lives - The Des Moines Register",
+        "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxORzVqcXFTRkVUY0pmeVU3M1cwbVhnWnN1R3R6T2R3SE9Vd1UzVW5DQkhIdTdEOS1QRFNwUTBWak83SndwOXdmMGx0OE1MT1NaYVNuVXJNUU00NTVLajhBWlRjX2RWeWNkbmNibmhoemlmdEIyTFRjNHAyTUZjeVRYVGNUX2tLR0xNWGFiTjFMV0VPVERFRC1FYmhucUtwalNfMHJ1UklFMWIxbmN1MG91YklmZ3dnX3JhSWxES05zanhNQUliNVQwdGJraEIzMG1pQWU2OWpITkl5QkxSdGRTWEtObjhibklIMmc?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNZVl2amttNldJaHdPb1R4UmJ3SXB5b05FUndRUTgzd1ZYdWdQc1hvaGVhQnJxazNaZEJmUV9mV1k0eVJ0QnNKMk5DazFseTFUZUYxMEI0eEg1TzVNM0xlRU04NEUxbzRRSWE5SjNmZEZDektYTmhzTVFJYjlXMzlwd2h5R05GbjFld1ptZ2x3S1FSUzJCV2NfY0E5VDgzcWRHYnpUelRodm5lcEtwQ2NNZ1ZoNVd5QlBLWWw0MzVCNHYzSXI3ZkFUS1ZYX21IUzExQzNqaE1mVHZaX0J3LWU1U1ZlWFR4SXM?oc=5",
@@ -517,7 +554,7 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Mark_Kelly"
     },
     "early_states": {
-      "IA": 3
+      "IA": 4
     },
     "early_states_last": {
       "IA": "2026-08-14"
@@ -613,11 +650,11 @@
     },
     "early_states": {
       "SC": 1,
-      "IA": 2
+      "IA": 5
     },
     "early_states_last": {
       "SC": "2026-06-19",
-      "IA": "2026-07-17"
+      "IA": "2025-08-09"
     },
     "evidence": [
       {
@@ -642,6 +679,33 @@
         "date": "2026-07-17",
         "headline": "Sen. Ruben Gallego To Visit Iowa State Fair Amid 2028 Presidential Bid Speculation Sebastian Aho (TaWGnCR1YI) - Mshale",
         "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5CclNrVWZhdWhwMnlmcTI4ZGpJdm8zMWFMSU5yeHM1V2xnZWhrZHpkT1dUbzZaTXN2UF80aWo1YkNUdFg0WklCb2phMUlZX1lJRHRCZklmbHc5SDQ?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2025-07-09",
+        "headline": "Arizona Sen. Ruben Gallego will make stop through Iowa amid early 2028 presidential buzz - The Des Moines Register",
+        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPV1VLWG42SFdBaHlpaFBKYWZqU2FMaWpXYlVtMi0xSF9jNlg2VmEyM2NiS3ZZRTh0TVlocmlaUFpBNjBacTRRY2FhT0gwdEdPWjFYYXJVcUkxb3EtMWl4bldsNV9ZdTBONDRvZmdLbExnZWI5UE1jVGZTWF9jd1l0UmNPU0t2aTFNQzd6V0V4UTViOFpCWTBobUR4ZEl2c213Q1FiTkRxSGZPNEhwN0tPMHEyVUhLaUhXZzNjT2RLWVNIcE5aQXA1RHJIUUJyZlh4MG9MUXRXMA?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2025-08-08",
+        "headline": "US Sen. Ruben Gallego tours Iowa State Fair but dodges talk of 2028 run for president - The Des Moines Register",
+        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQc3Z1azNCY0lIVmo4LUZBM3Y2bU9DaXo2Ql9PNDQ0VkNxZW1jaERhWWh6dGt0WW5vdnRXcG9TMVg5S0M0VmNGWmVYdjJyb2RDcXZsMmFieGVlQXZaZy1IUzJfVko4eGx3c2xFQTJvQ21FMFJUOGZTVWJIOGgxbURQUThXT1MwY0dQZFg0ZUtEQ1lnMHhDQmc3MVJXR2VuNUZWU0dqYXI1UTBkdV92WDE4Mk8ycWlNSU8xVUUxTXpMT1E2YVpQMGhPYkRfcmpHSTRCNm5PQQ?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2025-08-09",
+        "headline": "Medicaid, Israel, redistricting: 5 takeaways from Sen. Ruben Gallego's Iowa town hall - The Des Moines Register",
+        "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPRzZsS0NSRzcxeTg5MEhGSDRMNzducDFyU3NFR0EtWEljRm9PdDBfeno2c2tRNFJ1Z2pVNlBnTmlIeTZGWktDTTFyNTBVSFM3ZnFOaFo1cGhCemZnWDJkTFNuMW1WZERuSzlTRGZNZXMwZVlGUFNXTkF5X3JQZmhtN1Y1YUlQQTRlcWNXWVFwMGZtbjFlZFpkOTZtRWJGNU1EUnBKcFV0aE9UcWtoeXB3V2Rsd28tWmdobDA1SDhCMWVOV3ZQX0thQ0RLYThRLXI3RDVKbmlTMzNPMjNSeEtTNDRzTDh4R0ZfVGEyYjlKN01vTzVtek5YYWpSWGhPTFcw?oc=5",
         "keys": [
           "earlyState"
         ],
@@ -710,10 +774,12 @@
       }
     ],
     "early_states": {
-      "NH": 5
+      "NH": 5,
+      "IA": 1
     },
     "early_states_last": {
-      "NH": "2026-06-08"
+      "NH": "2026-06-08",
+      "IA": "2025-09-28"
     },
     "evidence": [
       {
@@ -765,6 +831,15 @@
         "date": "2026-06-08",
         "headline": "Former Chicago Mayor Rahm Emanuel fuels 2028 speculation with New Hampshire bike tour - ABC7 Chicago",
         "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOc1ZvVkpNVFNSS1RObEh2bk9Ham5tYUxKbkN4bm5EcEJBeXNJT0d2Qk93UDBTSC1tRG1aRUhmTXF5YVpxV2tKVlJDYmhOZTcybDhnOWlCQ3pmUUFUQmk0U0xHUXVJenpYMjhhM1gxdW8yWkxYVUlnTXJMUHpkaW12QjBGSTRGcHUyY3NENFVMcFJRTDlUdzRmS0VFejNHa2E2R1REZVJwM3JLeS1CdUJoMEpIYzB3VUZfWUxmUS1oTHdYdnd5SW03VklobDBNMXZsaGVXVUI3RFV5NzJ1Y2k5X2dnaw?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2025-09-28",
+        "headline": "'All eyes' on Iowa in 2026, former Chicago Mayor Rahm Emanuel says - The Des Moines Register",
+        "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPSlM4YzdRV1lpR29UdW1MOGc2MWpWbk5CWHFHN1hZUnQ0cjRjRWFCYlVVUUtxUUpfZE1zX1pObk1ianhiNnlBejlQQWptYVkzdjVkYVczN3QzN0dOOWpCaGtfNGtsTkk2VFRSMW13ZFpraUhYZUV2NnNKSmYxcVc0Vnp5bWpFY1VVOUFOeTZmUGlLZm85N1BnZ2RFTXBhbTQ3bGJsQWk4cXZRY3RTMkVBY0ZFb0cwekQ0OHgyNFZsZnFJVW1HSDNCc1kzRzBiZFNlVW1TS0U1M1ZZdUNhUGItSVRlNlJuOUJDNkVN?oc=5",
         "keys": [
           "earlyState"
         ],
@@ -1193,7 +1268,7 @@
     ],
     "conf": "Medium",
     "delta": 0,
-    "lastSignal": "2026-08-10",
+    "lastSignal": "2026-08-18",
     "headline": "New Hampshire presidential poll puts Ocasio-Cortez ahead of Buttigieg among 2028 hopefuls - Scripps News",
     "why": "Back on the trail and openly weighing a run; consistently near the top of Democratic primary polls.",
     "quote": "",
@@ -1206,14 +1281,16 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Pete_Buttigieg"
     },
     "early_states": {
-      "IA": 4,
+      "IA": 5,
       "NH": 3,
-      "SC": 1
+      "SC": 1,
+      "NV": 1
     },
     "early_states_last": {
-      "IA": "2026-02-11",
+      "IA": "2026-07-13",
       "NH": "2026-07-23",
-      "SC": "2026-08-10"
+      "SC": "2026-08-10",
+      "NV": "2026-08-18"
     },
     "evidence": [
       {
@@ -1303,6 +1380,24 @@
         "date": "2026-08-10",
         "headline": "Pete Buttigieg to headline major South Carolina Democrats conference - washingtonexaminer.com",
         "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPc1d0dkthR1dXdmRBc2t3VHM1V1FkVXY5bjRZNGN0bWlEM05kQkdmN25velpPWHp0cXZpakpvcHZoTjR0LXZLMWZMM3ctS09SS0FsbnZnTDVhSXQwemxMV0gza1poU2VwU1dxaWcyci1WWWRkQ1BCMGhjZ0pSVEo4eGZYczkwUHJMTWxYMkpsQ1RIdFVCSzlLXzRhNFc4YzlISzFPS01tV1lJWW1VX3pzMF81NjY1R0Y4ZHBfdw?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-07-13",
+        "headline": "Pete Buttigieg talks potential 2028 presidential run during Iowa visit - The Des Moines Register",
+        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPYUtPdjd0R1o0LUVIWXZKMm9FTFJ1c25mejZvU0o4akNSbWJxTWZPeUJYWFQ5eEROeElYTUlqUVhOVDRoTEFOMFhIalpkSHdKNS1UVlRhRTJaNDV5ZzY0c3phVTFFaFZPbGxGYzM1bUY0ZU53LTVMWnBVb2VXMFFyakFEbUZfYmE3YWhYMkVGcDNQSV93QndQdXhOWkc2RDZyNnUwblQwbGZwLW5tT2JLZEVxbm5BdEt0V1Q2cVg3RHV5OWpybGdBbEdlNWRYVDNWbWc?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-08-18",
+        "headline": "Why Pete Buttigieg thinks Democrats can flip Nevada's only GOP-held congressional seat",
+        "url": "https://thenevadaindependent.com/article/why-pete-buttigieg-thinks-democrats-can-flip-nevadas-only-gop-held-congressional-seat/",
         "keys": [
           "earlyState"
         ],
@@ -1640,7 +1735,7 @@
       }
     ],
     "early_states": {
-      "IA": 2
+      "IA": 5
     },
     "early_states_last": {
       "IA": "2026-05-05"
@@ -1769,6 +1864,33 @@
         "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSE9fOW83TE12NUxwMkJlV3Bqc0pBRmZIaXNMTVJtZmwxcGlIWFozNkIzcHF2ekNoSmc3VEZyZ3lXM0xBWkx2UFhkcExJTXlXR3c3b1BCUlAxMU95TS1PMlU4aHg4aTA3cUhIU040aWVOSXhUbkpXVkZaNjVoLUZMc0pIR0cwWTJMZEdRTFAzNm1kb3dVVU45S3ZlN2djV19UT1BjaThHY1dsRE0?oc=5",
         "keys": [
           "donors"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-04-15",
+        "headline": "JD Vance will campaign with Zach Nunn in Iowa ahead of midterms - The Des Moines Register",
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPQmFFU2s4RnF3cEZESTRvVWctY19YNmRQZW5uQS1CbVFsSENYM0RBMDA5SV9JQkpzT0pRUmkwNzR6UHU2cExDLW1SSGhPU2hsWVRVSUdDNkpSZGV2TktPczZMb244QW1veHVKSWl2VTNYT3RFY3FXWWdXaEh1OFBuYWl2UWx2c0lKVnRxY1ZyQUJKUkJYeGpBVHJ5eUIzU1dXTk9yV3o0Q3VCanh0aHF2Q2RidGR4b21VUVROWHZJQTh1ZVNmNnJCOE01UnZHdU0?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-05-01",
+        "headline": "What to know about JD Vance's Iowa campaign stop with Rep. Zach Nunn - The Des Moines Register",
+        "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNUm4ta3JRanJKd2toSnl4QXhXZlpaMFBReTY3THo5SzZoNGVMNjBZbkctZTUwTGYzQkgwVWxMNVl1Wm1WWDU4M2htRnZjMk1PTVlNZmFqS1Z1ZGxsaU5CNk9Tb2FBWC1zY3l3ZTEydmlZbXh2cHl5WlJTejZDbVpQWURlM1FkVkktWk41MzBVdGZFaTJCTlBzSVc4YkpZeTEycFdwLWxCUWpOQ01KU1BCY2drcjM2aExWdkdRb1pWU3RGcVIzWmo3azVQT1Q5VWtWbHU0REcxNjYwTjZxT05Jag?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-05-05",
+        "headline": "Vice President Vance woos Iowa Republican voters ahead of 2028 - AP News",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPdmtKbmwxMElIai1NejdFVWRsMTVabDlmM3psTHFYWkpVb2lvRm92WkNsd1F1aTBkdkh2SUx2V2MyWEtnRGFfaDJabl9TeHZiTTBNc0U4MnM4Z1RiaU9yNFdRRzRsY2lnbnNtajhRMlhZc3o2a3NTaUNjLWtfa3FIZzlXaV9TYTZtZHgzWG5vRHBkVjB2OEpKU0hFbmdMYXJHeVJNMV93?oc=5",
+        "keys": [
+          "earlyState"
         ],
         "conf": "Low"
       }
@@ -1913,11 +2035,12 @@
     "bucket": "edge",
     "keys": [
       "softConsidering",
-      "mediaBlitz"
+      "mediaBlitz",
+      "declared"
     ],
     "conf": "Noise",
-    "delta": 0,
-    "lastSignal": "2026-07-30",
+    "delta": 28,
+    "lastSignal": "2026-08-22",
     "headline": "Hunter Biden reveals he's 'definitely not running' for office despite media tour - Fox News",
     "why": "Joke/troll posting, incl. VP talk with Newsom — not a real candidacy.",
     "quote": "Let's take another crack with a Biden.",
@@ -1937,6 +2060,24 @@
           "mediaBlitz"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-08-22",
+        "headline": "‘Real Time’: Hunter Biden Shoots Down Presidential Bid, Jokes “Check If I Relapsed” If He Ever Announces Run - Deadline",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNaGlDM3dneFlsWHo5MGo4eGoxWk1oWVZEV0NtZXVsOXRtQ0FXejRLaGJIMHlPNUFwUTg2aWNpQi1YQ0c0VzhTdml1UlkxRTg4bHFManhRV2xXdlUyclFzM2V6aVJXTUhoc3ZPRk41Sm8yMDVEb21qemNKeXZ6ZjRDSWxDRzBILUxVcjhRb21iNmY2bTJLMjhz?oc=5",
+        "keys": [
+          "declared"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-07-30",
+        "headline": "Hunter Biden reveals he's 'definitely not running' for office despite media tour - Yahoo",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOVDVnT240eW10ZWx3OFNQQWE1ZFRzUG9fbFBQR3pqcVJWUG9TTHFfQS1aSDhhNUFhcHNVc2F5YWk0SW1sVnBrbURPUWpndUxlaGVvZ3Fyak1fOTF2ZTBENlRBYmxUdmQ0NGxfc3dObUVqNGxQdENhS2xPX2t0R29PVktReFMzN1BGYU55Z3BDNFhKRlhyN1RmVml1dw?oc=5",
+        "keys": [
+          "mediaBlitz"
+        ],
+        "conf": "Low"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPWjJwVXJsN2hzcUR0VWJJWlZfaEJ2dHQ4d2RxOTJVVUlEVzlISTdIUUhnLXphU3Z1UFdrLXVoMWlrTkxDbEpqb0xMUnppRmUxSWN6RVhEYWV1aGFILUtYUk10VFFzVnM1MVlyWF9WZWs1NTBtOXFCelRnQlpRQkYxV01ub2FwUXJKdXl1c08tcndrdTZOZnp6REVWa0ZrZDBOVnlrVTln0gGrAUFVX3lxTE1QU0Rka3VuaUpNaTY5MDFUTW4tQngwMExTbUlWemtEYTJ4TnBGZjZGUkJEWXNicG45Y0VNV21hLWN5OXVlLVJfd0dVNlBFU0ljeFh6c3l3U2RCOVZYX2lDVXh5U09YWnZxQmh3MlIzMFlWRVg0cHZjNTlHTjRvd29La3lHMzg4V1RWZnRwNnJzQkpqbHI4MFpmaklfZVlpVFEyRFlHbWxORDBOOA?oc=5",
@@ -1946,6 +2087,12 @@
         "from": 1,
         "to": 2,
         "reason": "Hunter Biden reveals he's 'definitely not running' for office despite media tour - Fox News"
+      },
+      {
+        "date": "2026-08-22",
+        "from": 2,
+        "to": 5,
+        "reason": "‘Real Time’: Hunter Biden Shoots Down Presidential Bid, Jokes “Check If I Relapsed” If He Ever Announces Run - Deadline"
       }
     ],
     "img": "assets/candidates/hunter/01_hunter_biden_september_30_2014_jpg.jpg"
@@ -1959,11 +2106,12 @@
     "keys": [
       "barred",
       "declared",
-      "donors"
+      "donors",
+      "earlyState"
     ],
     "conf": "High",
     "delta": 0,
-    "lastSignal": "2026-08-06",
+    "lastSignal": "2026-08-17",
     "headline": "Donald Trump Reportedly Told Donors ‘We Need to Elect JD’ in 2028 - people.com",
     "why": "Legally ineligible; tracked only because of the chatter he generates.",
     "quote": "",
@@ -1998,11 +2146,55 @@
           "donors"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-08-14",
+        "headline": "New Hampshire is again at the center of the birthright citizenship fight",
+        "url": "https://newhampshirebulletin.com/2026/08/14/new-hampshire-is-again-at-the-center-of-the-birthright-citizenship-fight/",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-08-12",
+        "headline": "A tale of two cons: Trump’s vaccine push and New Hampshire’s ‘advantage’",
+        "url": "https://newhampshirebulletin.com/2026/08/12/a-tale-of-two-cons-trumps-vaccine-push-and-new-hampshires-advantage/",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-08-12",
+        "headline": "Legal groups ask court to restore block on Trump order on birthright citizenship",
+        "url": "https://newhampshirebulletin.com/2026/08/12/repub/legal-groups-ask-court-to-restore-block-on-trump-order-on-birthright-citizenship/",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-08-17",
+        "headline": "Accusations over socialism, corporate donations shape competitive Nevada Assembly race",
+        "url": "https://thenevadaindependent.com/article/accusations-over-socialism-corporate-donations-shape-competitive-nevada-assembly-race/",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNLVFVVVc4dnU0YU1CeWZkSnV0WGdOZ3NYcHpyQ1JDUjZUdEF1d25xT056YzlBZXFwNTRfdUxDdTF3Z3pzaXFJdjFETm91OXpmMEhUVEU4cUtGOWREWG4tb016Z0Z0UDRGUnlHd2VoaURyV2tKbC1CeW1ZS1EySzEwcQ?oc=5",
     "links": {
       "wikipedia": "https://en.wikipedia.org/wiki/Donald_Trump"
+    },
+    "early_states": {
+      "NH": 3,
+      "NV": 1
+    },
+    "early_states_last": {
+      "NH": "2026-08-12",
+      "NV": "2026-08-17"
     },
     "img": "assets/candidates/trump/01_official_presidential_portrait_of_president_donald.jpg"
   },

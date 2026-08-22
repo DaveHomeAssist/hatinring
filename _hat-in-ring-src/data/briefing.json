@@ -1,6 +1,15 @@
 {
-  "date": "2026-08-21",
+  "date": "2026-08-22",
   "movers": [
+    {
+      "id": "hunter",
+      "name": "Hunter Biden",
+      "party": "Democrat",
+      "delta": 28,
+      "score": 50,
+      "tier": 5,
+      "statusLabel": "Declared"
+    },
     {
       "id": "beshear",
       "name": "Andy Beshear",
@@ -32,10 +41,23 @@
       "name": "Mark Kelly",
       "tier": 5,
       "statusLabel": "Declared"
+    },
+    {
+      "id": "hunter",
+      "name": "Hunter Biden",
+      "tier": 5,
+      "statusLabel": "Declared"
     }
   ],
-  "transitions": [],
-  "review_count": 53,
+  "transitions": [
+    {
+      "name": "Hunter Biden",
+      "from": 2,
+      "to": 5,
+      "date": "2026-08-22"
+    }
+  ],
+  "review_count": 83,
   "totals": {
     "tracked": 41,
     "formal": 3,
