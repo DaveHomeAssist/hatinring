@@ -1006,5 +1006,29 @@
     ],
     "rid": "767a8ecb1f4f",
     "kind": "discovery"
+  },
+  {
+    "name": "South Carolina Democratic",
+    "headline": "Potential 2028 presidential hopefuls Moore, Walz steal show at South Carolina Democratic weekend - Maryland Matters",
+    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQWXJDa01KeHB0QXVGaTBBaXpLMlA0ejV5REl6dkhqbmlUQmlEcENzQ2xIbEhXQVk3VTlpVGZROHZqUkZTbHEzWDNEMTk4dDFtWVpxMFk5eXpoTVdvMWVuYjJhRE04ZXFDTVVNT2VVSXVJNjktcVBadUpMc0Z3WUY2VUtsRWd6djlYalpqSFp2d2k2dm9oMDFrRjRtLXhyRUUzSEc1QVJUTFdWakZUTzgzUFBGOFUyNlM1UVlhUEZITFViQm5obmFINkE0Nk5lVTUz?oc=5",
+    "source": "Maryland Matters",
+    "date": "2025-05-31",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "f1ae7783c272",
+    "kind": "discovery"
+  },
+  {
+    "name": "Des Moines Register",
+    "headline": "USDA yanks $11.3M to buy Iowa meat, dairy, fruits, veggies for schools, day cares, more - The Des Moines Register",
+    "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOOS1jaHJSRlZPNzJzMGxjU0d2VWJpUkg2V196S29LWkhIal9IRFRMMDQtcC1TYm1VaTladE9VSFZJeVRVZVlGS1ZfVmZWbjdwSmMtRG9OaG5SSmFHZGk0ci14alJmbFE5RGMxbWdhNklyVmFFMUVWQUNlQ3d2SXVfY2JseU0ta1pJSmRCTVRhNjRHbHZHSHF4bVVQZGNxbWhYMk9PNWJLQXh0STJRZHU4V1l2c0FxT2Z2UXY1bjJSTEREeFFzSnRRem80Tl84YnpweVJ0ZjE1TjI4Rmk0STQw?oc=5",
+    "source": "The Des Moines Register",
+    "date": "2025-03-11",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "a3f049e1e96f",
+    "kind": "discovery"
   }
 ]

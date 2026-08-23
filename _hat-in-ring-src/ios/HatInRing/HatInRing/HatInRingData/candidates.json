@@ -572,8 +572,8 @@
       "earlyState"
     ],
     "conf": "High",
-    "delta": 0,
-    "lastSignal": "2026-07-20",
+    "delta": 5,
+    "lastSignal": "2026-08-14",
     "headline": "Khanna finishes another New Hampshire visit as he considers White House run - WMUR",
     "why": "First clear public timeline from the progressive-pragmatist lane.",
     "quote": "We'll look at that after the midterms.",
@@ -614,6 +614,15 @@
         "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOR3FxVTcyc3RiR2xzaXBwNUJ3TDdKTHV1MzJYQS1NLWZSWTcxbDZZdkN3YTFDWmhfRE1VR18zWUt6UDlKdEFySk9kX1pTNHk1ckwzMG1MOU5JUXpadTZrRmJ4dE1OVE4zeXltLUhSNHdNNUp4bUVycUVSQ1ZKYU5xZXhlYk5hMU1mYkE?oc=5",
         "keys": [
           "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-08-14",
+        "headline": "Watch Rep. Ro Khanna reveals he is considering a 2028 presidential run - Mornings With Maria - FOX One",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMmtOcWNrM2NZSFpFeGdiVGtEdl9lSHgzcnhRdjc5X0NqN0gza2xxSk1vRFJ1a3Z1R2JseTZYaEhMU0JTZnlrLWJ4LXRlOThqMGZNSzBNZ2p1eG1fZzZUbHUtQnBraldJOXpNTnJGalN0OXZ3eUItX0lHZ1NxVWpLckhtRVRGNzA2eDE5d0NBMVdOMlNqcWstMVZrd3Q4Z0NDRTQ1X0Z6Y2tuNjlWaVhvSGhsNkFzQQ?oc=5",
+        "keys": [
+          "consideringQuote"
         ],
         "conf": "Low"
       }
