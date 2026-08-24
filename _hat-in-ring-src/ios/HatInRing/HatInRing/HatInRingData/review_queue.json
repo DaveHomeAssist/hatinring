@@ -1030,5 +1030,30 @@
     ],
     "rid": "a3f049e1e96f",
     "kind": "discovery"
+  },
+  {
+    "name": "Tucker Carlson",
+    "headline": "Marjorie Taylor Greene Shuts Down Tucker Carlson 2028 Presidential Speculation: 'He's Not Running' - AOL.com",
+    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOTEdod1pPdV90SGtETHMxUklmMWNMV3l3NGxhNUxxcm9QXzZHSzBVTnIydDZFTXR4ekRBTEtGaW1lMm9xZEVFUjdCTjlEZnVzN1ZsMUNXQ2doQnFKUDZYVVhYeGZlTzdQcEVCNEJBVDFJeXVWSVZvQzRSdjZCUThDU09uQQ?oc=5",
+    "source": "AOL.com",
+    "date": "2026-08-10",
+    "keys": [
+      "ruledOut"
+    ],
+    "note": "denial/downgrade — confirm before applying",
+    "rid": "773e5e0d0e0c",
+    "kind": "denial"
+  },
+  {
+    "name": "Trump Speaks",
+    "headline": "President Trump Speaks to Reporters While En Route to South Carolina - C-SPAN",
+    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPdG9JakZ6OU9sUEttUjVYOWg2LWUyaXJxOEswZUxRSlRNaUd4bmFTR1h1N08xcW1QUG5RX3R4MW5VWEcxVDBXUUxUSUZKMGRQMXhMNjQ1RGN1R0ZjZGx4X2tUN0JlZWRSbEZ3SUxzUUU4MWV3QkNGY0ItUTlidzRIWk5WSWxXQXdwV29pUmJDR3RkczFMZ2daLVRwbTBaS2dDVVVFdHRUQmgzNDR4ZjlJRlZWUkhMaFc4TEJ0TnU5Q3V6Zw?oc=5",
+    "source": "C-SPAN",
+    "date": "2026-08-21",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "288f57ee8947",
+    "kind": "discovery"
   }
 ]

@@ -1277,7 +1277,7 @@
     ],
     "conf": "Medium",
     "delta": 0,
-    "lastSignal": "2026-08-18",
+    "lastSignal": "2026-08-24",
     "headline": "New Hampshire presidential poll puts Ocasio-Cortez ahead of Buttigieg among 2028 hopefuls - Scripps News",
     "why": "Back on the trail and openly weighing a run; consistently near the top of Democratic primary polls.",
     "quote": "",
@@ -1292,13 +1292,13 @@
     "early_states": {
       "IA": 5,
       "NH": 3,
-      "SC": 1,
+      "SC": 5,
       "NV": 1
     },
     "early_states_last": {
       "IA": "2026-07-13",
       "NH": "2026-07-23",
-      "SC": "2026-08-10",
+      "SC": "2026-08-22",
       "NV": "2026-08-18"
     },
     "evidence": [
@@ -1407,6 +1407,42 @@
         "date": "2026-08-18",
         "headline": "Why Pete Buttigieg thinks Democrats can flip Nevada's only GOP-held congressional seat",
         "url": "https://thenevadaindependent.com/article/why-pete-buttigieg-thinks-democrats-can-flip-nevadas-only-gop-held-congressional-seat/",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-08-23",
+        "headline": "Pete Buttigieg returns to South Carolina as he weighs another White House run - AP News",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxObGRqUjN0ODlLTkQ2Q0ZldXRMb0llSEQxVklHWF9Wd1JpMWVwTUIwRGRpWnNRRmFMWXYzaUxESVd6OVVwSUhBbmx3RjJFdGxZWlJzRlZ5LWM3VW15Q0JWRTB5RWQ2Mzlxa1dzcGNudEZPOFBWNzladk5QWHJJNFVuM1FPQ3c3STY3OXFoaEtqbUxEbUlYMHlUSmZXcHJwckVjNm9pZ0VZVWxFMTg1UjNDTkRn?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-08-24",
+        "headline": "Buttigieg returns to South Carolina as Democrats begin positioning for 2028 - Straight Arrow",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPVTU3aVR6REhMNm01a1lsUzhqNGM1NVo4dGxmWXRXZGx5M2tBR19iUGlxYm0yNjZuSDhRRVd1M19RMGhPNFJaZVNPNnE4V0htdmtNMFlaX3E5MXA4YmlCMWsxR1kzUUgxNlBEVlhKR2JNWlo5RGEyd19yX211akZwQTJobzJrRGJ2VG54QmJLcm5WMWg0Zm9rcjgwTQ?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-08-23",
+        "headline": "Pete Buttigieg returns to first-in-the-nation South Carolina with a fresh appeal to Black voters - CNN",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPdFZZUTRTNU9RbWVoWW9XQlJDVEVrZEhJMC04a05KN2xnVE9RbVRJLW50cDl4dS1DVFBNalllQi1RdUh3ZE1GVEhaZHhsWl9zYklJV0V3cjlLdGVYQU4zZnMtWjB3VzVSSlBXNXVsLWV3VkE2QnBzUGNnVVlzU3hFS2hPZzB1SU40SEE?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-08-22",
+        "headline": "Pete Buttigieg swings through South Carolina as 2028 primary draws ever closer - Post and Courier",
+        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQZjd2RVlHcHd2dXAwbU9QM1hUY2M0N01UbUxpQVo4Y2h6RVFDWkZtZE0xX1V6eFF3Z3BBWmFtRnpHbF9SakE4RmZTQkxpQjVFSGV5R19JQlU3SUxHX0lVNTJVMDYteGZlRG11N2hrZnNqcTQ3b0NWT2JsXzJNNkNoVnluTVJETy1pZnAtSHNTZjlKVE1DVEJOcXJoaHpqVkV6d0dkdW1UV1lVU3lVYU15UlJjNEtKemRseXFROXE5ZlN3ejdiUEt5Wi1rTmRTc0NBdWFPdA?oc=5",
         "keys": [
           "earlyState"
         ],
@@ -2014,8 +2050,8 @@
       "consideringQuote"
     ],
     "conf": "Noise",
-    "delta": 0,
-    "lastSignal": "2026-04-28",
+    "delta": 15,
+    "lastSignal": "2026-08-10",
     "headline": "Is Tucker Carlson eyeing a 2028 presidential run? | Arwa Mahdawi - The Guardian",
     "why": "Speculative; included for completeness, low signal value.",
     "quote": "",

@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-23",
+  "date": "2026-08-24",
   "movers": [
     {
       "id": "hunter",
@@ -16,6 +16,15 @@
       "party": "Democrat",
       "delta": 15,
       "score": 50,
+      "tier": 3,
+      "statusLabel": "Actively considering"
+    },
+    {
+      "id": "carlson",
+      "name": "Tucker Carlson",
+      "party": "Republican",
+      "delta": 15,
+      "score": 25,
       "tier": 3,
       "statusLabel": "Actively considering"
     },
@@ -66,7 +75,7 @@
       "date": "2026-08-22"
     }
   ],
-  "review_count": 85,
+  "review_count": 87,
   "totals": {
     "tracked": 41,
     "formal": 3,
