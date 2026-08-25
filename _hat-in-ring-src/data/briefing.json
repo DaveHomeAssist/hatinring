@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-24",
+  "date": "2026-08-25",
   "movers": [
     {
       "id": "hunter",
@@ -75,7 +75,7 @@
       "date": "2026-08-22"
     }
   ],
-  "review_count": 87,
+  "review_count": 88,
   "totals": {
     "tracked": 41,
     "formal": 3,

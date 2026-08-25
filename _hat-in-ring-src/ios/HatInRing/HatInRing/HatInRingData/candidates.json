@@ -88,7 +88,7 @@
     ],
     "conf": "High",
     "delta": 0,
-    "lastSignal": "2026-08-17",
+    "lastSignal": "2026-08-25",
     "pollLead": "Dem poll leader",
     "headline": "Opinion | Which version of Gavin Newsom will voters see if he launches a presidential campaign? - calmatters.org",
     "why": "Polling frontrunner actively staking out a 2028 lane; a national billionaires-tax pitch and a Biden embrace are already drawing intra-party fire (Khanna).",
@@ -103,11 +103,13 @@
     },
     "early_states": {
       "NH": 1,
-      "NV": 4
+      "NV": 4,
+      "SC": 1
     },
     "early_states_last": {
       "NH": "2025-09-05",
-      "NV": "2026-08-16"
+      "NV": "2026-08-16",
+      "SC": "2026-08-25"
     },
     "evidence": [
       {
@@ -159,6 +161,15 @@
         "date": "2026-08-16",
         "headline": "Can Gavin Newsom appeal to Nevada voters? Early test for 2028 presidential run - AOL.com",
         "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQUEFUbHJESjlmYTFFLWFxUHlNcXlIZWNSY0pUckpYd0FSMkNBSmdkRzZUNnZhQldBQ1kxRk9lT1RVWkJ5SVdGWXFCbFBHaU5EZFFQN3RveEhZc09ZMVpEbXBHYWlfRlRIX09rMzg4bV9OYjRXTGVzc2lQdWxyQnlpbG52QQ?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-08-25",
+        "headline": "Newsom's attack dog taunts Buttigieg over South Carolina visit as 2028 fight heats up - Fox News",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxObzhsNnQtXzdUNEZrVFo4N19JdXpZQkRCend2UzJnSG1WTWdqd01uX2J0TEhsMG9vUkstbndXTlNiSWVQV0VoMi1jOGNvZ1ZReVppekcwRGwzYnBmZEYzNzk0YlBVSk5pc2ZyS25YTFRUZ003bFhsLUVXUHdwYlZyb0EzcEJpSW1jV21RZHhNY2ppQ3M0d2pYVG1KaDBhUVo1Qmhjc0gza3ItaDTSAbABQVVfeXFMTVBsSnpJR3k1dG1XSTdWdi1GR1VLNHptd0JNSW94VUljNzhjOFkzdmV2T2NfSFg2bFUwVmY1ZkNJUGRUeWN1MHlmWnVXdmp5SnB1dzQyVzE4N3V2YU1zXzgwNS1uYnBYVEMwd1MzSHo1bnAyMGI5ZVBULW5XVzhSUWlJeEZRVkxwajZhXzZSRWluVEtVZXFRd1o0NjRkQ25sRlNLVW96RURNamVoTmhOaWs?oc=5",
         "keys": [
           "earlyState"
         ],
