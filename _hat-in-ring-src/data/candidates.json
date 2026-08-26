@@ -1282,7 +1282,7 @@
     "early_states": {
       "IA": 5,
       "NH": 3,
-      "SC": 5,
+      "SC": 6,
       "NV": 1
     },
     "early_states_last": {
@@ -1433,6 +1433,15 @@
         "date": "2026-08-22",
         "headline": "Pete Buttigieg swings through South Carolina as 2028 primary draws ever closer - Post and Courier",
         "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQZjd2RVlHcHd2dXAwbU9QM1hUY2M0N01UbUxpQVo4Y2h6RVFDWkZtZE0xX1V6eFF3Z3BBWmFtRnpHbF9SakE4RmZTQkxpQjVFSGV5R19JQlU3SUxHX0lVNTJVMDYteGZlRG11N2hrZnNqcTQ3b0NWT2JsXzJNNkNoVnluTVJETy1pZnAtSHNTZjlKVE1DVEJOcXJoaHpqVkV6d0dkdW1UV1lVU3lVYU15UlJjNEtKemRseXFROXE5ZlN3ejdiUEt5Wi1rTmRTc0NBdWFPdA?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-08-22",
+        "headline": "Pete Buttigieg Headlines South Carolina Democratic Conference - C-SPAN",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQYWV2OGduZ3l5VkRnVWNjYUJlM1NCNVl5TzlWVXVEZ0U2dHBWTlFWRVdNd0FxbERDYnJaSkdkUVp6MVV5LWFrTzVYTS1lYnc1TFFZd3JXbnVyZXpzVHBITlVPOGhWa29QekpxV0Jkd0xwYW40SzFIUV9objAyZ21qVDFpUkRSY1B1cGpLd1NrYTYwNFlaamRUODE2UXVlOWJjQ2dicTllVXBsSXpjMmQxMQ?oc=5",
         "keys": [
           "earlyState"
         ],
@@ -2134,7 +2143,7 @@
     ],
     "conf": "High",
     "delta": 0,
-    "lastSignal": "2026-08-17",
+    "lastSignal": "2026-08-26",
     "headline": "Donald Trump Reportedly Told Donors ‘We Need to Elect JD’ in 2028 - people.com",
     "why": "Legally ineligible; tracked only because of the chatter he generates.",
     "quote": "",
@@ -2205,6 +2214,15 @@
           "earlyState"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-08-26",
+        "headline": "Political newcomer Darline Graham wins South Carolina’s GOP Senate runoff",
+        "url": "https://www.politico.com/news/2026/08/25/darline-graham-wins-south-carolina-senate-runoff-01050320",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNLVFVVVc4dnU0YU1CeWZkSnV0WGdOZ3NYcHpyQ1JDUjZUdEF1d25xT056YzlBZXFwNTRfdUxDdTF3Z3pzaXFJdjFETm91OXpmMEhUVEU4cUtGOWREWG4tb016Z0Z0UDRGUnlHd2VoaURyV2tKbC1CeW1ZS1EySzEwcQ?oc=5",
@@ -2213,11 +2231,13 @@
     },
     "early_states": {
       "NH": 3,
-      "NV": 1
+      "NV": 1,
+      "SC": 1
     },
     "early_states_last": {
       "NH": "2026-08-12",
-      "NV": "2026-08-17"
+      "NV": "2026-08-17",
+      "SC": "2026-08-26"
     }
   },
   {
