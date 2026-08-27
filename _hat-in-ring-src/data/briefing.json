@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-26",
+  "date": "2026-08-27",
   "movers": [
     {
       "id": "hunter",
@@ -9,6 +9,15 @@
       "score": 50,
       "tier": 5,
       "statusLabel": "Declared"
+    },
+    {
+      "id": "cruz",
+      "name": "Ted Cruz",
+      "party": "Republican",
+      "delta": 20,
+      "score": 60,
+      "tier": 3,
+      "statusLabel": "Actively considering"
     },
     {
       "id": "beshear",
@@ -75,7 +84,7 @@
       "date": "2026-08-22"
     }
   ],
-  "review_count": 88,
+  "review_count": 89,
   "totals": {
     "tracked": 41,
     "formal": 3,

@@ -199,7 +199,7 @@
     ],
     "conf": "High",
     "delta": 0,
-    "lastSignal": "2026-08-18",
+    "lastSignal": "2026-08-27",
     "headline": "South Carolina picked for first 2028 Democratic primary, in possible Kamala Harris boost - New York Post",
     "why": "The 2024 nominee tops early Democratic primary polling; a rematch frontrunner in a crowded, unsettled field.",
     "quote": "I have not made a decision… I may or may not.",
@@ -307,6 +307,33 @@
           "softConsidering"
         ],
         "conf": "Medium"
+      },
+      {
+        "date": "2026-08-26",
+        "headline": "Should Kamala Harris run for president again? ‘Nope,’ says Iowa Democrat - The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQdlBSeVJyWVZQVUdZaUFKR3hFTGR2YWgzNkMtbExDMDZTbllsTTNPWlpoZW9NZzZtMlp5NW1wNXQ0VnB5RkxYaVJqUnp6aGdIODdtZGdZTmV3ZEdfZzJKMC1BdHByaGg2d3hMeXh2WjVFNGFKZ25mOF9ON1dtN2xhd3BrU0w2U0R2YnVvRUQxYm1KS3c?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-08-26",
+        "headline": "Iowa’s Democratic gubernatorial candidate: Kamala Harris shouldn’t run in 2028 - The Hill",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQX3VVQS12cFVvTlI2VzlOM01VcXFOR2F3cWVjUHZJbTdPaHVabHJQdEl5YkhaNVNBRFkxWmFINHA2M1BWeG5CeDVubmNxQk00UTFSNmp6TjFqdE9BWG04SXp2a3otTjJGTVpmSFFWeHRQcXVOdjNaaHJWUWIwQjJtU3Naang5U0pDODNObjBJLS16Y25sbklURDBvbUpfcF9KcWtjbV9GNGJTNDM3SjRRMTJEcnFEUWVBc3R6N05BMFdNMWfSAcgBQVVfeXFMTzQ3VWhaaUE3OElrV2xZNFducmhxa2gtQlVxWGlqdGM0VFVTY3ZzN0Q2alBXMlhzX1JXWC1jMDlRcmw2X0o0Vm96ZmlzM0NxcjdLQW9va3ZVUDRvTDc3VC1uWFlZTEV4cDhzS215SUU4TTVwTHAyVnFUR2RaTG15RnRNc0p3V1MtZkpLajdRU1BEalFkOHp4RlF4ZmY3bjY3UENKRUJFMUxiU3hOcmZpM1BDS2pqb3ZMcThPUldXNk9DbzJZMkR4S0s?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-08-27",
+        "headline": "Josh Turek says Kamala Harris should not campaign for him",
+        "url": "https://thehill.com/homenews/campaign/6053965-josh-turek-denies-kamala-harris-campaign/",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNV1BzWkNZc19aWWh3R2luZFZxWUVJT2oyZFo1LXFzQ0c2aHk1MExoNENNZk5nMkFtaS1lRWZlRXpZanVpUEhRV20tVWtIOF95MGJ4amJ0Mlpqc3lseEtxZ3A0VlVockFVdFN2Wm10eGNJWDVJUUtSd3hIb0FnRDN2VENUUkNMRnh6WGIyc0pTdnZrSmNmclJ4QWY3TDlTdEdKWjVmZkoyeDRBdzhrSWVyUnh5OHh1MDhwUEtLN1VjdDBTOEZn?oc=5",
@@ -314,10 +341,12 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Kamala_Harris"
     },
     "early_states": {
-      "SC": 2
+      "SC": 2,
+      "IA": 3
     },
     "early_states_last": {
-      "SC": "2026-08-18"
+      "SC": "2026-08-18",
+      "IA": "2026-08-27"
     }
   },
   {
@@ -1003,11 +1032,12 @@
       "consideringQuote",
       "donors",
       "staffing",
-      "earlyState"
+      "earlyState",
+      "mediaBlitz"
     ],
     "conf": "High",
-    "delta": 0,
-    "lastSignal": "2026-05-04",
+    "delta": 20,
+    "lastSignal": "2026-08-26",
     "headline": "Sen. Ted Cruz addresses 2028 presidential bid while in Iowa - KWTX",
     "why": "2016 infrastructure & donor base; explicit intra-MAGA lane.",
     "quote": "",
@@ -1023,7 +1053,18 @@
     },
     "links": {
       "wikipedia": "https://en.wikipedia.org/wiki/Ted_Cruz"
-    }
+    },
+    "evidence": [
+      {
+        "date": "2026-08-26",
+        "headline": "Ted Cruz says on podcast it’s “no secret that I want to be president” - The Texas Tribune",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOZ3QxLWhhT2hhV0tsWTktSmdsTXk5NmxyUnpBeHJic0x5ZDJQMk1aN0lXOF9qMERyVm5yQzdjbTNsWDBTa3IzOUZhY1hNMEM0cE5vRjFHa3NmUGdOdjZvWVFXd3ZNenZMcFVWa24yaFJ4Z3I5eUNYeFNEYnBQUGd4cjBWLUNTLW4yYk1jLXAzMEhBRW1GREcySWhobFBaZw?oc=5",
+        "keys": [
+          "mediaBlitz"
+        ],
+        "conf": "Low"
+      }
+    ]
   },
   {
     "id": "desantis",
@@ -2317,7 +2358,8 @@
     "role": "Governor of Minnesota",
     "bucket": "out",
     "keys": [
-      "ruledOut"
+      "ruledOut",
+      "softConsidering"
     ],
     "conf": "Medium",
     "delta": 0,
@@ -2330,7 +2372,18 @@
     ],
     "links": {
       "wikipedia": "https://en.wikipedia.org/wiki/Tim_Walz"
-    }
+    },
+    "evidence": [
+      {
+        "date": "2025-03-03",
+        "headline": "Minnesota Gov. Tim Walz is not ruling out presidential run in 2028 - CBS News",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNS2lMLUE3Y0kwOTNOVFBKMUtURGxpcnRSZDlJVlR3R0JrMVRpSEhQWUNXQVhuVUI5dmtHQUZDdDBtWVFiNHJ0Sk5mWDQ3Y2xidHN6UTJfbTRnTmVONFczcWhOU0RkY09hNFBvMUlKcEtpUFNrZVBGU09zRkRybVgxQ3J3MGY3ZUNvdWF1Qnln0gGTAUFVX3lxTE1OOW91TkIxQkZMaDc4UGM2aklHTEpPN2hubGFNREMwRkxRX2J3OGFYUFlpNnNyZEhmZzlDWlgxX2NZVFhPTVVsMEY2MnNhQTN4RDdyS2M3RW90SVVwUVFXcUNhM2JoQVlXNHN5U2ZQRzlWT29md0lJQTU1ZDFhZjctb2ZvQ0hzVDFfQ2t5SW1Ydnl5dw?oc=5",
+        "keys": [
+          "softConsidering"
+        ],
+        "conf": "Medium"
+      }
+    ]
   },
   {
     "id": "mtg",
