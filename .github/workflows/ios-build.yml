@@ -1,0 +1,84 @@
+name: iOS Build
+
+# Modeled on prompt-lab/.github/workflows/ipad-prototype.yml.
+# Builds the native HatInRing app and runs its unit tests (HatInRingTests)
+# on an iOS Simulator. The daily hat-in-ring.yml workflow refreshes the
+# bundled data (HatInRingData) but never compiles the app; this workflow is
+# what proves the app still builds and still decodes that data.
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - _hat-in-ring-src/ios/**
+      - .github/workflows/ios-build.yml
+  pull_request:
+    paths:
+      - _hat-in-ring-src/ios/**
+      - .github/workflows/ios-build.yml
+  workflow_run:
+    workflows:
+      - hat-in-ring
+    types:
+      - completed
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ios-build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  native-build-and-test:
+    name: Native build and unit tests (iOS Simulator)
+    if: >-
+      github.event_name != 'workflow_run' ||
+      (github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.head_branch == 'main')
+    runs-on: macos-14
+    timeout-minutes: 25
+    steps:
+      - name: Checkout triggering revision
+        if: github.event_name != 'workflow_run'
+        uses: actions/checkout@v4
+
+      - name: Checkout updated main
+        if: github.event_name == 'workflow_run'
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Toolchain
+        run: xcodebuild -version
+
+      - name: Select iPhone simulator
+        shell: bash
+        run: |
+          set -euo pipefail
+          simulator_id=$(xcrun simctl list devices available --json | jq -r '[.devices[] | .[] | select(.isAvailable and (.name | startswith("iPhone")))] | last | .udid')
+          if [[ -z "$simulator_id" || "$simulator_id" == "null" ]]; then
+            echo "No compatible installed iPhone simulator is available." >&2
+            xcrun simctl list devices available
+            exit 1
+          fi
+          echo "SIMULATOR_ID=$simulator_id" >> "$GITHUB_ENV"
+
+      - name: Build HatInRing
+        run: >-
+          xcodebuild build
+          -project _hat-in-ring-src/ios/HatInRing/HatInRing.xcodeproj
+          -scheme HatInRing
+          -destination "platform=iOS Simulator,id=${SIMULATOR_ID}"
+          CODE_SIGNING_ALLOWED=NO
+
+      - name: Unit tests (HatInRingTests)
+        run: >-
+          xcodebuild test
+          -project _hat-in-ring-src/ios/HatInRing/HatInRing.xcodeproj
+          -scheme HatInRing
+          -destination "platform=iOS Simulator,id=${SIMULATOR_ID}"
+          -only-testing:HatInRingTests
+          CODE_SIGNING_ALLOWED=NO
