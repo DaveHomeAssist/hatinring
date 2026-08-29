@@ -9,8 +9,8 @@
       "declared"
     ],
     "conf": "Very high",
-    "delta": 0,
-    "lastSignal": "2026-05-26",
+    "delta": 15,
+    "lastSignal": "2026-08-20",
     "headline": "‘Simpsons’ writer Dan Greaney announces 2028 presidential campaign - News.com.au",
     "why": "Only formally declared major-party filer so far; low-profile.",
     "quote": "",
@@ -20,7 +20,18 @@
     ],
     "links": {
       "wikipedia": "https://en.wikipedia.org/wiki/Dan_Greaney"
-    }
+    },
+    "evidence": [
+      {
+        "date": "2026-08-20",
+        "headline": "'Simpsons' writer Dan Greaney launches presidential bid - NBC News",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNMjVTRVZITEtxbk5yejBGMkVGTFJJSFd1bjEyNEczVU1GYkhNUkJzVVBGcmVfZldUMTAzSlBib2xWd0xJd1dSMzZybFNNVmNsaDNWTFJfb3FTdEhBaW9DZnJTRmFLdEUtVzVub205bElheFlNZzN6QVl1VTM0U2JINnUzZGxTQ0JzMVVZS2R1eHZLSlVFdGE5ZFpHa25IaFpSeWlYaEYzRQ?oc=5",
+        "keys": [
+          "declared"
+        ],
+        "conf": "High"
+      }
+    ]
   },
   {
     "id": "bovino",
@@ -85,7 +96,7 @@
     ],
     "conf": "High",
     "delta": 0,
-    "lastSignal": "2026-08-25",
+    "lastSignal": "2026-08-28",
     "pollLead": "Dem poll leader",
     "headline": "Opinion | Which version of Gavin Newsom will voters see if he launches a presidential campaign? - calmatters.org",
     "why": "Polling frontrunner actively staking out a 2028 lane; a national billionaires-tax pitch and a Biden embrace are already drawing intra-party fire (Khanna).",
@@ -101,12 +112,12 @@
     "early_states": {
       "NH": 1,
       "NV": 4,
-      "SC": 1
+      "SC": 2
     },
     "early_states_last": {
       "NH": "2025-09-05",
       "NV": "2026-08-16",
-      "SC": "2026-08-25"
+      "SC": "2026-08-28"
     },
     "evidence": [
       {
@@ -171,6 +182,15 @@
           "earlyState"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-08-28",
+        "headline": "Newsom plans 4-day tour of Southern states",
+        "url": "https://thehill.com/homenews/campaign/6057522-newsom-visits-sc-alabama-nc/",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOVnJSYVZFWkJ2OTRXVDJRZWdjaG42UkkzZ0RmSGV2TUxUaUFrd3d4MDhoZGx4SlI0eV96dDRnRWhKcVVLc0d0bU56dGpsNDVyaUZiY3pRY1U1ZWxqaWJHWnFZSmxIdndybnBnQUlYY3Z2NXZHak8ybWFhOFg3T08weDg5X0hZX2M0bEhvMF9B?oc=5",
@@ -199,7 +219,7 @@
     ],
     "conf": "High",
     "delta": 0,
-    "lastSignal": "2026-08-27",
+    "lastSignal": "2026-08-29",
     "headline": "South Carolina picked for first 2028 Democratic primary, in possible Kamala Harris boost - New York Post",
     "why": "The 2024 nominee tops early Democratic primary polling; a rematch frontrunner in a crowded, unsettled field.",
     "quote": "I have not made a decision… I may or may not.",
@@ -334,6 +354,15 @@
           "earlyState"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-08-29",
+        "headline": "Democrats on campaign trail divided by Kamala Harris",
+        "url": "https://thehill.com/homenews/campaign/6058417-harris-political-viability-concerns/",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNV1BzWkNZc19aWWh3R2luZFZxWUVJT2oyZFo1LXFzQ0c2aHk1MExoNENNZk5nMkFtaS1lRWZlRXpZanVpUEhRV20tVWtIOF95MGJ4amJ0Mlpqc3lseEtxZ3A0VlVockFVdFN2Wm10eGNJWDVJUUtSd3hIb0FnRDN2VENUUkNMRnh6WGIyc0pTdnZrSmNmclJ4QWY3TDlTdEdKWjVmZkoyeDRBdzhrSWVyUnh5OHh1MDhwUEtLN1VjdDBTOEZn?oc=5",
@@ -342,11 +371,11 @@
     },
     "early_states": {
       "SC": 2,
-      "IA": 3
+      "IA": 4
     },
     "early_states_last": {
       "SC": "2026-08-18",
-      "IA": "2026-08-27"
+      "IA": "2026-08-29"
     }
   },
   {

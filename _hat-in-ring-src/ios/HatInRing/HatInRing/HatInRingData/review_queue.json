@@ -1080,5 +1080,17 @@
     "note": "denial/downgrade — confirm before applying",
     "rid": "ac1f22ffd5d3",
     "kind": "denial"
+  },
+  {
+    "name": "Pete Hegseth",
+    "headline": "Pete Hegseth denies report he's considering a 2028 run: What polls show - Newsweek",
+    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPZHBSNk1fR0FZd2l5S3RIYVpPLUFEWER1YXdnYklUbGkwZEt5bDRjTlN2U3B1TmpnM2lWdnJOSnQ3R25RcG1OajVIVGlCV1lQUUtZRnJZUjkyRXhkMGRWbHB6MndPYk9WajRLNF90aWt5YW8zZ0hCMlUzS1pPeUVjS05vX2swYmxZbmxCS0Fhci1Od2dLR1czQjdQRVNDYTFKZThScUpn?oc=5",
+    "source": "Newsweek",
+    "date": "2026-08-29",
+    "keys": [
+      "consideringQuote"
+    ],
+    "rid": "648c06aaf181",
+    "kind": "discovery"
   }
 ]
