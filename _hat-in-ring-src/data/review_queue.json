@@ -1092,5 +1092,42 @@
     ],
     "rid": "648c06aaf181",
     "kind": "discovery"
+  },
+  {
+    "name": "Gretchen Whitmer",
+    "headline": "Michigan Gov. Gretchen Whitmer says she won't run for president in 2028 - PBS",
+    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQaEszSlZoVi1nRUwzMFFvaDJZcVdQSk03YjBDZTJucE80YmJaLUVZODRKa21ndF9icF9jSk1RVWJmT25VRnBVNU51ZVZFZ2k0NTBUX1Uwdkl4eHQ0c1RZWWlQd0NzWmFxT2Fqc1hBMkIyblJualA4UXVpM2JRcFQ5bHJEa1U4NUhVRmNXX3R5Xy1feEJKbEJYbFlOZm1DaURMQlpSemhkSlRMNkE?oc=5",
+    "source": "PBS",
+    "date": "2026-05-28",
+    "keys": [
+      "ruledOut"
+    ],
+    "note": "denial/downgrade — confirm before applying",
+    "rid": "bd9ed0568be6",
+    "kind": "denial"
+  },
+  {
+    "name": "Another Trump Cabinet",
+    "headline": "Another Trump Cabinet member is mulling a 2028 run for president: report - The Independent",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQMkVrbTJsaEE4d1daNHl3YUU5Vk15T2ZPQ2F4SXBfSnZSLWdTRnJCdjdBM1Rmand5OVF4cUZqRTMzQVh5eHZUZU5TaEZjd1h1OVBreFp1T2UxZkQ5Z0NXZEJIaDIzVzI3Zk9mZ0poTlpqS3RXSXRHVnRXV0JiT0tMcDBGbHFsazBwUldDMmZfM1phLTZHbUk5dHVPVE5EaGxsZVlGSk92MDhydFVVTmdiOQ?oc=5",
+    "source": "The Independent",
+    "date": "2026-08-29",
+    "keys": [
+      "consideringQuote"
+    ],
+    "rid": "a9ff9d305171",
+    "kind": "discovery"
+  },
+  {
+    "name": "Another Trump Cabinet",
+    "headline": "Another Trump Cabinet member is mulling a 2028 run for president - Daily Kos",
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNbVIzY3lWVGZFZ3pTdGlLQnZCUVJNSnBuYXlDUTFLSGxpRXpPRU5pTXlVNlRfay1rUnFtelRFdEQ3YmV4ZHNDWTk5U0hCZTNwREpLRl9sMTBNMk9HVUt3Y1dHVjl5aldCSW1BREE3NTVtaXRBeXhWWE9JQ0cwamY5bVB4OERRU1Y5LXJzbXdyZ0NBV1JaamhMLXhVMnNGclJrLUlXbmlBdjh4d29yZkhRWTdRVmFycnJqV2JySnln?oc=5",
+    "source": "Daily Kos",
+    "date": "2026-08-29",
+    "keys": [
+      "consideringQuote"
+    ],
+    "rid": "b3d642a294bb",
+    "kind": "discovery"
   }
 ]
