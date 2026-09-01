@@ -1129,5 +1129,29 @@
     ],
     "rid": "b3d642a294bb",
     "kind": "discovery"
+  },
+  {
+    "name": "DNC approves 2028 presidential nominatin",
+    "headline": "DNC approves 2028 presidential nominating cycle, leaving Iowa out - iowapublicradio.org",
+    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPQ1NIVTgwMXk0QnlxZ083ZEs4VjNnS0hOcDloWXpfWUFrTWFDUUFxZUtzLVBnV0NSUzIzMy1WVUx6Q0Q0ZFU2NDBlNWRXT2t3dE9JZE9RLW1oQkVzN0hzVDBQa2hxNHJiMHd2c1lOZFc1dHhGcUJoUGZHZS1wMTdiOTFqUDZMX2lTYmdja1J4NDlpODhrNzJXTGNJRU16cmFsOEJMSXJCUFhIaFVuUktRWkRNcjRiazhPMnZfbGplYw?oc=5",
+    "source": "iowapublicradio.org",
+    "date": "2026-08-17",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "b097bfced084",
+    "kind": "discovery"
+  },
+  {
+    "name": "Iowa Caucuses",
+    "headline": "Iowa Caucuses - The Des Moines Register",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1UY3ZHb1pzVHJ3UnExZG9HWHpMUWNzYW01SWc5NVN1NThfVTVxcFJ6NEdkaFM2MERERm5vb0lVV3dlMHFMQVdpUDhWSDNmNk1wSmlnX3llMndPNE5B?oc=5",
+    "source": "The Des Moines Register",
+    "date": "2014-10-31",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "9ba9ac7c6681",
+    "kind": "discovery"
   }
 ]

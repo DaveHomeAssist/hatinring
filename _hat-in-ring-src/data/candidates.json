@@ -219,7 +219,7 @@
     ],
     "conf": "High",
     "delta": 0,
-    "lastSignal": "2026-08-29",
+    "lastSignal": "2026-08-31",
     "headline": "South Carolina picked for first 2028 Democratic primary, in possible Kamala Harris boost - New York Post",
     "why": "The 2024 nominee tops early Democratic primary polling; a rematch frontrunner in a crowded, unsettled field.",
     "quote": "I have not made a decision… I may or may not.",
@@ -363,6 +363,15 @@
           "earlyState"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-08-31",
+        "headline": "Harris endorses Pappas for New Hampshire Senate",
+        "url": "https://thehill.com/homenews/campaign/6060905-harris-pappas-new-hampshire-senate/",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNV1BzWkNZc19aWWh3R2luZFZxWUVJT2oyZFo1LXFzQ0c2aHk1MExoNENNZk5nMkFtaS1lRWZlRXpZanVpUEhRV20tVWtIOF95MGJ4amJ0Mlpqc3lseEtxZ3A0VlVockFVdFN2Wm10eGNJWDVJUUtSd3hIb0FnRDN2VENUUkNMRnh6WGIyc0pTdnZrSmNmclJ4QWY3TDlTdEdKWjVmZkoyeDRBdzhrSWVyUnh5OHh1MDhwUEtLN1VjdDBTOEZn?oc=5",
@@ -371,11 +380,13 @@
     },
     "early_states": {
       "SC": 2,
-      "IA": 4
+      "IA": 4,
+      "NH": 1
     },
     "early_states_last": {
       "SC": "2026-08-18",
-      "IA": "2026-08-29"
+      "IA": "2026-08-29",
+      "NH": "2026-08-31"
     }
   },
   {
@@ -2222,7 +2233,7 @@
     ],
     "conf": "High",
     "delta": 0,
-    "lastSignal": "2026-08-26",
+    "lastSignal": "2026-08-31",
     "headline": "Donald Trump Reportedly Told Donors ‘We Need to Elect JD’ in 2028 - people.com",
     "why": "Legally ineligible; tracked only because of the chatter he generates.",
     "quote": "",
@@ -2302,6 +2313,15 @@
           "earlyState"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-08-31",
+        "headline": "US House Dems at Las Vegas shadow hearing link Trump ‘corruption’ to affordability crisis",
+        "url": "https://nevadacurrent.com/2026/08/31/house-dems-oversight-hearing-in-las-vegas-ties-trump-corruption-to-affordability-crisis/",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNLVFVVVc4dnU0YU1CeWZkSnV0WGdOZ3NYcHpyQ1JDUjZUdEF1d25xT056YzlBZXFwNTRfdUxDdTF3Z3pzaXFJdjFETm91OXpmMEhUVEU4cUtGOWREWG4tb016Z0Z0UDRGUnlHd2VoaURyV2tKbC1CeW1ZS1EySzEwcQ?oc=5",
@@ -2310,12 +2330,12 @@
     },
     "early_states": {
       "NH": 3,
-      "NV": 1,
+      "NV": 2,
       "SC": 1
     },
     "early_states_last": {
       "NH": "2026-08-12",
-      "NV": "2026-08-17",
+      "NV": "2026-08-31",
       "SC": "2026-08-26"
     }
   },
