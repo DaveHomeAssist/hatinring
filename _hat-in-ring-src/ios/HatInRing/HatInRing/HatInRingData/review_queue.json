@@ -1153,5 +1153,30 @@
     ],
     "rid": "9ba9ac7c6681",
     "kind": "discovery"
+  },
+  {
+    "name": "Gretchen Whitmer",
+    "headline": "Michigan Gov. Gretchen Whitmer says she’s not running for president in 2028 | CNN Politics - CNN",
+    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxONkZna1QzTnpESkRtTjBiQ2R1WkNPbzdYUHZteC05Y3RPRHlpajdrd3IySVptRHZSOVhVWWVDcjRuUmxZQmNhUGQyMjV0Ul9jM0pIdmpDdmJsLUR6UUs2ZVhOTURRQnBRZUk5N3JTYmxLNWJvTTRIM3pQS1JVR3gyRzFpcmFORlIwNjNIODF0NVJ1NEI0emdKWFZCUQ?oc=5",
+    "source": "CNN",
+    "date": "2026-05-28",
+    "keys": [
+      "ruledOut"
+    ],
+    "note": "denial/downgrade — confirm before applying",
+    "rid": "0c5dd4a29a2b",
+    "kind": "denial"
+  },
+  {
+    "name": "White House",
+    "headline": "Bacon not ruling out bid for White House - The Hill",
+    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPajlKUWRDc2VQaUJUSGtraXhfOFY0bUdPZFdZYUY0QkpIcm5vWmlKTHVtM0lJVHBmVzJOUjU1c3hjUlg2TnQ5UnFBZG81TExmSm56cmFoNGdHd0c5LXduaV9mTTIxRVExcGlTXzktSjlaeG9iM3RYQ0xNX0drVHdVU3EtUHZOeXEzOWJWddIBkgFBVV95cUxNZm83QktkNzFYZ0lXSmNId2dxaTh5aDZicFI2ekY3d3hzOENaaEpyY0dVeW1lNlVRUXpITHF3aWt0bUdacmg2bjlXbTljMUdZalVlaUl3SHgyOWUxV3VMV0x4VjdSUGNJMTIyUGhYU2pkT05DN1MzeklNREU2cm1CVlVmRGU4SDdldzV4cllKSXB2dw?oc=5",
+    "source": "The Hill",
+    "date": "2025-07-07",
+    "keys": [
+      "softConsidering"
+    ],
+    "rid": "e523ef7ab063",
+    "kind": "discovery"
   }
 ]

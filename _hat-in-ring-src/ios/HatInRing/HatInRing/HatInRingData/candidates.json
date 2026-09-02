@@ -30,6 +30,15 @@
           "declared"
         ],
         "conf": "High"
+      },
+      {
+        "date": "2026-05-26",
+        "headline": "Who Is Dan Greaney? The Simpsons ‘Prophet’ Announces Presidential Run - Yahoo",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPd3ZDanlMMWNRakNhTi1EVC1ONEFWZnhIMXZHVTNvVnNyS3UxSHRibzBOZkVqazJSUGx3VVBwcTN4R0F4d0k4OGlWb3cxeDlfbkVPeFdoQ3RYVkdyemI0Ulg2eDJhM19LUEo5Ulo3aERGZkVZdWNBVW84Tkg1ZVJ3VTJiU2hkaEpWZmFaRjlDNFdBeTZuRHRrSld2ZjM4Rjg?oc=5",
+        "keys": [
+          "declared"
+        ],
+        "conf": "Low"
       }
     ],
     "img": "assets/candidates/greaney/01_dan_greaney_campaign_jpg.jpg"
@@ -649,11 +658,12 @@
     "bucket": "considering",
     "keys": [
       "consideringQuote",
-      "earlyState"
+      "earlyState",
+      "donors"
     ],
     "conf": "High",
-    "delta": 5,
-    "lastSignal": "2026-08-14",
+    "delta": 10,
+    "lastSignal": "2026-09-01",
     "headline": "Khanna finishes another New Hampshire visit as he considers White House run - WMUR",
     "why": "First clear public timeline from the progressive-pragmatist lane.",
     "quote": "We'll look at that after the midterms.",
@@ -703,6 +713,15 @@
         "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMmtOcWNrM2NZSFpFeGdiVGtEdl9lSHgzcnhRdjc5X0NqN0gza2xxSk1vRFJ1a3Z1R2JseTZYaEhMU0JTZnlrLWJ4LXRlOThqMGZNSzBNZ2p1eG1fZzZUbHUtQnBraldJOXpNTnJGalN0OXZ3eUItX0lHZ1NxVWpLckhtRVRGNzA2eDE5d0NBMVdOMlNqcWstMVZrd3Q4Z0NDRTQ1X0Z6Y2tuNjlWaVhvSGhsNkFzQQ?oc=5",
         "keys": [
           "consideringQuote"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-09-01",
+        "headline": "Progressive Rep. Ro Khanna to headline Des Moines political fundraiser - The Des Moines Register",
+        "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQWmRwelFTcVdYTWRuQlZ2X3J1aExLSVJVYUNtOG50WmduNGlqc2ZkZFR3NXNNak1xVjNlS2xzQWsyamZ0bFcwNmdRQVhNRkhlYTItTXlweXNqU3lOenZFUFV2QWozZHU4bEFyZjVLUWU4UWZYbEtyeUlzS3BwRS1SV1doMDkxR094aFpoV3RDNlBnQXhxZ2hFSjFIejB5OWRzSGoybjRMdzFHbFp0SGtJeHNZTFRsZnh2enZmdXhNRTlNcnBVY0pGYjJiMmN2eXlBQlhWc0h5NENjOW9mbmllM1Vjc0NzTjQ?oc=5",
+        "keys": [
+          "donors"
         ],
         "conf": "Low"
       }
@@ -1063,6 +1082,15 @@
           "earlyState"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-04-08",
+        "headline": "Sen. Elissa Slotkin sits down with Trump voters in Iowa while campaigning for Democrats - CBS News",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNUWtDbFlCU0oyVHgzS19nWVdLSG1kNEt6cWdCejYta25pc0UxbUgxSmhwRy12Zl94bjVKQVByOWNlc1Z2eUExbWl2aXFKLWxGQzV3cnVxVHc0UmM0MVZLcFZGMzNkMlJNb2lZSFFnNDJiaEREcWlSX3B0NEc1OUVQTXgtZGVGeTd0RFY2aE9XUnZlbXdiOERQTHN0ZHhJeEZCTkxEWVdB0gGrAUFVX3lxTE00S04tY3ZLZmc5VGNtUmVVM0JIZFJodlNzTWs5dFI0eTlvZTdGdmE1S1ZxNXUzRWgxTTBmOW1ubS0xd2FjM3lWUFF2cnkySGpvS2xJRk01T2MzTkR3LVRITWNFdzFzR0c0UUdsblduSWNYNUUyUHNHdnUyaU1LdHdRV3FEbElrcjZaMEtOODl4SFFLZmIxc0pXUWRwRzBhZldvSDF2OHlHQXc1QQ?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOSkRuMktZcnpCQlc4d3dVQkxWT2sxRllQbTJPdEY2Ny1RSnJYckRKWDIzLUYwdjhKMktYYlJNcnAzMlU1NEc1Y3ZUODJZMjdYLXBNb295bWptV3dJci1WSGxmVDhnWGkyWTZDM2F6dUllUFBYZko2Y0t2S3JmaDhkMHNkcFRrVmd6UXg1WGJtdTBPalpqZ2RQamxhMDZnQmhxYVJVS0hB?oc=5",
@@ -1070,7 +1098,7 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Elissa_Slotkin"
     },
     "early_states": {
-      "IA": 2
+      "IA": 3
     },
     "early_states_last": {
       "IA": "2026-04-08"

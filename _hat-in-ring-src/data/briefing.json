@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-01",
+  "date": "2026-09-02",
   "movers": [
     {
       "id": "hunter",
@@ -47,11 +47,11 @@
       "statusLabel": "Actively considering"
     },
     {
-      "id": "aoc",
-      "name": "Alexandria Ocasio-Cortez",
+      "id": "khanna",
+      "name": "Ro Khanna",
       "party": "Democrat",
-      "delta": 8,
-      "score": 50,
+      "delta": 10,
+      "score": 45,
       "tier": 3,
       "statusLabel": "Actively considering"
     }
@@ -83,7 +83,7 @@
     }
   ],
   "transitions": [],
-  "review_count": 95,
+  "review_count": 97,
   "totals": {
     "tracked": 41,
     "formal": 3,
