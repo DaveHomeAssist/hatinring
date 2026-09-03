@@ -219,5 +219,18 @@
     "direction": "up",
     "reason": "‘Real Time’: Hunter Biden Shoots Down Presidential Bid, Jokes “Check If I Relapsed” If He Ever Announces Run - Deadline",
     "reconstructed": false
+  },
+  {
+    "id": "vance",
+    "name": "J.D. Vance",
+    "party": "Republican",
+    "date": "2026-09-03",
+    "from": 3,
+    "to": 4,
+    "fromLabel": "Considering",
+    "toLabel": "Exploratory",
+    "direction": "up",
+    "reason": "Ted Cruz Is Testing the Waters for a 2028 Run—and Taking Swipes at JD Vance - WSJ",
+    "reconstructed": false
   }
 ]

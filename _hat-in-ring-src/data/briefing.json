@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-02",
+  "date": "2026-09-03",
   "movers": [
     {
       "id": "hunter",
@@ -47,13 +47,13 @@
       "statusLabel": "Actively considering"
     },
     {
-      "id": "khanna",
-      "name": "Ro Khanna",
-      "party": "Democrat",
+      "id": "vance",
+      "name": "J.D. Vance",
+      "party": "Republican",
       "delta": 10,
-      "score": 45,
-      "tier": 3,
-      "statusLabel": "Actively considering"
+      "score": 70,
+      "tier": 4,
+      "statusLabel": "Exploratory"
     }
   ],
   "new_filers": [
@@ -76,17 +76,30 @@
       "statusLabel": "Declared"
     },
     {
+      "id": "vance",
+      "name": "J.D. Vance",
+      "tier": 4,
+      "statusLabel": "Exploratory"
+    },
+    {
       "id": "hunter",
       "name": "Hunter Biden",
       "tier": 5,
       "statusLabel": "Declared"
     }
   ],
-  "transitions": [],
-  "review_count": 97,
+  "transitions": [
+    {
+      "name": "J.D. Vance",
+      "from": 3,
+      "to": 4,
+      "date": "2026-09-03"
+    }
+  ],
+  "review_count": 104,
   "totals": {
     "tracked": 41,
     "formal": 3,
-    "considering": 14
+    "considering": 13
   }
 }
