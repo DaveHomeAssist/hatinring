@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-03",
+  "date": "2026-09-04",
   "movers": [
     {
       "id": "hunter",
@@ -38,15 +38,6 @@
       "statusLabel": "Declared"
     },
     {
-      "id": "carlson",
-      "name": "Tucker Carlson",
-      "party": "Republican",
-      "delta": 15,
-      "score": 25,
-      "tier": 3,
-      "statusLabel": "Actively considering"
-    },
-    {
       "id": "vance",
       "name": "J.D. Vance",
       "party": "Republican",
@@ -54,24 +45,21 @@
       "score": 70,
       "tier": 4,
       "statusLabel": "Exploratory"
+    },
+    {
+      "id": "khanna",
+      "name": "Ro Khanna",
+      "party": "Democrat",
+      "delta": 10,
+      "score": 45,
+      "tier": 3,
+      "statusLabel": "Actively considering"
     }
   ],
   "new_filers": [
     {
-      "id": "greaney",
-      "name": "Dan Greaney",
-      "tier": 5,
-      "statusLabel": "Declared"
-    },
-    {
       "id": "newsom",
       "name": "Gavin Newsom",
-      "tier": 5,
-      "statusLabel": "Declared"
-    },
-    {
-      "id": "kelly",
-      "name": "Mark Kelly",
       "tier": 5,
       "statusLabel": "Declared"
     },
@@ -96,7 +84,7 @@
       "date": "2026-09-03"
     }
   ],
-  "review_count": 104,
+  "review_count": 106,
   "totals": {
     "tracked": 41,
     "formal": 3,

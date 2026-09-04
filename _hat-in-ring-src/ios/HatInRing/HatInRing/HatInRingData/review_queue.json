@@ -1265,5 +1265,30 @@
     ],
     "rid": "b08852eb7e08",
     "kind": "discovery"
+  },
+  {
+    "name": "Jim Justice",
+    "headline": "Jim Justice considering run for West Virginia governor",
+    "url": "https://thehill.com/homenews/campaign/6070220-jim-justice-considers-wv-governor-run/",
+    "source": "The Hill",
+    "date": "2026-09-03",
+    "keys": [
+      "consideringQuote"
+    ],
+    "rid": "5fae2b99ac92",
+    "kind": "discovery"
+  },
+  {
+    "name": "Donald Trump",
+    "headline": "Election experts see few legal options for Trump to meddle with polling places",
+    "url": "https://newhampshirebulletin.com/2026/09/03/repub/election-experts-see-few-legal-options-for-trump-to-meddle-with-polling-places/",
+    "source": "New Hampshire Bulletin",
+    "date": "2026-09-03",
+    "keys": [
+      "ruledOut"
+    ],
+    "note": "denial/downgrade — confirm before applying",
+    "rid": "1cce5d4da60e",
+    "kind": "denial"
   }
 ]
