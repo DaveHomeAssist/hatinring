@@ -130,7 +130,7 @@
     "early_states": {
       "NH": 1,
       "NV": 4,
-      "SC": 4
+      "SC": 5
     },
     "early_states_last": {
       "NH": "2025-09-05",
@@ -223,6 +223,15 @@
         "date": "2026-09-04",
         "headline": "Gavin Newsom rallies South Carolina Democrats as 2028 speculation grows - WJCL",
         "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPNGZOa2xuRFYtdVdGMVdQeTc4RVBRUzRoWnRldjJzTDlMTFM2RWlBSzNpSzRsYWh3MlQyT3ZuR1d4ZllybEwzXzA5MWZjRUVlMUFrODEzQjhpal9QLUFBSERkeTIwaWItajJSZmdveTVQems2bGZZTkJSTkV4U3NFUlRocmhGRWV3Z1paQnBjSTQ?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-09-04",
+        "headline": "Newsom raises cash for SC Dems as the possible 2028 hopeful tries to mobilize midterm turnout - South Carolina Public Radio",
+        "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOUWdkZzM2RUhJSnZLYkxwMndMX3loTGg0SDJTdGtuVTctLVR4dTJ6dzA2bHZKZm0yM1lpNnM2Nk85RFFRUnQ4Ym8zenRkY0JfdzZfY1pFaXZFRTQ3cmtLdHBHZUhIcXBKMTl5eGVBWi1maHVQbmNkSUFBcVJQQTNhb0xNQWtmSld2NXRuQk80QThqa2N1UG9nOUtiQjFWazRXMS0zTi05d252UWp1UThsdkF1S0VlZHU2bV8waXRQc3VtbXZ4d1RVY1hyRjZWMk1vbm90c3VPRVRldjJkVDczaTNSSWctUWI4SUE1NE9ZZFJmTE9GNWc?oc=5",
         "keys": [
           "earlyState"
         ],
