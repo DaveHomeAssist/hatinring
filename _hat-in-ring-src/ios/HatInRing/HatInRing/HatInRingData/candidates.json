@@ -2352,11 +2352,12 @@
     "keys": [
       "softConsidering",
       "mediaBlitz",
-      "declared"
+      "declared",
+      "consideringQuote"
     ],
     "conf": "Noise",
     "delta": 28,
-    "lastSignal": "2026-08-22",
+    "lastSignal": "2026-09-06",
     "headline": "Hunter Biden reveals he's 'definitely not running' for office despite media tour - Fox News",
     "why": "Joke/troll posting, incl. VP talk with Newsom — not a real candidacy.",
     "quote": "Let's take another crack with a Biden.",
@@ -2394,6 +2395,15 @@
           "mediaBlitz"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-09-06",
+        "headline": "Hunter Biden: 'I may have to' run for president in 2028",
+        "url": "https://thehill.com/homenews/campaign/6073586-hunter-biden-says-i-may-have-to-run-in-2028/",
+        "keys": [
+          "consideringQuote"
+        ],
+        "conf": "Medium"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPWjJwVXJsN2hzcUR0VWJJWlZfaEJ2dHQ4d2RxOTJVVUlEVzlISTdIUUhnLXphU3Z1UFdrLXVoMWlrTkxDbEpqb0xMUnppRmUxSWN6RVhEYWV1aGFILUtYUk10VFFzVnM1MVlyWF9WZWs1NTBtOXFCelRnQlpRQkYxV01ub2FwUXJKdXl1c08tcndrdTZOZnp6REVWa0ZrZDBOVnlrVTln0gGrAUFVX3lxTE1QU0Rka3VuaUpNaTY5MDFUTW4tQngwMExTbUlWemtEYTJ4TnBGZjZGUkJEWXNicG45Y0VNV21hLWN5OXVlLVJfd0dVNlBFU0ljeFh6c3l3U2RCOVZYX2lDVXh5U09YWnZxQmh3MlIzMFlWRVg0cHZjNTlHTjRvd29La3lHMzg4V1RWZnRwNnJzQkpqbHI4MFpmaklfZVlpVFEyRFlHbWxORDBOOA?oc=5",
@@ -2725,7 +2735,7 @@
     ],
     "conf": "Low",
     "delta": 0,
-    "lastSignal": "2026-06-10",
+    "lastSignal": "2026-09-04",
     "headline": "Stephen A. Smith Says He's Open to 2028 Run After Pastor's Advice: 'You Don't Know What God Has Planned' - Beliefnet",
     "why": "Backed away from earlier flirtation.",
     "quote": "",

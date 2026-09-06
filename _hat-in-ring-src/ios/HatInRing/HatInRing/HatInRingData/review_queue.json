@@ -1362,5 +1362,30 @@
     ],
     "rid": "0e2d45f0639d",
     "kind": "discovery"
+  },
+  {
+    "name": "Stephen A. Smith",
+    "headline": "Stephen A. Smith rules out 2028 presidential run - Sports Business Journal",
+    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNZ24wZTNPS3FSRm9ETmlNRHBOSmE3S2NTc2o3bG5DN210LW5XSm9IbTFnd19kc2ZCS1hELTBUeF9VZXFhYnZrclhkdlowc05Pa2llVFhaUmRXWlZjdS1scWdqS05qN1VmOEpLX2d0Tm9KUjRfWnlGdFBqWVpraWtpR1JQZkxvYlZBNkNiUndZTEx5SjlMcEdkYy1GeklnbGFaZkM1d0J5Vzd2Zw?oc=5",
+    "source": "Sports Business Journal",
+    "date": "2026-09-04",
+    "keys": [
+      "ruledOut"
+    ],
+    "note": "denial/downgrade — confirm before applying",
+    "rid": "471e82966456",
+    "kind": "denial"
+  },
+  {
+    "name": "New Hampshire's GOP",
+    "headline": "New Hampshire's GOP primary features two familiar names from the past, and voters are fine with that - AP News",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQa1htVHo0OHZBVmU2ZnBBTVI0NjEzWkFMUS1ucG94OWxWQ21pR0dISkRUR2Jwa21TTDlRbGhkS3pTZXJJWE9acEZCWjlLVFZEUWZkRGhEOEJfcXFUTDZzWldaNlpaRjJ6YlB0M2FkaGczbG1RMk9lRkE3XzJaTXdzTGxoRGxBdHpaXzBoTDdmQTFnbGhMRWx2ZlF5QVliSHFWSW04?oc=5",
+    "source": "AP News",
+    "date": "2026-09-05",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "0535a187add4",
+    "kind": "discovery"
   }
 ]
