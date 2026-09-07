@@ -1387,5 +1387,42 @@
     ],
     "rid": "0535a187add4",
     "kind": "discovery"
+  },
+  {
+    "name": "Gretchen Whitmer",
+    "headline": "Michigan Gov. Whitmer says she won't run for president in 2028 then back­tracks hours later - Spectrum News",
+    "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPWG9iZU8zZml6R1hUWExRUXRDQnJPVGRHR3N4Qmx0LXpsWDQwSk9IMHlja3M0WEdYbVQ2ZkNzZjlUT3E1S2tvOUZNdTJaVzJkVVVZeW9qUGxiTEV6SnJLN3NkRU5UdXFpdHRyWndNXzMwWDVGcHA0QVJDekwzdHdPNlI2LTJPVUk3VG1LZUVmY19DVmtfTFc2a2pEbTJvVGlWRDFrWVBFdHBmUDRsOVZJUERXMXVwc2lOR2NVOEFfSzdad0ZoVFl6Y3d4NkxWYmQ5ZGFxWFdhRmtJaVQ5dHY2WDdn?oc=5",
+    "source": "Spectrum News",
+    "date": "2026-05-29",
+    "keys": [
+      "ruledOut"
+    ],
+    "note": "denial/downgrade — confirm before applying",
+    "rid": "02b9a0b6e0a3",
+    "kind": "denial"
+  },
+  {
+    "name": "Kennedy not ruling out 2028 presidential",
+    "headline": "Kennedy not ruling out 2028 presidential run - pro.stateaffairs.com",
+    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBHeWlGM1ROcEYxNjFsbzRTdmZoZHNEbTBCNEZpODNvc0tBSWYxb2pFWVlMMVY3S2dNdVBXUW9FTXZ3andIY1NNMHNLLXluMDJpQldsWE1UaWJaU1lVVzQzc1BQclpXVnlsdWtLd1pkVGcwR1Nf?oc=5",
+    "source": "pro.stateaffairs.com",
+    "date": "2026-06-15",
+    "keys": [
+      "softConsidering"
+    ],
+    "rid": "4563e365f8a8",
+    "kind": "discovery"
+  },
+  {
+    "name": "Matt Campbell",
+    "headline": "Matt Campbell agrees to new deal with Iowa State through 2028 season - The Des Moines Register",
+    "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNZkJZV2lyeHQwRVVJNm9FeGZuTGp5X0NNclAtNGVNR29IMWN1NVJWYkVRQ1gxMXh2cFRhaWE4Vjk3UlpMZ0dLc2drdUFQNnFKd3JVcTJfRTl6VG1FbUtaVjEyb0xaX24zNUlDM0lnR0lINDJLVHRGRk5ncEtOUjFxN3ZFMHBkMk1ad3FkakNKSTQyVnByRWhzaF9mSmtRcWdPdmJhOVp6ZDJ3dnZiRkVpQXNQeC1Ua18tT0NRdE5VRG9PWG1LVXFrM2k0eHR1VEU5ZVQ2R0RtTzg3X200d1AwMnRsNDZzMXdQNFJMSF9QRERCN0YtU1hIUlEzbkM?oc=5",
+    "source": "The Des Moines Register",
+    "date": "2021-02-08",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "2ada623bd4bb",
+    "kind": "discovery"
   }
 ]
