@@ -129,12 +129,12 @@
     },
     "early_states": {
       "NH": 1,
-      "NV": 4,
-      "SC": 6
+      "NV": 5,
+      "SC": 7
     },
     "early_states_last": {
       "NH": "2025-09-05",
-      "NV": "2026-08-16",
+      "NV": "2026-09-07",
       "SC": "2026-09-07"
     },
     "evidence": [
@@ -241,6 +241,24 @@
         "date": "2026-09-07",
         "headline": "Gavin Newsom stumps for South Carolina Democrats — and a possible 2028 bid - CNN",
         "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1naGt4YWJ6ODByWG5MWXp5LUhnbzlKaktPYlZwMFdXU0NWUHBZOVlBLXp1dEFpdkdqbUM4ckNFUWw1cHZFM2N1VmZ0NnVCOGpXbkYyN3pERUNiemRxMHFCWG1VVTh1cFZUdVFOYUJySEpUX0VGZHBqemRYMkN5dw?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-09-07",
+        "headline": "Nevada Republicans are testing the 2028 case against Gavin Newsom - Politico",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPX2Y2UUx2b3N0QmhSN0NwZHRpbHBSV2I2UmtwZHAtSGJNcXNZWE9RaGgyZ0FORVN0VTlOOS0xdlN2WE5lWEtTSEhVUkRNWnI0Y3RpaGxaaWwyRHB1MDdDV1NCbE5NNWwyNTNEREY5VVpXX05TMVhmMkpNcFJ3NzFmWWhST04zcnJuUHdVSHdvZ3FWcmhPdUNpdHhPeEUzU2F3?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-09-07",
+        "headline": "Gavin Newsom Courts South Carolina Democrats as He Eyes a Possible 2028 Presidential Run - Межа. Новини України.",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBSYm5ucnAwbkhud2g0V3NLWWk0NXhRT3p2ZFp5X2tZa21NdS1wYW94SElvMTBwekJ5aW1JS3YwUjVlbnZqTk9WTjRPM3pWZDl0VHQxZ0ItRXlINXMzVXo2ZXhiUmZ5SjA?oc=5",
         "keys": [
           "earlyState"
         ],
