@@ -1200,11 +1200,12 @@
       "donors",
       "staffing",
       "earlyState",
-      "mediaBlitz"
+      "mediaBlitz",
+      "declared"
     ],
     "conf": "High",
     "delta": 20,
-    "lastSignal": "2026-09-04",
+    "lastSignal": "2026-09-08",
     "headline": "Sen. Ted Cruz addresses 2028 presidential bid while in Iowa - KWTX",
     "why": "2016 infrastructure & donor base; explicit intra-MAGA lane.",
     "quote": "",
@@ -1248,6 +1249,23 @@
           "mediaBlitz"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-09-08",
+        "headline": "Fox’s Larry Kudlow Suggests Ted Cruz Announce Presidential Bid in November: ‘You Might Wanna Think About It’ - Yahoo",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPdDQ1S1FEelNfVjFGR2dpeTluemVwcFhUMWNKamdNbkFuNXh2RC11OHlzVGJpTU1yV19QZjNjOGIwenA2Nk9kTFdpRnh6Z18zYjRIX1pNRWhPYjlWdDZpWFpKSlFqRnBaR0tCNjlxN3FraXlJUW1kSm45eW9pWDJGWk5BMUVCOGlVUjFKazYtU1UxV3M?oc=5",
+        "keys": [
+          "declared"
+        ],
+        "conf": "Low"
+      }
+    ],
+    "history": [
+      {
+        "date": "2026-09-08",
+        "from": 3,
+        "to": 5,
+        "reason": "Fox’s Larry Kudlow Suggests Ted Cruz Announce Presidential Bid in November: ‘You Might Wanna Think About It’ - Yahoo"
       }
     ]
   },

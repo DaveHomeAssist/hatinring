@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-08",
+  "date": "2026-09-09",
   "movers": [
     {
       "id": "hunter",
@@ -15,9 +15,9 @@
       "name": "Ted Cruz",
       "party": "Republican",
       "delta": 20,
-      "score": 60,
-      "tier": 3,
-      "statusLabel": "Actively considering"
+      "score": 80,
+      "tier": 5,
+      "statusLabel": "Declared"
     },
     {
       "id": "beshear",
@@ -64,6 +64,12 @@
       "statusLabel": "Declared"
     },
     {
+      "id": "cruz",
+      "name": "Ted Cruz",
+      "tier": 5,
+      "statusLabel": "Declared"
+    },
+    {
       "id": "vance",
       "name": "J.D. Vance",
       "tier": 4,
@@ -78,6 +84,12 @@
   ],
   "transitions": [
     {
+      "name": "Ted Cruz",
+      "from": 3,
+      "to": 5,
+      "date": "2026-09-08"
+    },
+    {
       "name": "J.D. Vance",
       "from": 3,
       "to": 4,
@@ -88,6 +100,6 @@
   "totals": {
     "tracked": 41,
     "formal": 3,
-    "considering": 13
+    "considering": 12
   }
 }

@@ -232,5 +232,31 @@
     "direction": "up",
     "reason": "Ted Cruz Is Testing the Waters for a 2028 Run—and Taking Swipes at JD Vance - WSJ",
     "reconstructed": false
+  },
+  {
+    "id": "cruz",
+    "name": "Ted Cruz",
+    "party": "Republican",
+    "date": "2026-09-08",
+    "from": 3,
+    "to": 5,
+    "fromLabel": "Considering",
+    "toLabel": "Declared",
+    "direction": "up",
+    "reason": "Fox’s Larry Kudlow Suggests Ted Cruz Announce Presidential Bid in November: ‘You Might Wanna Think About It’ - Yahoo",
+    "reconstructed": false
+  },
+  {
+    "id": "cruz",
+    "name": "Ted Cruz",
+    "party": "Republican",
+    "date": "2026-09-09",
+    "from": 3,
+    "to": 5,
+    "fromLabel": "Considering",
+    "toLabel": "Declared",
+    "direction": "up",
+    "reason": "",
+    "reconstructed": true
   }
 ]
