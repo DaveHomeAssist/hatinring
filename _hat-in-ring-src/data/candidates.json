@@ -518,6 +518,15 @@
           "earlyState"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-03-29",
+        "headline": "Booker ‘not ruling out’ 2028 presidential bid - The Hill",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOLWlyMXNoellHSGJkeFU0ZjA4cnhyYi1vb3h1ZnNJVUEzUE55NTBQLWFCM0dsSDVjQ1JUSEtwazhDem5ia3dQNnRIWTFvSUIzbno0Y1JTV2ZUWEljZGlwYXB0QW40eGJXdVkwcExBZHNGV0FYbFpMNVJ5Y3kyTk9rUFNqRHRGTjg?oc=5",
+        "keys": [
+          "softConsidering"
+        ],
+        "conf": "Medium"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPbnFoTGQzaUFENDIzTk5MNk1kNFZaOXNtY09EcmdWN2liWHpaMC02aXFIM2g5V1JvRDB2QmtyU3BCUVZZRHZsa2NNRWt4TDY0THlJb3FMZmV0NzRUT3g3MlpvTE9LU1RWTm9SUk5zRU5qREhfZFk5UzlsZVdETW90SkxZelJtMDBELWJJSw?oc=5"
@@ -897,8 +906,8 @@
       "mediaBlitz"
     ],
     "conf": "High",
-    "delta": 0,
-    "lastSignal": "2026-06-26",
+    "delta": 5,
+    "lastSignal": "2026-09-08",
     "headline": "Pritzker builds out-of-state party coalitions that may prove helpful in 2028",
     "why": "Self-funding Illinois governor laying groundwork; vows to be 'very involved' in 2028 and is exploring national fundraising.",
     "quote": "I can't rule anything out.",
@@ -909,7 +918,18 @@
     ],
     "links": {
       "wikipedia": "https://en.wikipedia.org/wiki/JB_Pritzker"
-    }
+    },
+    "evidence": [
+      {
+        "date": "2026-09-08",
+        "headline": "‘Ready for the Fight’: Why JB Pritzker is taking his slogan national with PAC targeting MAGA - Capitol News Illinois",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPWFJPaUtNdGdzQ0FHRzNFNTBJendvZVF0MmFPSHJuWHRFTldMQW9YQTZ6bTc0YWlELXVLaVFYeXN6eGxianBHMEhvSzhRaGhNM0dTWGtmaldtVUN4amNocWd0YmM1cVh0RFdkUElBc3FwY1E5R3JsSk9aOFhURmtEcElObnVCbWZTX0U0NEtydy00eldTSTRMc1o0NmhxUC1jb2JMaUhMbVVXd0k5TUQ0UWllWE9VTFlCelJPREVXUVNLN1NfZ0E?oc=5",
+        "keys": [
+          "donors"
+        ],
+        "conf": "Low"
+      }
+    ]
   },
   {
     "id": "emanuel",
@@ -2458,7 +2478,7 @@
     ],
     "conf": "High",
     "delta": 0,
-    "lastSignal": "2026-09-03",
+    "lastSignal": "2026-09-10",
     "headline": "Donald Trump Reportedly Told Donors ‘We Need to Elect JD’ in 2028 - people.com",
     "why": "Legally ineligible; tracked only because of the chatter he generates.",
     "quote": "",
@@ -2547,6 +2567,15 @@
           "earlyState"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-09-10",
+        "headline": "Sens. Hoeven, Grassley see more to do for ranchers amid Trump plan to import beef",
+        "url": "https://iowacapitaldispatch.com/2026/09/09/repub/sens-hoeven-grassley-see-more-to-do-for-ranchers-amid-trump-plan-to-import-beef/",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNLVFVVVc4dnU0YU1CeWZkSnV0WGdOZ3NYcHpyQ1JDUjZUdEF1d25xT056YzlBZXFwNTRfdUxDdTF3Z3pzaXFJdjFETm91OXpmMEhUVEU4cUtGOWREWG4tb016Z0Z0UDRGUnlHd2VoaURyV2tKbC1CeW1ZS1EySzEwcQ?oc=5",
@@ -2556,12 +2585,14 @@
     "early_states": {
       "NH": 3,
       "NV": 2,
-      "SC": 1
+      "SC": 1,
+      "IA": 1
     },
     "early_states_last": {
       "NH": "2026-08-12",
       "NV": "2026-08-31",
-      "SC": "2026-08-26"
+      "SC": "2026-08-26",
+      "IA": "2026-09-10"
     }
   },
   {
@@ -2576,8 +2607,8 @@
       "earlyState"
     ],
     "conf": "Medium",
-    "delta": 0,
-    "lastSignal": "2026-06-03",
+    "delta": 5,
+    "lastSignal": "2026-09-10",
     "headline": "Not planning a run; signals support for Vance",
     "why": "Trump floats him as Vance's running mate, not a rival.",
     "quote": "",
@@ -2602,7 +2633,7 @@
     ],
     "conf": "High",
     "delta": 0,
-    "lastSignal": "2026-07-14",
+    "lastSignal": "2026-09-10",
     "headline": "Gov. Wes Moore answers 'whether he's considering a run' for President in 2028 - Modern Ghana",
     "why": "Clear denial; often cited as a future-cycle prospect instead.",
     "quote": "I am not running.",

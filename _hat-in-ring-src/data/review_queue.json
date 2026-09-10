@@ -1436,5 +1436,44 @@
     ],
     "rid": "543e7e20fbf0",
     "kind": "discovery"
+  },
+  {
+    "name": "Marco Rubio",
+    "headline": "Marco Rubio Rules Out A Run For The 2028 US Presidential Election - i24NEWS",
+    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNNGllOWI1cVMzbVpFODQyMUhLb3VSbWRWaU03VnZmcTFxbzNTa29GYzU0NnE3cjFDTmNuSXFZUEwxTkk1dGppM1AtTG9mdTc5c0JWRFpReHJKTldOV2JvT2EyRk91bll4LTZQangxRk1PQWZhRlBidHR4QnN0akdVQUs1R1MtdUd2Tm9hSmFSSENKY1U0eVhMbjlXRlhxWXNFVzFVQzFpN09YMkZaOC1qa2JCbTJFcXZTc3oydW5oWGJ6Zw?oc=5",
+    "source": "i24NEWS",
+    "date": "2026-09-10",
+    "keys": [
+      "ruledOut"
+    ],
+    "note": "denial/downgrade — confirm before applying",
+    "rid": "06e8c4f85272",
+    "kind": "denial"
+  },
+  {
+    "name": "Marco Rubio",
+    "headline": "Report: Rubio says he has no plans to run in 2028 - Israel National News",
+    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE05VlozUFE0WW1qZHRVQUlCZzhnM0YtZ0w3T2NoYXQ2TklmTlY2dmNsRVR0b21CVzlKMjA5Z0hMa0ZyRmhKbUJlb2xMOGxBUXJWY1BlQXFOZzhOQQ?oc=5",
+    "source": "Israel National News",
+    "date": "2026-09-10",
+    "keys": [
+      "ruledOut"
+    ],
+    "note": "denial/downgrade — confirm before applying",
+    "rid": "c3bc656e9dbe",
+    "kind": "denial"
+  },
+  {
+    "name": "Wes Moore",
+    "headline": "Democrat Wes Moore, Under Fire for Résumé Fibs, Strongly Indicates He's Running for President, Reversing Past Claim That 'I'm Not Running' - freebeacon.com",
+    "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNR0tpRjlDYUI1WUNMYlRuRjVQZFY0bUo0S1l4Q1RpTGw0Yk9pWmp3RS1TdUhWTENlLVJNVmdhWjNUWHlmNjZKdl9NZ2hKSjNReTM5MHBoLTF3czY1Sm0yc2FVaDBhY21sWXNLU3h4dzNoeC1BT1Ytc3NYUDdfeGZsU1JXQ01YSHRCdzFHTGl3OXNHWHBLY1FIT1VjRE5JRFpZdkZzOHBROU5UVkFpWEVXa19kdGE1NEpDVzlRTW41QWo1U054V2VzdlhMdjBoS1E1TlF1MHhpNlExX1NYUldlbG5LaDQwbHZmbDdJWURRS090eHJBOFBjSg?oc=5",
+    "source": "freebeacon.com",
+    "date": "2026-09-10",
+    "keys": [
+      "ruledOut"
+    ],
+    "note": "denial/downgrade — confirm before applying",
+    "rid": "3f932e093009",
+    "kind": "denial"
   }
 ]
