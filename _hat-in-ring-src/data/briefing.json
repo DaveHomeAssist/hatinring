@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-10",
+  "date": "2026-09-11",
   "movers": [
     {
       "id": "hunter",
@@ -20,15 +20,6 @@
       "statusLabel": "Declared"
     },
     {
-      "id": "beshear",
-      "name": "Andy Beshear",
-      "party": "Democrat",
-      "delta": 15,
-      "score": 50,
-      "tier": 3,
-      "statusLabel": "Actively considering"
-    },
-    {
       "id": "greaney",
       "name": "Dan Greaney",
       "party": "Republican",
@@ -36,6 +27,15 @@
       "score": 45,
       "tier": 5,
       "statusLabel": "Declared"
+    },
+    {
+      "id": "beshear",
+      "name": "Andy Beshear",
+      "party": "Democrat",
+      "delta": 15,
+      "score": 45,
+      "tier": 3,
+      "statusLabel": "Actively considering"
     },
     {
       "id": "vance",
@@ -88,15 +88,9 @@
       "from": 3,
       "to": 5,
       "date": "2026-09-08"
-    },
-    {
-      "name": "J.D. Vance",
-      "from": 3,
-      "to": 4,
-      "date": "2026-09-03"
     }
   ],
-  "review_count": 121,
+  "review_count": 126,
   "totals": {
     "tracked": 41,
     "formal": 3,

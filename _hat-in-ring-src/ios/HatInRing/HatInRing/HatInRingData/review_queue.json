@@ -1475,5 +1475,66 @@
     "note": "denial/downgrade — confirm before applying",
     "rid": "3f932e093009",
     "kind": "denial"
+  },
+  {
+    "name": "Iowa GOP",
+    "headline": "Iowa GOP caucuses first-in-the-nation status approved for 2028",
+    "url": "https://iowacapitaldispatch.com/2026/09/10/iowa-gop-caucuses-first-in-the-nation-status-approved-for-2028/",
+    "source": "Iowa Capital Dispatch",
+    "date": "2026-09-11",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "abf1df36f9fd",
+    "kind": "discovery"
+  },
+  {
+    "name": "Donald Trump",
+    "headline": "Hinson doesn’t rule out Trump’s pledge of $5K to adults; calls for relief for families",
+    "url": "https://iowacapitaldispatch.com/2026/09/10/hinson-doesnt-rule-out-trumps-pledge-of-5k-to-adults-calls-for-relief-for-families/",
+    "source": "Iowa Capital Dispatch",
+    "date": "2026-09-10",
+    "keys": [
+      "ruledOut"
+    ],
+    "note": "denial/downgrade — confirm before applying",
+    "rid": "16a1232650ff",
+    "kind": "denial"
+  },
+  {
+    "name": "GOP Iowa Caucuses",
+    "headline": "It's official, GOP Iowa Caucuses to go first in 2028, party chair says - The Des Moines Register",
+    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNUDJqcnZWeWV4UWt4NlhqOE9md3AwSUFYcElzN1RhWkk2R3JnXzkwb29ubFFYVTFNc2hIOFd6eEM0ZUszZDB4eGxNSUtHTWRBeVZFWlhpMmRNUUtqTWdpTDhRZ0JKNDhvdnNFQTRvaWxGcHBucHZDcnlLSjUxeXBxWGtmbWt3UklSMkZad201MHhmYlBHNWJheWd5blY3UHdmUXJQQWtLbW10ekZQdldkd2dYZ1dyWFluamRZXzNQN0VIWnlCOTA1NXJSX3dFUGdHWmpjbFRB?oc=5",
+    "source": "The Des Moines Register",
+    "date": "2026-09-10",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "b4d69d891e71",
+    "kind": "discovery"
+  },
+  {
+    "name": "Des Moines Register",
+    "headline": "The Des Moines Register - Des Moines, Iowa, News and Sports - The Des Moines Register",
+    "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE56dlNXaXNtWm04bnhHbVBTckh2OFJHZndCM2JpWjZWTjYydUgwRDVPZmd2c2lwRTYtNFhJeFgzTE85Mk51cjY3bmdB?oc=5",
+    "source": "The Des Moines Register",
+    "date": "2012-07-07",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "6194f6cb70cd",
+    "kind": "discovery"
+  },
+  {
+    "name": "Des Moines",
+    "headline": "Des Moines, Iowa News - The Des Moines Register",
+    "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE43UXVHbVo2dkhpOWw0bzN4TldHbEhGNGEzU3l1QnBrMnh3NDFCejNlVEtqVG1WWEpvVV9WY3NKYWZzSkNLR0RkbzRYVnlocHFI?oc=5",
+    "source": "The Des Moines Register",
+    "date": "2014-03-31",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "3fc7d0f1de85",
+    "kind": "discovery"
   }
 ]
