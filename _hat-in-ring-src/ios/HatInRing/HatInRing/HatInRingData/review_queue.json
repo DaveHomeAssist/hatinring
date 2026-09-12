@@ -1536,5 +1536,18 @@
     ],
     "rid": "3fc7d0f1de85",
     "kind": "discovery"
+  },
+  {
+    "name": "J.D. Vance",
+    "headline": "With JD Vance seemingly ready to take the Trump mantle in 2028, Rubio admits he has no plans to run for president - independent.co.uk",
+    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOMzRrbVdXZDUzUFM3ZHdWNGVSTmRfdTIyaXFkZXJha3A4TWpTYUlCYjZoZWVIWEVkZ2NjUjhITk5MX0xFUTc4VWI0d3F6dW85dk9NdGhiSk1oRWZTVWFUYXV4YzJlS0lRUFJXVVZEY05DVjA1ZTVmeF9FSnZTWVBVZUJldEpPMGhRcXhzb0hwMHNhNU1OX1hRbDRPSDh5WHNyS3BnTUVRRXFWeGc?oc=5",
+    "source": "independent.co.uk",
+    "date": "2026-09-11",
+    "keys": [
+      "ruledOut"
+    ],
+    "note": "denial/downgrade — confirm before applying",
+    "rid": "46c66afd476c",
+    "kind": "denial"
   }
 ]

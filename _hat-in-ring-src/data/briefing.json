@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-11",
+  "date": "2026-09-12",
   "movers": [
     {
       "id": "hunter",
@@ -9,6 +9,15 @@
       "score": 50,
       "tier": 5,
       "statusLabel": "Declared"
+    },
+    {
+      "id": "bacon",
+      "name": "Don Bacon",
+      "party": "Republican",
+      "delta": 23,
+      "score": 25,
+      "tier": 3,
+      "statusLabel": "Actively considering"
     },
     {
       "id": "cruz",
@@ -45,15 +54,6 @@
       "score": 70,
       "tier": 4,
       "statusLabel": "Exploratory"
-    },
-    {
-      "id": "khanna",
-      "name": "Ro Khanna",
-      "party": "Democrat",
-      "delta": 10,
-      "score": 45,
-      "tier": 3,
-      "statusLabel": "Actively considering"
     }
   ],
   "new_filers": [
@@ -84,16 +84,22 @@
   ],
   "transitions": [
     {
+      "name": "Don Bacon",
+      "from": 1,
+      "to": 3,
+      "date": "2026-09-12"
+    },
+    {
       "name": "Ted Cruz",
       "from": 3,
       "to": 5,
       "date": "2026-09-08"
     }
   ],
-  "review_count": 126,
+  "review_count": 127,
   "totals": {
     "tracked": 41,
     "formal": 3,
-    "considering": 12
+    "considering": 13
   }
 }

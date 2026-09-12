@@ -258,5 +258,18 @@
     "direction": "up",
     "reason": "",
     "reconstructed": true
+  },
+  {
+    "id": "bacon",
+    "name": "Don Bacon",
+    "party": "Republican",
+    "date": "2026-09-12",
+    "from": 1,
+    "to": 3,
+    "fromLabel": "Floated",
+    "toLabel": "Considering",
+    "direction": "up",
+    "reason": "'Yes, I would love to': Republican Rep. Don Bacon publicly confirms he is considering a presidential run in 2028 - voz.us",
+    "reconstructed": false
   }
 ]
