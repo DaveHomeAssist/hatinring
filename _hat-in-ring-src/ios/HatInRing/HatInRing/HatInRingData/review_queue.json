@@ -1549,5 +1549,17 @@
     "note": "denial/downgrade — confirm before applying",
     "rid": "46c66afd476c",
     "kind": "denial"
+  },
+  {
+    "name": "John Sununu",
+    "headline": "John Sununu (R-NH) Speaks After Winning New Hampshire Republican Senate Primary - c-span.org",
+    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPVnlsY05raWR5Z1pDd08ydl9jcndZSjNPVUprQVdzZ2c1VGlfWldNQk9sR2VIT3VNMWlVakkyd3NBVUIycm14TkpvbTFEUkJvNjR6aGljdTMzSEVhUVotMVg1ZTU5Qlo3YVY5WjlNWEFiWXZXSElMUG1ZQXB5cnVNUVpNeTYzM2t3VEdwOFp3SXQwZ1RzMklWTnk3NUlyaGJJdFh6ZTBteU9HVXJmcTdVc3BTU0xPcXZidXJpWUNudkhMZnlfLXB4QQ?oc=5",
+    "source": "c-span.org",
+    "date": "2026-09-09",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "d824721f3f5b",
+    "kind": "discovery"
   }
 ]
