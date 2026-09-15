@@ -114,7 +114,7 @@
     ],
     "conf": "High",
     "delta": 0,
-    "lastSignal": "2026-09-07",
+    "lastSignal": "2026-09-15",
     "pollLead": "Dem poll leader",
     "headline": "Opinion | Which version of Gavin Newsom will voters see if he launches a presidential campaign? - calmatters.org",
     "why": "Polling frontrunner actively staking out a 2028 lane; a national billionaires-tax pitch and a Biden embrace are already drawing intra-party fire (Khanna).",
@@ -261,6 +261,15 @@
         "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBSYm5ucnAwbkhud2g0V3NLWWk0NXhRT3p2ZFp5X2tZa21NdS1wYW94SElvMTBwekJ5aW1JS3YwUjVlbnZqTk9WTjRPM3pWZDl0VHQxZ0ItRXlINXMzVXo2ZXhiUmZ5SjA?oc=5",
         "keys": [
           "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-09-15",
+        "headline": "Gavin Newsom says he will not run for president if Kamala Harris enters the race - The New Voice of Ukraine",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNYkpka1JIM3dkaTU1VEQzNGNGdVdzS3pRTVY4MVNKZDRlbGVla0ZWUDI0Z2ZZYlEzZGtJVGhFVkFNMEJUMDZtNlAtYjJ2ZG92NDVxN0ROTDN4Sm8wdzA2dzlhMVl1cjg5UDhraGExT0NuXzE0XzBOVEpLWVp0NDA5NFhQWmMtOUFONGRtSWp3RTBvOW85bnptdU9CUHV0UUl4RHhvWmMtONIBowFBVV95cUxOT1c0YVZKTXJzY0g4a1dSWjAxaGRhejNlMHdpdVdnOWk1MlNpV2w2NmxIb3VEUE11VENFMWFxUWY3N2kzSWNiZEtuazFidU5jc29kNWFvVGxTLTNlYklneXp0WlZiQlFqVTBBV0ZrR3hXYWJKbE5TMnZ0WEFzZU5tbDVDS1Vtd1o3WTRuam1faThfd0VGUWl2RGYwVmdOVXMwLTFv?oc=5",
+        "keys": [
+          "declared"
         ],
         "conf": "Low"
       }
@@ -963,11 +972,11 @@
       }
     ],
     "early_states": {
-      "NH": 6,
+      "NH": 7,
       "IA": 1
     },
     "early_states_last": {
-      "NH": "2026-06-09",
+      "NH": "2026-05-30",
       "IA": "2025-09-28"
     },
     "evidence": [
@@ -1039,6 +1048,16 @@
         "headline": "Rahm Emanuel’s uphill climb in New Hampshire tests a 2028 presidential bid - Chicago Tribune",
         "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1USkV4SFNoNUd1UmFua2RNb0NLcEhUN3NBN2RoVUdNNkxIcHpYR0ZETUYyc3ZfX3hmX0VBOE96Z2Q3LVQzbzRVRUZaT3lIQmx0bHV3anNyRi1PU1lscTBXLTNVa2E5SVNyanJZWWljSGhLeDB5VGdmSW54MDE?oc=5",
         "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-05-30",
+        "headline": "Rahm Emanuel says he's mulling a 2028 run for president - New Hampshire Public Radio",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQV3B3Q2lGWXhlN2ZwRURFWFZhUVJSdDZSRnV4VXhDbVowYkN1S0lYb2xnYnpvUHBMQTlEaUxDOFFpX3o0WGNGbGI2WXlDVHB6aWVVWkJpbjlpVEx6RHRoOV9hZlRNdDRKZXVOdnFLTUJFRk0xUGI0U09mRTJqMEhTeXFlckxOZldKMTVDQg?oc=5",
+        "keys": [
+          "consideringQuote",
           "earlyState"
         ],
         "conf": "Low"
