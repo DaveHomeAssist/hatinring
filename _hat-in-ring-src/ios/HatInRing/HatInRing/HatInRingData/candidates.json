@@ -497,8 +497,8 @@
       "earlyState"
     ],
     "conf": "High",
-    "delta": 0,
-    "lastSignal": "2026-08-04",
+    "delta": 5,
+    "lastSignal": "2026-09-15",
     "headline": "South Carolina could give Booker a head start in 2028 - newjerseyglobe.com",
     "why": "Most explicit yes among Senate Democrats; record-floor-speech visibility.",
     "quote": "Of course I'm thinking about it.",
@@ -509,10 +509,12 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Cory_Booker"
     },
     "early_states": {
-      "SC": 2
+      "SC": 2,
+      "IA": 2
     },
     "early_states_last": {
-      "SC": "2026-08-04"
+      "SC": "2026-08-04",
+      "IA": "2026-09-15"
     },
     "evidence": [
       {
@@ -541,6 +543,24 @@
           "softConsidering"
         ],
         "conf": "Medium"
+      },
+      {
+        "date": "2026-09-15",
+        "headline": "FBI’s Patel dodges questions on election interference at rambunctious US Senate hearing",
+        "url": "https://iowacapitaldispatch.com/2026/09/15/repub/fbis-patel-dodges-questions-on-election-interference-at-rambunctious-us-senate-hearing/",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-09-15",
+        "headline": "FBI’s Patel discusses bestiality policy, dodges election interference questions at Senate hearing",
+        "url": "https://nevadacurrent.com/2026/09/15/repub/fbis-patel-discusses-bestiality-policy-dodges-election-interference-questions-at-senate-hearing/",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPbnFoTGQzaUFENDIzTk5MNk1kNFZaOXNtY09EcmdWN2liWHpaMC02aXFIM2g5V1JvRDB2QmtyU3BCUVZZRHZsa2NNRWt4TDY0THlJb3FMZmV0NzRUT3g3MlpvTE9LU1RWTm9SUk5zRU5qREhfZFk5UzlsZVdETW90SkxZelJtMDBELWJJSw?oc=5",
