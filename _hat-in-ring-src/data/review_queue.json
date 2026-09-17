@@ -1715,5 +1715,43 @@
     ],
     "rid": "ce49f55f067d",
     "kind": "discovery"
+  },
+  {
+    "name": "White House",
+    "headline": "Hawley rules out 2028 White House bid - The Hill",
+    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOWUduM0JfeHpYb0dORlBra2hKVnZ6MmxhbFNkOEU3c0xWb24zYUVuREE3RVlBM2tDZnNqLXZjenloVzMwNTdLZVp5SVV5WjRMMEFpcmJiMGhiUlR6Rkg1SmpMdjc0TF9MSEg1WDZremVoS1M2dDdXckxxeExGLUU0blRaaXVhQkxJb09xNTFKY19MVVpG0gGaAUFVX3lxTE8yd2NFMG5QV2xFTElCNnUwZUNLT2pmNHU3RG16V2lnbkkxWFN1dHkwLTBQb1V1ZGMwc3NYMXFOQ0I2aWUzUVFGckVMNkFScFNaUG5QYkdlTFZMaUFkY2tfVi1xNGVuWk9XaW1NTU5KaWN0NWdUakEyenp3TGYweVlrbDZQcjBiY1Q5Sk1YMUU0dHFtM05nVlV5RlE?oc=5",
+    "source": "The Hill",
+    "date": "2026-09-16",
+    "keys": [
+      "ruledOut"
+    ],
+    "rid": "457481990c35",
+    "kind": "denial"
+  },
+  {
+    "name": "Ted Cruz",
+    "headline": "Why a Ted Cruz Type Can’t Be Ruled Out for 2028 - National Review",
+    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPWFpzMUZNSERIemZLTEdFTGN3Yk45THpoUXM3T0xsenhrc0hTR04xVVNhYUdTdG1icDJjSlRGLUxhcGVKQlE4WlhQVmo0b016V2M0M3QydVR6aDF4N3BBcjdrX0Q5LWV2cFp4RGJIaVJGQjZaMlZwSHNQalJEQ3VhWGduWDBicGkyeW92bXhfU3NBd21LV2YtLXAwd9IBoAFBVV95cUxNR1Frd0xMOWtmOFJDZWhPWUJjYU9SeUUzblYwX1RFUEJhNW1HS3kzc25YSXJhMVM3UkxzYV9FNXhleERHcmFVY2RtaVc2N2dMQy1yaHFWSXVqM1gxOURfd3dBeW90ZVNmTU9Wc1RxMFEycTBlRFJUZ3NFZHhHVzdheTNpaDFfejFacFNxNE1NRW8tSHV4SHdDODZGeG1EMGY4?oc=5",
+    "source": "National Review",
+    "date": "2026-09-16",
+    "keys": [
+      "ruledOut"
+    ],
+    "note": "denial/downgrade — confirm before applying",
+    "rid": "d3d3fd423d94",
+    "kind": "denial"
+  },
+  {
+    "name": "White House",
+    "headline": "Hawley rules out 2028 White House bid",
+    "url": "https://thehill.com/homenews/campaign/6093133-josh-hawley-potential-2028-presidential-bid/",
+    "source": "The Hill",
+    "date": "2026-09-16",
+    "keys": [
+      "ruledOut",
+      "earlyState"
+    ],
+    "rid": "4f9a06084b9e",
+    "kind": "denial"
   }
 ]

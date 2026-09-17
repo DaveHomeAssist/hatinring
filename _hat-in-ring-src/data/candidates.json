@@ -1264,7 +1264,7 @@
     ],
     "conf": "High",
     "delta": 20,
-    "lastSignal": "2026-09-08",
+    "lastSignal": "2026-09-16",
     "headline": "Sen. Ted Cruz addresses 2028 presidential bid while in Iowa - KWTX",
     "why": "2016 infrastructure & donor base; explicit intra-MAGA lane.",
     "quote": "",
@@ -2546,7 +2546,7 @@
     ],
     "conf": "High",
     "delta": 0,
-    "lastSignal": "2026-09-10",
+    "lastSignal": "2026-09-16",
     "headline": "Donald Trump Reportedly Told Donors ‘We Need to Elect JD’ in 2028 - people.com",
     "why": "Legally ineligible; tracked only because of the chatter he generates.",
     "quote": "",
@@ -2644,6 +2644,15 @@
           "earlyState"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-09-16",
+        "headline": "Here’s what Reps. Nunn and Miller-Meeks said about their war powers vote",
+        "url": "https://iowacapitaldispatch.com/2026/09/16/heres-what-reps-nunn-and-miller-meeks-said-about-their-war-powers-vote/",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNLVFVVVc4dnU0YU1CeWZkSnV0WGdOZ3NYcHpyQ1JDUjZUdEF1d25xT056YzlBZXFwNTRfdUxDdTF3Z3pzaXFJdjFETm91OXpmMEhUVEU4cUtGOWREWG4tb016Z0Z0UDRGUnlHd2VoaURyV2tKbC1CeW1ZS1EySzEwcQ?oc=5",
@@ -2654,13 +2663,13 @@
       "NH": 3,
       "NV": 2,
       "SC": 1,
-      "IA": 1
+      "IA": 2
     },
     "early_states_last": {
       "NH": "2026-08-12",
       "NV": "2026-08-31",
       "SC": "2026-08-26",
-      "IA": "2026-09-10"
+      "IA": "2026-09-16"
     }
   },
   {
