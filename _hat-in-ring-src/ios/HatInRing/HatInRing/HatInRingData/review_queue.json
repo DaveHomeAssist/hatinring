@@ -1753,5 +1753,29 @@
     ],
     "rid": "4f9a06084b9e",
     "kind": "denial"
+  },
+  {
+    "name": "Special Interests Behind",
+    "headline": "Special Interests Behind Governor's Anti-RFK Jr. Super PAC - Honolulu Civil Beat",
+    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPZ083cDVreGx6TjZyemJLV1p1bzJxQnZ1ZjQxZUVuZzBTLWdkc2dfQUdoaUhaalExZWFOTk9ZUWJka0pMMzdOZjFWVXpDNlp3Q0pQUk1rQ3EtVnY3TFdqbUxTVGR1ZjlGZ3U2S0s4UlpsS0hla1hLajFpRzFpcmxrVWtfajFkclYyYmxpNFVpVmFJNC1jS0lKZl9R?oc=5",
+    "source": "Honolulu Civil Beat",
+    "date": "2026-02-15",
+    "keys": [
+      "donors"
+    ],
+    "rid": "65c19934f5ba",
+    "kind": "discovery"
+  },
+  {
+    "name": "Regents approve state university funding",
+    "headline": "Regents approve state university funding requests as efficiency work continues",
+    "url": "https://iowacapitaldispatch.com/2026/09/17/regents-approve-state-university-funding-requests-as-efficiency-work-continues/",
+    "source": "Iowa Capital Dispatch",
+    "date": "2026-09-17",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "fd7c5543265e",
+    "kind": "discovery"
   }
 ]
