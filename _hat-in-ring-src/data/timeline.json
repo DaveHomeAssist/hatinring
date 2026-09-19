@@ -271,5 +271,31 @@
     "direction": "up",
     "reason": "'Yes, I would love to': Republican Rep. Don Bacon publicly confirms he is considering a presidential run in 2028 - voz.us",
     "reconstructed": false
+  },
+  {
+    "id": "kennedy",
+    "name": "John Kennedy",
+    "party": "Republican",
+    "date": "2026-09-18",
+    "from": 1,
+    "to": 2,
+    "fromLabel": "Floated",
+    "toLabel": "Positioning",
+    "direction": "up",
+    "reason": "Senate Republican on campaigning in 'close' red state races: 'These oughta be fat guy layups'",
+    "reconstructed": false
+  },
+  {
+    "id": "kennedy",
+    "name": "John Kennedy",
+    "party": "Republican",
+    "date": "2026-09-19",
+    "from": 1,
+    "to": 2,
+    "fromLabel": "Floated",
+    "toLabel": "Positioning",
+    "direction": "up",
+    "reason": "",
+    "reconstructed": true
   }
 ]

@@ -1777,5 +1777,17 @@
     ],
     "rid": "fd7c5543265e",
     "kind": "discovery"
+  },
+  {
+    "name": "VP Vance Campaigns",
+    "headline": "VP Vance Campaigns for Iowa Republican Candidates at RNC Midterm Rally in Council Bluffs, IA - C-SPAN",
+    "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOODRSMGZ4SGNfdm91bmVMRzEwRmhjRDJaYnJIcVEzMjdaV1JtYWdVYlRqdm1mRzAxMUpWMWpxZjFkeTk0dE5pdzdYeGxGaUdadGZ2SC0wOEJtY1ZxdWlLdXBRX1ZKMGpSRGJxdVh3dHAyeUxXelUzV1Z4LTZDQ1ZWc3RnTkR1SUxWQzA5M25JWXdBQl95eEdKQnNSdm5wdXYyN1d1dUJiVnBsaVlaZHIxckMzUjhxMm9Rc3IybUNpX04yWW82OV82Qm42eVFXU3hTNlF1eWpLclY?oc=5",
+    "source": "C-SPAN",
+    "date": "2026-09-18",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "47474cb8991a",
+    "kind": "discovery"
   }
 ]

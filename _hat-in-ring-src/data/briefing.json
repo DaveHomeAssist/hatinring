@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-18",
+  "date": "2026-09-19",
   "movers": [
     {
       "id": "hunter",
@@ -9,6 +9,15 @@
       "score": 50,
       "tier": 5,
       "statusLabel": "Declared"
+    },
+    {
+      "id": "kennedy",
+      "name": "John Kennedy",
+      "party": "Republican",
+      "delta": 25,
+      "score": 27,
+      "tier": 2,
+      "statusLabel": "Positioning"
     },
     {
       "id": "bacon",
@@ -45,15 +54,6 @@
       "score": 45,
       "tier": 3,
       "statusLabel": "Actively considering"
-    },
-    {
-      "id": "vance",
-      "name": "J.D. Vance",
-      "party": "Republican",
-      "delta": 10,
-      "score": 70,
-      "tier": 4,
-      "statusLabel": "Exploratory"
     }
   ],
   "new_filers": [
@@ -84,13 +84,19 @@
   ],
   "transitions": [
     {
+      "name": "John Kennedy",
+      "from": 1,
+      "to": 2,
+      "date": "2026-09-18"
+    },
+    {
       "name": "Don Bacon",
       "from": 1,
       "to": 3,
       "date": "2026-09-12"
     }
   ],
-  "review_count": 145,
+  "review_count": 146,
   "totals": {
     "tracked": 41,
     "formal": 3,
