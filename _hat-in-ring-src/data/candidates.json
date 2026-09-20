@@ -1104,10 +1104,11 @@
     "role": "Governor of Hawaii",
     "bucket": "considering",
     "keys": [
-      "softConsidering"
+      "softConsidering",
+      "donors"
     ],
     "conf": "Low",
-    "delta": 0,
+    "delta": 10,
     "lastSignal": "2026-05-20",
     "headline": "Among Dems considering; \"open if needed\"",
     "why": "Outside-lane physician-governor; low national profile.",
@@ -1117,7 +1118,26 @@
     ],
     "links": {
       "wikipedia": "https://en.wikipedia.org/wiki/Josh_Green_(politician)"
-    }
+    },
+    "evidence": [
+      {
+        "date": "2026-02-15",
+        "headline": "Special Interests Are Fueling Gov. Josh Green’s Anti-RFK Jr. Super PAC - civilbeat.org",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPZ083cDVreGx6TjZyemJLV1p1bzJxQnZ1ZjQxZUVuZzBTLWdkc2dfQUdoaUhaalExZWFOTk9ZUWJka0pMMzdOZjFWVXpDNlp3Q0pQUk1rQ3EtVnY3TFdqbUxTVGR1ZjlGZ3U2S0s4UlpsS0hla1hLajFpRzFpcmxrVWtfajFkclYyYmxpNFVpVmFJNC1jS0lKZl9R?oc=5",
+        "keys": [
+          "donors"
+        ],
+        "conf": "Low"
+      }
+    ],
+    "history": [
+      {
+        "date": "2026-02-15",
+        "from": 1,
+        "to": 2,
+        "reason": "Special Interests Are Fueling Gov. Josh Green’s Anti-RFK Jr. Super PAC - civilbeat.org"
+      }
+    ]
   },
   {
     "id": "landrieu",
@@ -2962,11 +2982,12 @@
     "bucket": "soft",
     "keys": [
       "softConsidering",
-      "earlyState"
+      "earlyState",
+      "donors"
     ],
     "conf": "Low",
-    "delta": 25,
-    "lastSignal": "2026-09-18",
+    "delta": 10,
+    "lastSignal": "2026-09-20",
     "headline": "Sen. John Kennedy not ruling out White House bid - The Hill",
     "why": "Confirmed from the review queue.",
     "quote": "",
@@ -3032,6 +3053,16 @@
           "earlyState"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-09-20",
+        "headline": "US Sen. John Kennedy, in Iowa, predicts end of Iran war in 6 months",
+        "url": "https://iowacapitaldispatch.com/2026/09/19/us-sen-john-kennedy-in-iowa-predicts-end-of-iran-war-in-6-months/",
+        "keys": [
+          "donors",
+          "earlyState"
+        ],
+        "conf": "Low"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMihwFBVV95cUxORkJyQ3lfcTBRbW1POWtaWkFtOWpvRWpXMHRCalQ3bzN4VEx6TVdmRUZjR19hdUdvYU5wUzhDem1kaTY0QkFZSExWRHRnajNJME44ZGdidXQ5R0JPRm8tV1loQmdQVHBKVlVGUEpxMnhxSkhvM2V6T1FycUVSUEJKdlRUcExSUTDSAYwBQVVfeXFMTXM3QmxpS09ESWJid0FKYzhYd3hrSUttT1JvM2k4Z09XRnJ3TnJKNnA4LWd6djFXa1NKb09yNFo3eDR2ZU5xR0ZFVnkydldfbG5LR0o2YTdXWVJCRWlLdXNtSDZGMUJwSTZpQVNFTms3ckM5WTdRTFVQdHhLYi1UbVBqc1VmVUhLWWc0NGc?oc=5",
@@ -3039,10 +3070,10 @@
       "wikipedia": "https://en.wikipedia.org/wiki/John_Kennedy_(Louisiana_politician)"
     },
     "early_states": {
-      "IA": 1
+      "IA": 2
     },
     "early_states_last": {
-      "IA": "2026-09-18"
+      "IA": "2026-09-20"
     }
   }
 ]

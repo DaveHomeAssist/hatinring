@@ -26,6 +26,19 @@
     "reconstructed": false
   },
   {
+    "id": "green",
+    "name": "Josh Green",
+    "party": "Democrat",
+    "date": "2026-02-15",
+    "from": 1,
+    "to": 2,
+    "fromLabel": "Floated",
+    "toLabel": "Positioning",
+    "direction": "up",
+    "reason": "Special Interests Are Fueling Gov. Josh Green’s Anti-RFK Jr. Super PAC - civilbeat.org",
+    "reconstructed": false
+  },
+  {
     "id": "kelly",
     "name": "Mark Kelly",
     "party": "Democrat",
@@ -290,6 +303,19 @@
     "name": "John Kennedy",
     "party": "Republican",
     "date": "2026-09-19",
+    "from": 1,
+    "to": 2,
+    "fromLabel": "Floated",
+    "toLabel": "Positioning",
+    "direction": "up",
+    "reason": "",
+    "reconstructed": true
+  },
+  {
+    "id": "green",
+    "name": "Josh Green",
+    "party": "Democrat",
+    "date": "2026-09-20",
     "from": 1,
     "to": 2,
     "fromLabel": "Floated",
