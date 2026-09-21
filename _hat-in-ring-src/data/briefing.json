@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-20",
+  "date": "2026-09-21",
   "movers": [
     {
       "id": "hunter",
@@ -74,12 +74,6 @@
       "name": "J.D. Vance",
       "tier": 4,
       "statusLabel": "Exploratory"
-    },
-    {
-      "id": "hunter",
-      "name": "Hunter Biden",
-      "tier": 5,
-      "statusLabel": "Declared"
     }
   ],
   "transitions": [
