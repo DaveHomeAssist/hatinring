@@ -304,7 +304,7 @@
     ],
     "conf": "High",
     "delta": 0,
-    "lastSignal": "2026-08-31",
+    "lastSignal": "2026-09-24",
     "headline": "South Carolina picked for first 2028 Democratic primary, in possible Kamala Harris boost - New York Post",
     "why": "The 2024 nominee tops early Democratic primary polling; a rematch frontrunner in a crowded, unsettled field.",
     "quote": "I have not made a decision… I may or may not.",
@@ -466,6 +466,15 @@
           "consideringQuote"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-09-24",
+        "headline": "Judge tosses Trump’s suit against Iowa pollster",
+        "url": "https://thehill.com/regulation/court-battles/6107914-trump-selzer-polling-lawsuit-dismissed/",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNV1BzWkNZc19aWWh3R2luZFZxWUVJT2oyZFo1LXFzQ0c2aHk1MExoNENNZk5nMkFtaS1lRWZlRXpZanVpUEhRV20tVWtIOF95MGJ4amJ0Mlpqc3lseEtxZ3A0VlVockFVdFN2Wm10eGNJWDVJUUtSd3hIb0FnRDN2VENUUkNMRnh6WGIyc0pTdnZrSmNmclJ4QWY3TDlTdEdKWjVmZkoyeDRBdzhrSWVyUnh5OHh1MDhwUEtLN1VjdDBTOEZn?oc=5",
@@ -474,12 +483,12 @@
     },
     "early_states": {
       "SC": 2,
-      "IA": 4,
+      "IA": 5,
       "NH": 1
     },
     "early_states_last": {
       "SC": "2026-08-18",
-      "IA": "2026-08-29",
+      "IA": "2026-09-24",
       "NH": "2026-08-31"
     },
     "img": "assets/candidates/harris/01_kamala_harris_vice_presidential_portrait_jpg.jpg"
@@ -1187,11 +1196,12 @@
     "bucket": "considering",
     "keys": [
       "earlyState",
-      "donors"
+      "donors",
+      "consideringQuote"
     ],
     "conf": "Medium",
-    "delta": 0,
-    "lastSignal": "2026-04-19",
+    "delta": 35,
+    "lastSignal": "2026-09-23",
     "headline": "Mitch Landrieu launches surprise 2028 presidential bid in New Orleans - mezha.net",
     "why": "Behavioral signals (travel, donor outreach) ahead of any quote.",
     "quote": "",
@@ -1204,11 +1214,37 @@
         "from": 2,
         "to": 5,
         "reason": "Mitch Landrieu launches surprise 2028 presidential bid in New Orleans - mezha.net"
+      },
+      {
+        "date": "2026-09-23",
+        "from": 2,
+        "to": 3,
+        "reason": "Mitch Landrieu says he’s thinking about a 2028 presidential run - WWLTV.com"
       }
     ],
     "links": {
       "wikipedia": "https://en.wikipedia.org/wiki/Mitch_Landrieu"
     },
+    "evidence": [
+      {
+        "date": "2026-09-23",
+        "headline": "Mitch Landrieu says he’s thinking about a 2028 presidential run - WWLTV.com",
+        "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOYjFTRkZoTEVVdWlZclUwSXlYNjRpcHVMMmpZZW11bU9CNXY5bWszc25wbHFpRHlmNmlWWVI5QVFKZDJuTFVWYzc3c2NMTy1VVFRkNGRqNldxeXNGTENiaFBVUDRaNVlHalBwUVN2TGZVaGFER3dLRXp0MmhlemlzeVJyUF9wSVd4Yi16c3RjYm1RVXZFN01rUGNlODFOTTZIU25kREdXZnNIcWQ0eVgxUnNLeUtLS2o5RW9pbFg0Q19GV2VpNmQtdWFNSTQ0QUV3VkRFUC1LSmZRS0VkdEt0dg?oc=5",
+        "keys": [
+          "consideringQuote"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-09-23",
+        "headline": "Mitch Landrieu for president? Former mayor is considering a run. Here's what we know - WDSU",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOMldIWmxCbERSTG5fRk1XVnE5OFQzNGc5Q292cFF4YWNfaVgtWGVwV3BSZjRtb3FydlFSOUVhSWFaRHFsVmNEQ0hxMFg1UzBpME1BN1VXeUlxcFREMEd4Mm8zWmVwaHhIVUUzZDY4Y0k5QnhmVzRUM19pbmM4bmc0NExwMnBUdw?oc=5",
+        "keys": [
+          "consideringQuote"
+        ],
+        "conf": "Low"
+      }
+    ],
     "img": "assets/candidates/landrieu/01_mitch_landrieu_52801339981_cropped_jpg.jpg"
   },
   {
@@ -2698,7 +2734,7 @@
     ],
     "conf": "High",
     "delta": 0,
-    "lastSignal": "2026-09-22",
+    "lastSignal": "2026-09-24",
     "headline": "Donald Trump Reportedly Told Donors ‘We Need to Elect JD’ in 2028 - people.com",
     "why": "Legally ineligible; tracked only because of the chatter he generates.",
     "quote": "",
@@ -2814,6 +2850,15 @@
           "earlyState"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-09-24",
+        "headline": "Judge dismisses President Donald Trump’s 2024 Iowa Poll lawsuit",
+        "url": "https://iowacapitaldispatch.com/2026/09/23/judge-dismisses-president-donald-trumps-2024-iowa-poll-lawsuit/",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNLVFVVVc4dnU0YU1CeWZkSnV0WGdOZ3NYcHpyQ1JDUjZUdEF1d25xT056YzlBZXFwNTRfdUxDdTF3Z3pzaXFJdjFETm91OXpmMEhUVEU4cUtGOWREWG4tb016Z0Z0UDRGUnlHd2VoaURyV2tKbC1CeW1ZS1EySzEwcQ?oc=5",
@@ -2824,13 +2869,13 @@
       "NH": 4,
       "NV": 2,
       "SC": 1,
-      "IA": 2
+      "IA": 3
     },
     "early_states_last": {
       "NH": "2026-09-22",
       "NV": "2026-08-31",
       "SC": "2026-08-26",
-      "IA": "2026-09-16"
+      "IA": "2026-09-24"
     },
     "img": "assets/candidates/trump/01_official_presidential_portrait_of_president_donald.jpg"
   },

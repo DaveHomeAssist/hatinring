@@ -323,5 +323,31 @@
     "direction": "up",
     "reason": "",
     "reconstructed": true
+  },
+  {
+    "id": "landrieu",
+    "name": "Mitch Landrieu",
+    "party": "Democrat",
+    "date": "2026-09-23",
+    "from": 2,
+    "to": 3,
+    "fromLabel": "Positioning",
+    "toLabel": "Considering",
+    "direction": "up",
+    "reason": "Mitch Landrieu says he’s thinking about a 2028 presidential run - WWLTV.com",
+    "reconstructed": false
+  },
+  {
+    "id": "landrieu",
+    "name": "Mitch Landrieu",
+    "party": "Democrat",
+    "date": "2026-09-24",
+    "from": 2,
+    "to": 3,
+    "fromLabel": "Positioning",
+    "toLabel": "Considering",
+    "direction": "up",
+    "reason": "",
+    "reconstructed": true
   }
 ]
