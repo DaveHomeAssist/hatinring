@@ -471,6 +471,15 @@
           "earlyState"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-04-11",
+        "headline": "‘I am thinking about it,’ Kamala Harris says of 2028 presidential bid - Hot Springs Sentinel Record",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPY3VHVVY0MmJtUWFjeVNSaTVTZTM0V29rMUR0dlpRNDRFNE1GLThsc0ZXVmlsZlRfV0RWT2F6Yk5MVkFhU1hhSlN1NXFubnY3djZNZFJYRHNtWnV3ZlYxMlp3Q2hvUEMyX0lvR21LWlpuU0NTN2JBNHVQVXBjVDNTcHA1a29la25PeTFJX2dLZ21KbHc?oc=5",
+        "keys": [
+          "consideringQuote"
+        ],
+        "conf": "Low"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNV1BzWkNZc19aWWh3R2luZFZxWUVJT2oyZFo1LXFzQ0c2aHk1MExoNENNZk5nMkFtaS1lRWZlRXpZanVpUEhRV20tVWtIOF95MGJ4amJ0Mlpqc3lseEtxZ3A0VlVockFVdFN2Wm10eGNJWDVJUUtSd3hIb0FnRDN2VENUUkNMRnh6WGIyc0pTdnZrSmNmclJ4QWY3TDlTdEdKWjVmZkoyeDRBdzhrSWVyUnh5OHh1MDhwUEtLN1VjdDBTOEZn?oc=5",
@@ -1010,8 +1019,8 @@
       "consideringQuote"
     ],
     "conf": "Medium",
-    "delta": 0,
-    "lastSignal": "2026-06-11",
+    "delta": 15,
+    "lastSignal": "2026-09-17",
     "headline": "Rahm Emanuel is considering a 2028 run for president. Here's what he's weighing - WBUR",
     "why": "Aggressive media tour to project vitality and viability.",
     "quote": "",
@@ -1028,11 +1037,11 @@
       }
     ],
     "early_states": {
-      "NH": 7,
+      "NH": 8,
       "IA": 1
     },
     "early_states_last": {
-      "NH": "2026-05-30",
+      "NH": "2026-09-17",
       "IA": "2025-09-28"
     },
     "evidence": [
@@ -1124,6 +1133,15 @@
         "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQV3B3Q2lGWXhlN2ZwRURFWFZhUVJSdDZSRnV4VXhDbVowYkN1S0lYb2xnYnpvUHBMQTlEaUxDOFFpX3o0WGNGbGI2WXlDVHB6aWVVWkJpbjlpVEx6RHRoOV9hZlRNdDRKZXVOdnFLTUJFRk0xUGI0U09mRTJqMEhTeXFlckxOZldKMTVDQg?oc=5",
         "keys": [
           "consideringQuote"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-09-17",
+        "headline": "Rahm Emanuel tests 2028 presidential bid with New Hampshire visits - eciks.org",
+        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9VRGVhX1dJYTA5Y3dTQjRFZjBMVGgyZjRTaERKVzBKMmFqR3EzaWhLM1hCdDJMN2xIdUVhZGdTQ1N5aFV0WTlvUVZncmhBdlBFaDdoTElxRTJKc1J1aTYxSXY4MVFUZw?oc=5",
+        "keys": [
+          "earlyState"
         ],
         "conf": "Low"
       }

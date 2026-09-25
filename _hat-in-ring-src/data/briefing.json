@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-24",
+  "date": "2026-09-25",
   "movers": [
     {
       "id": "landrieu",
@@ -38,6 +38,15 @@
       "statusLabel": "Declared"
     },
     {
+      "id": "emanuel",
+      "name": "Rahm Emanuel",
+      "party": "Democrat",
+      "delta": 15,
+      "score": 50,
+      "tier": 3,
+      "statusLabel": "Actively considering"
+    },
+    {
       "id": "greaney",
       "name": "Dan Greaney",
       "party": "Republican",
@@ -45,15 +54,6 @@
       "score": 40,
       "tier": 5,
       "statusLabel": "Declared"
-    },
-    {
-      "id": "vance",
-      "name": "J.D. Vance",
-      "party": "Republican",
-      "delta": 10,
-      "score": 70,
-      "tier": 4,
-      "statusLabel": "Exploratory"
     }
   ],
   "new_filers": [
