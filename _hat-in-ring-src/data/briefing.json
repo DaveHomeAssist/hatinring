@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-29",
+  "date": "2026-09-30",
   "movers": [
     {
       "id": "landrieu",
@@ -58,12 +58,6 @@
   ],
   "new_filers": [
     {
-      "id": "newsom",
-      "name": "Gavin Newsom",
-      "tier": 5,
-      "statusLabel": "Declared"
-    },
-    {
       "id": "cruz",
       "name": "Ted Cruz",
       "tier": 5,
@@ -84,7 +78,7 @@
       "date": "2026-09-23"
     }
   ],
-  "review_count": 156,
+  "review_count": 157,
   "totals": {
     "tracked": 41,
     "formal": 3,
