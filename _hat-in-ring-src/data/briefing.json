@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-01",
+  "date": "2026-10-02",
   "movers": [
     {
       "id": "landrieu",
@@ -58,6 +58,12 @@
   ],
   "new_filers": [
     {
+      "id": "newsom",
+      "name": "Gavin Newsom",
+      "tier": 5,
+      "statusLabel": "Declared"
+    },
+    {
       "id": "vance",
       "name": "J.D. Vance",
       "tier": 4,
@@ -65,7 +71,7 @@
     }
   ],
   "transitions": [],
-  "review_count": 157,
+  "review_count": 158,
   "totals": {
     "tracked": 41,
     "formal": 3,
