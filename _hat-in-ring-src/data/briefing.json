@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-02",
+  "date": "2026-10-03",
   "movers": [
     {
       "id": "landrieu",
@@ -64,14 +64,27 @@
       "statusLabel": "Declared"
     },
     {
+      "id": "kelly",
+      "name": "Mark Kelly",
+      "tier": 5,
+      "statusLabel": "Declared"
+    },
+    {
       "id": "vance",
       "name": "J.D. Vance",
-      "tier": 4,
-      "statusLabel": "Exploratory"
+      "tier": 5,
+      "statusLabel": "Declared"
     }
   ],
-  "transitions": [],
-  "review_count": 158,
+  "transitions": [
+    {
+      "name": "J.D. Vance",
+      "from": 4,
+      "to": 5,
+      "date": "2026-10-02"
+    }
+  ],
+  "review_count": 159,
   "totals": {
     "tracked": 41,
     "formal": 3,

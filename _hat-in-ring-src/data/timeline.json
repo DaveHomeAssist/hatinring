@@ -349,5 +349,31 @@
     "direction": "up",
     "reason": "",
     "reconstructed": true
+  },
+  {
+    "id": "vance",
+    "name": "J.D. Vance",
+    "party": "Republican",
+    "date": "2026-10-02",
+    "from": 4,
+    "to": 5,
+    "fromLabel": "Exploratory",
+    "toLabel": "Declared",
+    "direction": "up",
+    "reason": "Vance: 'Really obvious' Cruz is running for president",
+    "reconstructed": false
+  },
+  {
+    "id": "vance",
+    "name": "J.D. Vance",
+    "party": "Republican",
+    "date": "2026-10-03",
+    "from": 4,
+    "to": 5,
+    "fromLabel": "Exploratory",
+    "toLabel": "Declared",
+    "direction": "up",
+    "reason": "",
+    "reconstructed": true
   }
 ]
