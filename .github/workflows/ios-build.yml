@@ -43,11 +43,11 @@ jobs:
     steps:
       - name: Checkout triggering revision
         if: github.event_name != 'workflow_run'
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Checkout updated main
         if: github.event_name == 'workflow_run'
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           ref: main
 
