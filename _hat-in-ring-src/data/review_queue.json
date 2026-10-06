@@ -1957,5 +1957,17 @@
     ],
     "rid": "ed5d2792c258",
     "kind": "discovery"
+  },
+  {
+    "name": "Trump Makes Announcement",
+    "headline": "President Trump Makes Announcement on $15 Billion Steel Plant in Iowa - C-SPAN",
+    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOTTdrX0JKNkFRVk5zU29mQjNxcFRBbk1XSmxVTmhYbHF6NUxNcDBhcHo1R0RqYjlWclRSckp4Z2VWXzVpNmdSaWVsc0tqbFAwMWtoTU9oY2ZKaldCRUZKOXV3c0NnX05pVEFVTW5SclhyeTl5Vy1XSEp2V3pWVG90ZGVhMGpIX0pvdXNGUHlZUkZ3dS1YQTlwRGotUTBIZ2F0OFVmTk1tQVBsbm9ERVY5aTlLZmZQMFAzcWFLVUZ3RTlKQQ?oc=5",
+    "source": "C-SPAN",
+    "date": "2026-09-28",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "20c361172a59",
+    "kind": "discovery"
   }
 ]

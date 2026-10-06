@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-05",
+  "date": "2026-10-06",
   "movers": [
     {
       "id": "landrieu",
@@ -70,6 +70,12 @@
       "statusLabel": "Declared"
     },
     {
+      "id": "cruz",
+      "name": "Ted Cruz",
+      "tier": 5,
+      "statusLabel": "Declared"
+    },
+    {
       "id": "vance",
       "name": "J.D. Vance",
       "tier": 5,
@@ -78,16 +84,22 @@
   ],
   "transitions": [
     {
+      "name": "John Kennedy",
+      "from": 2,
+      "to": 3,
+      "date": "2026-10-05"
+    },
+    {
       "name": "J.D. Vance",
       "from": 4,
       "to": 5,
       "date": "2026-10-02"
     }
   ],
-  "review_count": 160,
+  "review_count": 161,
   "totals": {
     "tracked": 41,
     "formal": 3,
-    "considering": 14
+    "considering": 15
   }
 }

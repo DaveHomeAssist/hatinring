@@ -1432,7 +1432,7 @@
     ],
     "conf": "High",
     "delta": 20,
-    "lastSignal": "2026-09-16",
+    "lastSignal": "2026-10-06",
     "headline": "Sen. Ted Cruz addresses 2028 presidential bid while in Iowa - KWTX",
     "why": "2016 infrastructure & donor base; explicit intra-MAGA lane.",
     "quote": "",
@@ -1483,6 +1483,15 @@
         "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPdDQ1S1FEelNfVjFGR2dpeTluemVwcFhUMWNKamdNbkFuNXh2RC11OHlzVGJpTU1yV19QZjNjOGIwenA2Nk9kTFdpRnh6Z18zYjRIX1pNRWhPYjlWdDZpWFpKSlFqRnBaR0tCNjlxN3FraXlJUW1kSm45eW9pWDJGWk5BMUVCOGlVUjFKazYtU1UxV3M?oc=5",
         "keys": [
           "declared"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-10-06",
+        "headline": "Ken Paxton’s secret weapon: Ted Cruz",
+        "url": "https://www.politico.com/news/2026/10/06/ken-paxton-secret-weapon-ted-cruz-01107868",
+        "keys": [
+          "donors"
         ],
         "conf": "Low"
       }
@@ -3247,11 +3256,12 @@
     "keys": [
       "softConsidering",
       "earlyState",
-      "donors"
+      "donors",
+      "consideringQuote"
     ],
     "conf": "Low",
-    "delta": 10,
-    "lastSignal": "2026-09-20",
+    "delta": 8,
+    "lastSignal": "2026-10-05",
     "headline": "Sen. John Kennedy not ruling out White House bid - The Hill",
     "why": "Confirmed from the review queue.",
     "quote": "",
@@ -3270,6 +3280,12 @@
         "from": 1,
         "to": 2,
         "reason": "Senate Republican on campaigning in 'close' red state races: 'These oughta be fat guy layups'"
+      },
+      {
+        "date": "2026-10-05",
+        "from": 2,
+        "to": 3,
+        "reason": "Republican senator John Kennedy is thinking about running for president: ‘Why not me on a rainy day?’ - The Independent"
       }
     ],
     "evidence": [
@@ -3325,6 +3341,15 @@
         "keys": [
           "donors",
           "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-10-05",
+        "headline": "Republican senator John Kennedy is thinking about running for president: ‘Why not me on a rainy day?’ - The Independent",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNN0lrNXdLM1JTaUhtU0VDeExvUjRuVkgtV1J5bHZQR3NIMFhhR1c0OV9wY3VvcENzeW56emxvTnE5ejhxVk02NXVWdmw2bEFzeTlQNmk1SFRENXA1ZFNodVFZbEh3eG9GQklUa1liR3l5TTRmVGJjX1l6QWlsWTZmVXFNaEhWWnBfUXYxSXpSRUJhSDJ1aWlrZjhLMUoxWlFiLUZ6ZXI1d3ZRSnZOTEI0eHVTajVDTlk?oc=5",
+        "keys": [
+          "consideringQuote"
         ],
         "conf": "Low"
       }

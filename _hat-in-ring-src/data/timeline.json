@@ -375,5 +375,31 @@
     "direction": "up",
     "reason": "",
     "reconstructed": true
+  },
+  {
+    "id": "kennedy",
+    "name": "John Kennedy",
+    "party": "Republican",
+    "date": "2026-10-05",
+    "from": 2,
+    "to": 3,
+    "fromLabel": "Positioning",
+    "toLabel": "Considering",
+    "direction": "up",
+    "reason": "Republican senator John Kennedy is thinking about running for president: ‘Why not me on a rainy day?’ - The Independent",
+    "reconstructed": false
+  },
+  {
+    "id": "kennedy",
+    "name": "John Kennedy",
+    "party": "Republican",
+    "date": "2026-10-06",
+    "from": 2,
+    "to": 3,
+    "fromLabel": "Positioning",
+    "toLabel": "Considering",
+    "direction": "up",
+    "reason": "",
+    "reconstructed": true
   }
 ]
