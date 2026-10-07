@@ -1969,5 +1969,30 @@
     ],
     "rid": "20c361172a59",
     "kind": "discovery"
+  },
+  {
+    "name": "Wes Moore",
+    "headline": "Wes Moore doesn’t rule out cutting his second term short if reelected governor - Washington Examiner",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPM0tJWW1yMjNjNUZqMHd2U01xVlFGTGJyTjlkbHlScFBmOUVmRlBabDY5eEozTU5jMkFLdnl4dVhINFpWcW9BM3hWeXlWNXotRTJ6UkRPbGZGSVlvSE0xbGlUQnR1NVZJMno1M3JUOVh1TXNpNmNqYng1b3ZHZ3gxM1ZhVlBWTU5Pcl9ya19xRGVVUDB4aU8yNl9wWTIweWY1bE1iU2xjRnViMDNIalE?oc=5",
+    "source": "Washington Examiner",
+    "date": "2026-10-06",
+    "keys": [
+      "ruledOut"
+    ],
+    "note": "denial/downgrade — confirm before applying",
+    "rid": "a2ea2d1c8e2d",
+    "kind": "denial"
+  },
+  {
+    "name": "San Diego",
+    "headline": "Iran attack on LA or San Diego would be ‘a small price to pay’, Trump says - New Hampshire Union Leader",
+    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPQWxGTlZaU1hxNGE4Y0t4SzQxN0g0ZXFFb0tINi1KTjRwQXM0RkJtYTBfLS1lX0lDZkU2dXk0UUF1cC0zSzZTVjdFaEZ5bEx3U1pPNXJaUkR6NExYSERMUVFYM2lQc1VhRi1qLTJ0M3BuT1NxTUppV0MtbFJoQUVKUWtjb2djc1BvMXFtaG1DU2d6TjJhbFdNajNOS0ZBTEJxeFBuRUtqdmhFZ0FTeWp0NWhTU2ZjSzdsWTJPZ3lLOA?oc=5",
+    "source": "New Hampshire Union Leader",
+    "date": "2026-10-06",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "09cf78df0275",
+    "kind": "discovery"
   }
 ]

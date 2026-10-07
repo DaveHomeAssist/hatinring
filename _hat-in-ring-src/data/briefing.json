@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-06",
+  "date": "2026-10-07",
   "movers": [
     {
       "id": "landrieu",
@@ -15,7 +15,7 @@
       "name": "Hunter Biden",
       "party": "Democrat",
       "delta": 28,
-      "score": 50,
+      "score": 45,
       "tier": 5,
       "statusLabel": "Declared"
     },
@@ -96,7 +96,7 @@
       "date": "2026-10-02"
     }
   ],
-  "review_count": 161,
+  "review_count": 163,
   "totals": {
     "tracked": 41,
     "formal": 3,
