@@ -930,8 +930,8 @@
       "staffing"
     ],
     "conf": "Medium",
-    "delta": 0,
-    "lastSignal": "2026-07-17",
+    "delta": 5,
+    "lastSignal": "2026-10-07",
     "headline": "Sen. Ruben Gallego To Visit Iowa State Fair Amid 2028 Presidential Bid Speculation Sebastian Aho (TaWGnCR1YI) - Mshale",
     "why": "Notable upgrade — went from denial to open in weeks.",
     "quote": "We have to look at it.",
@@ -1004,6 +1004,15 @@
           "earlyState"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-10-07",
+        "headline": "Ruben Gallego, weighing a presidential run, debuts a new economic plan - The Washington Post",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQX0lvRl9uSXd3M2JTTlpQLUZNbWNnVnFBbDRsdllfdUV3aFlSdnhjTmM0TVhxZElDUTlYeUxVZDc0dTZjVVNQc3RDblFjc0VSQVRHM1lldUJfLWVTMkdudDc3SDdyUDF2X1NBTkZPbWI3OXdDbk51Vm9FaUhSZmp3Q3dkUWQ5NkdWY29GbzJoXzJnN3k0UEdTSE1PNTJsVWxOZmpZVXlPRmZYSk1idURRa2Vjb2o5dVE?oc=5",
+        "keys": [
+          "consideringQuote"
+        ],
+        "conf": "High"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5CclNrVWZhdWhwMnlmcTI4ZGpJdm8zMWFMSU5yeHM1V2xnZWhrZHpkT1dUbzZaTXN2UF80aWo1YkNUdFg0WklCb2phMUlZX1lJRHRCZklmbHc5SDQ?oc=5"
@@ -1689,8 +1698,8 @@
       "consideringQuote"
     ],
     "conf": "Low",
-    "delta": 0,
-    "lastSignal": "2026-07-20",
+    "delta": 5,
+    "lastSignal": "2026-10-07",
     "headline": "Sky News Australia. . Former CNN host Don Lemon has made another bizarre remark, this time saying that MAGA is America’s version of the Nazi party during his appearance on the Can’t be censored podcast. - facebook.com",
     "why": "No party structure or office base — celebrity lane.",
     "quote": "I'm seriously considering it.",
@@ -1766,6 +1775,15 @@
         "date": "2026-07-17",
         "headline": "Don Lemon Says He's 'Seriously' Thinking About Running for President: 'I Actually Think I Would Be Really Good' - aol.com",
         "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5fMHRjeGhxWVh0dlMzREw1MWRfb21sLW1RT3Y5Mk8tbHNkeFZMMjlOS2oyTWdScE9HaEg3ODR0ZmlkQ19pOXczZXAzWGxHaE8xbk9NV3pkVWk1TEhJcGktbUFJRlhCM1hZWkptbjFOS1RnOW5ZOU1JMVhmWmk?oc=5",
+        "keys": [
+          "consideringQuote"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-10-07",
+        "headline": "Don Lemon Still Considering A Presidential Run — And The Odds Are Higher Than You’d Think - AOL.com",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOMklmY0RyNkxFSmNxQkFFOXozUnB5MEdyWks2aVRkU1hvUU9iRGZpN1pkYmF6U295YkVRYVpKcUJzblFMSUxVU3RZWm5CMnlkTVJGN3dPcV9PV1pScy1zU1NZTGxuZm9MZlY1d2E5WC1RWmJDdllyTmZRbE1mdE9CMDBtMF8wN2xtV01TYQ?oc=5",
         "keys": [
           "consideringQuote"
         ],
@@ -2831,7 +2849,7 @@
     ],
     "conf": "High",
     "delta": 0,
-    "lastSignal": "2026-10-06",
+    "lastSignal": "2026-10-07",
     "headline": "Donald Trump Reportedly Told Donors ‘We Need to Elect JD’ in 2028 - people.com",
     "why": "Legally ineligible; tracked only because of the chatter he generates.",
     "quote": "",
@@ -3028,6 +3046,15 @@
           "earlyState"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-10-07",
+        "headline": "‘Not presidential,’ SC Senate candidate says about Trump’s post others called cruel and offensive",
+        "url": "https://scdailygazette.com/2026/10/07/not-presidential-sc-senate-candidate-says-about-trump-post-criticized-as-cruel-and-offensive/",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNLVFVVVc4dnU0YU1CeWZkSnV0WGdOZ3NYcHpyQ1JDUjZUdEF1d25xT056YzlBZXFwNTRfdUxDdTF3Z3pzaXFJdjFETm91OXpmMEhUVEU4cUtGOWREWG4tb016Z0Z0UDRGUnlHd2VoaURyV2tKbC1CeW1ZS1EySzEwcQ?oc=5",
@@ -3037,13 +3064,13 @@
     "early_states": {
       "NH": 5,
       "NV": 4,
-      "SC": 1,
+      "SC": 2,
       "IA": 6
     },
     "early_states_last": {
       "NH": "2026-09-27",
       "NV": "2026-10-06",
-      "SC": "2026-08-26",
+      "SC": "2026-10-07",
       "IA": "2026-10-06"
     }
   },

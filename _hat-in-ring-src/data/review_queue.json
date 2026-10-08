@@ -1994,5 +1994,17 @@
     ],
     "rid": "09cf78df0275",
     "kind": "discovery"
+  },
+  {
+    "name": "New Hampshire Democrats",
+    "headline": "A peace plan for New Hampshire Democrats’ primary wars",
+    "url": "https://newhampshirebulletin.com/2026/10/08/a-peace-plan-for-new-hampshire-democrats-primary-wars/",
+    "source": "New Hampshire Bulletin",
+    "date": "2026-10-08",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "c5509d9f2adb",
+    "kind": "discovery"
   }
 ]
