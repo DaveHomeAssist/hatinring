@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-09",
+  "date": "2026-10-10",
   "movers": [
     {
       "id": "landrieu",
@@ -88,12 +88,6 @@
       "from": 2,
       "to": 3,
       "date": "2026-10-05"
-    },
-    {
-      "name": "J.D. Vance",
-      "from": 4,
-      "to": 5,
-      "date": "2026-10-02"
     }
   ],
   "review_count": 164,
