@@ -867,8 +867,8 @@
       "donors"
     ],
     "conf": "High",
-    "delta": 10,
-    "lastSignal": "2026-09-01",
+    "delta": 5,
+    "lastSignal": "2026-10-12",
     "headline": "Khanna finishes another New Hampshire visit as he considers White House run - WMUR",
     "why": "First clear public timeline from the progressive-pragmatist lane.",
     "quote": "We'll look at that after the midterms.",
@@ -878,11 +878,13 @@
     ],
     "early_states": {
       "NV": 2,
-      "NH": 1
+      "NH": 1,
+      "IA": 1
     },
     "early_states_last": {
       "NV": "2026-06-13",
-      "NH": "2026-07-20"
+      "NH": "2026-07-20",
+      "IA": "2026-10-12"
     },
     "evidence": [
       {
@@ -927,6 +929,16 @@
         "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQWmRwelFTcVdYTWRuQlZ2X3J1aExLSVJVYUNtOG50WmduNGlqc2ZkZFR3NXNNak1xVjNlS2xzQWsyamZ0bFcwNmdRQVhNRkhlYTItTXlweXNqU3lOenZFUFV2QWozZHU4bEFyZjVLUWU4UWZYbEtyeUlzS3BwRS1SV1doMDkxR094aFpoV3RDNlBnQXhxZ2hFSjFIejB5OWRzSGoybjRMdzFHbFp0SGtJeHNZTFRsZnh2enZmdXhNRTlNcnBVY0pGYjJiMmN2eXlBQlhWc0h5NENjOW9mbmllM1Vjc0NzTjQ?oc=5",
         "keys": [
           "donors"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-10-12",
+        "headline": "California U.S. Rep. Ro Khanna rallies with Iowa Democrats ahead of midterms",
+        "url": "https://iowacapitaldispatch.com/2026/10/11/california-u-s-rep-ro-khanna-rallies-with-iowa-democrats-ahead-of-midterms/",
+        "keys": [
+          "donors",
+          "earlyState"
         ],
         "conf": "Low"
       }
@@ -2062,7 +2074,7 @@
     ],
     "conf": "Medium",
     "delta": 5,
-    "lastSignal": "2026-09-22",
+    "lastSignal": "2026-10-12",
     "headline": "Alexandria Ocasio-Cortez won't rule out running for senator or president in 2028 - NBC New York",
     "why": "Massive small-dollar base; leads some progressive polls.",
     "quote": "",
@@ -2232,6 +2244,15 @@
           "softConsidering"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-10-12",
+        "headline": "Will Rubio, Ossoff and Ocasio-Cortez run for president?",
+        "url": "https://thehill.com/homenews/campaign/6139719-ossoff-whitmer-rubio-skip-2028/",
+        "keys": [
+          "consideringQuote"
+        ],
+        "conf": "Medium"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOWFNvVDNlemVmbHIyRnRXSk04R2xsWlB0Z2N6aDhCTEl5UUJkR1hRSTJIUThUUlgzdFdQWTVqZUp5TlotRmJKbnktX05QTy1vNXpRdUlpNHB6SEpmNkItbVlDUm9ubTd6VEhVWEJHQ2FYUktTQXZJa3hVU2xtZjROREVXdWNpdk1ZVUtxdGVobWNUSkd2VVdHd0I1VmJINUxwaTFHN20xMGx3NFRDWXJrVU84SUg4YTZHbmNjRGN5WTRRand2b3fSAc4BQVVfeXFMTUx6MHNBal9aR2I3LW9PQUdYdldvMWg3YTZmYXppakZrNEtrVmhwTmJuQ0YtR2JTblUwcVpnd2pyVFo1RFVSMXoxUl9jSU00ZHl5Z1dOSFFHMnFaV0lHVjBsMDRrVExlcU5zX2w0eHpUQmM4Zmp4VTJwNmRmZFZNdHU2Ul9UN0ZxVFRIYnhKckpiZWdGNTM5dVV2VVU0TDNObGd0eG5palpySDBYWUtISmplTDB1aHc3UXFONVNMZGFSc2FST0Y2V25DeGR2NGc?oc=5",
