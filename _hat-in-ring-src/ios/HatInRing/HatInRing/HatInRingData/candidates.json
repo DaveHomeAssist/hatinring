@@ -887,7 +887,7 @@
     "early_states": {
       "NV": 2,
       "NH": 1,
-      "IA": 1
+      "IA": 2
     },
     "early_states_last": {
       "NV": "2026-06-13",
@@ -946,6 +946,15 @@
         "url": "https://iowacapitaldispatch.com/2026/10/11/california-u-s-rep-ro-khanna-rallies-with-iowa-democrats-ahead-of-midterms/",
         "keys": [
           "donors",
+          "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-10-12",
+        "headline": "Khanna tells Iowa Democrats party must offer ‘transformational change’ - Radio Iowa",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOcndTMHV4cmxjVjBUaVp3cXRFZDN6ZHFwanNCeGNGT0taWmFUSVFFVzF0aFUwVjhFbUc2Ym11bmxUS1lRZGdDZXJ3QWJ1VjhLMzZfZGt5TVV3S3VYeXlMTlltZEo2Zkd3YWVQWUlpZGdmNndxREFtUkxnbjhlS1VtZjF3SGdfeFJXY3Z5dVZBZkI2dXRwcmo4aW1pekE2b0lYUkg2ZFlfcVBjQQ?oc=5",
+        "keys": [
           "earlyState"
         ],
         "conf": "Low"
@@ -1354,6 +1363,15 @@
         "date": "2026-09-23",
         "headline": "Mitch Landrieu for president? Former mayor is considering a run. Here's what we know - WDSU",
         "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOMldIWmxCbERSTG5fRk1XVnE5OFQzNGc5Q292cFF4YWNfaVgtWGVwV3BSZjRtb3FydlFSOUVhSWFaRHFsVmNEQ0hxMFg1UzBpME1BN1VXeUlxcFREMEd4Mm8zWmVwaHhIVUUzZDY4Y0k5QnhmVzRUM19pbmM4bmc0NExwMnBUdw?oc=5",
+        "keys": [
+          "consideringQuote"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-09-23",
+        "headline": "In interview at Mosca’s, Mitch Landrieu says he’s still thinking about running for president - NOLA.com",
+        "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNODBxS1U4SERqS2Q2WXBOby1WVGkxLTZEVzBORy1nOHlHV2NyVzRTRnVGejhydGNOSU5ZM2o0U0FnSU1YUGNrcGV5bGRMWkZOazRBOUs2aERxX1lNX0R1T0NJZnRlNmlTQkF5VmdXZEJSVHFTQVFmZDl3bFFSeG45enp6YnN5VUVqMG5aY1pYaGZiSWxEUmFweUtkX2w5SjJQRWdiblRFRERfd3pqVldHQTNlRnVWU3pTalFNdVlVMmktckVVWGVJeUxVWEZWcUlISWRsdDhMWWdiNUdWdUtwX0J4WExtd9IB6wFBVV95cUxPb0FKWHhKX3JiQlRHSWUwdktxNllvMUlVeWJ1R3VRREpGdVdLQm9Zd0txUVpJNUZkX0NJVEFySlVjYTR4c1lGYlRkWWoyZjBJd2hybGozMTQ4Z181NjZyRDZYVVRHcHFkWjVna0hPemFLUk0yODQ5MWVLN2xqNVhtVUstT2pFRWw3elpIVk05T012ZG5ZN2RuejhiVkN3TThKSHdsMFkxMmY4dEk2NTR3Q2ZLaDl0MWZ0Tm9mcG02SWtBSC0yb3hHaE9EWUFxR3ZMWjJqc2JlMExNeWtJa25WbUx2SzdUWFE0Qkhj?oc=5",
         "keys": [
           "consideringQuote"
         ],

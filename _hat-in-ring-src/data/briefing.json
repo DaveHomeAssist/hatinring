@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-12",
+  "date": "2026-10-13",
   "movers": [
     {
       "id": "landrieu",
@@ -24,7 +24,7 @@
       "name": "Don Bacon",
       "party": "Republican",
       "delta": 23,
-      "score": 25,
+      "score": 20,
       "tier": 3,
       "statusLabel": "Actively considering"
     },
@@ -82,15 +82,8 @@
       "statusLabel": "Declared"
     }
   ],
-  "transitions": [
-    {
-      "name": "John Kennedy",
-      "from": 2,
-      "to": 3,
-      "date": "2026-10-05"
-    }
-  ],
-  "review_count": 164,
+  "transitions": [],
+  "review_count": 166,
   "totals": {
     "tracked": 41,
     "formal": 3,
