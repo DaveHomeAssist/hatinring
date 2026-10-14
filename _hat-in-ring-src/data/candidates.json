@@ -114,7 +114,7 @@
     ],
     "conf": "High",
     "delta": 0,
-    "lastSignal": "2026-10-01",
+    "lastSignal": "2026-10-14",
     "pollLead": "Dem poll leader",
     "headline": "Opinion | Which version of Gavin Newsom will voters see if he launches a presidential campaign? - calmatters.org",
     "why": "Polling frontrunner actively staking out a 2028 lane; a national billionaires-tax pitch and a Biden embrace are already drawing intra-party fire (Khanna).",
@@ -128,12 +128,12 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Gavin_Newsom"
     },
     "early_states": {
-      "NH": 1,
+      "NH": 2,
       "NV": 5,
       "SC": 7
     },
     "early_states_last": {
-      "NH": "2025-09-05",
+      "NH": "2026-10-14",
       "NV": "2026-09-07",
       "SC": "2026-09-07"
     },
@@ -279,6 +279,15 @@
         "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNYWpRTVB4ZnZmMTNOWHYtS3FPeHBEYk1xeTI5VEJGd2RtNDhXUEhKYkszUnMxR1NqNjk4bktiZ0JsZnJ1MXZocGwxQlU2eXB0MkhMSWhLS0pYdDZsakZXa0pJYXNEV2x4YjJpclZzQUt6eFlZTlhWMW44R1NBVm91ajRjRXVMMzViQXV6bUFIQXpEeWNwcGZTRXZ1YTVkNlQxR3NINGdIVEtVdjRDUjl6V3p6cFFqQmhlQTBCOVhfcmtseWRmTkZIT1hkbmFDckE1S3d3MjJ5WnM0cXhuTlItcnVDQy1CdUhwd3c?oc=5",
         "keys": [
           "mediaBlitz"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-10-14",
+        "headline": "Gavin Newsom to parachute back into New Hampshire ahead of midterm elections - New York Post",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNUG9VZW1samNzNFROSXZ1Q3N4SnJnYVRQY3dfcGRtcmVFNTJ5engwbXd0ZjBjR2ZvVHoxZUU2bEszb2tZdmRTTkpXR3F3OHBsTERlaU9lTzFZeEtuTjcyZFFoSlRzaFBuM2ZaNGFCQzFkOUJVelZuZVhMMC1EMjMxUWtEWVMyRWR0aUkwVER0RWNzSEgxb3M3aGU5Zi1qdnpFd0piT3hTaC1WejNEdDdGVHR6VjUwQQ?oc=5",
+        "keys": [
+          "earlyState"
         ],
         "conf": "Low"
       }

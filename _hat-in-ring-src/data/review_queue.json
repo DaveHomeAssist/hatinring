@@ -2030,5 +2030,17 @@
     ],
     "rid": "4b488d1322e9",
     "kind": "discovery"
+  },
+  {
+    "name": "Jon Ossoff",
+    "headline": "Sen. Jon Ossoff: ‘I’m not running for president’",
+    "url": "https://www.politico.com/news/2026/10/13/jon-ossoff-zero-interest-2028-georgia-01117546",
+    "source": "Politico",
+    "date": "2026-10-14",
+    "keys": [
+      "ruledOut"
+    ],
+    "rid": "5558db86f56c",
+    "kind": "denial"
   }
 ]
