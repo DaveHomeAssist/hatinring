@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-14",
+  "date": "2026-10-15",
   "movers": [
     {
       "id": "landrieu",
@@ -83,7 +83,7 @@
     }
   ],
   "transitions": [],
-  "review_count": 167,
+  "review_count": 170,
   "totals": {
     "tracked": 41,
     "formal": 3,

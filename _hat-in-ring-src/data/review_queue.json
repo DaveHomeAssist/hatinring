@@ -2042,5 +2042,42 @@
     ],
     "rid": "5558db86f56c",
     "kind": "denial"
+  },
+  {
+    "name": "Tulsi Gabbard",
+    "headline": "Gabbard won’t rule out 2028 presidential run - The Hill",
+    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxORjVBZ1pSdXV5MVVENlJVQmw0dHViWGJOX0JOVFlnYlFGQmNiTkEwRTVwenhjN19XSXVFZndSc29qcy0tSlpFMEVfdHRwTS00VWpmN2V3QUZEeEY2eXY5WHZJQk94QU1JMXJmcHpudFhOVkE5cHE3QjQwN2hPUk55N1pLNk5iMmZld2fSAY8BQVVfeXFMT0JCVGg2cWhidksweVNOVG9Bc0V6Y3JjSmxWRFJjVXBidTctSkU4RzEtZkxaUWU3S0NScEpmTUppSk1iRi05ZC0wUnltNkE5X1d4Vnlvc3d2WkxkU0RfbnZ0RnZMVVF1TWxjMDg4NHZuYWtzLVRjR2VJYTZxUkpZSDlMWlp6UEVxZWRqYjVaZEU?oc=5",
+    "source": "The Hill",
+    "date": "2025-05-01",
+    "keys": [
+      "ruledOut"
+    ],
+    "note": "denial/downgrade — confirm before applying",
+    "rid": "8798755af7c4",
+    "kind": "denial"
+  },
+  {
+    "name": "Is Harris",
+    "headline": "WATCH: Is Harris running in 2028? 'I'm thinking about it' - PBS",
+    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNem1tVFpWdlpMTFBCaVhnem84eGpjUFhscUhBdUNlZmFoSlFmVWxkcFRMOUY3MVduLTlQbl9vay1tWFZ0Y2piT01YY0JENkpTcFZLeExZaEdoSWhYb0ljV0ppb3RFWERIZGpsLWQ5ZVlDdDJfQng1MVZiMDI2YS1Ral9hRVJBQ2FjdDk0RThQT0JSODBL?oc=5",
+    "source": "PBS",
+    "date": "2026-04-10",
+    "keys": [
+      "consideringQuote"
+    ],
+    "rid": "084b70377a71",
+    "kind": "discovery"
+  },
+  {
+    "name": "Nancy Mace's",
+    "headline": "Nancy Mace's unpredictable career is up in the air after finishing last in South Carolina primary - AP News",
+    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQcVA0RlZydzd0WjJETlhkR3lNR0V3cGN0ck5rd09KWDNWUXhVZ2QxUTM2NlQybmZGd3hjLXJvTS1oNnBNcWJFa01lZmIzUTJYMTRlb0NMZmt3a0hQYnRmWEZqSFZOM3lVMVlXZ0ZVVGszbzU1UU5lVzhCYU5ZZWp1cUZjblRZaGg3X3IzMg?oc=5",
+    "source": "AP News",
+    "date": "2026-06-10",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "255616e9cb20",
+    "kind": "discovery"
   }
 ]

@@ -99,6 +99,9 @@
     "links": {
       "wikipedia": "https://en.wikipedia.org/wiki/Jo_Jorgensen"
     },
+    "fec_ids": [
+      "P00013524"
+    ],
     "img": "assets/candidates/jorgensen/01_jo_jorgensen_portrait_3_jpg.jpg"
   },
   {
@@ -322,7 +325,7 @@
     ],
     "conf": "High",
     "delta": 0,
-    "lastSignal": "2026-10-10",
+    "lastSignal": "2026-10-14",
     "headline": "South Carolina picked for first 2028 Democratic primary, in possible Kamala Harris boost - New York Post",
     "why": "The 2024 nominee tops early Democratic primary polling; a rematch frontrunner in a crowded, unsettled field.",
     "quote": "I have not made a decision… I may or may not.",
@@ -332,33 +335,6 @@
       "USA Today"
     ],
     "evidence": [
-      {
-        "date": "2026-04-10",
-        "headline": "Kamala Harris shows interest in 2028 presidential run ‘I am thinking about it’ - Yahoo News New Zealand",
-        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1PYXR5ZFY5WGE4bnNHOTlCV3ZkUDQ4RE9ucC1BTHNEdURSTjY3cERhSW40bi1hMU9hUkVqeWlMLVJlYTdJamhBYU5mT203MGZYQVhuYnZUU2lkRXFpV1RQbHhVY215SjFwazFycTBSb2RlX3ZQOTNudUZlNmtBSFk?oc=5",
-        "keys": [
-          "consideringQuote"
-        ],
-        "conf": "Low"
-      },
-      {
-        "date": "2026-05-10",
-        "headline": "Kamala’s cash crisis: Big donors turn their backs on Harris as 2028 bid already hangs by a thread - New York Post",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOWC1nUFZGeGZwTFkwVnQ4YURoanlwVTZ1QXhsLUctU1pORm9vLVFiT3RGVzYyaVdaRXRPWjBjeVFBQTZvTS0xaUJKc3FwblZ5Wm02UEJ6ek84NUlwTl9fRXk0Wmd3ckVNRlVhUjQ3Y3BvcWp2ME5ZSGV6QWdEaTI3Z3F2XzhaTDNUYVNCT20wVk0xUDhjN1BXSVBCOA?oc=5",
-        "keys": [
-          "donors"
-        ],
-        "conf": "Low"
-      },
-      {
-        "date": "2026-04-13",
-        "headline": "‘I Am Thinking About It,’ Kamala Harris Says of 2028 Presidential Bid - The San Diego Voice & Viewpoint",
-        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPQ0MySWJYZ2ZMaVh4M2ZtcjNfZnhfNmEzOHQtcldCQ01WQWJ4VTF6Y0lLQjRvVFU1d0VkbUlWYWFSSzB6SGVjOFpVclhndWY0ZHM2NF8tS2huMlpCUWtDVDN6TWNYaHdDXzR6c1hzU0xFTjY0TzBuLWUycTk5bVVPRkIwRmM5a2h0YVBfNlVDT1RpQQ?oc=5",
-        "keys": [
-          "consideringQuote"
-        ],
-        "conf": "Low"
-      },
       {
         "date": "2026-04-10",
         "headline": "Kamala Harris shows interest in 2028 presidential run ‘I am thinking about it’ - The Independent",
@@ -538,6 +514,42 @@
           "donors"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-04-10",
+        "headline": "Kamala Harris considering 2028 presidential run: ‘I am thinking about it’ - Denver Gazette",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdlh2QXFLN19wY3RtVXNhWENGTkktc1A0cXRUNEhxYzRidHJJclV3N0otWmg4NzRsN2o2amdSVENTYndPWEZIWGI2VzVPOVJUMXdpWVpNREhGcnlkdmdpUWR3aE5MOU83T0NrUjdEc0JmYUtUemVOT2dES0RmRU1FTDlJRFp4UWhLWkd0YWR6VW9KX3FhRFNBb3gybncxYW1ReTFCc0hrNXRmY3dpWDB2M0pn?oc=5",
+        "keys": [
+          "consideringQuote"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-10-14",
+        "headline": "Harris opens huge lead in 2028 poll even as hubby, donors don’t want her to run - SILive.com",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNc0dBTDdvd1V3NmhvN1cxanlMZHJNWEtXdlBhQUQ3cnV5bVI0UXdFVU9oWS1TcEVEVE1nekxJekNEbDZybFRySVEzVGY4R3R3OUN0dDg2NnM4N3AxaUc0MWQ4LUE4ZklSNTdZc204bDV4bS1jUkVzUUZZajFPdEJXTkZhSmtrcnRxWlE4ODJGMjdzeUlsRUx3c0hoN25QcERhT01LY0xnRVlZNTZsWGFDU0R3QXNqSzZwbERnYzFvNA?oc=5",
+        "keys": [
+          "donors"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-10-14",
+        "headline": "Harris tells Keke Palmer she's undecided on 2028 run",
+        "url": "https://thehill.com/homenews/campaign/6149362-harris-undecided-2028-campaign-keke-palmer/",
+        "keys": [
+          "mediaBlitz"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-10-14",
+        "headline": "Harris to hit campaign trail for Democrats in Mississippi, New Hampshire, more",
+        "url": "https://thehill.com/homenews/campaign/6148466-harris-to-hit-campaign-trail-for-democrats-in-mississippi-new-hampshire-more/",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNV1BzWkNZc19aWWh3R2luZFZxWUVJT2oyZFo1LXFzQ0c2aHk1MExoNENNZk5nMkFtaS1lRWZlRXpZanVpUEhRV20tVWtIOF95MGJ4amJ0Mlpqc3lseEtxZ3A0VlVockFVdFN2Wm10eGNJWDVJUUtSd3hIb0FnRDN2VENUUkNMRnh6WGIyc0pTdnZrSmNmclJ4QWY3TDlTdEdKWjVmZkoyeDRBdzhrSWVyUnh5OHh1MDhwUEtLN1VjdDBTOEZn?oc=5",
@@ -547,14 +559,14 @@
     "early_states": {
       "SC": 2,
       "IA": 5,
-      "NH": 1,
-      "NV": 1
+      "NH": 2,
+      "NV": 2
     },
     "early_states_last": {
       "SC": "2026-08-18",
       "IA": "2026-09-24",
-      "NH": "2026-08-31",
-      "NV": "2026-09-30"
+      "NH": "2026-10-14",
+      "NV": "2026-10-14"
     },
     "img": "assets/candidates/harris/01_kamala_harris_vice_presidential_portrait_jpg.jpg"
   },
