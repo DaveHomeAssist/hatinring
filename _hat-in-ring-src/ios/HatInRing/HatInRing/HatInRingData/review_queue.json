@@ -2079,5 +2079,41 @@
     ],
     "rid": "255616e9cb20",
     "kind": "discovery"
+  },
+  {
+    "name": "Nevada Independent",
+    "headline": "Move over 2026, 2028 hopefuls are already swarming Nevada. - The Nevada Independent",
+    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNa0l3dHFkRGhXYWRWdlhSYjBFcGZodE9DQXBtTGVkREZ0Z2gtcGZubXI2dlpWa1dTcWRWVGhnZlhrbk1QdFI4MXRlc1dsNXpBMzA3SlU2bjlFZ293U0NGd3JvU0Exb1NUVlRCZ21hUnpJSkdLelE2Z3JsZVl2ZWNybUVRRHlYaTRPUUpqX3Q2WEU3TlRuWFd4eW9yRTlMZw?oc=5",
+    "source": "The Nevada Independent",
+    "date": "2026-10-15",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "c82ab2dd6b62",
+    "kind": "discovery"
+  },
+  {
+    "name": "Move over 2026, 2028 hopefuls are alread",
+    "headline": "Move over 2026, 2028 hopefuls are already swarming Nevada.",
+    "url": "https://thenevadaindependent.com/article/move-over-2026-2028-hopefuls-are-already-swarming-nevada/",
+    "source": "The Nevada Independent",
+    "date": "2026-10-15",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "43c84d3b1140",
+    "kind": "discovery"
+  },
+  {
+    "name": "Seven subpoenas engulf Nevada election c",
+    "headline": "Seven subpoenas engulf Nevada election chief in key midterm battle - Reuters",
+    "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNM3RRM0NxQnF4QURwYWR2RG9xMWxUTFl6Q0RuYlRYUmhhX25GZFJDdzBMaXhsWVJoUDRCTTY5TkdDTWpNN0V3Mjg0MkpaUmdnaUZWVmxhZ2ZXWWQ0b1ZFZ29BelpiNGl4ZUFvdVZjWkp3eVpBeEVjeDdnN0VIZF9YWFVScnBaaHFDTHVMOFZvUDJ0S0RTcXpQMFRfcDBkcFFNeW5XR0ZFbS01Zkp6TDN1bzZhOUVEa00?oc=5",
+    "source": "Reuters",
+    "date": "2026-10-15",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "e77a41b2a9db",
+    "kind": "discovery"
   }
 ]

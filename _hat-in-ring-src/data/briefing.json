@@ -1,6 +1,15 @@
 {
-  "date": "2026-10-15",
+  "date": "2026-10-16",
   "movers": [
+    {
+      "id": "shapiro",
+      "name": "Josh Shapiro",
+      "party": "Democrat",
+      "delta": 40,
+      "score": 40,
+      "tier": 3,
+      "statusLabel": "Actively considering"
+    },
     {
       "id": "landrieu",
       "name": "Mitch Landrieu",
@@ -45,15 +54,6 @@
       "score": 50,
       "tier": 3,
       "statusLabel": "Actively considering"
-    },
-    {
-      "id": "greaney",
-      "name": "Dan Greaney",
-      "party": "Republican",
-      "delta": 15,
-      "score": 40,
-      "tier": 5,
-      "statusLabel": "Declared"
     }
   ],
   "new_filers": [
@@ -82,11 +82,18 @@
       "statusLabel": "Declared"
     }
   ],
-  "transitions": [],
-  "review_count": 170,
+  "transitions": [
+    {
+      "name": "Josh Shapiro",
+      "from": 2,
+      "to": 3,
+      "date": "2026-10-16"
+    }
+  ],
+  "review_count": 173,
   "totals": {
     "tracked": 41,
     "formal": 3,
-    "considering": 15
+    "considering": 16
   }
 }

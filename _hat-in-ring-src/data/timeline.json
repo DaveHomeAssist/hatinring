@@ -401,5 +401,18 @@
     "direction": "up",
     "reason": "",
     "reconstructed": true
+  },
+  {
+    "id": "shapiro",
+    "name": "Josh Shapiro",
+    "party": "Democrat",
+    "date": "2026-10-16",
+    "from": 2,
+    "to": 3,
+    "fromLabel": "Positioning",
+    "toLabel": "Considering",
+    "direction": "up",
+    "reason": "Gov. Josh Shapiro launches a federal PAC — the strongest signal yet he’s eyeing a 2028 run - Inquirer.com",
+    "reconstructed": false
   }
 ]
