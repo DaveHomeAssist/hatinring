@@ -2349,7 +2349,7 @@
     ],
     "conf": "Medium",
     "delta": 40,
-    "lastSignal": "2026-10-16",
+    "lastSignal": "2026-10-17",
     "headline": "Shapiro says he has 'profound' differences with a Mamdani-backed candidate",
     "why": "Swing-state governor drawing moderate contrasts; ranks among the top tier of 2028 Democrats in recent polling.",
     "quote": "",
@@ -2368,6 +2368,24 @@
         "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNUjQ2THp2amNMaXNCNHdEZ1RSNHZvVkVIWWFUOE12VTFrZERzQUdIYXhhM2pzSzhEMUVWc2ZCZFQ0Wml2QUFHMnBnTV8zWVdSdXZmcXNzbUU2R1l5NndoSGpTVDQyc1dFN2VjWWpkNFpyVmpwdkxVcm9uTGI0bkwwa05fT2NZSUdheFlIVUdOeGhrUFV4RTN1TTlDakNOSUVrZnROQQ?oc=5",
         "keys": [
           "consideringQuote",
+          "donors"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-10-17",
+        "headline": "Shapiro’s fundraising power shifts to congressional races and maybe a White House bid with new PAC - PennLive.com",
+        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQNjBaT1QwZXByUFZRRnVBaXF5VVJWQlgtZUFZSm1jUVExbFUwalZRdE9NeThyei1KUjNOaEhTejBkdm5VaHBxVEdORWZGaTFhb1BKUjZhd3dPYl92YW1xcDNDcmdWNFNmTTlYVHc4bHBKb1pnNVV2QXFUXzZHQUlybjB0N0Y5d0JESUp0dm5wNnBheDBMUTJObFRuMnhNVXBlZE9oYW44YnJjVUxoSHNzcnNkMzdkNnpyalRXSkpRWThBVnhQb1BMZEE0UlpOakVQdTFxZmdMN0tzcEJf?oc=5",
+        "keys": [
+          "donors"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-10-16",
+        "headline": "Josh Shapiro takes tentative step toward 2028 run with federal PAC - Washington Examiner",
+        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOMVF0bW96SzM4R0drajR5U0xNVkZjY0xUZzY4Mjc0WkoxdGR0clFBYTZmb2NTYkFOUEl3QjRTeTdPbXBRQVU2WHA0NFpKSGFwRHYxQm80WUgzSTlrZ3NTT0d0dGU0cDdLSGJOMzZ3UVg4SHpoRjJkemRuRFNUWjBIakNpaVRCampEczRtNXU2TVdfQW0ydmZUeHBJdGI4Z0JRR0VHbldsUXRKSUZIWURBV1NYeXYzUzR5dUFzS01hRDdnNEhxSFVIb0Y0OA?oc=5",
+        "keys": [
           "donors"
         ],
         "conf": "Low"

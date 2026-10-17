@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-16",
+  "date": "2026-10-17",
   "movers": [
     {
       "id": "shapiro",
@@ -64,20 +64,8 @@
       "statusLabel": "Declared"
     },
     {
-      "id": "kelly",
-      "name": "Mark Kelly",
-      "tier": 5,
-      "statusLabel": "Declared"
-    },
-    {
       "id": "cruz",
       "name": "Ted Cruz",
-      "tier": 5,
-      "statusLabel": "Declared"
-    },
-    {
-      "id": "vance",
-      "name": "J.D. Vance",
       "tier": 5,
       "statusLabel": "Declared"
     }
@@ -90,7 +78,7 @@
       "date": "2026-10-16"
     }
   ],
-  "review_count": 173,
+  "review_count": 174,
   "totals": {
     "tracked": 41,
     "formal": 3,
