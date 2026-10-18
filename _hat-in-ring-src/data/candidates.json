@@ -117,7 +117,7 @@
     ],
     "conf": "High",
     "delta": 0,
-    "lastSignal": "2026-10-14",
+    "lastSignal": "2026-10-17",
     "pollLead": "Dem poll leader",
     "headline": "Opinion | Which version of Gavin Newsom will voters see if he launches a presidential campaign? - calmatters.org",
     "why": "Polling frontrunner actively staking out a 2028 lane; a national billionaires-tax pitch and a Biden embrace are already drawing intra-party fire (Khanna).",
@@ -131,12 +131,12 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Gavin_Newsom"
     },
     "early_states": {
-      "NH": 2,
+      "NH": 3,
       "NV": 5,
       "SC": 7
     },
     "early_states_last": {
-      "NH": "2026-10-14",
+      "NH": "2026-10-17",
       "NV": "2026-09-07",
       "SC": "2026-09-07"
     },
@@ -289,6 +289,15 @@
         "date": "2026-10-14",
         "headline": "Gavin Newsom to parachute back into New Hampshire ahead of midterm elections - New York Post",
         "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNUG9VZW1samNzNFROSXZ1Q3N4SnJnYVRQY3dfcGRtcmVFNTJ5engwbXd0ZjBjR2ZvVHoxZUU2bEszb2tZdmRTTkpXR3F3OHBsTERlaU9lTzFZeEtuTjcyZFFoSlRzaFBuM2ZaNGFCQzFkOUJVelZuZVhMMC1EMjMxUWtEWVMyRWR0aUkwVER0RWNzSEgxb3M3aGU5Zi1qdnpFd0piT3hTaC1WejNEdDdGVHR6VjUwQQ?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-10-17",
+        "headline": "Newsom reflects on New Hampshire's presidential primary history amid 2028 speculation - Fox News",
+        "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBoekR3YUhRb1lCTVp2WmhSeW45NXUzVnhRYjdBSGZPaHlBUDVyZFNXdldjWGpabTZwU0VMdTNyMkY2RXhpNnZubm1nZmFPOUNVT3ZrcnBB?oc=5",
         "keys": [
           "earlyState"
         ],
@@ -1143,11 +1152,12 @@
       "mediaBlitz",
       "donors",
       "earlyState",
-      "consideringQuote"
+      "consideringQuote",
+      "staffing"
     ],
     "conf": "Medium",
     "delta": 15,
-    "lastSignal": "2026-09-17",
+    "lastSignal": "2026-10-17",
     "headline": "Rahm Emanuel is considering a 2028 run for president. Here's what he's weighing - WBUR",
     "why": "Aggressive media tour to project vitality and viability.",
     "quote": "",
@@ -1165,11 +1175,13 @@
     ],
     "early_states": {
       "NH": 8,
-      "IA": 1
+      "IA": 1,
+      "SC": 1
     },
     "early_states_last": {
       "NH": "2026-09-17",
-      "IA": "2025-09-28"
+      "IA": "2025-09-28",
+      "SC": "2026-10-17"
     },
     "evidence": [
       {
@@ -1269,6 +1281,25 @@
         "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9VRGVhX1dJYTA5Y3dTQjRFZjBMVGgyZjRTaERKVzBKMmFqR3EzaWhLM1hCdDJMN2xIdUVhZGdTQ1N5aFV0WTlvUVZncmhBdlBFaDdoTElxRTJKc1J1aTYxSXY4MVFUZw?oc=5",
         "keys": [
           "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-10-16",
+        "headline": "Rahm Emanuel tries out a new primary lane: Democratic ‘consultant in chief’ - The Hill",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPY3MxZ3JPdzNWM2RvZkhjRElFWTBhZU5pMEl5ZnZpMnBzSTc1d0NFODJPQV9zZUotTFpZZEhQQ01BdENJQVU1aFY0NmhKSzJmN2lsMmMxWkZ0MEpFMDVuQkpnQkVESl9oNEVJeUdfczdSZW1aU19lYWZvMGZldllrSUtEb21ITFluTkZyNGN2aF_SAZYBQVVfeXFMT0s1Uk91Y01aX2FkNUVqMElOdzdQOVlfSlBHemd4akdTUXpRbmpRdDlucTl4aWZ4Nkd0TURDR2poZVFoXzhNVF9ualhNbndyY2RFMXF2Q3VfNEhrTWJ1RXY4VHRPSm9oZFZCb3lxalBLRU5BeEhQblFCNmVtZVIxbWtvRFY5OEc5RzlMVFZiX0xKUUJ5Vjhn?oc=5",
+        "keys": [
+          "staffing"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-10-17",
+        "headline": "Rahm Emanuel tries out a new primary lane: Democratic ‘consultant in chief’",
+        "url": "https://thehill.com/homenews/campaign/6155340-rahm-emanuel-democratic-presidential-run/",
+        "keys": [
+          "earlyState",
+          "staffing"
         ],
         "conf": "Low"
       }
@@ -2326,7 +2357,7 @@
     ],
     "conf": "Medium",
     "delta": 40,
-    "lastSignal": "2026-10-17",
+    "lastSignal": "2026-10-18",
     "headline": "Shapiro says he has 'profound' differences with a Mamdani-backed candidate",
     "why": "Swing-state governor drawing moderate contrasts; ranks among the top tier of 2028 Democrats in recent polling.",
     "quote": "",
@@ -2362,6 +2393,15 @@
         "date": "2026-10-16",
         "headline": "Josh Shapiro takes tentative step toward 2028 run with federal PAC - Washington Examiner",
         "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOMVF0bW96SzM4R0drajR5U0xNVkZjY0xUZzY4Mjc0WkoxdGR0clFBYTZmb2NTYkFOUEl3QjRTeTdPbXBRQVU2WHA0NFpKSGFwRHYxQm80WUgzSTlrZ3NTT0d0dGU0cDdLSGJOMzZ3UVg4SHpoRjJkemRuRFNUWjBIakNpaVRCampEczRtNXU2TVdfQW0ydmZUeHBJdGI4Z0JRR0VHbldsUXRKSUZIWURBV1NYeXYzUzR5dUFzS01hRDdnNEhxSFVIb0Y0OA?oc=5",
+        "keys": [
+          "donors"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-10-18",
+        "headline": "Shapiro launches super PAC as presidential speculation mounts - The Hill",
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE96SFpiTmxvLXBTNTRtaFYxTmRuZjhrWFE4Sk90aDVxUnZKaHlYT3psRTNKbURvTERPQnJKVnFQRVIydjJyeFZrZzVvaWJ0TWpiV2hxeTlLcG1nYUFjbDNCZEI5cl9ieHdjSXB6eXZLZnl0ZjF5Z2tfUVYxSklQZ9IBgwFBVV95cUxPZ3A3Wklla1FkTWJ5ZFdZUW5idmxUbFNnM0F5cXZKZ0lBUUNkR2FfTkdTa19kRm1IcEFTb0c2MndtU2JkWEEzb2xwakU4WEFGTU4zdmZZWTJ3SWNPYzdmVHFqZ0ZNRUZlQklUQmNGUVNWbVNxZU9ocTdPeFFMakZnRTRCQQ?oc=5",
         "keys": [
           "donors"
         ],
@@ -2467,11 +2507,12 @@
       "earlyState",
       "consideringQuote",
       "exploratory",
-      "declared"
+      "declared",
+      "softConsidering"
     ],
     "conf": "Medium",
     "delta": 10,
-    "lastSignal": "2026-10-02",
+    "lastSignal": "2026-10-18",
     "pollLead": "GOP poll leader (~35%)",
     "headline": "Sorry, Marco ... Trump turns to Vance as his successor and tells donors to back vice president in 2028: report - the-independent.com",
     "why": "Presumptive GOP frontrunner; succession speculation around the sitting VP is building as a 2028 strategy takes shape.",
@@ -2508,24 +2549,6 @@
       "IA": "2026-09-18"
     },
     "evidence": [
-      {
-        "date": "2026-05-01",
-        "headline": "Vance, Cruz, head to Iowa on 2026 missions as 2028 GOP race to succeed Trump heats up - 930 WFMD Free Talk",
-        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPZk5Eb2xOYTNFN2ZOdTUwT3lDaF9DTW1mYzlEbllzZnNJa1Y5aUM1OHA1ejI2RzBxUXU0LXJiZGVQV0Zqck82dGRyMEtJY21BVWhRS29lbEhGcVI0cXdfWUMtekR3c3FoZ3ptWTFCbFpxV2tSZ2QwVlhqN2tFZDM0NzVlYXpCWWdISF9aNWFKSWtDQXRZYUwyTnZPM1lnTWNOWXlra1psT0FGUkxfNVlzbUFOVzBNaTQ?oc=5",
-        "keys": [
-          "earlyState"
-        ],
-        "conf": "Low"
-      },
-      {
-        "date": "2026-05-05",
-        "headline": "Vice President Vance woos Iowa Republican voters ahead of 2028 - WSLS",
-        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOVjVNRDRMV3p6a19lSmViVlBuOTFpeGNCM3hyUWhfVnhtczhuU2JZcEtEUFh1eXZuREppZ1pPNWNpejNVRW1KZVQtM0JNTVNvOEVLYXZyZGpSMV90bWJMMnROX0JxUXhSeERuWVdYWHRGUm5vWmM1TXJkT0RKTzl6YzVlT1p4RURISVVtcDc2VTJMZXBMS1FEVm5fNFl4WVpSd05aNzZZNXh6UFo3cE9wQnI3OE5pdDF2emhTdlV4eHJuaVdSU0o1cmxNVFVfQTZ4ei16cUlR?oc=5",
-        "keys": [
-          "earlyState"
-        ],
-        "conf": "Low"
-      },
       {
         "date": "2026-07-13",
         "headline": "Vance’s tough talk on Israel is alienating some Jewish GOP donors - Politico",
@@ -2723,6 +2746,24 @@
           "declared"
         ],
         "conf": "Medium"
+      },
+      {
+        "date": "2026-10-18",
+        "headline": "JD Vance leaves door open to skipping 2028 presidential race - Latest news from Azerbaijan",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNeFNfNkRLVHFsMGNlMHVudjZ0WEt1RGw5ekFZZHBsZVAzT2dfYXpmczFVNElXbGRvM3ZwY0tqTy1mYkdpeUxiOXU3MThXZVluMklCVkJYWjQtem5oRnhjTW05SFFveWFpSldqWHJOUnZNSGxMbEdfLTVZVmFIVTcxMjhPaHpVYzd0?oc=5",
+        "keys": [
+          "softConsidering"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-10-18",
+        "headline": "JD Vance leaves the door open for the 2028 election and reveals Washington’s condition regarding Iran - صوت الإمارات",
+        "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNRlA1NUtEWHUxWEpHMkI0ekcwNWE5LXB2aHg4X05BVGk3UUt6ZHpxdlM0Q05JNS1rX0tPUE1tZ0RBa1BFVmhhQWRyeW9JMXMzQ1hCX01vbS1sdTNxVGM0Y1BzOU8xUC1MdkIxSlhlTENuUlN2aXVTNG1TZ3pJdVdWSUk3bTdPTXE3SGMydFFYdi12UE5RbkdCdU5adDJEZVFBR1NOdng1NndoZDBnQTdBaGhzTUV5S08zRERpTXlhbktHR3dxV19jMkhhS2ZQZzdKQ01ZbVMtOTlyZkloMzFhYnZBYmlzRXJsZ004LQ?oc=5",
+        "keys": [
+          "softConsidering"
+        ],
+        "conf": "Low"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSE9fOW83TE12NUxwMkJlV3Bqc0pBRmZIaXNMTVJtZmwxcGlIWFozNkIzcHF2ekNoSmc3VEZyZ3lXM0xBWkx2UFhkcExJTXlXR3c3b1BCUlAxMU95TS1PMlU4aHg4aTA3cUhIU040aWVOSXhUbkpXVkZaNjVoLUZMc0pIR0cwWTJMZEdRTFAzNm1kb3dVVU45S3ZlN2djV19UT1BjaThHY1dsRE0?oc=5",

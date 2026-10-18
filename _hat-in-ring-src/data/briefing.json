@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-17",
+  "date": "2026-10-18",
   "movers": [
     {
       "id": "shapiro",
@@ -51,7 +51,7 @@
       "name": "Rahm Emanuel",
       "party": "Democrat",
       "delta": 15,
-      "score": 50,
+      "score": 60,
       "tier": 3,
       "statusLabel": "Actively considering"
     }
@@ -68,6 +68,12 @@
       "name": "Ted Cruz",
       "tier": 5,
       "statusLabel": "Declared"
+    },
+    {
+      "id": "vance",
+      "name": "J.D. Vance",
+      "tier": 5,
+      "statusLabel": "Declared"
     }
   ],
   "transitions": [
@@ -78,7 +84,7 @@
       "date": "2026-10-16"
     }
   ],
-  "review_count": 174,
+  "review_count": 175,
   "totals": {
     "tracked": 41,
     "formal": 3,
