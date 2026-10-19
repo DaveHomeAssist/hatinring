@@ -117,7 +117,7 @@
     ],
     "conf": "High",
     "delta": 0,
-    "lastSignal": "2026-10-17",
+    "lastSignal": "2026-10-18",
     "pollLead": "Dem poll leader",
     "headline": "Opinion | Which version of Gavin Newsom will voters see if he launches a presidential campaign? - calmatters.org",
     "why": "Polling frontrunner actively staking out a 2028 lane; a national billionaires-tax pitch and a Biden embrace are already drawing intra-party fire (Khanna).",
@@ -131,12 +131,12 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Gavin_Newsom"
     },
     "early_states": {
-      "NH": 3,
+      "NH": 4,
       "NV": 5,
       "SC": 7
     },
     "early_states_last": {
-      "NH": "2026-10-17",
+      "NH": "2026-10-18",
       "NV": "2026-09-07",
       "SC": "2026-09-07"
     },
@@ -298,6 +298,15 @@
         "date": "2026-10-17",
         "headline": "Newsom reflects on New Hampshire's presidential primary history amid 2028 speculation - Fox News",
         "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBoekR3YUhRb1lCTVp2WmhSeW45NXUzVnhRYjdBSGZPaHlBUDVyZFNXdldjWGpabTZwU0VMdTNyMkY2RXhpNnZubm1nZmFPOUNVT3ZrcnBB?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-10-18",
+        "headline": "Newsom campaigns with New Hampshire Democrats ahead of midterms",
+        "url": "https://thehill.com/homenews/campaign/6156885-newsom-nh-campaign-stops/",
         "keys": [
           "earlyState"
         ],
@@ -2406,6 +2415,15 @@
           "donors"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-10-17",
+        "headline": "Josh Shapiro moves into the starting blocks for 2028 with new PAC - Washington Examiner",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNSHA4amVndlY0X1FlYjRzLW1pZ0E0U2dDbVVSRVp5QjRRd09lM0dEVFZRM2d2WUxCTVhSODdDTWM2VGZmampIYmNPWldDY3FoNWlwcUJuLU15QmlEcE9pdUFhTkxIQmFsUVdSNGtfRVlMYjlrMmZsRWNkTjJMUWNDT19nT3c5MjVfQ3VsMGlVM0N1TDF3VjNuTHlTNldCQjlLWVY5aXBtc1hVVU9o?oc=5",
+        "keys": [
+          "donors"
+        ],
+        "conf": "Low"
       }
     ],
     "history": [
@@ -2512,7 +2530,7 @@
     ],
     "conf": "Medium",
     "delta": 10,
-    "lastSignal": "2026-10-18",
+    "lastSignal": "2026-10-19",
     "pollLead": "GOP poll leader (~35%)",
     "headline": "Sorry, Marco ... Trump turns to Vance as his successor and tells donors to back vice president in 2028: report - the-independent.com",
     "why": "Presumptive GOP frontrunner; succession speculation around the sitting VP is building as a 2028 strategy takes shape.",
@@ -3008,7 +3026,7 @@
     ],
     "conf": "High",
     "delta": 0,
-    "lastSignal": "2026-10-16",
+    "lastSignal": "2026-10-18",
     "headline": "Donald Trump Reportedly Told Donors ‘We Need to Elect JD’ in 2028 - people.com",
     "why": "Legally ineligible; tracked only because of the chatter he generates.",
     "quote": "",
@@ -3017,15 +3035,6 @@
       "22nd Amdt"
     ],
     "evidence": [
-      {
-        "date": "2026-06-02",
-        "headline": "Could Donald Trump Jr. launch a 2028 presidential campaign? - Washington Examiner",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOTHBiRlF0dmo1ckY3SGVQTzRzSGZGdWUzNWoyRzd5c1MySG9xWVR4WXBhVGFKUkpLRFV0aDZDdDhxNFNCNWdGdFBiX2ZBTnpQelkxbnZod3ExVC1EWUtQTGVZdGVsU2dGT1VXS2NoUXpuN3p1UDdjTm5FU0xZWUtacjhMRWpXeUVOV0FzV3B6SG5tSG80OWFZVVZ1OGtkLVNSdUtv?oc=5",
-        "keys": [
-          "declared"
-        ],
-        "conf": "Low"
-      },
       {
         "date": "2026-08-06",
         "headline": "Donald Trump Reportedly Told Donors ‘We Need to Elect JD’ in 2028 - people.com",
@@ -3232,6 +3241,15 @@
           "earlyState"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-10-18",
+        "headline": "Iowa Down Ballot: Trump back to Iowa, the latest debates and more to come",
+        "url": "https://iowacapitaldispatch.com/2026/10/18/iowa-down-ballot-trump-back-to-iowa-the-latest-debates-and-more-to-come/",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNLVFVVVc4dnU0YU1CeWZkSnV0WGdOZ3NYcHpyQ1JDUjZUdEF1d25xT056YzlBZXFwNTRfdUxDdTF3Z3pzaXFJdjFETm91OXpmMEhUVEU4cUtGOWREWG4tb016Z0Z0UDRGUnlHd2VoaURyV2tKbC1CeW1ZS1EySzEwcQ?oc=5",
@@ -3242,13 +3260,13 @@
       "NH": 5,
       "NV": 4,
       "SC": 4,
-      "IA": 7
+      "IA": 8
     },
     "early_states_last": {
       "NH": "2026-09-27",
       "NV": "2026-10-06",
       "SC": "2026-10-16",
-      "IA": "2026-10-15"
+      "IA": "2026-10-18"
     }
   },
   {
