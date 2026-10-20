@@ -2152,5 +2152,30 @@
     "note": "denial/downgrade — confirm before applying",
     "rid": "ae45c4595513",
     "kind": "denial"
+  },
+  {
+    "name": "Ron DeSantis",
+    "headline": "Ron DeSantis touts ‘bold colors’ over ‘pale pastels’ for the GOP, doesn’t rule out 2028 - Florida Politics",
+    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPWnpqSkdKcHpjSm5GNmdGUW1UTTVUeUxvMklHYU5wa3RRd0wyMkNzS1dWX1pjWWF3eC1iaGNnREIwLXczRW5wZXR3ZU1YbXNqSVNQZUUtV0lTMmJyTzJlb1pvTTBQVkpndFhjV3hmNGJIZFR2Zk51dFYyTmplQzVieVln?oc=5",
+    "source": "Florida Politics",
+    "date": "2026-09-05",
+    "keys": [
+      "ruledOut"
+    ],
+    "note": "denial/downgrade — confirm before applying",
+    "rid": "cc7b58308f5a",
+    "kind": "denial"
+  },
+  {
+    "name": "Election Day",
+    "headline": "Election Day will ‘end the Trump era,’ says former N.J. Gov. Chris Christie, who may be mulling a White House run - Inquirer.com",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNSG9mTmVtVGhQVzJxTk5jaTZZdEctblV3VWZqbldHQ01lVDJQd0lCUExzcVV5QzhSYm1od05LTUM2U0xPcjFybDY3Wl9leUZmSVZkR0xnaDJZblNMY0hEYndtdTZFb1ExUlg1dDFCS3pfb2ZXbHd1MTlPd0dJbDdrZDZHd2VCVlI1bFBaUVhfamo5cjEtZjQzWm5rS2Q2Z3YwaW1r?oc=5",
+    "source": "Inquirer.com",
+    "date": "2026-10-16",
+    "keys": [
+      "softConsidering"
+    ],
+    "rid": "f974873a6c8b",
+    "kind": "discovery"
   }
 ]

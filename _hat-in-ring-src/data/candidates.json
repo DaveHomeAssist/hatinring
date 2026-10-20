@@ -1637,8 +1637,8 @@
       "softConsidering"
     ],
     "conf": "Medium",
-    "delta": 0,
-    "lastSignal": "2026-05-04",
+    "delta": 10,
+    "lastSignal": "2026-09-05",
     "headline": "DeSantis Refuses to Rule Out 2028 Run After ‘Begging’ Trump for New Job - The Daily Beast",
     "why": "2024 national org still partly intact; term-limited in 2026.",
     "quote": "We'll see. You never know.",
@@ -2568,15 +2568,6 @@
     },
     "evidence": [
       {
-        "date": "2026-07-13",
-        "headline": "Vance’s tough talk on Israel is alienating some Jewish GOP donors - Politico",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNaFJwalhmb2xWemNqR1hON2h2OEJ3X3d1Q1BiT2NoUGJPTHlpSHNTM0dIUWV0N2JvNXF6M3hLUU9mWjctczkyd0hzWURrNXpNZm4zZHJicmIxbVJjWER4R1ZjRjB1Y3pZX1BNa1RzVmdPaFNKbi03djhaNmt2Um9pOGJDa3BzN05KVEJVYWprWktJbFVvUUE?oc=5",
-        "keys": [
-          "donors"
-        ],
-        "conf": "Low"
-      },
-      {
         "date": "2026-07-24",
         "headline": "Weight loss and a book tour: JD Vance’s stock rises in Trump’s eyes - MS NOW",
         "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBXZUF2bmJoVklaTU9WcVNoN2ppbDB1V0YzYzN5aVRRSE9GakVmWHhJNE5fTmg4N1M3cUFJSndKbUhsUWRtd2ZVbVVOSTZfa0hFMWhkWFFiT3UxRzlfb2c?oc=5",
@@ -2780,6 +2771,15 @@
         "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNRlA1NUtEWHUxWEpHMkI0ekcwNWE5LXB2aHg4X05BVGk3UUt6ZHpxdlM0Q05JNS1rX0tPUE1tZ0RBa1BFVmhhQWRyeW9JMXMzQ1hCX01vbS1sdTNxVGM0Y1BzOU8xUC1MdkIxSlhlTENuUlN2aXVTNG1TZ3pJdVdWSUk3bTdPTXE3SGMydFFYdi12UE5RbkdCdU5adDJEZVFBR1NOdng1NndoZDBnQTdBaGhzTUV5S08zRERpTXlhbktHR3dxV19jMkhhS2ZQZzdKQ01ZbVMtOTlyZkloMzFhYnZBYmlzRXJsZ004LQ?oc=5",
         "keys": [
           "softConsidering"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-10-19",
+        "headline": "JD Vance Says ‘There’s a Chance’ He Won’t Run for President in 2028: ‘I Hate Thinking About It’ - nationalenquirer.com",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQTXNmc01iS1ZxMEk4SXFVMXljbHJSQjRzX2pwTWo3bVdGNGh5YW02YVhvaXBuZUZrR1d0UnNGT2JZNjFOZWNveTJUTFlLaHhoUHRiUWlqbUM0T1NsV2VMWXBnN1RrMURjSWZZR1llT2ZydjhQby1oRjNzNHBBUkxfVC1DMlpVZGJpdDgzamh0REJPVUZyaktULXlmZG1xcXNIVWlzdWprVS1Jd2kwZjd5YjJzbktKWWlMcUE?oc=5",
+        "keys": [
+          "consideringQuote"
         ],
         "conf": "Low"
       }
