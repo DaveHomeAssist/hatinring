@@ -2177,5 +2177,17 @@
     ],
     "rid": "f974873a6c8b",
     "kind": "discovery"
+  },
+  {
+    "name": "Report: Up to 29,000 in NH could lose Me",
+    "headline": "Report: Up to 29,000 in NH could lose Medicaid coverage by 2028",
+    "url": "https://www.nhpr.org/health/2026-10-20/medicaid-coverage-granite-advantage-changes-nh",
+    "source": "NHPR",
+    "date": "2026-10-20",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "b63cd4300964",
+    "kind": "discovery"
   }
 ]
