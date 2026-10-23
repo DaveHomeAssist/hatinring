@@ -2,6 +2,6 @@ requests==2.34.2
 feedparser==6.0.14
 PyYAML==6.0.3
 Jinja2==3.1.6
-Pillow==12.3.0       # raster share cards and optimized candidate portraits
+Pillow==13.0.0       # raster share cards and optimized candidate portraits
 jsonschema==4.26.0   # validates the public data contract (tests only)
 pytest==9.1.1        # tests only
