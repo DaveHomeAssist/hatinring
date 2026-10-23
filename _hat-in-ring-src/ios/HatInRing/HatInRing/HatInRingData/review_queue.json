@@ -2201,5 +2201,78 @@
     ],
     "rid": "a00849abe649",
     "kind": "discovery"
+  },
+  {
+    "name": "New Hampshire",
+    "headline": "Poll shows evolving races for 2028 presidential nominations in New Hampshire - WMUR",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOMW5XejJCX2lCNWUwdWc2UWpob05IbU1SdDRmN3M0ZWhzY1NZT19tYzJZTjVPalFtZEM5MGlvT1hpQmdrdzZJaXFiYW95TnFlZEk1Y21WREJuN3RESWEwM1Z3cjhRSWUwRTh5dVFwOFFXRmxzbXhtY2doZV9QTXpUdGVNckY?oc=5",
+    "source": "WMUR",
+    "date": "2026-10-22",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "55e2f2478ef1",
+    "kind": "discovery"
+  },
+  {
+    "name": "South Carolina",
+    "headline": "South Carolina is becoming a 2028 proving ground for Democrats - WJCL",
+    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNaVU2MXptdG9CX0VPdlV1NDBaajdTaWR1Ri13dkh4OWZNVko3UXlmQnpUN0NfNUYwQzNCVU9YNUwtRjlKQ0NOV05lRVdRRENrYV9HaDlGdmxRRVZPUTd0MjJ1U18tSFRQdDdvOGx6ZUpPb1Nsa2NFYjlYUUI3cnN0Z0NVOTlYLU5KN1lCR29LVHJsTHM5R2o0?oc=5",
+    "source": "WJCL",
+    "date": "2026-09-28",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "012c29105dd8",
+    "kind": "discovery"
+  },
+  {
+    "name": "Gretchen Whitmer",
+    "headline": "Michigan Gov. Whitmer says she won't run for president in 2028 then backtracks hours later - WKMG",
+    "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNMG9zZU1DUEFPVjNqR0NZckFGclFmeEE1a3VuZDZpVUZOX3dCZ0E2OEdtOURYREU5eXVnSnotVUlPdkdETmxqQ0IzZExDV1VuVlg4SXliZnRHblhWZjVQXy1uNEdPU1Bua1dKZ0IwVUhqMFdfNTFNbjNvdzNxWmNLQnRpN1JNYjJLVUs1QzhOQjkwbExxbkhTY3Y5ZnczNVZXYm5kZktsZzF4RktlUVlGN0d6OWlOQTI4cFJVVzBzb0VVMk0xZG05dFNHSkNQR21qOXhJZg?oc=5",
+    "source": "WKMG",
+    "date": "2026-05-28",
+    "keys": [
+      "ruledOut"
+    ],
+    "note": "denial/downgrade — confirm before applying",
+    "rid": "8ed10fc193c5",
+    "kind": "denial"
+  },
+  {
+    "name": "Florida businessman files statement of c",
+    "headline": "Florida businessman files statement of candidacy for RI congressional seat - Yahoo",
+    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNaWEweFRlTzFzbEJPSWxId0Fod1FKYmJxTE95RHhNcUNEWmZuWjlGdmpiOEhZejh0S0ZlRDdYN18tWm8tNWRMeHRzbXIyNEliX19CTllHUVJ4Rm1iZ3AtbEE1emhGZFRKLUFldERxQlhGbjE0LUpaemJuMW5vcnh6Mks2UXY4RExfeXBIN0pwcWd1QVh6XzhCWUtRdzg?oc=5",
+    "source": "Yahoo",
+    "date": "2025-11-03",
+    "keys": [
+      "declared"
+    ],
+    "rid": "c7b6157ff27f",
+    "kind": "discovery"
+  },
+  {
+    "name": "South Carolina",
+    "headline": "Trump campaigns in South Carolina to support Senate candidate Graham - Reuters",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNMHk5a3JmU3lLWWtaN3RQRDVPRUdfWVA5czZfWk5WQlBNcnFmdndzTnZQV2RZRFBrOGdXU3ByMHMtS0EtQXNSaDc1OXZ6UTl2UDZrYk8wcFlPc1FaYlFFUVVTVUd6RG5uaDZhYk55elN4TGRXNFFGeklyUzJkXzQtUzBBTzJUS0YxNGJhdF9HOE9zRzVJc1VTcE5HUEg1OVpMYS1UTGVYLWhvSXlEMU1yZW1HMA?oc=5",
+    "source": "Reuters",
+    "date": "2026-10-21",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "275cb5f3874d",
+    "kind": "discovery"
+  },
+  {
+    "name": "Trump Delivers Remarks",
+    "headline": "President Trump Delivers Remarks at Sioux City, Iowa Rally - C-SPAN",
+    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQcG5xTFc5NVdiNVdhNlR5RjZyS0l4Z1lZOUlNYWFQMWRlYVRwQk5wQlA2R1lvcU1QNC1fWnBSNElNUzRuTzRQUU1HU2VjTmVQT2tJdE1qMmE0Q2FrT0N4U29LWmQtWG5rZWd2RE9zb1NqWUlKZkl5cnZZZzNxVENFVHBEX3lGS3dzZi1GcHBDSFY5a2FfR1JGYTl6VmJrUnR3eHpvMjBRT1FmaDA?oc=5",
+    "source": "C-SPAN",
+    "date": "2026-10-22",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "176490e14f21",
+    "kind": "discovery"
   }
 ]
