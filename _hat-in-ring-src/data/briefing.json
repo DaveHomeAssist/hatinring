@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-23",
+  "date": "2026-10-24",
   "movers": [
     {
       "id": "shapiro",
@@ -15,7 +15,7 @@
       "name": "Mitch Landrieu",
       "party": "Democrat",
       "delta": 35,
-      "score": 45,
+      "score": 40,
       "tier": 3,
       "statusLabel": "Actively considering"
     },
@@ -70,15 +70,8 @@
       "statusLabel": "Declared"
     }
   ],
-  "transitions": [
-    {
-      "name": "Josh Shapiro",
-      "from": 2,
-      "to": 3,
-      "date": "2026-10-16"
-    }
-  ],
-  "review_count": 186,
+  "transitions": [],
+  "review_count": 191,
   "totals": {
     "tracked": 41,
     "formal": 3,

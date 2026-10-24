@@ -2274,5 +2274,65 @@
     ],
     "rid": "176490e14f21",
     "kind": "discovery"
+  },
+  {
+    "name": "Las Vegas",
+    "headline": "Here's what four potential 2028 presidential candidates had to say in Las Vegas - The Nevada Independent",
+    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOa3hzeFNBYUNEaEh2SmJrTjJUaEhaV2lGc2FBRU5xQlVwRWltd05XLTF6MndQZDF4d0M5U1FYVVBMb05wSXZGdXZsUjYtQXRFb2UwMTlVdWJ1Wm9SQmVnMjVUUnpWQXNFcEQ2N1R0NkRrRXRRUldqTDhEVWxxQWVsVkkySHNxd18teEJYbncwWjdUeXFNR08tck9pbG9xQlkxcUVCVGhaMzNrdkZvZkliN0oxT3ZKMlhYazIw?oc=5",
+    "source": "The Nevada Independent",
+    "date": "2026-10-23",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "45fbfb5fd1ca",
+    "kind": "discovery"
+  },
+  {
+    "name": "Modern Ghana",
+    "headline": "'I'm thinking about it': Sen. Kelly on a possible 2028 presidential run - Modern Ghana",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE16QlJLcERvdm4wYUhNRkd6ZC1xV0tidHZKYnFjRFJRNzBRbG9RR21LdkRJRGZnb1lHejBNNmV0Q2V5cG5GZjdXMkpCX3B3ZFZEcTFaTS01b2dydE5yRElR0gFcQVVfeXFMTlF3M1gxNWxVbktnOGpyOEZ3NW9ubzd2WnlsX1J1bnliRE5yUTYzeEJRX0VQUGZ1cnVVUXhZbEZqTHUwcmZrM1BSTFpISXlQSkt0ajJQVTVZODl4TmQ?oc=5",
+    "source": "Modern Ghana",
+    "date": "2026-10-24",
+    "keys": [
+      "consideringQuote"
+    ],
+    "rid": "711b6be7bd8e",
+    "kind": "discovery"
+  },
+  {
+    "name": "Iowa State",
+    "headline": "See contract details for new Iowa State athletics director Jared Benko - The Des Moines Register",
+    "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOTjhoVVl0V2w4LXBRdVBaRWFpNENRVlZIOVRERWc2aWVPd2tjWk1QeUZFTUdUcXBoUlJzN0gtM3NxcHM2eEJVSWktNzVRYjlhdDhtQTJndXd1Q2VfTzBUNXVOMWpUTTFScnVkeDhlYjIyQ1MxZUU1cWVnYkdjR0VwbkxIdzhWRWJURFh6ODY5SDFETmdaYmpfZ2xHWllDOV9WdlNRYTVZRjQ4d215MFR4elRzUUJYa0t0V19MdUxSOC15OW91QjE5RHBBUGppN1ExU3pXWU5QRmdSZ1lq?oc=5",
+    "source": "The Des Moines Register",
+    "date": "2026-10-23",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "41f90e3c43b1",
+    "kind": "discovery"
+  },
+  {
+    "name": "Trump Delivers Remarks",
+    "headline": "Trump Delivers Remarks at Sioux City, Iowa Rally - C-SPAN",
+    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQNlJUUTVnSC05eWRkWDdHS1F5QnN1MlFOZ1dXUGI5R182NFlHbnh5TGl0V0RSNjNWWEx1WDNxbmVYczhOelJTMDRLYUJ1TGR2VjNJQVhWeWI2OF9xTHdUQndfUW81VzZiT3lBdkswMmF0SnoxbXByckdoMFBwTThrVGZBU2t6SjAzQW9UOGRYY1huNzlkNVFRaHhrU3ZITWVu?oc=5",
+    "source": "C-SPAN",
+    "date": "2026-10-23",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "335bd756e353",
+    "kind": "discovery"
+  },
+  {
+    "name": "Trump Pauses Speech",
+    "headline": "President Trump Pauses Speech After Scuffle Breaks Out Between Supporter and Protester at South Carolina Rally - C-SPAN",
+    "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOclhjaXZxdzdHNDUzcWNmM2pwemJqZWo5MUFkbnEzeFhYb01pSFd2d0RkVWdiR1V2czB5YW12QmtkUnBpcHNYRUtWLVFOQUpwTWdaTzl1WmJJRGFqM2tWeEtDMjV6Rlh1TV94Y0Jhd3NxcEJKclhOMWRnY3Q2ZmJNRzBsRklVR1BNTzV1MVBrNlNaam5KSDVnVWppU3I4Ukc1WGFQWjdjNmdibHV2cVg3TVlkRnhlVmZ0NUNqdk4wNDdzTEt4a0lGSjhHOFpacXY2YmpLVzJXY1ByM3dIVHFjU1hBUUc4M0JlM19ub2hHNFdTZw?oc=5",
+    "source": "C-SPAN",
+    "date": "2026-10-21",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "7785baf5fc3d",
+    "kind": "discovery"
   }
 ]
