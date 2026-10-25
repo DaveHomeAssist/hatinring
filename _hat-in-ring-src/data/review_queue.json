@@ -2334,5 +2334,18 @@
     ],
     "rid": "7785baf5fc3d",
     "kind": "discovery"
+  },
+  {
+    "name": "Tulsi Gabbard",
+    "headline": "Tulsi Gabbard will ‘never rule out’ 2028 presidential run - Washington Examiner",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOQnByTWFYWFZmZThnR3BwSHRxOWRVSng0N2owLTBlVENzQVpoekdsX2Z5ZUVQRF84X1dJVHptdlJiVDFGeUt2MVdqMXVuT0pkaVh1bW5MZHB2MlFsWkpKWnc5SFhZRDFxQWpsOEZwTi0zX0dEMGt6T0xDdm9RT0NJSXp4d3l2Si16WFZCUlVCWm9RTkVKYWc0djNXNG5Vb0VWaDYw?oc=5",
+    "source": "Washington Examiner",
+    "date": "2025-05-01",
+    "keys": [
+      "ruledOut"
+    ],
+    "note": "denial/downgrade — confirm before applying",
+    "rid": "775d1f7eca6f",
+    "kind": "denial"
   }
 ]
