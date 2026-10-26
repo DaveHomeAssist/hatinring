@@ -2347,5 +2347,17 @@
     "note": "denial/downgrade — confirm before applying",
     "rid": "775d1f7eca6f",
     "kind": "denial"
+  },
+  {
+    "name": "Trump Speaks",
+    "headline": "President Trump Speaks at Midterm Rally in Clemson, South Carolina - C-SPAN",
+    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNb1p0dTV0bThOZWNUbXNjMFllRGN4NmtubjdXSmlhODNUUHNIY1AyYkZVU3hIVmxIVTJSNWl1NGpkaWFiZThLXzkwZktfWnJzNUZkQU1aMXhrYmtBay01cHFVdFlNbWhUSU5DTkt2SE1vbV9fZV9vQWpSWGl0NXc0YXd0dmIyZ1hNSWwybHl5ZktYM0ZTVFluRTliaEJEX3MtaUhHVVVkei1KTERJMEktSk5CbTQ2SnZs?oc=5",
+    "source": "C-SPAN",
+    "date": "2026-10-21",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "a96f3b56782c",
+    "kind": "discovery"
   }
 ]

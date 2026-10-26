@@ -3100,7 +3100,7 @@
     ],
     "conf": "High",
     "delta": 0,
-    "lastSignal": "2026-10-23",
+    "lastSignal": "2026-10-25",
     "headline": "Donald Trump Reportedly Told Donors ‘We Need to Elect JD’ in 2028 - people.com",
     "why": "Legally ineligible; tracked only because of the chatter he generates.",
     "quote": "",
@@ -3109,15 +3109,6 @@
       "22nd Amdt"
     ],
     "evidence": [
-      {
-        "date": "2026-08-26",
-        "headline": "Political newcomer Darline Graham wins South Carolina’s GOP Senate runoff",
-        "url": "https://www.politico.com/news/2026/08/25/darline-graham-wins-south-carolina-senate-runoff-01050320",
-        "keys": [
-          "earlyState"
-        ],
-        "conf": "Low"
-      },
       {
         "date": "2026-08-31",
         "headline": "US House Dems at Las Vegas shadow hearing link Trump ‘corruption’ to affordability crisis",
@@ -3324,6 +3315,15 @@
           "earlyState"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-10-25",
+        "headline": "Commentary: Iowa Down Ballot:  Trump’s Iowa stops, close US House races and early voting",
+        "url": "https://iowacapitaldispatch.com/2026/10/25/iowa-down-ballot-trumps-iowa-stops-close-us-house-races-and-early-voting/",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNLVFVVVc4dnU0YU1CeWZkSnV0WGdOZ3NYcHpyQ1JDUjZUdEF1d25xT056YzlBZXFwNTRfdUxDdTF3Z3pzaXFJdjFETm91OXpmMEhUVEU4cUtGOWREWG4tb016Z0Z0UDRGUnlHd2VoaURyV2tKbC1CeW1ZS1EySzEwcQ?oc=5",
@@ -3334,13 +3334,13 @@
       "NH": 5,
       "NV": 5,
       "SC": 6,
-      "IA": 10
+      "IA": 11
     },
     "early_states_last": {
       "NH": "2026-09-27",
       "NV": "2026-10-21",
       "SC": "2026-10-23",
-      "IA": "2026-10-23"
+      "IA": "2026-10-25"
     },
     "img": "assets/candidates/trump/01_official_presidential_portrait_of_president_donald.jpg"
   },
