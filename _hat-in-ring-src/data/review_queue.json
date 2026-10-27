@@ -2359,5 +2359,41 @@
     ],
     "rid": "a96f3b56782c",
     "kind": "discovery"
+  },
+  {
+    "name": "For Democrats",
+    "headline": "For Democrats mulling 2028 bids, campaigning for Chris Pappas in New Hampshire is a win-win - The Boston Globe",
+    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQb1loU2x4eG5yTlJsSWZ4VUt3NVpRSnlUTVpRUjVEdEcxcnVLVjluTTlvaHBuaHphVnNaU3U2b3Z3T1N0YmxjVTkxeFFmV0haVXdobzFOMDFXaW4wY2F1bzBCR1Q0aENuN2xPSmpqSVVhWmpWaklfMFNITFlfQkxtS1J6Yi1fT1lGMmhMTGE2TXFDQmhGLU9v?oc=5",
+    "source": "The Boston Globe",
+    "date": "2026-10-27",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "a82972573d6e",
+    "kind": "discovery"
+  },
+  {
+    "name": "Trump's Board",
+    "headline": "Trump's Board of Peace hires Biden aide for Gaza outreach - The Jerusalem Post",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBrQUNpbm9aWU5SV2drODQ4aFJzQ3c1eGgtOWRHbng3dTZuRlJwd2VLOTh3Q19CTFROa19Kcm9iY1FjUWROaHBrV2ZvcGNEcHhtd0lWamhHZDVVb1ND?oc=5",
+    "source": "The Jerusalem Post",
+    "date": "2026-10-26",
+    "keys": [
+      "staffing"
+    ],
+    "rid": "ebae9e5738e2",
+    "kind": "discovery"
+  },
+  {
+    "name": "Which Democrats",
+    "headline": "Which Democrats have ruled out a 2028 presidential run? - Washington Examiner",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNaW9DOUs4VWJJeW1Cc25hYzdYMW1PVXRPMC1QLXFWS3h6MXlMUWxmb2lNc1pEb29WVW9RQjltXzlsLURPZ0FZaWVCc3k1Q3M4bkhwUzVVWTVkZjhEaVVWbUVmZlpIekh4LWNMbTRxNjJEVnh6N3V0d1p2T3p0ODItMXJiY20xenJyMlJ2RVV0WmtnNTg4WDFjdERFRVgxeUVFV1FyZldrWVF3V2xXQ2NvMTNmNA?oc=5",
+    "source": "Washington Examiner",
+    "date": "2026-06-09",
+    "keys": [
+      "ruledOut"
+    ],
+    "rid": "50f57ffdec79",
+    "kind": "denial"
   }
 ]
