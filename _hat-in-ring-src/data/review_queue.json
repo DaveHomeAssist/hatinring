@@ -2395,5 +2395,17 @@
     ],
     "rid": "50f57ffdec79",
     "kind": "denial"
+  },
+  {
+    "name": "Democrats brace for a 2028 presidential ",
+    "headline": "Democrats brace for a 2028 presidential free-for-all",
+    "url": "https://thehill.com/homenews/campaign/6175916-2028-presidential-race-midterm-elections/",
+    "source": "The Hill",
+    "date": "2026-10-28",
+    "keys": [
+      "donors"
+    ],
+    "rid": "b1643d6c40e0",
+    "kind": "discovery"
   }
 ]

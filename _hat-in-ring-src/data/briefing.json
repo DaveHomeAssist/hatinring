@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-27",
+  "date": "2026-10-28",
   "movers": [
     {
       "id": "shapiro",
@@ -71,7 +71,7 @@
     }
   ],
   "transitions": [],
-  "review_count": 196,
+  "review_count": 197,
   "totals": {
     "tracked": 41,
     "formal": 3,
