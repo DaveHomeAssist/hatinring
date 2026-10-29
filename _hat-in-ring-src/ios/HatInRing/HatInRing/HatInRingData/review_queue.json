@@ -2407,5 +2407,53 @@
     ],
     "rid": "b1643d6c40e0",
     "kind": "discovery"
+  },
+  {
+    "name": "Democrats Eyeing",
+    "headline": "Democrats Eyeing 2028 Presidential Campaigns Begin Courting Donors and Operatives - The New York Times",
+    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5pcHd2aEhkRC15RFd4TWVaMFJKZzY1dzJldHlLZmVkWkpxWnlMdVJRUGRMWWRZMXB1dnBZR0p4WkU1ang0eXFvRE9ZeHJ1VGE3ZnhPZmpBcTk1ZEJaQ0NacXUwYTJweTdPX2dJSlNZNHQ3VEtW?oc=5",
+    "source": "The New York Times",
+    "date": "2026-10-28",
+    "keys": [
+      "donors"
+    ],
+    "rid": "1d0baae0c074",
+    "kind": "discovery"
+  },
+  {
+    "name": "Midwest Dems",
+    "headline": "Midwest Dems face their do or die moment to win back Trump districts before 2028",
+    "url": "https://www.politico.com/news/2026/10/28/democrats-rural-midwest-rebecca-cooke-01137050",
+    "source": "Politico",
+    "date": "2026-10-28",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "0757604dc238",
+    "kind": "discovery"
+  },
+  {
+    "name": "Trone Garriott",
+    "headline": "Nunn, Trone Garriott clash on Iran war, health care in Iowa debate - The Des Moines Register",
+    "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPOHBoZjNHYkZlSFJUaWYwbU9RMGFOZDRQQWk2TEliM05kUWZHbkhYX2ZzMFpiM1NmVFdUSkNIUHNXQzMyNW95MzFBQ2xXRUJsM1lHQTExb0dsOWYtRGUxTHZfLTZ6R21veXJtNDVHbHdGTG5EcEZoaXd6TzBhVDhUMktiXzFvd3doekdCeWRCX09LZ2FWX2xvQnFiZ0xfQmlKaWJKbEVWbkZSTE01LTVod1M1SGozVFF5T3BYdWNITlVLejhLOVNBX0hBRU1JVjZBYTJMa2JKcVBENUY4ZEdtT2thaw?oc=5",
+    "source": "The Des Moines Register",
+    "date": "2026-10-28",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "1c8c30f28c27",
+    "kind": "discovery"
+  },
+  {
+    "name": "Iowa GOP House",
+    "headline": "Iowa GOP House Candidate Joe Mitchell Presents Pres. Trump with \"Man of the Century\" Award - C-SPAN",
+    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNeVhONEpnc2pvSEdkb1pOVWcyWmFNVWJGbjEtZjIwWG1ZQ3dVRF9NZWxCNE1fNXl1Sm5iTUxQQTliR3I2bkRJcGIxLWxycjFmUHd5MzB4azRmNUxwbVV2WUJZQlpiZzZvMEFxNHNRUjdEMmc0OGNjcExPd2YyVkJQNHh2di1jaENMeUE0UVF5UkFIMzVibi1hOU5Bc1NTdWE4Z3VaMkNPdkRzWG9aVGkwZG5PMHdlV3RsOWdpVjFYVWVSbGFoVThMbl8xODNabWZwT2Fz?oc=5",
+    "source": "C-SPAN",
+    "date": "2026-10-23",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "e67a7b7ca461",
+    "kind": "discovery"
   }
 ]

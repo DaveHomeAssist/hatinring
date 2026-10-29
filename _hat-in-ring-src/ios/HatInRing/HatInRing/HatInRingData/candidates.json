@@ -3130,7 +3130,7 @@
     ],
     "conf": "High",
     "delta": 0,
-    "lastSignal": "2026-10-27",
+    "lastSignal": "2026-10-28",
     "headline": "Donald Trump Reportedly Told Donors ‘We Need to Elect JD’ in 2028 - people.com",
     "why": "Legally ineligible; tracked only because of the chatter he generates.",
     "quote": "",
@@ -3139,15 +3139,6 @@
       "22nd Amdt"
     ],
     "evidence": [
-      {
-        "date": "2026-09-16",
-        "headline": "Here’s what Reps. Nunn and Miller-Meeks said about their war powers vote",
-        "url": "https://iowacapitaldispatch.com/2026/09/16/heres-what-reps-nunn-and-miller-meeks-said-about-their-war-powers-vote/",
-        "keys": [
-          "earlyState"
-        ],
-        "conf": "Low"
-      },
       {
         "date": "2026-09-22",
         "headline": "Judge suggests Trump’s most recent birthright citizenship orders may require new lawsuit",
@@ -3354,6 +3345,15 @@
           "earlyState"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-10-28",
+        "headline": "Ponder ‘a prolific sexual predator’ says prosecutor as judge lowers bail",
+        "url": "https://nevadacurrent.com/2026/10/28/ponder-a-prolific-sexual-predator-says-prosecutor-as-judge-lowers-bail/",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNLVFVVVc4dnU0YU1CeWZkSnV0WGdOZ3NYcHpyQ1JDUjZUdEF1d25xT056YzlBZXFwNTRfdUxDdTF3Z3pzaXFJdjFETm91OXpmMEhUVEU4cUtGOWREWG4tb016Z0Z0UDRGUnlHd2VoaURyV2tKbC1CeW1ZS1EySzEwcQ?oc=5",
@@ -3362,13 +3362,13 @@
     },
     "early_states": {
       "NH": 6,
-      "NV": 5,
+      "NV": 6,
       "SC": 7,
       "IA": 11
     },
     "early_states_last": {
       "NH": "2026-10-27",
-      "NV": "2026-10-21",
+      "NV": "2026-10-28",
       "SC": "2026-10-26",
       "IA": "2026-10-25"
     },
