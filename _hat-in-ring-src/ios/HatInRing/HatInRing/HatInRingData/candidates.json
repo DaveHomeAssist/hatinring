@@ -3130,7 +3130,7 @@
     ],
     "conf": "High",
     "delta": 0,
-    "lastSignal": "2026-10-28",
+    "lastSignal": "2026-10-29",
     "headline": "Donald Trump Reportedly Told Donors ‘We Need to Elect JD’ in 2028 - people.com",
     "why": "Legally ineligible; tracked only because of the chatter he generates.",
     "quote": "",
@@ -3139,24 +3139,6 @@
       "22nd Amdt"
     ],
     "evidence": [
-      {
-        "date": "2026-09-22",
-        "headline": "Judge suggests Trump’s most recent birthright citizenship orders may require new lawsuit",
-        "url": "https://iowacapitaldispatch.com/2026/09/22/repub/judge-suggests-trumps-most-recent-birthright-citizenship-orders-may-require-new-lawsuit/",
-        "keys": [
-          "earlyState"
-        ],
-        "conf": "Low"
-      },
-      {
-        "date": "2026-09-24",
-        "headline": "Judge dismisses President Donald Trump’s 2024 Iowa Poll lawsuit",
-        "url": "https://iowacapitaldispatch.com/2026/09/23/judge-dismisses-president-donald-trumps-2024-iowa-poll-lawsuit/",
-        "keys": [
-          "earlyState"
-        ],
-        "conf": "Low"
-      },
       {
         "date": "2026-09-27",
         "headline": "More Canadians are visiting NH, but tourism numbers are still notably down",
@@ -3354,6 +3336,24 @@
           "earlyState"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-10-29",
+        "headline": "Trump cancels weekend Kansas and Iowa rallies 5 days ahead of election",
+        "url": "https://iowacapitaldispatch.com/2026/10/29/repub/trump-cancels-weekend-kansas-rally-5-days-ahead-of-election/",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-10-29",
+        "headline": "Trump says his 2nd visit to SC in 2 weeks is part of his fight against the odds",
+        "url": "https://scdailygazette.com/2026/10/29/trump-says-his-2nd-visit-to-sc-in-2-weeks-is-part-of-his-fight-against-the-odds/",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNLVFVVVc4dnU0YU1CeWZkSnV0WGdOZ3NYcHpyQ1JDUjZUdEF1d25xT056YzlBZXFwNTRfdUxDdTF3Z3pzaXFJdjFETm91OXpmMEhUVEU4cUtGOWREWG4tb016Z0Z0UDRGUnlHd2VoaURyV2tKbC1CeW1ZS1EySzEwcQ?oc=5",
@@ -3363,14 +3363,14 @@
     "early_states": {
       "NH": 6,
       "NV": 6,
-      "SC": 7,
-      "IA": 11
+      "SC": 8,
+      "IA": 12
     },
     "early_states_last": {
       "NH": "2026-10-27",
       "NV": "2026-10-28",
-      "SC": "2026-10-26",
-      "IA": "2026-10-25"
+      "SC": "2026-10-29",
+      "IA": "2026-10-29"
     },
     "img": "assets/candidates/trump/01_official_presidential_portrait_of_president_donald.jpg"
   },
