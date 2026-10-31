@@ -1,5 +1,18 @@
 [
   {
+    "id": "jorgensen",
+    "name": "Jo Jorgensen",
+    "party": "Libertarian",
+    "date": "2019-08-13",
+    "from": 4,
+    "to": 5,
+    "fromLabel": "Exploratory",
+    "toLabel": "Declared",
+    "direction": "up",
+    "reason": "Filed FEC Statement of Candidacy (Form 2)",
+    "reconstructed": false
+  },
+  {
     "id": "yang",
     "name": "Andrew Yang",
     "party": "Independent",
@@ -414,5 +427,18 @@
     "direction": "up",
     "reason": "Gov. Josh Shapiro launches a federal PAC — the strongest signal yet he’s eyeing a 2028 run - Inquirer.com",
     "reconstructed": false
+  },
+  {
+    "id": "jorgensen",
+    "name": "Jo Jorgensen",
+    "party": "Libertarian",
+    "date": "2026-10-31",
+    "from": 4,
+    "to": 5,
+    "fromLabel": "Exploratory",
+    "toLabel": "Declared",
+    "direction": "up",
+    "reason": "",
+    "reconstructed": true
   }
 ]
