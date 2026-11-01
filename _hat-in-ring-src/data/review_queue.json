@@ -2467,5 +2467,41 @@
     ],
     "rid": "7ee539e03507",
     "kind": "discovery"
+  },
+  {
+    "name": "Nevada Independent",
+    "headline": "What eight last-minute trips to Nevada reveal about the 2028 presidential race - The Nevada Independent",
+    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZTRRT0RIa1RsY0tHOWpUZzFfbTduX1czeEVzOXdNdy1tNTRHZTFqUVlFTGJqNUdRVFhsejg3eEhWTm50bzN3bXhuZTQ0V1E2cTJwbXdGU1lMdWNWOWptVFM1TWhkY0lRV1lJR1pCMmVLVVlwRWdZSTRMcXFVdE8zTzNMX3FvRG1wemVWMWZfQTZRV05FRVdOSjQ1UXJHanBhaWNzcHFIbzVXaFNnOTM1SjRyRzBFbzZZeE5J?oc=5",
+    "source": "The Nevada Independent",
+    "date": "2026-11-01",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "694ef4a6139f",
+    "kind": "discovery"
+  },
+  {
+    "name": "South Carolina",
+    "headline": "Democrats are betting on South Carolina in 2028 - The Des Moines Register",
+    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQdnBnc1Y2NFFtOXhzMnFOeFU5NGhWUGpHUS1LQmhjYjVHSVBaZlVYTWIzZGFyWDE3UWpXYlRiYy0zZDdSVGFPYzFPZFNTWXk3MlJBZXBGa1Y0aDQyTXJsNkh5ZEN4QjFXbnlVSmZfb2hNeTZBNk50X0ptV094WmYwYWtmUXprZ21fRzJTVGZlaC1yekhySms2ZHlkWm00eVY0NWtsdGNDbmxxWXAwNWFCRDIxRThDaUdwUlRGeFpQbHJhemZvelJyd0lUeU1Wdw?oc=5",
+    "source": "The Des Moines Register",
+    "date": "2026-08-16",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "62e0fdb15cf9",
+    "kind": "discovery"
+  },
+  {
+    "name": "What eight last-minute trips to Nevada r",
+    "headline": "What eight last-minute trips to Nevada reveal about the 2028 presidential race",
+    "url": "https://thenevadaindependent.com/article/what-eight-last-minute-trips-to-nevada-reveal-about-the-2028-presidential-race/",
+    "source": "The Nevada Independent",
+    "date": "2026-11-01",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "7e1110f4e868",
+    "kind": "discovery"
   }
 ]
