@@ -2503,5 +2503,29 @@
     ],
     "rid": "7e1110f4e868",
     "kind": "discovery"
+  },
+  {
+    "name": "Nevada caught between AI job growth and ",
+    "headline": "Nevada caught between AI job growth and job losses - Reuters",
+    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQTVF1SXJGdUFXOTE0REU0QU95Zm44ckxxMzRZSXVPakNTQkFFcjVKMHUtcWdSODFzeTRST2U3SHZWRWxSUjJGUUVRdUoxLUVNWHRKUFlxUktKOUhGdGo2SjM5VVJPUk5LbXNjcW5QbGcwM3diaDV0c05OV3BQS1hwSjJB?oc=5",
+    "source": "Reuters",
+    "date": "2026-10-28",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "279a18c97ab9",
+    "kind": "discovery"
+  },
+  {
+    "name": "Trump Speaks",
+    "headline": "President Trump Speaks at Sioux City, Iowa Rally - C-SPAN",
+    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNMmszWms0TVVMWTFwU0taYzVOS05nWnVtR25OLS1ZU0Y2dWl5Q2hVenFOSlNSTUNFdGcxSnhGVjZHYlZuaDRZU1B6dHJCa2ZwRkluZURaOEE1MmR6UnliQWZVbjNLVUpxUW81UEEtTWlULTlxYnNqYmpsMWd2RG1nYUt4cHpJV3FqbFkwUzZHZXhkd2FqQXU5UFlxellrYmlC?oc=5",
+    "source": "C-SPAN",
+    "date": "2026-10-22",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "9280161962dd",
+    "kind": "discovery"
   }
 ]
