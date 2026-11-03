@@ -718,7 +718,7 @@
     "early_states": {
       "NV": 2,
       "SC": 1,
-      "IA": 4
+      "IA": 5
     },
     "early_states_last": {
       "NV": "2026-06-24",
@@ -829,6 +829,15 @@
         "date": "2026-11-02",
         "headline": "Democratic governors rally support for Sand in a final push before Election Day",
         "url": "https://iowacapitaldispatch.com/2026/11/02/democratic-governors-rally-support-for-sand-in-a-final-push-before-election-day/",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-11-02",
+        "headline": "Beshear, Vilsack join Rob Sand at Des Moines rally as Iowa election nears - KGAN",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQV0lLWTBheXBTSjFoSDFVcEd6UlZvbHljYUZkb2hrc1JCSTYyaWI1X2NZa0otanRoUnJJSFl3a2YxVVVsS3hkMmJwbFBNX05kLVg2cTU2N3A2WGZGZ0czVjAxaWF2ckFhR19nZ2d4SE1rNVprdW1HLTlqZDAtQUtnaXU4SkUzd3I2SHFPYXZPSnVkU2VLVnNEVVBzNl9FMDNLLUxIN3ZBWQ?oc=5",
         "keys": [
           "earlyState"
         ],
