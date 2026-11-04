@@ -2527,5 +2527,53 @@
     ],
     "rid": "9280161962dd",
     "kind": "discovery"
+  },
+  {
+    "name": "Iowa Caucuses",
+    "headline": "Election 2026 is over. It's time for the 2028 Iowa Caucuses to begin - The Des Moines Register",
+    "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPSk50c0tkNlg4VktDR3huaGZDMVJUUFZ3cGRDa29DdlRVYTRtekR4Y3JPczdWbmJhcW92Y1c2UVZ5dTVzQ3BydHpQYUEtR1pJVEdFUWM1Mmd4REVWblU2V2kxWC1nbUZIeDloV2ZHWWt1OHFiY1kzMnByM0pNUXFaUGxzZng5Zm5JYjZKNENVRjI1WW9OU2NRX2xsby1pWWJoME1BVkpJeE5oc1dncFdkT1o4RnQ5dUhfLW1GSUdJLUNEWkl1MWtubXVzVzI0NzFpUm05ampaWlBlV3g2U2lj?oc=5",
+    "source": "The Des Moines Register",
+    "date": "2026-11-04",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "77f85b8d9f52",
+    "kind": "discovery"
+  },
+  {
+    "name": "AP News",
+    "headline": "Democrats seek to flip Nevada governor’s seat in a key test for the party’s chances in 2028 - AP News",
+    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQYzNUYWRQNjRqNUZYY0g3bXVqRUwyYXpvMWdKSnNrZjZ4YXZCdnhPSnh1LV85dWRsM1JDWjNrS1lIM3FLbGhsajZ3dE9ZUV8wM3NSMlJaSVNwZGVSZE5aS3FyUEFyVG9oMmUxdnp3azdUdEhTa3ZSR0tEc3NKYjlVN09yMFBzX3R4QXZNQ0VZcHpreDdLNFNONm1taFY0b0tW?oc=5",
+    "source": "AP News",
+    "date": "2026-11-03",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "5c99d8f6e3f8",
+    "kind": "discovery"
+  },
+  {
+    "name": "Election Day",
+    "headline": "PODCAST: Election Day, US Israel aid, Europe bomb threats (Updated) - Reuters",
+    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOTU9LSjRIaFc1V2k0TjZkYzFUaXZWanNRbFZkTkJ2b29tbGlyYmd4aGNfaDVsdVpoaHdsdWduVThKOXdsbWluM0FpTVFBbXJZUWdvaUpxYy1iSHhkQlpiZ01lYXhvVE5IZDRIcmFuMENic0d2TWF3NjZmeURXeHlVU2IwWkxuOVhTc2JBS0hGek4xOHVnbHBB?oc=5",
+    "source": "Reuters",
+    "date": "2026-11-03",
+    "keys": [
+      "mediaBlitz"
+    ],
+    "rid": "9a7c79ba084f",
+    "kind": "discovery"
+  },
+  {
+    "name": "South Carolina GOP",
+    "headline": "South Carolina GOP Officials and Candidates Deliver Remarks Ahead of President Trump's Speech - C-SPAN",
+    "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQMUVndkxxLS1rc1E4WmVPYVNhc3BVSk9WSWo5aVpOcEI4NXJtUDB2MExub2NWb19nOEdSR2x4Sm04MU00ZDd1UGs4UjE4X0hIdklKRDdDVmw3NW9GVXJTNm5haFRHMmxoSF9hU0ZVdVIxbHo1VzR6eFJhRGJqLVg3VGs4ZnMyVzh1cXZzNmxSbENZRXZvb00zUERMRGcybXZ3MTVTemVJZVlGendFMlJYaFNiclNkRWFJc2dGelZrM3dPOEFaRlZ6c19NNjJyREtVeGFVNVAzdVBCUHJk?oc=5",
+    "source": "C-SPAN",
+    "date": "2026-10-29",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "46e5b7a2573e",
+    "kind": "discovery"
   }
 ]

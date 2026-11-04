@@ -3175,7 +3175,7 @@
     ],
     "conf": "High",
     "delta": 0,
-    "lastSignal": "2026-11-02",
+    "lastSignal": "2026-11-04",
     "headline": "Donald Trump Reportedly Told Donors ‘We Need to Elect JD’ in 2028 - people.com",
     "why": "Legally ineligible; tracked only because of the chatter he generates.",
     "quote": "",
@@ -3184,15 +3184,6 @@
       "22nd Amdt"
     ],
     "evidence": [
-      {
-        "date": "2026-10-01",
-        "headline": "Trump launches campaign tour in GOP-friendly states ahead of midterms",
-        "url": "https://iowacapitaldispatch.com/2026/10/01/repub/trump-launches-campaign-tour-in-gop-friendly-states-ahead-of-midterms/",
-        "keys": [
-          "declared"
-        ],
-        "conf": "Medium"
-      },
       {
         "date": "2026-10-06",
         "headline": "USDA secretary urges states to allow on-road dyed diesel",
@@ -3399,6 +3390,15 @@
           "earlyState"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-11-04",
+        "headline": "Affordability takes center stage as New Hampshire voters head to the polls",
+        "url": "https://newhampshirebulletin.com/2026/11/03/affordability-takes-center-stage-as-new-hampshire-voters-head-to-the-polls/",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNLVFVVVc4dnU0YU1CeWZkSnV0WGdOZ3NYcHpyQ1JDUjZUdEF1d25xT056YzlBZXFwNTRfdUxDdTF3Z3pzaXFJdjFETm91OXpmMEhUVEU4cUtGOWREWG4tb016Z0Z0UDRGUnlHd2VoaURyV2tKbC1CeW1ZS1EySzEwcQ?oc=5",
@@ -3406,13 +3406,13 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Donald_Trump"
     },
     "early_states": {
-      "NH": 6,
+      "NH": 7,
       "NV": 7,
       "SC": 9,
       "IA": 14
     },
     "early_states_last": {
-      "NH": "2026-10-27",
+      "NH": "2026-11-04",
       "NV": "2026-11-02",
       "SC": "2026-10-30",
       "IA": "2026-11-02"
