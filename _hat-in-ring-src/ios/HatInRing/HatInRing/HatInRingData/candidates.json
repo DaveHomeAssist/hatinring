@@ -629,7 +629,7 @@
     ],
     "conf": "High",
     "delta": 5,
-    "lastSignal": "2026-09-15",
+    "lastSignal": "2026-11-05",
     "headline": "South Carolina could give Booker a head start in 2028 - newjerseyglobe.com",
     "why": "Most explicit yes among Senate Democrats; record-floor-speech visibility.",
     "quote": "Of course I'm thinking about it.",
@@ -640,11 +640,11 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Cory_Booker"
     },
     "early_states": {
-      "SC": 2,
+      "SC": 3,
       "IA": 2
     },
     "early_states_last": {
-      "SC": "2026-08-04",
+      "SC": "2026-11-05",
       "IA": "2026-09-15"
     },
     "evidence": [
@@ -688,6 +688,15 @@
         "date": "2026-09-15",
         "headline": "FBI’s Patel discusses bestiality policy, dodges election interference questions at Senate hearing",
         "url": "https://nevadacurrent.com/2026/09/15/repub/fbis-patel-discusses-bestiality-policy-dodges-election-interference-questions-at-senate-hearing/",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-11-05",
+        "headline": "Booker set to hit the trail in South Carolina amid 2028 chatter - The Hill",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOSU9relh6YVl3eUgwdjNJdTJkSnRabTVxd19CSmIxMUZmUXR0T3Q5bzZyOGVIM3NqNzFxT2FkVDJkLXdFLThaS1g1eU5BZEg2WWVsTUFzU2JKUUlqRWxTb1pCeWxwSU5qVkx6VzdFREJXQ0FMSXFRX1VJUHJWZ3Q0MXNzcUNHRzJIZ0FMeXRkVFluQUdiUE1kT9IBngFBVV95cUxQTjR1cjVrU1I3V3l6aTRtWDNKOWJKZWtuLTRQNTBTdU12V2ludVZEN2VlbXRvUEFwTWR1dEwteWhXRGdNbkhrSkdFeXo0SWFNNGxHLVBvVlZHa2N4UzZkQWxLWDVvMTgtOHI2akdPMENINkttcTRNZWg1ZDh1SmdBMXJQUEg5eWxUUzhTRFlKNzJKQUduS1V3ZVVhZV9Mdw?oc=5",
         "keys": [
           "earlyState"
         ],
@@ -975,11 +984,12 @@
     "keys": [
       "consideringQuote",
       "earlyState",
-      "donors"
+      "donors",
+      "declared"
     ],
     "conf": "High",
-    "delta": 5,
-    "lastSignal": "2026-10-12",
+    "delta": 20,
+    "lastSignal": "2026-11-06",
     "headline": "Khanna finishes another New Hampshire visit as he considers White House run - WMUR",
     "why": "First clear public timeline from the progressive-pragmatist lane.",
     "quote": "We'll look at that after the midterms.",
@@ -1061,12 +1071,29 @@
           "earlyState"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-11-06",
+        "headline": "Ro Khanna's Supporters Launch Campaign To Draft Indian-American Into 2028 Presidential Race - indica News",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPMVFETlVvc29kZHFhcVhrNFBMWmNxcDZLREhkV01MTGtUYlNLbWRPSkthcHdZN3JBMGpOdl9LRHl5OUdSQi1yNFRPZW56aTBlaXl0NDZyRW9WLVg2VnNLVXFuaktOam53TUg0WGh4VWxMNUF6TmdoZWtHN3R3ZEdYc3FWeHBxV2NWQ1JnZi0xMDY0QWo4Q3FUSFlCc3p6azdBMG9aa3Bxek9LQTZZU29ycUJlRGg?oc=5",
+        "keys": [
+          "declared"
+        ],
+        "conf": "Low"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOR3FxVTcyc3RiR2xzaXBwNUJ3TDdKTHV1MzJYQS1NLWZSWTcxbDZZdkN3YTFDWmhfRE1VR18zWUt6UDlKdEFySk9kX1pTNHk1ckwzMG1MOU5JUXpadTZrRmJ4dE1OVE4zeXltLUhSNHdNNUp4bUVycUVSQ1ZKYU5xZXhlYk5hMU1mYkE?oc=5",
     "links": {
       "wikipedia": "https://en.wikipedia.org/wiki/Ro_Khanna"
     },
+    "history": [
+      {
+        "date": "2026-11-06",
+        "from": 3,
+        "to": 5,
+        "reason": "Ro Khanna's Supporters Launch Campaign To Draft Indian-American Into 2028 Presidential Race - indica News"
+      }
+    ],
     "img": "assets/candidates/khanna/01_ro_khanna_official_portrait_115th_congress_3x4_jpg.jpg"
   },
   {
@@ -3430,11 +3457,12 @@
     "keys": [
       "endorsedOther",
       "staffing",
-      "earlyState"
+      "earlyState",
+      "declared"
     ],
     "conf": "Medium",
-    "delta": 5,
-    "lastSignal": "2026-09-10",
+    "delta": 45,
+    "lastSignal": "2026-11-05",
     "headline": "Not planning a run; signals support for Vance",
     "why": "Trump floats him as Vance's running mate, not a rival.",
     "quote": "",
@@ -3445,6 +3473,25 @@
     "links": {
       "wikipedia": "https://en.wikipedia.org/wiki/Marco_Rubio"
     },
+    "evidence": [
+      {
+        "date": "2026-11-05",
+        "headline": "Marco Rubio expected to step down and launch bid to be next US president - The Independent",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPdDRaeENQbV9USWpGUk9HOFM3SjJtTjU4YThUcmNYZERIUzJYU3AyeTVfZU9EQkVHeDd1eTk5aGpSWGhCTE1RVTR4LXBYN2l0c19mdVVqV1pVenNQcTZYWnpoR2FoV0VSVTM1aDFIV0JObC1UNTJLLWY3YXFfUnl1YkUxU3I3R3lvdnVtNnBlcE94aFU2ZUxzRFRCVV9jOXM?oc=5",
+        "keys": [
+          "declared"
+        ],
+        "conf": "Low"
+      }
+    ],
+    "history": [
+      {
+        "date": "2026-11-05",
+        "from": 2,
+        "to": 5,
+        "reason": "Marco Rubio expected to step down and launch bid to be next US president - The Independent"
+      }
+    ],
     "img": "assets/candidates/rubio/01_official_portrait_of_secretary_marco_rubio_cropped.jpg"
   },
   {

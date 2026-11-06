@@ -1,6 +1,15 @@
 {
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "movers": [
+    {
+      "id": "rubio",
+      "name": "Marco Rubio",
+      "party": "Republican",
+      "delta": 45,
+      "score": 45,
+      "tier": 5,
+      "statusLabel": "Declared"
+    },
     {
       "id": "shapiro",
       "name": "Josh Shapiro",
@@ -42,18 +51,9 @@
       "name": "Ted Cruz",
       "party": "Republican",
       "delta": 20,
-      "score": 80,
+      "score": 75,
       "tier": 5,
       "statusLabel": "Declared"
-    },
-    {
-      "id": "emanuel",
-      "name": "Rahm Emanuel",
-      "party": "Democrat",
-      "delta": 15,
-      "score": 60,
-      "tier": 3,
-      "statusLabel": "Actively considering"
     }
   ],
   "new_filers": [
@@ -64,17 +64,42 @@
       "statusLabel": "Declared"
     },
     {
+      "id": "khanna",
+      "name": "Ro Khanna",
+      "tier": 5,
+      "statusLabel": "Declared"
+    },
+    {
       "id": "vance",
       "name": "J.D. Vance",
       "tier": 5,
       "statusLabel": "Declared"
+    },
+    {
+      "id": "rubio",
+      "name": "Marco Rubio",
+      "tier": 5,
+      "statusLabel": "Declared"
     }
   ],
-  "transitions": [],
-  "review_count": 212,
+  "transitions": [
+    {
+      "name": "Ro Khanna",
+      "from": 3,
+      "to": 5,
+      "date": "2026-11-06"
+    },
+    {
+      "name": "Marco Rubio",
+      "from": 2,
+      "to": 5,
+      "date": "2026-11-05"
+    }
+  ],
+  "review_count": 213,
   "totals": {
     "tracked": 41,
     "formal": 3,
-    "considering": 16
+    "considering": 15
   }
 }

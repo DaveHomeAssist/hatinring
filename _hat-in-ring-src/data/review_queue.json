@@ -2587,5 +2587,17 @@
     ],
     "rid": "44e1a08cf141",
     "kind": "discovery"
+  },
+  {
+    "name": "The midterms blew open the 2028 map. Rep",
+    "headline": "The midterms blew open the 2028 map. Republicans are panicking.",
+    "url": "https://www.politico.com/news/2026/11/06/midterms-2028-presidential-map-republicans-panic-texas-ohio-iowa-01153026",
+    "source": "Politico",
+    "date": "2026-11-06",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "7584696b2836",
+    "kind": "discovery"
   }
 ]

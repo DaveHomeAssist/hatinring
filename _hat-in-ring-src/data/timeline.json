@@ -440,5 +440,44 @@
     "direction": "up",
     "reason": "",
     "reconstructed": true
+  },
+  {
+    "id": "rubio",
+    "name": "Marco Rubio",
+    "party": "Republican",
+    "date": "2026-11-05",
+    "from": 2,
+    "to": 5,
+    "fromLabel": "Positioning",
+    "toLabel": "Declared",
+    "direction": "up",
+    "reason": "Marco Rubio expected to step down and launch bid to be next US president - The Independent",
+    "reconstructed": false
+  },
+  {
+    "id": "khanna",
+    "name": "Ro Khanna",
+    "party": "Democrat",
+    "date": "2026-11-06",
+    "from": 3,
+    "to": 5,
+    "fromLabel": "Considering",
+    "toLabel": "Declared",
+    "direction": "up",
+    "reason": "Ro Khanna's Supporters Launch Campaign To Draft Indian-American Into 2028 Presidential Race - indica News",
+    "reconstructed": false
+  },
+  {
+    "id": "rubio",
+    "name": "Marco Rubio",
+    "party": "Republican",
+    "date": "2026-11-06",
+    "from": 2,
+    "to": 5,
+    "fromLabel": "Positioning",
+    "toLabel": "Declared",
+    "direction": "up",
+    "reason": "",
+    "reconstructed": true
   }
 ]
