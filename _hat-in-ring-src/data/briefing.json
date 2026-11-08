@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-07",
+  "date": "2026-11-08",
   "movers": [
     {
       "id": "rubio",
@@ -58,6 +58,12 @@
   ],
   "new_filers": [
     {
+      "id": "greaney",
+      "name": "Dan Greaney",
+      "tier": 5,
+      "statusLabel": "Declared"
+    },
+    {
       "id": "newsom",
       "name": "Gavin Newsom",
       "tier": 5,
@@ -96,7 +102,7 @@
       "date": "2026-11-05"
     }
   ],
-  "review_count": 214,
+  "review_count": 218,
   "totals": {
     "tracked": 41,
     "formal": 3,

@@ -2611,5 +2611,54 @@
     ],
     "rid": "65e97133031e",
     "kind": "discovery"
+  },
+  {
+    "name": "New Hampshire Public",
+    "headline": "‘The Simpsons’ writer kicks off 2028 presidential bid in, where else, Springfield - New Hampshire Public Radio",
+    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNVk1vczI4T3FGeVhtQXM3cHdKQjU5bzBKdUF4WHMxV3pXZzY5Z2M0Rkl4S1lBYjhCVDBwYUZEVGEyLWh5MHZCM19UOUZvX2txYi0tNkdtWlZwTkY3MFNiNGJpbGlhZU1XcVFlR3hRZXhSWndzVEplMks1Q3BqeGpqcXllRktnVXpnb1RFcGRhb1B6c1NEOEVBNG5heTZrcUF6UEVIT3lYbU01Mnc?oc=5",
+    "source": "New Hampshire Public Radio",
+    "date": "2026-11-07",
+    "keys": [
+      "declared",
+      "earlyState"
+    ],
+    "rid": "f8fafee16197",
+    "kind": "discovery"
+  },
+  {
+    "name": "Nevada Democrats",
+    "headline": "OPINION: Poetic justice for Republicans — and an opportunity for Nevada Democrats",
+    "url": "https://thenevadaindependent.com/article/opinion-poetic-justice-for-republicans-and-an-opportunity-for-nevada-democrats/",
+    "source": "The Nevada Independent",
+    "date": "2026-11-08",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "767c7f08f55a",
+    "kind": "discovery"
+  },
+  {
+    "name": "Stephen Miller",
+    "headline": "PODCAST: Stephen Miller, Paraguay’s new president and Apple's hidden word list - Reuters",
+    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOdlhERkpGalRNak1XdFhTS3BteE1mOHpLM2NvLVNvUVJ3d01hTGpSc052VkUzM3V3YmtfYW5mSmpnUENpOS1UTXg5anFIeTdETVVNZkJycFlKbkdONEY0Y0ZkNWVWLV9ISWpFY1N5Tk15eXlPUWt3eEtneloxNHp4dWtRWGMwbm0zTTNTazBzU3hOWFRXZmU5d2hNYzBHNk05UHF6OUlOclF4VEE?oc=5",
+    "source": "Reuters",
+    "date": "2026-11-07",
+    "keys": [
+      "mediaBlitz"
+    ],
+    "rid": "7fe3c38b5675",
+    "kind": "discovery"
+  },
+  {
+    "name": "Trump Speaks",
+    "headline": "President Trump Speaks to Reporters in Dubuque, Iowa - C-SPAN",
+    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQb1FkS3BmNmx5QTZaQ1FsV2I0TmpQN2dRRE0ycFVTdllkYmpjcV9KdE1aVU1YRk5Od2hENTVrZEVQQWVzWWVtWmlHcVA0VFd3NWxBTmw2MG9ISzBxMGVLd0owd0U4NlJZT0dVUF90Y0FDV3RFWHRVS1lkbWRLVWwzTDUxWkQ3NDZjS013QlBkaWkyM0QwbkRnT0JQbmxKSENwOHd0UWdQZnF6TlU?oc=5",
+    "source": "C-SPAN",
+    "date": "2026-11-01",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "cc94ee09ff63",
+    "kind": "discovery"
   }
 ]

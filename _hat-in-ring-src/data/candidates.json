@@ -6,11 +6,12 @@
     "role": "Perennial candidate",
     "bucket": "formal",
     "keys": [
-      "declared"
+      "declared",
+      "earlyState"
     ],
     "conf": "Very high",
     "delta": 15,
-    "lastSignal": "2026-08-20",
+    "lastSignal": "2026-11-07",
     "headline": "‘Simpsons’ writer Dan Greaney announces 2028 presidential campaign - News.com.au",
     "why": "Only formally declared major-party filer so far; low-profile.",
     "quote": "",
@@ -48,8 +49,24 @@
           "declared"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-11-07",
+        "headline": "‘The Simpsons’ writer kicks off 2028 presidential bid in, where else, Springfield",
+        "url": "https://www.nhpr.org/politics/2026-11-07/thesimpsons-dan-greaney-2028-presidential-springfield-newhampshire",
+        "keys": [
+          "declared",
+          "earlyState"
+        ],
+        "conf": "Medium"
       }
-    ]
+    ],
+    "early_states": {
+      "NH": 1
+    },
+    "early_states_last": {
+      "NH": "2026-11-07"
+    }
   },
   {
     "id": "bovino",
