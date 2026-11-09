@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-08",
+  "date": "2026-11-09",
   "movers": [
     {
       "id": "rubio",
@@ -64,12 +64,6 @@
       "statusLabel": "Declared"
     },
     {
-      "id": "newsom",
-      "name": "Gavin Newsom",
-      "tier": 5,
-      "statusLabel": "Declared"
-    },
-    {
       "id": "khanna",
       "name": "Ro Khanna",
       "tier": 5,
@@ -102,7 +96,7 @@
       "date": "2026-11-05"
     }
   ],
-  "review_count": 218,
+  "review_count": 219,
   "totals": {
     "tracked": 41,
     "formal": 3,

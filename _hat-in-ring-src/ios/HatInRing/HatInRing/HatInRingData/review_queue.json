@@ -2660,5 +2660,17 @@
     ],
     "rid": "cc94ee09ff63",
     "kind": "discovery"
+  },
+  {
+    "name": "Opening Speakers",
+    "headline": "Opening Speakers at Campaign Rally in Dubuque, Iowa with President Trump - C-SPAN",
+    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOTnp1OXR1YU1PNWdwclVmLXhRaUlCREduc1RHNnJQWTNpZU9YVzJ0UXpTOVF2TzhUVEZjWlFtVzFWYUVibEFJZ0xNM0NCRlRZMG15X0hYY2p1NjF0YkJRbVRYUjlib3UwUGhtYzVfcTNvVUM1LXhEZXJWN1pqaS1XaHdsMlhLSDhEY2l3QTFsZnl1aXNwem0tNnNFOVZiVTlmNGJqRlhMdnhvYUVSNGhoZ1lPRFJKdktTUVVxM3JxbEM?oc=5",
+    "source": "C-SPAN",
+    "date": "2026-11-02",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "34cb069fa107",
+    "kind": "discovery"
   }
 ]
