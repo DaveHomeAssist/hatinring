@@ -2672,5 +2672,42 @@
     ],
     "rid": "34cb069fa107",
     "kind": "discovery"
+  },
+  {
+    "name": "Marjorie Taylor Greene",
+    "headline": "Marjorie Taylor Greene Says She Has ‘No Plans to Run for President’ as 2028 Rumors Swirl - AOL.com",
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNX2xHN0Y4NkRQeV9IeXFwRUtEelc0Qnp3T2dMejRLY3JpempCVGdXTG1hSEdNUjlCZmNreEVRRnJacUtMeUw1UnRiNXo4SnBKMDFWS0xpanlGQ1hsYmJkbkQ1RkZPalUxX1ZRUjFHWjMxcEx1MnFnVmtPMGtGSHdPTQ?oc=5",
+    "source": "AOL.com",
+    "date": "2026-11-10",
+    "keys": [
+      "ruledOut"
+    ],
+    "note": "denial/downgrade — confirm before applying",
+    "rid": "2dc4e216283e",
+    "kind": "denial"
+  },
+  {
+    "name": "How new Democratic trifectas could resha",
+    "headline": "How new Democratic trifectas could reshape the 2028 presidential election",
+    "url": "https://thehill.com/homenews/campaign/6210886-democrats-electoral-college-future/",
+    "source": "The Hill",
+    "date": "2026-11-10",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "4e17d8e676e8",
+    "kind": "discovery"
+  },
+  {
+    "name": "Nevada Republicans",
+    "headline": "After a midterm drubbing, who can save Nevada Republicans in 2028?",
+    "url": "https://thenevadaindependent.com/article/after-a-midterm-drubbing-who-can-save-nevada-republicans-in-2028/",
+    "source": "The Nevada Independent",
+    "date": "2026-11-10",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "1674897d482e",
+    "kind": "discovery"
   }
 ]

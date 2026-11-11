@@ -2062,11 +2062,12 @@
       "staffing",
       "mediaBlitz",
       "earlyState",
-      "softConsidering"
+      "softConsidering",
+      "consideringQuote"
     ],
     "conf": "Medium",
-    "delta": 0,
-    "lastSignal": "2026-09-22",
+    "delta": 13,
+    "lastSignal": "2026-11-11",
     "headline": "New Hampshire presidential poll puts Ocasio-Cortez ahead of Buttigieg among 2028 hopefuls - Scripps News",
     "why": "Back on the trail and openly weighing a run; consistently near the top of Democratic primary polls.",
     "quote": "",
@@ -2291,9 +2292,26 @@
           "earlyState"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-11-11",
+        "headline": "Pete Buttigieg, mulling a presidential bid, announces a new book - The Washington Post",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPdkNlUmtUdXVpeHpBWWVXbW43dm9UUU96Q3JnMUQ0eFpRVDFzLWFicXFRWVBPQ0ltWThLaHFTNDhNQXBmLXNWNEJqN1BuVnRxMUpZX1lpRDZ3TXljM05HSnIwWTJxNUFKSk1tR0tTT3VnemZ6WHllVURUU25Yb2NqeVpYanh1cmJGM0ROMVlKRHBwbW14WDJsQW9SaVdPeEdSMXBrWGFndkpxTmhwODNv?oc=5",
+        "keys": [
+          "consideringQuote"
+        ],
+        "conf": "High"
       }
     ],
-    "sourceUrl": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZnJILVYzcldkMEQ4QVdrdGU5N21TSFdoS1E3a2JCYjVHaWJpZXR1M2FjS0FQNXhjWkxualdmS01aWlh1TFZMSXBNSGhMQldFS0ozdTBjUlRiRUxrV191eTlyOTBsbE5LNndxdFNHazd3Y1ZwYjlUMFVOYUJaazlvdzJXTlZpRlI4MUZKa3hhUDdWLVBRTXRaeFV4Z0taY2JRVkNoeUprV2p1d29mZlN1ZlZXYU9KU3dydVM0SUZLclRfMVlONHJF?oc=5"
+    "sourceUrl": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZnJILVYzcldkMEQ4QVdrdGU5N21TSFdoS1E3a2JCYjVHaWJpZXR1M2FjS0FQNXhjWkxualdmS01aWlh1TFZMSXBNSGhMQldFS0ozdTBjUlRiRUxrV191eTlyOTBsbE5LNndxdFNHazd3Y1ZwYjlUMFVOYUJaazlvdzJXTlZpRlI4MUZKa3hhUDdWLVBRTXRaeFV4Z0taY2JRVkNoeUprV2p1d29mZlN1ZlZXYU9KU3dydVM0SUZLclRfMVlONHJF?oc=5",
+    "history": [
+      {
+        "date": "2026-11-11",
+        "from": 2,
+        "to": 3,
+        "reason": "Pete Buttigieg, mulling a presidential bid, announces a new book - The Washington Post"
+      }
+    ]
   },
   {
     "id": "aoc",
@@ -3206,7 +3224,7 @@
     ],
     "conf": "High",
     "delta": 0,
-    "lastSignal": "2026-11-04",
+    "lastSignal": "2026-11-11",
     "headline": "Donald Trump Reportedly Told Donors ‘We Need to Elect JD’ in 2028 - people.com",
     "why": "Legally ineligible; tracked only because of the chatter he generates.",
     "quote": "",
@@ -3215,15 +3233,6 @@
       "22nd Amdt"
     ],
     "evidence": [
-      {
-        "date": "2026-10-06",
-        "headline": "Voting rights advocates organize volunteers to track potential intimidation at the polls",
-        "url": "https://iowacapitaldispatch.com/2026/10/06/repub/voting-rights-advocates-organize-volunteers-to-track-potential-intimidation-at-the-polls/",
-        "keys": [
-          "softConsidering"
-        ],
-        "conf": "Medium"
-      },
       {
         "date": "2026-10-06",
         "headline": "Trump effect hovers over race for Nevada attorney general",
@@ -3430,6 +3439,15 @@
           "earlyState"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-11-11",
+        "headline": "Did Donald Trump sink Nevada Republicans? Here's what the data says.",
+        "url": "https://thenevadaindependent.com/article/did-donald-trump-sink-nevada-republicans-heres-what-the-data-says/",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNLVFVVVc4dnU0YU1CeWZkSnV0WGdOZ3NYcHpyQ1JDUjZUdEF1d25xT056YzlBZXFwNTRfdUxDdTF3Z3pzaXFJdjFETm91OXpmMEhUVEU4cUtGOWREWG4tb016Z0Z0UDRGUnlHd2VoaURyV2tKbC1CeW1ZS1EySzEwcQ?oc=5",
@@ -3438,13 +3456,13 @@
     },
     "early_states": {
       "NH": 7,
-      "NV": 8,
+      "NV": 9,
       "SC": 9,
       "IA": 14
     },
     "early_states_last": {
       "NH": "2026-11-04",
-      "NV": "2026-11-04",
+      "NV": "2026-11-11",
       "SC": "2026-10-30",
       "IA": "2026-11-02"
     }
@@ -3619,7 +3637,7 @@
     ],
     "conf": "Low",
     "delta": 0,
-    "lastSignal": "2026-02-25",
+    "lastSignal": "2026-11-10",
     "headline": "TIME reported private interest; she publicly denied it",
     "why": "Source conflict resolved toward denial.",
     "quote": "",

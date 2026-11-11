@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-10",
+  "date": "2026-11-11",
   "movers": [
     {
       "id": "rubio",
@@ -84,6 +84,12 @@
   ],
   "transitions": [
     {
+      "name": "Pete Buttigieg",
+      "from": 2,
+      "to": 3,
+      "date": "2026-11-11"
+    },
+    {
       "name": "Ro Khanna",
       "from": 3,
       "to": 5,
@@ -96,10 +102,10 @@
       "date": "2026-11-05"
     }
   ],
-  "review_count": 219,
+  "review_count": 222,
   "totals": {
     "tracked": 41,
     "formal": 3,
-    "considering": 15
+    "considering": 16
   }
 }
