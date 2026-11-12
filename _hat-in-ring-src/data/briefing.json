@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-11",
+  "date": "2026-11-12",
   "movers": [
     {
       "id": "rubio",
@@ -70,6 +70,12 @@
       "statusLabel": "Declared"
     },
     {
+      "id": "aoc",
+      "name": "Alexandria Ocasio-Cortez",
+      "tier": 5,
+      "statusLabel": "Declared"
+    },
+    {
       "id": "vance",
       "name": "J.D. Vance",
       "tier": 5,
@@ -90,6 +96,12 @@
       "date": "2026-11-11"
     },
     {
+      "name": "Alexandria Ocasio-Cortez",
+      "from": 3,
+      "to": 5,
+      "date": "2026-11-10"
+    },
+    {
       "name": "Ro Khanna",
       "from": 3,
       "to": 5,
@@ -102,10 +114,10 @@
       "date": "2026-11-05"
     }
   ],
-  "review_count": 222,
+  "review_count": 223,
   "totals": {
     "tracked": 41,
     "formal": 3,
-    "considering": 16
+    "considering": 15
   }
 }

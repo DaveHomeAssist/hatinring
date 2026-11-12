@@ -481,6 +481,19 @@
     "reconstructed": true
   },
   {
+    "id": "aoc",
+    "name": "Alexandria Ocasio-Cortez",
+    "party": "Democrat",
+    "date": "2026-11-10",
+    "from": 3,
+    "to": 5,
+    "fromLabel": "Considering",
+    "toLabel": "Declared",
+    "direction": "up",
+    "reason": "Progressive org launches campaign urging AOC to run for president while progressives eye socialist candidate - Fox News",
+    "reconstructed": false
+  },
+  {
     "id": "buttigieg",
     "name": "Pete Buttigieg",
     "party": "Democrat",
@@ -492,5 +505,18 @@
     "direction": "up",
     "reason": "Pete Buttigieg, mulling a presidential bid, announces a new book - The Washington Post",
     "reconstructed": false
+  },
+  {
+    "id": "aoc",
+    "name": "Alexandria Ocasio-Cortez",
+    "party": "Democrat",
+    "date": "2026-11-12",
+    "from": 3,
+    "to": 5,
+    "fromLabel": "Considering",
+    "toLabel": "Declared",
+    "direction": "up",
+    "reason": "",
+    "reconstructed": true
   }
 ]
