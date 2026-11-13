@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-12",
+  "date": "2026-11-13",
   "movers": [
     {
       "id": "rubio",
@@ -15,15 +15,6 @@
       "name": "Josh Shapiro",
       "party": "Democrat",
       "delta": 40,
-      "score": 40,
-      "tier": 3,
-      "statusLabel": "Actively considering"
-    },
-    {
-      "id": "landrieu",
-      "name": "Mitch Landrieu",
-      "party": "Democrat",
-      "delta": 35,
       "score": 40,
       "tier": 3,
       "statusLabel": "Actively considering"
@@ -52,6 +43,15 @@
       "party": "Republican",
       "delta": 20,
       "score": 75,
+      "tier": 5,
+      "statusLabel": "Declared"
+    },
+    {
+      "id": "aoc",
+      "name": "Alexandria Ocasio-Cortez",
+      "party": "Democrat",
+      "delta": 20,
+      "score": 70,
       "tier": 5,
       "statusLabel": "Declared"
     }
@@ -106,15 +106,9 @@
       "from": 3,
       "to": 5,
       "date": "2026-11-06"
-    },
-    {
-      "name": "Marco Rubio",
-      "from": 2,
-      "to": 5,
-      "date": "2026-11-05"
     }
   ],
-  "review_count": 223,
+  "review_count": 227,
   "totals": {
     "tracked": 41,
     "formal": 3,

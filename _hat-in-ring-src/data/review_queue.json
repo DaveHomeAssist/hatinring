@@ -2722,5 +2722,53 @@
     ],
     "rid": "885ef4dd6629",
     "kind": "denial"
+  },
+  {
+    "name": "Nikki Haley",
+    "headline": "Nikki Haley rules out 2028 presidential run - The American Bazaar",
+    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPbC1oWXZpVVRjam94a1YyaWRLXy1laUd6RU4wUVN1b19WeXV4ZEdTN18ycGxUQ01OVWJBMGFUX3pkdnRlVWJsVWc4QTBQOFJNMkwwckYxdmtKZ2gyYUFMdUl2NEdhSE5lWDNoWHNRdzNIQTNnMU15R2I5bXFHTlBmUnJBR2ZyeGQ5U0l6VFAxU0dTcDBUU01kb1Zndw?oc=5",
+    "source": "The American Bazaar",
+    "date": "2026-11-12",
+    "keys": [
+      "ruledOut"
+    ],
+    "rid": "25295a218d1b",
+    "kind": "denial"
+  },
+  {
+    "name": "Pence leaves door open on 2028 president",
+    "headline": "Pence leaves door open on 2028 presidential run",
+    "url": "https://thehill.com/homenews/campaign/6217361-mike-pence-revisits-2028-run/",
+    "source": "The Hill",
+    "date": "2026-11-12",
+    "keys": [
+      "softConsidering"
+    ],
+    "rid": "bf0ef10d583a",
+    "kind": "discovery"
+  },
+  {
+    "name": "Iowa Republicans",
+    "headline": "After midterm rout, where do Iowa Republicans and Democrats go next? - The Des Moines Register",
+    "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQem9jbm1hcTRoMVZVOXdvdWk1akFZWkEyV2Y2aUdrUEdBakJ2M3lxQm8xc1lrbGZ4dUZUYmZFU3NMUm5sb2JxV1g3TGhLeHM3Q1Y0YW9DUHA3Tkh0UHhpQTVUaXJGZURYX2tJOVJ4bzctRFdWNjg0WDB4Y09sUzkweWo5QmZOYlZwanlmdFJpVWRxeG94YTJvTWlPZEdhQkRfaDBHVGpZV3RRMmZQRGpzcm51eDdSSGd5MFJMMlprNWxjZkttMWRpMGdFUUR4ZUk3NHc0Zno1RGtSLWVIVTFabnc5bw?oc=5",
+    "source": "The Des Moines Register",
+    "date": "2026-11-08",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "3d764112274b",
+    "kind": "discovery"
+  },
+  {
+    "name": "Chris Van Hollen",
+    "headline": "Chris Van Hollen announces run for US Senate majority leader, challenging Schumer - Reuters",
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQVDJtNkFCOFNqX2ZmeGFLZVFhcEFtWHhqQzhKMXdYZmFYdnZOZS1XSnhiRDRONGVwTUt1TmpuS1ZNMVZqZGx4RkdiUWlZTTg1WDFUS2hrbElaNjdNcDh5c3RKeXJYOG8yN3VoNlJ2dE80RV9HdUlyb1A5Y0hpMkc1ZzdZXy1DSmNkS2tUbV9jTF8xd0JLQzAyeWpxTUZ2eDVVUkZuSm5ISFZ1amxXZVVaYTlOZGlTdGhhbC1JVS13?oc=5",
+    "source": "Reuters",
+    "date": "2026-11-13",
+    "keys": [
+      "declared"
+    ],
+    "rid": "f8290e6f40cc",
+    "kind": "discovery"
   }
 ]
