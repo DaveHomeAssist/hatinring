@@ -646,7 +646,7 @@
     ],
     "conf": "High",
     "delta": 5,
-    "lastSignal": "2026-11-05",
+    "lastSignal": "2026-11-14",
     "headline": "South Carolina could give Booker a head start in 2028 - newjerseyglobe.com",
     "why": "Most explicit yes among Senate Democrats; record-floor-speech visibility.",
     "quote": "Of course I'm thinking about it.",
@@ -716,6 +716,15 @@
         "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOSU9relh6YVl3eUgwdjNJdTJkSnRabTVxd19CSmIxMUZmUXR0T3Q5bzZyOGVIM3NqNzFxT2FkVDJkLXdFLThaS1g1eU5BZEg2WWVsTUFzU2JKUUlqRWxTb1pCeWxwSU5qVkx6VzdFREJXQ0FMSXFRX1VJUHJWZ3Q0MXNzcUNHRzJIZ0FMeXRkVFluQUdiUE1kT9IBngFBVV95cUxQTjR1cjVrU1I3V3l6aTRtWDNKOWJKZWtuLTRQNTBTdU12V2ludVZEN2VlbXRvUEFwTWR1dEwteWhXRGdNbkhrSkdFeXo0SWFNNGxHLVBvVlZHa2N4UzZkQWxLWDVvMTgtOHI2akdPMENINkttcTRNZWg1ZDh1SmdBMXJQUEg5eWxUUzhTRFlKNzJKQUduS1V3ZVVhZV9Mdw?oc=5",
         "keys": [
           "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-11-14",
+        "headline": "Sen. Cory Booker leaves door open to 2028 presidential run, warns country is 'tearing itself apart' - Fox News",
+        "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBFeTU3TTZxdHdLcDVCbUFvR25uRjBlNzBfTmJDMUstdHlPWWxuQjVud2ItYVpmSFVaQ0JaRThHOXRxOHl3Q1A2YTA3RTBDV0llNjhCeTl3?oc=5",
+        "keys": [
+          "softConsidering"
         ],
         "conf": "Low"
       }

@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-13",
+  "date": "2026-11-14",
   "movers": [
     {
       "id": "rubio",
@@ -100,15 +100,9 @@
       "from": 3,
       "to": 5,
       "date": "2026-11-10"
-    },
-    {
-      "name": "Ro Khanna",
-      "from": 3,
-      "to": 5,
-      "date": "2026-11-06"
     }
   ],
-  "review_count": 227,
+  "review_count": 235,
   "totals": {
     "tracked": 41,
     "formal": 3,
