@@ -1015,7 +1015,7 @@
     ],
     "conf": "High",
     "delta": 20,
-    "lastSignal": "2026-11-08",
+    "lastSignal": "2026-11-14",
     "headline": "Khanna finishes another New Hampshire visit as he considers White House run - WMUR",
     "why": "First clear public timeline from the progressive-pragmatist lane.",
     "quote": "We'll look at that after the midterms.",
@@ -1113,6 +1113,15 @@
         "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPVklmOGgxRU9FbDhRODBrVmZ4U203R09yemt2N1F0WTh3ZE1nUDlLMFhXTC1IN2hLSjNsNFFZV0h2UmplclpLSGhSSjJPRC1kSExocXA4M1hqSHdDUUxnQWo5T3dRc3BrWEJ4Y3FEODQxSmU2c3VJRXJOd2dDbjFTYkhSMzZLZFQtaGRfX0piMVZLME02RlRVLUNaQlN2c1FwM2FvTkZDRjJmQmFEZGc?oc=5",
         "keys": [
           "declared"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-11-14",
+        "headline": "Democrat Ro Khanna Is Considering A Presidential Bid. He Could Be The Progressive Wing's Candidate. - Yahoo",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPSUl6TGlHbDF6U0ZkaTVNSTJVNl9qcDhTb1J0MHk5YmdIX1Q5NmZycmFEbm9jNFNpSXd3cHBVam00dUM1aDZ6cEd5U1FTNU8yT2dQQ3hqNXFqTjRlZENwRjgydF9wc3NtR2ZUS0psVEYzY1RGbTMyYW9vZlZ1NndpVkJiemNWYzctRzFrUHpTVFZUUmNrbVRHQjVZcURkcVc2N0pPM2VR?oc=5",
+        "keys": [
+          "consideringQuote"
         ],
         "conf": "Low"
       }

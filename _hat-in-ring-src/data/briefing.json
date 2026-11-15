@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-14",
+  "date": "2026-11-15",
   "movers": [
     {
       "id": "rubio",
@@ -102,7 +102,7 @@
       "date": "2026-11-10"
     }
   ],
-  "review_count": 235,
+  "review_count": 236,
   "totals": {
     "tracked": 41,
     "formal": 3,

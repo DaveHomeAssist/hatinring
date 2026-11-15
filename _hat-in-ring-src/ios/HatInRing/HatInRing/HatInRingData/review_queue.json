@@ -2866,5 +2866,17 @@
     ],
     "rid": "8302b2c20def",
     "kind": "denial"
+  },
+  {
+    "name": "White House",
+    "headline": "Haley rules out 2028 White House bid - The Hill",
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQUmRMS0l4cDcwNEJUVmpQc210NHZ0MXdQQVl1T3ZlcWpZeEpvRk1GalpSOUtLN2dVcWR3TS1PM0l6SEJ5WGlKMjdnTUdyUEhqazdmR0dPT1A3UGtEbEMxRWRidnVISHNXRmZDcU9FQ0JKR2wtWXBDc0wzei1zclMtbUlWa2dUT0Mz0gGOAUFVX3lxTFAzdV80Y1EzR1FjYTVYeklRbkVHLXhzeW1BN3FGQWVPckF0bWZHLWNnTUhhQ0pDQV9hNmt0SUNwa0d4RENHMjJBdmpQdVltQ0tlWU5pSWcwcVNRRUpJanJHU09qcW5JWEZkTWdaOWQ4M1YzQWdlalVKR3hXc3YzV3VjNFhMbFZ5ZXlIMzBDWFE?oc=5",
+    "source": "The Hill",
+    "date": "2026-11-11",
+    "keys": [
+      "ruledOut"
+    ],
+    "rid": "6520bba9bf8c",
+    "kind": "denial"
   }
 ]
