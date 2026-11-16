@@ -2878,5 +2878,17 @@
     ],
     "rid": "6520bba9bf8c",
     "kind": "denial"
+  },
+  {
+    "name": "Huckabee Sanders",
+    "headline": "Huckabee Sanders doesn't rule out future presidential bid",
+    "url": "https://thehill.com/homenews/campaign/6221423-sanders-leaves-presidential-run-open/",
+    "source": "The Hill",
+    "date": "2026-11-15",
+    "keys": [
+      "softConsidering"
+    ],
+    "rid": "f98d775edf32",
+    "kind": "discovery"
   }
 ]

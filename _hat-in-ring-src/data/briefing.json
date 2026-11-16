@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "movers": [
     {
       "id": "rubio",
@@ -38,20 +38,20 @@
       "statusLabel": "Actively considering"
     },
     {
-      "id": "cruz",
-      "name": "Ted Cruz",
-      "party": "Republican",
-      "delta": 20,
-      "score": 75,
-      "tier": 5,
-      "statusLabel": "Declared"
-    },
-    {
       "id": "aoc",
       "name": "Alexandria Ocasio-Cortez",
       "party": "Democrat",
       "delta": 20,
       "score": 70,
+      "tier": 5,
+      "statusLabel": "Declared"
+    },
+    {
+      "id": "khanna",
+      "name": "Ro Khanna",
+      "party": "Democrat",
+      "delta": 20,
+      "score": 65,
       "tier": 5,
       "statusLabel": "Declared"
     }
@@ -66,6 +66,12 @@
     {
       "id": "khanna",
       "name": "Ro Khanna",
+      "tier": 5,
+      "statusLabel": "Declared"
+    },
+    {
+      "id": "cruz",
+      "name": "Ted Cruz",
       "tier": 5,
       "statusLabel": "Declared"
     },
@@ -102,7 +108,7 @@
       "date": "2026-11-10"
     }
   ],
-  "review_count": 236,
+  "review_count": 237,
   "totals": {
     "tracked": 41,
     "formal": 3,
