@@ -2890,5 +2890,115 @@
     ],
     "rid": "f98d775edf32",
     "kind": "discovery"
+  },
+  {
+    "name": "James Comer Launches",
+    "headline": "James Comer Launches a Bid for Kentucky Governor - NOTUS",
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPbFduYmNsUUxjNkZwUEZYbXBNWk1FaG5NQlYtT1pWSlMzMHU2OGViZUkwbUprV0haUGJBMGZ4ZHRVUVhndW1LdWRFeVc2T0k0b3NwNEtPSkRJNEVXbmlDbV9kZGNFMFdDWjhTVjV5ZTlnVWJ3YWRuOHRfWG82MXdnZEZ2eXNzTlN4VWsxM3VvZ0VhZG1heUE0ZjRMcGJqS251SGItV3BGWmxWWlJZeHZBelhRSkduQTA1bmlDX1hR?oc=5",
+    "source": "NOTUS",
+    "date": "2026-11-17",
+    "keys": [
+      "declared"
+    ],
+    "rid": "9bb087f764a7",
+    "kind": "discovery"
+  },
+  {
+    "name": "Don Lemon",
+    "headline": "Don Lemon hasn’t ruled out running for president, names possible running mates - Washington Examiner",
+    "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNNi0wTktURmpRQjF5bl9PUG53eFUxWXBPWkhSY2FLMXYtdFl2WGRtNE5iZFRkQTJhSi1WVkNwMTEtZzRicWdLckFEdUM3djB6SjA4aUlqLXhVWWJLNGtaRzJnUGJva0hGZUdSeVZjNU8zQUEwRXlmV1NoMjlUbmVKYmU4dTEzRXNrdl9uemRBaFFtY09PWGFLOFhYZHRsQm13anZwVFdLRUJSZ1l6bXJ6ZjcyZXRXYUE1enFQcmtRbXpQdVNWSDZXdE9rVjF1bXVVR0I3TWp0VHZhWXd3WmRmVm5R?oc=5",
+    "source": "Washington Examiner",
+    "date": "2026-11-16",
+    "keys": [
+      "ruledOut"
+    ],
+    "note": "denial/downgrade — confirm before applying",
+    "rid": "cc0582a2c914",
+    "kind": "denial"
+  },
+  {
+    "name": "Presidential Exploratory Committee",
+    "headline": "Presidential Exploratory Committee: Endorsement Launch Call! - actionnetwork.org",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5hUlBVamhGVktPVmFjcUdQb3VCYUY4bjJaSVNuVm9fdUJzRzJRQzFzWFZhbmFJUXo1V2lVZE12SVZ6bTd2b3BoTV9jUlJsQU5SdjRfMTlPdWJsaUx1?oc=5",
+    "source": "actionnetwork.org",
+    "date": "2026-11-17",
+    "keys": [
+      "exploratory"
+    ],
+    "rid": "bea3f544e346",
+    "kind": "discovery"
+  },
+  {
+    "name": "Rising Democratic",
+    "headline": "Rising Democratic star leaves door open to 2028 campaign: ‘I’m still sorting it out’ - AL.com",
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQNzIwNkNlVXctUkFuNU5POVNsNUdWbk8yVnVUcGJtUk9OUUFRT2czeWNUaTl3Sy1rMWRBNGxabnlxMHE3QnhZOWFCSm1CQV9mUUxYbHVDODhua0dJOElxaFpraWdQcFdOVkF5LUc3S2FJZWlJVUlJaFExTU5jT2xrX0ZrdE5RdW1TSThIQTQ4RWVWNWFCaTNBTXZKQ1YyNk4ySGpkNXl3NktncTlrckVmRWhsS0JwOFFaQlMyWEpB?oc=5",
+    "source": "AL.com",
+    "date": "2026-11-16",
+    "keys": [
+      "softConsidering"
+    ],
+    "rid": "b665bd28e52e",
+    "kind": "discovery"
+  },
+  {
+    "name": "Jamie Raskin",
+    "headline": "Rep. Jamie Raskin won’t rule out 2028 presidential bid - Yahoo",
+    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOdFY4VUdQRnIwalBpUnlPUmdoS05sckRlSkgtOE9rak0tZi1Xc3N2WnJtYzBDR0dSamE0WVR1VVNyMVhnLXRlOEttbVlCQkpIU3BSUHVjbUpkR3ZNVzdjYWJEQTJ4MzZDVS00T2NYUm5MOHhzenAzT1BacWMzQks5MWFuaXlld0Q4b3c?oc=5",
+    "source": "Yahoo",
+    "date": "2026-11-17",
+    "keys": [
+      "ruledOut"
+    ],
+    "rid": "41ccd417a350",
+    "kind": "denial"
+  },
+  {
+    "name": "J.D. Vance",
+    "headline": "JD Vance Considering Not Running for President In 2028 After Midterm Election Results - Yahoo",
+    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPeTBrR3NrNkw2STlUSUJaQ3NMbU91X3EwTmNpMlpobTVSMElvb2I3eG1HeVpvZjljcjN0ekpuZ2JSZkJ0MVEtVEVrTGxqT05yLURMYldxSzBBM2FpVkRTVmo2UFl1VjBZSk0wZEFKcFU3WUxUZ3BPMXFvRHpEd2J4dDhhZTduOUFNTXhPM2xUdkxxYTBOSWcw?oc=5",
+    "source": "Yahoo",
+    "date": "2026-11-13",
+    "keys": [
+      "ruledOut"
+    ],
+    "note": "denial/downgrade — confirm before applying",
+    "rid": "ece4346add73",
+    "kind": "denial"
+  },
+  {
+    "name": "The new Democratic kingmakers 2028 hopef",
+    "headline": "The new Democratic kingmakers 2028 hopefuls need to court",
+    "url": "https://thehill.com/homenews/campaign/6222976-democrats-powerbrokers-2028-presidential-primary/",
+    "source": "The Hill",
+    "date": "2026-11-17",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "00bb51318448",
+    "kind": "discovery"
+  },
+  {
+    "name": "Pennsylvania Democrat",
+    "headline": "Pennsylvania Democrat seriously considering Fetterman primary challenge",
+    "url": "https://thehill.com/homenews/campaign/6222166-pennsylvania-democrat-chris-deluzio-john-fetterman-2028-senate-race/",
+    "source": "The Hill",
+    "date": "2026-11-16",
+    "keys": [
+      "consideringQuote"
+    ],
+    "rid": "3b16fb804fc1",
+    "kind": "discovery"
+  },
+  {
+    "name": "David Flippo",
+    "headline": "David Flippo, fresh off loss for Northern Nevada House seat, may run again in 2028",
+    "url": "https://thenevadaindependent.com/article/david-flippo-may-run-again-in-2028/",
+    "source": "The Nevada Independent",
+    "date": "2026-11-16",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "be860c2edc46",
+    "kind": "discovery"
   }
 ]

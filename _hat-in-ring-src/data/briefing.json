@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "movers": [
     {
       "id": "rubio",
@@ -96,6 +96,12 @@
   ],
   "transitions": [
     {
+      "name": "Elissa Slotkin",
+      "from": 2,
+      "to": 3,
+      "date": "2026-11-16"
+    },
+    {
       "name": "Pete Buttigieg",
       "from": 2,
       "to": 3,
@@ -108,10 +114,10 @@
       "date": "2026-11-10"
     }
   ],
-  "review_count": 237,
+  "review_count": 246,
   "totals": {
     "tracked": 41,
     "formal": 3,
-    "considering": 15
+    "considering": 16
   }
 }

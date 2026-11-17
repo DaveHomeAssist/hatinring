@@ -518,5 +518,31 @@
     "direction": "up",
     "reason": "",
     "reconstructed": true
+  },
+  {
+    "id": "slotkin",
+    "name": "Elissa Slotkin",
+    "party": "Democrat",
+    "date": "2026-11-16",
+    "from": 2,
+    "to": 3,
+    "fromLabel": "Positioning",
+    "toLabel": "Considering",
+    "direction": "up",
+    "reason": "Michigan Sen. Elissa Slotkin for President? She's Considering a Run in 2028. - Deadline Detroit",
+    "reconstructed": false
+  },
+  {
+    "id": "slotkin",
+    "name": "Elissa Slotkin",
+    "party": "Democrat",
+    "date": "2026-11-17",
+    "from": 2,
+    "to": 3,
+    "fromLabel": "Positioning",
+    "toLabel": "Considering",
+    "direction": "up",
+    "reason": "",
+    "reconstructed": true
   }
 ]
