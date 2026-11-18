@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "movers": [
     {
       "id": "rubio",
@@ -15,7 +15,7 @@
       "name": "Josh Shapiro",
       "party": "Democrat",
       "delta": 40,
-      "score": 40,
+      "score": 35,
       "tier": 3,
       "statusLabel": "Actively considering"
     },
@@ -106,15 +106,9 @@
       "from": 2,
       "to": 3,
       "date": "2026-11-11"
-    },
-    {
-      "name": "Alexandria Ocasio-Cortez",
-      "from": 3,
-      "to": 5,
-      "date": "2026-11-10"
     }
   ],
-  "review_count": 246,
+  "review_count": 249,
   "totals": {
     "tracked": 41,
     "formal": 3,

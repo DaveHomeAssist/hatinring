@@ -3000,5 +3000,41 @@
     ],
     "rid": "be860c2edc46",
     "kind": "discovery"
+  },
+  {
+    "name": "U.S. Jamie Raskin",
+    "headline": "U.S. Rep. Jamie Raskin said he is not ruling out a run for president in 2028. Would you vote for him for president? - The Frederick News-Post",
+    "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQRi1XWTBjRUNlRWdHVkxHVGJfNVdWRDM5Qll0Wk85Sm03dVBZbVlLSzRZXzlDeENzOUl0dGJTcWFiZXhtc3VKbzZacGJZZG5FQnIzSlhYSnl4aGpzVWFBR1k4bU12SGdxaHNPNG5TVFVzNEJBS1lzWjdpSmlfRzUwNC1tc2JFZkZvWUZUcWVHZUN4YUhFbVZfMUZ6ejd5bThGXzhVU05NYk1HVWpBZmtHLWowenp5clZBeG5aRlBYa19UbldKOXdHdjlkeDZXc0pURDdYWm9maDlpUHFrZHRLRg?oc=5",
+    "source": "The Frederick News-Post",
+    "date": "2026-11-18",
+    "keys": [
+      "softConsidering"
+    ],
+    "rid": "c3b80806c585",
+    "kind": "discovery"
+  },
+  {
+    "name": "The new Democratic power brokers 2028 ho",
+    "headline": "The new Democratic power brokers 2028 hopefuls need to know",
+    "url": "https://thehill.com/homenews/campaign/6222976-democrats-powerbrokers-2028-presidential-primary/",
+    "source": "The Hill",
+    "date": "2026-11-17",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "953cc40d3958",
+    "kind": "discovery"
+  },
+  {
+    "name": "PODCAST: Chips down after Huang exit?",
+    "headline": "PODCAST: Chips down after Huang exit? - Reuters",
+    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOZF81TVZIV1dYTDNRVmdFNXRrRWoxa2xqX294U2tXYlo0WEpvODY5U2pQS3ZXZlpTeW9mb05xOEFOQjY1dXQzQ1pQeEVpMFdFd1JvaGQ4MXRHSEh4ZDdKTmVVTEhvbjFpVTNzN2ROOC1mbFBNS1NINTBpNVcwT1J4TWZEbUdKOTNGUU1DTUZLby1UeFIwS3BB?oc=5",
+    "source": "Reuters",
+    "date": "2026-11-13",
+    "keys": [
+      "mediaBlitz"
+    ],
+    "rid": "eb708ad6f43a",
+    "kind": "discovery"
   }
 ]
