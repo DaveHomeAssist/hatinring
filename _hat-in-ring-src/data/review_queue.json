@@ -3036,5 +3036,30 @@
     ],
     "rid": "eb708ad6f43a",
     "kind": "discovery"
+  },
+  {
+    "name": "J.B. Pritzker",
+    "headline": "JB Pritzker doesn’t rule out 2028 run: ‘It's all about what's best for the people of Illinois’ - NBC News",
+    "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQcUVpeF9zMlp3elFrWkt2OWZpYlI4eUZaSjJ5Rlp4clJEUGZhN3ZTbGVLNXoydDJBZ20tQ184RVBqbmJqcWRGTzZXMlI4cjh0WTY4bXZfODE4dUZvdmhGbUlVZFVoR1h6RGZtUUN1NUJoSjZTem82SjF5U0d3REFaMFFhVWhkakxOUjRIdm1UbDJOcHNsMnRwTHRvVHRVQ1ZfOU1BV2s4NDNTckhmQXcyZ242XzRCenFSbktGbENvUDNWUzhnMXc0VGNOdnJQNmk0VHhSSWMtSl9FdG5ZQ1VuOE9WNA?oc=5",
+    "source": "NBC News",
+    "date": "2026-11-01",
+    "keys": [
+      "ruledOut"
+    ],
+    "note": "denial/downgrade — confirm before applying",
+    "rid": "c433d5d3dcc3",
+    "kind": "denial"
+  },
+  {
+    "name": "New Biden",
+    "headline": "New Biden memoir confirms his push to replace NH as leadoff primary state",
+    "url": "https://www.nhpr.org/nh-news/2026-11-18/joseph-biden-memoir-nh-newhampshire-primary",
+    "source": "NHPR",
+    "date": "2026-11-18",
+    "keys": [
+      "mediaBlitz"
+    ],
+    "rid": "ae5cdf39f465",
+    "kind": "discovery"
   }
 ]

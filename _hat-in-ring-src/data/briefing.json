@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "movers": [
     {
       "id": "rubio",
@@ -100,15 +100,9 @@
       "from": 2,
       "to": 3,
       "date": "2026-11-16"
-    },
-    {
-      "name": "Pete Buttigieg",
-      "from": 2,
-      "to": 3,
-      "date": "2026-11-11"
     }
   ],
-  "review_count": 249,
+  "review_count": 251,
   "totals": {
     "tracked": 41,
     "formal": 3,

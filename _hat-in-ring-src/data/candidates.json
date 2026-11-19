@@ -1262,7 +1262,7 @@
     ],
     "conf": "High",
     "delta": 5,
-    "lastSignal": "2026-09-30",
+    "lastSignal": "2026-11-01",
     "headline": "Pritzker builds out-of-state party coalitions that may prove helpful in 2028",
     "why": "Self-funding Illinois governor laying groundwork; vows to be 'very involved' in 2028 and is exploring national fundraising.",
     "quote": "I can't rule anything out.",
@@ -2147,7 +2147,7 @@
     ],
     "conf": "Medium",
     "delta": 13,
-    "lastSignal": "2026-11-11",
+    "lastSignal": "2026-11-19",
     "headline": "New Hampshire presidential poll puts Ocasio-Cortez ahead of Buttigieg among 2028 hopefuls - Scripps News",
     "why": "Back on the trail and openly weighing a run; consistently near the top of Democratic primary polls.",
     "quote": "",
@@ -2381,6 +2381,15 @@
           "consideringQuote"
         ],
         "conf": "High"
+      },
+      {
+        "date": "2026-11-19",
+        "headline": "Buttigieg allies launch effort to back another presidential run",
+        "url": "https://www.politico.com/news/2026/11/19/buttigieg-allies-2028-campaign-01174766",
+        "keys": [
+          "donors"
+        ],
+        "conf": "Low"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZnJILVYzcldkMEQ4QVdrdGU5N21TSFdoS1E3a2JCYjVHaWJpZXR1M2FjS0FQNXhjWkxualdmS01aWlh1TFZMSXBNSGhMQldFS0ozdTBjUlRiRUxrV191eTlyOTBsbE5LNndxdFNHazd3Y1ZwYjlUMFVOYUJaazlvdzJXTlZpRlI4MUZKa3hhUDdWLVBRTXRaeFV4Z0taY2JRVkNoeUprV2p1d29mZlN1ZlZXYU9KU3dydVM0SUZLclRfMVlONHJF?oc=5",
@@ -3573,11 +3582,12 @@
       "endorsedOther",
       "staffing",
       "earlyState",
-      "declared"
+      "declared",
+      "softConsidering"
     ],
     "conf": "Medium",
     "delta": 45,
-    "lastSignal": "2026-11-05",
+    "lastSignal": "2026-11-19",
     "headline": "Not planning a run; signals support for Vance",
     "why": "Trump floats him as Vance's running mate, not a rival.",
     "quote": "",
@@ -3595,6 +3605,24 @@
         "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPdDRaeENQbV9USWpGUk9HOFM3SjJtTjU4YThUcmNYZERIUzJYU3AyeTVfZU9EQkVHeDd1eTk5aGpSWGhCTE1RVTR4LXBYN2l0c19mdVVqV1pVenNQcTZYWnpoR2FoV0VSVTM1aDFIV0JObC1UNTJLLWY3YXFfUnl1YkUxU3I3R3lvdnVtNnBlcE94aFU2ZUxzRFRCVV9jOXM?oc=5",
         "keys": [
           "declared"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-11-19",
+        "headline": "Rubio is more seriously weighing a 2028 run, allies say - CNN",
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE14U0lJamdMQzdBaXNmNVBxakNBdEdndF82QjVoYmZBZ1dSVnJoWFRmM0lTZk9kWHhxUndWcXlEQTF2WGxQVjg5QWlHZVJwSzdRUk1pa3RtUHB0b012MVlKWjNteWV6Z2plMHNKa1hKdFduSmZVOVczSFI2Zi1kUQ?oc=5",
+        "keys": [
+          "softConsidering"
+        ],
+        "conf": "Medium"
+      },
+      {
+        "date": "2026-11-19",
+        "headline": "Allies say Marco Rubio is increasingly weighing a 2028 presidential run - Mezha.net",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNbVNMMVZMQUJkdm15c2xkeE51aHRNU0RDS0pYMVFQUE8xaHFnYzRGLVRUNlRXSUR1RGhnQjd6aVRuYWVsOWRFbEZ6REVWSDVURE1jSVhDdlJvbExUV29pSXF5dG04Q3ExeUtiQ1ppZzFSZVl5SG5HYUZuQ0ZUQ3RxZA?oc=5",
+        "keys": [
+          "softConsidering"
         ],
         "conf": "Low"
       }
