@@ -3061,5 +3061,53 @@
     ],
     "rid": "ae5cdf39f465",
     "kind": "discovery"
+  },
+  {
+    "name": "Josh Hawley",
+    "headline": "Josh Hawley: I'm Considering a 2028 Run - Newser",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPUmJGVENjYzJHdGd5UzIzUjNUREwzNHZKakdtVTlnYTYtMEFla0tqUzNXaWpzZkZJVFNoRWx5dTZKNDNxbFNyRm0zd05wb3RGdkxIa0VsSmhLQnp2VUQwdDJ1dGlndXNqY3JpVnFfT0V5UTBITlJBS0hVbDllN2RuNFpoWGE?oc=5",
+    "source": "Newser",
+    "date": "2026-11-20",
+    "keys": [
+      "consideringQuote"
+    ],
+    "rid": "afd0d4f7054d",
+    "kind": "discovery"
+  },
+  {
+    "name": "Hawley says he 'has a lot of thinking to",
+    "headline": "Hawley says he 'has a lot of thinking to do' about possible 2028 presidential bid",
+    "url": "https://thehill.com/homenews/campaign/6231864-hawley-says-he-has-a-lot-of-thinking-to-do-about-possible-2028-presidential-bid/",
+    "source": "The Hill",
+    "date": "2026-11-19",
+    "keys": [
+      "softConsidering"
+    ],
+    "rid": "4d87ad3b2ebc",
+    "kind": "discovery"
+  },
+  {
+    "name": "Rob Sand",
+    "headline": "Rob Sand shuts down any talk of 2028",
+    "url": "https://www.politico.com/news/2026/11/19/rob-sand-iowa-2028-01177322",
+    "source": "Politico",
+    "date": "2026-11-19",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "089bbaa1373d",
+    "kind": "discovery"
+  },
+  {
+    "name": "New Hampshire",
+    "headline": "‘A very nimble state’: Scanlan vows New Hampshire will keep first-in-the-nation status",
+    "url": "https://newhampshirebulletin.com/2026/11/20/a-very-nimble-state-scanlan-vows-new-hampshire-will-keep-first-in-the-nation-status/",
+    "source": "New Hampshire Bulletin",
+    "date": "2026-11-20",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "0a50ebce574f",
+    "kind": "discovery"
   }
 ]

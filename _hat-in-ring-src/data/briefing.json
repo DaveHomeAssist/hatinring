@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "movers": [
     {
       "id": "rubio",
@@ -29,15 +29,6 @@
       "statusLabel": "Declared"
     },
     {
-      "id": "bacon",
-      "name": "Don Bacon",
-      "party": "Republican",
-      "delta": 23,
-      "score": 20,
-      "tier": 3,
-      "statusLabel": "Actively considering"
-    },
-    {
       "id": "aoc",
       "name": "Alexandria Ocasio-Cortez",
       "party": "Democrat",
@@ -52,6 +43,15 @@
       "party": "Democrat",
       "delta": 20,
       "score": 65,
+      "tier": 5,
+      "statusLabel": "Declared"
+    },
+    {
+      "id": "greaney",
+      "name": "Dan Greaney",
+      "party": "Republican",
+      "delta": 15,
+      "score": 55,
       "tier": 5,
       "statusLabel": "Declared"
     }
@@ -102,7 +102,7 @@
       "date": "2026-11-16"
     }
   ],
-  "review_count": 251,
+  "review_count": 255,
   "totals": {
     "tracked": 41,
     "formal": 3,

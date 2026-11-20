@@ -382,8 +382,8 @@
       "softConsidering"
     ],
     "conf": "High",
-    "delta": 0,
-    "lastSignal": "2026-10-14",
+    "delta": 5,
+    "lastSignal": "2026-11-19",
     "headline": "South Carolina picked for first 2028 Democratic primary, in possible Kamala Harris boost - New York Post",
     "why": "The 2024 nominee tops early Democratic primary polling; a rematch frontrunner in a crowded, unsettled field.",
     "quote": "I have not made a decision… I may or may not.",
@@ -393,15 +393,6 @@
       "USA Today"
     ],
     "evidence": [
-      {
-        "date": "2026-04-10",
-        "headline": "‘I am thinking about it,’ Kamala Harris says of 2028 presidential bid - AP News",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNSk53ZjhETFdieWhkU3p6azVCTzBRbnJ5NElxNzRjRGlxUVFjcWttdWhUS0NzaXg2V1U4cWF3eENVNUpKV2M5eWR4SjVVallXVFpwOUY0SlE1LW40QWNCbTAycjZ4Y3R3NlRMVnZ1aWc1RDBqTWlNckI3Qi1FOGZHck1VcktQMnhoVHh3bGRPTUo2RXJyNG45SzlmSF9XN1NGRk1UQV91OVYxZw?oc=5",
-        "keys": [
-          "consideringQuote"
-        ],
-        "conf": "High"
-      },
       {
         "date": "2026-04-10",
         "headline": "‘I am thinking about it,’ Kamala Harris says of 2028 presidential bid - Northwest Asian Weekly",
@@ -606,6 +597,15 @@
         "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPbW5MVVJUemtvdEpUa2g5YWJxV01sYXVxZC1jLUVmX3RhU1BPQlFlTTdXR1pZOWp2Y2x4bk1JU3hSRVN3N1pBcDVXY0g3ME5LQ2xLMjVJa1M4Mzh6b0dQYXRKbWxpbWJOSWs0MHRCbHVwZEJoc0dURUFnTDZFWW5TMzBKbDk1UjdMRFYtV2FpRUVzMzB5U2o5SmJ3dFlyTkM4?oc=5",
         "keys": [
           "consideringQuote"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-11-19",
+        "headline": "New ‘Run Kamala Run PAC’ launches grassroots push for Harris’ 2028 presidential bid - TheGrio",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQM3l4Rlp0MkNxa2VHWi1qLVB0YUJNaWNUOVQwaHlJbER2QXpmTVB0M0dYTEwyYUt1ZTlDQTZRYUtmNVE4MTBXUVh5TVVFUU5IYlNETEpUU3A1SlQ5bmkwb1NYazBlTUVGWUlxR19rcmNFNFFVNHVLOVI2eHNTTnktTUtQalNFdw?oc=5",
+        "keys": [
+          "donors"
         ],
         "conf": "Low"
       }
@@ -1971,11 +1971,12 @@
     "bucket": "considering",
     "keys": [
       "softConsidering",
-      "consideringQuote"
+      "consideringQuote",
+      "earlyState"
     ],
     "conf": "Low",
-    "delta": 23,
-    "lastSignal": "2026-09-12",
+    "delta": 15,
+    "lastSignal": "2026-11-19",
     "headline": "Won't rule out governor — or president — in 2028",
     "why": "Centrist Republican lane; also weighing NE governor.",
     "quote": "I wouldn't rule it out.",
@@ -2003,6 +2004,15 @@
           "consideringQuote"
         ],
         "conf": "Medium"
+      },
+      {
+        "date": "2026-11-19",
+        "headline": "Nebraska Rep. Don Bacon weighing presidential run, plans to take message to Iowa & New Hampshire - WOWT",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQQkR1Q0xUOHNSMmUwd21Bd29FdnIwTjNDZkprNUVjblROTDdsc2YyaEpaLWtWWmNSZ0M1ZEhMNDFUdmNsb2ZUallFODRvczZmT0xWNTFRcENEV3BXVUlncWNmVXB3S0xWZzVkaGdycVhQTFc3SHh6MzlmcXZBLUVDaUY4SlFpYUxyVzVoOWlTNmNEaDQwQ2l4d3dvSEc5M0p0azBYeHY4T3V6MjJWWkJLa0hYdWVzUGw1SVFN?oc=5",
+        "keys": [
+          "earlyState"
+        ],
+        "conf": "Low"
       }
     ],
     "history": [
@@ -2012,7 +2022,15 @@
         "to": 3,
         "reason": "'Yes, I would love to': Republican Rep. Don Bacon publicly confirms he is considering a presidential run in 2028 - voz.us"
       }
-    ]
+    ],
+    "early_states": {
+      "IA": 1,
+      "NH": 1
+    },
+    "early_states_last": {
+      "IA": "2026-11-19",
+      "NH": "2026-11-19"
+    }
   },
   {
     "id": "lemon",
@@ -2172,26 +2190,6 @@
       "NV": "2026-08-18"
     },
     "evidence": [
-      {
-        "date": "2026-07-14",
-        "headline": "Buttigieg won't rule out 2028 presidential bid as he campaigns in Iowa - The Des Moines Register",
-        "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPbXYzZ2Z4ZV9qN3VtUjE4T2xMUUxVUDU2WjZONG9XZ0w1Yzl2eWZlUjhWT2FEeEpGajNkdmZuTnRfZWhSVFctR3VJcGFzTWpSbUpFbGJJNUUyVVNqa3VrelVTVWVPLTR5MDl3WkZ6b2lmOF9KUTFZTlpyYTczVlFQWWdRUm00SDFsWU41WUJ2VDgyT2FHRmVKTTlVMjZUeUMzR28xam9ic05QTm1KNGZzMkR3Y1d2dHpPdGk3LTlySDNUbWw3dGNacFpnc3ZIa1NJUkVfSTE4M1BjcEt6VGxQNzdzNGNkWVl5STBFSzBB?oc=5",
-        "keys": [
-          "softConsidering",
-          "earlyState"
-        ],
-        "conf": "Low"
-      },
-      {
-        "date": "2026-07-14",
-        "headline": "Buttigieg won't rule out 2028 presidential bid as he rallies in Iowa - AOL.com",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPM0xob2JtcXY3WXdPbEVzRERmR0I1cDVOQlpWVjhhLWI3RS04cFB1MFZZMWwzS2VpOXM4TUhlUVZpdnlLY2thVUhHWmQ3SzZ0Y0dIYlRGWlpYODFNLWNESlFVWUhvMk44Q2RKZjJTUjJxZnJQMEs0cWFVOTUtMkdqdFJ4NDdHcUhG?oc=5",
-        "keys": [
-          "softConsidering",
-          "earlyState"
-        ],
-        "conf": "Low"
-      },
       {
         "date": "2026-07-13",
         "headline": "‘Reach across the aisle’: Pete Buttigieg campaigns with Sarah Trone Garriott - Iowa Capital Dispatch",
@@ -2390,6 +2388,24 @@
           "donors"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-11-19",
+        "headline": "New PAC launches effort to recruit Pete Buttigieg for president in 2028 - MS NOW",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPRVVVLWg1MHVPLUdaSWJ6QUNZRWxwOFh1b2ZZZjdzQ1pWWWZLMHlGeEx3dlRYQ1FmMy0yeWlfWXRZcnZsaW1ZaHd2REFkYmRkMzRHa3ZNdEhzaF9jdm5rYndiVF9TY3J4czJHa1hUV1BaUTJyYlllV09lbVk0TDRDMnNEY3hJQ05leFc1Z01EMVIxUQ?oc=5",
+        "keys": [
+          "donors"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-11-19",
+        "headline": "Buttigieg supporters unveil Team Pete PAC ahead of 2028 vote - The Hill",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxObjh6Wm16MGlmYTM1V0xvS016cmxzNG9GeHBWS2xPWms1Nl9rQ2VUSU1ZV2U5Z2JzS0pBTER4bDhWblg0WWdFVkwxaDVheWFWX1ItMk5hVnZSREpxVm55enA3ZmFBc0NOc1dYcW9xOGh2em9QdHo2amt3VGt6eVJ0S0EwZThwUdIBiwFBVV95cUxORVJqM1FmNkZTaUV5N3JMMFZxN3BaQXpCQ1Q4M1dCQUFadk9mbkdXTEh3eEpoT3BFS2psVHZaUGlxVWg4dmE3RndraGdCTkxUWHgtUWcwazVtY08xSGpqZHh4dHNEa3NienRfZHd2QW1DTk1NaWFvVzFhWGtSQWFkUnFvZGR5WjVEQk5F?oc=5",
+        "keys": [
+          "donors"
+        ],
+        "conf": "Low"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZnJILVYzcldkMEQ4QVdrdGU5N21TSFdoS1E3a2JCYjVHaWJpZXR1M2FjS0FQNXhjWkxualdmS01aWlh1TFZMSXBNSGhMQldFS0ozdTBjUlRiRUxrV191eTlyOTBsbE5LNndxdFNHazd3Y1ZwYjlUMFVOYUJaazlvdzJXTlZpRlI4MUZKa3hhUDdWLVBRTXRaeFV4Z0taY2JRVkNoeUprV2p1d29mZlN1ZlZXYU9KU3dydVM0SUZLclRfMVlONHJF?oc=5",
@@ -2418,7 +2434,7 @@
     ],
     "conf": "Medium",
     "delta": 20,
-    "lastSignal": "2026-11-10",
+    "lastSignal": "2026-11-19",
     "headline": "Alexandria Ocasio-Cortez won't rule out running for senator or president in 2028 - NBC New York",
     "why": "Massive small-dollar base; leads some progressive polls.",
     "quote": "",
@@ -2614,6 +2630,15 @@
         "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNNmpvMzd3RDhhczFlQ1NQdmczVDVaX0NWdnJJbEpBSWpXcUVacWNhVU93VjZ5ZG83V3lsU0l1QkF0ckd5UURpNFducTZ2cmo2Vzd0djVqTnlhTElYVFptZ1VYbEhZUi1MaVZaaXIxWTNaUl9KOGVtcnlITGlPSXhERkZHNUlYUDZYNWNQUUluT0ZmUG8yMm9vYzl2Tnpua2gxcW5MRkRPS2F5WW9OR3ZINnI1ekU4alkxR1ZwSC1wVjRDdWFSTmZQRWpfM0RJVVXSAdQBQVVfeXFMTWgwc21BNGE2LWIyeDQ2TktURzc2ZnNDOWdxSEhxTGc3RE9HVnhjSjZUbS1CaEF2ZjRlTUxrTGhJQ2oyaU5FVDh2eExjTWFIUTNfaDZoZDhINEVSamdjQlJYV2dSLUdPVzJqVW5CNkFWSThsMXhSa0V3WHE2TktqaGpMdkp5UVRGOVhKbUs2ZnBTYmFSN25xQWdEM05pbW1CQUl3LU9GRXhSOWNSVUhUNkpoMWVkZ0lRZlNCM0V4bGVjNkkyUkJSdEZVOUhPU2Vwdk94WXU?oc=5",
         "keys": [
           "declared"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-11-19",
+        "headline": "AOC leaves door open to 2028 presidential run, signals willingness to work with Trump - Fox News",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPb1JWMUJMQjR3Nko1czJHaTQzTlZSTmZmNjI5ZWwzaWl0LWRCT2VWVGc5dEU3VzJfTVFhYUZ5QlkxQWEzTG5vS2pwbG54cHpvQ1NLazU1RUV2M0plTDRQU1RnYzBabWhocHpxZDZYNzFsQU1uaDlmejI1enBTSmZlNkliMUpjVGsyNkJTMEpLOEcwOG5FdjBLcm5pLTJzX1FVNkUzS2Jpa2J6d9IBrwFBVV95cUxNMjl1UVBOVnZWYWlkakEwQjVvNVZHdjdWTDdXdGpwMHlwd0s5TkNMWmJEZktmbmV0a183NEt3YU5mbzM4bWpEbWd4dUR2S3A0QzNmMG0ydjRkcHJWYjlqUk1mX0QzX21ldV9lMzlVWmNiV2xEb1Zza2pzbXV0NUowQmV1WHlCV0FPVlhlWkJpbnFRUDN4allZUzdoLWF3cHdoNExzRHBvQkV2SUY1dU9J?oc=5",
+        "keys": [
+          "softConsidering"
         ],
         "conf": "Low"
       }
