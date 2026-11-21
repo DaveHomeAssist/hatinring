@@ -3109,5 +3109,42 @@
     ],
     "rid": "0a50ebce574f",
     "kind": "discovery"
+  },
+  {
+    "name": "MS NOW",
+    "headline": "Inside the Democrats’ 2028 shadow campaigns: Donors, staff and trips to early states - MS NOW",
+    "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9Nb1JsUnpsNS1qQkRQdVR6RzY0V0lGQ2dxSTcwVklSNVhzY1pfbjdyRzhyWjM4WElxaTJ1NExLRF91UElJTzVhNXVkRG5LV0hmMkh2OEU1dEk5ZXFrOEJHYUIzMUhBcTYwaVhEWFZrRVBZSDluX1NBR3N4Yw?oc=5",
+    "source": "MS NOW",
+    "date": "2026-11-20",
+    "keys": [
+      "donors"
+    ],
+    "rid": "39b0d2fbb6b0",
+    "kind": "discovery"
+  },
+  {
+    "name": "Tulsi Gabbard",
+    "headline": "Tulsi Gabbard won’t rule out another run for president - after her failed Democratic bid in 2020 - The Independent",
+    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPSzdabklOUXgxZWpLU1psTXNjQlQtLTZJQ0lHZkNFOHRUc2NOVkpSNEJlRjZpZ3U2QlJfaEdvOFBNLV9mdHVHWGg0c2R1SmdQLWE5cnFsRTlQU1hrVm9nWVlsUlh1Q3pvZDRERHNxNmo1VnFqXzRsZ01nN2FrLWF1Y1h6TElqS3RDa0VWV1I4VUlLZC0yN2p6QmVGMVlSTV8taVU1UE9pTTRtZw?oc=5",
+    "source": "The Independent",
+    "date": "2025-05-01",
+    "keys": [
+      "ruledOut"
+    ],
+    "note": "denial/downgrade — confirm before applying",
+    "rid": "7a47de60fbb4",
+    "kind": "denial"
+  },
+  {
+    "name": "Washington Examiner",
+    "headline": "Hawley leaves door open to 2028 presidential campaign after previously ruling out bid - Washington Examiner",
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOUGxJNlNqOUowOXc5dGZyNHlLOV9Lbllwa1dscFdsdGJ3eDZ5dmhWc05JTzV4b3pwb3h5U2RrdVhYbUM1am9rSW9jWkpYcHU1MFlHUjdvMnJFQmtzdHFha2lNWmk1M1I5cExlRDhNOFI4Qk9uYUl2TVJCZkFwb0lGU0Zvd0p6SlRoaXQwTUd6dllidE5jZUd4T3o2cDd5TGdlaWNNUWJnVzhIYWhHLXF3SjBQLXE4ZUdlZGdFRWN3?oc=5",
+    "source": "Washington Examiner",
+    "date": "2026-11-20",
+    "keys": [
+      "softConsidering"
+    ],
+    "rid": "0ca9fbabbf63",
+    "kind": "discovery"
   }
 ]

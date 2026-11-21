@@ -395,15 +395,6 @@
     "evidence": [
       {
         "date": "2026-04-10",
-        "headline": "‘I am thinking about it,’ Kamala Harris says of 2028 presidential bid - Northwest Asian Weekly",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOcHM2TnNuUVpCcjJfZkZtRlo2RTNWOEZ1em9NTVFnQkZDVEgyWi1TcGNCYnNFZ2NLQ29SR2ZjWlBtbEt4OW9GbzItUGhSNU5UU1BWTFY1MDAwZS1GOG1pZVVoQk16X0ltcW5iVDhGanVZbU41V2tXbDhfVlBIOHNKZkUyN2Y1LThILUhzSFRUWlhBWjMwc0I1eVVEYkt4MlZEOU9z?oc=5",
-        "keys": [
-          "consideringQuote"
-        ],
-        "conf": "Low"
-      },
-      {
-        "date": "2026-04-10",
         "headline": "'I am thinking about it,' Kamala Harris says of 2028 presidential bid - National Newswatch",
         "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQdnlORlQ0b195b0NSU1ZjcU5hNmJWSlBuUDNpbkNzdTF5Z3JZbnZTWF83bmdFYXVERGxMb0lzUHVJWVMwc2NMX0RIcjJNTTFvb0NkbGw2b3I0aUxvY0draDNBWkxzMFRuUXZFekExTHZOWWRuUk5pdG9IZmhobDVUVUhZUzM2YU9jVG9CLTBKZVVKSnNRNFdLa0ZzWXVkYWlpelFvb3RPVWktTlE?oc=5",
         "keys": [
@@ -606,6 +597,15 @@
         "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQM3l4Rlp0MkNxa2VHWi1qLVB0YUJNaWNUOVQwaHlJbER2QXpmTVB0M0dYTEwyYUt1ZTlDQTZRYUtmNVE4MTBXUVh5TVVFUU5IYlNETEpUU3A1SlQ5bmkwb1NYazBlTUVGWUlxR19rcmNFNFFVNHVLOVI2eHNTTnktTUtQalNFdw?oc=5",
         "keys": [
           "donors"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-04-10",
+        "headline": "Kamala Harris on prospect of 2028 presidential bid: 'I am thinking about it' - Pittsburgh Post-Gazette",
+        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPQnNwRkxBRVc2NGlPSkQ3dEU4ZERsemlNaXZSb1F6a1drZ1dmWDkxc3JVNVJLRDZidDAwckJjT0VNQ2RRWFg2NnRBTHdqZkhSRVV0RmwxbjlWWUJnUGVqM1dtd3h0RE4tR2djUTdITl9FdlAtOEJTLW5Sa2ZpZld5am80a2t0aW16eXZKeWxCazF1bHJaeHBvU3lON0ZBckJhdTlxSl9Yek1JRU9BR0U4Ylh2aWhpQmVzdmpUMFlZc3BYLVNocFB4RHgxemFJdFRaSER5OXhn?oc=5",
+        "keys": [
+          "consideringQuote"
         ],
         "conf": "Low"
       }
@@ -909,7 +909,7 @@
     ],
     "conf": "Medium",
     "delta": 5,
-    "lastSignal": "2026-10-02",
+    "lastSignal": "2026-11-20",
     "headline": "Arizona Sen. Mark Kelly to headline Iowa Democratic Wing Ding - thegazette.com",
     "why": "Swing-state, astronaut/veteran profile draws operative interest.",
     "quote": "",
@@ -978,6 +978,15 @@
         "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQdkdJMkgyaXFJeVFtc2tnQXhQem9JSUlkUE04aUNjWWtMNmM1eEd0Q0FkOWdoaGc4LTFuZlVGOTg4U29QWTAyWWZ3Y0MtVlAwSkJLdEFBTTZ6b0owMmxqTkNtcGdtOUMyMzVQOHRxQlVlOVpLRTdfSmdteXk5RVF6djFNOFF6SWZYdWlyU3Vlc1NNSG1zejUxaTRaM3RGcF9PMzVMOTJOckJGOGVIbEJiN3ZzaXFqUW8yZHhQbEdBTS10Yy14UWNxdW02TlQyR3BkOXRIYjBtS1VGbnc?oc=5",
         "keys": [
           "earlyState"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-11-20",
+        "headline": "Does Arizona Sen. Mark Kelly’s new hire signal he will run for president? - KTAR News 92.3 FM",
+        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9lbnRzNXZOVmhQeHBMNHo1OW12bzhaNEMxa2F2Um1iamNOVGtOWlViZ3VjTW9MbFphZC10Y3lwQy1zS1l3bHVBQ1ZuZVdzMEdiYThjeXZsaVZxWDRHNlItNFktYmh0M2pidkE2X1UyN2hPcDlOQ182clpB?oc=5",
+        "keys": [
+          "staffing"
         ],
         "conf": "Low"
       }
@@ -2041,11 +2050,12 @@
     "keys": [
       "softConsidering",
       "mediaBlitz",
-      "consideringQuote"
+      "consideringQuote",
+      "declared"
     ],
     "conf": "Low",
-    "delta": 5,
-    "lastSignal": "2026-11-16",
+    "delta": 20,
+    "lastSignal": "2026-11-20",
     "headline": "Sky News Australia. . Former CNN host Don Lemon has made another bizarre remark, this time saying that MAGA is America’s version of the Nazi party during his appearance on the Can’t be censored podcast. - facebook.com",
     "why": "No party structure or office base — celebrity lane.",
     "quote": "I'm seriously considering it.",
@@ -2134,6 +2144,16 @@
           "consideringQuote"
         ],
         "conf": "Low"
+      },
+      {
+        "date": "2026-11-20",
+        "headline": "Don Lemon gives condition for presidential bid",
+        "url": "https://thehill.com/homenews/campaign/6233077-don-lemon-presidential-run-condition/",
+        "keys": [
+          "declared",
+          "mediaBlitz"
+        ],
+        "conf": "Medium"
       }
     ],
     "sourceUrl": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOVmd3eWdiNlFOVXpYdEpZYlZaTlc4ZXJOM08xb1M2OUo3cFhNV2tZY2FoUHFYdGVtMUVOaTl6d1E3YWs5SWVSbHBGYkJvRjZpY1htOEtJWndqUC1RazQwTEIzR3lqRmJZSDJ1eFdBWnlxVlB2ZEFjV1NLdXhMM1NuQV92bWdCM20wNE1RcUlpdUVMdnFCWUhTOUw4Q2RjOHNtZGVMTFZTTElJQ3BnX19FdmpubThrS0x5eDRabW5HQXFybFNmeXRzR2lmemhEd2t6ekRuVDRMM0lYRy1vTENCMg?oc=5",
@@ -2146,6 +2166,12 @@
         "from": 2,
         "to": 3,
         "reason": "Don Lemon Says He's Seriously Weighing 2028 Presidential Run - Newser"
+      },
+      {
+        "date": "2026-11-20",
+        "from": 3,
+        "to": 5,
+        "reason": "Don Lemon gives condition for presidential bid"
       }
     ]
   },

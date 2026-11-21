@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "movers": [
     {
       "id": "rubio",
@@ -47,11 +47,11 @@
       "statusLabel": "Declared"
     },
     {
-      "id": "greaney",
-      "name": "Dan Greaney",
-      "party": "Republican",
-      "delta": 15,
-      "score": 55,
+      "id": "lemon",
+      "name": "Don Lemon",
+      "party": "Democrat",
+      "delta": 20,
+      "score": 50,
       "tier": 5,
       "statusLabel": "Declared"
     }
@@ -60,6 +60,12 @@
     {
       "id": "greaney",
       "name": "Dan Greaney",
+      "tier": 5,
+      "statusLabel": "Declared"
+    },
+    {
+      "id": "kelly",
+      "name": "Mark Kelly",
       "tier": 5,
       "statusLabel": "Declared"
     },
@@ -76,25 +82,25 @@
       "statusLabel": "Declared"
     },
     {
+      "id": "lemon",
+      "name": "Don Lemon",
+      "tier": 5,
+      "statusLabel": "Declared"
+    },
+    {
       "id": "aoc",
       "name": "Alexandria Ocasio-Cortez",
-      "tier": 5,
-      "statusLabel": "Declared"
-    },
-    {
-      "id": "vance",
-      "name": "J.D. Vance",
-      "tier": 5,
-      "statusLabel": "Declared"
-    },
-    {
-      "id": "rubio",
-      "name": "Marco Rubio",
       "tier": 5,
       "statusLabel": "Declared"
     }
   ],
   "transitions": [
+    {
+      "name": "Don Lemon",
+      "from": 3,
+      "to": 5,
+      "date": "2026-11-20"
+    },
     {
       "name": "Elissa Slotkin",
       "from": 2,
@@ -102,10 +108,10 @@
       "date": "2026-11-16"
     }
   ],
-  "review_count": 255,
+  "review_count": 258,
   "totals": {
     "tracked": 41,
     "formal": 3,
-    "considering": 16
+    "considering": 15
   }
 }

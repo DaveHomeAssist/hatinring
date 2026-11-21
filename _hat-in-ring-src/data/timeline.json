@@ -544,5 +544,31 @@
     "direction": "up",
     "reason": "",
     "reconstructed": true
+  },
+  {
+    "id": "lemon",
+    "name": "Don Lemon",
+    "party": "Democrat",
+    "date": "2026-11-20",
+    "from": 3,
+    "to": 5,
+    "fromLabel": "Considering",
+    "toLabel": "Declared",
+    "direction": "up",
+    "reason": "Don Lemon gives condition for presidential bid",
+    "reconstructed": false
+  },
+  {
+    "id": "lemon",
+    "name": "Don Lemon",
+    "party": "Democrat",
+    "date": "2026-11-21",
+    "from": 3,
+    "to": 5,
+    "fromLabel": "Considering",
+    "toLabel": "Declared",
+    "direction": "up",
+    "reason": "",
+    "reconstructed": true
   }
 ]
