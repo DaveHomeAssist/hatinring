@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-21",
+  "date": "2026-11-22",
   "movers": [
     {
       "id": "rubio",
@@ -58,12 +58,6 @@
   ],
   "new_filers": [
     {
-      "id": "greaney",
-      "name": "Dan Greaney",
-      "tier": 5,
-      "statusLabel": "Declared"
-    },
-    {
       "id": "kelly",
       "name": "Mark Kelly",
       "tier": 5,
@@ -92,6 +86,12 @@
       "name": "Alexandria Ocasio-Cortez",
       "tier": 5,
       "statusLabel": "Declared"
+    },
+    {
+      "id": "vance",
+      "name": "J.D. Vance",
+      "tier": 5,
+      "statusLabel": "Declared"
     }
   ],
   "transitions": [
@@ -108,7 +108,7 @@
       "date": "2026-11-16"
     }
   ],
-  "review_count": 258,
+  "review_count": 260,
   "totals": {
     "tracked": 41,
     "formal": 3,

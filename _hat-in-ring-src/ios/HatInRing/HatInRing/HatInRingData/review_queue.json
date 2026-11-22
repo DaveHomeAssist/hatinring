@@ -3146,5 +3146,29 @@
     ],
     "rid": "0ca9fbabbf63",
     "kind": "discovery"
+  },
+  {
+    "name": "Wall Street",
+    "headline": "PODCAST: Wall Street plunges, climate talks run over, and Republicans position for 2028 - Reuters",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNdTB2Umxadk1oSHFUQVEwemljX2I5NHRjWFlPM3dsMG5lcG5MR2RRclBjWXR3WE5zLXg3RVh5d2NiWGhMREUtd0ZWNEZEX1ZGVV9rcmN5Qkc2QmZfZUVPdVFsRm4tY01qOEdNOWtQdEtWMll5MmJMU1p6V0MwWkx4M005d1dHS01XaU14d1lYRzBNVUtZVHVMMUJSanFDbjA1eC1zNERFdjY0WW5uT2EzRDlYbw?oc=5",
+    "source": "Reuters",
+    "date": "2026-11-21",
+    "keys": [
+      "mediaBlitz"
+    ],
+    "rid": "82aa816aeea7",
+    "kind": "discovery"
+  },
+  {
+    "name": "PODCAST: AI selloff, Trump speech, Meta'",
+    "headline": "PODCAST: AI selloff, Trump speech, Meta's muse (Updated) - Reuters",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxObW5FRmZabmpDZzNyS1BwaUNycnNRXzBhVHlURXQxTk9ocEZ6bnZPRGJuWGdYZTlLWlhHd2JrNU5vandDSF9ZdGpMZG0zWmxYcWJsSWlOQmVoQVZRX2dkNWVQWWUtZldyclZOTHBQZWUwaDNGOGFDNFdSSnpaaDgtTGxvVlZ2WW1WWjVORkl6OFRzNHpUZDY1WGQ2Nm5jUmVzUHh0RDlPQ2tud19CcjdmZDRRMA?oc=5",
+    "source": "Reuters",
+    "date": "2026-11-20",
+    "keys": [
+      "mediaBlitz"
+    ],
+    "rid": "f8ca07396847",
+    "kind": "discovery"
   }
 ]
