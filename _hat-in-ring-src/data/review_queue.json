@@ -3170,5 +3170,65 @@
     ],
     "rid": "f8ca07396847",
     "kind": "discovery"
+  },
+  {
+    "name": "CBS News",
+    "headline": "Ossoff's expanding coalition in Georgia fuels 2028 presidential buzz — even if he says he's not running - CBS News",
+    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPVDZYRGlyTWE4RVZyb0ZkU0lPR0NmeVZoa1hCZFZpOVN6ancyX0NweEREZjZJNlZXMzhsMVJOSTR2STJlV1VLbF9OSWRoeTdoLVpiRGxzTmZPS0c2emRJQzRURmRqYUthRUY4RGYwTWYxR2hPY183VkhkQkowX1JwVW9XV2RGU05hRDR5c1dXazlYUQ?oc=5",
+    "source": "CBS News",
+    "date": "2026-11-22",
+    "keys": [
+      "ruledOut"
+    ],
+    "rid": "fa79b0bc0547",
+    "kind": "denial"
+  },
+  {
+    "name": "Raskin on potential 2028 run: 'I'll do w",
+    "headline": "Raskin on potential 2028 run: 'I'll do whatever it takes'",
+    "url": "https://thehill.com/homenews/campaign/6235787-raskin-open-2028-presidential-bid/",
+    "source": "The Hill",
+    "date": "2026-11-22",
+    "keys": [
+      "softConsidering"
+    ],
+    "rid": "e50750b847d4",
+    "kind": "discovery"
+  },
+  {
+    "name": "Des Moines Register",
+    "headline": "Iowa's new members of Congress should use this to-do list | Opinion - The Des Moines Register",
+    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOd0tjLWRRSHVtWUI0eDVxS2ROYkFRLWRtRHB0Z3NoNTU5Sng2ekVJX2VublBHU2s1OF9UM2NMN3RYdmI2TFp6d0RULWhMNkZQNHhHRUNDYVltdmxZVGF3YjFRU21pTzh3WHRLSUZkT3pHd3FGR3k2LUVzMTBrVjhQZ2FGc2hOcXZ5cUo2LVA5a1U5TExqczBTbGllekNkb1JzREFCSHV0R1dOTkx5TlYyazNWam5MTU1Kdy1GOXhSbmxNYWVQWVRZOA?oc=5",
+    "source": "The Des Moines Register",
+    "date": "2026-11-22",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "9873e2638f0d",
+    "kind": "discovery"
+  },
+  {
+    "name": "Iowa Public Notices",
+    "headline": "Iowa Public Notices - The Des Moines Register",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBWcmY0UFdZNVpCa2loQ1BkUVdSeUVXdjBCSTR5bzBYalRGSEZ5RndVZ09URUlkaUJXSHFiRVk4WkVPQUhQMFdoTjd1SVRqdmdjbkpuNjJyYlMySzU5?oc=5",
+    "source": "The Des Moines Register",
+    "date": "2022-09-22",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "b20cd87e48a3",
+    "kind": "discovery"
+  },
+  {
+    "name": "El Chapo Isidro'",
+    "headline": "PODCAST: COP31 collapse, 'El Chapo Isidro' arrest and South Korea's AI cheating scandal - Reuters",
+    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPc2ctWDVuSkdRVXo4MkdXVWtCNXcwYXlFeGp2cUZCMmItdHJjenA4VDlRcnBJRHdrZjNuREh1cHd3Y1JESURBaTkwci05NHV4bmhtd2U3TWkwR2JKT2JfQ3I4TXFCRDFjSTZXaWs1STRmOE16SFpKYnlrQnpIbmJJdmwwSndDa25EU2RNMlI1WnYwR3R2a25HUUhvQm8wbndzNVlxMGdaMlFDNjBEWklKY3EwN2twZw?oc=5",
+    "source": "Reuters",
+    "date": "2026-11-22",
+    "keys": [
+      "mediaBlitz"
+    ],
+    "rid": "6d452a8e01cc",
+    "kind": "discovery"
   }
 ]
