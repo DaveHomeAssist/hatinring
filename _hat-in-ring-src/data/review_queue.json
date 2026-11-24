@@ -3230,5 +3230,65 @@
     ],
     "rid": "6d452a8e01cc",
     "kind": "discovery"
+  },
+  {
+    "name": "Nevada Current",
+    "headline": "Democrats plan 12 debates for 2028 presidential primary - Nevada Current",
+    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNS0MwblVoWnB0MmQ4aUU3QVBfTEZockJ6SG90ai1zVVd2bGtNVHdjVkhsb3pFYkstbktSYUZXLTVoM3FTaXlqVVRJQjUxUUs3RjVBVEFjYmtKU2Nya3g3UE82cV9QV1Q0WEdTT1hQSWoxX1RGOTNWUzJ6eWdmWVc3QWZHRUJEY2pmUkF4cl8zZ25vaUc2VDJYSw?oc=5",
+    "source": "Nevada Current",
+    "date": "2026-11-24",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "9737b7693bad",
+    "kind": "discovery"
+  },
+  {
+    "name": "Fox News",
+    "headline": "GOP senator 'not likely' to mount presidential bid, but continues leaving door open to possibility - Fox News",
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNRFhsWEZOZTVOTW1MR2U4VndrX3hHM2F1LVhkbEgwYzdCSzhuOE1ZUlJUUWVYem5aSGQ4am5fNTZMOS0tNE5zTU1PazNiRGJ0RTg3aXNlTDA3WjNveUhsc0xjbEM3WmJTU2I2dFJBWXFpRnB5SkRQU1pOUnVweEtKdHFXX19qMnJfc29KRHR4VDE1UG1EU19TTzRuTXRiTUc3cXRZWEhPT0dwanptdkxoLW1TVkJ0YVp4MmfSAb8BQVVfeXFMT01sVmJjWEZHRXV6NHlIc3g4a0g4bHRQZXpJWjl5bWhPcGtuOFhCeHJ3VWctVEQ5SDdJejZNS0Y5UmpfOGd2d3ZNMVRKbWtZazhUYmViREhlTjEwNUdvQy15TzlUc0RmTXB3QmdCWkdHQjNJV2RfaHBIVEN1V2I4dGxYUUNVNHd4QlMyWU1Yd0FkeEtPLTM1dFBMTUNPM1MxaTFVMGxoLW1WRlNVYmZhNHZsVDN1cWJ3ZE1ObXVWYkk?oc=5",
+    "source": "Fox News",
+    "date": "2026-11-23",
+    "keys": [
+      "declared"
+    ],
+    "rid": "8b56a109fdbd",
+    "kind": "discovery"
+  },
+  {
+    "name": "Maryland Jamie Raskin",
+    "headline": "Maryland Rep. Jamie Raskin not ruling out 2028 presidential run - WUSA9",
+    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPSEswSWxDc1NHNGlTY3h0SVBWekx0UXhZOGhrUUpOamMxNngtejFPYUF2MkZQcGFPUVBlZ2Y0cThCbkh2Y3N6cWZFc0JPdDczNW42WWVhT3dlRW80OHBpRkR3cDhZb2ktM1lMTkI3UWxqbjNESkpYYW5aVzI1emhhUHhPRkZZbVBVUHBxRmxYWFlvenVOU2MtcVp6Wk1lQ3BWazZQcWZ5MnF3N2xDaG96bjlVYUxrQmZkSXpUWTgzTFFHSUZzZEN3U0pMOWdCMFdM?oc=5",
+    "source": "WUSA9",
+    "date": "2026-11-23",
+    "keys": [
+      "softConsidering"
+    ],
+    "rid": "a7ab2a8996ec",
+    "kind": "discovery"
+  },
+  {
+    "name": "Democrats plan 12 debates for 2028 presi",
+    "headline": "Democrats plan 12 debates for 2028 presidential primary",
+    "url": "https://nevadacurrent.com/2026/11/23/democrats-plan-12-debates-for-2028-presidential-primary/",
+    "source": "Nevada Current",
+    "date": "2026-11-24",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "2c5287614c38",
+    "kind": "discovery"
+  },
+  {
+    "name": "Black Friday AI",
+    "headline": "PODCAST: Huang reinstated, Ukraine hits Russian ship, Black Friday AI (Updated) - Reuters",
+    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNajRPZ3A2N2ZWTGl1dVlMQTk4OGpNTHh6dG1YbjRpMktzbUhBYUdFaEpJbnhOSnVSZlJUYUpQNDcyRHJQY0NJQW0tSkdtLWtwTWR6SU15TmNyWlp5Y3FNUENDYTRpa3VYNFhvSG03ZEtYU2lQZkRTazhpdXRrS3VZNzBTZnJoWlJKZHJVQkVKc3hnRDZHbmtIY0lwRnlkc0It?oc=5",
+    "source": "Reuters",
+    "date": "2026-11-23",
+    "keys": [
+      "mediaBlitz"
+    ],
+    "rid": "9d8a9ee3ee85",
+    "kind": "discovery"
   }
 ]

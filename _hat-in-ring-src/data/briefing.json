@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "movers": [
     {
       "id": "rubio",
@@ -100,15 +100,9 @@
       "from": 3,
       "to": 5,
       "date": "2026-11-20"
-    },
-    {
-      "name": "Elissa Slotkin",
-      "from": 2,
-      "to": 3,
-      "date": "2026-11-16"
     }
   ],
-  "review_count": 265,
+  "review_count": 270,
   "totals": {
     "tracked": 41,
     "formal": 3,
