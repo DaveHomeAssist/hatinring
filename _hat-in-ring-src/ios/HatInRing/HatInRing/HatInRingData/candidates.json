@@ -145,8 +145,8 @@
       "declared"
     ],
     "conf": "High",
-    "delta": 0,
-    "lastSignal": "2026-10-25",
+    "delta": 5,
+    "lastSignal": "2026-11-24",
     "pollLead": "Dem poll leader",
     "headline": "Opinion | Which version of Gavin Newsom will voters see if he launches a presidential campaign? - calmatters.org",
     "why": "Polling frontrunner actively staking out a 2028 lane; a national billionaires-tax pitch and a Biden embrace are already drawing intra-party fire (Khanna).",
@@ -162,12 +162,12 @@
     "early_states": {
       "NH": 5,
       "NV": 5,
-      "SC": 7
+      "SC": 8
     },
     "early_states_last": {
       "NH": "2026-10-16",
       "NV": "2026-09-07",
-      "SC": "2026-09-07"
+      "SC": "2026-11-24"
     },
     "evidence": [
       {
@@ -356,6 +356,15 @@
         "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOZHd4dmc5ZlpkY1RoM3pqZXhHRHNuWW54aEtNdEdGU0xNWmRrSGE3UEJyWXItV2M2OG5Hdy1mUDFBeHBXSTU1Vm5OUlJ2N2pfTktFVkZhbk5YNF9KZm1CQVZKelY4RnBNcHNiNGVJY0NPcnY0N1Y3UDNycUdPUTlZYlk1RGpyVXhnMjF4WkI3UUdhdGQ0MF8w?oc=5",
         "keys": [
           "donors"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-11-24",
+        "headline": "Trump, GOP state attorneys general blast Newsom over California death sentence commutations",
+        "url": "https://scdailygazette.com/2026/11/24/repub/trump-gop-state-attorneys-general-blast-newsom-over-california-death-sentence-commutations/",
+        "keys": [
+          "earlyState"
         ],
         "conf": "Low"
       }
@@ -1349,7 +1358,7 @@
     ],
     "conf": "Medium",
     "delta": 5,
-    "lastSignal": "2026-11-16",
+    "lastSignal": "2026-11-22",
     "headline": "Rahm Emanuel is considering a 2028 run for president. Here's what he's weighing - WBUR",
     "why": "Aggressive media tour to project vitality and viability.",
     "quote": "",
@@ -1368,12 +1377,12 @@
     "early_states": {
       "NH": 8,
       "IA": 1,
-      "SC": 1
+      "SC": 2
     },
     "early_states_last": {
       "NH": "2026-09-17",
       "IA": "2025-09-28",
-      "SC": "2026-10-17"
+      "SC": "2026-11-22"
     },
     "evidence": [
       {
@@ -1501,6 +1510,15 @@
         "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQLUY1cmVXSzZjWXRzVk16ZFd1cS1wbElZN1J0R2xVMG41QVpZSWw4MXdkNEF2ME42WFBLYTVIck9ZdTdLRk1Deko2M29RTC1od0FIWjVpMkNMSjl6MDh0LUJnWE41eW9lNWJzMmlmMlNCejNweVRWLWsxbUphX0diLWFuSWdEbUl5cnBFMFd0bFNtdHgzYTNNVTgyRUtZM29xT0VEVXk3b255ZG1LSURmTERLQ2thTWp2ZUpIdF9HbDZUcEJBSTNqWnNpeHZ2bThOdXRv?oc=5",
         "keys": [
           "consideringQuote"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-11-22",
+        "headline": "Rahm Emanuel Outlines 2028 Strategy During South Carolina Visit - Demokratis.co.id",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1NR0lUM25aREoyNWt1dzZtU2RkM29UZlBMWU5nek45SWduRk9YSnRaWHQxekdZd2tETlVoWUM3cHZrWTc4eWR3T1d2R29ETG5SYmxNSktuSU4ybkJpaVBuYzI4MURhSE9TZFhoNFNiR2JnZw?oc=5",
+        "keys": [
+          "earlyState"
         ],
         "conf": "Low"
       }
@@ -3974,7 +3992,7 @@
     ],
     "conf": "Low",
     "delta": 5,
-    "lastSignal": "2026-11-23",
+    "lastSignal": "2026-11-24",
     "headline": "Sen. John Kennedy not ruling out White House bid - The Hill",
     "why": "Confirmed from the review queue.",
     "quote": "",
@@ -4070,6 +4088,15 @@
         "date": "2026-11-23",
         "headline": "Sen. John Kennedy leaves door open to possible 2028 presidential bid - Yahoo",
         "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPNmxlVnlpeEhOQVNSX2tQR3NRVWtKM3FGWTlIMV9sVjBmaTBPRERuOF9TdW00MzZhaXNWbU9KX2UtZ0Rnb1ZQX2xhWjlONDd2QVBPalFmNFFneXl2V1MzVjJMeVNDbWVoWjl4dEQyQjJwNDhoRTQyYVBwbWx2YWNvM3N2bw?oc=5",
+        "keys": [
+          "softConsidering"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-11-24",
+        "headline": "Republican Sen. John Kennedy leaves door open to 2028 presidential campaign - Baltimore Sun",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOaXFwTUxNZ3hKYmVBcUlTSGdtVWFhUk02ZGtEcF8tdTdIMHBzeUJscGRLMU9YUXRFOWVrNnpPbTBZNEs3MF9QS3ZQbjhvaGRzejY0Q19hNWxlU1NGQ0pzUjdyM3c2R3BfQUhiY0lGSTVSb2U2NW0wem02S1p2OEd4WmNtcFkwS2ZSXzdSbHk1ODBCNGt4dDZlcXRsOEE2LUViOWVQSjZrUm14dXRBd2hiLS16VFV2UQ?oc=5",
         "keys": [
           "softConsidering"
         ],

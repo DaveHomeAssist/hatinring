@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "movers": [
     {
       "id": "rubio",
@@ -58,6 +58,12 @@
   ],
   "new_filers": [
     {
+      "id": "newsom",
+      "name": "Gavin Newsom",
+      "tier": 5,
+      "statusLabel": "Declared"
+    },
+    {
       "id": "kelly",
       "name": "Mark Kelly",
       "tier": 5,
@@ -86,12 +92,6 @@
       "name": "Alexandria Ocasio-Cortez",
       "tier": 5,
       "statusLabel": "Declared"
-    },
-    {
-      "id": "vance",
-      "name": "J.D. Vance",
-      "tier": 5,
-      "statusLabel": "Declared"
     }
   ],
   "transitions": [
@@ -102,7 +102,7 @@
       "date": "2026-11-20"
     }
   ],
-  "review_count": 270,
+  "review_count": 272,
   "totals": {
     "tracked": 41,
     "formal": 3,

@@ -3290,5 +3290,29 @@
     ],
     "rid": "9d8a9ee3ee85",
     "kind": "discovery"
+  },
+  {
+    "name": "Iowa Election Live",
+    "headline": "Iowa Governor Election Live Results 2026 - AP News",
+    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9hbi15bExZTHNkekUwbEFhc0JDRDFnWWt0LTVTM0ZqaFY0ZkVUVWJXNzhtbmQ4c3pyNGtxQkowZGJacTh4M2x5cWNKZENXcGNIWUxlV1lwVk5RNm9BeVJIcTZmaWNBRjZYYU52RGVrZnRkREE?oc=5",
+    "source": "AP News",
+    "date": "2026-11-25",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "2335f3b9380a",
+    "kind": "discovery"
+  },
+  {
+    "name": "Trump's Nvidia",
+    "headline": "PODCAST: Trump's Nvidia intervention, Ukraine war spreads to Libya and AI rally fizzles - Reuters",
+    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNUDQ4VmpuUGp3SW9fRFdmaWowcnNZTXZkNl9ZX3NyTHhid1ZkYldlYWtkeGJ0VnRucTR3MDJoUzN4NnJ5ckdBdnRIT0c0UG82djYyQklKTUM3NG1ianZlUkNOUjVOU2xMYldsU1Y5cEI1R0ludFFaekQxRkc0RkM4OXhYOWxNOTBVdFJXS2txcjhXcnpzX0cwT1lBWnlEZmtaVVE?oc=5",
+    "source": "Reuters",
+    "date": "2026-11-24",
+    "keys": [
+      "mediaBlitz"
+    ],
+    "rid": "97d233d5b594",
+    "kind": "discovery"
   }
 ]
