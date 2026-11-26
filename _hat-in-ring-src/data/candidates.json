@@ -2233,7 +2233,7 @@
     "early_states": {
       "IA": 8,
       "NH": 4,
-      "SC": 6,
+      "SC": 7,
       "NV": 1
     },
     "early_states_last": {
@@ -2243,15 +2243,6 @@
       "NV": "2026-08-18"
     },
     "evidence": [
-      {
-        "date": "2026-07-13",
-        "headline": "‘Reach across the aisle’: Pete Buttigieg campaigns with Sarah Trone Garriott - Iowa Capital Dispatch",
-        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPeDk1bTJjOGh6ano1dWlwaXlwVEpETjdrOHVqVnBNQzdMdHZPLWZLTld3UHdVRThQMjl0YlJtWmlUWG9CQlRYZk16WjRQVU5DR191b0U5MVRoRGY0QTJFM29pYWpLTlVKb3VNM280SkNjOFhFYzdHdEk0c1JMd0MxcGRLWWhZenNsWWRXYUNtbXBNS3FiT0RkdkdibkFWajM4U2hmNlV6WFoxVnNGWHR0RTVzaG1vT3R3?oc=5",
-        "keys": [
-          "earlyState"
-        ],
-        "conf": "Low"
-      },
       {
         "date": "2026-07-15",
         "headline": "\"Nope!\" Pete Buttigieg refuses to rule out 2028 presidential bid - LGBTQ Nation",
@@ -2457,6 +2448,15 @@
         "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxObjh6Wm16MGlmYTM1V0xvS016cmxzNG9GeHBWS2xPWms1Nl9rQ2VUSU1ZV2U5Z2JzS0pBTER4bDhWblg0WWdFVkwxaDVheWFWX1ItMk5hVnZSREpxVm55enA3ZmFBc0NOc1dYcW9xOGh2em9QdHo2amt3VGt6eVJ0S0EwZThwUdIBiwFBVV95cUxORVJqM1FmNkZTaUV5N3JMMFZxN3BaQXpCQ1Q4M1dCQUFadk9mbkdXTEh3eEpoT3BFS2psVHZaUGlxVWg4dmE3RndraGdCTkxUWHgtUWcwazVtY08xSGpqZHh4dHNEa3NienRfZHd2QW1DTk1NaWFvVzFhWGtSQWFkUnFvZGR5WjVEQk5F?oc=5",
         "keys": [
           "donors"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-08-22",
+        "headline": "Pete Buttigieg Headlines South Carolina Democratic Conference | Video - C-SPAN",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPMWprVU1BTXJCUmYyRWQ5YWhGRHZHeHJ6d0s3S1dQUTNYekNRTEQwdHFoS0dxcG5ENGNYdWNHSTRRN3ZaX1R3ODVWeDhPS1ptanJQNEFTUzR1RGtOMkxIRS1OdWZkeVdBZ09vb1M2bU82VTZTaUZ0ZThscjhIc2xJR05TeVhVX2JXRHpRLUFVVk15SVB5Ql8zZlBHSUcyaXdESjg0eUJvRXRqSnBUODAtQzRVQQ?oc=5",
+        "keys": [
+          "earlyState"
         ],
         "conf": "Low"
       }
@@ -4057,6 +4057,15 @@
         "date": "2026-11-24",
         "headline": "Republican Sen. John Kennedy leaves door open to 2028 presidential campaign - Baltimore Sun",
         "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOaXFwTUxNZ3hKYmVBcUlTSGdtVWFhUk02ZGtEcF8tdTdIMHBzeUJscGRLMU9YUXRFOWVrNnpPbTBZNEs3MF9QS3ZQbjhvaGRzejY0Q19hNWxlU1NGQ0pzUjdyM3c2R3BfQUhiY0lGSTVSb2U2NW0wem02S1p2OEd4WmNtcFkwS2ZSXzdSbHk1ODBCNGt4dDZlcXRsOEE2LUViOWVQSjZrUm14dXRBd2hiLS16VFV2UQ?oc=5",
+        "keys": [
+          "softConsidering"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-11-23",
+        "headline": "Watch Sen. John Kennedy leaves door open to possible 2028 presidential bid - FNC - FOX One",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNQ1hXekFFMUExMVRTbnR4bzczZW93ODFZYXh4RW9vdGNZa0xTZmU4UUNfS0RTWjZhVGEzN0ttVnBEcW5jLXQ1QTlVdHQzWXB5ZEZYamtxdy1GbWxSZjg2eWEyYkxXa29vWTlTVkF0QWN5eExvVDlEUk5GSWFsQkJaSXNTLTY1SHZheVZOZTIzQS1UWWpvYUs4TzBpZHZvdmd5enhBbl92dDVFWTYtbjVFZEJ3?oc=5",
         "keys": [
           "softConsidering"
         ],
