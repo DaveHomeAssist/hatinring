@@ -3314,5 +3314,43 @@
     ],
     "rid": "97d233d5b594",
     "kind": "discovery"
+  },
+  {
+    "name": "Elissa Slotkin",
+    "headline": "Slotkin declines to rule out Senate leadership bid - Politico",
+    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE11M3B6Znlubld0Y185M01HTWtTc1hKdzZ4QlpPc1Etd25tQ1BOc2ZsYTJKbVdXV0xTcmZSeGczaGFYMk1jRHhmRGtleHV5eGFZVXNLRXVucGp4RTNzZmVjU2dnZ1p4OXZ1eUJKS0ZicHJkQmMtUk1tWGlqSzFZdw?oc=5",
+    "source": "Politico",
+    "date": "2026-11-07",
+    "keys": [
+      "ruledOut"
+    ],
+    "note": "denial/downgrade — confirm before applying",
+    "rid": "b537813b4160",
+    "kind": "denial"
+  },
+  {
+    "name": "John Kennedy",
+    "headline": "Louisiana Senator John Kennedy to focus on re-election, but won’t rule out run for U.S. presidency in 2028 - louisianaradionetwork.com",
+    "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBjRzgtVXVGUGRwcmh5dE12M1NBRzl2WXloUVl0N2FDWHhvaE52V2xIOHk5Zk1DZGRsM1dCUWlRLWNPUHNpbXlnaTh3N2NFUndXblFldlFMRGZYeXROWlFYSA?oc=5",
+    "source": "louisianaradionetwork.com",
+    "date": "2026-11-24",
+    "keys": [
+      "ruledOut"
+    ],
+    "note": "denial/downgrade — confirm before applying",
+    "rid": "9e67e1f80c69",
+    "kind": "denial"
+  },
+  {
+    "name": "Philippine VP Duterte",
+    "headline": "Philippine VP Duterte rules out resignation, braces for impeachment verdict - Reuters",
+    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNMGVTaHJ5RWM4a1NsdFcyLV9jcnprZDlVWjg0Yi1KT1ZCMDF0T3ptT25sdU4weS00UDgzOHVrX0FGM1l6bkgzQXlXSnZ1bmNzakhTUWg3LUFwNmhRdE1fUzd0dnRKYlRVdzRkLXh6T1VjeTFEQ2RXb3NXazc2RlQ3eXhQd2NWTi1CRWZ2OVJTN3Q2dDEwX2I3clJCN0tza0hoM0psTU9tMUpwZUNaT2RuT21kbGpBeGd1dHRYQjlpVHRTQ3A1YnhyNw?oc=5",
+    "source": "Reuters",
+    "date": "2026-11-27",
+    "keys": [
+      "ruledOut"
+    ],
+    "rid": "18a25f3dab23",
+    "kind": "denial"
   }
 ]
