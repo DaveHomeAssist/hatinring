@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "movers": [
     {
       "id": "rubio",
@@ -94,15 +94,8 @@
       "statusLabel": "Declared"
     }
   ],
-  "transitions": [
-    {
-      "name": "Don Lemon",
-      "from": 3,
-      "to": 5,
-      "date": "2026-11-20"
-    }
-  ],
-  "review_count": 275,
+  "transitions": [],
+  "review_count": 278,
   "totals": {
     "tracked": 41,
     "formal": 3,

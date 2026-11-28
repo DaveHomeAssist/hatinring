@@ -3352,5 +3352,42 @@
     ],
     "rid": "18a25f3dab23",
     "kind": "denial"
+  },
+  {
+    "name": "Post-midterms, presidential hopefuls wil",
+    "headline": "Post-midterms, presidential hopefuls will step up visits to SC",
+    "url": "https://scdailygazette.com/2026/11/27/post-midterms-presidential-hopefuls-will-step-up-visits-to-sc/",
+    "source": "SC Daily Gazette",
+    "date": "2026-11-27",
+    "keys": [
+      "consideringQuote",
+      "earlyState"
+    ],
+    "rid": "0a8111d3e108",
+    "kind": "discovery"
+  },
+  {
+    "name": "Army Detonates Stockpile",
+    "headline": "Army Detonates Stockpile of Bomb-Making Chemicals at Iowa Plant - C-SPAN",
+    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxONjdJVERvUHE1c0E1N1VoVlRWODgxbl9pbnVrYkViWUZWRUlWM0puWklRUlFTZlFQQlI5cWh4bFgtUFkwNTlqQmItZFNvV2FXZ2FLcGhWWTdWV0lONm9Sb2g4VnBBaEhqZFFrVlkwX21vMWZLNUxZVkFLVU9FWE5QS0pGOGJSVGZadWpYZEJjOGxENFAwdGdGenNYRWQ0OTN0TVdPeXJNZHBUQzdGRjd2eTFWcHlTWnlhN3lhOWNLWQ?oc=5",
+    "source": "C-SPAN",
+    "date": "2026-11-26",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "950e8febd828",
+    "kind": "discovery"
+  },
+  {
+    "name": "Officials Detail Controlled",
+    "headline": "Officials Detail Controlled Detonation at Iowa Army Ammunition Plant - C-SPAN",
+    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOOGJQa1oyNVBDYndOVElicy1PdXJSWjFUcWlwc2UzcVdfWVNTeGRmX1RqVnhRajVCSTNaR3BXd3U5dkY4b0MtcXRCWlBvOXJJVWc0UWxVcFpsaDV6dVlkWVo2em9UQlRSRUtTX1dBSUs3a0xyV1paak5ibWdfUjdCWEhmdjh2TGVvNDB2bTlYcVBHckZJSlhoUXVMcHkxdExpbzctckpVdHhidUQ3ZEFibmd4SzVrQ21Zd0FqUURkVQ?oc=5",
+    "source": "C-SPAN",
+    "date": "2026-11-25",
+    "keys": [
+      "earlyState"
+    ],
+    "rid": "ebf349edc33b",
+    "kind": "discovery"
   }
 ]

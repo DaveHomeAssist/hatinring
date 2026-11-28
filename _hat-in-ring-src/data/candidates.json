@@ -392,7 +392,7 @@
     ],
     "conf": "High",
     "delta": 5,
-    "lastSignal": "2026-11-19",
+    "lastSignal": "2026-11-27",
     "headline": "South Carolina picked for first 2028 Democratic primary, in possible Kamala Harris boost - New York Post",
     "why": "The 2024 nominee tops early Democratic primary polling; a rematch frontrunner in a crowded, unsettled field.",
     "quote": "I have not made a decision… I may or may not.",
@@ -402,15 +402,6 @@
       "USA Today"
     ],
     "evidence": [
-      {
-        "date": "2026-04-10",
-        "headline": "'I am thinking about it,' Kamala Harris says of 2028 presidential bid - National Newswatch",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQdnlORlQ0b195b0NSU1ZjcU5hNmJWSlBuUDNpbkNzdTF5Z3JZbnZTWF83bmdFYXVERGxMb0lzUHVJWVMwc2NMX0RIcjJNTTFvb0NkbGw2b3I0aUxvY0draDNBWkxzMFRuUXZFekExTHZOWWRuUk5pdG9IZmhobDVUVUhZUzM2YU9jVG9CLTBKZVVKSnNRNFdLa0ZzWXVkYWlpelFvb3RPVWktTlE?oc=5",
-        "keys": [
-          "consideringQuote"
-        ],
-        "conf": "Low"
-      },
       {
         "date": "2026-06-20",
         "headline": "Kamala Harris says 'hope should be a verb' as viral podcast clip draws 'word salad' mockery - AOL.com",
@@ -615,6 +606,15 @@
         "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPQnNwRkxBRVc2NGlPSkQ3dEU4ZERsemlNaXZSb1F6a1drZ1dmWDkxc3JVNVJLRDZidDAwckJjT0VNQ2RRWFg2NnRBTHdqZkhSRVV0RmwxbjlWWUJnUGVqM1dtd3h0RE4tR2djUTdITl9FdlAtOEJTLW5Sa2ZpZld5am80a2t0aW16eXZKeWxCazF1bHJaeHBvU3lON0ZBckJhdTlxSl9Yek1JRU9BR0U4Ylh2aWhpQmVzdmpUMFlZc3BYLVNocFB4RHgxemFJdFRaSER5OXhn?oc=5",
         "keys": [
           "consideringQuote"
+        ],
+        "conf": "Low"
+      },
+      {
+        "date": "2026-11-27",
+        "headline": "New PAC Launches Push for Harris’ 2028 Presidential Bid - The Tennessee Tribune",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOUUZHaE13MEVNd24wOXAyY1BHVVBXOTljLUJDVlhUd2o2LXBQT1hsSDNRNFpRR0RtaVRmbmNjZTVSTGM1OFZjdTBaU0w0anRfMngwdzZuRnVqRWgwUlRNV2YtaDBKTllCYm50S0w1OUFWS1VhMTV1RGF1T1dzZXh5bGRoQQ?oc=5",
+        "keys": [
+          "donors"
         ],
         "conf": "Low"
       }
